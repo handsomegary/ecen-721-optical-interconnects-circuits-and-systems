@@ -1,0 +1,24 @@
+{
+  "schema": "pam4_sar7_read_overlap_collect_fix_v1",
+  "source": {
+    "root_name": "pam4_sar7_read_overlap_pilot_20261117.3abvDG",
+    "case_id": "sar7_18_tt_175gs_read_overlap",
+    "job_id": "761649",
+    "manifest_sha256": "df3b60ef048c03175e2e07a0d02f5f971bd0840708b9ea85ac2235fff1e0079d",
+    "portable_sha256": "63c73525a64b0136c66b2aa145da340386492ca5187082d295524213d2fe6aeb",
+    "authorization_sha256": "ec86523474c7fb6a20bb5e2d806f31b12bed6d177060672e67ff0b08371a9fd8",
+    "measurements_sha256": "1729b55e4f7ecbe8941bbde5826b9d22fe9125b413ff60728c55021ca64aad37",
+    "tran_sha256": "a380f63b5e42532c98cfbf24f8352117c9c9a9e4080e314b4fc0abbfe2c6f69d",
+    "spectre_log_sha256": "9a58539f46fe86b9b25a915fefc0882975f9232d6f07146bf266d89b36682211",
+    "staged_deck_sha256": "cff34259f212d8c76ea342d06e7fef0ab7ae285cba5170b066eaf23462e7a3e4"
+  },
+  "modes": [
+    "verify",
+    "collect-only"
+  ],
+  "new_solver_jobs": 0,
+  "new_raw_files": 0,
+  "collector_cpus": 1,
+  "collector_memory_GiB": 6,
+  "collector_wall_minutes": 10
+}
