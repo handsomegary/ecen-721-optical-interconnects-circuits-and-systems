@@ -1,0 +1,60 @@
+{
+  "schema": "pam4_sar7_accept_gap_pilot_v1",
+  "authorization": {
+    "schema": "pam4_sar7_authorization_v1",
+    "user_quote": "Yes, 8 hours",
+    "source_note": "20261116T2337_user_delegates_8h_sar7_175gs.md",
+    "source_note_sha256": "26523d076e396f82acc8844f3441c3517ebba4f05e2073e1629436586287da58",
+    "starts_utc": "2026-11-17T05:37:00Z",
+    "expires_utc": "2026-11-17T13:37:00Z",
+    "scope": "SAR7 single-channel 1.75GS/s TT short fixes",
+    "max_solver_cases_this_packet": 1,
+    "cpus_this_job": 1,
+    "max_concurrent_sar7_cpus": 2,
+    "c2_untouched": true,
+    "excluded": [
+      "PVT",
+      "long campaigns",
+      "112GS/s integration",
+      "other projects",
+      "raw deletion",
+      "C2 changes"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "sar7_21_tt_175gs_accept_gap",
+      "parent_job": "761688",
+      "parent_manifest_sha256": "2887bf0705fb20245f65d8745abdd01624debb53b2aa8bdf7c7c5564adad84e1",
+      "parent_deck_sha256": "c587a30cf264dc2b815bd9f23b057ce15edeed9b59591edcfe2370a403f3bfbf",
+      "source_summary_sha256": "83d41a50aeea4285dbecf922deb94f949c2a4265cc2a8ce3d6acda4d7b7682a3",
+      "waits_ps": [
+        30,
+        45,
+        25,
+        26,
+        31,
+        13,
+        6
+      ],
+      "evals_ps": [
+        35,
+        44,
+        40,
+        40,
+        44,
+        44,
+        48
+      ],
+      "next_launch_after_previous_read_ps": 0.5,
+      "previous_release_after_read_ps": 2,
+      "first_launch_ps": 78,
+      "primary_readout_ps": 565,
+      "clock_off_ps": 568,
+      "changed_pulse_rows": 10,
+      "physical_changes": false,
+      "stop_branch_after_rejection": true,
+      "accepted_gap_ps": 11.5
+    }
+  ]
+}

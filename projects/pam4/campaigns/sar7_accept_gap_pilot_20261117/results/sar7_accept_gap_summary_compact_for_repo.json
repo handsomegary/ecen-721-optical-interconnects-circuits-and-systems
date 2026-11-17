@@ -1,0 +1,6801 @@
+{
+ "schema": "pam4_sar7_accept_gap_pilot_v1",
+ "case_id": "sar7_21_tt_175gs_accept_gap",
+ "stage": "physical_accept_gap_tt_12_centers",
+ "sampling_rate_gsps": 1.75,
+ "schedule_ps": {
+  "6": [
+   78.0,
+   108.0,
+   143.0,
+   145.0
+  ],
+  "5": [
+   143.5,
+   188.5,
+   232.5,
+   234.5
+  ],
+  "4": [
+   233.0,
+   258.0,
+   298.0,
+   300.0
+  ],
+  "3": [
+   298.5,
+   324.5,
+   364.5,
+   366.5
+  ],
+  "2": [
+   365.0,
+   396.0,
+   440.0,
+   442.0
+  ],
+  "1": [
+   440.5,
+   453.5,
+   497.5,
+   499.5
+  ],
+  "0": [
+   498.0,
+   504.0,
+   552.0,
+   554.0
+  ]
+ },
+ "primary_readout_ps": 565,
+ "clock_off_ps": 568,
+ "max_abs_sample_error_lsb": 1.6728,
+ "max_observed_resolve_delay_s": 0.0,
+ "job_id": "761700",
+ "solver_seconds": 323.0848,
+ "raw_bytes": 118289867,
+ "codes": [
+  {
+   "expected": 64,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  },
+  {
+   "expected": 0,
+   "comparator": 0,
+   "registered_565": 0,
+   "registered_563": 0,
+   "registered_554": 1,
+   "registered_557": null
+  },
+  {
+   "expected": 127,
+   "comparator": 127,
+   "registered_565": 127,
+   "registered_563": 127,
+   "registered_554": 127,
+   "registered_557": 127
+  },
+  {
+   "expected": 31,
+   "comparator": 31,
+   "registered_565": 31,
+   "registered_563": 31,
+   "registered_554": 31,
+   "registered_557": 31
+  },
+  {
+   "expected": 96,
+   "comparator": 95,
+   "registered_565": 95,
+   "registered_563": 95,
+   "registered_554": 95,
+   "registered_557": 95
+  },
+  {
+   "expected": 63,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  },
+  {
+   "expected": 65,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  },
+  {
+   "expected": 85,
+   "comparator": 86,
+   "registered_565": 86,
+   "registered_563": 86,
+   "registered_554": 87,
+   "registered_557": null
+  },
+  {
+   "expected": 42,
+   "comparator": null,
+   "registered_565": 43,
+   "registered_563": 43,
+   "registered_554": 43,
+   "registered_557": 43
+  },
+  {
+   "expected": 1,
+   "comparator": 0,
+   "registered_565": 0,
+   "registered_563": 0,
+   "registered_554": 1,
+   "registered_557": null
+  },
+  {
+   "expected": 126,
+   "comparator": 127,
+   "registered_565": 127,
+   "registered_563": 127,
+   "registered_554": 127,
+   "registered_557": 127
+  },
+  {
+   "expected": 64,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  }
+ ],
+ "last_comparison_trigger_cm_change_mV": [
+  -4.2298,
+  -3.665
+ ],
+ "last_comparison_read_cm_change_mV": [
+  -4.0493,
+  -3.9909
+ ],
+ "active_last_read_cm_pass": true,
+ "provenance": {
+  "manifest_sha256": "40a490ab88adfb1bbc370e52f80ced9bfd7954f5be56e3adc93dfcb8f51d650b",
+  "portable_deck_sha256": "532f9e8f79e9d4c9f668080a76a74b63b9681a01115f16703bc79e12754f70ec",
+  "parent_manifest_sha256": "2887bf0705fb20245f65d8745abdd01624debb53b2aa8bdf7c7c5564adad84e1",
+  "parent_portable_deck_sha256": "c587a30cf264dc2b815bd9f23b057ce15edeed9b59591edcfe2370a403f3bfbf",
+  "parent_reported_summary_sha256": "83d41a50aeea4285dbecf922deb94f949c2a4265cc2a8ce3d6acda4d7b7682a3",
+  "measurements_sha256": "1a00d6d94da1425c1ed0b73d63492eaec9d275340e3269627c8450cd42da0aa2",
+  "tran_sha256": "11449a395337f54fa34794d658576cdae70fffe9aac8732def5a1bcecf1333e7",
+  "execution_files_sha256": {
+   "bench.scs": "55c5c977920302673a2fa56301ff743fbf8b421b87b9ca67f25ce73047e7db2e",
+   "case.json": "f0089a9901dcfe17328e93427693cac06863e92cf26dfa64dbbaca42d8b43241",
+   "run_status.json": "065e6d0b6f6357e1969887aea16c20e2a3bb95af8d10a8107c9b3f40fcc058d1",
+   "execution_intent.json": "5754dd2c32a402160645c970b7b3d98a79359e0e0850aa14260c08baa7f3b227",
+   "spectre.log": "81afc36df265548a4c0346bde9a36b79acacbad36c77c5a265b718bc479518dd",
+   ".study_owned": "89ca4728c742430b45ed7d160fca77bd54298f8612e2c8a368514172f227cb04"
+  }
+ },
+ "readout_565": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 7,
+   "sum_abs_code_error": 7,
+   "max_abs_code_error": 1
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -9.1738,
+   5.386
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "readout_563": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 7,
+   "sum_abs_code_error": 7,
+   "max_abs_code_error": 1
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -7.6173,
+   4.6711
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "readout_554": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 8,
+   "sum_abs_code_error": 10,
+   "max_abs_code_error": 2
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -4.1147,
+   -4.0577
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "readout_557": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 5,
+   "missing": 7,
+   "wrong": 3,
+   "sum_abs_code_error": 3,
+   "max_abs_code_error": 1
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -3.9791,
+   -3.681
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "authorization_sha256": "3b4931d56edd94ea2e7dc0448cd0e8f926b6634e1124cb783af1b5f10ab7d6cd",
+ "interbit_launch_midpoint_guard_ps": 0.5,
+ "mechanism_limits": "Earlier b2 release and larger following wait may advance Z but restore O-bubbles; source raw-rail headroom is not decoder readiness or analog-settling proof",
+ "overlap_diagnostic": {
+  "observed_within_conversion_boundaries": 72,
+  "expected_boundaries": 72,
+  "prior_read_internal_class_available": 72,
+  "prior_latch_unresolved_during_overlap_boundaries": 0,
+  "prior_latch_opposite_rail_boundaries": 0,
+  "minimum_prior_internal_abs_xy_diff_V": 0.6238,
+  "limits": "Diagnostic only; original84bit comparator-read and12code/CM gates are unchanged",
+  "polarity_assessed_boundaries": 72,
+  "polarity_unassessable_boundaries": 0,
+  "opposite_rail_scope": "Only initially classifiable boundaries; initial None is unassessable, never evidence of stable polarity"
+ },
+ "circuit_change": {
+  "bit": 2,
+  "scale": 2,
+  "instance_counts": {
+   "oai": 2,
+   "nor": 2,
+   "decoder_inv": 4,
+   "qbuffer_second": 2
+  },
+  "new_cells": [
+   "SAR_B2_OAI21_X4",
+   "SAR_B2_NOR3_P6",
+   "SAR_B2_INV4"
+  ],
+  "original_global_cells_unchanged": true,
+  "tg_unchanged": true,
+  "all14_first_qbuffer_inv1_unchanged": true
+ },
+ "relative_to_parent": {
+  "physical_changes": false,
+  "changed_pulse_rows": 10,
+  "parent_job": "761688"
+ },
+ "stop_branch_after_rejection": true,
+ "acceptance_gap_diagnostic": {
+  "b2_all_conversions": [
+   {
+    "conversion": 0,
+    "wanted_command": "Z",
+    "raw_stable_rail_delay_ps": 36.25,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 10.5,
+    "margin_before_next_compare_ps": 1.0
+   },
+   {
+    "conversion": 1,
+    "wanted_command": "Z",
+    "raw_stable_rail_delay_ps": 36.3214,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 10.5714,
+    "margin_before_next_compare_ps": 0.9286
+   },
+   {
+    "conversion": 2,
+    "wanted_command": "O",
+    "raw_stable_rail_delay_ps": 36.3929,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 0.1429,
+    "margin_before_next_compare_ps": 11.3571
+   },
+   {
+    "conversion": 3,
+    "wanted_command": "O",
+    "raw_stable_rail_delay_ps": 36.4643,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 0.2143,
+    "margin_before_next_compare_ps": 11.2857
+   },
+   {
+    "conversion": 4,
+    "wanted_command": "O",
+    "raw_stable_rail_delay_ps": 36.7857,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 4.7857,
+    "margin_before_next_compare_ps": 6.7143
+   },
+   {
+    "conversion": 5,
+    "wanted_command": "Z",
+    "raw_stable_rail_delay_ps": 35.8571,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 10.6071,
+    "margin_before_next_compare_ps": 0.8929
+   },
+   {
+    "conversion": 6,
+    "wanted_command": "Z",
+    "raw_stable_rail_delay_ps": 37.6786,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 10.4286,
+    "margin_before_next_compare_ps": 1.0714
+   },
+   {
+    "conversion": 7,
+    "wanted_command": "O",
+    "raw_stable_rail_delay_ps": 38.5,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 11.0,
+    "margin_before_next_compare_ps": 0.5
+   },
+   {
+    "conversion": 8,
+    "wanted_command": "Z",
+    "raw_stable_rail_delay_ps": 42.0714,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 10.5714,
+    "margin_before_next_compare_ps": 0.9286
+   },
+   {
+    "conversion": 9,
+    "wanted_command": "Z",
+    "raw_stable_rail_delay_ps": 36.3929,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 10.6429,
+    "margin_before_next_compare_ps": 0.8571
+   },
+   {
+    "conversion": 10,
+    "wanted_command": "O",
+    "raw_stable_rail_delay_ps": 37.4643,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 7.7143,
+    "margin_before_next_compare_ps": 3.7857
+   },
+   {
+    "conversion": 11,
+    "wanted_command": "Z",
+    "raw_stable_rail_delay_ps": 36.7857,
+    "release_s": 0.0,
+    "trailing_command_confirmed": true,
+    "final_arrival_after_release_ps": 10.5357,
+    "margin_before_next_compare_ps": 0.9643
+   }
+  ],
+  "b2_Z_command_count": 7,
+  "b2_Z_unconfirmed_count": 0,
+  "b2_latest_Z_arrival_after_release_ps": 10.6429,
+  "msb_all_conversions": [
+   {
+    "conversion": 0,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 2.0,
+    "raw_stable_rail_delay_ps": 33.0,
+    "qdecode_p_half_from_compare_ps": 40.1425,
+    "qdecode_p_half_after_release_ps": 3.1425,
+    "accepted_margin_before_next_compare_ps": 31.75
+   },
+   {
+    "conversion": 1,
+    "wanted_command": "Z",
+    "decision": 0,
+    "sampled_margin_ps": 7.6786,
+    "raw_stable_rail_delay_ps": 27.3214,
+    "qdecode_p_half_from_compare_ps": null,
+    "qdecode_p_half_after_release_ps": null,
+    "accepted_margin_before_next_compare_ps": 30.6786
+   },
+   {
+    "conversion": 2,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 8.6071,
+    "raw_stable_rail_delay_ps": 26.3929,
+    "qdecode_p_half_from_compare_ps": 33.4456,
+    "qdecode_p_half_after_release_ps": -3.5544,
+    "accepted_margin_before_next_compare_ps": 43.3571
+   },
+   {
+    "conversion": 3,
+    "wanted_command": "Z",
+    "decision": 0,
+    "sampled_margin_ps": 4.5357,
+    "raw_stable_rail_delay_ps": 30.4643,
+    "qdecode_p_half_from_compare_ps": null,
+    "qdecode_p_half_after_release_ps": null,
+    "accepted_margin_before_next_compare_ps": 30.7857
+   },
+   {
+    "conversion": 4,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 6.9643,
+    "raw_stable_rail_delay_ps": 28.0357,
+    "qdecode_p_half_from_compare_ps": 35.0715,
+    "qdecode_p_half_after_release_ps": -1.9285,
+    "accepted_margin_before_next_compare_ps": 43.4643
+   },
+   {
+    "conversion": 5,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 2.1429,
+    "raw_stable_rail_delay_ps": 32.8571,
+    "qdecode_p_half_from_compare_ps": 39.9344,
+    "qdecode_p_half_after_release_ps": 2.9344,
+    "accepted_margin_before_next_compare_ps": 32.3929
+   },
+   {
+    "conversion": 6,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 2.8214,
+    "raw_stable_rail_delay_ps": 32.1786,
+    "qdecode_p_half_from_compare_ps": 39.459,
+    "qdecode_p_half_after_release_ps": 2.459,
+    "accepted_margin_before_next_compare_ps": 34.0714
+   },
+   {
+    "conversion": 7,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 6.0,
+    "raw_stable_rail_delay_ps": 29.0,
+    "qdecode_p_half_from_compare_ps": 35.9103,
+    "qdecode_p_half_after_release_ps": -1.0897,
+    "accepted_margin_before_next_compare_ps": 43.25
+   },
+   {
+    "conversion": 8,
+    "wanted_command": "Z",
+    "decision": 0,
+    "sampled_margin_ps": 2.1786,
+    "raw_stable_rail_delay_ps": 32.8214,
+    "qdecode_p_half_from_compare_ps": null,
+    "qdecode_p_half_after_release_ps": null,
+    "accepted_margin_before_next_compare_ps": 30.6786
+   },
+   {
+    "conversion": 9,
+    "wanted_command": "Z",
+    "decision": 0,
+    "sampled_margin_ps": 7.6071,
+    "raw_stable_rail_delay_ps": 27.3929,
+    "qdecode_p_half_from_compare_ps": null,
+    "qdecode_p_half_after_release_ps": null,
+    "accepted_margin_before_next_compare_ps": 30.8571
+   },
+   {
+    "conversion": 10,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 8.5357,
+    "raw_stable_rail_delay_ps": 26.4643,
+    "qdecode_p_half_from_compare_ps": 33.4852,
+    "qdecode_p_half_after_release_ps": -3.5148,
+    "accepted_margin_before_next_compare_ps": 43.2857
+   },
+   {
+    "conversion": 11,
+    "wanted_command": "O",
+    "decision": 1,
+    "sampled_margin_ps": 2.4643,
+    "raw_stable_rail_delay_ps": 32.5357,
+    "qdecode_p_half_from_compare_ps": 39.6166,
+    "qdecode_p_half_after_release_ps": 2.6166,
+    "accepted_margin_before_next_compare_ps": 33.7143
+   }
+  ],
+  "msb_O_count": 8,
+  "msb_O_half_unavailable_count": 0,
+  "msb_latest_O_qdecode_half_from_compare_ps": 40.1425,
+  "msb_latest_O_qdecode_half_after_release_ps": 3.1425,
+  "limits": "Final trailing rail-command run is observed only through the existing next-read window; half-VDD and rail commands do not prove analog settling or switch conduction"
+ },
+ "selected_parser": {
+  "summary_psf_parse_count": 1,
+  "selected_required_count": 144,
+  "basic_measurement_parse": "Separate inherited measurement pass; not included in summary count"
+ },
+ "timing_compact": [
+  {
+   "conversion": 0,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 2.0,
+   "raw_stable_rail_delay_ps": 33.0,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 12.3753,
+   "precompare_sense_lsb": 9.9615,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     145.25,
+     147.0
+    ],
+    [
+     "transition",
+     147.25,
+     156.5
+    ],
+    [
+     "O",
+     156.75,
+     232.5
+    ]
+   ],
+   "release_ps": 145.0,
+   "next_compare_ps": 188.5,
+   "wanted_cmd_start_ps": 156.75,
+   "wanted_cmd_minus_next_compare_ps": -31.75,
+   "accepted_command_margin_before_next_compare_ps": 31.75,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       28.4807,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       34.7809,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 0,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.75,
+   "raw_stable_rail_delay_ps": 29.25,
+   "decode_stable_rail_delay_ps": 38.75,
+   "precompare_held_lsb": -32.4535,
+   "precompare_sense_lsb": -18.9608,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     234.75,
+     236.5
+    ],
+    [
+     "transition",
+     236.75,
+     247.0
+    ],
+    [
+     "Z",
+     247.25,
+     298.0
+    ]
+   ],
+   "release_ps": 234.5,
+   "next_compare_ps": 258.0,
+   "wanted_cmd_start_ps": 247.25,
+   "wanted_cmd_minus_next_compare_ps": -10.75,
+   "accepted_command_margin_before_next_compare_ps": 10.75,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       25.0738,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       31.2316,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       36.1993,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.7972,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 0,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.75,
+   "raw_stable_rail_delay_ps": 31.25,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -18.269,
+   "precompare_sense_lsb": -12.1191,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     300.0,
+     302.0
+    ],
+    [
+     "transition",
+     302.25,
+     312.5
+    ],
+    [
+     "Z",
+     312.75,
+     364.5
+    ]
+   ],
+   "release_ps": 300.0,
+   "next_compare_ps": 324.5,
+   "wanted_cmd_start_ps": 312.75,
+   "wanted_cmd_minus_next_compare_ps": -11.75,
+   "accepted_command_margin_before_next_compare_ps": 11.75,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       26.7938,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       33.0226,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       37.9965,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8964,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 0,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.25,
+   "raw_stable_rail_delay_ps": 33.75,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -8.5045,
+   "precompare_sense_lsb": -5.4089,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     366.5,
+     368.5
+    ],
+    [
+     "transition",
+     368.75,
+     379.0
+    ],
+    [
+     "Z",
+     379.25,
+     440.0
+    ]
+   ],
+   "release_ps": 366.5,
+   "next_compare_ps": 396.0,
+   "wanted_cmd_start_ps": 379.25,
+   "wanted_cmd_minus_next_compare_ps": -16.75,
+   "accepted_command_margin_before_next_compare_ps": 16.75,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       29.0953,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       35.4243,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       40.4063,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8814,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 0,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 7.75,
+   "raw_stable_rail_delay_ps": 36.25,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.9561,
+   "precompare_sense_lsb": -2.2956,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     442.0,
+     443.75
+    ],
+    [
+     "transition",
+     444.0,
+     452.25
+    ],
+    [
+     "Z",
+     452.5,
+     497.5
+    ]
+   ],
+   "release_ps": 442.0,
+   "next_compare_ps": 453.5,
+   "wanted_cmd_start_ps": 452.5,
+   "wanted_cmd_minus_next_compare_ps": -1.0,
+   "accepted_command_margin_before_next_compare_ps": 1.0,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       31.4676,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       40.4069,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8611,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 0,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.25,
+   "raw_stable_rail_delay_ps": 36.75,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -4.0011,
+   "precompare_sense_lsb": -2.5884,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     499.5,
+     501.5
+    ],
+    [
+     "transition",
+     501.75,
+     512.0
+    ],
+    [
+     "Z",
+     512.25,
+     551.75
+    ]
+   ],
+   "release_ps": 499.5,
+   "next_compare_ps": 504.0,
+   "wanted_cmd_start_ps": 512.25,
+   "wanted_cmd_minus_next_compare_ps": 8.25,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       31.8759,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       38.3377,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       43.3317,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8698,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 0,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 9.25,
+   "raw_stable_rail_delay_ps": 38.75,
+   "decode_stable_rail_delay_ps": 47.5,
+   "precompare_held_lsb": -2.8206,
+   "precompare_sense_lsb": -1.2351,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     554.0,
+     556.0
+    ],
+    [
+     "transition",
+     556.25,
+     564.75
+    ]
+   ],
+   "release_ps": 554.0,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": null,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       33.5769,
+       "rise"
+      ],
+      [
+       74.4749,
+       "fall"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       40.1272,
+       "fall"
+      ],
+      [
+       79.7675,
+       "rise"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       45.1295,
+       "rise"
+      ],
+      [
+       84.9221,
+       "fall"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8654,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 1,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 7.6786,
+   "raw_stable_rail_delay_ps": 27.3214,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -51.8736,
+   "precompare_sense_lsb": -27.6062,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     716.5,
+     718.5
+    ],
+    [
+     "transition",
+     718.75,
+     729.0
+    ],
+    [
+     "Z",
+     729.25,
+     803.75
+    ]
+   ],
+   "release_ps": 716.429,
+   "next_compare_ps": 759.929,
+   "wanted_cmd_start_ps": 729.25,
+   "wanted_cmd_minus_next_compare_ps": -30.679,
+   "accepted_command_margin_before_next_compare_ps": 30.6786,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       23.3589,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       29.4568,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       34.4189,
+       "rise"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "conversion": 1,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 15.1786,
+   "raw_stable_rail_delay_ps": 28.8214,
+   "decode_stable_rail_delay_ps": 38.3214,
+   "precompare_held_lsb": -34.9391,
+   "precompare_sense_lsb": -21.3908,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     806.0,
+     808.0
+    ],
+    [
+     "transition",
+     808.25,
+     818.5
+    ],
+    [
+     "Z",
+     818.75,
+     869.25
+    ]
+   ],
+   "release_ps": 805.929,
+   "next_compare_ps": 829.429,
+   "wanted_cmd_start_ps": 818.75,
+   "wanted_cmd_minus_next_compare_ps": -10.679,
+   "accepted_command_margin_before_next_compare_ps": 10.6786,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       24.6619,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       30.8103,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       35.7772,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.879,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 1,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.9286,
+   "raw_stable_rail_delay_ps": 31.0714,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -18.0295,
+   "precompare_sense_lsb": -11.9924,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     871.5,
+     873.5
+    ],
+    [
+     "transition",
+     873.75,
+     883.75
+    ],
+    [
+     "Z",
+     884.0,
+     935.75
+    ]
+   ],
+   "release_ps": 871.429,
+   "next_compare_ps": 895.929,
+   "wanted_cmd_start_ps": 884.0,
+   "wanted_cmd_minus_next_compare_ps": -11.929,
+   "accepted_command_margin_before_next_compare_ps": 11.9286,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       26.6504,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       32.8798,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       37.8534,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8966,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 1,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.4286,
+   "raw_stable_rail_delay_ps": 33.5714,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -8.2567,
+   "precompare_sense_lsb": -5.2683,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     938.0,
+     940.0
+    ],
+    [
+     "transition",
+     940.25,
+     950.25
+    ],
+    [
+     "Z",
+     950.5,
+     1011.25
+    ]
+   ],
+   "release_ps": 937.929,
+   "next_compare_ps": 967.429,
+   "wanted_cmd_start_ps": 950.5,
+   "wanted_cmd_minus_next_compare_ps": -16.929,
+   "accepted_command_margin_before_next_compare_ps": 16.9286,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       29.0244,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       35.3557,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       40.3382,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8823,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 1,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 7.6786,
+   "raw_stable_rail_delay_ps": 36.3214,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.706,
+   "precompare_sense_lsb": -2.1515,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     1013.5,
+     1015.25
+    ],
+    [
+     "transition",
+     1015.5,
+     1023.75
+    ],
+    [
+     "Z",
+     1024.0,
+     1068.75
+    ]
+   ],
+   "release_ps": 1013.429,
+   "next_compare_ps": 1024.929,
+   "wanted_cmd_start_ps": 1024.0,
+   "wanted_cmd_minus_next_compare_ps": -0.929,
+   "accepted_command_margin_before_next_compare_ps": 0.9286,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       31.5143,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       40.4627,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8623,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 1,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.1786,
+   "raw_stable_rail_delay_ps": 36.8214,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.7539,
+   "precompare_sense_lsb": -2.4382,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     1071.0,
+     1073.0
+    ],
+    [
+     "transition",
+     1073.25,
+     1083.25
+    ],
+    [
+     "Z",
+     1083.5,
+     1123.25
+    ]
+   ],
+   "release_ps": 1070.929,
+   "next_compare_ps": 1075.429,
+   "wanted_cmd_start_ps": 1083.5,
+   "wanted_cmd_minus_next_compare_ps": 8.071,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       31.9326,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       38.4025,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       43.3973,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8696,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 1,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 8.9286,
+   "raw_stable_rail_delay_ps": 39.0714,
+   "decode_stable_rail_delay_ps": 47.8214,
+   "precompare_held_lsb": -2.5684,
+   "precompare_sense_lsb": -1.0805,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     1125.5,
+     1127.5
+    ],
+    [
+     "transition",
+     1127.75,
+     1136.25
+    ]
+   ],
+   "release_ps": 1125.429,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": null,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       33.8341,
+       "rise"
+      ],
+      [
+       74.4765,
+       "fall"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       40.403,
+       "fall"
+      ],
+      [
+       79.7684,
+       "rise"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       45.4071,
+       "rise"
+      ],
+      [
+       84.9232,
+       "fall"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8651,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 2,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 8.6071,
+   "raw_stable_rail_delay_ps": 26.3929,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 75.402,
+   "precompare_sense_lsb": 46.8043,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     1288.0,
+     1375.25
+    ]
+   ],
+   "release_ps": 1287.857,
+   "next_compare_ps": 1331.357,
+   "wanted_cmd_start_ps": 1288.0,
+   "wanted_cmd_minus_next_compare_ps": -43.357,
+   "accepted_command_margin_before_next_compare_ps": 43.3571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       22.425,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       28.4865,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       33.4456,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 2,
+   "bit": 5,
+   "decision": 1,
+   "sampled_margin_ps": 14.6071,
+   "raw_stable_rail_delay_ps": 29.3929,
+   "decode_stable_rail_delay_ps": 38.6429,
+   "precompare_held_lsb": 30.2969,
+   "precompare_sense_lsb": 17.949,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     1377.5,
+     1440.75
+    ]
+   ],
+   "release_ps": 1377.357,
+   "next_compare_ps": 1400.857,
+   "wanted_cmd_start_ps": 1377.5,
+   "wanted_cmd_minus_next_compare_ps": -23.357,
+   "accepted_command_margin_before_next_compare_ps": 23.3571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       25.0589,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       31.2234,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       36.1911,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8848,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 2,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 8.8571,
+   "raw_stable_rail_delay_ps": 31.1429,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 17.5868,
+   "precompare_sense_lsb": 13.6107,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     1443.0,
+     1507.25
+    ]
+   ],
+   "release_ps": 1442.857,
+   "next_compare_ps": 1467.357,
+   "wanted_cmd_start_ps": 1443.0,
+   "wanted_cmd_minus_next_compare_ps": -24.357,
+   "accepted_command_margin_before_next_compare_ps": 24.3571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       26.7354,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       32.9683,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       37.9421,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8963,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 2,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 6.1071,
+   "raw_stable_rail_delay_ps": 33.8929,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 7.3102,
+   "precompare_sense_lsb": 5.9808,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     1509.5,
+     1582.75
+    ]
+   ],
+   "release_ps": 1509.357,
+   "next_compare_ps": 1538.857,
+   "wanted_cmd_start_ps": 1509.5,
+   "wanted_cmd_minus_next_compare_ps": -29.357,
+   "accepted_command_margin_before_next_compare_ps": 29.3571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       29.3187,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       35.6633,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8822,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 2,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 7.6071,
+   "raw_stable_rail_delay_ps": 36.3929,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 3.7438,
+   "precompare_sense_lsb": 2.4399,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     1585.0,
+     1640.25
+    ]
+   ],
+   "release_ps": 1584.857,
+   "next_compare_ps": 1596.357,
+   "wanted_cmd_start_ps": 1585.0,
+   "wanted_cmd_minus_next_compare_ps": -11.357,
+   "accepted_command_margin_before_next_compare_ps": 11.3571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       31.5032,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       40.4508,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8594,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 2,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 7.3571,
+   "raw_stable_rail_delay_ps": 36.6429,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 4.0959,
+   "precompare_sense_lsb": 2.2744,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     1642.5,
+     1694.75
+    ]
+   ],
+   "release_ps": 1642.357,
+   "next_compare_ps": 1646.857,
+   "wanted_cmd_start_ps": 1642.5,
+   "wanted_cmd_minus_next_compare_ps": -4.357,
+   "accepted_command_margin_before_next_compare_ps": 4.3571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       31.7121,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       38.1702,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       43.1642,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8703,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 2,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 9.8571,
+   "raw_stable_rail_delay_ps": 38.1429,
+   "decode_stable_rail_delay_ps": 47.1429,
+   "precompare_held_lsb": 2.0957,
+   "precompare_sense_lsb": 0.8359,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     1697.0,
+     1703.5
+    ],
+    [
+     "transition",
+     1703.75,
+     1707.75
+    ]
+   ],
+   "release_ps": 1696.857,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": 1697.0,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       33.0971,
+       "rise"
+      ],
+      [
+       74.4766,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       39.6258,
+       "fall"
+      ],
+      [
+       79.7468,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       44.6266,
+       "rise"
+      ],
+      [
+       84.8798,
+       "fall"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8681,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 3,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 4.5357,
+   "raw_stable_rail_delay_ps": 30.4643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -20.1931,
+   "precompare_sense_lsb": -9.0267,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     1859.5,
+     1861.25
+    ],
+    [
+     "transition",
+     1861.5,
+     1871.75
+    ],
+    [
+     "Z",
+     1872.0,
+     1946.75
+    ]
+   ],
+   "release_ps": 1859.286,
+   "next_compare_ps": 1902.786,
+   "wanted_cmd_start_ps": 1872.0,
+   "wanted_cmd_minus_next_compare_ps": -30.786,
+   "accepted_command_margin_before_next_compare_ps": 30.7857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       26.0502,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       32.2564,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 3,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 6.7857,
+   "raw_stable_rail_delay_ps": 37.2143,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.3066,
+   "precompare_sense_lsb": -2.8123,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     1949.0,
+     1950.75
+    ],
+    [
+     "transition",
+     1951.0,
+     1961.25
+    ],
+    [
+     "Z",
+     1961.5,
+     2012.25
+    ]
+   ],
+   "release_ps": 1948.786,
+   "next_compare_ps": 1972.286,
+   "wanted_cmd_start_ps": 1961.5,
+   "wanted_cmd_minus_next_compare_ps": -10.786,
+   "accepted_command_margin_before_next_compare_ps": 10.7857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       32.2023,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       38.6872,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       43.6834,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8514,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 3,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 8.0357,
+   "raw_stable_rail_delay_ps": 31.9643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 13.6032,
+   "precompare_sense_lsb": 6.6198,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2014.5,
+     2078.75
+    ]
+   ],
+   "release_ps": 2014.286,
+   "next_compare_ps": 2038.786,
+   "wanted_cmd_start_ps": 2014.5,
+   "wanted_cmd_minus_next_compare_ps": -24.286,
+   "accepted_command_margin_before_next_compare_ps": 24.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       27.5827,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       33.8515,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       38.8282,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8632,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 3,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 6.0357,
+   "raw_stable_rail_delay_ps": 33.9643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 7.247,
+   "precompare_sense_lsb": 5.952,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2081.0,
+     2154.25
+    ]
+   ],
+   "release_ps": 2080.786,
+   "next_compare_ps": 2110.286,
+   "wanted_cmd_start_ps": 2081.0,
+   "wanted_cmd_minus_next_compare_ps": -29.286,
+   "accepted_command_margin_before_next_compare_ps": 29.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       29.3708,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       35.7178,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.877,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 3,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 7.5357,
+   "raw_stable_rail_delay_ps": 36.4643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 3.6567,
+   "precompare_sense_lsb": 2.3895,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2156.5,
+     2211.75
+    ]
+   ],
+   "release_ps": 2156.286,
+   "next_compare_ps": 2167.786,
+   "wanted_cmd_start_ps": 2156.5,
+   "wanted_cmd_minus_next_compare_ps": -11.286,
+   "accepted_command_margin_before_next_compare_ps": 11.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       31.6271,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       40.5817,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8594,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 3,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 7.2857,
+   "raw_stable_rail_delay_ps": 36.7143,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 4.0043,
+   "precompare_sense_lsb": 2.2169,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2214.0,
+     2266.25
+    ]
+   ],
+   "release_ps": 2213.786,
+   "next_compare_ps": 2218.286,
+   "wanted_cmd_start_ps": 2214.0,
+   "wanted_cmd_minus_next_compare_ps": -4.286,
+   "accepted_command_margin_before_next_compare_ps": 4.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       31.8434,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       38.3087,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       43.3029,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8696,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 3,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 9.5357,
+   "raw_stable_rail_delay_ps": 38.4643,
+   "decode_stable_rail_delay_ps": 47.2143,
+   "precompare_held_lsb": 2.0074,
+   "precompare_sense_lsb": 0.7748,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2268.5,
+     2274.75
+    ],
+    [
+     "transition",
+     2275.0,
+     2279.25
+    ]
+   ],
+   "release_ps": 2268.286,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": 2268.5,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       33.3096,
+       "rise"
+      ],
+      [
+       74.4752,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       39.8504,
+       "fall"
+      ],
+      [
+       79.7463,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       44.8517,
+       "rise"
+      ],
+      [
+       84.8796,
+       "fall"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8673,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 4,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 6.9643,
+   "raw_stable_rail_delay_ps": 28.0357,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 44.2305,
+   "precompare_sense_lsb": 28.8375,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2430.75,
+     2518.0
+    ]
+   ],
+   "release_ps": 2430.714,
+   "next_compare_ps": 2474.214,
+   "wanted_cmd_start_ps": 2430.75,
+   "wanted_cmd_minus_next_compare_ps": -43.464,
+   "accepted_command_margin_before_next_compare_ps": 43.4643,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       23.9839,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       30.1072,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       35.0715,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 4,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 1.2143,
+   "raw_stable_rail_delay_ps": 42.7857,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -0.7787,
+   "precompare_sense_lsb": -0.32,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     2520.25,
+     2522.25
+    ],
+    [
+     "transition",
+     2522.5,
+     2532.75
+    ],
+    [
+     "Z",
+     2533.0,
+     2583.5
+    ]
+   ],
+   "release_ps": 2520.214,
+   "next_compare_ps": 2543.714,
+   "wanted_cmd_start_ps": 2533.0,
+   "wanted_cmd_minus_next_compare_ps": -10.714,
+   "accepted_command_margin_before_next_compare_ps": 10.7143,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       37.1615,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       43.9356,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8739,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 4,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 7.9643,
+   "raw_stable_rail_delay_ps": 32.0357,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 13.3542,
+   "precompare_sense_lsb": 6.491,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2585.75,
+     2650.0
+    ]
+   ],
+   "release_ps": 2585.714,
+   "next_compare_ps": 2610.214,
+   "wanted_cmd_start_ps": 2585.75,
+   "wanted_cmd_minus_next_compare_ps": -24.464,
+   "accepted_command_margin_before_next_compare_ps": 24.4643,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       27.6302,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       33.901,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       38.8779,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.7174,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 4,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 5.9643,
+   "raw_stable_rail_delay_ps": 34.0357,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 6.9791,
+   "precompare_sense_lsb": 5.7923,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2652.25,
+     2725.5
+    ]
+   ],
+   "release_ps": 2652.214,
+   "next_compare_ps": 2681.714,
+   "wanted_cmd_start_ps": 2652.25,
+   "wanted_cmd_minus_next_compare_ps": -29.464,
+   "accepted_command_margin_before_next_compare_ps": 29.4643,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       29.4682,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       35.8197,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8756,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 4,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 7.2143,
+   "raw_stable_rail_delay_ps": 36.7857,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 3.3976,
+   "precompare_sense_lsb": 2.2364,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2727.75,
+     2731.25
+    ],
+    [
+     "transition",
+     2731.5,
+     2732.25
+    ],
+    [
+     "O",
+     2732.5,
+     2783.0
+    ]
+   ],
+   "release_ps": 2727.714,
+   "next_compare_ps": 2739.214,
+   "wanted_cmd_start_ps": 2732.5,
+   "wanted_cmd_minus_next_compare_ps": -6.714,
+   "accepted_command_margin_before_next_compare_ps": 6.7143,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       31.826,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       40.7905,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8562,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 4,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 6.9643,
+   "raw_stable_rail_delay_ps": 37.0357,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 3.746,
+   "precompare_sense_lsb": 2.0588,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2785.25,
+     2837.5
+    ]
+   ],
+   "release_ps": 2785.214,
+   "next_compare_ps": 2789.714,
+   "wanted_cmd_start_ps": 2785.25,
+   "wanted_cmd_minus_next_compare_ps": -4.464,
+   "accepted_command_margin_before_next_compare_ps": 4.4643,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       32.0609,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       38.5362,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       43.5319,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8661,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 4,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 9.2143,
+   "raw_stable_rail_delay_ps": 38.7857,
+   "decode_stable_rail_delay_ps": 47.7857,
+   "precompare_held_lsb": 1.749,
+   "precompare_sense_lsb": 0.604,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     2839.75,
+     2846.25
+    ],
+    [
+     "transition",
+     2846.5,
+     2850.5
+    ]
+   ],
+   "release_ps": 2839.714,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": 2839.75,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       33.6774,
+       "rise"
+      ],
+      [
+       74.4757,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       40.238,
+       "fall"
+      ],
+      [
+       79.7461,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       45.2413,
+       "rise"
+      ],
+      [
+       84.8794,
+       "fall"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8634,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 5,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 2.1429,
+   "raw_stable_rail_delay_ps": 32.8571,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 11.9258,
+   "precompare_sense_lsb": 9.8801,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     3002.25,
+     3004.0
+    ],
+    [
+     "transition",
+     3004.25,
+     3013.0
+    ],
+    [
+     "O",
+     3013.25,
+     3089.5
+    ]
+   ],
+   "release_ps": 3002.143,
+   "next_compare_ps": 3045.643,
+   "wanted_cmd_start_ps": 3013.25,
+   "wanted_cmd_minus_next_compare_ps": -32.393,
+   "accepted_command_margin_before_next_compare_ps": 32.3929,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       28.2485,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       34.5491,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 5,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.8929,
+   "raw_stable_rail_delay_ps": 29.1071,
+   "decode_stable_rail_delay_ps": 38.3571,
+   "precompare_held_lsb": -32.9296,
+   "precompare_sense_lsb": -19.235,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3091.75,
+     3093.5
+    ],
+    [
+     "transition",
+     3093.75,
+     3104.0
+    ],
+    [
+     "Z",
+     3104.25,
+     3155.0
+    ]
+   ],
+   "release_ps": 3091.643,
+   "next_compare_ps": 3115.143,
+   "wanted_cmd_start_ps": 3104.25,
+   "wanted_cmd_minus_next_compare_ps": -10.893,
+   "accepted_command_margin_before_next_compare_ps": 10.8929,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       24.8273,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       30.9828,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       35.9497,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.7995,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 5,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 9.1429,
+   "raw_stable_rail_delay_ps": 30.8571,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -18.7523,
+   "precompare_sense_lsb": -12.4177,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3157.25,
+     3159.0
+    ],
+    [
+     "transition",
+     3159.25,
+     3169.5
+    ],
+    [
+     "Z",
+     3169.75,
+     3221.5
+    ]
+   ],
+   "release_ps": 3157.143,
+   "next_compare_ps": 3181.643,
+   "wanted_cmd_start_ps": 3169.75,
+   "wanted_cmd_minus_next_compare_ps": -11.893,
+   "accepted_command_margin_before_next_compare_ps": 11.8929,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       26.5326,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       32.7574,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       37.7304,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8965,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 5,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.6429,
+   "raw_stable_rail_delay_ps": 33.3571,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -8.9877,
+   "precompare_sense_lsb": -5.698,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3223.75,
+     3225.5
+    ],
+    [
+     "transition",
+     3225.75,
+     3236.0
+    ],
+    [
+     "Z",
+     3236.25,
+     3297.0
+    ]
+   ],
+   "release_ps": 3223.643,
+   "next_compare_ps": 3253.143,
+   "wanted_cmd_start_ps": 3236.25,
+   "wanted_cmd_minus_next_compare_ps": -16.893,
+   "accepted_command_margin_before_next_compare_ps": 16.8929,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       28.7742,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       35.0945,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       40.0763,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8831,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 5,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 8.1429,
+   "raw_stable_rail_delay_ps": 35.8571,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -4.4391,
+   "precompare_sense_lsb": -2.5812,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3299.25,
+     3301.0
+    ],
+    [
+     "transition",
+     3301.25,
+     3309.5
+    ],
+    [
+     "Z",
+     3309.75,
+     3354.5
+    ]
+   ],
+   "release_ps": 3299.143,
+   "next_compare_ps": 3310.643,
+   "wanted_cmd_start_ps": 3309.75,
+   "wanted_cmd_minus_next_compare_ps": -0.893,
+   "accepted_command_margin_before_next_compare_ps": 0.8929,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       30.9852,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       39.9052,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8655,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 5,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.8929,
+   "raw_stable_rail_delay_ps": 36.1071,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -4.4831,
+   "precompare_sense_lsb": -2.8828,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3356.75,
+     3358.5
+    ],
+    [
+     "transition",
+     3358.75,
+     3369.0
+    ],
+    [
+     "Z",
+     3369.25,
+     3409.0
+    ]
+   ],
+   "release_ps": 3356.643,
+   "next_compare_ps": 3361.143,
+   "wanted_cmd_start_ps": 3369.25,
+   "wanted_cmd_minus_next_compare_ps": 8.107,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       31.3337,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       37.7731,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       42.7653,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8746,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 5,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 10.1429,
+   "raw_stable_rail_delay_ps": 37.8571,
+   "decode_stable_rail_delay_ps": 46.8571,
+   "precompare_held_lsb": -3.3025,
+   "precompare_sense_lsb": -1.5599,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3411.25,
+     3413.0
+    ],
+    [
+     "transition",
+     3413.25,
+     3422.0
+    ]
+   ],
+   "release_ps": 3411.143,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": null,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       32.7777,
+       "rise"
+      ],
+      [
+       74.4763,
+       "fall"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       39.2907,
+       "fall"
+      ],
+      [
+       79.7682,
+       "rise"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       44.2899,
+       "rise"
+      ],
+      [
+       84.9231,
+       "fall"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8714,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 6,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 2.8214,
+   "raw_stable_rail_delay_ps": 32.1786,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 13.794,
+   "precompare_sense_lsb": 10.9746,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     3573.75,
+     3575.75
+    ],
+    [
+     "transition",
+     3576.0,
+     3582.75
+    ],
+    [
+     "O",
+     3583.0,
+     3661.0
+    ]
+   ],
+   "release_ps": 3573.571,
+   "next_compare_ps": 3617.071,
+   "wanted_cmd_start_ps": 3583.0,
+   "wanted_cmd_minus_next_compare_ps": -34.071,
+   "accepted_command_margin_before_next_compare_ps": 34.0714,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       27.7413,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       34.0197,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 6,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.8214,
+   "raw_stable_rail_delay_ps": 29.1786,
+   "decode_stable_rail_delay_ps": 38.6786,
+   "precompare_held_lsb": -31.0712,
+   "precompare_sense_lsb": -18.1405,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3663.25,
+     3665.0
+    ],
+    [
+     "transition",
+     3665.25,
+     3675.5
+    ],
+    [
+     "Z",
+     3675.75,
+     3726.5
+    ]
+   ],
+   "release_ps": 3663.071,
+   "next_compare_ps": 3686.571,
+   "wanted_cmd_start_ps": 3675.75,
+   "wanted_cmd_minus_next_compare_ps": -10.821,
+   "accepted_command_margin_before_next_compare_ps": 10.8214,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       25.0016,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       31.1638,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       36.1318,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8158,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 6,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.8214,
+   "raw_stable_rail_delay_ps": 31.1786,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -16.9071,
+   "precompare_sense_lsb": -11.3338,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3728.75,
+     3730.5
+    ],
+    [
+     "transition",
+     3730.75,
+     3741.0
+    ],
+    [
+     "Z",
+     3741.25,
+     3793.0
+    ]
+   ],
+   "release_ps": 3728.571,
+   "next_compare_ps": 3753.071,
+   "wanted_cmd_start_ps": 3741.25,
+   "wanted_cmd_minus_next_compare_ps": -11.821,
+   "accepted_command_margin_before_next_compare_ps": 11.8214,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       26.8499,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       33.088,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       38.0621,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": -0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8963,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 6,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 5.8214,
+   "raw_stable_rail_delay_ps": 34.1786,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -7.1426,
+   "precompare_sense_lsb": -4.6122,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3795.25,
+     3797.0
+    ],
+    [
+     "transition",
+     3797.25,
+     3807.5
+    ],
+    [
+     "Z",
+     3807.75,
+     3868.5
+    ]
+   ],
+   "release_ps": 3795.071,
+   "next_compare_ps": 3824.571,
+   "wanted_cmd_start_ps": 3807.75,
+   "wanted_cmd_minus_next_compare_ps": -16.821,
+   "accepted_command_margin_before_next_compare_ps": 16.8214,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       29.4774,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       35.8296,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8816,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 6,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 6.3214,
+   "raw_stable_rail_delay_ps": 37.6786,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -2.5941,
+   "precompare_sense_lsb": -1.4946,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3870.75,
+     3872.25
+    ],
+    [
+     "transition",
+     3872.5,
+     3880.75
+    ],
+    [
+     "Z",
+     3881.0,
+     3926.0
+    ]
+   ],
+   "release_ps": 3870.571,
+   "next_compare_ps": 3882.071,
+   "wanted_cmd_start_ps": 3881.0,
+   "wanted_cmd_minus_next_compare_ps": -1.071,
+   "accepted_command_margin_before_next_compare_ps": 1.0714,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       32.6218,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       41.6319,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8576,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 6,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 5.5714,
+   "raw_stable_rail_delay_ps": 38.4286,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -2.6389,
+   "precompare_sense_lsb": -1.7538,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3928.25,
+     3930.0
+    ],
+    [
+     "transition",
+     3930.25,
+     3940.5
+    ],
+    [
+     "Z",
+     3940.75,
+     3980.5
+    ]
+   ],
+   "release_ps": 3928.071,
+   "next_compare_ps": 3932.571,
+   "wanted_cmd_start_ps": 3940.75,
+   "wanted_cmd_minus_next_compare_ps": 8.179,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       33.2481,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       39.7864,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8577,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 6,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 5.0714,
+   "raw_stable_rail_delay_ps": 42.9286,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -1.462,
+   "precompare_sense_lsb": -0.3108,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     3982.75,
+     3984.5
+    ],
+    [
+     "transition",
+     3984.75,
+     3993.5
+    ]
+   ],
+   "release_ps": 3982.571,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": null,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       37.1823,
+       "rise"
+      ],
+      [
+       74.4712,
+       "fall"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       43.9524,
+       "fall"
+      ],
+      [
+       79.7629,
+       "rise"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       48.9745,
+       "rise"
+      ],
+      [
+       84.9153,
+       "fall"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8485,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 7,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 6.0,
+   "raw_stable_rail_delay_ps": 29.0,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 34.0163,
+   "precompare_sense_lsb": 22.8369,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     4145.25,
+     4232.5
+    ]
+   ],
+   "release_ps": 4145.0,
+   "next_compare_ps": 4188.5,
+   "wanted_cmd_start_ps": 4145.25,
+   "wanted_cmd_minus_next_compare_ps": -43.25,
+   "accepted_command_margin_before_next_compare_ps": 43.25,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       24.7882,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       30.9435,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 7,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 11.25,
+   "raw_stable_rail_delay_ps": 32.75,
+   "decode_stable_rail_delay_ps": 42.0,
+   "precompare_held_lsb": -10.8656,
+   "precompare_sense_lsb": -6.2585,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     4234.75,
+     4236.5
+    ],
+    [
+     "transition",
+     4236.75,
+     4247.0
+    ],
+    [
+     "Z",
+     4247.25,
+     4298.0
+    ]
+   ],
+   "release_ps": 4234.5,
+   "next_compare_ps": 4258.0,
+   "wanted_cmd_start_ps": 4247.25,
+   "wanted_cmd_minus_next_compare_ps": -10.75,
+   "accepted_command_margin_before_next_compare_ps": 10.75,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       28.2572,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       34.5555,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       39.535,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8679,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 7,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 2.75,
+   "raw_stable_rail_delay_ps": 37.25,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 3.2694,
+   "precompare_sense_lsb": 0.5351,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     4300.25,
+     4302.25
+    ],
+    [
+     "transition",
+     4302.5,
+     4307.75
+    ],
+    [
+     "O",
+     4308.0,
+     4364.5
+    ]
+   ],
+   "release_ps": 4300.0,
+   "next_compare_ps": 4324.5,
+   "wanted_cmd_start_ps": 4308.0,
+   "wanted_cmd_minus_next_compare_ps": -16.5,
+   "accepted_command_margin_before_next_compare_ps": 16.5,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       32.1731,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       38.656,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8898,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 7,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 2.25,
+   "raw_stable_rail_delay_ps": 37.75,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.0781,
+   "precompare_sense_lsb": -0.1393,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     4366.5,
+     4368.5
+    ],
+    [
+     "transition",
+     4368.75,
+     4379.0
+    ],
+    [
+     "Z",
+     4379.25,
+     4440.0
+    ]
+   ],
+   "release_ps": 4366.5,
+   "next_compare_ps": 4396.0,
+   "wanted_cmd_start_ps": 4379.25,
+   "wanted_cmd_minus_next_compare_ps": -16.75,
+   "accepted_command_margin_before_next_compare_ps": 16.75,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       32.7435,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       39.2545,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8024,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 7,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 5.5,
+   "raw_stable_rail_delay_ps": 38.5,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 2.2041,
+   "precompare_sense_lsb": 1.333,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     4442.0,
+     4444.0
+    ],
+    [
+     "transition",
+     4444.25,
+     4452.75
+    ],
+    [
+     "O",
+     4453.0,
+     4497.5
+    ]
+   ],
+   "release_ps": 4442.0,
+   "next_compare_ps": 4453.5,
+   "wanted_cmd_start_ps": 4453.0,
+   "wanted_cmd_minus_next_compare_ps": -0.5,
+   "accepted_command_margin_before_next_compare_ps": 0.5,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       33.5015,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       42.5626,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.7834,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 7,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 3.25,
+   "raw_stable_rail_delay_ps": 40.75,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 1.6875,
+   "precompare_sense_lsb": 0.7892,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     4499.5,
+     4502.75
+    ],
+    [
+     "transition",
+     4503.0,
+     4504.5
+    ],
+    [
+     "O",
+     4504.75,
+     4551.75
+    ]
+   ],
+   "release_ps": 4499.5,
+   "next_compare_ps": 4504.0,
+   "wanted_cmd_start_ps": 4504.75,
+   "wanted_cmd_minus_next_compare_ps": 0.75,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       35.317,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       41.9718,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8414,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 7,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 3.0,
+   "raw_stable_rail_delay_ps": 45.0,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -0.2793,
+   "precompare_sense_lsb": -0.8925,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     4554.0,
+     4556.0
+    ],
+    [
+     "transition",
+     4556.25,
+     4564.75
+    ]
+   ],
+   "release_ps": 4554.0,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": null,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       39.1145,
+       "rise"
+      ],
+      [
+       74.4648,
+       "fall"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       46.0199,
+       "fall"
+      ],
+      [
+       79.7557,
+       "rise"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       51.6251,
+       "rise"
+      ],
+      [
+       84.9035,
+       "fall"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8027,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 8,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 2.1786,
+   "raw_stable_rail_delay_ps": 32.8214,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -9.3422,
+   "precompare_sense_lsb": -2.6439,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     4716.5,
+     4718.5
+    ],
+    [
+     "transition",
+     4718.75,
+     4729.0
+    ],
+    [
+     "Z",
+     4729.25,
+     4803.75
+    ]
+   ],
+   "release_ps": 4716.429,
+   "next_compare_ps": 4759.929,
+   "wanted_cmd_start_ps": 4729.25,
+   "wanted_cmd_minus_next_compare_ps": -30.679,
+   "accepted_command_margin_before_next_compare_ps": 30.6786,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       28.2218,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       34.5203,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 8,
+   "bit": 5,
+   "decision": 1,
+   "sampled_margin_ps": 9.9286,
+   "raw_stable_rail_delay_ps": 34.0714,
+   "decode_stable_rail_delay_ps": 43.0714,
+   "precompare_held_lsb": 7.5023,
+   "precompare_sense_lsb": 3.5514,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     4806.0,
+     4869.25
+    ]
+   ],
+   "release_ps": 4805.929,
+   "next_compare_ps": 4829.429,
+   "wanted_cmd_start_ps": 4806.0,
+   "wanted_cmd_minus_next_compare_ps": -23.429,
+   "accepted_command_margin_before_next_compare_ps": 23.4286,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       29.2967,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       35.6414,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       40.6247,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.7997,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 8,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 1.6786,
+   "raw_stable_rail_delay_ps": 38.3214,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -2.4024,
+   "precompare_sense_lsb": 1.8674,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     4871.5,
+     4873.5
+    ],
+    [
+     "transition",
+     4873.75,
+     4883.75
+    ],
+    [
+     "Z",
+     4884.0,
+     4935.75
+    ]
+   ],
+   "release_ps": 4871.429,
+   "next_compare_ps": 4895.929,
+   "wanted_cmd_start_ps": 4884.0,
+   "wanted_cmd_minus_next_compare_ps": -11.929,
+   "accepted_command_margin_before_next_compare_ps": 11.9286,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       33.1451,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       39.6791,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.885,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 8,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 2.9286,
+   "raw_stable_rail_delay_ps": 37.0714,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 3.4461,
+   "precompare_sense_lsb": 1.6296,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     4938.0,
+     4940.25
+    ],
+    [
+     "transition",
+     4940.5,
+     4945.75
+    ],
+    [
+     "O",
+     4946.0,
+     5011.25
+    ]
+   ],
+   "release_ps": 4937.929,
+   "next_compare_ps": 4967.429,
+   "wanted_cmd_start_ps": 4946.0,
+   "wanted_cmd_minus_next_compare_ps": -21.429,
+   "accepted_command_margin_before_next_compare_ps": 21.4286,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       32.1375,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       38.6179,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.762,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 8,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 1.9286,
+   "raw_stable_rail_delay_ps": 42.0714,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -0.8752,
+   "precompare_sense_lsb": -0.2758,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5013.5,
+     5015.25
+    ],
+    [
+     "transition",
+     5015.5,
+     5023.75
+    ],
+    [
+     "Z",
+     5024.0,
+     5068.75
+    ]
+   ],
+   "release_ps": 5013.429,
+   "next_compare_ps": 5024.929,
+   "wanted_cmd_start_ps": 5024.0,
+   "wanted_cmd_minus_next_compare_ps": -0.929,
+   "accepted_command_margin_before_next_compare_ps": 0.9286,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       36.6364,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.7992,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 8,
+   "bit": 1,
+   "decision": null,
+   "sampled_margin_ps": null,
+   "raw_stable_rail_delay_ps": null,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -0.1107,
+   "precompare_sense_lsb": -0.0617,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     5071.0,
+     5072.75
+    ],
+    [
+     "transition",
+     5073.0,
+     5087.5
+    ],
+    [
+     "O",
+     5087.75,
+     5123.25
+    ]
+   ],
+   "release_ps": 5070.929,
+   "next_compare_ps": 5075.429,
+   "wanted_cmd_start_ps": 5087.75,
+   "wanted_cmd_minus_next_compare_ps": 12.321,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       38.6138,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.7446,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 8,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 4.1786,
+   "raw_stable_rail_delay_ps": 43.8214,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 1.1062,
+   "precompare_sense_lsb": -0.2223,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     5125.5,
+     5131.5
+    ],
+    [
+     "transition",
+     5131.75,
+     5136.25
+    ]
+   ],
+   "release_ps": 5125.429,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": 5125.5,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       37.9851,
+       "rise"
+      ],
+      [
+       74.4701,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       44.8093,
+       "fall"
+      ],
+      [
+       79.7395,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       50.2721,
+       "rise"
+      ],
+      [
+       84.8693,
+       "fall"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.6238,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 9,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 7.6071,
+   "raw_stable_rail_delay_ps": 27.3929,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -51.6652,
+   "precompare_sense_lsb": -27.4397,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5288.0,
+     5289.75
+    ],
+    [
+     "transition",
+     5290.0,
+     5300.25
+    ],
+    [
+     "Z",
+     5300.5,
+     5375.25
+    ]
+   ],
+   "release_ps": 5287.857,
+   "next_compare_ps": 5331.357,
+   "wanted_cmd_start_ps": 5300.5,
+   "wanted_cmd_minus_next_compare_ps": -30.857,
+   "accepted_command_margin_before_next_compare_ps": 30.8571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       23.3701,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       29.4684,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       34.4306,
+       "rise"
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "conversion": 9,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 15.1071,
+   "raw_stable_rail_delay_ps": 28.8929,
+   "decode_stable_rail_delay_ps": 38.1429,
+   "precompare_held_lsb": -34.8383,
+   "precompare_sense_lsb": -21.3313,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5377.5,
+     5379.25
+    ],
+    [
+     "transition",
+     5379.5,
+     5389.75
+    ],
+    [
+     "Z",
+     5390.0,
+     5440.75
+    ]
+   ],
+   "release_ps": 5377.357,
+   "next_compare_ps": 5400.857,
+   "wanted_cmd_start_ps": 5390.0,
+   "wanted_cmd_minus_next_compare_ps": -10.857,
+   "accepted_command_margin_before_next_compare_ps": 10.8571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       24.6714,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       30.8203,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       35.7868,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8793,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 9,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.8571,
+   "raw_stable_rail_delay_ps": 31.1429,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -17.9286,
+   "precompare_sense_lsb": -11.9329,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5443.0,
+     5444.75
+    ],
+    [
+     "transition",
+     5445.0,
+     5455.25
+    ],
+    [
+     "Z",
+     5455.5,
+     5507.25
+    ]
+   ],
+   "release_ps": 5442.857,
+   "next_compare_ps": 5467.357,
+   "wanted_cmd_start_ps": 5455.5,
+   "wanted_cmd_minus_next_compare_ps": -11.857,
+   "accepted_command_margin_before_next_compare_ps": 11.8571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       26.6682,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       32.8978,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       37.8718,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8967,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 9,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.3571,
+   "raw_stable_rail_delay_ps": 33.6429,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -8.1558,
+   "precompare_sense_lsb": -5.2088,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5509.5,
+     5511.25
+    ],
+    [
+     "transition",
+     5511.5,
+     5521.75
+    ],
+    [
+     "Z",
+     5522.0,
+     5582.75
+    ]
+   ],
+   "release_ps": 5509.357,
+   "next_compare_ps": 5538.857,
+   "wanted_cmd_start_ps": 5522.0,
+   "wanted_cmd_minus_next_compare_ps": -16.857,
+   "accepted_command_margin_before_next_compare_ps": 16.8571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       29.0617,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       35.3946,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       40.3775,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8825,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 9,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 7.6071,
+   "raw_stable_rail_delay_ps": 36.3929,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.6051,
+   "precompare_sense_lsb": -2.0921,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5585.0,
+     5586.75
+    ],
+    [
+     "transition",
+     5587.0,
+     5595.25
+    ],
+    [
+     "Z",
+     5595.5,
+     5640.25
+    ]
+   ],
+   "release_ps": 5584.857,
+   "next_compare_ps": 5596.357,
+   "wanted_cmd_start_ps": 5595.5,
+   "wanted_cmd_minus_next_compare_ps": -0.857,
+   "accepted_command_margin_before_next_compare_ps": 0.8571,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       31.5976,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       40.5504,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8626,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 9,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.1071,
+   "raw_stable_rail_delay_ps": 36.8929,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.6529,
+   "precompare_sense_lsb": -2.3766,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5642.5,
+     5644.25
+    ],
+    [
+     "transition",
+     5644.5,
+     5654.75
+    ],
+    [
+     "Z",
+     5655.0,
+     5694.75
+    ]
+   ],
+   "release_ps": 5642.357,
+   "next_compare_ps": 5646.857,
+   "wanted_cmd_start_ps": 5655.0,
+   "wanted_cmd_minus_next_compare_ps": 8.143,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       32.0284,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       38.5032,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       43.4982,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8694,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 9,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 8.8571,
+   "raw_stable_rail_delay_ps": 39.1429,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -2.4678,
+   "precompare_sense_lsb": -1.0132,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     5697.0,
+     5698.75
+    ],
+    [
+     "transition",
+     5699.0,
+     5707.75
+    ]
+   ],
+   "release_ps": 5696.857,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": null,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       34.018,
+       "rise"
+      ],
+      [
+       74.4762,
+       "fall"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       40.5978,
+       "fall"
+      ],
+      [
+       79.7681,
+       "rise"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       45.6029,
+       "rise"
+      ],
+      [
+       84.9226,
+       "fall"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8647,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 10,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 8.5357,
+   "raw_stable_rail_delay_ps": 26.4643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 74.3917,
+   "precompare_sense_lsb": 46.2294,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     5859.5,
+     5946.75
+    ]
+   ],
+   "release_ps": 5859.286,
+   "next_compare_ps": 5902.786,
+   "wanted_cmd_start_ps": 5859.5,
+   "wanted_cmd_minus_next_compare_ps": -43.286,
+   "accepted_command_margin_before_next_compare_ps": 43.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       22.4631,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       28.5259,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       33.4852,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 10,
+   "bit": 5,
+   "decision": 1,
+   "sampled_margin_ps": 14.5357,
+   "raw_stable_rail_delay_ps": 29.4643,
+   "decode_stable_rail_delay_ps": 38.7143,
+   "precompare_held_lsb": 29.2896,
+   "precompare_sense_lsb": 17.3589,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     5949.0,
+     6012.25
+    ]
+   ],
+   "release_ps": 5948.786,
+   "next_compare_ps": 5972.286,
+   "wanted_cmd_start_ps": 5949.0,
+   "wanted_cmd_minus_next_compare_ps": -23.286,
+   "accepted_command_margin_before_next_compare_ps": 23.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       25.1598,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       31.3283,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       36.2963,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8849,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 10,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 8.7857,
+   "raw_stable_rail_delay_ps": 31.2143,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 16.5789,
+   "precompare_sense_lsb": 13.0199,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     6014.5,
+     6078.75
+    ]
+   ],
+   "release_ps": 6014.286,
+   "next_compare_ps": 6038.786,
+   "wanted_cmd_start_ps": 6014.5,
+   "wanted_cmd_minus_next_compare_ps": -24.286,
+   "accepted_command_margin_before_next_compare_ps": 24.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       26.9163,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       33.1565,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       38.131,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8962,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 10,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 5.5357,
+   "raw_stable_rail_delay_ps": 34.4643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 6.3027,
+   "precompare_sense_lsb": 5.3884,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     6081.0,
+     6154.25
+    ]
+   ],
+   "release_ps": 6080.786,
+   "next_compare_ps": 6110.286,
+   "wanted_cmd_start_ps": 6081.0,
+   "wanted_cmd_minus_next_compare_ps": -29.286,
+   "accepted_command_margin_before_next_compare_ps": 29.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       29.7567,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       36.1213,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8814,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 10,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 6.5357,
+   "raw_stable_rail_delay_ps": 37.4643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 2.737,
+   "precompare_sense_lsb": 1.8472,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     6156.5,
+     6158.5
+    ],
+    [
+     "transition",
+     6158.75,
+     6163.75
+    ],
+    [
+     "O",
+     6164.0,
+     6211.75
+    ]
+   ],
+   "release_ps": 6156.286,
+   "next_compare_ps": 6167.786,
+   "wanted_cmd_start_ps": 6164.0,
+   "wanted_cmd_minus_next_compare_ps": -3.786,
+   "accepted_command_margin_before_next_compare_ps": 3.7857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       32.4545,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       41.4539,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8541,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 10,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 6.2857,
+   "raw_stable_rail_delay_ps": 37.7143,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 3.0774,
+   "precompare_sense_lsb": 1.6446,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     6214.0,
+     6266.25
+    ]
+   ],
+   "release_ps": 6213.786,
+   "next_compare_ps": 6218.286,
+   "wanted_cmd_start_ps": 6214.0,
+   "wanted_cmd_minus_next_compare_ps": -4.286,
+   "accepted_command_margin_before_next_compare_ps": 4.2857,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       32.7611,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       39.273,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       44.2714,
+       "rise"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8603,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 10,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 7.5357,
+   "raw_stable_rail_delay_ps": 40.4643,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 1.0893,
+   "precompare_sense_lsb": 0.1541,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     6268.5,
+     6274.75
+    ],
+    [
+     "transition",
+     6275.0,
+     6279.25
+    ]
+   ],
+   "release_ps": 6268.286,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": 6268.5,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       35.0129,
+       "rise"
+      ],
+      [
+       74.4743,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       41.6486,
+       "fall"
+      ],
+      [
+       79.7453,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [
+      [
+       46.6585,
+       "rise"
+      ],
+      [
+       84.8781,
+       "fall"
+      ]
+     ],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8563,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 11,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 2.4643,
+   "raw_stable_rail_delay_ps": 32.5357,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": 13.1353,
+   "precompare_sense_lsb": 10.598,
+   "ref_wanted": "O",
+   "ref_runs_ps": [
+    [
+     "O",
+     6430.75,
+     6432.75
+    ],
+    [
+     "transition",
+     6433.0,
+     6440.25
+    ],
+    [
+     "O",
+     6440.5,
+     6518.0
+    ]
+   ],
+   "release_ps": 6430.714,
+   "next_compare_ps": 6474.214,
+   "wanted_cmd_start_ps": 6440.5,
+   "wanted_cmd_minus_next_compare_ps": -33.714,
+   "accepted_command_margin_before_next_compare_ps": 33.7143,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [
+      [
+       27.9095,
+       "rise"
+      ]
+     ],
+     "n": []
+    },
+    "mid": {
+     "p": [
+      [
+       34.1954,
+       "fall"
+      ]
+     ],
+     "n": []
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   }
+  },
+  {
+   "conversion": 11,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.7143,
+   "raw_stable_rail_delay_ps": 29.2857,
+   "decode_stable_rail_delay_ps": 38.5357,
+   "precompare_held_lsb": -31.7061,
+   "precompare_sense_lsb": -18.5148,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     6520.25,
+     6522.25
+    ],
+    [
+     "transition",
+     6522.5,
+     6532.75
+    ],
+    [
+     "Z",
+     6533.0,
+     6583.5
+    ]
+   ],
+   "release_ps": 6520.214,
+   "next_compare_ps": 6543.714,
+   "wanted_cmd_start_ps": 6533.0,
+   "wanted_cmd_minus_next_compare_ps": -10.714,
+   "accepted_command_margin_before_next_compare_ps": 10.7143,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       24.9399,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       31.0999,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       36.0674,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 6,
+    "new_trial_bit": 5,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 1,
+    "minimum_abs_prior_xy_diff_V": 0.8081,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 11,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.9643,
+   "raw_stable_rail_delay_ps": 31.0357,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -17.5381,
+   "precompare_sense_lsb": -11.7046,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     6585.75,
+     6587.75
+    ],
+    [
+     "transition",
+     6588.0,
+     6598.25
+    ],
+    [
+     "Z",
+     6598.5,
+     6650.0
+    ]
+   ],
+   "release_ps": 6585.714,
+   "next_compare_ps": 6610.214,
+   "wanted_cmd_start_ps": 6598.5,
+   "wanted_cmd_minus_next_compare_ps": -11.714,
+   "accepted_command_margin_before_next_compare_ps": 11.7143,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       26.7379,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       32.971,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       37.9449,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 5,
+    "new_trial_bit": 4,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8963,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 11,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.2143,
+   "raw_stable_rail_delay_ps": 33.7857,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -7.7734,
+   "precompare_sense_lsb": -4.9834,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     6652.25,
+     6654.25
+    ],
+    [
+     "transition",
+     6654.5,
+     6664.5
+    ],
+    [
+     "Z",
+     6664.75,
+     6725.5
+    ]
+   ],
+   "release_ps": 6652.214,
+   "next_compare_ps": 6681.714,
+   "wanted_cmd_start_ps": 6664.75,
+   "wanted_cmd_minus_next_compare_ps": -16.964,
+   "accepted_command_margin_before_next_compare_ps": 16.9643,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       29.2187,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       35.559,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 4,
+    "new_trial_bit": 3,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8817,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 11,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 7.2143,
+   "raw_stable_rail_delay_ps": 36.7857,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.225,
+   "precompare_sense_lsb": -1.8662,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     6727.75,
+     6729.5
+    ],
+    [
+     "transition",
+     6729.75,
+     6738.0
+    ],
+    [
+     "Z",
+     6738.25,
+     6783.0
+    ]
+   ],
+   "release_ps": 6727.714,
+   "next_compare_ps": 6739.214,
+   "wanted_cmd_start_ps": 6738.25,
+   "wanted_cmd_minus_next_compare_ps": -0.964,
+   "accepted_command_margin_before_next_compare_ps": 0.9643,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       31.9623,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       40.9356,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": []
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 3,
+    "new_trial_bit": 2,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8596,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 11,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 6.4643,
+   "raw_stable_rail_delay_ps": 37.5357,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -3.2697,
+   "precompare_sense_lsb": -2.1447,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     6785.25,
+     6787.25
+    ],
+    [
+     "transition",
+     6787.5,
+     6797.75
+    ],
+    [
+     "Z",
+     6798.0,
+     6837.5
+    ]
+   ],
+   "release_ps": 6785.214,
+   "next_compare_ps": 6789.714,
+   "wanted_cmd_start_ps": 6798.0,
+   "wanted_cmd_minus_next_compare_ps": 8.286,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       32.4532,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       38.9496,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       43.9467,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 2,
+    "new_trial_bit": 1,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8646,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  },
+  {
+   "conversion": 11,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 7.7143,
+   "raw_stable_rail_delay_ps": 40.2857,
+   "decode_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -2.0909,
+   "precompare_sense_lsb": -0.7544,
+   "ref_wanted": "Z",
+   "ref_runs_ps": [
+    [
+     "O",
+     6839.75,
+     6841.75
+    ],
+    [
+     "transition",
+     6842.0,
+     6850.5
+    ]
+   ],
+   "release_ps": 6839.714,
+   "next_compare_ps": null,
+   "wanted_cmd_start_ps": null,
+   "wanted_cmd_minus_next_compare_ps": null,
+   "accepted_command_margin_before_next_compare_ps": null,
+   "q_half_crossings_ps_from_compare": {
+    "raw": {
+     "p": [],
+     "n": [
+      [
+       34.9062,
+       "rise"
+      ]
+     ]
+    },
+    "mid": {
+     "p": [],
+     "n": [
+      [
+       41.5365,
+       "fall"
+      ]
+     ]
+    },
+    "decode": {
+     "p": [],
+     "n": [
+      [
+       46.5463,
+       "rise"
+      ]
+     ]
+    }
+   },
+   "prior_latch_overlap_brief": {
+    "previous_bit": 1,
+    "new_trial_bit": 0,
+    "edge_start_minus_previous_read_ps": 0.0,
+    "previous_release_minus_new_edge_start_ps": 2.0,
+    "previous_release_minus_new_midpoint_ps": 1.5,
+    "previous_fall_end_minus_new_rise_start_ps": 2.5,
+    "initial_internal_class": 0,
+    "minimum_abs_prior_xy_diff_V": 0.8585,
+    "prior_internal_unresolved_samples": 0,
+    "prior_internal_opposite_rail_samples": 0,
+    "limits": "72 within-conversion boundaries maximum; internal rail evidence is diagnostic, not proof of immunity to a later CDAC step"
+   }
+  }
+ ],
+ "full_summary": {
+  "sha256": "7b93590f85c18b85b1cca6dae343d5e550d7b582d3922ee01a3fdb57a1eea851",
+  "bytes": 3408873,
+  "location": "cluster run root and OneDrive results folder (not in repo)"
+ }
+}
