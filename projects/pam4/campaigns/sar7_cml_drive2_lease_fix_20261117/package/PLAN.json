@@ -1,0 +1,75 @@
+{
+  "authorization": {
+    "c2_temporary_throttle": {
+      "original": 5,
+      "restore": 5,
+      "temporary": 4
+    },
+    "cpus_this_job": 1,
+    "excluded": [
+      "new long campaigns",
+      "PVT",
+      "112GS/s integration",
+      "other C2 changes",
+      "other projects"
+    ],
+    "max_accepted_slurm_jobs": 1,
+    "max_concurrent_sar7_jobs": 1,
+    "max_solver_cases_this_packet": 1,
+    "no_expiry": true,
+    "schema": "pam4_sar7_authorization_v2",
+    "scope": "One short whole-SAR TT CML drive2 physical pilot; original ADC acceptance unchanged",
+    "source_note": "20261117T0755_user_delegates_sar7_papers_direction.md",
+    "source_note_sha256": "d9491abfb1429caf097c1c798d763d6529264fb3fa9cbbf2b82cd78b0d4183ea",
+    "starts_utc": "2026-11-17T13:55:00Z",
+    "user_quote": "SAR7如果一直修不好你叫codex看看相關論文 然後也可以換方向 由codex決定"
+  },
+  "cases": [
+    {
+      "active_cm_readout_ps": 552,
+      "automatic_followup": false,
+      "bias_V": 0.5,
+      "bridge_resistance_ohm": 125,
+      "case_id": "sar7_23_tt_175gs_cml_drive2",
+      "changed_pulse_rows": 0,
+      "changed_save_rows": 0,
+      "complete_cdf_copies_added": 4,
+      "diagnostic_readouts_ps": [
+        563,
+        554,
+        557
+      ],
+      "evals_ps": [
+        35,
+        44,
+        40,
+        40,
+        44,
+        44,
+        48
+      ],
+      "load_resistance_ohm": 250,
+      "max_solver_cases": 1,
+      "original_adc_gates_unchanged": true,
+      "parent_deck_sha256": "532f9e8f79e9d4c9f668080a76a74b63b9681a01115f16703bc79e12754f70ec",
+      "parent_job": "761700",
+      "parent_manifest_sha256": "40a490ab88adfb1bbc370e52f80ced9bfd7954f5be56e3adc93dfcb8f51d650b",
+      "physical_scale": 2,
+      "primary_readout_ps": 565,
+      "schedule_unchanged": true,
+      "sentinel_evidence_summary_sha256": "e5f8635a27f1e68a67f32499340ccf4cc3e43cb43c7242a1894235450bdb1d82",
+      "source_summary_sha256": "7b93590f85c18b85b1cca6dae343d5e550d7b582d3922ee01a3fdb57a1eea851",
+      "supply_V": 0.9,
+      "waits_ps": [
+        30,
+        45,
+        25,
+        26,
+        31,
+        13,
+        6
+      ]
+    }
+  ],
+  "schema": "pam4_sar7_cml_drive2_v1"
+}
