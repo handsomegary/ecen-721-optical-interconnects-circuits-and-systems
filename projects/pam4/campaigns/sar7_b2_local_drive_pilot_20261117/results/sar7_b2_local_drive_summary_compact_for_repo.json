@@ -1,0 +1,7515 @@
+{
+ "schema": "pam4_sar7_b2_local_drive_pilot_v1",
+ "case_id": "sar7_20_tt_175gs_b2_local_drive",
+ "stage": "physical_bit2_local_drive2_tt_12_centers",
+ "sampling_rate_gsps": 1.75,
+ "schedule_ps": {
+  "6": [
+   78.0,
+   108.0,
+   145.0,
+   147.0
+  ],
+  "5": [
+   145.5,
+   190.5,
+   234.5,
+   236.5
+  ],
+  "4": [
+   235.0,
+   260.0,
+   300.0,
+   302.0
+  ],
+  "3": [
+   300.5,
+   326.5,
+   366.5,
+   368.5
+  ],
+  "2": [
+   367.0,
+   398.0,
+   445.0,
+   447.0
+  ],
+  "1": [
+   445.5,
+   453.5,
+   497.5,
+   499.5
+  ],
+  "0": [
+   498.0,
+   504.0,
+   552.0,
+   554.0
+  ]
+ },
+ "primary_readout_ps": 565,
+ "clock_off_ps": 568,
+ "max_abs_sample_error_lsb": 1.668205959767164,
+ "max_observed_resolve_delay_s": 4.62500000002245e-11,
+ "job_id": "761688",
+ "solver_seconds": 324.08645319379866,
+ "raw_bytes": 118288828,
+ "codes": [
+  {
+   "expected": 64,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  },
+  {
+   "expected": 0,
+   "comparator": 0,
+   "registered_565": 0,
+   "registered_563": 0,
+   "registered_554": 1,
+   "registered_557": null
+  },
+  {
+   "expected": 127,
+   "comparator": 127,
+   "registered_565": 127,
+   "registered_563": 127,
+   "registered_554": 127,
+   "registered_557": 127
+  },
+  {
+   "expected": 31,
+   "comparator": 31,
+   "registered_565": 31,
+   "registered_563": 31,
+   "registered_554": 31,
+   "registered_557": 31
+  },
+  {
+   "expected": 96,
+   "comparator": 95,
+   "registered_565": 95,
+   "registered_563": 95,
+   "registered_554": 95,
+   "registered_557": 95
+  },
+  {
+   "expected": 63,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  },
+  {
+   "expected": 65,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  },
+  {
+   "expected": 85,
+   "comparator": 86,
+   "registered_565": 86,
+   "registered_563": 86,
+   "registered_554": 87,
+   "registered_557": null
+  },
+  {
+   "expected": 42,
+   "comparator": null,
+   "registered_565": 41,
+   "registered_563": 41,
+   "registered_554": 41,
+   "registered_557": 41
+  },
+  {
+   "expected": 1,
+   "comparator": 0,
+   "registered_565": 0,
+   "registered_563": 0,
+   "registered_554": 1,
+   "registered_557": null
+  },
+  {
+   "expected": 126,
+   "comparator": 127,
+   "registered_565": 127,
+   "registered_563": 127,
+   "registered_554": 127,
+   "registered_557": 127
+  },
+  {
+   "expected": 64,
+   "comparator": 64,
+   "registered_565": 64,
+   "registered_563": 64,
+   "registered_554": 65,
+   "registered_557": null
+  }
+ ],
+ "last_comparison_trigger_cm_change_mV": [
+  -4.232308699882337,
+  -3.663448828512328
+ ],
+ "last_comparison_read_cm_change_mV": [
+  -4.049132367702879,
+  -3.9908906189901616
+ ],
+ "active_last_read_cm_pass": true,
+ "overlap_diagnostic": {
+  "observed_within_conversion_boundaries": 72,
+  "expected_boundaries": 72,
+  "prior_read_internal_class_available": 71,
+  "prior_latch_unresolved_during_overlap_boundaries": 1,
+  "prior_latch_opposite_rail_boundaries": 0,
+  "minimum_prior_internal_abs_xy_diff_V": 0.4511978128374263,
+  "limits": "Diagnostic only; original84bit comparator-read and12code/CM gates are unchanged",
+  "polarity_assessed_boundaries": 71,
+  "polarity_unassessable_boundaries": 1,
+  "opposite_rail_scope": "Only initially classifiable boundaries; initial None is unassessable, never evidence of stable polarity"
+ },
+ "provenance": {
+  "manifest_sha256": "2887bf0705fb20245f65d8745abdd01624debb53b2aa8bdf7c7c5564adad84e1",
+  "portable_deck_sha256": "c587a30cf264dc2b815bd9f23b057ce15edeed9b59591edcfe2370a403f3bfbf",
+  "parent_manifest_sha256": "29234008ed5dcc04727ec9200c5a1e3b63c57fd8a589bec971b304eae319934d",
+  "parent_portable_deck_sha256": "13cb54f364340ce86656e3f1b7280f53fa69f11d996ae55ac65b5ee2b63f8d73",
+  "parent_reported_summary_sha256": "bb7c5418c967d1b7e76d31e93e6dea64115e7888660b521cca797292c35e1594",
+  "measurements_sha256": "5e90957dc9dfec995cf647e80f25347433ca4c776d041f007fdcbc2c34020161",
+  "tran_sha256": "48dfbe1ddf060fb8e02acd6f65865132423d91b72c81f0224ea43a4558383872",
+  "execution_files_sha256": {
+   "bench.scs": "6ddcc18d552ffa9ab34fa258f2e707693cc88f9bf2fe61b08b4c0a711e2f9073",
+   "case.json": "0e7d672936db29071600e77172ed32ba3becf5a8c8890e11b52244edd92b532b",
+   "run_status.json": "7ea7b368b9d248d5ba8c055ed96f6acd2a776a4ca0562ebfa89ea1a0afb6012d",
+   "execution_intent.json": "ef32292184c9a90e42e64b03ffb320b5a656aa38ee10732b5ebbdb24e3e6eaba",
+   "spectre.log": "c5d7f126addf04da70113abf3752d966312b52c21ce0b4f37c1bfb3f59969570",
+   ".study_owned": "5c2abd3e9492c3669ff57c3a537aceb58df979b0e2fbec0ac3625f3a7b950f72"
+  }
+ },
+ "authorization_sha256": "3b4931d56edd94ea2e7dc0448cd0e8f926b6634e1124cb783af1b5f10ab7d6cd",
+ "mechanism_limits": "Bit2-only decoder drive and qbuffer load may speed acceptedZ but delay qdecode and restore an O-bubble; no2x speed or pass guarantee",
+ "circuit_change": {
+  "bit": 2,
+  "scale": 2,
+  "instance_counts": {
+   "oai": 2,
+   "nor": 2,
+   "decoder_inv": 4,
+   "qbuffer_second": 2
+  },
+  "new_cells": [
+   "SAR_B2_OAI21_X4",
+   "SAR_B2_NOR3_P6",
+   "SAR_B2_INV4"
+  ],
+  "original_global_cells_unchanged": true,
+  "tg_unchanged": true,
+  "all14_first_qbuffer_inv1_unchanged": true
+ },
+ "readout_565": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 7,
+   "sum_abs_code_error": 7,
+   "max_abs_code_error": 1
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -9.173952898034132,
+   5.386075227498788
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "readout_563": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 7,
+   "sum_abs_code_error": 7,
+   "max_abs_code_error": 1
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -7.617420339749659,
+   4.6711601091629085
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.0,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "readout_554": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 8,
+   "sum_abs_code_error": 10,
+   "max_abs_code_error": 2
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -4.114576773348588,
+   -4.057720027353384
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "readout_557": {
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+   "available": 11,
+   "missing": 1,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 5,
+   "missing": 7,
+   "wrong": 3,
+   "sum_abs_code_error": 3,
+   "max_abs_code_error": 1
+  },
+  "unresolved_bits": 1,
+  "comparator_registered_agreement": false,
+  "final_dac_cm_change_mV": [
+   -3.9792541518879343,
+   -3.6807087501659064
+  ],
+  "physical_read_window_valid": true,
+  "active_last_read_cm_pass": true,
+  "read_window_evidence": [
+   {
+    "index": 0,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 1,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 2,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 3,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 4,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 5,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 6,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 7,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 8,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 9,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 10,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   },
+   {
+    "index": 11,
+    "reset_V": 0.0,
+    "track_V": 0.0,
+    "conv_V": 0.9,
+    "minimum_comparator_clock_V": 0.9,
+    "valid_read_window": true
+   }
+  ]
+ },
+ "selected_parser": {
+  "summary_psf_parse_count": 1,
+  "selected_required_count": 144,
+  "basic_measurement_parse": "Separate inherited measurement pass; not included in summary count"
+ },
+ "timing_compact": [
+  {
+   "conversion": 0,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 4.0000000000004,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 52.7499999999996,
+   "raw_stable_rail_delay_ps": 32.99999999999959,
+   "precompare_held_lsb": 12.375313092574487,
+   "precompare_sense_lsb": 9.961504585090637,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     147.25,
+     234.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.2500000000004,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      28.481,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      34.781,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      40.354,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.329,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.338,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 0,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.750000000000725,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.4999999999995,
+   "raw_stable_rail_delay_ps": 29.249999999999304,
+   "precompare_held_lsb": -32.41594339007165,
+   "precompare_sense_lsb": -18.92295081828948,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     236.75,
+     238.5
+    ],
+    [
+     "transition",
+     238.75,
+     249.0
+    ],
+    [
+     "Z",
+     249.25,
+     300.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.749999999999059,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      25.077,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      31.235,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      36.203,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.458,
+      "rise"
+     ],
+     [
+      56.39,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.462,
+      "fall"
+     ],
+     [
+      51.429,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.213,
+      "fall"
+     ],
+     [
+      50.484,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.065,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 0,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.749999999994877,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.750000000002508,
+   "raw_stable_rail_delay_ps": 31.25000000000514,
+   "precompare_held_lsb": -18.269145939958662,
+   "precompare_sense_lsb": -12.119165582051323,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     302.0,
+     304.0
+    ],
+    [
+     "transition",
+     304.25,
+     314.5
+    ],
+    [
+     "Z",
+     314.75,
+     366.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 11.74999999999249,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [],
+    "q4n": [
+     [
+      26.794,
+      "rise"
+     ]
+    ],
+    "qmid4p": [],
+    "qmid4n": [
+     [
+      33.023,
+      "fall"
+     ]
+    ],
+    "qdecode4p": [],
+    "qdecode4n": [
+     [
+      37.996,
+      "rise"
+     ]
+    ],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ],
+     [
+      52.37,
+      "fall"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.47,
+      "fall"
+     ],
+     [
+      47.419,
+      "rise"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ],
+     [
+      46.477,
+      "rise"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.077,
+      "rise"
+     ],
+     [
+      51.161,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 0,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.249999999987959,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 17.250000000007823,
+   "raw_stable_rail_delay_ps": 33.75000000001201,
+   "precompare_held_lsb": -8.504544830302763,
+   "precompare_sense_lsb": -5.408871665586759,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     368.5,
+     370.5
+    ],
+    [
+     "transition",
+     370.75,
+     381.0
+    ],
+    [
+     "Z",
+     381.25,
+     445.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.749999999985853,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [],
+    "q3n": [
+     [
+      29.095,
+      "rise"
+     ]
+    ],
+    "qmid3p": [],
+    "qmid3n": [
+     [
+      35.424,
+      "fall"
+     ]
+    ],
+    "qdecode3p": [],
+    "qdecode3n": [
+     [
+      40.406,
+      "rise"
+     ]
+    ],
+    "c3o": [
+     [
+      -13.48,
+      "rise"
+     ],
+     [
+      52.353,
+      "fall"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.48,
+      "fall"
+     ],
+     [
+      47.413,
+      "rise"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ],
+     [
+      46.471,
+      "rise"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.091,
+      "rise"
+     ],
+     [
+      51.152,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 0,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 10.749999999980602,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 26.25000000001534,
+   "raw_stable_rail_delay_ps": 36.25000000001944,
+   "precompare_held_lsb": -3.9560869492154893,
+   "precompare_sense_lsb": -2.2956140366532907,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     447.0,
+     448.75
+    ],
+    [
+     "transition",
+     449.0,
+     457.25
+    ],
+    [
+     "Z",
+     457.5,
+     497.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [],
+    "q2n": [
+     [
+      31.468,
+      "rise"
+     ]
+    ],
+    "qmid2p": [],
+    "qmid2n": [
+     [
+      40.407,
+      "fall"
+     ]
+    ],
+    "qdecode2p": [],
+    "qdecode2n": [
+     [
+      46.282,
+      "rise"
+     ]
+    ],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ],
+     [
+      57.699,
+      "fall"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.423,
+      "fall"
+     ],
+     [
+      53.781,
+      "rise"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.469,
+      "fall"
+     ],
+     [
+      52.975,
+      "rise"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.175,
+      "rise"
+     ],
+     [
+      56.752,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 0,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.7499999999800435,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 13.2500000000219,
+   "raw_stable_rail_delay_ps": 36.25000000001996,
+   "precompare_held_lsb": -4.671936741437719,
+   "precompare_sense_lsb": -2.5949020542940104,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     499.5,
+     501.5
+    ],
+    [
+     "transition",
+     501.75,
+     512.0
+    ],
+    [
+     "Z",
+     512.25,
+     551.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [],
+    "q1n": [
+     [
+      31.287,
+      "rise"
+     ]
+    ],
+    "qmid1p": [],
+    "qmid1n": [
+     [
+      37.719,
+      "fall"
+     ]
+    ],
+    "qdecode1p": [],
+    "qdecode1n": [
+     [
+      42.712,
+      "rise"
+     ]
+    ],
+    "c1o": [
+     [
+      4.532,
+      "rise"
+     ],
+     [
+      56.363,
+      "fall"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.528,
+      "fall"
+     ],
+     [
+      51.413,
+      "rise"
+     ]
+    ],
+    "c1z": [
+     [
+      1.775,
+      "fall"
+     ],
+     [
+      50.476,
+      "rise"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.919,
+      "rise"
+     ],
+     [
+      55.16,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 0,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 9.249999999985674,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 1.9025154088719637e-11,
+   "raw_stable_rail_delay_ps": 38.75000000001427,
+   "precompare_held_lsb": -2.8164411576283044,
+   "precompare_sense_lsb": -1.279881179153648,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     554.0,
+     556.0
+    ],
+    [
+     "transition",
+     556.25,
+     564.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [],
+    "q0n": [
+     [
+      33.53,
+      "rise"
+     ]
+    ],
+    "qmid0p": [],
+    "qmid0n": [
+     [
+      40.078,
+      "fall"
+     ]
+    ],
+    "qdecode0p": [],
+    "qdecode0n": [
+     [
+      45.08,
+      "rise"
+     ]
+    ],
+    "c0o": [
+     [
+      6.52,
+      "rise"
+     ],
+     [
+      59.193,
+      "fall"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.519,
+      "fall"
+     ],
+     [
+      55.036,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ],
+     [
+      54.391,
+      "rise"
+     ],
+     [
+      58.782,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.908,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 1,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 9.678571428574678,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 53.071428571425756,
+   "raw_stable_rail_delay_ps": 27.321428571425297,
+   "precompare_held_lsb": -51.87364964319627,
+   "precompare_sense_lsb": -27.60626889151311,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     718.5,
+     720.5
+    ],
+    [
+     "transition",
+     720.75,
+     731.0
+    ],
+    [
+     "Z",
+     731.25,
+     805.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 30.678571428577296,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [],
+    "q6n": [
+     [
+      23.359,
+      "rise"
+     ]
+    ],
+    "qmid6p": [],
+    "qmid6n": [
+     [
+      29.457,
+      "fall"
+     ]
+    ],
+    "qdecode6p": [],
+    "qdecode6n": [
+     [
+      34.419,
+      "rise"
+     ]
+    ],
+    "c6o": [
+     [
+      -17.327,
+      "rise"
+     ],
+     [
+      49.408,
+      "fall"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.336,
+      "fall"
+     ],
+     [
+      44.437,
+      "rise"
+     ]
+    ],
+    "c6z": [
+     [
+      43.492,
+      "rise"
+     ]
+    ],
+    "cb6z": [
+     [
+      48.181,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 1,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 15.178571428583707,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 58.32142857141806,
+   "raw_stable_rail_delay_ps": 28.821428571416348,
+   "precompare_held_lsb": -34.941221876893565,
+   "precompare_sense_lsb": -21.39252662012339,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     808.0,
+     810.0
+    ],
+    [
+     "transition",
+     810.25,
+     820.5
+    ],
+    [
+     "Z",
+     820.75,
+     871.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.678571428586876,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      24.663,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      30.811,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      35.778,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.451,
+      "rise"
+     ],
+     [
+      56.39,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.456,
+      "fall"
+     ],
+     [
+      51.429,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.211,
+      "fall"
+     ],
+     [
+      50.485,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.059,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 1,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.928571428591303,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 30.07142857141146,
+   "raw_stable_rail_delay_ps": 31.071428571408664,
+   "precompare_held_lsb": -18.0294946267621,
+   "precompare_sense_lsb": -11.992313480469221,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     873.5,
+     875.5
+    ],
+    [
+     "transition",
+     875.75,
+     885.75
+    ],
+    [
+     "Z",
+     886.0,
+     937.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 11.928571428593774,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [],
+    "q4n": [
+     [
+      26.651,
+      "rise"
+     ]
+    ],
+    "qmid4p": [],
+    "qmid4n": [
+     [
+      32.881,
+      "fall"
+     ]
+    ],
+    "qdecode4p": [],
+    "qdecode4n": [
+     [
+      37.854,
+      "rise"
+     ]
+    ],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ],
+     [
+      52.37,
+      "fall"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.47,
+      "fall"
+     ],
+     [
+      47.419,
+      "rise"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ],
+     [
+      46.478,
+      "rise"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.078,
+      "rise"
+     ],
+     [
+      51.161,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 1,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.4285714285986,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 17.32142857140579,
+   "raw_stable_rail_delay_ps": 33.57142857140147,
+   "precompare_held_lsb": -8.256678336777128,
+   "precompare_sense_lsb": -5.268276556866027,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     940.0,
+     942.0
+    ],
+    [
+     "transition",
+     942.25,
+     952.25
+    ],
+    [
+     "Z",
+     952.5,
+     1016.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.9285714285921,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [],
+    "q3n": [
+     [
+      29.025,
+      "rise"
+     ]
+    ],
+    "qmid3p": [],
+    "qmid3n": [
+     [
+      35.356,
+      "fall"
+     ]
+    ],
+    "qdecode3p": [],
+    "qdecode3n": [
+     [
+      40.339,
+      "rise"
+     ]
+    ],
+    "c3o": [
+     [
+      -13.48,
+      "rise"
+     ],
+     [
+      52.353,
+      "fall"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.48,
+      "fall"
+     ],
+     [
+      47.413,
+      "rise"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ],
+     [
+      46.472,
+      "rise"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.091,
+      "rise"
+     ],
+     [
+      51.152,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 1,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 10.678571428575502,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 26.32142857141165,
+   "raw_stable_rail_delay_ps": 36.32142857142465,
+   "precompare_held_lsb": -3.705990405957351,
+   "precompare_sense_lsb": -2.151504211033597,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     1018.5,
+     1020.25
+    ],
+    [
+     "transition",
+     1020.5,
+     1028.75
+    ],
+    [
+     "Z",
+     1029.0,
+     1068.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [],
+    "q2n": [
+     [
+      31.515,
+      "rise"
+     ]
+    ],
+    "qmid2p": [],
+    "qmid2n": [
+     [
+      40.463,
+      "fall"
+     ]
+    ],
+    "qdecode2p": [],
+    "qdecode2n": [
+     [
+      46.339,
+      "rise"
+     ]
+    ],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ],
+     [
+      57.699,
+      "fall"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.424,
+      "fall"
+     ],
+     [
+      53.781,
+      "rise"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.469,
+      "fall"
+     ],
+     [
+      52.976,
+      "rise"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.175,
+      "rise"
+     ],
+     [
+      56.752,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 1,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.678571428558452,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 13.321428571431447,
+   "raw_stable_rail_delay_ps": 36.3214285714416,
+   "precompare_held_lsb": -4.416870877543744,
+   "precompare_sense_lsb": -2.443970457060942,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     1071.0,
+     1073.0
+    ],
+    [
+     "transition",
+     1073.25,
+     1083.25
+    ],
+    [
+     "Z",
+     1083.5,
+     1123.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [],
+    "q1n": [
+     [
+      31.328,
+      "rise"
+     ]
+    ],
+    "qmid1p": [],
+    "qmid1n": [
+     [
+      37.767,
+      "fall"
+     ]
+    ],
+    "qdecode1p": [],
+    "qdecode1n": [
+     [
+      42.76,
+      "rise"
+     ]
+    ],
+    "c1o": [
+     [
+      4.532,
+      "rise"
+     ],
+     [
+      56.363,
+      "fall"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.528,
+      "fall"
+     ],
+     [
+      51.413,
+      "rise"
+     ]
+    ],
+    "c1z": [
+     [
+      1.775,
+      "fall"
+     ],
+     [
+      50.477,
+      "rise"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.919,
+      "rise"
+     ],
+     [
+      55.16,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 1,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 8.928571428542291,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 0.07142857144351214,
+   "raw_stable_rail_delay_ps": 39.071428571457545,
+   "precompare_held_lsb": -2.564138422158919,
+   "precompare_sense_lsb": -1.1271066619296732,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     1125.5,
+     1127.5
+    ],
+    [
+     "transition",
+     1127.75,
+     1136.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [],
+    "q0n": [
+     [
+      33.778,
+      "rise"
+     ]
+    ],
+    "qmid0p": [],
+    "qmid0n": [
+     [
+      40.344,
+      "fall"
+     ]
+    ],
+    "qdecode0p": [],
+    "qdecode0n": [
+     [
+      45.348,
+      "rise"
+     ]
+    ],
+    "c0o": [
+     [
+      6.52,
+      "rise"
+     ],
+     [
+      59.193,
+      "fall"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.519,
+      "fall"
+     ],
+     [
+      55.036,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ],
+     [
+      54.398,
+      "rise"
+     ],
+     [
+      58.782,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.908,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 2,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 10.607142857063954,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 53.14285714293513,
+   "raw_stable_rail_delay_ps": 26.392857142936023,
+   "precompare_held_lsb": 75.40199647240541,
+   "precompare_sense_lsb": 46.804332663623,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     1290.0,
+     1377.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.357142857059735,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      22.425,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      28.487,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      33.446,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.334,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.344,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 2,
+   "bit": 5,
+   "decision": 1,
+   "sampled_margin_ps": 14.607142857037884,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.642857142949104,
+   "raw_stable_rail_delay_ps": 29.39285714296217,
+   "precompare_held_lsb": 30.296871769754006,
+   "precompare_sense_lsb": 17.949067814580104,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     1379.5,
+     1442.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 23.35714285703271,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [
+     [
+      25.06,
+      "rise"
+     ]
+    ],
+    "q5n": [],
+    "qmid5p": [
+     [
+      31.225,
+      "fall"
+     ]
+    ],
+    "qmid5n": [],
+    "qdecode5p": [
+     [
+      36.192,
+      "rise"
+     ]
+    ],
+    "qdecode5n": [],
+    "c5o": [
+     [
+      -32.459,
+      "rise"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.462,
+      "fall"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.213,
+      "fall"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.066,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 2,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 8.857142857015855,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 34.64285714297722,
+   "raw_stable_rail_delay_ps": 31.142857142984216,
+   "precompare_held_lsb": 17.586778408102788,
+   "precompare_sense_lsb": 13.610599508228631,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     1445.0,
+     1509.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 24.357142857012956,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [
+     [
+      26.736,
+      "rise"
+     ]
+    ],
+    "q4n": [],
+    "qmid4p": [
+     [
+      32.969,
+      "fall"
+     ]
+    ],
+    "qmid4n": [],
+    "qdecode4p": [
+     [
+      37.943,
+      "rise"
+     ]
+    ],
+    "qdecode4n": [],
+    "c4o": [
+     [
+      -12.471,
+      "rise"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.472,
+      "fall"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.22,
+      "fall"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.08,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 2,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 6.107142856994745,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 22.8928571429943,
+   "raw_stable_rail_delay_ps": 33.892857143005116,
+   "precompare_held_lsb": 7.310165347663684,
+   "precompare_sense_lsb": 5.980760715663251,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     1511.5,
+     1587.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 29.357142856991743,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [
+     [
+      29.319,
+      "rise"
+     ]
+    ],
+    "q3n": [],
+    "qmid3p": [
+     [
+      35.664,
+      "fall"
+     ]
+    ],
+    "qmid3n": [],
+    "qdecode3p": [
+     [
+      40.648,
+      "rise"
+     ]
+    ],
+    "qdecode3n": [],
+    "c3o": [
+     [
+      -13.482,
+      "rise"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.481,
+      "fall"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.092,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 2,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 10.607142856971931,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 20.39285714301421,
+   "raw_stable_rail_delay_ps": 36.392857143028216,
+   "precompare_held_lsb": 3.7438433263304205,
+   "precompare_sense_lsb": 2.439894737139383,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     1590.0,
+     1640.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 6.357142856967732,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [
+     [
+      31.504,
+      "rise"
+     ]
+    ],
+    "q2n": [],
+    "qmid2p": [
+     [
+      40.451,
+      "fall"
+     ]
+    ],
+    "qmid2n": [],
+    "qdecode2p": [
+     [
+      46.327,
+      "rise"
+     ]
+    ],
+    "qdecode2n": [],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.423,
+      "fall"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.468,
+      "fall"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 2,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 7.60714285695488,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 18.89285714303712,
+   "raw_stable_rail_delay_ps": 36.39285714304518,
+   "precompare_held_lsb": 4.029851893543395,
+   "precompare_sense_lsb": 2.176368526262422,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     1642.5,
+     1694.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 4.357142856952022,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [
+     [
+      31.408,
+      "rise"
+     ]
+    ],
+    "q1n": [],
+    "qmid1p": [
+     [
+      37.85,
+      "fall"
+     ]
+    ],
+    "qmid1n": [],
+    "qdecode1p": [
+     [
+      42.843,
+      "rise"
+     ]
+    ],
+    "qdecode1n": [],
+    "c1o": [
+     [
+      4.528,
+      "rise"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.527,
+      "fall"
+     ]
+    ],
+    "c1z": [
+     [
+      1.778,
+      "fall"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.918,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 2,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 9.85714285693882,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 14.392857143052282,
+   "raw_stable_rail_delay_ps": 38.142857143061015,
+   "precompare_held_lsb": 2.0899330107486946,
+   "precompare_sense_lsb": 0.8525374274151432,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     1697.0,
+     1703.5
+    ],
+    [
+     "transition",
+     1703.75,
+     1707.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [
+     [
+      33.081,
+      "rise"
+     ]
+    ],
+    "q0n": [],
+    "qmid0p": [
+     [
+      39.609,
+      "fall"
+     ]
+    ],
+    "qmid0n": [],
+    "qdecode0p": [
+     [
+      44.61,
+      "rise"
+     ]
+    ],
+    "qdecode0n": [],
+    "c0o": [
+     [
+      6.517,
+      "rise"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.518,
+      "fall"
+     ],
+     [
+      60.795,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.773,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.907,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 3,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 6.5357142854591554,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 53.21428571453891,
+   "raw_stable_rail_delay_ps": 30.46428571454082,
+   "precompare_held_lsb": -20.19307454476234,
+   "precompare_sense_lsb": -9.026720395113017,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     1861.5,
+     1863.25
+    ],
+    [
+     "transition",
+     1863.5,
+     1873.75
+    ],
+    [
+     "Z",
+     1874.0,
+     1948.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 30.785714285461218,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [],
+    "q6n": [
+     [
+      26.05,
+      "rise"
+     ]
+    ],
+    "qmid6p": [],
+    "qmid6n": [
+     [
+      32.256,
+      "fall"
+     ]
+    ],
+    "qdecode6p": [],
+    "qdecode6n": [
+     [
+      37.228,
+      "rise"
+     ]
+    ],
+    "c6o": [
+     [
+      -17.328,
+      "rise"
+     ],
+     [
+      49.408,
+      "fall"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.337,
+      "fall"
+     ],
+     [
+      44.436,
+      "rise"
+     ]
+    ],
+    "c6z": [
+     [
+      43.492,
+      "rise"
+     ]
+    ],
+    "cb6z": [
+     [
+      48.181,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 3,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 6.785714285497282,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 58.21428571451604,
+   "raw_stable_rail_delay_ps": 37.214285714502566,
+   "precompare_held_lsb": -3.3087405092753386,
+   "precompare_sense_lsb": -2.814170972773269,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     1951.0,
+     1952.75
+    ],
+    [
+     "transition",
+     1953.0,
+     1963.25
+    ],
+    [
+     "Z",
+     1963.5,
+     2014.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.785714285508023,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      32.202,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      38.687,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      43.683,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.451,
+      "rise"
+     ],
+     [
+      56.391,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.456,
+      "fall"
+     ],
+     [
+      51.429,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.211,
+      "fall"
+     ],
+     [
+      50.485,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.059,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 3,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 8.035714285530547,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.96428571448359,
+   "raw_stable_rail_delay_ps": 31.964285714469728,
+   "precompare_held_lsb": 13.603161303236107,
+   "precompare_sense_lsb": 6.619893485210611,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2016.5,
+     2080.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 24.28571428553615,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [
+     [
+      27.583,
+      "rise"
+     ]
+    ],
+    "q4n": [],
+    "qmid4p": [
+     [
+      33.852,
+      "fall"
+     ]
+    ],
+    "qmid4n": [],
+    "qdecode4p": [
+     [
+      38.829,
+      "rise"
+     ]
+    ],
+    "qdecode4n": [],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.47,
+      "fall"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.078,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 3,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 6.035714285565915,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 22.964285714452906,
+   "raw_stable_rail_delay_ps": 33.96428571443395,
+   "precompare_held_lsb": 7.24705144367519,
+   "precompare_sense_lsb": 5.951942557808536,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2083.0,
+     2159.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 29.28571428557036,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [
+     [
+      29.372,
+      "rise"
+     ]
+    ],
+    "q3n": [],
+    "qmid3p": [
+     [
+      35.719,
+      "fall"
+     ]
+    ],
+    "qmid3n": [],
+    "qdecode3p": [
+     [
+      40.702,
+      "rise"
+     ]
+    ],
+    "qdecode3n": [],
+    "c3o": [
+     [
+      -13.482,
+      "rise"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.481,
+      "fall"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.092,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 3,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 10.535714285604104,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 20.46428571441988,
+   "raw_stable_rail_delay_ps": 36.464285714395835,
+   "precompare_held_lsb": 3.6566799427470187,
+   "precompare_sense_lsb": 2.389487822350418,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2161.5,
+     2211.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 6.28571428561128,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [
+     [
+      31.628,
+      "rise"
+     ]
+    ],
+    "q2n": [],
+    "qmid2p": [
+     [
+      40.582,
+      "fall"
+     ]
+    ],
+    "qmid2n": [],
+    "qdecode2p": [
+     [
+      46.458,
+      "rise"
+     ]
+    ],
+    "qdecode2n": [],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.423,
+      "fall"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.468,
+      "fall"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 3,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 7.535714285632963,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 18.964285714379717,
+   "raw_stable_rail_delay_ps": 36.46428571436689,
+   "precompare_held_lsb": 3.9380279432798204,
+   "precompare_sense_lsb": 2.1196944874193946,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2214.0,
+     2266.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 4.2857142856379635,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [
+     [
+      31.53,
+      "rise"
+     ]
+    ],
+    "q1n": [],
+    "qmid1p": [
+     [
+      37.979,
+      "fall"
+     ]
+    ],
+    "qmid1n": [],
+    "qdecode1p": [
+     [
+      42.972,
+      "rise"
+     ]
+    ],
+    "qdecode1n": [],
+    "c1o": [
+     [
+      4.528,
+      "rise"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.526,
+      "fall"
+     ]
+    ],
+    "c1z": [
+     [
+      1.778,
+      "fall"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.918,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 3,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 9.535714285660873,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 14.21428571435489,
+   "raw_stable_rail_delay_ps": 38.46428571433896,
+   "precompare_held_lsb": 2.0016693218489934,
+   "precompare_sense_lsb": 0.7924498506270083,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2268.5,
+     2274.75
+    ],
+    [
+     "transition",
+     2275.0,
+     2279.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [
+     [
+      33.291,
+      "rise"
+     ]
+    ],
+    "q0n": [],
+    "qmid0p": [
+     [
+      39.831,
+      "fall"
+     ]
+    ],
+    "qmid0n": [],
+    "qdecode0p": [
+     [
+      44.832,
+      "rise"
+     ]
+    ],
+    "qdecode0n": [],
+    "c0o": [
+     [
+      6.517,
+      "rise"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.518,
+      "fall"
+     ],
+     [
+      60.787,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.906,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 4,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 8.964285714317505,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 53.035714285684556,
+   "raw_stable_rail_delay_ps": 28.035714285682264,
+   "precompare_held_lsb": 44.23046187263154,
+   "precompare_sense_lsb": 28.837452036469813,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2432.75,
+     2520.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.46428571432395,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      23.984,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      30.107,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      35.072,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.335,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.344,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 4,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 1.2142857143686867,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.53571428566048,
+   "raw_stable_rail_delay_ps": 42.785714285631165,
+   "precompare_held_lsb": -0.7776703862323586,
+   "precompare_sense_lsb": -0.3189428273833528,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     2522.25,
+     2524.25
+    ],
+    [
+     "transition",
+     2524.5,
+     2534.75
+    ],
+    [
+     "Z",
+     2535.0,
+     2585.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.714285714376564,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      37.167,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      43.941,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      49.329,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.459,
+      "rise"
+     ],
+     [
+      56.391,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.463,
+      "fall"
+     ],
+     [
+      51.429,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.214,
+      "fall"
+     ],
+     [
+      50.485,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.067,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 4,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 7.964285714399502,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.78571428561518,
+   "raw_stable_rail_delay_ps": 32.03571428560036,
+   "precompare_held_lsb": 13.354130723364648,
+   "precompare_sense_lsb": 6.491103999328942,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2587.75,
+     2652.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 24.464285714404564,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [
+     [
+      27.631,
+      "rise"
+     ]
+    ],
+    "q4n": [],
+    "qmid4p": [
+     [
+      33.902,
+      "fall"
+     ]
+    ],
+    "qmid4n": [],
+    "qdecode4p": [
+     [
+      38.879,
+      "rise"
+     ]
+    ],
+    "qdecode4n": [],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.471,
+      "fall"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.078,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 4,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 5.964285714434457,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 22.785714285584497,
+   "raw_stable_rail_delay_ps": 34.035714285565405,
+   "precompare_held_lsb": 6.979101318180483,
+   "precompare_sense_lsb": 5.792233866474277,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2654.25,
+     2730.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 29.46428571443877,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [
+     [
+      29.469,
+      "rise"
+     ]
+    ],
+    "q3n": [],
+    "qmid3p": [
+     [
+      35.82,
+      "fall"
+     ]
+    ],
+    "qmid3n": [],
+    "qdecode3p": [
+     [
+      40.805,
+      "rise"
+     ]
+    ],
+    "qdecode3n": [],
+    "c3o": [
+     [
+      -13.482,
+      "rise"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.481,
+      "fall"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.092,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 4,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 10.214285714473604,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 20.53571428555134,
+   "raw_stable_rail_delay_ps": 36.78571428552634,
+   "precompare_held_lsb": 3.397559803660357,
+   "precompare_sense_lsb": 2.2363931402774995,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2732.75,
+     2783.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 6.464285714479692,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [
+     [
+      31.826,
+      "rise"
+     ]
+    ],
+    "q2n": [],
+    "qmid2p": [
+     [
+      40.791,
+      "fall"
+     ]
+    ],
+    "qmid2n": [],
+    "qdecode2p": [
+     [
+      46.667,
+      "rise"
+     ]
+    ],
+    "qdecode2n": [],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.424,
+      "fall"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.469,
+      "fall"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 4,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 7.214285714502463,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 19.035714285511173,
+   "raw_stable_rail_delay_ps": 36.785714285497384,
+   "precompare_held_lsb": 3.6813609633506417,
+   "precompare_sense_lsb": 1.960050588886162,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2785.25,
+     2837.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 4.464285714507616,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [
+     [
+      31.724,
+      "rise"
+     ]
+    ],
+    "q1n": [],
+    "qmid1p": [
+     [
+      38.183,
+      "fall"
+     ]
+    ],
+    "qmid1n": [],
+    "qdecode1p": [
+     [
+      43.177,
+      "rise"
+     ]
+    ],
+    "qdecode1n": [],
+    "c1o": [
+     [
+      4.528,
+      "rise"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.526,
+      "fall"
+     ]
+    ],
+    "c1z": [
+     [
+      1.778,
+      "fall"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.918,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 4,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 9.214285714529959,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 14.285714285486348,
+   "raw_stable_rail_delay_ps": 38.78571428547029,
+   "precompare_held_lsb": 1.7432419648442021,
+   "precompare_sense_lsb": 0.6242547157451384,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     2839.75,
+     2846.25
+    ],
+    [
+     "transition",
+     2846.5,
+     2850.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [
+     [
+      33.653,
+      "rise"
+     ]
+    ],
+    "q0n": [],
+    "qmid0p": [
+     [
+      40.212,
+      "fall"
+     ]
+    ],
+    "qmid0n": [],
+    "qdecode0p": [
+     [
+      45.215,
+      "rise"
+     ]
+    ],
+    "qdecode0n": [],
+    "c0o": [
+     [
+      6.518,
+      "rise"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.518,
+      "fall"
+     ],
+     [
+      60.77,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.906,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 5,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 4.142857143188931,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 52.60714285681586,
+   "raw_stable_rail_delay_ps": 32.85714285681084,
+   "precompare_held_lsb": 11.925784751844475,
+   "precompare_sense_lsb": 9.880150185187517,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     3004.25,
+     3091.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.39285714319332,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      28.249,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      34.549,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      40.142,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.328,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.337,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 5,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.892857143230072,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.35714285679083,
+   "raw_stable_rail_delay_ps": 29.107142856769777,
+   "precompare_held_lsb": -32.8968253278579,
+   "precompare_sense_lsb": -19.201737333173128,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3093.75,
+     3095.5
+    ],
+    [
+     "transition",
+     3095.75,
+     3106.0
+    ],
+    [
+     "Z",
+     3106.25,
+     3157.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.892857143246216,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      24.831,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      30.987,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      35.954,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.458,
+      "rise"
+     ],
+     [
+      56.39,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.462,
+      "fall"
+     ],
+     [
+      51.429,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.213,
+      "fall"
+     ],
+     [
+      50.485,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.066,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 5,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 9.142857143267394,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.85714285674581,
+   "raw_stable_rail_delay_ps": 30.85714285673288,
+   "precompare_held_lsb": -18.75251334419687,
+   "precompare_sense_lsb": -12.417638019957167,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3159.25,
+     3161.0
+    ],
+    [
+     "transition",
+     3161.25,
+     3171.5
+    ],
+    [
+     "Z",
+     3171.75,
+     3223.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 11.892857143280438,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [],
+    "q4n": [
+     [
+      26.533,
+      "rise"
+     ]
+    ],
+    "qmid4p": [],
+    "qmid4n": [
+     [
+      32.758,
+      "fall"
+     ]
+    ],
+    "qdecode4p": [],
+    "qdecode4n": [
+     [
+      37.731,
+      "rise"
+     ]
+    ],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ],
+     [
+      52.369,
+      "fall"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.47,
+      "fall"
+     ],
+     [
+      47.419,
+      "rise"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ],
+     [
+      46.478,
+      "rise"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.078,
+      "rise"
+     ],
+     [
+      51.161,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 5,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.642857143303022,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 17.357142856718816,
+   "raw_stable_rail_delay_ps": 33.35714285669684,
+   "precompare_held_lsb": -8.98768942169383,
+   "precompare_sense_lsb": -5.698016783878046,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3225.75,
+     3227.5
+    ],
+    [
+     "transition",
+     3227.75,
+     3238.0
+    ],
+    [
+     "Z",
+     3238.25,
+     3302.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.89285714331423,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [],
+    "q3n": [
+     [
+      28.775,
+      "rise"
+     ]
+    ],
+    "qmid3p": [],
+    "qmid3n": [
+     [
+      35.095,
+      "fall"
+     ]
+    ],
+    "qdecode3p": [],
+    "qdecode3n": [
+     [
+      40.077,
+      "rise"
+     ]
+    ],
+    "c3o": [
+     [
+      -13.48,
+      "rise"
+     ],
+     [
+      52.353,
+      "fall"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.48,
+      "fall"
+     ],
+     [
+      47.413,
+      "rise"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ],
+     [
+      46.472,
+      "rise"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.092,
+      "rise"
+     ],
+     [
+      51.152,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 5,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 11.14285714334204,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 26.357142856678564,
+   "raw_stable_rail_delay_ps": 35.8571428566579,
+   "precompare_held_lsb": -4.439140014526686,
+   "precompare_sense_lsb": -2.581216052550843,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3304.25,
+     3306.0
+    ],
+    [
+     "transition",
+     3306.25,
+     3314.5
+    ],
+    [
+     "Z",
+     3314.75,
+     3354.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [],
+    "q2n": [
+     [
+      30.986,
+      "rise"
+     ]
+    ],
+    "qmid2p": [],
+    "qmid2n": [
+     [
+      39.906,
+      "fall"
+     ]
+    ],
+    "qdecode2p": [],
+    "qdecode2n": [
+     [
+      45.781,
+      "rise"
+     ]
+    ],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ],
+     [
+      57.699,
+      "fall"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.424,
+      "fall"
+     ],
+     [
+      53.781,
+      "rise"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.468,
+      "fall"
+     ],
+     [
+      52.976,
+      "rise"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ],
+     [
+      56.752,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 5,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 8.392857143371181,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 13.107142856644513,
+   "raw_stable_rail_delay_ps": 35.60714285662867,
+   "precompare_held_lsb": -5.154671561723347,
+   "precompare_sense_lsb": -2.8943570981198263,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3356.75,
+     3358.5
+    ],
+    [
+     "transition",
+     3358.75,
+     3369.0
+    ],
+    [
+     "Z",
+     3369.25,
+     3409.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [],
+    "q1n": [
+     [
+      30.821,
+      "rise"
+     ]
+    ],
+    "qmid1p": [],
+    "qmid1n": [
+     [
+      37.236,
+      "fall"
+     ]
+    ],
+    "qdecode1p": [],
+    "qdecode1n": [
+     [
+      42.226,
+      "rise"
+     ]
+    ],
+    "c1o": [
+     [
+      4.532,
+      "rise"
+     ],
+     [
+      56.363,
+      "fall"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.528,
+      "fall"
+     ],
+     [
+      51.413,
+      "rise"
+     ]
+    ],
+    "c1z": [
+     [
+      1.775,
+      "fall"
+     ],
+     [
+      50.477,
+      "rise"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.919,
+      "rise"
+     ],
+     [
+      55.16,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 5,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 10.14285714339798,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 0.10714285662480906,
+   "raw_stable_rail_delay_ps": 37.857142856601854,
+   "precompare_held_lsb": -3.298560403590045,
+   "precompare_sense_lsb": -1.595973138203135,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3411.25,
+     3413.0
+    ],
+    [
+     "transition",
+     3413.25,
+     3422.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [],
+    "q0n": [
+     [
+      32.748,
+      "rise"
+     ]
+    ],
+    "qmid0p": [],
+    "qmid0n": [
+     [
+      39.259,
+      "fall"
+     ]
+    ],
+    "qdecode0p": [],
+    "qdecode0n": [
+     [
+      44.258,
+      "rise"
+     ]
+    ],
+    "c0o": [
+     [
+      6.52,
+      "rise"
+     ],
+     [
+      59.193,
+      "fall"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.52,
+      "fall"
+     ],
+     [
+      55.037,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ],
+     [
+      54.393,
+      "rise"
+     ],
+     [
+      58.783,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.908,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 6,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 4.821428572057083,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 52.67857142794774,
+   "raw_stable_rail_delay_ps": 32.178571427942686,
+   "precompare_held_lsb": 13.794039942926162,
+   "precompare_sense_lsb": 10.974564422248676,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     3575.75,
+     3663.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.32142857206145,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      27.741,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      34.02,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      39.595,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.327,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.337,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 6,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.82142857209944,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.428571427922705,
+   "raw_stable_rail_delay_ps": 29.17857142790041,
+   "precompare_held_lsb": -31.047904264224684,
+   "precompare_sense_lsb": -18.11678359962073,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3665.25,
+     3667.0
+    ],
+    [
+     "transition",
+     3667.25,
+     3677.5
+    ],
+    [
+     "Z",
+     3677.75,
+     3728.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.821428572114344,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      25.005,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      31.167,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      36.135,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.458,
+      "rise"
+     ],
+     [
+      56.39,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.462,
+      "fall"
+     ],
+     [
+      51.428,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.213,
+      "fall"
+     ],
+     [
+      50.485,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.066,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 6,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.821428572136478,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.92857142787768,
+   "raw_stable_rail_delay_ps": 31.178571427863798,
+   "precompare_held_lsb": -16.907303249826242,
+   "precompare_sense_lsb": -11.33373732241111,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3730.75,
+     3732.5
+    ],
+    [
+     "transition",
+     3732.75,
+     3743.0
+    ],
+    [
+     "Z",
+     3743.25,
+     3795.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 11.821428572118373,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [],
+    "q4n": [
+     [
+      26.851,
+      "rise"
+     ]
+    ],
+    "qmid4p": [],
+    "qmid4n": [
+     [
+      33.089,
+      "fall"
+     ]
+    ],
+    "qdecode4p": [],
+    "qdecode4n": [
+     [
+      38.063,
+      "rise"
+     ]
+    ],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ],
+     [
+      52.37,
+      "fall"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.47,
+      "fall"
+     ],
+     [
+      47.419,
+      "rise"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.22,
+      "fall"
+     ],
+     [
+      46.477,
+      "rise"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.077,
+      "rise"
+     ],
+     [
+      51.161,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 6,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 5.821428572066902,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 17.178571427884734,
+   "raw_stable_rail_delay_ps": 34.17857142793379,
+   "precompare_held_lsb": -7.142632614343114,
+   "precompare_sense_lsb": -4.612170313076405,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3797.25,
+     3799.0
+    ],
+    [
+     "transition",
+     3799.25,
+     3809.5
+    ],
+    [
+     "Z",
+     3809.75,
+     3873.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.82142857204298,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [],
+    "q3n": [
+     [
+      29.478,
+      "rise"
+     ]
+    ],
+    "qmid3p": [],
+    "qmid3n": [
+     [
+      35.83,
+      "fall"
+     ]
+    ],
+    "qdecode3p": [],
+    "qdecode3n": [
+     [
+      40.814,
+      "rise"
+     ]
+    ],
+    "c3o": [
+     [
+      -13.48,
+      "rise"
+     ],
+     [
+      52.353,
+      "fall"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.48,
+      "fall"
+     ],
+     [
+      47.412,
+      "rise"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ],
+     [
+      46.472,
+      "rise"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.091,
+      "rise"
+     ],
+     [
+      51.151,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 6,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 9.321428571981535,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 26.428571427970496,
+   "raw_stable_rail_delay_ps": 37.67857142801882,
+   "precompare_held_lsb": -2.5941477931758072,
+   "precompare_sense_lsb": -1.494627422729451,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3875.75,
+     3877.25
+    ],
+    [
+     "transition",
+     3877.5,
+     3885.75
+    ],
+    [
+     "Z",
+     3886.0,
+     3926.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [],
+    "q2n": [
+     [
+      32.622,
+      "rise"
+     ]
+    ],
+    "qmid2p": [],
+    "qmid2n": [
+     [
+      41.632,
+      "fall"
+     ]
+    ],
+    "qdecode2p": [],
+    "qdecode2n": [
+     [
+      47.509,
+      "rise"
+     ]
+    ],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ],
+     [
+      57.699,
+      "fall"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.423,
+      "fall"
+     ],
+     [
+      53.782,
+      "rise"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.468,
+      "fall"
+     ],
+     [
+      52.976,
+      "rise"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ],
+     [
+      56.752,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 6,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 6.571428571919688,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 13.178571428044805,
+   "raw_stable_rail_delay_ps": 37.42857142808057,
+   "precompare_held_lsb": -3.3108732940455354,
+   "precompare_sense_lsb": -1.7455545804726569,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3928.25,
+     3930.0
+    ],
+    [
+     "transition",
+     3930.25,
+     3940.5
+    ],
+    [
+     "Z",
+     3940.75,
+     3980.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [],
+    "q1n": [
+     [
+      32.379,
+      "rise"
+     ]
+    ],
+    "qmid1p": [],
+    "qmid1n": [
+     [
+      38.871,
+      "fall"
+     ]
+    ],
+    "qdecode1p": [],
+    "qdecode1n": [
+     [
+      43.868,
+      "rise"
+     ]
+    ],
+    "c1o": [
+     [
+      4.532,
+      "rise"
+     ],
+     [
+      56.363,
+      "fall"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.529,
+      "fall"
+     ],
+     [
+      51.413,
+      "rise"
+     ]
+    ],
+    "c1z": [
+     [
+      1.775,
+      "fall"
+     ],
+     [
+      50.476,
+      "rise"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.919,
+      "rise"
+     ],
+     [
+      55.16,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 6,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 5.571428571855687,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 0.1785714280896211,
+   "raw_stable_rail_delay_ps": 42.428571428144146,
+   "precompare_held_lsb": -1.4567938850156281,
+   "precompare_sense_lsb": -0.3884711746212588,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     3982.75,
+     3984.5
+    ],
+    [
+     "transition",
+     3984.75,
+     3993.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [],
+    "q0n": [
+     [
+      36.889,
+      "rise"
+     ]
+    ],
+    "qmid0p": [],
+    "qmid0n": [
+     [
+      43.641,
+      "fall"
+     ]
+    ],
+    "qdecode0p": [],
+    "qdecode0n": [
+     [
+      48.661,
+      "rise"
+     ]
+    ],
+    "c0o": [
+     [
+      6.52,
+      "rise"
+     ],
+     [
+      59.192,
+      "fall"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.52,
+      "fall"
+     ],
+     [
+      55.037,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.773,
+      "fall"
+     ],
+     [
+      54.388,
+      "rise"
+     ],
+     [
+      58.781,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.908,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 7,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 8.000000000243991,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 52.749999999748795,
+   "raw_stable_rail_delay_ps": 28.99999999975578,
+   "precompare_held_lsb": 34.01631239750273,
+   "precompare_sense_lsb": 22.836911436281895,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     4147.25,
+     4234.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.250000000232674,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      24.788,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      30.944,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      35.911,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.327,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.336,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 7,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 11.25000000014676,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.49999999980276,
+   "raw_stable_rail_delay_ps": 32.7499999998535,
+   "precompare_held_lsb": -10.863460907320928,
+   "precompare_sense_lsb": -6.256309069439823,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     4236.75,
+     4238.5
+    ],
+    [
+     "transition",
+     4238.75,
+     4249.0
+    ],
+    [
+     "Z",
+     4249.25,
+     4300.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.750000000117241,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      28.259,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      34.557,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      39.537,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.459,
+      "rise"
+     ],
+     [
+      56.39,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.463,
+      "fall"
+     ],
+     [
+      51.428,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.213,
+      "fall"
+     ],
+     [
+      50.484,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.067,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 7,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 2.750000000062675,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.999999999900844,
+   "raw_stable_rail_delay_ps": 37.24999999993719,
+   "precompare_held_lsb": 3.2692230124528976,
+   "precompare_sense_lsb": 0.5350380810300237,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     4302.25,
+     4304.25
+    ],
+    [
+     "transition",
+     4304.5,
+     4309.75
+    ],
+    [
+     "O",
+     4310.0,
+     4366.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.50000000004766,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [
+     [
+      32.174,
+      "rise"
+     ]
+    ],
+    "q4n": [],
+    "qmid4p": [
+     [
+      38.657,
+      "fall"
+     ]
+    ],
+    "qmid4n": [],
+    "qdecode4p": [
+     [
+      44.153,
+      "rise"
+     ]
+    ],
+    "qdecode4n": [],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.471,
+      "fall"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.078,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 7,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 2.249999999986835,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 22.99999999996818,
+   "raw_stable_rail_delay_ps": 37.750000000013856,
+   "precompare_held_lsb": -3.0780808265836868,
+   "precompare_sense_lsb": -0.13933631210122144,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     4368.5,
+     4370.5
+    ],
+    [
+     "transition",
+     4370.75,
+     4381.0
+    ],
+    [
+     "Z",
+     4381.25,
+     4445.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.74999999996688,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [],
+    "q3n": [
+     [
+      32.744,
+      "rise"
+     ]
+    ],
+    "qmid3p": [],
+    "qmid3n": [
+     [
+      39.255,
+      "fall"
+     ]
+    ],
+    "qdecode3p": [],
+    "qdecode3n": [
+     [
+      44.691,
+      "rise"
+     ]
+    ],
+    "c3o": [
+     [
+      -13.481,
+      "rise"
+     ],
+     [
+      52.353,
+      "fall"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.482,
+      "fall"
+     ],
+     [
+      47.413,
+      "rise"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ],
+     [
+      46.471,
+      "rise"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.092,
+      "rise"
+     ],
+     [
+      51.151,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 7,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 8.499999999904587,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 25.75000000004574,
+   "raw_stable_rail_delay_ps": 38.50000000009577,
+   "precompare_held_lsb": 2.20404621070756,
+   "precompare_sense_lsb": 1.33297418468743,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     4447.0,
+     4497.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 6.499999999891565,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [
+     [
+      33.502,
+      "rise"
+     ]
+    ],
+    "q2n": [],
+    "qmid2p": [
+     [
+      42.563,
+      "fall"
+     ]
+    ],
+    "qmid2n": [],
+    "qdecode2p": [
+     [
+      48.44,
+      "rise"
+     ]
+    ],
+    "qdecode2n": [],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.423,
+      "fall"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.469,
+      "fall"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 7,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 4.2499999998402105,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 19.000000000126597,
+   "raw_stable_rail_delay_ps": 39.75000000016005,
+   "precompare_held_lsb": 1.6592211513940924,
+   "precompare_sense_lsb": 0.6969144851431963,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     4499.5,
+     4551.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 4.499999999833049,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [
+     [
+      34.436,
+      "rise"
+     ]
+    ],
+    "q1n": [],
+    "qmid1p": [
+     [
+      41.04,
+      "fall"
+     ]
+    ],
+    "qmid1n": [],
+    "qdecode1p": [
+     [
+      46.666,
+      "rise"
+     ]
+    ],
+    "qdecode1n": [],
+    "c1o": [
+     [
+      4.528,
+      "rise"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.526,
+      "fall"
+     ]
+    ],
+    "c1z": [
+     [
+      1.778,
+      "fall"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.918,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 7,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 1.7499999997753368,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 14.750000000182162,
+   "raw_stable_rail_delay_ps": 46.250000000224496,
+   "precompare_held_lsb": -0.2759125238890192,
+   "precompare_sense_lsb": -0.8113441269196642,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     4554.0,
+     4556.0
+    ],
+    [
+     "transition",
+     4556.25,
+     4564.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [],
+    "q0n": [
+     [
+      40.129,
+      "rise"
+     ]
+    ],
+    "qmid0p": [],
+    "qmid0n": [
+     [
+      47.112,
+      "fall"
+     ]
+    ],
+    "qdecode0p": [],
+    "qdecode0n": [
+     [
+      52.606,
+      "rise"
+     ]
+    ],
+    "c0o": [
+     [
+      6.518,
+      "rise"
+     ],
+     [
+      59.195,
+      "fall"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.518,
+      "fall"
+     ],
+     [
+      55.036,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ],
+     [
+      54.391,
+      "rise"
+     ],
+     [
+      58.791,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.906,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 8,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 4.178571428162813,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 53.32142857182711,
+   "raw_stable_rail_delay_ps": 32.821428571836954,
+   "precompare_held_lsb": -9.342185905456972,
+   "precompare_sense_lsb": -2.6439079090494033,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     4718.5,
+     4720.5
+    ],
+    [
+     "transition",
+     4720.75,
+     4731.0
+    ],
+    [
+     "Z",
+     4731.25,
+     4805.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 30.678571428141577,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [],
+    "q6n": [
+     [
+      28.222,
+      "rise"
+     ]
+    ],
+    "qmid6p": [],
+    "qmid6n": [
+     [
+      34.52,
+      "fall"
+     ]
+    ],
+    "qdecode6p": [],
+    "qdecode6n": [
+     [
+      40.115,
+      "rise"
+     ]
+    ],
+    "c6o": [
+     [
+      -17.327,
+      "rise"
+     ],
+     [
+      49.408,
+      "fall"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.337,
+      "fall"
+     ],
+     [
+      44.437,
+      "rise"
+     ]
+    ],
+    "c6z": [
+     [
+      43.492,
+      "rise"
+     ]
+    ],
+    "cb6z": [
+     [
+      48.181,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 8,
+   "bit": 5,
+   "decision": 1,
+   "sampled_margin_ps": 9.928571428068418,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 58.32142857190806,
+   "raw_stable_rail_delay_ps": 34.07142857193185,
+   "precompare_held_lsb": 7.500202296222227,
+   "precompare_sense_lsb": 3.549625450783225,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     4808.0,
+     4871.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 23.428571428054774,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [
+     [
+      29.299,
+      "rise"
+     ]
+    ],
+    "q5n": [],
+    "qmid5p": [
+     [
+      35.643,
+      "fall"
+     ]
+    ],
+    "qmid5n": [],
+    "qdecode5p": [
+     [
+      40.627,
+      "rise"
+     ]
+    ],
+    "qdecode5n": [],
+    "c5o": [
+     [
+      -32.451,
+      "rise"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.456,
+      "fall"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.211,
+      "fall"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.059,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 8,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 1.6785714279846158,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 34.57142857198287,
+   "raw_stable_rail_delay_ps": 38.32142857201525,
+   "precompare_held_lsb": -2.4024480245128643,
+   "precompare_sense_lsb": 1.8672461274658758,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     4873.5,
+     4875.5
+    ],
+    [
+     "transition",
+     4875.75,
+     4885.75
+    ],
+    [
+     "Z",
+     4886.0,
+     4937.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 11.928571427965633,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [],
+    "q4n": [
+     [
+      33.145,
+      "rise"
+     ]
+    ],
+    "qmid4p": [],
+    "qmid4n": [
+     [
+      39.679,
+      "fall"
+     ]
+    ],
+    "qdecode4p": [],
+    "qdecode4n": [
+     [
+      45.071,
+      "rise"
+     ]
+    ],
+    "c4o": [
+     [
+      -12.471,
+      "rise"
+     ],
+     [
+      52.37,
+      "fall"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.473,
+      "fall"
+     ],
+     [
+      47.419,
+      "rise"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ],
+     [
+      46.478,
+      "rise"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.081,
+      "rise"
+     ],
+     [
+      51.161,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 8,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 2.9285714279107595,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 17.321428572037757,
+   "raw_stable_rail_delay_ps": 37.07142857208993,
+   "precompare_held_lsb": 3.446058707722557,
+   "precompare_sense_lsb": 1.6296275306308416,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     4940.0,
+     4942.25
+    ],
+    [
+     "transition",
+     4942.5,
+     4947.75
+    ],
+    [
+     "O",
+     4948.0,
+     5016.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 21.428571427895342,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [
+     [
+      32.138,
+      "rise"
+     ]
+    ],
+    "q3n": [],
+    "qmid3p": [
+     [
+      38.618,
+      "fall"
+     ]
+    ],
+    "qmid3n": [],
+    "qdecode3p": [
+     [
+      44.119,
+      "rise"
+     ]
+    ],
+    "qdecode3n": [],
+    "c3o": [
+     [
+      -13.48,
+      "rise"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.48,
+      "fall"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.091,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 8,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 4.928571427823692,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 20.821428572116172,
+   "raw_stable_rail_delay_ps": 42.071428572176664,
+   "precompare_held_lsb": -0.8752168841563446,
+   "precompare_sense_lsb": -0.27583715593266334,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5018.5,
+     5020.25
+    ],
+    [
+     "transition",
+     5020.5,
+     5028.75
+    ],
+    [
+     "Z",
+     5029.0,
+     5068.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [],
+    "q2n": [
+     [
+      36.637,
+      "rise"
+     ]
+    ],
+    "qmid2p": [],
+    "qmid2n": [
+     [
+      45.903,
+      "fall"
+     ]
+    ],
+    "qdecode2p": [],
+    "qdecode2n": [
+     [
+      52.206,
+      "rise"
+     ]
+    ],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ],
+     [
+      57.699,
+      "fall"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.424,
+      "fall"
+     ],
+     [
+      53.781,
+      "rise"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.469,
+      "fall"
+     ],
+     [
+      52.976,
+      "rise"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ],
+     [
+      56.752,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 8,
+   "bit": 1,
+   "decision": null,
+   "sampled_margin_ps": null,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 13.32142857219783,
+   "raw_stable_rail_delay_ps": null,
+   "precompare_held_lsb": -0.783123376371293,
+   "precompare_sense_lsb": 0.015112759705147027,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5071.0,
+     5073.0
+    ],
+    [
+     "transition",
+     5073.25,
+     5083.25
+    ],
+    [
+     "Z",
+     5083.5,
+     5123.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [],
+    "q1n": [
+     [
+      40.574,
+      "rise"
+     ]
+    ],
+    "qmid1p": [],
+    "qmid1n": [
+     [
+      47.464,
+      "fall"
+     ]
+    ],
+    "qdecode1p": [],
+    "qdecode1n": [
+     [
+      52.66,
+      "rise"
+     ]
+    ],
+    "c1o": [
+     [
+      4.532,
+      "rise"
+     ],
+     [
+      56.363,
+      "fall"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.528,
+      "fall"
+     ],
+     [
+      51.413,
+      "rise"
+     ]
+    ],
+    "c1z": [
+     [
+      1.775,
+      "fall"
+     ],
+     [
+      50.476,
+      "rise"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.919,
+      "rise"
+     ],
+     [
+      55.16,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 8,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 10.428571427708333,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 8.821428572252284,
+   "raw_stable_rail_delay_ps": 37.5714285722915,
+   "precompare_held_lsb": 1.0716255903687966,
+   "precompare_sense_lsb": 1.2901893422699118,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     5125.5,
+     5132.0
+    ],
+    [
+     "transition",
+     5132.25,
+     5136.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [
+     [
+      32.545,
+      "rise"
+     ]
+    ],
+    "q0n": [],
+    "qmid0p": [
+     [
+      39.044,
+      "fall"
+     ]
+    ],
+    "qmid0n": [],
+    "qdecode0p": [
+     [
+      44.042,
+      "rise"
+     ]
+    ],
+    "qdecode0n": [],
+    "c0o": [
+     [
+      6.52,
+      "rise"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.519,
+      "fall"
+     ],
+     [
+      60.818,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.908,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 9,
+   "bit": 6,
+   "decision": 0,
+   "sampled_margin_ps": 9.607142856092123,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 53.14285714390293,
+   "raw_stable_rail_delay_ps": 27.392857143907644,
+   "precompare_held_lsb": -51.657684980691556,
+   "precompare_sense_lsb": -27.436021741338834,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5290.0,
+     5291.75
+    ],
+    [
+     "transition",
+     5292.0,
+     5302.25
+    ],
+    [
+     "Z",
+     5302.5,
+     5377.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 30.857142856064936,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [],
+    "q6n": [
+     [
+      23.371,
+      "rise"
+     ]
+    ],
+    "qmid6p": [],
+    "qmid6n": [
+     [
+      29.469,
+      "fall"
+     ]
+    ],
+    "qdecode6p": [],
+    "qdecode6n": [
+     [
+      34.431,
+      "rise"
+     ]
+    ],
+    "c6o": [
+     [
+      -17.335,
+      "rise"
+     ],
+     [
+      49.408,
+      "fall"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.344,
+      "fall"
+     ],
+     [
+      44.436,
+      "rise"
+     ]
+    ],
+    "c6z": [
+     [
+      43.492,
+      "rise"
+     ]
+    ],
+    "cb6z": [
+     [
+      48.181,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 9,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 15.107142855997445,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 58.14285714398553,
+   "raw_stable_rail_delay_ps": 28.892857144002818,
+   "precompare_held_lsb": -34.832341394642725,
+   "precompare_sense_lsb": -21.32833821443853,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5379.5,
+     5381.25
+    ],
+    [
+     "transition",
+     5381.5,
+     5391.75
+    ],
+    [
+     "Z",
+     5392.0,
+     5442.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.857142855963675,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      24.673,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      30.822,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      35.789,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.451,
+      "rise"
+     ],
+     [
+      56.39,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.456,
+      "fall"
+     ],
+     [
+      51.428,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.21,
+      "fall"
+     ],
+     [
+      50.485,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.059,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 9,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.85714285591591,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.89285714405441,
+   "raw_stable_rail_delay_ps": 31.14285714408395,
+   "precompare_held_lsb": -17.92057706914079,
+   "precompare_sense_lsb": -11.92809632985714,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5445.0,
+     5446.75
+    ],
+    [
+     "transition",
+     5447.0,
+     5457.25
+    ],
+    [
+     "Z",
+     5457.5,
+     5509.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 11.857142855888707,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [],
+    "q4n": [
+     [
+      26.67,
+      "rise"
+     ]
+    ],
+    "qmid4p": [],
+    "qmid4n": [
+     [
+      32.9,
+      "fall"
+     ]
+    ],
+    "qdecode4p": [],
+    "qdecode4n": [
+     [
+      37.874,
+      "rise"
+     ]
+    ],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ],
+     [
+      52.369,
+      "fall"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.47,
+      "fall"
+     ],
+     [
+      47.419,
+      "rise"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.22,
+      "fall"
+     ],
+     [
+      46.478,
+      "rise"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.078,
+      "rise"
+     ],
+     [
+      51.161,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 9,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.357142855837803,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 17.392857144114682,
+   "raw_stable_rail_delay_ps": 33.64285714416289,
+   "precompare_held_lsb": -8.147791397879018,
+   "precompare_sense_lsb": -5.204065063725949,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5511.5,
+     5513.25
+    ],
+    [
+     "transition",
+     5513.5,
+     5523.75
+    ],
+    [
+     "Z",
+     5524.0,
+     5587.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.857142855813315,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [],
+    "q3n": [
+     [
+      29.065,
+      "rise"
+     ]
+    ],
+    "qmid3p": [],
+    "qmid3n": [
+     [
+      35.398,
+      "fall"
+     ]
+    ],
+    "qdecode3p": [],
+    "qdecode3n": [
+     [
+      40.381,
+      "rise"
+     ]
+    ],
+    "c3o": [
+     [
+      -13.48,
+      "rise"
+     ],
+     [
+      52.353,
+      "fall"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.48,
+      "fall"
+     ],
+     [
+      47.413,
+      "rise"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ],
+     [
+      46.472,
+      "rise"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.091,
+      "rise"
+     ],
+     [
+      51.152,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 9,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 10.607142855753287,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 26.14285714419905,
+   "raw_stable_rail_delay_ps": 36.39285714424707,
+   "precompare_held_lsb": -3.597126758567555,
+   "precompare_sense_lsb": -2.087344947608898,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5590.0,
+     5591.75
+    ],
+    [
+     "transition",
+     5592.0,
+     5600.25
+    ],
+    [
+     "Z",
+     5600.5,
+     5640.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [],
+    "q2n": [
+     [
+      31.605,
+      "rise"
+     ]
+    ],
+    "qmid2p": [],
+    "qmid2n": [
+     [
+      40.558,
+      "fall"
+     ]
+    ],
+    "qdecode2p": [],
+    "qdecode2n": [
+     [
+      46.434,
+      "rise"
+     ]
+    ],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ],
+     [
+      57.699,
+      "fall"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.423,
+      "fall"
+     ],
+     [
+      53.781,
+      "rise"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.468,
+      "fall"
+     ],
+     [
+      52.976,
+      "rise"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ],
+     [
+      56.752,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 9,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.607142855690328,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 13.142857144274473,
+   "raw_stable_rail_delay_ps": 36.392857144309936,
+   "precompare_held_lsb": -4.308053420133149,
+   "precompare_sense_lsb": -2.3765377059180537,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5642.5,
+     5644.25
+    ],
+    [
+     "transition",
+     5644.5,
+     5654.75
+    ],
+    [
+     "Z",
+     5655.0,
+     5694.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [],
+    "q1n": [
+     [
+      31.414,
+      "rise"
+     ]
+    ],
+    "qmid1p": [],
+    "qmid1n": [
+     [
+      37.857,
+      "fall"
+     ]
+    ],
+    "qdecode1p": [],
+    "qdecode1n": [
+     [
+      42.85,
+      "rise"
+     ]
+    ],
+    "c1o": [
+     [
+      4.532,
+      "rise"
+     ],
+     [
+      56.363,
+      "fall"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.529,
+      "fall"
+     ],
+     [
+      51.413,
+      "rise"
+     ]
+    ],
+    "c1z": [
+     [
+      1.775,
+      "fall"
+     ],
+     [
+      50.477,
+      "rise"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.919,
+      "rise"
+     ],
+     [
+      55.159,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 9,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 8.85714285562888,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 0.1428571443184603,
+   "raw_stable_rail_delay_ps": 39.14285714437096,
+   "precompare_held_lsb": -2.4554277348065057,
+   "precompare_sense_lsb": -1.0564374976887336,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     5697.0,
+     5698.75
+    ],
+    [
+     "transition",
+     5699.0,
+     5707.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [],
+    "q0n": [
+     [
+      33.97,
+      "rise"
+     ]
+    ],
+    "qmid0p": [],
+    "qmid0n": [
+     [
+      40.548,
+      "fall"
+     ]
+    ],
+    "qdecode0p": [],
+    "qdecode0n": [
+     [
+      45.552,
+      "rise"
+     ]
+    ],
+    "c0o": [
+     [
+      6.52,
+      "rise"
+     ],
+     [
+      59.192,
+      "fall"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.52,
+      "fall"
+     ],
+     [
+      55.037,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ],
+     [
+      54.384,
+      "rise"
+     ],
+     [
+      58.782,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.908,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 10,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 10.535714284017159,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 53.21428571597903,
+   "raw_stable_rail_delay_ps": 26.46428571598261,
+   "precompare_held_lsb": 74.39181158830038,
+   "precompare_sense_lsb": 46.22947184151883,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     5861.5,
+     5948.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.28571428400218,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      22.463,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      28.526,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      33.485,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.334,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.344,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 10,
+   "bit": 5,
+   "decision": 1,
+   "sampled_margin_ps": 14.535714283920779,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.4642857160316,
+   "raw_stable_rail_delay_ps": 29.464285716079484,
+   "precompare_held_lsb": 29.289704177584923,
+   "precompare_sense_lsb": 17.358951003356538,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     5951.0,
+     6014.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 23.28571428390175,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [
+     [
+      25.161,
+      "rise"
+     ]
+    ],
+    "q5n": [],
+    "qmid5p": [
+     [
+      31.329,
+      "fall"
+     ]
+    ],
+    "qmid5n": [],
+    "qdecode5p": [
+     [
+      36.297,
+      "rise"
+     ]
+    ],
+    "qdecode5n": [],
+    "c5o": [
+     [
+      -32.459,
+      "rise"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.462,
+      "fall"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.213,
+      "fall"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.066,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 10,
+   "bit": 4,
+   "decision": 1,
+   "sampled_margin_ps": 8.785714283839813,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 34.714285716135066,
+   "raw_stable_rail_delay_ps": 31.21428571616005,
+   "precompare_held_lsb": 16.578939059363762,
+   "precompare_sense_lsb": 13.019848005631474,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     6016.5,
+     6080.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 24.28571428382678,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [
+     [
+      26.917,
+      "rise"
+     ]
+    ],
+    "q4n": [],
+    "qmid4p": [
+     [
+      33.157,
+      "fall"
+     ]
+    ],
+    "qmid4n": [],
+    "qdecode4p": [
+     [
+      38.132,
+      "rise"
+     ]
+    ],
+    "qdecode4n": [],
+    "c4o": [
+     [
+      -12.471,
+      "rise"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.473,
+      "fall"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.08,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 10,
+   "bit": 3,
+   "decision": 1,
+   "sampled_margin_ps": 5.5357142837608535,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 22.714285716196734,
+   "raw_stable_rail_delay_ps": 34.464285716239836,
+   "precompare_held_lsb": 6.302740718305984,
+   "precompare_sense_lsb": 5.3884277647432555,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     6083.0,
+     6159.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 29.28571428375139,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [
+     [
+      29.757,
+      "rise"
+     ]
+    ],
+    "q3n": [],
+    "qmid3p": [
+     [
+      36.122,
+      "fall"
+     ]
+    ],
+    "qmid3n": [],
+    "qdecode3p": [
+     [
+      41.107,
+      "rise"
+     ]
+    ],
+    "qdecode3n": [],
+    "c3o": [
+     [
+      -13.482,
+      "rise"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.481,
+      "fall"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.227,
+      "fall"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.092,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 10,
+   "bit": 2,
+   "decision": 1,
+   "sampled_margin_ps": 9.535714283676054,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 20.464285716269455,
+   "raw_stable_rail_delay_ps": 37.464285716324305,
+   "precompare_held_lsb": 2.737060933134927,
+   "precompare_sense_lsb": 1.8471966617229896,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     6161.5,
+     6211.75
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 6.2857142836624424,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [
+     [
+      32.455,
+      "rise"
+     ]
+    ],
+    "q2n": [],
+    "qmid2p": [
+     [
+      41.454,
+      "fall"
+     ]
+    ],
+    "qmid2n": [],
+    "qdecode2p": [
+     [
+      47.331,
+      "rise"
+     ]
+    ],
+    "qdecode2n": [],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.423,
+      "fall"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.468,
+      "fall"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.176,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 10,
+   "bit": 1,
+   "decision": 1,
+   "sampled_margin_ps": 6.535714283613095,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 18.96428571635709,
+   "raw_stable_rail_delay_ps": 37.46428571638717,
+   "precompare_held_lsb": 3.020631858340863,
+   "precompare_sense_lsb": 1.5456961565693916,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     6214.0,
+     6266.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 4.2857142836031,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [
+     [
+      32.344,
+      "rise"
+     ]
+    ],
+    "q1n": [],
+    "qmid1p": [
+     [
+      38.835,
+      "fall"
+     ]
+    ],
+    "qmid1n": [],
+    "qdecode1p": [
+     [
+      43.831,
+      "rise"
+     ]
+    ],
+    "qdecode1n": [],
+    "c1o": [
+     [
+      4.528,
+      "rise"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.526,
+      "fall"
+     ]
+    ],
+    "c1z": [
+     [
+      1.778,
+      "fall"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.918,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 10,
+   "bit": 0,
+   "decision": 1,
+   "sampled_margin_ps": 7.785714283552474,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 14.464285716411545,
+   "raw_stable_rail_delay_ps": 40.214285716447364,
+   "precompare_held_lsb": 1.083548419842657,
+   "precompare_sense_lsb": 0.1837056709982221,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     6268.5,
+     6274.75
+    ],
+    [
+     "transition",
+     6275.0,
+     6279.25
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [
+     [
+      34.955,
+      "rise"
+     ]
+    ],
+    "q0n": [],
+    "qmid0p": [
+     [
+      41.586,
+      "fall"
+     ]
+    ],
+    "qmid0n": [],
+    "qdecode0p": [
+     [
+      46.596,
+      "rise"
+     ]
+    ],
+    "qdecode0n": [],
+    "c0o": [
+     [
+      6.517,
+      "rise"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.518,
+      "fall"
+     ],
+     [
+      60.7,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.906,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 11,
+   "bit": 6,
+   "decision": 1,
+   "sampled_margin_ps": 4.46428571193343,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 52.78571428805539,
+   "raw_stable_rail_delay_ps": 32.53571428806634,
+   "precompare_held_lsb": 13.135314614133478,
+   "precompare_sense_lsb": 10.597964401761288,
+   "ref_wanted": "O",
+   "ref_runs": [
+    [
+     "O",
+     6432.75,
+     6520.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 43.464285711926365,
+   "half_vdd_crossings_ps_from_compare": {
+    "q6p": [
+     [
+      27.909,
+      "rise"
+     ]
+    ],
+    "q6n": [],
+    "qmid6p": [
+     [
+      34.195,
+      "fall"
+     ]
+    ],
+    "qmid6n": [],
+    "qdecode6p": [
+     [
+      39.806,
+      "rise"
+     ]
+    ],
+    "qdecode6n": [],
+    "c6o": [
+     [
+      -17.328,
+      "rise"
+     ]
+    ],
+    "cb6o": [
+     [
+      -21.337,
+      "fall"
+     ]
+    ],
+    "c6z": [],
+    "cb6z": []
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 11,
+   "bit": 5,
+   "decision": 0,
+   "sampled_margin_ps": 14.714285711844136,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 32.5357142881077,
+   "raw_stable_rail_delay_ps": 29.285714288156125,
+   "precompare_held_lsb": -31.679938704419754,
+   "precompare_sense_lsb": -18.48815940096017,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     6522.25,
+     6524.25
+    ],
+    [
+     "transition",
+     6524.5,
+     6534.75
+    ],
+    [
+     "Z",
+     6535.0,
+     6585.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 10.71428571181065,
+   "half_vdd_crossings_ps_from_compare": {
+    "q5p": [],
+    "q5n": [
+     [
+      24.943,
+      "rise"
+     ]
+    ],
+    "qmid5p": [],
+    "qmid5n": [
+     [
+      31.104,
+      "fall"
+     ]
+    ],
+    "qdecode5p": [],
+    "qdecode5n": [
+     [
+      36.071,
+      "rise"
+     ]
+    ],
+    "c5o": [
+     [
+      -32.458,
+      "rise"
+     ],
+     [
+      56.39,
+      "fall"
+     ]
+    ],
+    "cb5o": [
+     [
+      -36.463,
+      "fall"
+     ],
+     [
+      51.429,
+      "rise"
+     ]
+    ],
+    "c5z": [
+     [
+      -35.214,
+      "fall"
+     ],
+     [
+      50.485,
+      "rise"
+     ]
+    ],
+    "cb5z": [
+     [
+      -31.066,
+      "rise"
+     ],
+     [
+      55.172,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 11,
+   "bit": 4,
+   "decision": 0,
+   "sampled_margin_ps": 8.964285711762344,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 29.78571428820715,
+   "raw_stable_rail_delay_ps": 31.035714288237518,
+   "precompare_held_lsb": -17.538269254646792,
+   "precompare_sense_lsb": -11.70459216130098,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     6587.75,
+     6589.75
+    ],
+    [
+     "transition",
+     6590.0,
+     6600.25
+    ],
+    [
+     "Z",
+     6600.5,
+     6652.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 11.71428571173651,
+   "half_vdd_crossings_ps_from_compare": {
+    "q4p": [],
+    "q4n": [
+     [
+      26.739,
+      "rise"
+     ]
+    ],
+    "qmid4p": [],
+    "qmid4n": [
+     [
+      32.972,
+      "fall"
+     ]
+    ],
+    "qdecode4p": [],
+    "qdecode4n": [
+     [
+      37.946,
+      "rise"
+     ]
+    ],
+    "c4o": [
+     [
+      -12.467,
+      "rise"
+     ],
+     [
+      52.37,
+      "fall"
+     ]
+    ],
+    "cb4o": [
+     [
+      -16.471,
+      "fall"
+     ],
+     [
+      47.419,
+      "rise"
+     ]
+    ],
+    "c4z": [
+     [
+      -15.221,
+      "fall"
+     ],
+     [
+      46.478,
+      "rise"
+     ]
+    ],
+    "cb4z": [
+     [
+      -11.078,
+      "rise"
+     ],
+     [
+      51.161,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 11,
+   "bit": 3,
+   "decision": 0,
+   "sampled_margin_ps": 6.214285711684779,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 17.28571428826742,
+   "raw_stable_rail_delay_ps": 33.78571428831591,
+   "precompare_held_lsb": -7.77348370590019,
+   "precompare_sense_lsb": -4.983431056729728,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     6654.25,
+     6656.25
+    ],
+    [
+     "transition",
+     6656.5,
+     6666.5
+    ],
+    [
+     "Z",
+     6666.75,
+     6730.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": 16.964285711660573,
+   "half_vdd_crossings_ps_from_compare": {
+    "q3p": [],
+    "q3n": [
+     [
+      29.219,
+      "rise"
+     ]
+    ],
+    "qmid3p": [],
+    "qmid3n": [
+     [
+      35.56,
+      "fall"
+     ]
+    ],
+    "qdecode3p": [],
+    "qdecode3n": [
+     [
+      40.543,
+      "rise"
+     ]
+    ],
+    "c3o": [
+     [
+      -13.48,
+      "rise"
+     ],
+     [
+      52.353,
+      "fall"
+     ]
+    ],
+    "cb3o": [
+     [
+      -17.481,
+      "fall"
+     ],
+     [
+      47.413,
+      "rise"
+     ]
+    ],
+    "c3z": [
+     [
+      -16.228,
+      "fall"
+     ],
+     [
+      46.472,
+      "rise"
+     ]
+    ],
+    "cb3z": [
+     [
+      -12.091,
+      "rise"
+     ],
+     [
+      51.152,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 11,
+   "bit": 2,
+   "decision": 0,
+   "sampled_margin_ps": 10.214285711599151,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 26.285714288352075,
+   "raw_stable_rail_delay_ps": 36.7857142884012,
+   "precompare_held_lsb": -3.2250165714950185,
+   "precompare_sense_lsb": -1.8662146520777867,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     6732.75,
+     6734.5
+    ],
+    [
+     "transition",
+     6734.75,
+     6743.0
+    ],
+    [
+     "Z",
+     6743.25,
+     6783.0
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q2p": [],
+    "q2n": [
+     [
+      31.963,
+      "rise"
+     ]
+    ],
+    "qmid2p": [],
+    "qmid2n": [
+     [
+      40.936,
+      "fall"
+     ]
+    ],
+    "qdecode2p": [],
+    "qdecode2n": [
+     [
+      46.812,
+      "rise"
+     ]
+    ],
+    "c2o": [
+     [
+      -20.194,
+      "rise"
+     ],
+     [
+      57.699,
+      "fall"
+     ]
+    ],
+    "cb2o": [
+     [
+      -23.424,
+      "fall"
+     ],
+     [
+      53.781,
+      "rise"
+     ]
+    ],
+    "c2z": [
+     [
+      -22.469,
+      "fall"
+     ],
+     [
+      52.976,
+      "rise"
+     ]
+    ],
+    "cb2z": [
+     [
+      -19.175,
+      "rise"
+     ],
+     [
+      56.752,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 11,
+   "bit": 1,
+   "decision": 0,
+   "sampled_margin_ps": 7.214285711537848,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 13.285714288427496,
+   "raw_stable_rail_delay_ps": 36.785714288462415,
+   "precompare_held_lsb": -3.9412021750696624,
+   "precompare_sense_lsb": -2.144897346005621,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     6785.25,
+     6787.25
+    ],
+    [
+     "transition",
+     6787.5,
+     6797.75
+    ],
+    [
+     "Z",
+     6798.0,
+     6837.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q1p": [],
+    "q1n": [
+     [
+      31.752,
+      "rise"
+     ]
+    ],
+    "qmid1p": [],
+    "qmid1n": [
+     [
+      38.212,
+      "fall"
+     ]
+    ],
+    "qdecode1p": [],
+    "qdecode1n": [
+     [
+      43.207,
+      "rise"
+     ]
+    ],
+    "c1o": [
+     [
+      4.532,
+      "rise"
+     ],
+     [
+      56.363,
+      "fall"
+     ]
+    ],
+    "cb1o": [
+     [
+      0.528,
+      "fall"
+     ],
+     [
+      51.413,
+      "rise"
+     ]
+    ],
+    "c1z": [
+     [
+      1.774,
+      "fall"
+     ],
+     [
+      50.476,
+      "rise"
+     ]
+    ],
+    "cb1z": [
+     [
+      5.919,
+      "rise"
+     ],
+     [
+      55.16,
+      "fall"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  },
+  {
+   "conversion": 11,
+   "bit": 0,
+   "decision": 0,
+   "sampled_margin_ps": 7.964285711476659,
+   "first_remains_in_read_plus_minus_lsb_after_launch_ps": 0.035714288472028205,
+   "raw_stable_rail_delay_ps": 40.035714288523174,
+   "precompare_held_lsb": -2.086291769824129,
+   "precompare_sense_lsb": -0.8120286459512727,
+   "ref_wanted": "Z",
+   "ref_runs": [
+    [
+     "O",
+     6839.75,
+     6841.75
+    ],
+    [
+     "transition",
+     6842.0,
+     6850.5
+    ]
+   ],
+   "ref_margin_before_next_compare_ps": null,
+   "half_vdd_crossings_ps_from_compare": {
+    "q0p": [],
+    "q0n": [
+     [
+      34.805,
+      "rise"
+     ]
+    ],
+    "qmid0p": [],
+    "qmid0n": [
+     [
+      41.429,
+      "fall"
+     ]
+    ],
+    "qdecode0p": [],
+    "qdecode0n": [
+     [
+      46.438,
+      "rise"
+     ]
+    ],
+    "c0o": [
+     [
+      6.52,
+      "rise"
+     ],
+     [
+      59.193,
+      "fall"
+     ]
+    ],
+    "cb0o": [
+     [
+      2.519,
+      "fall"
+     ],
+     [
+      55.035,
+      "rise"
+     ]
+    ],
+    "c0z": [
+     [
+      3.772,
+      "fall"
+     ],
+     [
+      54.396,
+      "rise"
+     ],
+     [
+      58.783,
+      "fall"
+     ]
+    ],
+    "cb0z": [
+     [
+      7.908,
+      "rise"
+     ]
+    ]
+   },
+   "prior_initial_internal_class": null
+  }
+ ],
+ "full_summary": {
+  "sha256": "83d41a50aeea4285dbecf922deb94f949c2a4265cc2a8ce3d6acda4d7b7682a3",
+  "bytes": 3397472,
+  "location": "cluster run root and OneDrive results folder (not in repo)"
+ }
+}

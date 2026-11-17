@@ -1,0 +1,63 @@
+{
+  "schema": "pam4_sar7_b2_local_drive_pilot_v1",
+  "authorization": {
+    "schema": "pam4_sar7_authorization_v1",
+    "user_quote": "Yes, 8 hours",
+    "source_note": "20261116T2337_user_delegates_8h_sar7_175gs.md",
+    "source_note_sha256": "26523d076e396f82acc8844f3441c3517ebba4f05e2073e1629436586287da58",
+    "starts_utc": "2026-11-17T05:37:00Z",
+    "expires_utc": "2026-11-17T13:37:00Z",
+    "scope": "SAR7 single-channel 1.75GS/s TT short fixes",
+    "max_solver_cases_this_packet": 1,
+    "cpus_this_job": 1,
+    "max_concurrent_sar7_cpus": 2,
+    "c2_untouched": true,
+    "excluded": [
+      "PVT",
+      "long campaigns",
+      "112GS/s integration",
+      "other projects",
+      "raw deletion",
+      "C2 changes"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "sar7_20_tt_175gs_b2_local_drive",
+      "parent_job": "761674",
+      "parent_manifest_sha256": "29234008ed5dcc04727ec9200c5a1e3b63c57fd8a589bec971b304eae319934d",
+      "parent_deck_sha256": "13cb54f364340ce86656e3f1b7280f53fa69f11d996ae55ac65b5ee2b63f8d73",
+      "source_summary_sha256": "bb7c5418c967d1b7e76d31e93e6dea64115e7888660b521cca797292c35e1594",
+      "waits_ps": [
+        30,
+        45,
+        25,
+        26,
+        31,
+        8,
+        6
+      ],
+      "evals_ps": [
+        37,
+        44,
+        40,
+        40,
+        47,
+        44,
+        48
+      ],
+      "next_launch_after_previous_read_ps": 0.5,
+      "previous_release_after_read_ps": 2,
+      "first_launch_ps": 78,
+      "primary_readout_ps": 565,
+      "clock_off_ps": 568,
+      "changed_pulse_rows": 13,
+      "physical_changes": true,
+      "local_driver_bit": 2,
+      "local_driver_scale": 2,
+      "local_driver_instances": 10,
+      "reference_tg_scale": 1,
+      "first_qbuffer_scale": 1
+    }
+  ]
+}
