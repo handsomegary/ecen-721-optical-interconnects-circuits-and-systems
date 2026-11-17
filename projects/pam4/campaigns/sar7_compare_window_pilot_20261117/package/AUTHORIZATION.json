@@ -1,0 +1,21 @@
+{
+  "schema": "pam4_sar7_authorization_v1",
+  "user_quote": "Yes, 8 hours",
+  "source_note": "20261116T2337_user_delegates_8h_sar7_175gs.md",
+  "source_note_sha256": "26523d076e396f82acc8844f3441c3517ebba4f05e2073e1629436586287da58",
+  "starts_utc": "2026-11-17T05:37:00Z",
+  "expires_utc": "2026-11-17T13:37:00Z",
+  "scope": "SAR7 single-channel 1.75GS/s TT short fixes",
+  "max_solver_cases_this_packet": 1,
+  "cpus_this_job": 1,
+  "max_concurrent_sar7_cpus": 2,
+  "c2_untouched": true,
+  "excluded": [
+    "PVT",
+    "long campaigns",
+    "112GS/s integration",
+    "other projects",
+    "raw deletion",
+    "C2 changes"
+  ]
+}
