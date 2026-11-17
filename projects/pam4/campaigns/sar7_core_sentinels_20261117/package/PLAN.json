@@ -1,0 +1,60 @@
+{
+  "schema": "pam4_sar7_core_sentinels_v1",
+  "authorization": {
+    "schema": "pam4_sar7_authorization_v2",
+    "user_quote": "SAR7如果一直修不好你叫codex看看相關論文 然後也可以換方向 由codex決定",
+    "source_note": "20261117T0755_user_delegates_sar7_papers_direction.md",
+    "source_note_sha256": "d9491abfb1429caf097c1c798d763d6529264fb3fa9cbbf2b82cd78b0d4183ea",
+    "starts_utc": "2026-11-17T13:55:00Z",
+    "no_expiry": true,
+    "scope": "One short existing-core input characterization; not a SAR ADC validation",
+    "max_solver_cases_this_packet": 1,
+    "max_accepted_slurm_jobs": 1,
+    "cpus_this_job": 1,
+    "max_concurrent_sar7_jobs": 1,
+    "c2_temporary_throttle": {
+      "original": 5,
+      "temporary": 4,
+      "restore": 5
+    },
+    "excluded": [
+      "new long campaigns",
+      "PVT",
+      "112GS/s integration",
+      "other C2 changes",
+      "other projects"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "sar7_22_tt_core_sentinels",
+      "parent_job": "761688",
+      "parent_manifest_sha256": "2887bf0705fb20245f65d8745abdd01624debb53b2aa8bdf7c7c5564adad84e1",
+      "parent_deck_sha256": "c587a30cf264dc2b815bd9f23b057ce15edeed9b59591edcfe2370a403f3bfbf",
+      "vcm_source_summary_sha256": "7b93590f85c18b85b1cca6dae343d5e550d7b582d3922ee01a3fdb57a1eea851",
+      "vcm_V": 0.8346351044855786,
+      "sentinels_V": [
+        -4.8828125e-05,
+        4.8828125e-05,
+        -0.00078125,
+        0.00078125,
+        -0.005,
+        0.005
+      ],
+      "frames": 12,
+      "target_frames": 6,
+      "cores": 7,
+      "target_samples": 42,
+      "precondition_samples": 42,
+      "input_change_start_ps": 10,
+      "input_change_end_ps": 11,
+      "common_read_delays_ps": [
+        44,
+        48,
+        60
+      ],
+      "adc_scoring_applicable": false,
+      "physical_changes": "Seven comparator input port substitutions, two stiff PWL sources and two saved nodes only"
+    }
+  ]
+}

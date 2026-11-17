@@ -1,0 +1,25 @@
+{
+  "schema": "pam4_sar7_authorization_v2",
+  "user_quote": "SAR7如果一直修不好你叫codex看看相關論文 然後也可以換方向 由codex決定",
+  "source_note": "20261117T0755_user_delegates_sar7_papers_direction.md",
+  "source_note_sha256": "d9491abfb1429caf097c1c798d763d6529264fb3fa9cbbf2b82cd78b0d4183ea",
+  "starts_utc": "2026-11-17T13:55:00Z",
+  "no_expiry": true,
+  "scope": "One short existing-core input characterization; not a SAR ADC validation",
+  "max_solver_cases_this_packet": 1,
+  "max_accepted_slurm_jobs": 1,
+  "cpus_this_job": 1,
+  "max_concurrent_sar7_jobs": 1,
+  "c2_temporary_throttle": {
+    "original": 5,
+    "temporary": 4,
+    "restore": 5
+  },
+  "excluded": [
+    "new long campaigns",
+    "PVT",
+    "112GS/s integration",
+    "other C2 changes",
+    "other projects"
+  ]
+}
