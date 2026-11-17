@@ -1,0 +1,295 @@
+--- parent.scs
++++ bench.scs
+@@ -1,5 +1,5 @@
+ simulator lang=spectre
+-include "<PDK_ROOT>/models/spectre/pdk_toplevel.scs" section=tt
++include "__pdk_root__/models/spectre/pdk_toplevel.scs" section=tt
+ simulatorOptions options temp=25 tnom=25 reltol=1e-4 vabstol=1u iabstol=1p
+ // Schematic models with gate/contact/coupling parasitics enabled.
+ XVs (X_vdd 0) vsource dc=0.9
+@@ -6691,7 +6691,7 @@
+ CHB1p (CHB_p X_cm CH1_p X_cm) vcvs gain=1
+ CHR2p (CHB_p CH2_p) resistor r=100
+ CHC2p (CH2_p X_cm) capacitor c=8.526157665637249e-14
+-CHB2p (X_ip X_cm CH2_p X_cm) vcvs gain=1
++CHB2p (PNC_PREP X_cm CH2_p X_cm) vcvs gain=1
+ PAM4Vm (PAM4_src_m X_cm) vsource type=pwl wave=[ \
+  0 -0.1 \
+  2.089285714285714e-10 -0.1 \
+@@ -13226,7 +13226,7 @@
+ CHB1m (CHB_m X_cm CH1_m X_cm) vcvs gain=1
+ CHR2m (CHB_m CH2_m) resistor r=100
+ CHC2m (CH2_m X_cm) capacitor c=8.526157665637249e-14
+-CHB2m (X_im X_cm CH2_m X_cm) vcvs gain=1
++CHB2m (PNC_PREN X_cm CH2_m X_cm) vcvs gain=1
+ VBANK (bankvdd 0) vsource dc=.9
+ VNBIAS (nbias 0) vsource dc=0.5
+ VPBIAS (pbias 0) vsource dc=0.4
+@@ -14013,7 +14013,266 @@
+ B7_COMP5 (B7_h5p B7_h5m compvdd logicvdd) COMPLOAD
+ B7_COMP6 (B7_h6p B7_h6m compvdd logicvdd) COMPLOAD
+ B7_COMP7 (B7_h7p B7_h7m compvdd logicvdd) COMPLOAD
++// BEGIN PNC: four symmetric LC sections per leg, static controls
++PNCVTRIM (PNC_VDD 0) vsource dc=0.9
++PNCPVN0 (PNCPGN0 0) vsource dc=0.9
++PNCPVP0 (PNCPGP0 0) vsource dc=0
++PNCPVN1 (PNCPGN1 0) vsource dc=0.9
++PNCPVP1 (PNCPGP1 0) vsource dc=0
++PNCPVN2 (PNCPGN2 0) vsource dc=0.9
++PNCPVP2 (PNCPGP2 0) vsource dc=0
++PNCPVN3 (PNCPGN3 0) vsource dc=0.9
++PNCPVP3 (PNCPGP3 0) vsource dc=0
++PNCPVN4 (PNCPGN4 0) vsource dc=0.9
++PNCPVP4 (PNCPGP4 0) vsource dc=0
++PNCPVN5 (PNCPGN5 0) vsource dc=0
++PNCPVP5 (PNCPGP5 0) vsource dc=0.9
++PNCP0LA (PNC_PREP PNCP0A) inductor l=32.5p
++PNCP0RA (PNCP0A PNCP0M) resistor r=0.75
++PNCP0CF (PNCP0M 0) capacitor c=12f
++PNCP0LB (PNCP0M PNCP0B) inductor l=32.5p
++PNCP0RB (PNCP0B PNCP0O) resistor r=0.75
++PNCP0TN0 (PNCP0C0 PNCPGN0 PNCP0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0TP0 (PNCP0C0 PNCPGP0 PNCP0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0CB0 (PNCP0C0 0) capacitor c=1.25f
++PNCP0RB0 (PNCP0C0 X_cm) resistor r=1T
++PNCP0TN1 (PNCP0C1 PNCPGN1 PNCP0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0TP1 (PNCP0C1 PNCPGP1 PNCP0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0CB1 (PNCP0C1 0) capacitor c=2.5f
++PNCP0RB1 (PNCP0C1 X_cm) resistor r=1T
++PNCP0TN2 (PNCP0C2 PNCPGN2 PNCP0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0TP2 (PNCP0C2 PNCPGP2 PNCP0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0CB2 (PNCP0C2 0) capacitor c=5f
++PNCP0RB2 (PNCP0C2 X_cm) resistor r=1T
++PNCP0TN3 (PNCP0C3 PNCPGN3 PNCP0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0TP3 (PNCP0C3 PNCPGP3 PNCP0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0CB3 (PNCP0C3 0) capacitor c=10f
++PNCP0RB3 (PNCP0C3 X_cm) resistor r=1T
++PNCP0TN4 (PNCP0C4 PNCPGN4 PNCP0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0TP4 (PNCP0C4 PNCPGP4 PNCP0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0CB4 (PNCP0C4 0) capacitor c=20f
++PNCP0RB4 (PNCP0C4 X_cm) resistor r=1T
++PNCP0TN5 (PNCP0C5 PNCPGN5 PNCP0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0TP5 (PNCP0C5 PNCPGP5 PNCP0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP0CB5 (PNCP0C5 0) capacitor c=40f
++PNCP0RB5 (PNCP0C5 X_cm) resistor r=1T
++PNCP1LA (PNCP0O PNCP1A) inductor l=32.5p
++PNCP1RA (PNCP1A PNCP1M) resistor r=0.75
++PNCP1CF (PNCP1M 0) capacitor c=12f
++PNCP1LB (PNCP1M PNCP1B) inductor l=32.5p
++PNCP1RB (PNCP1B PNCP1O) resistor r=0.75
++PNCP1TN0 (PNCP1C0 PNCPGN0 PNCP1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1TP0 (PNCP1C0 PNCPGP0 PNCP1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1CB0 (PNCP1C0 0) capacitor c=1.25f
++PNCP1RB0 (PNCP1C0 X_cm) resistor r=1T
++PNCP1TN1 (PNCP1C1 PNCPGN1 PNCP1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1TP1 (PNCP1C1 PNCPGP1 PNCP1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1CB1 (PNCP1C1 0) capacitor c=2.5f
++PNCP1RB1 (PNCP1C1 X_cm) resistor r=1T
++PNCP1TN2 (PNCP1C2 PNCPGN2 PNCP1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1TP2 (PNCP1C2 PNCPGP2 PNCP1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1CB2 (PNCP1C2 0) capacitor c=5f
++PNCP1RB2 (PNCP1C2 X_cm) resistor r=1T
++PNCP1TN3 (PNCP1C3 PNCPGN3 PNCP1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1TP3 (PNCP1C3 PNCPGP3 PNCP1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1CB3 (PNCP1C3 0) capacitor c=10f
++PNCP1RB3 (PNCP1C3 X_cm) resistor r=1T
++PNCP1TN4 (PNCP1C4 PNCPGN4 PNCP1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1TP4 (PNCP1C4 PNCPGP4 PNCP1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1CB4 (PNCP1C4 0) capacitor c=20f
++PNCP1RB4 (PNCP1C4 X_cm) resistor r=1T
++PNCP1TN5 (PNCP1C5 PNCPGN5 PNCP1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1TP5 (PNCP1C5 PNCPGP5 PNCP1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP1CB5 (PNCP1C5 0) capacitor c=40f
++PNCP1RB5 (PNCP1C5 X_cm) resistor r=1T
++PNCP2LA (PNCP1O PNCP2A) inductor l=32.5p
++PNCP2RA (PNCP2A PNCP2M) resistor r=0.75
++PNCP2CF (PNCP2M 0) capacitor c=12f
++PNCP2LB (PNCP2M PNCP2B) inductor l=32.5p
++PNCP2RB (PNCP2B PNCP2O) resistor r=0.75
++PNCP2TN0 (PNCP2C0 PNCPGN0 PNCP2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2TP0 (PNCP2C0 PNCPGP0 PNCP2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2CB0 (PNCP2C0 0) capacitor c=1.25f
++PNCP2RB0 (PNCP2C0 X_cm) resistor r=1T
++PNCP2TN1 (PNCP2C1 PNCPGN1 PNCP2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2TP1 (PNCP2C1 PNCPGP1 PNCP2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2CB1 (PNCP2C1 0) capacitor c=2.5f
++PNCP2RB1 (PNCP2C1 X_cm) resistor r=1T
++PNCP2TN2 (PNCP2C2 PNCPGN2 PNCP2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2TP2 (PNCP2C2 PNCPGP2 PNCP2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2CB2 (PNCP2C2 0) capacitor c=5f
++PNCP2RB2 (PNCP2C2 X_cm) resistor r=1T
++PNCP2TN3 (PNCP2C3 PNCPGN3 PNCP2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2TP3 (PNCP2C3 PNCPGP3 PNCP2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2CB3 (PNCP2C3 0) capacitor c=10f
++PNCP2RB3 (PNCP2C3 X_cm) resistor r=1T
++PNCP2TN4 (PNCP2C4 PNCPGN4 PNCP2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2TP4 (PNCP2C4 PNCPGP4 PNCP2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2CB4 (PNCP2C4 0) capacitor c=20f
++PNCP2RB4 (PNCP2C4 X_cm) resistor r=1T
++PNCP2TN5 (PNCP2C5 PNCPGN5 PNCP2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2TP5 (PNCP2C5 PNCPGP5 PNCP2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP2CB5 (PNCP2C5 0) capacitor c=40f
++PNCP2RB5 (PNCP2C5 X_cm) resistor r=1T
++PNCP3LA (PNCP2O PNCP3A) inductor l=32.5p
++PNCP3RA (PNCP3A PNCP3M) resistor r=0.75
++PNCP3CF (PNCP3M 0) capacitor c=12f
++PNCP3LB (PNCP3M PNCP3B) inductor l=32.5p
++PNCP3RB (PNCP3B X_ip) resistor r=0.75
++PNCP3TN0 (PNCP3C0 PNCPGN0 PNCP3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3TP0 (PNCP3C0 PNCPGP0 PNCP3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3CB0 (PNCP3C0 0) capacitor c=1.25f
++PNCP3RB0 (PNCP3C0 X_cm) resistor r=1T
++PNCP3TN1 (PNCP3C1 PNCPGN1 PNCP3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3TP1 (PNCP3C1 PNCPGP1 PNCP3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3CB1 (PNCP3C1 0) capacitor c=2.5f
++PNCP3RB1 (PNCP3C1 X_cm) resistor r=1T
++PNCP3TN2 (PNCP3C2 PNCPGN2 PNCP3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3TP2 (PNCP3C2 PNCPGP2 PNCP3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3CB2 (PNCP3C2 0) capacitor c=5f
++PNCP3RB2 (PNCP3C2 X_cm) resistor r=1T
++PNCP3TN3 (PNCP3C3 PNCPGN3 PNCP3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3TP3 (PNCP3C3 PNCPGP3 PNCP3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3CB3 (PNCP3C3 0) capacitor c=10f
++PNCP3RB3 (PNCP3C3 X_cm) resistor r=1T
++PNCP3TN4 (PNCP3C4 PNCPGN4 PNCP3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3TP4 (PNCP3C4 PNCPGP4 PNCP3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3CB4 (PNCP3C4 0) capacitor c=20f
++PNCP3RB4 (PNCP3C4 X_cm) resistor r=1T
++PNCP3TN5 (PNCP3C5 PNCPGN5 PNCP3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3TP5 (PNCP3C5 PNCPGP5 PNCP3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCP3CB5 (PNCP3C5 0) capacitor c=40f
++PNCP3RB5 (PNCP3C5 X_cm) resistor r=1T
++PNCNVN0 (PNCNGN0 0) vsource dc=0
++PNCNVP0 (PNCNGP0 0) vsource dc=0.9
++PNCNVN1 (PNCNGN1 0) vsource dc=0
++PNCNVP1 (PNCNGP1 0) vsource dc=0.9
++PNCNVN2 (PNCNGN2 0) vsource dc=0
++PNCNVP2 (PNCNGP2 0) vsource dc=0.9
++PNCNVN3 (PNCNGN3 0) vsource dc=0
++PNCNVP3 (PNCNGP3 0) vsource dc=0.9
++PNCNVN4 (PNCNGN4 0) vsource dc=0
++PNCNVP4 (PNCNGP4 0) vsource dc=0.9
++PNCNVN5 (PNCNGN5 0) vsource dc=0.9
++PNCNVP5 (PNCNGP5 0) vsource dc=0
++PNCN0LA (PNC_PREN PNCN0A) inductor l=32.5p
++PNCN0RA (PNCN0A PNCN0M) resistor r=0.75
++PNCN0CF (PNCN0M 0) capacitor c=12f
++PNCN0LB (PNCN0M PNCN0B) inductor l=32.5p
++PNCN0RB (PNCN0B PNCN0O) resistor r=0.75
++PNCN0TN0 (PNCN0C0 PNCNGN0 PNCN0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0TP0 (PNCN0C0 PNCNGP0 PNCN0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0CB0 (PNCN0C0 0) capacitor c=1.25f
++PNCN0RB0 (PNCN0C0 X_cm) resistor r=1T
++PNCN0TN1 (PNCN0C1 PNCNGN1 PNCN0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0TP1 (PNCN0C1 PNCNGP1 PNCN0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0CB1 (PNCN0C1 0) capacitor c=2.5f
++PNCN0RB1 (PNCN0C1 X_cm) resistor r=1T
++PNCN0TN2 (PNCN0C2 PNCNGN2 PNCN0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0TP2 (PNCN0C2 PNCNGP2 PNCN0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0CB2 (PNCN0C2 0) capacitor c=5f
++PNCN0RB2 (PNCN0C2 X_cm) resistor r=1T
++PNCN0TN3 (PNCN0C3 PNCNGN3 PNCN0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0TP3 (PNCN0C3 PNCNGP3 PNCN0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0CB3 (PNCN0C3 0) capacitor c=10f
++PNCN0RB3 (PNCN0C3 X_cm) resistor r=1T
++PNCN0TN4 (PNCN0C4 PNCNGN4 PNCN0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0TP4 (PNCN0C4 PNCNGP4 PNCN0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0CB4 (PNCN0C4 0) capacitor c=20f
++PNCN0RB4 (PNCN0C4 X_cm) resistor r=1T
++PNCN0TN5 (PNCN0C5 PNCNGN5 PNCN0M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0TP5 (PNCN0C5 PNCNGP5 PNCN0M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN0CB5 (PNCN0C5 0) capacitor c=40f
++PNCN0RB5 (PNCN0C5 X_cm) resistor r=1T
++PNCN1LA (PNCN0O PNCN1A) inductor l=32.5p
++PNCN1RA (PNCN1A PNCN1M) resistor r=0.75
++PNCN1CF (PNCN1M 0) capacitor c=12f
++PNCN1LB (PNCN1M PNCN1B) inductor l=32.5p
++PNCN1RB (PNCN1B PNCN1O) resistor r=0.75
++PNCN1TN0 (PNCN1C0 PNCNGN0 PNCN1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1TP0 (PNCN1C0 PNCNGP0 PNCN1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1CB0 (PNCN1C0 0) capacitor c=1.25f
++PNCN1RB0 (PNCN1C0 X_cm) resistor r=1T
++PNCN1TN1 (PNCN1C1 PNCNGN1 PNCN1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1TP1 (PNCN1C1 PNCNGP1 PNCN1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1CB1 (PNCN1C1 0) capacitor c=2.5f
++PNCN1RB1 (PNCN1C1 X_cm) resistor r=1T
++PNCN1TN2 (PNCN1C2 PNCNGN2 PNCN1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1TP2 (PNCN1C2 PNCNGP2 PNCN1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1CB2 (PNCN1C2 0) capacitor c=5f
++PNCN1RB2 (PNCN1C2 X_cm) resistor r=1T
++PNCN1TN3 (PNCN1C3 PNCNGN3 PNCN1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1TP3 (PNCN1C3 PNCNGP3 PNCN1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1CB3 (PNCN1C3 0) capacitor c=10f
++PNCN1RB3 (PNCN1C3 X_cm) resistor r=1T
++PNCN1TN4 (PNCN1C4 PNCNGN4 PNCN1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1TP4 (PNCN1C4 PNCNGP4 PNCN1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1CB4 (PNCN1C4 0) capacitor c=20f
++PNCN1RB4 (PNCN1C4 X_cm) resistor r=1T
++PNCN1TN5 (PNCN1C5 PNCNGN5 PNCN1M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1TP5 (PNCN1C5 PNCNGP5 PNCN1M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN1CB5 (PNCN1C5 0) capacitor c=40f
++PNCN1RB5 (PNCN1C5 X_cm) resistor r=1T
++PNCN2LA (PNCN1O PNCN2A) inductor l=32.5p
++PNCN2RA (PNCN2A PNCN2M) resistor r=0.75
++PNCN2CF (PNCN2M 0) capacitor c=12f
++PNCN2LB (PNCN2M PNCN2B) inductor l=32.5p
++PNCN2RB (PNCN2B PNCN2O) resistor r=0.75
++PNCN2TN0 (PNCN2C0 PNCNGN0 PNCN2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2TP0 (PNCN2C0 PNCNGP0 PNCN2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2CB0 (PNCN2C0 0) capacitor c=1.25f
++PNCN2RB0 (PNCN2C0 X_cm) resistor r=1T
++PNCN2TN1 (PNCN2C1 PNCNGN1 PNCN2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2TP1 (PNCN2C1 PNCNGP1 PNCN2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2CB1 (PNCN2C1 0) capacitor c=2.5f
++PNCN2RB1 (PNCN2C1 X_cm) resistor r=1T
++PNCN2TN2 (PNCN2C2 PNCNGN2 PNCN2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2TP2 (PNCN2C2 PNCNGP2 PNCN2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2CB2 (PNCN2C2 0) capacitor c=5f
++PNCN2RB2 (PNCN2C2 X_cm) resistor r=1T
++PNCN2TN3 (PNCN2C3 PNCNGN3 PNCN2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2TP3 (PNCN2C3 PNCNGP3 PNCN2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2CB3 (PNCN2C3 0) capacitor c=10f
++PNCN2RB3 (PNCN2C3 X_cm) resistor r=1T
++PNCN2TN4 (PNCN2C4 PNCNGN4 PNCN2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2TP4 (PNCN2C4 PNCNGP4 PNCN2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2CB4 (PNCN2C4 0) capacitor c=20f
++PNCN2RB4 (PNCN2C4 X_cm) resistor r=1T
++PNCN2TN5 (PNCN2C5 PNCNGN5 PNCN2M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2TP5 (PNCN2C5 PNCNGP5 PNCN2M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN2CB5 (PNCN2C5 0) capacitor c=40f
++PNCN2RB5 (PNCN2C5 X_cm) resistor r=1T
++PNCN3LA (PNCN2O PNCN3A) inductor l=32.5p
++PNCN3RA (PNCN3A PNCN3M) resistor r=0.75
++PNCN3CF (PNCN3M 0) capacitor c=12f
++PNCN3LB (PNCN3M PNCN3B) inductor l=32.5p
++PNCN3RB (PNCN3B X_im) resistor r=0.75
++PNCN3TN0 (PNCN3C0 PNCNGN0 PNCN3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3TP0 (PNCN3C0 PNCNGP0 PNCN3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3CB0 (PNCN3C0 0) capacitor c=1.25f
++PNCN3RB0 (PNCN3C0 X_cm) resistor r=1T
++PNCN3TN1 (PNCN3C1 PNCNGN1 PNCN3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3TP1 (PNCN3C1 PNCNGP1 PNCN3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3CB1 (PNCN3C1 0) capacitor c=2.5f
++PNCN3RB1 (PNCN3C1 X_cm) resistor r=1T
++PNCN3TN2 (PNCN3C2 PNCNGN2 PNCN3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3TP2 (PNCN3C2 PNCNGP2 PNCN3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3CB2 (PNCN3C2 0) capacitor c=5f
++PNCN3RB2 (PNCN3C2 X_cm) resistor r=1T
++PNCN3TN3 (PNCN3C3 PNCNGN3 PNCN3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3TP3 (PNCN3C3 PNCNGP3 PNCN3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3CB3 (PNCN3C3 0) capacitor c=10f
++PNCN3RB3 (PNCN3C3 X_cm) resistor r=1T
++PNCN3TN4 (PNCN3C4 PNCNGN4 PNCN3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3TP4 (PNCN3C4 PNCNGP4 PNCN3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3CB4 (PNCN3C4 0) capacitor c=20f
++PNCN3RB4 (PNCN3C4 X_cm) resistor r=1T
++PNCN3TN5 (PNCN3C5 PNCNGN5 PNCN3M 0) nmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.289519 nrs=0.289519 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3TP5 (PNCN3C5 PNCNGP5 PNCN3M PNC_VDD) pmos_lvt l=30n w=1u multi=1 nf=1 sd=100n ad=7.5e-14 as=7.5e-14 pd=2.15u ps=2.15u nrd=0.165806 nrs=0.165806 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
++PNCN3CB5 (PNCN3C5 0) capacitor c=40f
++PNCN3RB5 (PNCN3C5 X_cm) resistor r=1T
++// END PNC
+ saveOptions options save=selected currents=selected
+-save X_o_p X_o_m X_ip X_im X_ck0 X_kb0 XVs:p X_h0p X_h0m X_h1p X_h1m X_h2p X_h2m X_h3p X_h3m X_h4p X_h4m X_h5p X_h5m X_h6p X_h6m X_h7p X_h7m VBANK:p VNBIAS:p VPBIAS:p VCOMP:p VLOGIC:p B0_ck0 B0_kb0 B0_ck7 B0_kb7 B0_fp B0_ep B0_h0p B0_h1p B0_h2p B0_h3p B0_h4p B0_h5p B0_h6p B0_h7p B0_fm B0_em B0_h0m B0_h1m B0_h2m B0_h3m B0_h4m B0_h5m B0_h6m B0_h7m B1_h0p B1_h1p B1_h2p B1_h3p B1_h4p B1_h5p B1_h6p B1_h7p B1_h0m B1_h1m B1_h2m B1_h3m B1_h4m B1_h5m B1_h6m B1_h7m B2_h0p B2_h1p B2_h2p B2_h3p B2_h4p B2_h5p B2_h6p B2_h7p B2_h0m B2_h1m B2_h2m B2_h3m B2_h4m B2_h5m B2_h6m B2_h7m B3_h0p B3_h1p B3_h2p B3_h3p B3_h4p B3_h5p B3_h6p B3_h7p B3_h0m B3_h1m B3_h2m B3_h3m B3_h4m B3_h5m B3_h6m B3_h7m B4_h0p B4_h1p B4_h2p B4_h3p B4_h4p B4_h5p B4_h6p B4_h7p B4_h0m B4_h1m B4_h2m B4_h3m B4_h4m B4_h5m B4_h6m B4_h7m B5_h0p B5_h1p B5_h2p B5_h3p B5_h4p B5_h5p B5_h6p B5_h7p B5_h0m B5_h1m B5_h2m B5_h3m B5_h4m B5_h5m B5_h6m B5_h7m B6_h0p B6_h1p B6_h2p B6_h3p B6_h4p B6_h5p B6_h6p B6_h7p B6_h0m B6_h1m B6_h2m B6_h3m B6_h4m B6_h5m B6_h6m B6_h7m B7_ck7 B7_kb7 B7_fp B7_ep B7_h0p B7_h1p B7_h2p B7_h3p B7_h4p B7_h5p B7_h6p B7_h7p B7_fm B7_em B7_h0m B7_h1m B7_h2m B7_h3m B7_h4m B7_h5m B7_h6m B7_h7m
++save X_o_p X_o_m X_ip X_im X_ck0 X_kb0 XVs:p X_h0p X_h0m X_h1p X_h1m X_h2p X_h2m X_h3p X_h3m X_h4p X_h4m X_h5p X_h5m X_h6p X_h6m X_h7p X_h7m VBANK:p VNBIAS:p VPBIAS:p VCOMP:p VLOGIC:p B0_ck0 B0_kb0 B0_ck7 B0_kb7 B0_fp B0_ep B0_h0p B0_h1p B0_h2p B0_h3p B0_h4p B0_h5p B0_h6p B0_h7p B0_fm B0_em B0_h0m B0_h1m B0_h2m B0_h3m B0_h4m B0_h5m B0_h6m B0_h7m B1_h0p B1_h1p B1_h2p B1_h3p B1_h4p B1_h5p B1_h6p B1_h7p B1_h0m B1_h1m B1_h2m B1_h3m B1_h4m B1_h5m B1_h6m B1_h7m B2_h0p B2_h1p B2_h2p B2_h3p B2_h4p B2_h5p B2_h6p B2_h7p B2_h0m B2_h1m B2_h2m B2_h3m B2_h4m B2_h5m B2_h6m B2_h7m B3_h0p B3_h1p B3_h2p B3_h3p B3_h4p B3_h5p B3_h6p B3_h7p B3_h0m B3_h1m B3_h2m B3_h3m B3_h4m B3_h5m B3_h6m B3_h7m B4_h0p B4_h1p B4_h2p B4_h3p B4_h4p B4_h5p B4_h6p B4_h7p B4_h0m B4_h1m B4_h2m B4_h3m B4_h4m B4_h5m B4_h6m B4_h7m B5_h0p B5_h1p B5_h2p B5_h3p B5_h4p B5_h5p B5_h6p B5_h7p B5_h0m B5_h1m B5_h2m B5_h3m B5_h4m B5_h5m B5_h6m B5_h7m B6_h0p B6_h1p B6_h2p B6_h3p B6_h4p B6_h5p B6_h6p B6_h7p B6_h0m B6_h1m B6_h2m B6_h3m B6_h4m B6_h5m B6_h6m B6_h7m B7_ck7 B7_kb7 B7_fp B7_ep B7_h0p B7_h1p B7_h2p B7_h3p B7_h4p B7_h5p B7_h6p B7_h7p B7_fm B7_em B7_h0m B7_h1m B7_h2m B7_h3m B7_h4m B7_h5m B7_h6m B7_h7m PNC_PREP PNC_PREN PNCVTRIM:p PNCPVN0:p PNCPVN1:p PNCPVN2:p PNCPVN3:p PNCPVN4:p PNCPVN5:p PNCPVP0:p PNCPVP1:p PNCPVP2:p PNCPVP3:p PNCPVP4:p PNCPVP5:p PNCNVN0:p PNCNVN1:p PNCNVN2:p PNCNVN3:p PNCNVN4:p PNCNVN5:p PNCNVP0:p PNCNVP1:p PNCNVP2:p PNCNVP3:p PNCNVP4:p PNCNVP5:p
+ dcOp dc
+ tranResponse tran stop=2.941428571428571e-08 maxstep=200f errpreset=conservative strobeperiod=1.116071428571429e-12 strobeoutput=strobeonly

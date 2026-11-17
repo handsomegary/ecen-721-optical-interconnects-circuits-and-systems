@@ -1,0 +1,43 @@
+Olympus 交接｜LP14 GLOBAL MAP｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_global.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+第一輪只提以下索引核准，共 30 欄（15 組 P/N）。
+  0–1        SS r3
+  6–13       SS 極限 G0，理想、1×、2×、4×
+  38–45      SS 中心 G40，同四組
+  70–77      SS 極限 G80，同四組
+  82–85      SS G40 不加 launch 50 Ω，理想與 4×
+
+先核對 0、6、12、38、44 的網表。portable_review 用模型
+根目錄佔位符。對應有模型路徑的 staging 命令如下：
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B lp_global.py --mode stage --index 0 --index 6 --index 12 --index 38 --index 44 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+把 global_plan.json 與 SHA256SUMS.txt 的 SHA、核准的 case
+IDs 和 stages 填入新的 approval。用真實新 run root
+（~/ecen720_28nm/runs 下），匯出 PAM4_DRIVE_PACKAGE、
+PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT。
+用 lp_global_classic.sbatch，每欄 1 CPU／4 GiB／30 min，
+solver 暫估 3–30 秒。沿用 Spectre 23.1 classic +mt=1
+與原私有 shrink，SPECTRE_DEFAULTS=-E。raw 留在 Olympus。
+
+  /usr/bin/python3.11 -B global_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_global_ss_pilot.json
+
+首輪輸出三個 G code 的 P/N、oracle 插入損失、tap→gate、r3
+差異、在 G40 周圍的有效校正範圍、CM→DM、功耗和噪聲。
+若 SS 沒有可用尺寸，停在這裡。若有可用尺寸，從 0–193 剩餘
+的索引提下一個 AC 批次，確認所選尺寸、中心附近、兩極性和
+額外角落，使用新摘要檔名。
+
+194–1273 是候選 4×、有 launch 50 Ω 的全碼與接縫別名，
+要等 pilot 證據才另提核准。可分三角落，每角落 360 欄。
+若尺寸或匹配負載改了，重出全掃計畫與 SHA。
+摘要內的 selector_result 若不是 verified_map，就先檢查
+缺漏、反向碼、步階與範圍。verified_map 是靜態 AC 結果。
+先驗前景切碼與類比穩定時間，再提 C0；C1、C2 另請核准。
+以各階段實測 raw 位元組估配額，30 欄 pilot 可先用舊 AC
+2.0 GB／296 欄估 0.2 GB，再用首案檔案大小更新。

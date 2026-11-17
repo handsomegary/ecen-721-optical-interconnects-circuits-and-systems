@@ -1,0 +1,25 @@
+Olympus 交接｜LP14 啟動／穩定度／XT2
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_diagnostics.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+首批建議只核准 0–2、11–12 共五案。0–2 為 SS cb0 快／慢／重啟，
+11–12 為 SS cb2 的 replica 與 beta STB。先跑 0、11，核對
+實際 PSF 檔名、原生 margin units、case completion、DC OP 與 raw census。
+  /usr/bin/python3.11 -B lp_diagnostics.py --mode stage --index 0 --index 11 --index 12 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+用 diagnostic_plan.json SHA、manifest SHA、精確 case IDs 與 stages
+填新 approval。沿用私有 shrink、Spectre 23.1.0.722.isr15
+classic +mt=1、SPECTRE_DEFAULTS=-E。新 campaign，1 CPU／4 GiB／30 min。
+STB solver 估 2–30 秒，短 XT2 估 10–90 秒，啟動估 1–10 分鐘，
+以首例實測更新。以 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、
+PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT 設定 lp_diag_classic.sbatch。
+
+  /usr/bin/python3.11 -B diag_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_diagnostics_summary.json
+
+其餘 3–8 是 TT/FF 啟動，9–10、13–20 是其餘 PVT/cb 的 STB。
+21–22 是 SS cb2 的 XT2 有限擺幅，等啟動和穩定度結果後另批審查。
+若 XT2 save 名稱因 wrapper hierarchy 不符，以實際 dcOpInfo
+和原生 Spectre log 找子元件名稱，改版和 SHA 後再提交。缺 trace
+不替填，不當作通過。保留舊批及本批 raw、case/log、SHA 和摘要。

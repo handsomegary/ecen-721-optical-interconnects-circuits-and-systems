@@ -1,0 +1,41 @@
+{
+  "schema": "pam4_sar7_refpath2_pilot_v1",
+  "authorization": {
+    "schema": "pam4_sar7_authorization_v1",
+    "user_quote": "Yes, 8 hours",
+    "source_note": "20261116T2337_user_delegates_8h_sar7_175gs.md",
+    "source_note_sha256": "26523d076e396f82acc8844f3441c3517ebba4f05e2073e1629436586287da58",
+    "starts_utc": "2026-11-17T05:37:00Z",
+    "expires_utc": "2026-11-17T13:37:00Z",
+    "scope": "SAR7 single-channel 1.75GS/s TT short fixes",
+    "max_solver_cases_this_packet": 1,
+    "cpus_this_job": 1,
+    "max_concurrent_sar7_cpus": 2,
+    "c2_untouched": true,
+    "excluded": [
+      "PVT",
+      "long campaigns",
+      "112GS/s integration",
+      "other projects",
+      "raw deletion",
+      "C2 changes"
+    ]
+  },
+  "cases": [
+    {
+      "case_id": "sar7_17_tt_175gs_refpath2",
+      "parent_job": "761549",
+      "parent_manifest_sha256": "928590bc897d6755e208f2729f8c0c9882e15a42262032edddf9b491fa0188ca",
+      "parent_deck_sha256": "509bbedfdc2be956eafade7021b968eeb60d29f0fcb654d2c0037a22b5da813a",
+      "source_summary_sha256": "8ab3c03c13658704b2c4a20be6bd453e864f74c4e7e1a6169434a275bbe2eb93",
+      "reference_path_scale": 2,
+      "timing_changes": false,
+      "reference_tg_instances": 56,
+      "decoder_instances": 56,
+      "qbuffer_second_instances": 14,
+      "first_qbuffer_cell": "SAR_INV",
+      "reference_cell": "SAR_REFTG2",
+      "decoder_output_cell": "SAR_NDINV4"
+    }
+  ]
+}

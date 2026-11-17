@@ -1,0 +1,13 @@
+{
+  "status": "PASS_OFFLINE",
+  "tests": 5,
+  "test_log": "test_all_active_drivers_are_identical_except_dormant_probe_excitation (test_gm_select.GMSelectTests.test_all_active_drivers_are_identical_except_dormant_probe_excitation) ... ok\ntest_scope_and_distinct_mirrored_dormant_cases (test_gm_select.GMSelectTests.test_scope_and_distinct_mirrored_dormant_cases) ... ok\ntest_stage2_geometry_and_sampler_devices_unchanged (test_gm_select.GMSelectTests.test_stage2_geometry_and_sampler_devices_unchanged) ... ok\ntest_stationary_noise_uses_same_track_nodes_in_bypass_and_candidate (test_gm_select.GMSelectTests.test_stationary_noise_uses_same_track_nodes_in_bypass_and_candidate) ... ok\ntest_two_banks_share_only_drain_rail_and_have_separate_bridges (test_gm_select.GMSelectTests.test_two_banks_share_only_drain_rail_and_have_separate_bridges) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.050s\n\nOK\n",
+  "cases": 48,
+  "portable_decks_diffs_and_case_hashes_verified": 48,
+  "original_selector_zip_sha256": "ac6431a66d0bf4a35d6887f86cac4ba562ca33d9cad599a17b19d3f1e7c3f833",
+  "model_regenerated_from_compact_Olympus_TT_archive": true,
+  "native_Spectre_parser_and_PSF_validation": "PENDING_ON_OLYMPUS",
+  "native_jobs_started": 0,
+  "new_user_approval": false,
+  "previous_TG_campaign_changed": false
+}

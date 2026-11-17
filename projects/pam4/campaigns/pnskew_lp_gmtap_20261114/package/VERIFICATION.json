@@ -1,0 +1,13 @@
+{
+  "planned_ac_columns": 96,
+  "pilot_packaged": 32,
+  "python": "3.14.4",
+  "offline_tests_passed": 125,
+  "new_tests_passed": 12,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denies hardlink creation in inherited recovery tests (WinError 5).",
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "stage_plan_sha256": "2148bf9c7586202af6fa1fbe6220af0d1c897201229c4c83a71a24f1cf692475"
+}

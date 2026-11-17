@@ -1,0 +1,77 @@
+ECEN 721 #6 · PAM4 P/N deskew · AC60 後的稀疏 AC 提案
+狀態：待使用者核對。原始量測 60/60 已核對，新 Spectre 案例未提交。
+
+一、AC60 的結論
+TT/25 Ω 碼 0 的差動相位延遲由 7 GHz 的 −6.83 ps 變成 56 GHz 的 −1.08 ps。
+SS、TT、FF 在 56 GHz 端碼可用範圍僅約 ±0.78、±1.08、±1.47 ps。
+同一 TT/25 Ω 資料用固定頻帶權重投影得到約 −3.73 ps，但相對純延遲的最大偏差約 3.10 ps。
+用一個相位延遲或一個群延遲值選碼會漏掉頻率相依誤差。增加原 65 pH、變動 C 的 ladder 節數，
+也會累積該拓樸的相位與幅度差，AC60 的結果不足以支持這條方向。
+
+核對 60 案的 case、量測、completion、log、diff 與退休收據。0/63 ↔ 63/0 的稠密頻帶 P/N
+矩陣交換差 ≤6.1e−13 V/V，端點未顯示結構接反。P=32 的 40 fF 對 N=31 的 38.75 fF，
+六個 TG 控制全部翻轉。TT/25 Ω 量得 −1.10 ps，兩腿 56 GHz 增益差約 4.19 dB。
+這是二進位進位點的實際症狀。r3 的輸入是有耦合的複數負載，TT/25 Ω bypass 推回的 56 GHz
+同腿導納約 2.365+j2.943 mS（單用電納換算約 8.36 fF），與前一版 20–100 fF 純 C 的假設有差距。
+實際 native TG 的導通電阻、關斷穿越與碼相依寄生尚未獨立量出，不能從端點吻合就把因果判給其中一項。
+稀疏表補 15/48、47/16、30/33、33/30、31/32、32/31、31/31、32/32。
+判讀 E=H(n,p)−JH(p,n)J，J 交換 P/N。E 小且等碼 d≈0 時，看進位與同腿網路，
+E 大時檢查負載、路徑、model/port 和對稱性。固定原 L、C 後比較 ideal C、加入每支
+50 Ω 的假設 Ron、native TG；另外用同一 ideal C 對照 8.4 fF 無耦合負載和實際 r3。
+50 Ω Ron 是敏感度點。第一節額外保存 TG 兩端節點，檢查 branch 電壓和關斷穿越。
+若只在 native 出現錯序，再決定是否把舊 bank 改成等單元 thermometer；目前先停止展開舊碼表。
+
+二、下一個電路候選
+續用架構 A，保留 CHB2 後、r3 X_ip/X_im 前的插入點。用兩條固定電長的 25 Ω T 型等節
+近似 true-time delay，快路 6 節、慢路 16 節。每節 τ≈√(LC)=0.52 ps，L=13 pH，
+兩個 6.5 pH 臂，C=20.8 fF，等效 ESR=0.305 Ω/節（56 GHz 約 Q=15 的假設）。
+6/16 及 16/6 是相反方向，差動名義 ±5.20 ps，對 ±4.464 ps 留約 0.74 ps 名義範圍。
+TT、SS/85°C/.81 V、FF/−40°C/.99 V 以實際 focus55 r3 gate 和固定 track/hold 負載測。
+第一層直接接通指定長度，隔離傳輸路徑本身。第二層每條快、慢路的兩端都有原生 3 μm/30 nm
+NMOS+PMOS TG（沿用 r5 精確 CDF 卡），關閉的另一條路仍存在，保留負載和 feedthrough。
+端點與兩腿都走快路的等碼控制都驗。15/6 和 16/7 是相鄰粗範圍敏感度，和端點共延遲差約 .26 ps。
+互補整數路徑的差動步階約 1.04 ps，個別 tap 變化約 .52 ps。精細調整後續優先用小段等阻抗
+路徑或已量測可單調的 fine bank，在粗路徑合格後再做。這批不設定 0.25 ps 或其他殘餘門檻。
+短節 L/C 與 ESR 仍是理想 schematic 元件。6.5 pH 臂接近互連寄生尺度。SS/FF 實際會改變
+TG 與 r3 負載，passive Q/電長/互耦的製程變化留待實體設計與 EM/PEX。
+若有選擇器時失去範圍或增益代價過大，先停在這批。可下一輪評估緩衝式匹配或 B 的獨立前取樣，
+後者要重新建立第一混合點前的兩個高頻觀測及 ADC 介面。
+
+三、前級端接定案（本批 AC fixture）
+主比較用每腿 Thevenin Rs=25 Ω，T 節設計 25 Ω，r3 gate 前端每腿加 Rt=25 Ω 到
+原 .7 V 共模。所有候選對照同 Rs/Rt 的 bypass，另列相對原 CHB2 VCVS 0 Ω／無端接 bypass
+的絕對增益代價。25 Ω 不是對現有 CHB2 輸出阻抗的量測，也還沒有實作 driver。
+TT 補 0/25、25/open、0/open 的有 TG 路徑和各自 bypass。不得把 25/25 的延遲直接套到
+原 0/open 的整合 r5。接到共模的兩個 Rt 在理想靜態時接近零電流，需另報共模 rail 功耗、
+熱噪音、源端電流與實際 driver 的增益/噪音/動態供電。先看這批同條件的結果，再決定整合。
+
+解析電路用既有 AC60 反推的複數 2×2 r3 導納。25/25 TT、未建 TG、Q15 假設時，
+16/6 的 7–56 GHz 差動 phase delay 約 5.207–5.228 ps，0/25 為 4.733–5.141 ps。
+25/25 下未補償的 unequal-path |Hdd| 在 56 GHz 約 −11.24 dB（trim plane，源端到輸出），
+其中包含端接分壓和 unequal delay 自身的差動抵消。新摘要另外把已知 ±4.464 ps
+源端相位乘到矩陣兩欄，報校正後 Hdd、CM→DM、同端接 bypass 及原 0/open bypass。
+這組相位適用於源端注入參考平面；同時另列未施加源端 skew 時的 Hdc，供檢查 trim 本地
+共模擾動。前述已知相位只用於 AC 設計比較，日後選碼仍由獨立 pilot 量測決定。
+解析曲線不含 TG、實體 passive 或後續校正，無法預先保證原生電路範圍、損失和 PVT。
+設計參考：實測 switched-line TTD 的開關和端接損耗可很顯著，與本案頻帶、製程不同。
+https://ieeexplore.ieee.org/document/6461436/
+
+四、延遲指標與 FFE 的對應
+主指標是 7–56 GHz 的純延遲投影 τeff。先由複數 H 的 P、N 兩欄重建 DM 驅動下兩腿，
+gP=Hpp−Hpn、gN=Hnn−Hnp。將 gP/gN 除以同 fixture bypass 的比值，密集網格 unwrap。
+τeff=−∫w·ω·φ df / ∫w·ω² df。w=112GBd rectangular-pulse sinc² × 原合成雙極點 |Hch|²
+× 固定 bypass track differential |Hdd|²。用實際頻率間距積分。這是可重現頻譜近似，
+1 ps 邊緣另做敏感度。band RMS 等效殘差和最大 |phase residual/ω| 一起報，另列 14–56 GHz
+敏感度、56 GHz phase delay、group-delay span、兩腿增益、Hdd/Hdc。訊號近 null 判為未解析。
+這個指標關聯 PAM4 邊緣能量和固定 track 接收響應。FFE 後 SER 要靠整合後時域量測建立關聯。
+等 AC 候選可用後，選相同有效殘差但不同 dispersion 或損失的碼，做相同 r5 sample mask、
+frozen FFE 的 paired MSE/SER，再評估相關性。先看同硬體零 skew 比較，再對原 9 點與 oracle。
+AC60 沒有補償後時域結果，不能據此設定 0.25 ps 或推估 SER。
+
+五、交付
+94 個 AC deck（47 組電路，每組兩個單腿激勵）。優先審查 14 個 TT 核心 deck（索引 0–13），
+其餘是條件式 PVT、端接敏感度和舊碼診斷。
+case_plan.json 有完整案號和估時。portable_review 有全部 deck、原 parent 的逐行 diff 及 SHA。
+runner 沿用 1 CPU classic +mt=1 和 r2 raw 延後策略。前批 AC 約 1–2 秒、RSS 約 236 MB，
+本批稠密網格先估 1–15 秒/案，申請 4 GiB / 30 min。用首案校準實際時間與 raw。
+沒有提交工作。無量測的候選保留為待驗證。

@@ -1,0 +1,57 @@
+Olympus 交接｜ECEN 721 SWITCH64 端點量測復原｜2026-11-15
+
+84、86 在 job 757729 已完整跑到 14 ns。此包只讀既有 PSF，
+確認 END、SHA-256、原網表與原執行紀錄後發布量測與收據。
+640 MiB 從補跑設定一路傳給 PSF 身分核對、結尾檢查與串流讀取。
+原 87 案計畫與網表使用原 SHA。
+
+原 512 MiB 兩案在 Spectre FATAL 後回傳 exit_code=0，故
+run_status 為 spectre_evidence_incomplete。收集與摘要共用這項
+判定，並要求原案 PSF 達到 512 MiB 或 Spectre log 有 FATAL 證據。
+Olympus 回報的 task ID 與補跑 PSF 如下。SHA 欄只列回報前綴，
+實際收集核對 run_status.json 中的完整 SHA-256。
+
+  案  原 task  補跑 task  補跑 PSF bytes  SHA-256 前綴
+  84  757710   757730     576370217       fea911b3
+  86  757597   757729     560309741       10c96868
+
+1. 解壓後核對
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_switch64_retry.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+需要複核大檔路徑時，可另在計算節點用合成 PSF 測試。測試會
+使用約 1 GiB 暫存，完成後移除測試資料。
+
+  PAM4_SWITCH64_LARGE_PSF_TEST=1 /usr/bin/python3.11 -B -m unittest -v test_gm_switch64_endpoint_large
+
+2. 設定既有路徑
+
+  PAM4_SWITCH64_ORIGINAL_ROOT    原 pnskew_lp_gmtapsw64_20261114.*
+  PAM4_SWITCH64_RETRY_ROOT       84、86 已跑完的 pnskew_lp_gmtapsw64e_20261114.*
+  PAM4_SWITCH64_ENDPOINT_APPROVAL  b4efaeb7 補跑包用過的 approval JSON
+  PAM4_SWITCH64_REPORT_DIR      已有的報告目錄
+
+沿用原 84、86 approval，綁定原 plan a2f8774d… 與原補跑
+manifest 3ca95ec2…。原補跑 manifest 附在
+ORIGINAL_ENDPOINT_RETRY_SHA256SUMS.txt。
+
+3. 在計算節點串行收集兩案
+
+  /usr/bin/python3.11 -B recover_switch64_endpoint.py --mode collect-only --root "$PAM4_SWITCH64_ORIGINAL_ROOT" --retry-root "$PAM4_SWITCH64_RETRY_ROOT" --approval "$PAM4_SWITCH64_ENDPOINT_APPROVAL"
+
+預設依序收 84、86，可以用 --index 只取其中一案。建議沿用
+前次復原的計算節點配置，1 CPU、4 GiB；記錄實際 RSS 和時間。
+原波形應有 576370217／560309741 B。每案收成後有
+measurements.json、recovery.json、completion.json。保留既有 raw、
+網表與 run_status.json，直到合併摘要和成對量測核對完成。
+
+4. 用原 83／85 的 hold 重新彙整到新檔
+
+  /usr/bin/python3.11 -B gm_switch64.py --mode summarize --root "$PAM4_SWITCH64_ORIGINAL_ROOT" --retry-root "$PAM4_SWITCH64_RETRY_ROOT" --output "$PAM4_SWITCH64_REPORT_DIR/lp_gm_switch64_full_0_86_endpoint_collect_20261115.json"
+
+回報 84／83、86／85 的 comparison.status、settled 與恢復時間。
+若全部通過，總有效案應為 87，動態案 39，21 組有對照的切碼
+均已恢復，FF 密頻 AC 為 passes_nominal_dense_recheck，
+ready_to_design_C0 為 true。

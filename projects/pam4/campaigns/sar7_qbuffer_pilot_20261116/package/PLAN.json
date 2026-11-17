@@ -1,0 +1,16 @@
+{
+  "schema": "pam4_sar7_qbuffer_pilot_v1",
+  "cases": [
+    {
+      "case_id": "sar7_16_tt_175gs_qbuffer",
+      "parent_job": "761524",
+      "parent_manifest_sha256": "43b93d73f5f5e08fc350a6b9a12ae6c54ec3c5eac280190be93a38b3fe4b8bd8",
+      "parent_deck_sha256": "31d7e4e66c8f33a6432d640050285736454e63fa8cc171b04f13b39875180da8",
+      "source_summary_sha256": "73dafa11235da6c63048536e447cd3bda60dba23155b03a399d86c725a84ac03",
+      "q_buffer_first_cell": "SAR_INV",
+      "q_buffer_second_cell": "SAR_NDINV2",
+      "q_buffer_stage_count": 2,
+      "schedule_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "status": "measured",
+  "direct": {
+    "job_id": "760091",
+    "tran_sha256": "1ce73eae3e824f0badd83876c8bdfe30e9851062cf4c8d18c5eaca912b40873a",
+    "weight_fit": {
+      "status": "identified",
+      "usable_points": 84,
+      "heldout_points": 84,
+      "offset_lsb": 53.739036221657635,
+      "sample_gain": 0.9887312023006063,
+      "weight_b6_to_b0_lsb": [
+        52.565852328205565,
+        27.65277391422957,
+        13.837443341213522,
+        6.854785166503521,
+        3.3688819045631977,
+        1.8733407725481275,
+        1.0054718676689034
+      ],
+      "full_code_span_lsb": 107.1585492949324,
+      "ideal_full_code_span_lsb": 127,
+      "heldout_rmse_lsb": 0.7479398023999386
+    },
+    "omitted_state_points": 0,
+    "b0_rail": [
+      {
+        "index": 0,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996582257489665,
+          0.007847176963626917
+        ],
+        "output_latest_V": [
+          0.8998323889129203,
+          0.004630500456707196
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 0.2499999999990427
+      },
+      {
+        "index": 1,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.32199149562418056,
+          0.7678572586067801
+        ],
+        "output_latest_V": [
+          0.07679072939921835,
+          0.8373993961838565
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.50000000013122
+      },
+      {
+        "index": 2,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.899658280970603,
+          0.00783929388477204
+        ],
+        "output_latest_V": [
+          0.8998325583740602,
+          0.0046252625504121635
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 0.24999999957511265
+      },
+      {
+        "index": 3,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996587898773126,
+          0.007834643532373405
+        ],
+        "output_latest_V": [
+          0.8998326938680097,
+          0.004624011541166504
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 0.24999999989109564
+      },
+      {
+        "index": 4,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.899658788409092,
+          0.007834733834180261
+        ],
+        "output_latest_V": [
+          0.8998326918976679,
+          0.004624068403618061
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 1.1158666463340343e-09
+      },
+      {
+        "index": 5,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.3222066320375624,
+          0.767802288916695
+        ],
+        "output_latest_V": [
+          0.07684044453052731,
+          0.8373672555590554
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.50000000235344
+      },
+      {
+        "index": 6,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.3224822357806234,
+          0.767732366461699
+        ],
+        "output_latest_V": [
+          0.07690410404342732,
+          0.8373264386026185
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.500000003579322
+      },
+      {
+        "index": 7,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996585614128689,
+          0.00784013464147898
+        ],
+        "output_latest_V": [
+          0.8998325608618705,
+          0.0046269299128170165
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 4.78937574668203e-09
+      },
+      {
+        "index": 8,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.3226660536441362,
+          0.7676858389908752
+        ],
+        "output_latest_V": [
+          0.07694658198308386,
+          0.8372992926739475
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.500000006027777
+      },
+      {
+        "index": 9,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.32199161318637476,
+          0.7678572291347078
+        ],
+        "output_latest_V": [
+          0.07679075644755592,
+          0.8373993788524838
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.50000000725035
+      },
+      {
+        "index": 10,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996583073666417,
+          0.007839003958226036
+        ],
+        "output_latest_V": [
+          0.8998325665369202,
+          0.004625162929167813
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 8.460403305192367e-09
+      },
+      {
+        "index": 11,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.32206257546289385,
+          0.7678389337784893
+        ],
+        "output_latest_V": [
+          0.07680717950062751,
+          0.8373886729771424
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.500000009700459
+      }
+    ]
+  },
+  "isolated": {
+    "job_id": "760132",
+    "tran_sha256": "a3c3572cbaa07a1f2d4fe85dd8ec33f1fd1d86f061f53c1f7319c4e015cea4b7",
+    "weight_fit": {
+      "status": "identified",
+      "usable_points": 84,
+      "heldout_points": 84,
+      "offset_lsb": 59.75011731872851,
+      "sample_gain": 0.989943420654011,
+      "weight_b6_to_b0_lsb": [
+        58.77432817362791,
+        30.767164508840672,
+        15.369689633490317,
+        7.3220317748773756,
+        3.766749473949279,
+        2.039623132169626,
+        1.1193494274589126
+      ],
+      "full_code_span_lsb": 119.15893612441407,
+      "ideal_full_code_span_lsb": 127,
+      "heldout_rmse_lsb": 0.8871365256115614
+    },
+    "omitted_state_points": 0,
+    "b0_rail": [
+      {
+        "index": 0,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996596351382807,
+          0.007827881665804705
+        ],
+        "output_latest_V": [
+          0.899832908240037,
+          0.0046224875814988055
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 0.2499999999990427
+      },
+      {
+        "index": 1,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.3219935806895871,
+          0.7678567388640786
+        ],
+        "output_latest_V": [
+          0.07679122290833286,
+          0.8373990974996485
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.50000000013122
+      },
+      {
+        "index": 2,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996592206666523,
+          0.00782929108806314
+        ],
+        "output_latest_V": [
+          0.8998328436434553,
+          0.004621902486136514
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 0.24999999957511265
+      },
+      {
+        "index": 3,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996597133036437,
+          0.007823569682829028
+        ],
+        "output_latest_V": [
+          0.8998330026169964,
+          0.004619849785700248
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 0.24999999989109564
+      },
+      {
+        "index": 4,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996597688372754,
+          0.007823224395418967
+        ],
+        "output_latest_V": [
+          0.8998330143812516,
+          0.00461982027850823
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 1.1158666463340343e-09
+      },
+      {
+        "index": 5,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.3221267385150137,
+          0.7678230256301467
+        ],
+        "output_latest_V": [
+          0.07682193191191455,
+          0.8373794050020475
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.50000000235344
+      },
+      {
+        "index": 6,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.32211879563805246,
+          0.7678250282479084
+        ],
+        "output_latest_V": [
+          0.07682010145084261,
+          0.8373805743376994
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.500000003579322
+      },
+      {
+        "index": 7,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.3220770497026367,
+          0.7678355626891411
+        ],
+        "output_latest_V": [
+          0.07681047873068128,
+          0.83738672528194
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.50000000480355
+      },
+      {
+        "index": 8,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996597693369887,
+          0.00782321916174852
+        ],
+        "output_latest_V": [
+          0.8998330145363879,
+          0.0046198185479751986
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 6.013603053260511e-09
+      },
+      {
+        "index": 9,
+        "comparator_b0": 0,
+        "output_end_V": [
+          0.32199394487649224,
+          0.7678566457228401
+        ],
+        "output_latest_V": [
+          0.07679130704375453,
+          0.8373990430092437
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 12.50000000725035
+      },
+      {
+        "index": 10,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.8996592778573419,
+          0.007828646501070886
+        ],
+        "output_latest_V": [
+          0.8998328617179325,
+          0.004621675572476364
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 8.460403305192367e-09
+      },
+      {
+        "index": 11,
+        "comparator_b0": 1,
+        "output_end_V": [
+          0.899659707603299,
+          0.007823615230772041
+        ],
+        "output_latest_V": [
+          0.8998330012109059,
+          0.004619859657433607
+        ],
+        "valid_before_conv_off": true,
+        "rail_delay_after_trial_release_ps": 9.689593695446166e-09
+      }
+    ]
+  }
+}

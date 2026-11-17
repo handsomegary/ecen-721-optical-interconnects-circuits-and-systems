@@ -1,0 +1,147 @@
+{
+  "schema": "pam4_sar7_offset_pilot_v1",
+  "cases": [
+    {
+      "case_id": "sar7_10_tt_matched_q_load",
+      "input_cm_V": 0.756855,
+      "fullscale_Vppd": 0.1,
+      "source_resistance_ohm": 1.0,
+      "pattern_codes": [
+        64,
+        0,
+        127,
+        31,
+        96,
+        63,
+        65,
+        85,
+        42,
+        1,
+        126,
+        64
+      ],
+      "correction": {
+        "reference_span_V": 0.06374163008917902,
+        "capacitance_F": {
+          "Cunit6p": 1.1899375220481772e-14,
+          "Ctop6p": 1.5308859802548554e-15,
+          "Cbott6p": 1.5308859802548554e-15,
+          "Cunit5p": 5.6774472701359125e-15,
+          "Ctop5p": 7.304185529444439e-16,
+          "Cbott5p": 7.304185529444439e-16,
+          "Cunit4p": 2.8408720935502302e-15,
+          "Ctop4p": 3.6548568131774795e-16,
+          "Cbott4p": 3.6548568131774795e-16,
+          "Cunit3p": 1.4906829158320868e-15,
+          "Ctop3p": 1.917802854829529e-16,
+          "Cbott3p": 1.917802854829529e-16,
+          "Cbridgep": 1.9120668894641726e-15,
+          "Cbridge_mainp": 1.9676262624920753e-16,
+          "Cbridge_lowp": 1.9676262624920753e-16,
+          "Cunit6n": 1.1899375220481772e-14,
+          "Ctop6n": 1.5308859802548554e-15,
+          "Cbott6n": 1.5308859802548554e-15,
+          "Cunit5n": 5.6774472701359125e-15,
+          "Ctop5n": 7.304185529444439e-16,
+          "Cbott5n": 7.304185529444439e-16,
+          "Cunit4n": 2.8408720935502302e-15,
+          "Ctop4n": 3.6548568131774795e-16,
+          "Cbott4n": 3.6548568131774795e-16,
+          "Cunit3n": 1.4906829158320868e-15,
+          "Ctop3n": 1.917802854829529e-16,
+          "Cbott3n": 1.917802854829529e-16,
+          "Cbridgen": 1.9120668894641726e-15,
+          "Cbridge_mainn": 1.9676262624920753e-16,
+          "Cbridge_lown": 1.9676262624920753e-16
+        }
+      },
+      "offset_fix": {
+        "kind": "matched_complement_load"
+      }
+    },
+    {
+      "case_id": "sar7_11_tt_cml_load_trim",
+      "input_cm_V": 0.756855,
+      "fullscale_Vppd": 0.1,
+      "source_resistance_ohm": 1.0,
+      "pattern_codes": [
+        64,
+        0,
+        127,
+        31,
+        96,
+        63,
+        65,
+        85,
+        42,
+        1,
+        126,
+        64
+      ],
+      "correction": {
+        "reference_span_V": 0.06374163008917902,
+        "capacitance_F": {
+          "Cunit6p": 1.1899375220481772e-14,
+          "Ctop6p": 1.5308859802548554e-15,
+          "Cbott6p": 1.5308859802548554e-15,
+          "Cunit5p": 5.6774472701359125e-15,
+          "Ctop5p": 7.304185529444439e-16,
+          "Cbott5p": 7.304185529444439e-16,
+          "Cunit4p": 2.8408720935502302e-15,
+          "Ctop4p": 3.6548568131774795e-16,
+          "Cbott4p": 3.6548568131774795e-16,
+          "Cunit3p": 1.4906829158320868e-15,
+          "Ctop3p": 1.917802854829529e-16,
+          "Cbott3p": 1.917802854829529e-16,
+          "Cbridgep": 1.9120668894641726e-15,
+          "Cbridge_mainp": 1.9676262624920753e-16,
+          "Cbridge_lowp": 1.9676262624920753e-16,
+          "Cunit6n": 1.1899375220481772e-14,
+          "Ctop6n": 1.5308859802548554e-15,
+          "Cbott6n": 1.5308859802548554e-15,
+          "Cunit5n": 5.6774472701359125e-15,
+          "Ctop5n": 7.304185529444439e-16,
+          "Cbott5n": 7.304185529444439e-16,
+          "Cunit4n": 2.8408720935502302e-15,
+          "Ctop4n": 3.6548568131774795e-16,
+          "Cbott4n": 3.6548568131774795e-16,
+          "Cunit3n": 1.4906829158320868e-15,
+          "Ctop3n": 1.917802854829529e-16,
+          "Cbott3n": 1.917802854829529e-16,
+          "Cbridgen": 1.9120668894641726e-15,
+          "Cbridge_mainn": 1.9676262624920753e-16,
+          "Cbridge_lown": 1.9676262624920753e-16
+        }
+      },
+      "offset_fix": {
+        "kind": "balanced_cml_load_trim",
+        "rsense_p_ohm": 498.5,
+        "rsense_n_ohm": 501.5
+      }
+    }
+  ],
+  "provenance": {
+    "source_job_id": "760874",
+    "source_case_id": "sar7_09_tt_cml_main_ratio",
+    "source_portable_sha256": "f2231b54d5138538c57102e5cd25dcc1047829ed71f02d79ab3d37d5726a6153",
+    "source_retained_audit_sha256": "0e9e091578e93bccaddbffc9c795de26e1d1c6594f263b844591f58f1830a4e9",
+    "source_summary_sha256": "6573a387cf24fccfad5ffbaa98016b59f22d21402b7b59cfbba8ef72527fc150",
+    "source_measurements_sha256": "416735e041446ec7e596498ae5ca537b5851139a42e030b899437e260ee47cd6",
+    "prediction_sha256": "f709fbb541bbfb3ac05a899da3ba3c11caa588f1989d85b2a012f20ff13193ba",
+    "authorization_note": "20261116T1515_user_delegates_8h_sar7_fixes.md",
+    "authorization_basis": "八小時授權任何修正",
+    "starts_utc": "2026-11-16T21:15:00Z",
+    "expires_utc": "2026-11-17T05:15:00Z",
+    "papers": [
+      "10.1109/ASSCC.2011.6123608",
+      "10.1109/JSSC.2024.3449115"
+    ],
+    "interpretation": [
+      "Both cases start independently from the frozen 760874 design",
+      "Case0 probes a confirmed external first-gate load asymmetry; effect not predicted",
+      "Case1 compensates an operational threshold at this condition, not identified intrinsic offset",
+      "New internal x/y probes distinguish regeneration nodes from buffered q outputs",
+      "No CDAC, reference, input or clock changes"
+    ]
+  }
+}

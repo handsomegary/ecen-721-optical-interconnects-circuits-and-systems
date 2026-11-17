@@ -1,0 +1,27 @@
+Olympus 交接　PAM4 GMFINE
+
+先讀 DESIGN_zh_TW.txt、case_plan.json、portable_review 裡的 deck 與逐行 diff。
+套件根目錄執行 sha256sum -c SHA256SUMS.txt 或 /usr/bin/python3.11 -B gm_fine.py --mode verify。
+沿用 IC231、Spectre 23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E、
+原 Python 3.11 wrapper、partition/QOS/account 與既有私有 shrink 模型樹。
+
+在新 review root materialize 代表案：
+  /usr/bin/python3.11 -B gm_fine.py --mode stage --index 0 --index 2 --index 4 \
+    --index 8 --index 10 --index 32 --root "$PAM4_FINE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+先核對原第二級、固定取樣、模型 hash 與 SS/FF section。雙組中每腿啟用 tail 的總數為 8。
+新 bias inverter、TG 和 follower 為原生 MOS，隔直電容與控制／偏壓來源仍為測試模型。
+
+取得新批准後，填 approval_TEMPLATE.json 的副本，綁定新 plan SHA、SHA256SUMS.txt SHA、
+stage 和精確 case IDs。首批建議只審查 TT 0–13（baseline、漏訊、原生 bias、follower）。
+經原 wrapper 用 gmfine_classic.sbatch，array 只列批准索引。1 CPU/4 GiB/30 min。
+環境變數 PAM4_FINE_PACKAGE、PAM4_FINE_RUN_ROOT、PAM4_FINE_APPROVAL、PAM4_PDK_ROOT。
+run root 需為 ~/ecen720_28nm/runs 下的新 campaign。首例留 raw 核對 PSF 欄位與工作點。
+
+  /usr/bin/python3.11 -B fine_summary.py --run-root "$PAM4_FINE_RUN_ROOT" --output summary.json
+
+先回報相對同端接 bypass 的絕對增益差、實體 driver 功耗和 headroom、OFF/selected
+複數漏訊。再決定是否跑局部 9 碼、中心碼和條件式 SS/FF。r2 raw 退休規則沿用。
+共 92 案。14–31 為理想啟動的 edge 局部九碼；32–47 為兩方向的原生 driver edge 取樣；
+48–61 為反向粗端及中心附近；62–67 為 clamp ablation 與實體短路徑。SS/FF 68–91。
+保留輸入、量測、log、case/diff/completion 與收據。原始波形留在 Olympus。
+TRANSIENT_PLAN_zh_TW.txt 與 transient_plan.json 是後續設計計畫，這個 runner 只接受 AC。

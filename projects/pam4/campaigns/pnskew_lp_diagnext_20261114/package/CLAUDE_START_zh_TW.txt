@@ -1,0 +1,33 @@
+Olympus 交接｜LP14 DIAG NEXT
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B diag_next.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議第一批只核准 0、19。0 是 SS cb2 beta 延伸 STB，19 是
+SS cb2 正負小擾動。先核對 PSF、真實 DC 工作點、供電保持額定、
+及原生 log。過去的 SS 0/1/2 啟動和案 11 replica 可沿用。
+  /usr/bin/python3.11 -B diag_next.py --mode stage --index 0 --index 19 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+之後按結果另核准：
+- 1–5 其餘角落／碼的 beta STB，6–10 其餘 replica STB。
+- 11–16 TT/FF 快、慢、掉電重啟。可與其他 STB 同批審查，
+  長案依首輪 32/64 s 更新資源安排。
+- 20/21 TT/FF 的正負擾動，等 SS 檢查。
+- 17/18 SS cb2 XT2，原 Vb2、0.4/0.2 Vppd，等啟動與 STB 證據。
+  首例核對 16 顆原生 vds/vdsat/region 及取樣波形再跑另一幅度。
+
+用 next_diagnostic_plan.json 與 SHA256SUMS.txt SHA、
+核准 case IDs 和 stages 填新 approval。使用私有 shrink、
+Spectre 23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E，
+沿用原帳號與 QOS。每欄 1 CPU／4 GiB／30 min。
+先建並確認實際 run root 路徑，直接傳 PAM4_DRIVE_RUN_ROOT。
+設定 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT，
+用 lp_diag_next_classic.sbatch。
+
+  /usr/bin/python3.11 -B diag_next_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_diag_next_summary.json
+
+報告原生狀態、20 GHz 尾端、return difference、擾動前後的 Iref
+和 servo。Beta 採 BETA_CRITERIA_zh_TW.txt，舊 review 不重分類。
+新舊 raw 留在 Olympus。若 XT2 時域存檔名稱不合，以 native OP
+取得階層，另修並重新核准。

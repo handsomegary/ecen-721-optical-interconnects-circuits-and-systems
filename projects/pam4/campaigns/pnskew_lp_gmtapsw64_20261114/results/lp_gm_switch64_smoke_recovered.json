@@ -1,0 +1,3125 @@
+{
+  "format": "pam4_lp14_switch64_summary_v1",
+  "FF_dense": {
+    "format": "pam4_lp14_switch64_FF_dense_summary_v1",
+    "status": "passes_nominal_dense_recheck",
+    "verified_nominal_dense_steps": true,
+    "maximum_step_ps": 0.5,
+    "engineering_refinement_limit_fs": 1.0,
+    "observed_proxy_definition": "|grid400-grid200| + |tight400-grid400| on each adjacent weighted step",
+    "comparisons_by_edge": {
+      "-2_to_-1": {
+        "historical_common_first_step_ps": null,
+        "base100_ps": 0.26311025938646043,
+        "grid200_ps": 0.26310885428465947,
+        "grid400_ps": 0.26310852148167696,
+        "tight400_ps": 0.26310852148167696,
+        "tight400_minus_base100_fs": -0.0017379047834720218,
+        "last_grid_delta_fs": 0.0003328029825055978,
+        "solver_tolerance_delta_fs": 0.0,
+        "observed_refinement_proxy_fs": 0.0003328029825055978,
+        "tight400_margin_to_0p50_fs": 236.89147851832303,
+        "nominal_step_pass": true,
+        "observed_proxy_within_1fs": true,
+        "margin_exceeds_observed_proxy": true
+      },
+      "-1_to_0": {
+        "historical_common_first_step_ps": 0.49479191568842,
+        "base100_ps": 0.4947919156884217,
+        "grid200_ps": 0.4947882784242431,
+        "grid400_ps": 0.49478741426628614,
+        "tight400_ps": 0.49478741426628614,
+        "tight400_minus_base100_fs": -0.004501422135538835,
+        "last_grid_delta_fs": 0.0008641579569701463,
+        "solver_tolerance_delta_fs": 0.0,
+        "observed_refinement_proxy_fs": 0.0008641579569701463,
+        "tight400_margin_to_0p50_fs": 5.212585733713859,
+        "nominal_step_pass": true,
+        "observed_proxy_within_1fs": true,
+        "margin_exceeds_observed_proxy": true
+      },
+      "0_to_1": {
+        "historical_common_first_step_ps": 0.4947919156883,
+        "base100_ps": 0.49479191568829756,
+        "grid200_ps": 0.494788278424047,
+        "grid400_ps": 0.49478741426609685,
+        "tight400_ps": 0.49478741426609685,
+        "tight400_minus_base100_fs": -0.004501422200708927,
+        "last_grid_delta_fs": 0.0008641579501422747,
+        "solver_tolerance_delta_fs": 0.0,
+        "observed_refinement_proxy_fs": 0.0008641579501422747,
+        "tight400_margin_to_0p50_fs": 5.212585733903152,
+        "nominal_step_pass": true,
+        "observed_proxy_within_1fs": true,
+        "margin_exceeds_observed_proxy": true
+      },
+      "1_to_2": {
+        "historical_common_first_step_ps": null,
+        "base100_ps": 0.2631102593864501,
+        "grid200_ps": 0.2631088542846706,
+        "grid400_ps": 0.2631085214816866,
+        "tight400_ps": 0.2631085214816866,
+        "tight400_minus_base100_fs": -0.0017379047634880074,
+        "last_grid_delta_fs": 0.0003328029840043989,
+        "solver_tolerance_delta_fs": 0.0,
+        "observed_refinement_proxy_fs": 0.0003328029840043989,
+        "tight400_margin_to_0p50_fs": 236.8914785183134,
+        "nominal_step_pass": true,
+        "observed_proxy_within_1fs": true,
+        "margin_exceeds_observed_proxy": true
+      }
+    },
+    "profiles": {
+      "base100": {
+        "points_per_decade": 100,
+        "point_count": 819,
+        "by_code": {
+          "-2": {
+            "fit": {
+              "delay_ps": -0.7579021750748821,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.1004320952187337,
+              "worst_phase_error_ps": 0.3328612550054913,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.5531058477731864
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          },
+          "-1": {
+            "fit": {
+              "delay_ps": -0.4947919156884217,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485786843989801,
+              "worst_phase_error_ps": 0.2693580238796422,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.35002853824853103
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "0": {
+            "fit": {
+              "delay_ps": -0.0,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.0,
+              "worst_phase_error_ps": 0.0,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.0
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1938705231823578,
+            "XT2_static_pass": true
+          },
+          "1": {
+            "fit": {
+              "delay_ps": 0.49479191568829756,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485786844007772,
+              "worst_phase_error_ps": 0.26935802388035435,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.35002853824823205
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "2": {
+            "fit": {
+              "delay_ps": 0.7579021750747477,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.10043209521891075,
+              "worst_phase_error_ps": 0.3328612550058811,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.5531058477728892
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          }
+        },
+        "steps_ps": {
+          "-2_to_-1": 0.26311025938646043,
+          "-1_to_0": 0.4947919156884217,
+          "0_to_1": 0.49479191568829756,
+          "1_to_2": 0.2631102593864501
+        }
+      },
+      "grid200": {
+        "points_per_decade": 200,
+        "point_count": 1636,
+        "by_code": {
+          "-2": {
+            "fit": {
+              "delay_ps": -0.7578971327089026,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.100434535100783,
+              "worst_phase_error_ps": 0.3327841228124069,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.5531004749688556
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          },
+          "-1": {
+            "fit": {
+              "delay_ps": -0.4947882784242431,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485941969267752,
+              "worst_phase_error_ps": 0.26931922545116266,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.3500158970189934
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "0": {
+            "fit": {
+              "delay_ps": -0.0,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.0,
+              "worst_phase_error_ps": 0.0,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.0
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1938705231823578,
+            "XT2_static_pass": true
+          },
+          "1": {
+            "fit": {
+              "delay_ps": 0.494788278424047,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485941969281372,
+              "worst_phase_error_ps": 0.26931922545315007,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.35001589701865465
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "2": {
+            "fit": {
+              "delay_ps": 0.7578971327087176,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.100434535100925,
+              "worst_phase_error_ps": 0.332784122814103,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.5531004749685234
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          }
+        },
+        "steps_ps": {
+          "-2_to_-1": 0.26310885428465947,
+          "-1_to_0": 0.4947882784242431,
+          "0_to_1": 0.494788278424047,
+          "1_to_2": 0.2631088542846706
+        }
+      },
+      "grid400": {
+        "points_per_decade": 400,
+        "point_count": 3271,
+        "by_code": {
+          "-2": {
+            "fit": {
+              "delay_ps": -0.7578959357479631,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.10043519303876822,
+              "worst_phase_error_ps": 0.33278450061195897,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.5530994691051144
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          },
+          "-1": {
+            "fit": {
+              "delay_ps": -0.49478741426628614,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485983494609923,
+              "worst_phase_error_ps": 0.26931966856784256,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.3500107709441131
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "0": {
+            "fit": {
+              "delay_ps": -0.0,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.0,
+              "worst_phase_error_ps": 0.0,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.0
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1938705231823578,
+            "XT2_static_pass": true
+          },
+          "1": {
+            "fit": {
+              "delay_ps": 0.49478741426609685,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485983494622922,
+              "worst_phase_error_ps": 0.2693196685697547,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.3500107709437366
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "2": {
+            "fit": {
+              "delay_ps": 0.7578959357477835,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.10043519303890511,
+              "worst_phase_error_ps": 0.3327845006134364,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.5530994691047784
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          }
+        },
+        "steps_ps": {
+          "-2_to_-1": 0.26310852148167696,
+          "-1_to_0": 0.49478741426628614,
+          "0_to_1": 0.49478741426609685,
+          "1_to_2": 0.2631085214816866
+        }
+      },
+      "tight400": {
+        "points_per_decade": 400,
+        "point_count": 3271,
+        "by_code": {
+          "-2": {
+            "fit": {
+              "delay_ps": -0.7578959357479631,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.10043519303876822,
+              "worst_phase_error_ps": 0.33278450061195897,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.5530994691051144
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754576e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          },
+          "-1": {
+            "fit": {
+              "delay_ps": -0.49478741426628614,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485983494609923,
+              "worst_phase_error_ps": 0.26931966856784256,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.3500107709441131
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917454e-05,
+                "Vb1_output_sensor_A": 2.697576911879504e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "0": {
+            "fit": {
+              "delay_ps": -0.0,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.0,
+              "worst_phase_error_ps": 0.0,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": -0.0
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014569124995,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854308750045782e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278156666779e-05,
+                "Vb1_output_sensor_A": 2.697580684376674e-07,
+                "Vb2_supply_power_W": 2.335289932225302e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1938705231823578,
+            "XT2_static_pass": true
+          },
+          "1": {
+            "fit": {
+              "delay_ps": 0.49478741426609685,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.07485983494622922,
+              "worst_phase_error_ps": 0.2693196685697547,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.3500107709437366
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649014570503095,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.854294969047217e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.026278119917453e-05,
+                "Vb1_output_sensor_A": 2.697576911879502e-07,
+                "Vb2_supply_power_W": 2.335289913431104e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1933497061133918,
+            "XT2_static_pass": true
+          },
+          "2": {
+            "fit": {
+              "delay_ps": 0.7578959357477835,
+              "status": "MEASURED_AC_ESTIMATE",
+              "weighted_phase_rms_ps": 0.10043519303890511,
+              "worst_phase_error_ps": 0.3327845006134364,
+              "branch_null_frequencies_Hz": [],
+              "phase_delay_at_56GHz_ps": 0.5530994691047784
+            },
+            "bias": {
+              "p": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              },
+              "n": {
+                "Vb1_V": 0.5649035233688133,
+                "Vb2_V": 0.58,
+                "Vb1_minus_nominal_V": -9.647663118661498e-05,
+                "within_2mV_diagnostic": true,
+                "Vb2_to_divider_input_A": 4.025727101649771e-05,
+                "Vb1_output_sensor_A": 2.641012204754575e-07,
+                "Vb2_supply_power_W": 2.334970320922914e-05,
+                "ideal_Vb1_supply_power_W": null
+              }
+            },
+            "XT2_worst_margin_V": 0.1937447140744712,
+            "XT2_static_pass": true
+          }
+        },
+        "steps_ps": {
+          "-2_to_-1": 0.26310852148167696,
+          "-1_to_0": 0.49478741426628614,
+          "0_to_1": 0.49478741426609685,
+          "1_to_2": 0.2631085214816866
+        }
+      }
+    },
+    "missing_cases": [],
+    "invalid_cases": {},
+    "scope": "FF schematic nominal AC refinement. No statistical mismatch, extracted parasitics or transient timing measured."
+  },
+  "transitions": [
+    {
+      "case_id": "gmsw_049_ss_switch_p00_p01_zero",
+      "reference_case_id": "gmsw_048_ss_hold_p01_p01_zero",
+      "case": {
+        "case_id": "gmsw_049_ss_switch_p00_p01_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p00_p01_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p00",
+        "ideal_reference_fixture_id": "ss_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": 1,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_048_ss_hold_p01_p01_zero"
+      },
+      "comparison": {
+        "status": "observed_recovery",
+        "settled": true,
+        "recovery_s_after_event": 6.601904285714306e-11,
+        "thresholds": {
+          "vb1_V": 0.001,
+          "vb2_V": 0.001,
+          "leg_current_fraction": 0.02,
+          "held_difference_V": 0.001,
+          "xt2_margin_deficit_V": 0.002
+        },
+        "sustained_window_s": 1e-09,
+        "minimum_post_settle_samples_each_lane": 8,
+        "reference_case_id": "gmsw_048_ss_hold_p01_p01_zero",
+        "reference_screen": {
+          "stationary": true,
+          "phase_period_s": 1.4285714285714285e-10,
+          "window_start_s": 1.2999999999999999e-08,
+          "periodic_rail_current_error": {
+            "vb1_V": 2.364441975544196e-11,
+            "vb2_V": 0.0,
+            "total_P_A": 5.433657945616237e-09,
+            "total_M_A": 6.78355678627518e-09
+          },
+          "held_max_error_V_by_lane": [
+            1.716301578288948e-08,
+            4.606651582222086e-08,
+            2.722424791677669e-08,
+            9.16065382335074e-08,
+            1.2320435992078937e-07,
+            8.83695126102646e-09,
+            4.837546483749469e-08,
+            6.917692967414735e-08
+          ],
+          "held_sample_count_by_lane": [
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14,
+            14
+          ]
+        },
+        "final_XT2_native_region_comparison": {
+          "XT2p0": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2p1": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2p2": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2p3": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2p4": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2p5": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2p6": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2p7": {
+            "switch_nonsaturation_fraction": 0.20887682556001935,
+            "reference_nonsaturation_fraction": 0.20887705354252045,
+            "difference_fraction": -2.2798250109978824e-07,
+            "switch_minimum_margin_V": 0.0009383649841379071,
+            "reference_minimum_margin_V": 0.0009383178158787198
+          },
+          "XT2m0": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          },
+          "XT2m1": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          },
+          "XT2m2": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          },
+          "XT2m3": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          },
+          "XT2m4": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          },
+          "XT2m5": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          },
+          "XT2m6": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          },
+          "XT2m7": {
+            "switch_nonsaturation_fraction": 0.212043065694831,
+            "reference_nonsaturation_fraction": 0.212043100314042,
+            "difference_fraction": -3.461921099789933e-08,
+            "switch_minimum_margin_V": -4.6481365865796986e-05,
+            "reference_minimum_margin_V": -4.650090206129165e-05
+          }
+        },
+        "max_error_after_event": {
+          "vb1_V": 0.0010305603370484029,
+          "vb2_V": 0.0,
+          "total_P_A": 0.028540018925955677,
+          "total_M_A": 0.026665591340705088,
+          "xt2_margin_deficit_V": 1.8718760001453297e-08
+        },
+        "native_XT2_nonsaturation_count_error_max": 8,
+        "max_held_error_V_by_lane": [
+          0.0007681060558525437,
+          0.0010021435354553368,
+          0.0012018197045357195,
+          0.0009123242443858058,
+          0.00011822472215230508,
+          0.001133488622610656,
+          0.0014928554957575474,
+          0.0012791903734816479
+        ],
+        "last_bad_continuous_sample_s": 3.04555567405406e-09,
+        "last_bad_held_sample_s": 3.058090442857143e-09,
+        "observation_end_s": 1.4e-08,
+        "first_sample_after_all_violations_s": 3.067019042857143e-09,
+        "post_settle_samples_by_lane": [
+          154,
+          153,
+          153,
+          153,
+          153,
+          153,
+          153,
+          153
+        ]
+      }
+    },
+    {
+      "case_id": "gmsw_051_ss_switch_p01_p02_zero",
+      "reference_case_id": "gmsw_050_ss_hold_p02_p02_zero",
+      "case": {
+        "case_id": "gmsw_051_ss_switch_p01_p02_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p01_p02_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_1",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          63,
+          1
+        ],
+        "resolution": 64,
+        "code": 1,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p01",
+        "ideal_reference_fixture_id": "ss_ideal_p01",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 1,
+        "final_code": 2,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_050_ss_hold_p02_p02_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_053_ss_switch_p00_p60_zero",
+      "reference_case_id": "gmsw_052_ss_hold_p60_p60_zero",
+      "case": {
+        "case_id": "gmsw_053_ss_switch_p00_p60_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p00_p60_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p00",
+        "ideal_reference_fixture_id": "ss_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": 60,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_052_ss_hold_p60_p60_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_055_ss_switch_p60_m60_zero",
+      "reference_case_id": "gmsw_054_ss_hold_m60_m60_zero",
+      "case": {
+        "case_id": "gmsw_055_ss_switch_p60_m60_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p60_m60_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_60",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          4,
+          60
+        ],
+        "resolution": 64,
+        "code": 60,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p60",
+        "ideal_reference_fixture_id": "ss_ideal_p60",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 60,
+        "final_code": -60,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_054_ss_hold_m60_m60_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_057_ss_switch_m60_p00_zero",
+      "reference_case_id": "gmsw_056_ss_hold_p00_p00_zero",
+      "case": {
+        "case_id": "gmsw_057_ss_switch_m60_p00_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_m60_p00_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_neg_60",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          60,
+          4,
+          0
+        ],
+        "resolution": 64,
+        "code": -60,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_m60",
+        "ideal_reference_fixture_id": "ss_ideal_m60",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": 4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": -60,
+        "final_code": 0,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_056_ss_hold_p00_p00_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_059_ss_switch_p00_m01_zero",
+      "reference_case_id": "gmsw_058_ss_hold_m01_m01_zero",
+      "case": {
+        "case_id": "gmsw_059_ss_switch_p00_m01_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p00_m01_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p00",
+        "ideal_reference_fixture_id": "ss_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": -1,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_058_ss_hold_m01_m01_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_060_ss_switch_p02_p01_zero",
+      "reference_case_id": "gmsw_048_ss_hold_p01_p01_zero",
+      "case": {
+        "case_id": "gmsw_060_ss_switch_p02_p01_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p02_p01_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_2",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          62,
+          2
+        ],
+        "resolution": 64,
+        "code": 2,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p02",
+        "ideal_reference_fixture_id": "ss_ideal_p02",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 2,
+        "final_code": 1,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_048_ss_hold_p01_p01_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_062_ss_switch_p52_p56_zero",
+      "reference_case_id": "gmsw_061_ss_hold_p56_p56_zero",
+      "case": {
+        "case_id": "gmsw_062_ss_switch_p52_p56_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p52_p56_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_52",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          12,
+          52
+        ],
+        "resolution": 64,
+        "code": 52,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p52",
+        "ideal_reference_fixture_id": "ss_ideal_p52",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 52,
+        "final_code": 56,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_061_ss_hold_p56_p56_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_064_ss_switch_p00_p32_zero",
+      "reference_case_id": "gmsw_063_ss_hold_p32_p32_zero",
+      "case": {
+        "case_id": "gmsw_064_ss_switch_p00_p32_zero",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p00_p32_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p00",
+        "ideal_reference_fixture_id": "ss_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": 32,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_063_ss_hold_p32_p32_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_066_tt_switch_p00_p60_zero",
+      "reference_case_id": "gmsw_065_tt_hold_p60_p60_zero",
+      "case": {
+        "case_id": "gmsw_066_tt_switch_p00_p60_zero",
+        "stage": "switch",
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "tt_switch_p00_p60_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "tt_div_min_p00",
+        "ideal_reference_fixture_id": "tt_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "tt_legacy_center",
+        "reference_current_fixture_id": "tt_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": 60,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_065_tt_hold_p60_p60_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_068_tt_switch_p60_m60_zero",
+      "reference_case_id": "gmsw_067_tt_hold_m60_m60_zero",
+      "case": {
+        "case_id": "gmsw_068_tt_switch_p60_m60_zero",
+        "stage": "switch",
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "tt_switch_p60_m60_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_60",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          4,
+          60
+        ],
+        "resolution": 64,
+        "code": 60,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "tt_div_min_p60",
+        "ideal_reference_fixture_id": "tt_ideal_p60",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "tt_legacy_center",
+        "reference_current_fixture_id": "tt_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 60,
+        "final_code": -60,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_067_tt_hold_m60_m60_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_070_tt_switch_m60_p00_zero",
+      "reference_case_id": "gmsw_069_tt_hold_p00_p00_zero",
+      "case": {
+        "case_id": "gmsw_070_tt_switch_m60_p00_zero",
+        "stage": "switch",
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "tt_switch_m60_p00_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_neg_60",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          60,
+          4,
+          0
+        ],
+        "resolution": 64,
+        "code": -60,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "tt_div_min_m60",
+        "ideal_reference_fixture_id": "tt_ideal_m60",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "tt_legacy_center",
+        "reference_current_fixture_id": "tt_legacy_center",
+        "injected_skew_ps": 4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": -60,
+        "final_code": 0,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_069_tt_hold_p00_p00_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_072_ff_switch_p00_p60_zero",
+      "reference_case_id": "gmsw_071_ff_hold_p60_p60_zero",
+      "case": {
+        "case_id": "gmsw_072_ff_switch_p00_p60_zero",
+        "stage": "switch",
+        "process": "ff",
+        "temperature_C": -40,
+        "vdd_V": 0.99,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ff_switch_p00_p60_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ff_div_min_p00",
+        "ideal_reference_fixture_id": "ff_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ff_legacy_center",
+        "reference_current_fixture_id": "ff_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": 60,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_071_ff_hold_p60_p60_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_074_ff_switch_p60_m60_zero",
+      "reference_case_id": "gmsw_073_ff_hold_m60_m60_zero",
+      "case": {
+        "case_id": "gmsw_074_ff_switch_p60_m60_zero",
+        "stage": "switch",
+        "process": "ff",
+        "temperature_C": -40,
+        "vdd_V": 0.99,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ff_switch_p60_m60_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_60",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          4,
+          60
+        ],
+        "resolution": 64,
+        "code": 60,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ff_div_min_p60",
+        "ideal_reference_fixture_id": "ff_ideal_p60",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ff_legacy_center",
+        "reference_current_fixture_id": "ff_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 60,
+        "final_code": -60,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_073_ff_hold_m60_m60_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_076_ff_switch_m60_p00_zero",
+      "reference_case_id": "gmsw_075_ff_hold_p00_p00_zero",
+      "case": {
+        "case_id": "gmsw_076_ff_switch_m60_p00_zero",
+        "stage": "switch",
+        "process": "ff",
+        "temperature_C": -40,
+        "vdd_V": 0.99,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ff_switch_m60_p00_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_neg_60",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          60,
+          4,
+          0
+        ],
+        "resolution": 64,
+        "code": -60,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ff_div_min_m60",
+        "ideal_reference_fixture_id": "ff_ideal_m60",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ff_legacy_center",
+        "reference_current_fixture_id": "ff_legacy_center",
+        "injected_skew_ps": 4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": -60,
+        "final_code": 0,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_075_ff_hold_p00_p00_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_078_ff_switch_p00_p01_zero",
+      "reference_case_id": "gmsw_077_ff_hold_p01_p01_zero",
+      "case": {
+        "case_id": "gmsw_078_ff_switch_p00_p01_zero",
+        "stage": "switch",
+        "process": "ff",
+        "temperature_C": -40,
+        "vdd_V": 0.99,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ff_switch_p00_p01_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ff_div_min_p00",
+        "ideal_reference_fixture_id": "ff_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ff_legacy_center",
+        "reference_current_fixture_id": "ff_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": 1,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_077_ff_hold_p01_p01_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_080_ff_switch_p01_p02_zero",
+      "reference_case_id": "gmsw_079_ff_hold_p02_p02_zero",
+      "case": {
+        "case_id": "gmsw_080_ff_switch_p01_p02_zero",
+        "stage": "switch",
+        "process": "ff",
+        "temperature_C": -40,
+        "vdd_V": 0.99,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ff_switch_p01_p02_zero",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_1",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          63,
+          1
+        ],
+        "resolution": 64,
+        "code": 1,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ff_div_min_p01",
+        "ideal_reference_fixture_id": "ff_ideal_p01",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ff_legacy_center",
+        "reference_current_fixture_id": "ff_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 1,
+        "final_code": 2,
+        "skew_ps": 0.0,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_079_ff_hold_p02_p02_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_081_ss_switch_p60_m60_zero_offset2ps",
+      "reference_case_id": "gmsw_054_ss_hold_m60_m60_zero",
+      "case": {
+        "case_id": "gmsw_081_ss_switch_p60_m60_zero_offset2ps",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p60_m60_zero_offset2ps",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_60",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          4,
+          60
+        ],
+        "resolution": 64,
+        "code": 60,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p60",
+        "ideal_reference_fixture_id": "ss_ideal_p60",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 60,
+        "final_code": -60,
+        "skew_ps": 0.0,
+        "offset_s": 2e-12,
+        "reference_case_id": "gmsw_054_ss_hold_m60_m60_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_082_ff_switch_p01_p02_zero_offset2ps",
+      "reference_case_id": "gmsw_079_ff_hold_p02_p02_zero",
+      "case": {
+        "case_id": "gmsw_082_ff_switch_p01_p02_zero_offset2ps",
+        "stage": "switch",
+        "process": "ff",
+        "temperature_C": -40,
+        "vdd_V": 0.99,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ff_switch_p01_p02_zero_offset2ps",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "edge_pos_1",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          63,
+          1
+        ],
+        "resolution": 64,
+        "code": 1,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ff_div_min_p01",
+        "ideal_reference_fixture_id": "ff_ideal_p01",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ff_legacy_center",
+        "reference_current_fixture_id": "ff_legacy_center",
+        "injected_skew_ps": -4.464285714285714,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 1,
+        "final_code": 2,
+        "skew_ps": 0.0,
+        "offset_s": 2e-12,
+        "reference_case_id": "gmsw_079_ff_hold_p02_p02_zero"
+      }
+    },
+    {
+      "case_id": "gmsw_084_ss_switch_p00_m60_latep",
+      "reference_case_id": "gmsw_083_ss_hold_m60_m60_latep",
+      "case": {
+        "case_id": "gmsw_084_ss_switch_p00_m60_latep",
+        "stage": "switch",
+        "process": "ss",
+        "temperature_C": 85,
+        "vdd_V": 0.81,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ss_switch_p00_m60_latep",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ss_div_min_p00",
+        "ideal_reference_fixture_id": "ss_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ss_legacy_center",
+        "reference_current_fixture_id": "ss_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": -60,
+        "skew_ps": 4.464285714285714,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_083_ss_hold_m60_m60_latep"
+      }
+    },
+    {
+      "case_id": "gmsw_086_ff_switch_p00_p60_laten",
+      "reference_case_id": "gmsw_085_ff_hold_p60_p60_laten",
+      "case": {
+        "case_id": "gmsw_086_ff_switch_p00_p60_laten",
+        "stage": "switch",
+        "process": "ff",
+        "temperature_C": -40,
+        "vdd_V": 0.99,
+        "launch": "shared14lo120z50",
+        "topology": "shared",
+        "Z0_ohm": 50,
+        "kind": "transient",
+        "mode": "bias",
+        "variant": "fine",
+        "source_R_ohm": 25,
+        "route_thirds": [
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "route_a": [
+          11,
+          11
+        ],
+        "route_b": [
+          11,
+          11
+        ],
+        "count_b": 0,
+        "direction": 1,
+        "gate_offset_mV": 0,
+        "segment": null,
+        "active": "a",
+        "probe": "full",
+        "drive": "p",
+        "off_probe": false,
+        "coil_Q56": 15,
+        "coil_SRF_GHz": 150,
+        "coil_scale": 1.0,
+        "cpus": 1,
+        "memory_GiB": 4,
+        "wall_limit_min": 30,
+        "estimated_solver_s": [
+          3,
+          30
+        ],
+        "bias_mode": "replica",
+        "target_mA_per_leg": 4.35,
+        "hardware": "native_both",
+        "ref_R_ohm": 1934,
+        "miller_pF": 2.0,
+        "integration": "native_direct",
+        "p_output_units": 4,
+        "n_output_units": 1,
+        "fixture_id": "ff_switch_p00_p60_laten",
+        "group": "switch",
+        "variant_name": "gmtap",
+        "point": "center",
+        "anchors": [
+          6,
+          11,
+          16
+        ],
+        "weights": [
+          0,
+          64,
+          0
+        ],
+        "resolution": 64,
+        "code": 0,
+        "tail_variant": "split64",
+        "vb1_V": 0.565,
+        "bias_kind": "divider_lowz",
+        "match_load": false,
+        "anchor_set": "coarse3",
+        "oracle_fixture_id": "ff_div_min_p00",
+        "ideal_reference_fixture_id": "ff_ideal_p00",
+        "fixed_fixture_id": null,
+        "target_current_fixture_id": "ff_legacy_center",
+        "reference_current_fixture_id": "ff_legacy_center",
+        "injected_skew_ps": 0.0,
+        "switch_time_s": 3e-09,
+        "stop_s": 1.4e-08,
+        "slew_s": 1e-12,
+        "max_step_s": 5e-13,
+        "amplitude_Vppd": 0.4,
+        "initial_code": 0,
+        "final_code": 60,
+        "skew_ps": -4.464285714285714,
+        "offset_s": 0.0,
+        "reference_case_id": "gmsw_085_ff_hold_p60_p60_laten"
+      }
+    }
+  ],
+  "dynamic_measured_case_count": 2,
+  "missing_dynamic_cases": {
+    "gmsw_050_ss_hold_p02_p02_zero": "missing case, run status, measurements or receipt",
+    "gmsw_051_ss_switch_p01_p02_zero": "missing case, run status, measurements or receipt",
+    "gmsw_052_ss_hold_p60_p60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_053_ss_switch_p00_p60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_054_ss_hold_m60_m60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_055_ss_switch_p60_m60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_056_ss_hold_p00_p00_zero": "missing case, run status, measurements or receipt",
+    "gmsw_057_ss_switch_m60_p00_zero": "missing case, run status, measurements or receipt",
+    "gmsw_058_ss_hold_m01_m01_zero": "missing case, run status, measurements or receipt",
+    "gmsw_059_ss_switch_p00_m01_zero": "missing case, run status, measurements or receipt",
+    "gmsw_060_ss_switch_p02_p01_zero": "missing case, run status, measurements or receipt",
+    "gmsw_061_ss_hold_p56_p56_zero": "missing case, run status, measurements or receipt",
+    "gmsw_062_ss_switch_p52_p56_zero": "missing case, run status, measurements or receipt",
+    "gmsw_063_ss_hold_p32_p32_zero": "missing case, run status, measurements or receipt",
+    "gmsw_064_ss_switch_p00_p32_zero": "missing case, run status, measurements or receipt",
+    "gmsw_065_tt_hold_p60_p60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_066_tt_switch_p00_p60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_067_tt_hold_m60_m60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_068_tt_switch_p60_m60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_069_tt_hold_p00_p00_zero": "missing case, run status, measurements or receipt",
+    "gmsw_070_tt_switch_m60_p00_zero": "missing case, run status, measurements or receipt",
+    "gmsw_071_ff_hold_p60_p60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_072_ff_switch_p00_p60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_073_ff_hold_m60_m60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_074_ff_switch_p60_m60_zero": "missing case, run status, measurements or receipt",
+    "gmsw_075_ff_hold_p00_p00_zero": "missing case, run status, measurements or receipt",
+    "gmsw_076_ff_switch_m60_p00_zero": "missing case, run status, measurements or receipt",
+    "gmsw_077_ff_hold_p01_p01_zero": "missing case, run status, measurements or receipt",
+    "gmsw_078_ff_switch_p00_p01_zero": "missing case, run status, measurements or receipt",
+    "gmsw_079_ff_hold_p02_p02_zero": "missing case, run status, measurements or receipt",
+    "gmsw_080_ff_switch_p01_p02_zero": "missing case, run status, measurements or receipt",
+    "gmsw_081_ss_switch_p60_m60_zero_offset2ps": "missing case, run status, measurements or receipt",
+    "gmsw_082_ff_switch_p01_p02_zero_offset2ps": "missing case, run status, measurements or receipt",
+    "gmsw_083_ss_hold_m60_m60_latep": "missing case, run status, measurements or receipt",
+    "gmsw_084_ss_switch_p00_m60_latep": "missing case, run status, measurements or receipt",
+    "gmsw_085_ff_hold_p60_p60_laten": "missing case, run status, measurements or receipt",
+    "gmsw_086_ff_switch_p00_p60_laten": "missing case, run status, measurements or receipt"
+  },
+  "invalid_dynamic_cases": {},
+  "all_planned_transitions_recovered_in_window": null,
+  "largest_observed_recovery_after_last_edge_s": 6.601904285714306e-11,
+  "ready_to_design_C0": false,
+  "mismatch_or_PEX_verified": false,
+  "FFE_SER": null
+}

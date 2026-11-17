@@ -1,0 +1,55 @@
+{
+  "package": "ECEN721_PAM4_C0_FIXED_CODE_RUN_20261115",
+  "verification_date": "2026-11-15",
+  "previous_review_zip_sha256": "b0a86d6ea81c9dacda38561324c07975c543e036e00d69159bd7f977e9dfd628",
+  "new_simulations_run": false,
+  "olympus_jobs_submitted": false,
+  "old_switch64_waveform_replay_required": false,
+  "offline_command": "python -B -m unittest -v test_c0_execution",
+  "offline_tests": {
+    "passed": 6,
+    "failed": 0,
+    "elapsed_seconds": 37.822
+  },
+  "test_scope": "Production stage/run_classic/collect/scoring/publish/summary with synthetic 178-trace UI/8 native-format PSF, solver/private-kit stub; Windows-only uid/locking/publication primitive shims. Not native Olympus simulation evidence.",
+  "covered": [
+    "five-case paired summary with actual per-task ID field shape",
+    "post-solver collector failure and collect-only recovery without solver",
+    "exit 0 and fatal log remains incomplete",
+    "nonzero exit despite clean footer refused",
+    "missing raw refused",
+    "fatal marker despite clean footer and exit 0 refused"
+  ],
+  "first_native_check": "C0 case 0 retained PSF: clocks, held samples, 256 inputs and 240 scored FFE symbols per primary/secondary plane; complete source receipts.",
+  "python_3_11_syntax": true,
+  "sbatch_lf": true,
+  "resource_request": {
+    "cpu_per_job": 1,
+    "mem_GiB": 6,
+    "walltime_seconds": 3600,
+    "solver_timeout_seconds": 3300
+  },
+  "estimate_only": {
+    "minutes_per_case": [
+      20,
+      45
+    ],
+    "raw_MiB_per_case": [
+      65,
+      115
+    ],
+    "total_CPU_hours": [
+      2,
+      4
+    ],
+    "total_raw_MiB_less_than": 600
+  },
+  "scope": "Five fixed-code TT noiseless diagnostics, historical frozen phase/FFE. No trained blind calibration or BER signoff.",
+  "portable_deck_sha256": {
+    "c0_00_tt_zero.scs": "045006822ab3addba5ed6ff8e4273eaaae36f057f05cfb466fd0f4bed022e029",
+    "c0_01_tt_p_late_code0.scs": "c24dfe6250eebf30019fe1e93a791c620658ce403587af85c76ae1e5235656f4",
+    "c0_02_tt_p_late_preset.scs": "9492e1cc2bf28e1ce3fcef44274f1c151c6c19974f6ab80a06471f0d31914de8",
+    "c0_03_tt_n_late_code0.scs": "6d09b71dc939dbacae1b7811fb2245bdf11034587d5ffd51871245856a56dcbd",
+    "c0_04_tt_n_late_preset.scs": "970c0323934d3d6d0c50fc341e9c080d797cb68c321b535a0aa3781a44ff2dda"
+  }
+}

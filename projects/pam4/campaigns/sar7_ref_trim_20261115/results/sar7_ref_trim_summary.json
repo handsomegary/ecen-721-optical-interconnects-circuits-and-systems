@@ -1,0 +1,100 @@
+{
+  "status": "measured",
+  "case_id": "sar7_05_tt_ref_trim",
+  "job_id": "760234",
+  "baseline_job_id": "760091",
+  "baseline_wrong_conversions": 10,
+  "baseline_unresolved_bits": 0,
+  "diagnostic_period_ps": 1080,
+  "trial_launch_to_compare_ps": 60,
+  "comparison_window_ps": 60,
+  "wrong_conversions": 7,
+  "unresolved_bits": {
+    "6": 0,
+    "5": 0,
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 0
+  },
+  "final_cm_change_mV": [
+    -112.40794285728273,
+    -109.04114267385756
+  ],
+  "max_abs_sample_error_lsb": 1.4056899921848753,
+  "max_observed_resolve_delay_s": 5.224999999999597e-11,
+  "logic_smoke_pass": false,
+  "solver_seconds": 187.72115623718128,
+  "raw_bytes": 82624626,
+  "tran_sha256": "805fbb027976750344e796b3acb4e8470017470426f1ae72df6d3c2093647efb",
+  "codes": [
+    {
+      "expected": 64,
+      "comparator": 64,
+      "registered": 64
+    },
+    {
+      "expected": 0,
+      "comparator": 0,
+      "registered": 0
+    },
+    {
+      "expected": 127,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 31,
+      "comparator": 31,
+      "registered": 31
+    },
+    {
+      "expected": 96,
+      "comparator": 97,
+      "registered": 97
+    },
+    {
+      "expected": 63,
+      "comparator": 64,
+      "registered": 64
+    },
+    {
+      "expected": 65,
+      "comparator": 66,
+      "registered": 66
+    },
+    {
+      "expected": 85,
+      "comparator": 87,
+      "registered": 87
+    },
+    {
+      "expected": 42,
+      "comparator": 42,
+      "registered": 42
+    },
+    {
+      "expected": 1,
+      "comparator": 0,
+      "registered": 0
+    },
+    {
+      "expected": 126,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 64,
+      "comparator": 65,
+      "registered": 65
+    }
+  ],
+  "full_scale_trim": 1.185143710339679,
+  "baseline_audit_sha256": "e7d7e006c6d7b5455b501aae2afaf338df5891b47302946995d24410aa3c58b7",
+  "final_read_shift_s": 3e-12,
+  "all_comparator_codes_available": true,
+  "sum_abs_comparator_code_error": 8,
+  "max_abs_comparator_code_error": 2,
+  "registered_codes_undetermined": 0
+}

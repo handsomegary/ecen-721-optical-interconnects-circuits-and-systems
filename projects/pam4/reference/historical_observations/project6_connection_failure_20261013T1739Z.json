@@ -1,0 +1,25 @@
+{
+  "observed_utc": "2026-10-13T17:39:54.595957Z",
+  "status": "ssh_unreachable_current_simulation_status_unknown",
+  "connection_attempts": 2,
+  "ssh_exit_codes": [
+    1,
+    1
+  ],
+  "error": "connect to host 192.0.2.1 port 22: Connection timed out",
+  "last_successful_health_check": {
+    "observed_utc": "2026-10-13T17:02:40.456160Z",
+    "stage": "running_noise",
+    "pipeline_pid": 6762,
+    "pipeline_start": "67454",
+    "boot_id": "da22485f-18e2-4df3-8a4e-f94b425c4ca8",
+    "child_pid": 21723,
+    "child_start": "398995",
+    "owned_simulations": 1,
+    "other_simulations": 1,
+    "action": "Samebootandworkeridentities verified; noiseSpectre21864/start399016 R, CPU3042.2to4245.3s. Noerror/newcompletion; noiselesssummarySHAunchanged. Original7200s boundednoiserun continues; nonewdispatch."
+  },
+  "actions": "No VM modifications, no process signals, no restarts, no new simulations, no result export. Existing successful results preserved.",
+  "next": "On next heartbeat, check connectivity and exact boot/process identities, then authoritative r5-only state and summary. Do not infer reboot, failure, completion, or pass from this network outage. Do not restart jobs. If a further interruption or terminal failure is confirmed, preserve evidence and finish bounded report; no unbounded retries.",
+  "VM_record_sync_pending": true
+}

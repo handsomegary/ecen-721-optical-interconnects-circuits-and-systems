@@ -1,0 +1,413 @@
+{
+  "created_utc": "2026-10-23T01:56:32.466157Z",
+  "status": "verified_native_sampled_phase_eye_ready",
+  "experiment_root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume2_20261022",
+  "finished_utc": "2026-10-23T01:25:34.137050Z",
+  "completed_cases": 18,
+  "reused_complete_cases": 8,
+  "new_case_attempts": 10,
+  "phase_offsets_UI": [
+    -0.5,
+    -0.375,
+    -0.25,
+    -0.125,
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5
+  ],
+  "symbols_per_branch_phase": 496,
+  "data_seed": 2026102201,
+  "noise_seed": 197,
+  "errors_by_phase": {
+    "noiseless_primary": [
+      266,
+      170,
+      73,
+      0,
+      0,
+      2,
+      130,
+      232,
+      282
+    ],
+    "noiseless_secondary": [
+      266,
+      187,
+      107,
+      15,
+      0,
+      28,
+      154,
+      236,
+      284
+    ],
+    "noise_primary": [
+      266,
+      179,
+      76,
+      2,
+      0,
+      12,
+      123,
+      237,
+      288
+    ],
+    "noise_secondary": [
+      262,
+      202,
+      149,
+      82,
+      55,
+      84,
+      179,
+      255,
+      291
+    ]
+  },
+  "strict_observed_adjacent_class_gaps_target_units": {
+    "noiseless_primary": [
+      [
+        -3.7693967699416406,
+        -3.8328667817166617,
+        -3.6349341865447573
+      ],
+      [
+        -2.4751466801168145,
+        -2.4255327083069433,
+        -2.5694271602350263
+      ],
+      [
+        -1.087695026622808,
+        -1.0553816022887317,
+        -1.0121910479094935
+      ],
+      [
+        0.5422423333030304,
+        0.5162876158989904,
+        0.3097342987106648
+      ],
+      [
+        1.3701375570174343,
+        1.4661794514696096,
+        1.4794092623578736
+      ],
+      [
+        0.18916089149894066,
+        0.19694658910788707,
+        0.263233427709777
+      ],
+      [
+        -1.5864667121779863,
+        -1.450343523573775,
+        -1.491566930967106
+      ],
+      [
+        -3.156993322953342,
+        -3.1114082720925014,
+        -2.980730126741364
+      ],
+      [
+        -4.637237118851562,
+        -4.652221881174176,
+        -4.7512272059643434
+      ]
+    ],
+    "noiseless_secondary": [
+      [
+        -3.5053534721557873,
+        -3.6849760656103356,
+        -3.6673467271564073
+      ],
+      [
+        -2.6292872346996217,
+        -2.4688116514539455,
+        -2.461958570048302
+      ],
+      [
+        -1.461878455873487,
+        -1.4255527239596688,
+        -1.2344918264351068
+      ],
+      [
+        -0.11258641147371673,
+        -0.1913223742258991,
+        -0.11765976307787618
+      ],
+      [
+        0.43073701958668487,
+        0.5688988185335142,
+        0.42567420968874403
+      ],
+      [
+        -0.04071592222697307,
+        -0.20632258790272884,
+        -0.006880470572977693
+      ],
+      [
+        -1.494552886771538,
+        -1.7348103581596044,
+        -1.5221723174128312
+      ],
+      [
+        -3.0286775290312535,
+        -2.9409366201727587,
+        -3.0614834092863847
+      ],
+      [
+        -4.152171329714376,
+        -4.399508215573968,
+        -4.205659813822905
+      ]
+    ],
+    "noise_primary": [
+      [
+        -4.283888542179802,
+        -3.967441396627864,
+        -4.363080745138443
+      ],
+      [
+        -3.0366065704922978,
+        -2.8173361245130066,
+        -3.009529868632333
+      ],
+      [
+        -1.5268507555564625,
+        -1.5523008688326516,
+        -1.3975646101656654
+      ],
+      [
+        0.010678123418770502,
+        0.06446841995515121,
+        0.1798598309578252
+      ],
+      [
+        0.5121766531312448,
+        0.9606983936830533,
+        0.9542662558905128
+      ],
+      [
+        -0.581412939286809,
+        -0.0810173623352153,
+        0.1301622695815592
+      ],
+      [
+        -1.9396947323391733,
+        -1.777438641106098,
+        -1.4010274211322842
+      ],
+      [
+        -3.514080615958652,
+        -3.3199779928248834,
+        -3.046928225702918
+      ],
+      [
+        -5.078244146428818,
+        -5.072978158931992,
+        -4.594882659319998
+      ]
+    ],
+    "noise_secondary": [
+      [
+        -5.310536791066248,
+        -4.135959465692227,
+        -5.010033773745527
+      ],
+      [
+        -4.345850760854956,
+        -3.16880628605103,
+        -4.184035098411942
+      ],
+      [
+        -3.011752076836078,
+        -2.1151129842511844,
+        -3.0596434972602355
+      ],
+      [
+        -1.9308784453310368,
+        -1.6174922663482896,
+        -1.550939317036169
+      ],
+      [
+        -1.4402150441496238,
+        -1.5842714895808627,
+        -1.1235392319062294
+      ],
+      [
+        -1.9565842527949617,
+        -2.295877710539756,
+        -1.2523773138783687
+      ],
+      [
+        -2.7861123459689754,
+        -2.879436785999653,
+        -2.124043228975361
+      ],
+      [
+        -3.895603448177651,
+        -3.9411519850059378,
+        -3.29883312813987
+      ],
+      [
+        -5.321264879053889,
+        -5.466319405934186,
+        -4.518263100463487
+      ]
+    ]
+  },
+  "raw_hashes_verified": 18,
+  "case_receipts": [
+    {
+      "name": "noiseless_phase_00",
+      "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_01",
+      "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_02",
+      "summary_sha256": "49ac94a67ec1d1d636b6194e5c572edda7a67563bd8e4a17764ac077e47d8a8d",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_03",
+      "summary_sha256": "4538e1aea36c1a1fad9f8cc53f77b978700dbbe11536d67a984136ec67d3b683",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_04",
+      "summary_sha256": "8a71aa427bedeca92a69adc3619e1d7e17b6fbe45eb05c4c2f60fb9f82d593cc",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_05",
+      "summary_sha256": "33c56a7765cc699001b6307969dd8f50c61b770e9bd9b6745e558342e27a8a9d",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_06",
+      "summary_sha256": "5e6b4dec253709ba4ad7d2c5c841045b8380adb3983b8f197ac56a50c5857fe4",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_07",
+      "summary_sha256": "71940df7033718aa3ba9cc9e402a376911af457ec442cd1118ffad58a65d7555",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noiseless_phase_08",
+      "summary_sha256": "4a81ffb9e436c3cd1b0d6af70fb1c8e8cee708a77429c0c767c75d6e99d38ee8",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_00",
+      "summary_sha256": "0ea34976acfbc285658ee575c412d4eb1cf7725d5a815ea8c5b7d23df4c727e2",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_01",
+      "summary_sha256": "c64a3752c37d88f3714282f1ae4ea75a3f402581bcc69bc34fe833e9b18a37eb",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_02",
+      "summary_sha256": "3592f406cd15c661eb99c379371cd3db8d07f6b443f318fe17f6964dd44eda02",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_03",
+      "summary_sha256": "8849c13a3cc0e2da3bdbd4e866b083dac59b1cd1f98c48f4e72eb3d27be4d53d",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_04",
+      "summary_sha256": "b17b24658015f8a2a07b9217f3f351af1d1b7f54dbc47da57e335b5f9b660d58",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_05",
+      "summary_sha256": "2fe2c37f5163f691b9eac16fe5216cd6893f0c85a57ea4398d198daa046df749",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_06",
+      "summary_sha256": "5354e68d0fd34df01f860144d104c0001e7e75f695862c7dcd651ae49a05dded",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_07",
+      "summary_sha256": "5641e3d197e39792df05f2df41d9af1e36ee1e7641be80b83ab1c8afb35f4907",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    },
+    {
+      "name": "noise_phase_08",
+      "summary_sha256": "818566549963a4e5ac0fbde3198f9242ae3195bc6e04c6b1e00f8e922086abd6",
+      "exit_code": 0,
+      "raw_hash_verified": true,
+      "deck_hash_verified": true
+    }
+  ],
+  "native_check": {
+    "GUI_opened": false,
+    "exit_code": 0,
+    "log_sha256": "7b81892b23f07cfa7f869f6f032235e73e33b30e12bd7a50f03df7202aa6ca6a",
+    "passed": true,
+    "points": 17856,
+    "provenance_sha256": "883983097311f14190b52496529aba68c0cab604d13d989d6328b3e620ee4b76",
+    "summary_sha256": "4287ceaba89033552074f92f8a9e7eb8759faecb80a620e0e77f101eb62a8a82",
+    "viewer_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09"
+  },
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+  "resume_provenance_sha256": "b16698607ac0392b3ccb8db32c0abfcf2f98a4a1f3fb250b5c1af0c174dd716c",
+  "status_sha256": "9621c99c9dd332e362fa893c84e9b9e1bc6de4f5126536d417c4f8c9576710a1",
+  "view_script": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume2_20261022/viva_sampled_eye/view_sampled_eye.il",
+  "view_script_sha256": "966158a2472cc7d9f6788444d699635b2c19f782c3cf417aa3c571d8efafafd0",
+  "GUI_opened": false,
+  "phase_selection_performed": false,
+  "validation_fitting_performed": false,
+  "full_ADC_verified": false,
+  "scope": "Nine actually simulated sampling clock phases, numerical ideal7bit quantizer and frozen17tapFFE; xUI, ydimensionless targetunits; no continuous-time physicalFFE, no fullADC or BER certification.",
+  "statistical_scope": "496symbol observed SER per branch/phase, correlatedFFEerrors. Same data across phases, fixed noise seed does not give identical realizations or independent replicates.",
+  "gap_scope": "Per tested phase: min(upper true-level group) minus max(lower true-level group), each of3adjacent groups. Negative gap denotes observed group overlap. Dimensionless FFE targetunits, not analog volts or a continuous-time eye metric.",
+  "automation_status": "DELETE_after_delivery",
+  "next": "Teach native ViVA load/plot. Inspect primary versus secondary/noise and fixed0UI without fitting or selecting a new phase. Complete physical ADC requires realCDAC/reference/control/seven dependent decisions."
+}

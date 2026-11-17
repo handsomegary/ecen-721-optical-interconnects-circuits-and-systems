@@ -1,0 +1,30 @@
+Olympus · PAM4 selector 下一輪 review
+
+閱讀 DESIGN_zh_TW.txt、case_plan.json、portable_review 的逐行 diff。
+在 package 根目錄執行 sha256sum -c SHA256SUMS.txt，或
+  /usr/bin/python3.11 -B selector.py --mode verify
+沿用 IC231/Spectre 23.1.0.722.isr15、classic +mt=1、SPECTRE_DEFAULTS=-E、
+原 Python 3.11 wrapper、partition/QOS/account。使用原私有 shrink 模型根。
+
+使用者可先審查 TT 0–11 的孤立開關，及 28–31、38–43、50–55 的等長 loaded controls。
+例如在已存在的新 review root 下，唯讀 model preflight 並 materialize：
+  /usr/bin/python3.11 -B selector.py --mode stage --index 0 --index 4 --index 8 \
+    --index 28 --index 38 --index 42 --index 54 --root "$PAM4_SEL_REVIEW_ROOT" \
+    --model-root "$PAM4_PDK_ROOT"
+比對 portable deck，唯一路徑差是既有 private model 路徑。SS/FF 核對原 section 和 shrink=0.9。
+
+取得使用者批准後，另填 approval_TEMPLATE.json 副本。使用新 case_plan.json SHA 及
+SHA256SUMS.txt SHA、明列 stage 和 case IDs。推薦先批准 TT device 0–11；另看審查結果才跑 loaded。
+PAM4_SEL_PACKAGE、PAM4_SEL_RUN_ROOT、PAM4_SEL_APPROVAL、PAM4_PDK_ROOT 由 wrapper 提供。
+run root 為 ~/ecen720_28nm/runs 下新目錄。經 wrapper 提交 selector_classic.sbatch，
+array 只列已批准索引。1 CPU/4 GiB/30 min per task。首例保留 raw 到量測核對。
+
+  /usr/bin/python3.11 -B selector_summary.py --run-root "$PAM4_SEL_RUN_ROOT" --output new_summary.json
+
+device 要兩個 excitation 才報 Y。loaded 對照請同時取同 corner 的 bypass。
+0–11 與 28–61 是 TT；12–27 為 SS/FF device，62–89 為 SS/FF loaded。
+原 TT 06/06、06/16、16/06 理想對照可在本批重現，09/13 提供中間碼比較。
+回報低頻等效 Ron、56 GHz Y/互電容、等長 loss、各頻點 dispersion、雙方向校正後 Hdd、
+DC 與雜訊。保留 case/deck/diff/log/measurements/completion/SHA/資源收據。
+同意退休的新增 raw 走 r2 deferred 行為。只在量測與 SHA 核對後清理，不下載 raw。
+本批只走 AC，最後先回報判讀。

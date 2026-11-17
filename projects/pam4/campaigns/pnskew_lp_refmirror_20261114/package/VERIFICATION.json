@@ -1,0 +1,18 @@
+{
+  "deck_count": 17,
+  "first_approval_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "offline_tests": 64,
+  "spectre_executed": false,
+  "slurm_submitted": false
+}

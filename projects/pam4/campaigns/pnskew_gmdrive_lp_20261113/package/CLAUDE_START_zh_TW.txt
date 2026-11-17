@@ -1,0 +1,31 @@
+Olympus 交接｜GMDRIVE 低功耗 AC
+
+先讀 DESIGN_zh_TW.txt、case_plan.json、VERIFICATION.json。
+在解壓根目錄核對：
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_drive_lp.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議先只審查索引 0–27。它們包含 R=0/25 Ω 的 SS 短路徑，和兩個候選 R=0
+的 OFF-only。其餘索引按 case_plan.json 的 stage 篩選，需另批核准。
+architecture 28–67、fallback_short 68–79、fallback_edge 80–139、
+fallback_fine 140–187 是分批 review 範圍。
+在新的 review root 可物化代表 deck：
+  /usr/bin/python3.11 -B gm_drive_lp.py --mode stage --index 0 --index 8 --index 12 --index 20 --index 24 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+沿用原私有 shrink 樹、Spectre 23.1.0.722.isr15 classic、SPECTRE_DEFAULTS=-E。
+1 CPU／4 GiB／30 min 一個 P/N 欄，solver 估 3–30 秒；歷史 18 欄的精確時間
+以先前資源觀測為準。只在使用者另批准後把 approval_TEMPLATE.json 複製到套件外，
+填新 plan SHA、manifest SHA、精確 case IDs 和 stage。沿用既有 Olympus wrapper、
+原帳號及 QOS。只提交獲批索引。新 run root 須在 ~/ecen720_28nm/runs 下。
+
+設定 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT，
+使用 gmdrive_lp_classic.sbatch。首例保留 raw 核對。後續 raw 僅在另行批准後依
+本案的完整量測、SHA、使用狀態與收據退役。碰到無法確認的權限先保留 raw。
+
+  /usr/bin/python3.11 -B lp_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output summary_lp_pilot.json
+
+留存 case.json、bench.scs、parent_diff.txt、spectre.log、run_status.json、
+measurements.json、completion.json、資源觀測與收據。raw 留在 Olympus。
+首批回傳 R=0/25 Ω 雙分母、各 rail 功耗、兩個漏訊對照、7–56 GHz tilt 與相位。
+架構組與 cs16 備案由首批結果與使用者選擇決定。

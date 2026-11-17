@@ -1,0 +1,27 @@
+{
+  "bypass": true,
+  "case_id": "ac_ss_p85_v081_bypass_p_r25",
+  "cpus": 1,
+  "drive": "p",
+  "estimated_spectre_min": [
+    0.2,
+    5.0
+  ],
+  "kind": "ac",
+  "load_fF": 0,
+  "memory_GiB": 4,
+  "model_preflight": null,
+  "n_code": 0,
+  "p_code": 0,
+  "process": "ss",
+  "requested_wall_min": 30,
+  "source_ohm": 25,
+  "stage": "standalone_pilot_endpoints",
+  "staged_source_sha256": {
+    "bench.scs": "11f072e5502b346c8f7375638c87e564991c998f3a3dadccabade7edccd21321",
+    "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297",
+    "parent_diff.txt": "ef8fdf427b9520bfe6e4f6eea24860854212472140ecfa788bcbd791f6fa2a67"
+  },
+  "temperature_C": 85,
+  "vdd_V": 0.81
+}

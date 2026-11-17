@@ -1,0 +1,77 @@
+; Export four saved transient voltages and both differential voltages as CSV.
+procedure(ecen720Fail(message)
+  printf("ECEN720_MEASURE_ERROR: %s\n" message)
+  exit(1)
+)
+
+let((runDir rawPath configPath names name wave timeVectors voltageVectors vec
+     timeAxis sampleCount firstTime lastTime index sampleTime previousTime
+     inP inN inDiff outP outN outDiff inPVector inNVector outPVector outNVector filePort)
+  runDir = getShellEnvVar("ECEN720_RUN_DIR")
+  unless(runDir ecen720Fail("ECEN720_RUN_DIR is missing"))
+  configPath = strcat(runDir "/measurement_config.il")
+  rawPath = strcat(runDir "/input.raw")
+  unless(load(configPath) ecen720Fail("Cannot load measurement_config.il"))
+  openResults(rawPath)
+  unless(member('tran results()) ecen720Fail("Transient result is missing"))
+  selectResult('tran)
+
+  names = list(ecen720InputP ecen720InputN ecen720OutputP ecen720OutputN)
+  foreach(name names
+    wave = getData(name)
+    unless(wave ecen720Fail(strcat("Missing transient signal " name)))
+    timeVectors = cons(drGetWaveformXVec(wave) timeVectors)
+    voltageVectors = cons(drGetWaveformYVec(wave) voltageVectors)
+  )
+  timeAxis = car(timeVectors)
+  sampleCount = drVectorLength(timeAxis)
+  unless(sampleCount > 1 ecen720Fail("Transient contains too few points"))
+  foreach(vec append(timeVectors voltageVectors)
+    unless(drVectorLength(vec) == sampleCount
+      ecen720Fail("Signal vector lengths differ")
+    )
+  )
+  firstTime = drGetElem(timeAxis 0)
+  lastTime = drGetElem(timeAxis sampleCount-1)
+  when(lastTime < ecen720Stop - ecen720EndTolerance || lastTime > ecen720Stop + 1e-15
+    printf("Expected stop %.16g s, found %.16g s\n" ecen720Stop lastTime)
+    ecen720Fail("Transient did not reach the configured stop time")
+  )
+
+  voltageVectors = reverse(voltageVectors)
+  inPVector = nth(0 voltageVectors)
+  inNVector = nth(1 voltageVectors)
+  outPVector = nth(2 voltageVectors)
+  outNVector = nth(3 voltageVectors)
+  filePort = outfile(strcat(runDir "/measurements.csv.tmp") "w")
+  unless(filePort ecen720Fail("Cannot open measurements.csv.tmp"))
+  fprintf(filePort "time_s,vin_p_v,vin_n_v,vin_diff_v,vout_p_v,vout_n_v,vout_diff_v\n")
+  for(index 0 sampleCount-1
+    sampleTime = drGetElem(timeAxis index)
+    when(index > 0
+      unless(sampleTime > previousTime
+        ecen720Fail("Transient time points are not strictly increasing")
+      )
+    )
+    previousTime = sampleTime
+    foreach(vec timeVectors
+      unless(abs(drGetElem(vec index) - sampleTime) <= 1e-18
+        ecen720Fail("Signal time grids differ")
+      )
+    )
+    inP = drGetElem(inPVector index)
+    inN = drGetElem(inNVector index)
+    outP = drGetElem(outPVector index)
+    outN = drGetElem(outNVector index)
+    inDiff = inP - inN
+    outDiff = outP - outN
+    fprintf(filePort "%.16g,%.16g,%.16g,%.16g,%.16g,%.16g,%.16g\n"
+      sampleTime inP inN inDiff outP outN outDiff
+    )
+  )
+  close(filePort)
+  printf("ECEN720_MEASURE_PASS: %s rows=%d first_s=%.16g last_s=%.16g\n"
+    ecen720Project sampleCount firstTime lastTime
+  )
+)
+exit(0)

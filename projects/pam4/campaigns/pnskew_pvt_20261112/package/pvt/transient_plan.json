@@ -1,0 +1,10 @@
+{
+  "schema": "PAM4_R3_PVT_R5_FFE_ENDPOINTS_V1",
+  "nominal_reference_case_id": "quiet_z000",
+  "cases": [
+    {"case_id":"r3_pvt_tran_ss_t85_v081", "kind":"pam4_noiseless", "pvt_corner":true, "process":"ss", "temperature_C":85, "vdd_V":0.81, "delta_ui":0, "noise_seed":null, "runtime_budget":"quiet"},
+    {"case_id":"r3_pvt_tran_ff_tm40_v099", "kind":"pam4_noiseless", "pvt_corner":true, "process":"ff", "temperature_C":-40, "vdd_V":0.99, "delta_ui":0, "noise_seed":null, "runtime_budget":"quiet"}
+  ],
+  "reference": "Same r5_cml2_late1 original no-noise zero-skew validation, data seed and frozen primary/secondary detectors",
+  "scope": "TT nominal reused; two historical endpoints remeasured at r3 with r5 sampler. PVT transient noise is outside this targeted subset."
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "planned_not_simulated_waiting_for_disk_capacity",
+  "created_utc": "2026-10-30T03:15:51.981734+00:00",
+  "user_authorization": "2026-10-29: ok continue first; clarified no continue the circuit design. Continue Project6 design; preserve crash-stop/no-auto-retry preferences.",
+  "project_VM": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm",
+  "scope": "Fixed two-case noiseless circuit-mechanism diagnostic; no hardware adoption, FFE fitting or new independent validation.",
+  "evidence_receipt_VM": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/notes/secondary_hold_mechanism_r8_20261029.json",
+  "evidence_sha256": "6f05fde14392ff686e4f58d27ae1d877817607542252079563be3cc30927ffee",
+  "configuration": "secondary_c25_w2 from frozen r7 training protocol; original r5 frontend, primary sampler, CML, bias and comparator-reset load unchanged",
+  "fixed_cases": [
+    {
+      "name": "c25w2_normal",
+      "change": "None; normal secondary sampling clocks."
+    },
+    {
+      "name": "c25w2_secondary_tg_off",
+      "change": "Only128 secondary clock sources B0..B7_ck0..ck7/kb0..kb7 set to their off levels: NMOS gate0V, PMOS gate0.9V. Keep all secondary TGs/caps and comparator reset loads physically present."
+    }
+  ],
+  "causal_scope": "TG-off changes the electrical load history; it is a diagnostic intervention, not a usable ADC candidate or a pure parasitic/noise separation.",
+  "stimulus": {
+    "source": "Existing r7 training sequence only",
+    "data_seed": 2026102202,
+    "warmup": 256,
+    "training": 512,
+    "guard": 128,
+    "noise": false,
+    "holdout_read": false
+  },
+  "comparison_requirements": [
+    "Rebuild both with verified original helper; only128 gate-source level changes between decks. Primary16 clock sources and all transistor/capacitor/model statements identical.",
+    "Use the same save list in both decks, including primary hold and CML output/common-mode on all8banks; waveform budget bounded before launch.",
+    "Measure512 physical apertures using actual primary clock ordinal. Do not relabel secondary readouts as later input symbols.",
+    "Measure primary hold movement, CML final8ps movement/common-mode, and VDD current on identical windows.",
+    "TG-off has no valid secondary conversion: do not calculate secondary SER or call normal secondary-clock-crossing validation on a constant clock.",
+    "Treat saved3ps edge differences as combined signal motion/feedthrough;1.116ps historical strobing is not a sub-ps charge-injection measurement.",
+    "Report both cases; do not search for a best phase, retune detectors, add candidates or infer statistical significance.",
+    "Compare DC/common-mode operating points as well as transient windows. A changed operating point or removed dynamic loading is not by itself proof of reverse feedback."
+  ],
+  "required_source_hashes": {
+    "original_r5_frozen": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+    "r7_training_protocol": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+    "r7_training_script": "a83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac",
+    "c25w2_detector": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+  },
+  "execution_bounds": {
+    "max_cases": 2,
+    "max_seconds_per_case": 3600,
+    "min_VM_free_bytes": 8589934592,
+    "own_actual_spectre_max": 1,
+    "global_actual_spectre_before_launch_max": 1,
+    "automatic_retry": false,
+    "stop_on_failure": true,
+    "allowed_cleanup": "Only verified newly launched own session, never generic kill"
+  },
+  "storage_block": {
+    "observed_free_bytes": 4103770112,
+    "required_free_bytes": 8589934592,
+    "shortfall_bytes": 4486164480,
+    "no_cleanup_performed": true
+  },
+  "simulations_started": 0,
+  "simulator_decks_prepared": false,
+  "monitor_created": false,
+  "complete_ADC_verified": false,
+  "decision": "Continue circuit work on buffer/load settling and held-node disturbance; existing C/TG comparison does not establish a fundamental design limit. No further simulation until capacity gate is satisfied; no automatic monitor resumes."
+}

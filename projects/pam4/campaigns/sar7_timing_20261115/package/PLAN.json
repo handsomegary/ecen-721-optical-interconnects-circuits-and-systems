@@ -1,0 +1,12 @@
+{
+  "schema": "pam4_r5_sar7_timing_pilot_v1",
+  "cases": [
+    {
+      "case_id": "sar7_02_tt_earlycmp42",
+      "input_cm_V": 0.756855,
+      "fullscale_Vppd": 0.100,
+      "source_resistance_ohm": 1.0,
+      "pattern_codes": [64, 0, 127, 31, 96, 63, 65, 85, 42, 1, 126, 64]
+    }
+  ]
+}

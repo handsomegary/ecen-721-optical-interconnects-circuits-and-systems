@@ -1,0 +1,52 @@
+; Native Cadence OA-to-Spectre netlisting, with no GUI or schematic mutation.
+procedure(laNativeNetlist()
+  let((project runDir dataPath cell cv out nlResult)
+    project=getShellEnvVar("LA_PROJECT_DIR")
+    runDir=getShellEnvVar("LA_OA_RUN_DIR")
+    dataPath=getShellEnvVar("LA_OA_DATA")
+    unless(equal(project "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm") && runDir && dataPath
+      error("Missing controlled LA native-netlist environment\n")
+    )
+    load(dataPath)
+    cell=laOaNetlistCell
+    unless(equal(laOaLibrary "p6_224g_lib") && ddGetObj(laOaLibrary cell "schematic")
+      error("Independent OA schematic is absent\n")
+    )
+    cv=dbOpenCellViewByType(laOaLibrary cell "schematic" "schematic" "r")
+    out=outfile(strcat(runDir "/native_effective_values.tsv") "w")
+    fprintf(out "instance\tlibrary\tmaster\tparameter\tvalue\n")
+    foreach(inst cv~>instances
+      foreach(p cdfGetInstCDF(inst)->parameters
+        fprintf(out "%s\t%s\t%s\t%s\t%L\n" inst~>name inst~>libName inst~>cellName p->name p->value)
+      )
+    )
+    close(out)
+    dbClose(cv)
+    envSetVal("asimenv.startup" "projectDir" 'string strcat(runDir "/simulation"))
+    simulator('spectre)
+    design(laOaLibrary cell "schematic" "r")
+    resultsDir(strcat(runDir "/results"))
+    apply('modelFile laOaModels)
+    foreach(pair laOaVariables desVar(car(pair) cdfParseFloatString(cadr(pair))))
+    temp(27)
+    analysis('dc ?saveOppoint t)
+    save('all)
+    nlResult=errset(createNetlist(?recreateAll t ?display nil) t)
+    unless(nlResult error("Native createNetlist raised an error\n"))
+    out=outfile(strcat(runDir "/native_api_result.txt") "w")
+    fprintf(out "createNetlist returned %L; inspect generated input.scs and compare against manifest.\n" car(nlResult))
+    close(out)
+    printf("LA_NATIVE_NETLIST_RETURNED %L\n" car(nlResult))
+    t
+  )
+)
+
+let((result)
+  if(equal(getShellEnvVar("LA_OA_SYNTAX_ONLY") "YES") then
+    printf("LA_NATIVE_SKILL_PARSED\n")
+    exit(0)
+  else
+    result=errset(laNativeNetlist() t)
+    if(result then exit(0) else exit(1))
+  )
+)

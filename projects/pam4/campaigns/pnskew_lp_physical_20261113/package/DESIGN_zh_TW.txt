@@ -1,0 +1,68 @@
+ECEN 721 Project #6｜shared LP14 實體偏壓
+
+主線採 4.35 mA／腿，Iref 310.714 µA，462 Ω 對應 143.55 mV 壓降。
+來自已復原 4.2／4.5 mA 報表的線性估值：SS 最差 −1.69 dB，FF 單組
+實體前增量約 9.21 mW，加舊預留後 9.61 mW。4.2 mA 保留為功耗備案；
+4.5 mA 留作已量的增益對照。5.5／6.0 mA 上界案暫停。
+
+新網表三個原生分支
+
+native_ref 用原生 LVT 3 µm／60 nm NMOS 作 1:4 beta multiplier，現有
+LVT 1 µm／30 nm PMOS 卡並聯作 1:1 鏡。退化電阻首點 1.8 kΩ，
+1.2／1.5／2.1／2.4 kΩ 作全角落共用 trim 敏感度。1:10 NMOS 鏡
+供應 462 Ω 參考支路，原理想 OTA 留在診斷臂。電流鏡短通道 VDS 誤差
+與電阻偏差可能超出 2%。若發生，先量 Iref／VDS 斜率和校準所需範圍，
+再選長通道 PDK 卡、低壓受控鏡或外部校準參考。三角落各自挑不同 R
+只能用於找 trim 範圍，不能當作單一無校正硬體。
+
+啟動支路用電阻拉高啟動 NMOS gate，經 50 kΩ 弱拉 PMOS 鏡 gate；
+主 NMOS bias 建立後拉低啟動 gate。檢查慢／快電源上升時是否離開
+零電流狀態、起動支路的靜態漏電和 cold restart。此為原理圖起始尺寸。
+
+native_ota 用高共模 NMOS 輸入對、PMOS 鏡負載及反相 PMOS 第二級，
+獨立電阻／二極體接法產生低速 OTA 尾偏壓。replica drain 上升會讓
+OTA 第一級輸出下降、VGB 上升，構成負回授。Miller 初始值 2 pF／3 kΩ，
+可比較 1／4 pF。replica gate 直接接 OTA，100 kΩ／10 pF 在 RF gate
+支路的迴路外。理想 Iref 留在此診斷臂。
+
+native_both 同時換掉 Iref 和 OTA，保留既有 replica 單元、LP14 RF
+驅動、兩條 50 Ω 線及 25 Ω 源阻抗。電阻／電容仍為原理圖元件，參考、
+鏡、啟動、OTA 全部由 GFVDD 取電。功耗直接取各 rail，取消舊的 0.4 mW
+預留，不把 GFVDD 內的支路算第二次。晶片電阻模型、版圖 mismatch、
+佈線寄生、實際 coil/decap 與供電損耗仍待驗證。
+參考 Kelleci 的 replica bias https://journals.tubitak.gov.tr/elektrik/vol28/iss4/24/
+
+驗收與安排
+
+先做 SS／FF 一對一 smoke，再擴到三角落 11/11 零 skew 的單組 cb0、
+雙組 cb2。對同 Z0、同路徑、同碼的 idealz50 比 56 GHz，損失≤2 dB。
+功耗對原 r3 bypass 的增量仍用單組 +10 mW、雙組 +14 mW。暫以每腿
+跟蹤誤差≤2% 作工程診斷，並回報原生 Iref、輸出偏壓、所有電源、鏡與
+OTA 工作點、額外 tilt、共同群延遲、noise 及 XT2 OP。硬體增益與功耗
+必須各自過門檻，startup/穩定度需獨立驗證。
+
+若靜態工作點合理，另審查 startup_slow/fast 與 replica STB deck。
+啟動診斷只 ramp 新偏壓 rail，舊 AFE 與取樣網路留固定 DC。要求可從
+斷電起動，最終 Iref 與 VGB 和 DC OP 一致、起動支路退出。完整 chip
+供電排序、brownout、全回授 beta multiplier 分支 STB、PSRR 與 mismatch
+需後續實體化驗證。replica STB 先看所有交越，60° PM 和 10 dB GM
+作審查目標；若有多重交越或無法解讀，留出 loop gain 與時域收斂證據。
+此診斷是獨立 deck，等另一批批准。Spectre STB 探針語法
+https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/52516/spectre-stability-analysis-with-active-device-as-probe
+
+SS 雙組 XT2 的 2.315 mV 且 region 1，在理想與實體 RF 驅動都重現。
+本輪保留 r3。時域前先在有限輸入擺幅下量第二級的最小裕度與原生 region。
+若有壓縮或裕度不足，再做第二級獨立 Vb2 −5／−10 mV 並核對增益、雜訊、
+共模與功耗。這樣能保留可歸因的原 r3 基線。
+後續按非理想電感、正負 ±4.464 ps、碼距與接縫、最後時域的順序另提。
+原凍結 17-tap FFE 保留，共同取樣相位先用零 skew 訓練後凍結。
+
+GF_CTL 和跨節點 PSF
+
+只有原 mode=driver 且 dormant follower clamp 有使用 GF_CTL。
+driver_open、shared replica 與 bias-only 的 GFVCTL 可出現未接負載的 notice。
+新 replica 網表刪除閒置控制源及 save；歷史 deck 保持原樣。
+歷史 PSF 跨節點核對路徑、大小、SHA、mtime 和 inode，允許 st_dev
+不同。同一收集過程仍比對完整本機身分；刪除前仍使用本機 dev/inode。
+新增 solver_hostname 和 collector_hostname，舊 solver hostname 由
+已綁定的 Spectre log 回讀。原收據保留，這一輪無需重新復原已完成案例。

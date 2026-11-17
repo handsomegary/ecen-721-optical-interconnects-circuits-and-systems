@@ -1,0 +1,201 @@
+{
+  "observed_utc": "2026-10-22T17:29:40.430182Z",
+  "status": {
+    "actual_spectre": [
+      {
+        "comm": "spectre",
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/cdr4_inductorless_28nm_20261022/runs/feedback_oc192_hold6us",
+        "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+        "identity_class": "actual",
+        "pgid": 67908,
+        "pid": 67921,
+        "sid": 67908,
+        "start_ticks": 578706,
+        "state": "R"
+      },
+      {
+        "comm": "spectre",
+        "cwd": "/path/to/local/cadence-home/hong_final_sar8_20261013/cdr/runs/pam4_outers1r1984_176_strict_tt_r2",
+        "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+        "identity_class": "actual",
+        "pgid": 81410,
+        "pid": 81640,
+        "sid": 81410,
+        "start_ticks": 646092,
+        "state": "R"
+      }
+    ],
+    "actual_spectre_before_case": [
+      {
+        "comm": "spectre",
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/cdr4_inductorless_28nm_20261022/runs/feedback_oc192_hold6us",
+        "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+        "identity_class": "actual",
+        "pgid": 67908,
+        "pid": 67921,
+        "sid": 67908,
+        "start_ticks": 578706,
+        "state": "R"
+      }
+    ],
+    "automatic_retry": false,
+    "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+    "case_pid": 126610,
+    "case_process": {
+      "comm": "spectre",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume1_20261022/noiseless_phase_08",
+      "executable": "/usr/bin/ksh93",
+      "pgid": 126610,
+      "pid": 126610,
+      "sid": 126610,
+      "start_ticks": 923398,
+      "state": "R"
+    },
+    "case_session_id": 126610,
+    "completed_cases": [
+      {
+        "name": "noiseless_phase_00",
+        "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8"
+      },
+      {
+        "name": "noiseless_phase_01",
+        "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3"
+      },
+      {
+        "name": "noiseless_phase_02",
+        "summary_sha256": "49ac94a67ec1d1d636b6194e5c572edda7a67563bd8e4a17764ac077e47d8a8d"
+      },
+      {
+        "name": "noiseless_phase_03",
+        "summary_sha256": "4538e1aea36c1a1fad9f8cc53f77b978700dbbe11536d67a984136ec67d3b683"
+      },
+      {
+        "name": "noiseless_phase_04",
+        "summary_sha256": "8a71aa427bedeca92a69adc3619e1d7e17b6fbe45eb05c4c2f60fb9f82d593cc"
+      },
+      {
+        "name": "noiseless_phase_05",
+        "summary_sha256": "33c56a7765cc699001b6307969dd8f50c61b770e9bd9b6745e558342e27a8a9d"
+      },
+      {
+        "name": "noiseless_phase_06",
+        "summary_sha256": "5e6b4dec253709ba4ad7d2c5c841045b8380adb3983b8f197ac56a50c5857fe4"
+      },
+      {
+        "name": "noiseless_phase_07",
+        "summary_sha256": "71940df7033718aa3ba9cc9e402a376911af457ec442cd1118ffad58a65d7555"
+      }
+    ],
+    "current_case": "noiseless_phase_08",
+    "effective_case_timeout_s": 3600,
+    "original_terminal_root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_sweep_20261022",
+    "prepared_sha256": {
+      "noise_phase_00": "4160701f1081bddb111a497fb3e8974f171c15f8e18f412f818eb7f1b631bc7a",
+      "noise_phase_01": "110feaf34010cfe19c15f10d58d77c6caeff082ba7fe3366dad24fd540b51131",
+      "noise_phase_02": "3ed88dc39336c76d757f0bc844a254b9aa23488c923de14fa35b2c78d7241a58",
+      "noise_phase_03": "8e0e6adfccbae6dceab361ac58934da04cc6d907e091a79af6d99a1096d10ba6",
+      "noise_phase_04": "b554f53e0ffc43e50e9bd0b87c1544aa7b11dfe1e1f9826c90bdec8c8806e87a",
+      "noise_phase_05": "5754e07a5b8f17f27510def0d587e41503fc01b1fcacedccf81009bf548bb499",
+      "noise_phase_06": "0e5e7b2981f78a9ba8aa8b496a98af903512ca8a6d626a66a3744d71576b62e0",
+      "noise_phase_07": "8ddb745b033971cd736b48578ec6b8fec7b02fe9cc1a0ca010f5f33f7494d60c",
+      "noise_phase_08": "80adf1e5fbada24ea6f9b20885831a764f202e96d838997e83d983981d0ada8a",
+      "noiseless_phase_00": "252952cfb2904aa301c34710ee1eca184c8ab1ba17bb8a8193a92c3da7400def",
+      "noiseless_phase_01": "af23ac827069a53ab04582be0877b66da7f8ff86e30cc83553bd1a387a6446bf",
+      "noiseless_phase_02": "5e26d5d14969b075571f5e3a3c397513407c6186ccadf339ea284fe423761f6b",
+      "noiseless_phase_03": "7448a4a20b44dd64508a7cb0e0b9532212d46d8720a8a8cf17d8481af42bb412",
+      "noiseless_phase_04": "2cbae8571d30ffff8bcd31b329172fcf8e64ead772365e7aba0aa638f461c1ae",
+      "noiseless_phase_05": "dafc21b27e49ff4095565d38b885f8db158b6b933b1e01092782a0c39aecfd59",
+      "noiseless_phase_06": "631de46e0820da6fd25741c3eee140411bfa5a837d094aad7ee5a2c1fdabb516",
+      "noiseless_phase_07": "f26507206c8e6bd09277edb6ebfda419cc10ee579c041cedee30bb8f0a0841eb",
+      "noiseless_phase_08": "f5b1e832e8f5b3de68fdae3793882b2b207c833a5e8dbdec16fa61f57e9cd7a1"
+    },
+    "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+    "resume_provenance_sha256": "b627e84eb18b8c1fa09cc64dd599bde96fd49b980701c5615125586b4d5e5ebd",
+    "reused_completed_cases": [
+      "noiseless_phase_00",
+      "noiseless_phase_01"
+    ],
+    "run_started_utc": "2026-10-22T15:58:32.812701Z",
+    "runner": {
+      "comm": "python3",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "pgid": 41112,
+      "pid": 41112,
+      "sid": 41112,
+      "start_ticks": 401063,
+      "state": "R"
+    },
+    "scope": "Real-clock phase-swept sampled eye of native AFE and two sampler stages, followed by an ideal numerical 7-bit quantizer and frozen 17-tap FFE; not a continuous analog FFE waveform, physical ADC, DSP implementation or BER certification. Phase is swept for observation, never optimized.",
+    "started_utc": "2026-10-22T15:58:16.806388Z",
+    "status": "simulating",
+    "updated_utc": "2026-10-22T17:25:35.775634Z"
+  },
+  "launch": {
+    "automatic_retry": false,
+    "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+    "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+    "runner": {
+      "comm": "python3",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "pgid": 41112,
+      "pid": 41112,
+      "sid": 41112,
+      "start_ticks": 401063,
+      "state": "R"
+    },
+    "scope": "User continue: reuse first two completed cases, attempt failed third case once, then remaining cases once. Stop on failure.",
+    "script_sha256": "7cedd4fd32a8c69915dacf144bdcf40217fbfa98847dacd08ba19bdcd6cead71",
+    "started_utc": "2026-10-22T15:58:32.722576Z"
+  },
+  "identity": {
+    "live": {
+      "pid": 41112,
+      "state": "S",
+      "start_ticks": 401063,
+      "pgid": 41112,
+      "sid": 41112,
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "comm": "python3"
+    },
+    "boot_matches": true,
+    "start_matches": true,
+    "script_matches": true,
+    "command_matches": true
+  },
+  "diagnostic": {
+    "transient_started": true,
+    "spectre18_seen": false,
+    "completion_lines": [],
+    "memory_lines": [
+      "Peak resident memory used = 117 Mbytes."
+    ],
+    "log_bytes": 6934
+  },
+  "actual_simulators": [
+    {
+      "pid": 67921,
+      "state": "R",
+      "start_ticks": 578706,
+      "pgid": 67908,
+      "sid": 67908,
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/cdr4_inductorless_28nm_20261022/runs/feedback_oc192_hold6us",
+      "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+      "comm": "spectre"
+    },
+    {
+      "pid": 126624,
+      "state": "R",
+      "start_ticks": 923400,
+      "pgid": 126610,
+      "sid": 126610,
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume1_20261022/noiseless_phase_08",
+      "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+      "comm": "spectre"
+    }
+  ],
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "original_terminal_status": "failed_terminal"
+}

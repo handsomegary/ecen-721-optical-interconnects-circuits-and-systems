@@ -1,0 +1,485 @@
+{
+ "note": "Aggregate copy of Olympus sar7_offset_pilot_summary.json (case 0, job 761279); per-trial sense.points (84 records) omitted per Guide, kept on Olympus. Full summary SHA-256 84b051d79c71979637416674aeb17b851104b199e544d9035870f8116f761a0a.",
+ "index0_gate": {
+  "cdac_cm_within_10mV": true,
+  "manifest_sha256": "f04d9107421d0a9d826df1c00252b264987fc678f6139a4d018fc2fa42250e90",
+  "max_abs_code_error": 1,
+  "recommendation": "STOP_TARGET",
+  "source_case_id": "sar7_10_tt_matched_q_load",
+  "source_measurements_sha256": "b3a514de93049c737b9c1c7c18cafda99be78373e0638255f8127ea8e5af8394",
+  "source_summary_sha256": "84b051d79c71979637416674aeb17b851104b199e544d9035870f8116f761a0a",
+  "source_tran_sha256": "d2e900facf2c569801cfb61e0794e0420f7b5cf62129f2ab98cdc1fe1131bc00",
+  "sum_abs_code_error": 6,
+  "valid": true
+ },
+ "summary_aggregate": {
+  "schema": "pam4_sar7_offset_pilot_v1",
+  "status": "measured",
+  "index": 0,
+  "case_id": "sar7_10_tt_matched_q_load",
+  "parent_case_id": "sar7_09_tt_cml_main_ratio",
+  "job_id": "761279",
+  "tested_conversions": 12,
+  "comparison_records": 84,
+  "unresolved_bits": {
+   "6": 0,
+   "5": 0,
+   "4": 0,
+   "3": 0,
+   "2": 0,
+   "1": 0,
+   "0": 0
+  },
+  "unresolved_bits_total": 0,
+  "comparator": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 6,
+   "sum_abs_code_error": 6,
+   "max_abs_code_error": 1
+  },
+  "registered_available_consistency": true,
+  "valid": true,
+  "final_cm_change_mV": [
+   -4.042373652765496,
+   -3.9712311130981615
+  ],
+  "max_abs_sample_error_lsb": 1.6336038283715482,
+  "max_observed_resolve_delay_s": 4.5500000005995713e-11,
+  "logic_smoke_pass": false,
+  "solver_seconds": 207.81603200966492,
+  "raw_bytes": 110961727,
+  "tran_sha256": "d2e900facf2c569801cfb61e0794e0420f7b5cf62129f2ab98cdc1fe1131bc00",
+  "offset_fix": {
+   "kind": "matched_complement_load"
+  },
+  "codes": [
+   {
+    "index": 0,
+    "expected": 64,
+    "comparator": 64,
+    "registered": 64
+   },
+   {
+    "index": 1,
+    "expected": 0,
+    "comparator": 0,
+    "registered": 0
+   },
+   {
+    "index": 2,
+    "expected": 127,
+    "comparator": 127,
+    "registered": 127
+   },
+   {
+    "index": 3,
+    "expected": 31,
+    "comparator": 31,
+    "registered": 31
+   },
+   {
+    "index": 4,
+    "expected": 96,
+    "comparator": 95,
+    "registered": 95
+   },
+   {
+    "index": 5,
+    "expected": 63,
+    "comparator": 64,
+    "registered": 64
+   },
+   {
+    "index": 6,
+    "expected": 65,
+    "comparator": 64,
+    "registered": 64
+   },
+   {
+    "index": 7,
+    "expected": 85,
+    "comparator": 85,
+    "registered": 85
+   },
+   {
+    "index": 8,
+    "expected": 42,
+    "comparator": 43,
+    "registered": 43
+   },
+   {
+    "index": 9,
+    "expected": 1,
+    "comparator": 0,
+    "registered": 0
+   },
+   {
+    "index": 10,
+    "expected": 126,
+    "comparator": 127,
+    "registered": 127
+   },
+   {
+    "index": 11,
+    "expected": 64,
+    "comparator": 64,
+    "registered": 64
+   }
+  ],
+  "sense": {
+   "tran_sha256": "d2e900facf2c569801cfb61e0794e0420f7b5cf62129f2ab98cdc1fe1131bc00",
+   "pairs": 84,
+   "sign_agreement": 84,
+   "projected_gain": 0.5878741268851432,
+   "sense_common_mode_range_V": [
+    0.8347783205038226,
+    0.8349419059731289
+   ],
+   "mean_precomparison_supply_current_A": -0.00026069072170450345
+  },
+  "provenance": {
+   "manifest_sha256": "f04d9107421d0a9d826df1c00252b264987fc678f6139a4d018fc2fa42250e90",
+   "portable_deck_sha256": "2070f861b4e07e1037c6593ad5518bfd379fef185248ee60fa54c0c8c3832347",
+   "measurements_sha256": "b3a514de93049c737b9c1c7c18cafda99be78373e0638255f8127ea8e5af8394",
+   "run_status_sha256": "e1e89051e8adfca83413a7d99774b5f3e5f684a58df0797fbd22fe10eaae267a",
+   "execution_files_sha256": {
+    "bench.scs": "8bb610287bee7bf5f1a93b889554e0bfa845f95e8af620d9aa1bdde0a982b5d7",
+    "case.json": "14a59def9edbc2456e5398836800a73dc0d9bed7dcb9234e7da6113cdf1c62e4",
+    "run_status.json": "e1e89051e8adfca83413a7d99774b5f3e5f684a58df0797fbd22fe10eaae267a",
+    "execution_intent.json": "3e09cf2e95023efb8a3131ab40be6a3ad42e2a1c0092a4ef5f33c1fc995e93c1",
+    "spectre.log": "2dab86b060055b0012b23dbc16e0fcf291731d4587309341036db4e8437f6313",
+    ".study_owned": "08f1a16b4bb434f367c8c8b6a3e4806f81206031c9abcaeb5fbbea103fe2e84a"
+   }
+  },
+  "sense_affine": {
+   "slope_V_per_V": 0.5878741268851432,
+   "output_intercept_V": 9.074427596021282e-05,
+   "output_rmse_V": 0.0002604543660003535,
+   "sense_stage_zero_crossing_input_LSB": -0.19758085603207012,
+   "label": "Sense-stage affine zero crossing, not comparator offset"
+  },
+  "decision_vs_pre_sign": {
+   "held_diff_V": {
+    "available": 84,
+    "agrees": 84,
+    "disagrees": 0,
+    "disagreement_records": []
+   },
+   "sense_diff_V": {
+    "available": 84,
+    "agrees": 84,
+    "disagrees": 0,
+    "disagreement_records": []
+   }
+  },
+  "per_bit_sense_threshold_brackets": {
+   "6": {
+    "zero_decisions": 4,
+    "one_decisions": 8,
+    "largest_zero_input_LSB": -10.730571518501932,
+    "smallest_one_input_LSB": 1.7593094251073182,
+    "constant_threshold_feasible": true,
+    "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+   },
+   "5": {
+    "zero_decisions": 9,
+    "one_decisions": 3,
+    "largest_zero_input_LSB": -0.24138010876569638,
+    "smallest_one_input_LSB": 5.423999370024575,
+    "constant_threshold_feasible": true,
+    "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+   },
+   "4": {
+    "zero_decisions": 7,
+    "one_decisions": 5,
+    "largest_zero_input_LSB": -2.93488169714351,
+    "smallest_one_input_LSB": 2.8864647660924447,
+    "constant_threshold_feasible": true,
+    "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+   },
+   "3": {
+    "zero_decisions": 7,
+    "one_decisions": 5,
+    "largest_zero_input_LSB": -1.880688951699625,
+    "smallest_one_input_LSB": 1.6444055202619268,
+    "constant_threshold_feasible": true,
+    "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+   },
+   "2": {
+    "zero_decisions": 7,
+    "one_decisions": 5,
+    "largest_zero_input_LSB": -0.4767171250786362,
+    "smallest_one_input_LSB": 0.8997182865157072,
+    "constant_threshold_feasible": true,
+    "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+   },
+   "1": {
+    "zero_decisions": 7,
+    "one_decisions": 5,
+    "largest_zero_input_LSB": -0.22046533709556115,
+    "smallest_one_input_LSB": 0.5894468558935273,
+    "constant_threshold_feasible": true,
+    "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+   },
+   "0": {
+    "zero_decisions": 6,
+    "one_decisions": 6,
+    "largest_zero_input_LSB": -0.289012394916881,
+    "smallest_one_input_LSB": 0.07846304902670909,
+    "constant_threshold_feasible": true,
+    "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+   }
+  },
+  "common_sense_threshold_bracket": {
+   "zero_decisions": 47,
+   "one_decisions": 37,
+   "largest_zero_input_LSB": -0.22046533709556115,
+   "smallest_one_input_LSB": 0.07846304902670909,
+   "constant_threshold_feasible": true,
+   "interval_convention": "lower open, upper closed; descriptive finite-data bracket, not offset/noise calibration"
+  },
+  "index8_bit2_dynamics": {
+   "index": 8,
+   "bit": 2,
+   "expected_bit": 0,
+   "decision": 0,
+   "compare_s": 9.321999999999999e-09,
+   "read_s": 9.382e-09,
+   "observations": [
+    {
+     "offset_from_compare_ps": -0.4999999999989126,
+     "label": "original_pre",
+     "at_s": 9.3215e-09,
+     "held_diff_V": -0.0006232605891902665,
+     "held_common_mode_V": 0.7637016232101833,
+     "sense_diff_V": -0.0003724352539676845,
+     "sense_common_mode_V": 0.834806465213163,
+     "internal_x_y_V": [
+      0.8999998786006552,
+      0.8999998796668127
+     ],
+     "internal_x_minus_y_V": -1.0661574956216668e-09,
+     "buffered_positive_negative_V": [
+      4.849108128010119e-05,
+      4.879809868210757e-05
+     ],
+     "buffered_diff_V": -3.070174020063858e-07,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 0.0,
+     "label": "retained_interpolation",
+     "at_s": 9.321999999999999e-09,
+     "held_diff_V": -0.000620144463583383,
+     "held_common_mode_V": 0.7637235073593928,
+     "sense_diff_V": -0.0003724041664412425,
+     "sense_common_mode_V": 0.8383125614668393,
+     "internal_x_y_V": [
+      0.9654298512277578,
+      0.9654304023832367
+     ],
+     "internal_x_minus_y_V": -5.511554789228157e-07,
+     "buffered_positive_negative_V": [
+      0.00641030416440042,
+      0.00641855697767836
+     ],
+     "buffered_diff_V": -8.252813277940044e-06,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 0.25,
+     "label": "retained_interpolation",
+     "at_s": 9.32225e-09,
+     "held_diff_V": -0.0006186172768416487,
+     "held_common_mode_V": 0.7637517780129749,
+     "sense_diff_V": -0.00037253699573158716,
+     "sense_common_mode_V": 0.8403560805878747,
+     "internal_x_y_V": [
+      1.0033147570530958,
+      1.0033153898052358
+     ],
+     "internal_x_minus_y_V": -6.327521400173453e-07,
+     "buffered_positive_negative_V": [
+      0.009884832890825153,
+      0.00989429047124785
+     ],
+     "buffered_diff_V": -9.457580422696926e-06,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 0.5,
+     "label": "retained_interpolation",
+     "at_s": 9.3225e-09,
+     "held_diff_V": -0.0006170861782328618,
+     "held_common_mode_V": 0.7637883494860309,
+     "sense_diff_V": -0.0003726425609430484,
+     "sense_common_mode_V": 0.8424036339731875,
+     "internal_x_y_V": [
+      1.040477934779535,
+      1.040478607778239
+     ],
+     "internal_x_minus_y_V": -6.729987040987595e-07,
+     "buffered_positive_negative_V": [
+      0.01308735900408237,
+      0.01309672832468557
+     ],
+     "buffered_diff_V": -9.369320603200629e-06,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 1.0,
+     "label": "retained_interpolation",
+     "at_s": 9.322999999999999e-09,
+     "held_diff_V": -0.000614023866066904,
+     "held_common_mode_V": 0.7638469870128473,
+     "sense_diff_V": -0.0003720730474745526,
+     "sense_common_mode_V": 0.8415843767459756,
+     "internal_x_y_V": [
+      1.0466881976497966,
+      1.04668794855153
+     ],
+     "internal_x_minus_y_V": 2.490982666802921e-07,
+     "buffered_positive_negative_V": [
+      0.011622581588756769,
+      0.011620597904921993
+     ],
+     "buffered_diff_V": 1.983683834775804e-06,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 2.0,
+     "label": "retained_interpolation",
+     "at_s": 9.324e-09,
+     "held_diff_V": -0.0006079305663667656,
+     "held_common_mode_V": 0.7638027543558112,
+     "sense_diff_V": -0.00036833366003530266,
+     "sense_common_mode_V": 0.8347424426325875,
+     "internal_x_y_V": [
+      1.0457586897723048,
+      1.0457582284394495
+     ],
+     "internal_x_minus_y_V": 4.6133285525051804e-07,
+     "buffered_positive_negative_V": [
+      0.007670504516452841,
+      0.007665270766904868
+     ],
+     "buffered_diff_V": 5.233749547973489e-06,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 5.0,
+     "label": "retained_interpolation",
+     "at_s": 9.327e-09,
+     "held_diff_V": -0.0005923303733242902,
+     "held_common_mode_V": 0.7632363001871272,
+     "sense_diff_V": -0.00034133092556287714,
+     "sense_common_mode_V": 0.8142487574721021,
+     "internal_x_y_V": [
+      1.0257605460821355,
+      1.0257885587611273
+     ],
+     "internal_x_minus_y_V": -2.80126789917734e-05,
+     "buffered_positive_negative_V": [
+      0.0008194076327280521,
+      0.0008219912443275132
+     ],
+     "buffered_diff_V": -2.5836115994610836e-06,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 15.0,
+     "label": "retained_interpolation",
+     "at_s": 9.337e-09,
+     "held_diff_V": -0.0005590696040950194,
+     "held_common_mode_V": 0.7635535839663747,
+     "sense_diff_V": -0.00034370734293664995,
+     "sense_common_mode_V": 0.8239110729716111,
+     "internal_x_y_V": [
+      0.48611174556711817,
+      0.4845623723877377
+     ],
+     "internal_x_minus_y_V": 0.0015493731793804755,
+     "buffered_positive_negative_V": [
+      0.03981944825074806,
+      0.04040196080952789
+     ],
+     "buffered_diff_V": -0.0005825125587798283,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 30.0,
+     "label": "retained_interpolation",
+     "at_s": 9.351999999999998e-09,
+     "held_diff_V": -0.0005368035359929468,
+     "held_common_mode_V": 0.7637331205018351,
+     "sense_diff_V": -0.0005211233669198956,
+     "sense_common_mode_V": 0.8344540880323903,
+     "internal_x_y_V": [
+      0.47825098019410106,
+      0.42259883392146425
+     ],
+     "internal_x_minus_y_V": 0.055652146272636815,
+     "buffered_positive_negative_V": [
+      0.26988978887878157,
+      0.3284525196857132
+     ],
+     "buffered_diff_V": -0.05856273080693164,
+     "buffered_class": null
+    },
+    {
+     "offset_from_compare_ps": 50.0,
+     "label": "retained_interpolation",
+     "at_s": 9.372e-09,
+     "held_diff_V": -0.0005530717557382658,
+     "held_common_mode_V": 0.763688923373744,
+     "sense_diff_V": 0.0003901802980791347,
+     "sense_common_mode_V": 0.8339284200728811,
+     "internal_x_y_V": [
+      0.8903462512180014,
+      0.026360719386940176
+     ],
+     "internal_x_minus_y_V": 0.8639855318310612,
+     "buffered_positive_negative_V": [
+      0.009872266285430503,
+      0.8969068303092694
+     ],
+     "buffered_diff_V": -0.887034564023839,
+     "buffered_class": 0
+    },
+    {
+     "offset_from_compare_ps": 60.0,
+     "label": "retained_interpolation",
+     "at_s": 9.382e-09,
+     "held_diff_V": -0.0005372207901634951,
+     "held_common_mode_V": 0.7637065039921007,
+     "sense_diff_V": -0.00016539573169815913,
+     "sense_common_mode_V": 0.8345956928929514,
+     "internal_x_y_V": [
+      0.899391170934577,
+      0.0020186174622170475
+     ],
+     "internal_x_minus_y_V": 0.8973725534723599,
+     "buffered_positive_negative_V": [
+      0.0004908675280319513,
+      0.8997700771622447
+     ],
+     "buffered_diff_V": -0.8992792096342127,
+     "buffered_class": 0
+    }
+   ]
+  },
+  "probe_limits": [
+   "Saved x/y are internal regeneration nodes; q outputs are buffered and inverted",
+   "Finite deterministic input points do not measure noise or establish constant per-bit offsets",
+   "Interpolation uses existing saved points and does not alter clocks or scoring"
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+{
+  "note": "Superseded local text and JSON snapshots; not current results or simulation instructions.",
+  "files": [
+    {
+      "relative_path": "noise_retry_finalization_20261017/Project6_ADC_r5_進度與判讀.txt.before",
+      "source_sha256": "d23f345938de98d7ed67317bad1999575ff9dc41d6d97cc5c909481c62c6501e",
+      "archive_sha256": "d8869c68f2dc63ec16856649b3dbf189ae17715aa8348cd1f04fbf1fb532180b"
+    },
+    {
+      "relative_path": "noise_retry_finalization_20261017/Project6_ADC_round_terminal_summary.json.before",
+      "source_sha256": "8b7f9f0a5c8b72a12d506c53abbb974d86a709dd64db94c775b691d5f9e865ab",
+      "archive_sha256": "18e76e712651f45955f2c52ac2c1f814007f7bfdf4d62b978b16c64c41067073"
+    },
+    {
+      "relative_path": "noise_retry_finalization_20261017/project6_r5_handoff.json.before",
+      "source_sha256": "a1e11e677348cdd8f1b2e4bc426e38352453088b42883e7eb2f5d4eabd3a38a7",
+      "archive_sha256": "8e1183caa96f056032308ad7aaf5bde02cbfbb2a6b0ec0e065ac9f424a8f9434"
+    },
+    {
+      "relative_path": "noise_retry_finalization_20261020/Project6_ADC_r5_進度與判讀.txt.before",
+      "source_sha256": "fc90c1a83842f3f100a0566fdd5fc6b0c52cbe9fac8c5837a60dd48159ac9847",
+      "archive_sha256": "59a5cd388a29063490c583d95e5802be6acba910f0d7d9445e2e6ab703c83809"
+    },
+    {
+      "relative_path": "noise_retry_finalization_20261020/Project6_ADC_round_terminal_summary.json.before",
+      "source_sha256": "78de3fe1371e305d7ccddf49802abd17199658e77925517b3764c71c8b6bd967",
+      "archive_sha256": "a2e16c1eed4c3924a4cc421b122b8b0d251685b5dafb095376defb31ca66fc8d"
+    },
+    {
+      "relative_path": "noise_retry_finalization_20261020/project6_r5_handoff.json.before",
+      "source_sha256": "7129cab667e4b6e35937942289ab2763ff60964b1916710d3f1f38bb19a77d76",
+      "archive_sha256": "680a579754882b925c43e3df5a3848d4fe92e0a9c2e6a6debd7b2539bdc5c316"
+    },
+    {
+      "relative_path": "paired_finalization_20261020/Project6_ADC_r5_進度與判讀.txt.before",
+      "source_sha256": "7f3a769428c11d1b77692a11deea24a3048347b8e45117a852747077cd7c3581",
+      "archive_sha256": "f7f79dd459440bf1979f55005422e891711f43a210c7ac6715926f724e74fe0e"
+    },
+    {
+      "relative_path": "paired_finalization_20261020/Project6_ADC_round_terminal_summary.json.before",
+      "source_sha256": "be269c120070dc63d20dda721f1d0950e7c17a1ec0d17c674455bb30cddb4620",
+      "archive_sha256": "491b5bd4a26e514c14701ece99c68256091c7a92e3b93ded93ade84682a85d97"
+    },
+    {
+      "relative_path": "paired_finalization_20261020/project6_r5_handoff.json.before",
+      "source_sha256": "6cd11b20cc7193aae7f64d4ff1dad128b8d77e7b3b3b4f5f23cbbe893b01b295",
+      "archive_sha256": "01231e8a8277e2a5331c56a234a1aca0d57505866c15626c1c8f73b192e92764"
+    }
+  ]
+}

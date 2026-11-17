@@ -1,0 +1,1384 @@
+{
+  "format": "lp14_diag_next_v1",
+  "status": "REVIEW_PENDING",
+  "cases": [
+    {
+      "case_id": "lpnextdiag_00_ss_beta_cb2",
+      "stage": "beta20",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "beta",
+      "prior_index": 12
+    },
+    {
+      "case_id": "lpnextdiag_01_ss_beta_cb0",
+      "stage": "beta20",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "beta",
+      "prior_index": 10
+    },
+    {
+      "case_id": "lpnextdiag_02_tt_beta_cb0",
+      "stage": "beta20",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "beta",
+      "prior_index": 14
+    },
+    {
+      "case_id": "lpnextdiag_03_tt_beta_cb2",
+      "stage": "beta20",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "beta",
+      "prior_index": 16
+    },
+    {
+      "case_id": "lpnextdiag_04_ff_beta_cb0",
+      "stage": "beta20",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "beta",
+      "prior_index": 18
+    },
+    {
+      "case_id": "lpnextdiag_05_ff_beta_cb2",
+      "stage": "beta20",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "beta",
+      "prior_index": 20
+    },
+    {
+      "case_id": "lpnextdiag_06_ss_replica_cb0",
+      "stage": "stb",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "replica",
+      "prior_index": 9
+    },
+    {
+      "case_id": "lpnextdiag_07_tt_replica_cb0",
+      "stage": "stb",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "replica",
+      "prior_index": 13
+    },
+    {
+      "case_id": "lpnextdiag_08_tt_replica_cb2",
+      "stage": "stb",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "replica",
+      "prior_index": 15
+    },
+    {
+      "case_id": "lpnextdiag_09_ff_replica_cb0",
+      "stage": "stb",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "replica",
+      "prior_index": 17
+    },
+    {
+      "case_id": "lpnextdiag_10_ff_replica_cb2",
+      "stage": "stb",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "replica",
+      "prior_index": 19
+    },
+    {
+      "case_id": "lpnextdiag_11_tt_fast_cb0",
+      "stage": "startup",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "fast",
+      "settle_after_s": 1e-06,
+      "stop_s": 0.0005,
+      "prior_index": 3
+    },
+    {
+      "case_id": "lpnextdiag_12_tt_slow_cb0",
+      "stage": "startup",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "slow",
+      "settle_after_s": 0.0001,
+      "stop_s": 0.0005,
+      "prior_index": 4
+    },
+    {
+      "case_id": "lpnextdiag_13_tt_restart_cb0",
+      "stage": "startup",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "restart",
+      "settle_after_s": 0.000571,
+      "stop_s": 0.00105,
+      "restart_off_s": 0.0005,
+      "restart_first_settle_s": 1e-06,
+      "prior_index": 5
+    },
+    {
+      "case_id": "lpnextdiag_14_ff_fast_cb0",
+      "stage": "startup",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "fast",
+      "settle_after_s": 1e-06,
+      "stop_s": 0.0005,
+      "prior_index": 6
+    },
+    {
+      "case_id": "lpnextdiag_15_ff_slow_cb0",
+      "stage": "startup",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "slow",
+      "settle_after_s": 0.0001,
+      "stop_s": 0.0005,
+      "prior_index": 7
+    },
+    {
+      "case_id": "lpnextdiag_16_ff_restart_cb0",
+      "stage": "startup",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "restart",
+      "settle_after_s": 0.000571,
+      "stop_s": 0.00105,
+      "restart_off_s": 0.0005,
+      "restart_first_settle_s": 1e-06,
+      "prior_index": 8
+    },
+    {
+      "case_id": "lpnextdiag_17_ss_vppd400_cb2",
+      "stage": "xt2",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "vppd400",
+      "amplitude_Vppd": 0.4,
+      "settle_after_s": 1.1428571428571428e-09,
+      "stop_s": 2.2857142857142857e-09,
+      "xt2_paths": [
+        "XT2p0",
+        "XT2p1",
+        "XT2p2",
+        "XT2p3",
+        "XT2p4",
+        "XT2p5",
+        "XT2p6",
+        "XT2p7",
+        "XT2m0",
+        "XT2m1",
+        "XT2m2",
+        "XT2m3",
+        "XT2m4",
+        "XT2m5",
+        "XT2m6",
+        "XT2m7"
+      ],
+      "prior_index": 21
+    },
+    {
+      "case_id": "lpnextdiag_18_ss_vppd200_cb2",
+      "stage": "xt2",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "vppd200",
+      "amplitude_Vppd": 0.2,
+      "settle_after_s": 1.1428571428571428e-09,
+      "stop_s": 2.2857142857142857e-09,
+      "xt2_paths": [
+        "XT2p0",
+        "XT2p1",
+        "XT2p2",
+        "XT2p3",
+        "XT2p4",
+        "XT2p5",
+        "XT2p6",
+        "XT2p7",
+        "XT2m0",
+        "XT2m1",
+        "XT2m2",
+        "XT2m3",
+        "XT2m4",
+        "XT2m5",
+        "XT2m6",
+        "XT2m7"
+      ],
+      "prior_index": 22
+    },
+    {
+      "case_id": "lpnextdiag_19_ss_kick_cb2",
+      "stage": "kick",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "kick",
+      "prior_index": 12
+    },
+    {
+      "case_id": "lpnextdiag_20_tt_kick_cb2",
+      "stage": "kick",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "kick",
+      "prior_index": 16
+    },
+    {
+      "case_id": "lpnextdiag_21_ff_kick_cb2",
+      "stage": "kick",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "profile": "kick",
+      "prior_index": 20
+    }
+  ]
+}

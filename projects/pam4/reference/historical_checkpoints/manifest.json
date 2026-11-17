@@ -1,0 +1,66 @@
+{
+  "note": "Historical checkpoint snapshots are not a claim that any older queue should be restarted.",
+  "files": [
+    {
+      "file": "project6_r5_handoff.json",
+      "local_source_sha256": "f6845f3c61d430cf56646c8934ca1d1dde426f837d1a56c80fb2a792f5f13fe9",
+      "archived_sha256": "baa791b1db3fd5dbb632cbd75b96ac1872ae4bcef3bdb1d28f5df5297c2565b3",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "ffe_phase_resume2_delivery_20261022.json",
+      "local_source_sha256": "ad123c1f2669557d60e2798c2a6d75157e3c61a1e220fcff0052253beb7087a2",
+      "archived_sha256": "f2c6a41f49fa0413fc6fe994651d6ba370e906451b4663c44bb874ce5af76e40",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "secondary_r7_delivery_20261022.json",
+      "local_source_sha256": "b01df160205a6ac8de40e357f6e5fc6c44210a552a10eac874e1116a4919ded3",
+      "archived_sha256": "b4a2f1c7b3a9124551b5696c787f41bab1e9e5fc7c479a7378a43e8c3b59dd57",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "secondary_validation_r7_delivery_20261022.json",
+      "local_source_sha256": "c81f9b65818b8227819eb359895ad9ecc54a0560e1d113e764ae819a94a4387f",
+      "archived_sha256": "ecf4a057658e233ed626bfc2d2595aca1c8a8ae52dd32472cc4298723984f5c3",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "secondary_hold_mechanism_r8_20261029.json",
+      "local_source_sha256": "7fb98fd35ac3588dda3d4378656b6f8ac734143826bf5af7d2c98aff5ef61f79",
+      "archived_sha256": "bdc4e03a697e57c353f098fe05e0af1aae3574afbb129e1c1bfe4088211df591",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "secondary_load_isolation_r8_plan_20261029.json",
+      "local_source_sha256": "d67a822fde73b477cdcba9059434f6ac779feeaf2ee6d3b2d0a443b2359fd16f",
+      "archived_sha256": "a9e124521119c7728b0960cf9bf89d264fdf21075a2cb3861eab064c7777d7ca",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "secondary_load_isolation_r8_preflight_20261029.json",
+      "local_source_sha256": "dca22fde700ab686f1d321bb1ad6bb17e0e598e11489ea35e8a4cfe860cf4520",
+      "archived_sha256": "540d70e2351afeef54ac7df0941eaed37456ff70ffbcfacbe5b7c0049da01032",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "project6_r8_continuation_receipt_20261029.json",
+      "local_source_sha256": "00c2e820529568731f4784625ff9cc17934be5a68ea735a6e59c9f059bb1b7a7",
+      "archived_sha256": "0893a02d1ef72fc12587466f5934e8842c3fdf3784e578bfccb042a0241fffcb",
+      "change": "JSON formatting and local address/path sanitization"
+    },
+    {
+      "file": "Project6_Feasibility_Test_Package.zip",
+      "local_source_sha256": "220d94b32fa7c291db3475e8e643f83b076585cbd289485b9b66e212fdf60728",
+      "archived_sha256": "220d94b32fa7c291db3475e8e643f83b076585cbd289485b9b66e212fdf60728",
+      "change": "byte-identical independently authored code and derived summaries"
+    },
+    {
+      "file": "channel_shape_diagnostic.json",
+      "local_source_sha256": "2135c90e9cd2bf3158bbd899aaff987359321ff0c8c8ac7dda5cab3e67aaa1e5",
+      "archived_sha256": "8734cd96146964beca6eae24f1b5df6cbf74405c36af64f2e4e2fb185770e6d4",
+      "change": "JSON formatting and source VM path sanitized",
+      "source_relative_to_work": "project6_start/channel_shape_diagnostic.json"
+    }
+  ]
+}

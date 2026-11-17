@@ -1,0 +1,52 @@
+ECEN 721 Project #6｜LP14 reference 和鏡負載 OTA 修正版
+
+Iref 目標維持 310.714 µA，每腿 4.35 mA。TT matched 1.80／2.05 kΩ
+的核心電流是 34.07／28.84 µA。I(R) 的局部 log 斜率 −1.281，
+內插 R＝1934 Ω 對應 31.071 µA。先用同一個 1934 Ω 驗 SS、TT、FF。
+P 鏡直連，保留 L120。舊 TT 疊接 P 鏡 0.9897，N 鏡 0.9997；
+若這兩個比值維持，送到輸出的 TT trim 約 1918 Ω。以實測為準，
+首批先固定 1934 Ω，比較核心與鏡誤差。
+
+N 鏡低壓調節
+
+舊 NMOS 上管要 0.880 V，TT 已只剩 20 mV；加寬兩倍僅能在
+弱反轉近似下降數十 mV。此版改在 N 輸出支路上串 PMOS，
+source 在 GMSR_REF 經 0 V sensor 後的 GMSQTOP，drain 在 ND_OUT，
+bulk 接 GF_VDD。ND_OUT 高於 VBN 時提高 PMOS gate，關小上管，
+是負回授。低頭間距的關鍵是可往下驅動 gate，避免原 NMOS 的
+VBN+VGS 要求。P 側 1:1 mirror 維持直連，與此 N 支路分開。
+
+先用 20 個 1 µm／L120 PMOS 單元，目標每顆約 15.5 µA，
+10 顆案留作尺寸敏感度。此 L 是原 PDK 原理圖卡覆寫，版圖寄生、
+最終 CDF、well 偏壓和失配待驗。診斷 bsource 把控制閘壓限制在
+50 mV 到 VDD−50 mV。讀回 VSG、VSD、上管原生 OP、ND_OUT−VBN
+及 N 鏡比。若距限幅不足 5 mV、VSD≤0 或 |ND_OUT−VBN|>2 mV，
+此點沒有完成調節。這只驗有沒有可用的低壓控制工作點。
+實體誤差放大器要再量輸出擺幅、供電開銷、負載 ±30 mV、startup
+和 STB。若長通道直連已符合 Iref 和功耗，保留較簡單的直連。
+如果兩種 Iref 隨角落仍超出 ±5%，分離核心溫漂、鏡誤差及修調
+需求。外部校準參考／Kelvin sink 路徑仍可用。實體整合目標 ±2%。
+Spectre 行為電壓源語法參考
+https://community.cadence.com/cadence_technology_forums/f/mixed-signal-design/50913/converting-a-pspice-model-to-schematic-spectre-max-table-etc/1380569
+
+鏡負載 OTA
+
+39 kΩ 對稱負載在 SS 仍有 209 mV 的汲極壓差，對應兩側相差
+約 5.35 µA。第二級 gate 幾乎沒有 DC 電流，只有加 dummy gate
+可匹配電容，無法把第二級需要的 O1 靜態工作點拉回 OM。
+改回 PMOS 鏡負載。OPD/OPM 各 2 顆，輸入對、鏡、尾偏壓與
+第二級均用 L120 原理圖尺寸。第二級 PMOS 4 顆／NMOS 1 顆。
+第一級平衡時，OPD 總電流約為 I_tail/2；4 顆 OP2 與 2 顆 OPD
+以相同 VSG 工作時，OP2 供電約 I_tail，配合單顆相同尾偏壓的
+ON2。這是尺寸起點，實際 VDS 差、短通道效應、第一級偏壓和
+第二級輸出電壓會使比值偏離。5 顆 P 留作後續對照。
+原 Miller RC、RF 濾波和 r3 保留。開迴路增益、offset 與
+補償仍待量測，無證據前維持現有目標電流。
+
+用理想 310.714 µA 分開量 SS/FF 單組各兩欄。比較原最佳
+鏡負載的 SS −6.06%、FF +3.98%，量新 OTA 的輸入對 drain 差、
+尾電流、第二級 sink、兩腿電流、56 GHz Hdd、GFVDD、noise 與
+XT2。追蹤 ≤2%、|Vrep−Vref|≤2.87 mV，維持增益損失 ≤2 dB、
+單組增量 ≤10 mW。歷史四捨五入參考只供篩選。沒有證據前不改
+XT2 bias。參考支路與 OTA 各自可行後，才整合並量 TT、雙組與實體
+調節器，之後再排電感、端點、細碼、時域。

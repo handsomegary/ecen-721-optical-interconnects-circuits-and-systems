@@ -1,0 +1,69 @@
+ECEN 721 Project #6｜LP14 原生整合版啟動、STB 與 XT2
+
+凍結 1934 Ω、L120 直連參考及 4P/1N replica OTA。
+0–33 的原生偏壓證據來自使用者的 LP_INTEGRATE 回饋。六個條件
+均通過 2 dB 與 +10/+14 mW，最緊為 SS cb2 的 0.57 dB 及 FF
+cb0 的 0.76 mW。2% 留作對實際 Iref 的伺服診斷。4.35 mA 標稱
+偏差另記，現階段先不放 32 檔 trim 開關。
+
+一、上電與重啟
+
+原 portable_diagnostics 只 ramp GFVDD。新 deck 用同一原生網表，
+從 0 V 同步斜升 GFVDD、r3 VDD、共模、尾偏壓和各啟用控制。
+每個 SS/TT/FF 的 cb0 做 1 µs fast、100 µs slow、全掉電重啟。
+重啟先建立工作點，500–520 µs 降到 0，保持到 570 µs，
+571 µs 回額定電壓。保留後段至 1.05 ms。快／慢跑到 500 µs。
+所有序列保留原靜態 track 負載，與帶資料、時鐘／板級電源時序分開。
+
+依同 corner 的已量 Iref（338.3／324.8／307.1 µA）核對收斂。
+Iref=(GF_VDD−GMSR_REF)/462，Irep 同理；量 RF gate bias、
+啟動節點、kick=(BP−K)/50 kΩ。最後窗的 Iref 與對實際 Iref
+的 replica 誤差在 ±2%，且 |kick| <0.01 µA 才算已退出。
+重啟要核對首次上電平台、掉電窗及第二次收斂。保留起動
+時間、過衝與最後窗，trim/PSRR/非同步 rail 是後續條件。
+
+二、迴路
+
+STB 分兩個 deck：replica iprobe 在 OTA 輸出與 replica MOS gate
+之間，beta iprobe 在 GMSQBP 與兩個 GMSQRPM gate 之間。
+另一個迴路保持閉合。核對插探針後 Iref 是否回到整合工作點，
+保存複數 loopGain、交越頻率、原生 PM/GM、Nyquist 資料。
+要求 PM ≥60°、GM ≥10 dB。無交越、缺原生 margin、複數符號
+或多交越無法解讀時標為待判讀，保留 raw 和 log。兩個局部
+STB 加上整體啟動資料用來檢查互動。對 beta 的零電流分支
+另由冷啟動實測排除；STB 是在線性化工作點附近量。
+Cadence STB 參考
+https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/58030/gain-margin-and-phase-margin-expressions-from-nyquist-plots/1393917
+
+三、SS cb2 XT2
+
+原 Vb2 0.580 V、SS/85°C/0.81 V、Rs25、11/11，先跑有限擺幅短時域。
+使用 0.4 Vppd 與 0.2 Vppd 的同一確定序列，涵蓋 PAM4 全 16 個
+有向轉換、1 ps edge。保留原兩個緩衝 RC 極點及整合的 25 Ω source。
+接回原 r5 八相初級取樣時鐘的 delay、period、rise/fall 與 duty，
+振幅依 SS VDD。先讓原生 DC 偏壓收斂，取 128–256 UI 看動態。
+保存 16 顆 XT2 的 vds、vdsat、region，另保存 X_c、X_o、X_s2、
+輸入及時鐘。先用一案確定此 build 的原生階層存檔名稱。
+以實際輸入 Vpp 正規化滿／半擺幅的增益差，並用時鐘下降沿 50%
+的內插點核對每路 hold 差動擺幅。用 native region 和量到的最低
+裕度及各 region 時間占比共同判讀。
+Cadence 動態 OP 存檔參考
+https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/35550/how-to-save-transient-operating-point/1346332
+
+若低裕度反覆出現在同轉換或取樣附近，且滿擺幅相對半擺幅有
+可重現的壓縮／失真，再提出只改 16 顆 XT2 gate 的 Vb2
+0.575／0.570 V 敏感度。選最小有實測改善的改動，核對同
+Vb2 reference 與原 r3 reference 的增益、共模、噪聲及功耗。
+靜態 2.3 mV 本身不足以決定改 Vb2。短時域是 AFE 診斷，
+與 7-bit 量化和凍結 17-tap FFE 的 SER 驗證分開。
+
+四、通過後的批次
+
+1. 非理想 120 pH 電感，以同一整合網表和同 Z0 參考量 Q、SRF、
+   DC ESR、容差與 mismatch。先看最緊的 SS gain 和 FF power。
+2. 正負 ±4.464 ps 端點，TT/SS/FF，先用已知 skew AC 離線評分，
+   再驗真實訓練選碼。
+3. 細碼單調、0.30 ps 實測步階、兩個接縫與實體全域碼路由。
+4. 時域保留原 FFE，零 skew 訓練時固定共同取樣相位，凍結後
+   才比較未見 payload 與配對 noise seed。量額外 −1.3 至 −2.5 dB
+   tilt 是否影響 SER。每批按實際前級結果另提使用者核准。

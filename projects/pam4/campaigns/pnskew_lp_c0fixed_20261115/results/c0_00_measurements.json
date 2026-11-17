@@ -1,0 +1,1022 @@
+{
+  "metrics": {
+    "primary": {
+      "first_read_s": 1.0497151235012093e-08,
+      "last_read_s": 1.2773938535727303e-08,
+      "lag": 1,
+      "metrics": {
+        "raw_held_FFE_before_ADC": {
+          "sample_count": 240,
+          "symbol_errors": 173,
+          "SER": 0.7208333333333333,
+          "gray_bit_errors": 231,
+          "bit_count": 480,
+          "gray_BER": 0.48125,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 2.5519521027795786,
+          "prediction_EVM_RMS_percent_of_target_RMS": 113.74823659107147,
+          "confusion_rows_true_cols_decided": [
+            [
+              0,
+              33,
+              26,
+              2
+            ],
+            [
+              0,
+              36,
+              24,
+              2
+            ],
+            [
+              1,
+              28,
+              27,
+              1
+            ],
+            [
+              4,
+              29,
+              23,
+              4
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -0.0624761939687605,
+              "std": 1.2095542277291897,
+              "min": -1.8644645321057507,
+              "max": 2.1540315240485883,
+              "p05": -1.6805872715760282,
+              "p95": 1.7582365687606982
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -0.21270295851186008,
+              "std": 1.1762055414984212,
+              "min": -1.978207714365009,
+              "max": 2.1856306773022127,
+              "p05": -1.8462275823186982,
+              "p95": 1.7557465447313472
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.01790641687213842,
+              "std": 1.2169766490376703,
+              "min": -2.047068269062528,
+              "max": 2.107919864556625,
+              "p05": -1.9372778941395183,
+              "p95": 1.7566327121921004
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": -0.09911449257043854,
+              "std": 1.3385526582312834,
+              "min": -2.210541255780181,
+              "max": 2.133665679897764,
+              "p05": -2.010076720455974,
+              "p95": 2.0922888357361455
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            -4.1322392384135975,
+            -4.23269894636474,
+            -4.318461120336806
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            -3.604464151079396,
+            -3.6930244388708653,
+            -3.7667094326480743
+          ]
+        },
+        "ideal7bit_ADC_then_FFE": {
+          "sample_count": 240,
+          "symbol_errors": 174,
+          "SER": 0.725,
+          "gray_bit_errors": 234,
+          "bit_count": 480,
+          "gray_BER": 0.4875,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 2.5474011736816844,
+          "prediction_EVM_RMS_percent_of_target_RMS": 113.54538789372616,
+          "confusion_rows_true_cols_decided": [
+            [
+              0,
+              33,
+              26,
+              2
+            ],
+            [
+              0,
+              37,
+              23,
+              2
+            ],
+            [
+              2,
+              27,
+              26,
+              2
+            ],
+            [
+              3,
+              30,
+              24,
+              3
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -0.06734048473603048,
+              "std": 1.2080327263944153,
+              "min": -1.9375011113867355,
+              "max": 2.1333390552194804,
+              "p05": -1.7982100785150938,
+              "p95": 1.8576298511309801
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -0.212875118917306,
+              "std": 1.1756132491851847,
+              "min": -1.9679667089753163,
+              "max": 2.177933913940672,
+              "p05": -1.8761102248411434,
+              "p95": 1.7485759574200095
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.011186035698724693,
+              "std": 1.217689793899536,
+              "min": -2.1057847536813985,
+              "max": 2.193431868754114,
+              "p05": -1.9471672096406665,
+              "p95": 1.728079816118244
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": -0.09155472791054457,
+              "std": 1.3288916178951453,
+              "min": -2.1791735974352413,
+              "max": 2.2198121737192515,
+              "p05": -1.9159140465141464,
+              "p95": 1.9700811325196672
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            -4.101305764194796,
+            -4.28371866762207,
+            -4.372605466189356
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            -3.7337400759721238,
+            -3.6957431670606757,
+            -3.6439938626323904
+          ]
+        },
+        "raw_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 173,
+          "SER": 0.7208333333333333,
+          "gray_bit_errors": 243,
+          "gray_BER": 0.50625,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              27,
+              4,
+              11,
+              19
+            ],
+            [
+              27,
+              7,
+              8,
+              20
+            ],
+            [
+              31,
+              0,
+              9,
+              17
+            ],
+            [
+              21,
+              8,
+              7,
+              24
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.0002757936375490614,
+              "std_V": 0.009498115983681707,
+              "min_V": -0.01993368980704946,
+              "max_V": 0.02275740691583139,
+              "p05_V": -0.016480840652257966,
+              "p95_V": 0.015068834753297677
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.0010154702028146382,
+              "std_V": 0.010862988911573881,
+              "min_V": -0.02017852129662545,
+              "max_V": 0.019029049815045496,
+              "p05_V": -0.017642917317234445,
+              "p95_V": 0.015495657729573072
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": -0.002459359850967559,
+              "std_V": 0.011269019010459794,
+              "min_V": -0.025376998388681127,
+              "max_V": 0.0257103217479131,
+              "p05_V": -0.01808810661659883,
+              "p95_V": 0.015084237599900605
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.0008169943377719775,
+              "std_V": 0.011124611073871297,
+              "min_V": -0.023699469420005892,
+              "max_V": 0.02294635807907064,
+              "p05_V": -0.016526045849554177,
+              "p95_V": 0.017854911822802164
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.04293592821245684,
+            -0.04440604820372662,
+            -0.04940979116791899
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.03271175207053212,
+            -0.0335837643461719,
+            -0.03161028344945478
+          ],
+          "sample_min_V": -0.025376998388681127,
+          "sample_max_V": 0.0257103217479131,
+          "observed_peak_to_peak_V": 0.05108732013659423,
+          "detector_training_class_order_valid": false
+        },
+        "ADC_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 174,
+          "SER": 0.725,
+          "gray_bit_errors": 244,
+          "gray_BER": 0.5083333333333333,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              27,
+              4,
+              10,
+              20
+            ],
+            [
+              28,
+              6,
+              7,
+              21
+            ],
+            [
+              31,
+              0,
+              9,
+              17
+            ],
+            [
+              21,
+              8,
+              7,
+              24
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.0002497438524590169,
+              "std_V": 0.009502745813129375,
+              "min_V": -0.019921875000000002,
+              "max_V": 0.023046874999999994,
+              "p05_V": -0.016796875000000003,
+              "p95_V": 0.015234374999999994
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.0010458669354838717,
+              "std_V": 0.010818216149029026,
+              "min_V": -0.019921875000000002,
+              "max_V": 0.019140624999999994,
+              "p05_V": -0.017578125,
+              "p95_V": 0.015234374999999994
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": -0.002446546052631579,
+              "std_V": 0.01125748979609212,
+              "min_V": -0.025390625,
+              "max_V": 0.025390625,
+              "p05_V": -0.017890625,
+              "p95_V": 0.015234374999999994
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.0007682291666666667,
+              "std_V": 0.011123320758779321,
+              "min_V": -0.023828125000000002,
+              "max_V": 0.023046874999999994,
+              "p05_V": -0.016249999999999997,
+              "p95_V": 0.017656249999999995
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.04296875,
+            -0.044531249999999994,
+            -0.049218750000000006
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.032812499999999994,
+            -0.033124999999999995,
+            -0.031484374999999995
+          ],
+          "sample_min_V": -0.025390625,
+          "sample_max_V": 0.025390625,
+          "observed_peak_to_peak_V": 0.05078125,
+          "detector_training_class_order_valid": false
+        },
+        "ADC_fullscale_differential_Vpp": 0.1,
+        "ADC_validation_input_clipped_count": 0,
+        "ADC_validation_input_count": 256,
+        "ADC_validation_input_clipped_fraction": 0.0,
+        "FFE_validation_output_count": 240,
+        "feature_rule": "FFE features lie wholly within independent validation slice;8 symbols excluded at each edge",
+        "validation_fitting_performed": false
+      }
+    },
+    "secondary": {
+      "first_read_s": 1.0547008235012093e-08,
+      "last_read_s": 1.2823796158247267e-08,
+      "lag": 3,
+      "metrics": {
+        "raw_held_FFE_before_ADC": {
+          "sample_count": 240,
+          "symbol_errors": 175,
+          "SER": 0.7291666666666666,
+          "gray_bit_errors": 236,
+          "bit_count": 480,
+          "gray_BER": 0.49166666666666664,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 2.4853953527370645,
+          "prediction_EVM_RMS_percent_of_target_RMS": 110.78160060197014,
+          "confusion_rows_true_cols_decided": [
+            [
+              0,
+              33,
+              27,
+              1
+            ],
+            [
+              2,
+              34,
+              24,
+              2
+            ],
+            [
+              2,
+              26,
+              28,
+              1
+            ],
+            [
+              2,
+              30,
+              25,
+              3
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -0.14137530870109924,
+              "std": 1.1475452145790763,
+              "min": -1.9257822849311212,
+              "max": 2.0293351370289963,
+              "p05": -1.7943964114601203,
+              "p95": 1.6283102427274563
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -0.22604349185302752,
+              "std": 1.1296447770204416,
+              "min": -2.017229840155901,
+              "max": 2.1046150735545845,
+              "p05": -1.9241514799209793,
+              "p95": 1.6086981639556175
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.025181945890996885,
+              "std": 1.1836286629909254,
+              "min": -2.113810346394649,
+              "max": 2.0594883939011566,
+              "p05": -1.921301447011005,
+              "p95": 1.7284169889839487
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": -0.038184522347686635,
+              "std": 1.2884729016073109,
+              "min": -2.203724512628929,
+              "max": 2.1993493353118145,
+              "p05": -1.9354845471285207,
+              "p95": 2.0007351210260396
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            -4.046564977184897,
+            -4.2184254199492335,
+            -4.263212906530086
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            -3.5524617226484354,
+            -3.5299996109666223,
+            -3.663901536112469
+          ]
+        },
+        "ideal7bit_ADC_then_FFE": {
+          "sample_count": 240,
+          "symbol_errors": 175,
+          "SER": 0.7291666666666666,
+          "gray_bit_errors": 234,
+          "bit_count": 480,
+          "gray_BER": 0.4875,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 2.481754126071624,
+          "prediction_EVM_RMS_percent_of_target_RMS": 110.61930009806525,
+          "confusion_rows_true_cols_decided": [
+            [
+              0,
+              33,
+              27,
+              1
+            ],
+            [
+              2,
+              35,
+              23,
+              2
+            ],
+            [
+              1,
+              28,
+              27,
+              1
+            ],
+            [
+              2,
+              29,
+              26,
+              3
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -0.13673165876938845,
+              "std": 1.142750842318564,
+              "min": -1.9550896910094941,
+              "max": 2.1363719952954727,
+              "p05": -1.6909821127051559,
+              "p95": 1.6841380963029438
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -0.2423887756065261,
+              "std": 1.1292548787945609,
+              "min": -2.006441448745587,
+              "max": 2.1171095935617306,
+              "p05": -1.8840087729688781,
+              "p95": 1.5323975358083473
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.01736310755129685,
+              "std": 1.1813607832888675,
+              "min": -2.0712278048569304,
+              "max": 2.0749800621413916,
+              "p05": -1.9607838012571313,
+              "p95": 1.7188595668430853
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": -0.027295936236794837,
+              "std": 1.2866021617209957,
+              "min": -2.256769105794337,
+              "max": 2.2194003493098133,
+              "p05": -1.882903153276872,
+              "p95": 1.980258721349558
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            -4.14281344404106,
+            -4.1883373984186605,
+            -4.331749167935729
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            -3.568146869271822,
+            -3.4931813370654785,
+            -3.6017627201199574
+          ]
+        },
+        "raw_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 130,
+          "SER": 0.5416666666666666,
+          "gray_bit_errors": 147,
+          "gray_BER": 0.30625,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              39,
+              20,
+              2,
+              0
+            ],
+            [
+              27,
+              18,
+              16,
+              1
+            ],
+            [
+              7,
+              12,
+              16,
+              22
+            ],
+            [
+              0,
+              7,
+              16,
+              37
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.00624154034496874,
+              "std_V": 0.003973564732273284,
+              "min_V": -0.013942298711128953,
+              "max_V": 0.002128989626254074,
+              "p05_V": -0.012025823675881453,
+              "p95_V": -0.0010674365065084235
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.0027739221270710384,
+              "std_V": 0.004043813928338528,
+              "min_V": -0.009926420401434655,
+              "max_V": 0.006404982891221267,
+              "p05_V": -0.009239490194519362,
+              "p95_V": 0.0034106136237281198
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": 0.001963153976761808,
+              "std_V": 0.004261486379654853,
+              "min_V": -0.007133254828703528,
+              "max_V": 0.00994357871451712,
+              "p05_V": -0.004812356049648314,
+              "p95_V": 0.007949867054812503
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.005571259314659081,
+              "std_V": 0.004238031648445814,
+              "min_V": -0.0025129330852458054,
+              "max_V": 0.01446225568548598,
+              "p05_V": -0.0014719280884586518,
+              "p95_V": 0.0119653538934649
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.012055410027688729,
+            -0.013538237719924795,
+            -0.012456511799762926
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.008172053688010938,
+            -0.008222969673376435,
+            -0.009421795143271156
+          ],
+          "sample_min_V": -0.01446225568548598,
+          "sample_max_V": 0.013942298711128953,
+          "observed_peak_to_peak_V": 0.028404554396614934,
+          "detector_training_class_order_valid": true
+        },
+        "ADC_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 128,
+          "SER": 0.5333333333333333,
+          "gray_bit_errors": 145,
+          "gray_BER": 0.3020833333333333,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              42,
+              17,
+              2,
+              0
+            ],
+            [
+              28,
+              17,
+              16,
+              1
+            ],
+            [
+              7,
+              12,
+              16,
+              22
+            ],
+            [
+              0,
+              7,
+              16,
+              37
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.006229188012295082,
+              "std_V": 0.003950549063014624,
+              "min_V": -0.013769531250000001,
+              "max_V": 0.0020507812500000014,
+              "p05_V": -0.012011718749999997,
+              "p95_V": -0.0008789062499999986
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.0027973790322580643,
+              "std_V": 0.004040583967006884,
+              "min_V": -0.009667968749999999,
+              "max_V": 0.006152343749999997,
+              "p05_V": -0.009082031249999997,
+              "p95_V": 0.0032226562499999972
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": 0.001958264802631579,
+              "std_V": 0.004259032873121141,
+              "min_V": -0.00732421875,
+              "max_V": 0.009667968749999999,
+              "p05_V": -0.004980468750000001,
+              "p95_V": 0.008144531249999996
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.005527343749999999,
+              "std_V": 0.004239946029607497,
+              "min_V": -0.0026367187500000028,
+              "max_V": 0.01435546875,
+              "p05_V": -0.00146484375,
+              "p95_V": 0.012041015625
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.01171875,
+            -0.013476562499999997,
+            -0.012304687500000001
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.008203124999999999,
+            -0.008203124999999999,
+            -0.009609374999999996
+          ],
+          "sample_min_V": -0.01435546875,
+          "sample_max_V": 0.013769531250000001,
+          "observed_peak_to_peak_V": 0.028125,
+          "detector_training_class_order_valid": true
+        },
+        "ADC_fullscale_differential_Vpp": 0.075,
+        "ADC_validation_input_clipped_count": 0,
+        "ADC_validation_input_count": 256,
+        "ADC_validation_input_clipped_fraction": 0.0,
+        "FFE_validation_output_count": 240,
+        "feature_rule": "FFE features lie wholly within independent validation slice;8 symbols excluded at each edge",
+        "validation_fitting_performed": false
+      }
+    }
+  },
+  "clock_audit": {
+    "first_actual_CK0_fall_s": 1.3850089006919627e-10,
+    "first_expected_CK0_fall_s": 1.384464428571429e-10,
+    "actual_master_period_declared_s": 7.14286e-11,
+    "master_fall_count": 195,
+    "master_cycle_max_error_s": 4.450218535091743e-15,
+    "strobe_period_s": 1.1160714285714286e-12,
+    "interpolation_tolerance_s": 1.1160714285714286e-12,
+    "secondary_clock_audit": [
+      {
+        "bank": 0,
+        "branch": 0,
+        "fall_count": 25,
+        "max_expected_fall_error_s": 1.1757735905194819e-13
+      },
+      {
+        "bank": 0,
+        "branch": 7,
+        "fall_count": 24,
+        "max_expected_fall_error_s": 1.1757326875797004e-13
+      },
+      {
+        "bank": 7,
+        "branch": 7,
+        "fall_count": 24,
+        "max_expected_fall_error_s": 1.1757326875466131e-13
+      }
+    ],
+    "retained_primary_and_secondary_records": 1542,
+    "branch_rule": "First actual CK0 fall is mastercycle0. Secondarybranch=mastercycle modulo8, bank=primarylane.",
+    "label_rule": "Primary andsecondary shareprimarycapture symbolindex; secondaryreadtime islater.",
+    "primary_read_after_fall_midpoint_s": 1.5e-12,
+    "secondary_read_after_primary_fall_midpoint_s": 3.3499999999999994e-11,
+    "first_mapping": [
+      {
+        "symbol_time_index": 0,
+        "master_cycle": 0,
+        "bank": 7,
+        "secondary_branch": 0,
+        "primary_close_s": 2.0100089006919626e-10,
+        "secondary_read_s": 2.3450089006919624e-10
+      },
+      {
+        "symbol_time_index": 1,
+        "master_cycle": 1,
+        "bank": 0,
+        "secondary_branch": 1,
+        "primary_close_s": 2.099295135215336e-10,
+        "secondary_read_s": 2.434295135215336e-10
+      },
+      {
+        "symbol_time_index": 2,
+        "master_cycle": 1,
+        "bank": 1,
+        "secondary_branch": 1,
+        "primary_close_s": 2.188585135215336e-10,
+        "secondary_read_s": 2.5235851352153356e-10
+      },
+      {
+        "symbol_time_index": 3,
+        "master_cycle": 1,
+        "bank": 2,
+        "secondary_branch": 1,
+        "primary_close_s": 2.277865135215336e-10,
+        "secondary_read_s": 2.612865135215336e-10
+      },
+      {
+        "symbol_time_index": 4,
+        "master_cycle": 1,
+        "bank": 3,
+        "secondary_branch": 1,
+        "primary_close_s": 2.367155135215336e-10,
+        "secondary_read_s": 2.7021551352153356e-10
+      },
+      {
+        "symbol_time_index": 5,
+        "master_cycle": 1,
+        "bank": 4,
+        "secondary_branch": 1,
+        "primary_close_s": 2.456435135215336e-10,
+        "secondary_read_s": 2.791435135215336e-10
+      },
+      {
+        "symbol_time_index": 6,
+        "master_cycle": 1,
+        "bank": 5,
+        "secondary_branch": 1,
+        "primary_close_s": 2.545725135215336e-10,
+        "secondary_read_s": 2.8807251352153357e-10
+      },
+      {
+        "symbol_time_index": 7,
+        "master_cycle": 1,
+        "bank": 6,
+        "secondary_branch": 1,
+        "primary_close_s": 2.6350051352153355e-10,
+        "secondary_read_s": 2.9700051352153354e-10
+      }
+    ],
+    "last_mapping": [
+      {
+        "symbol_time_index": 1534,
+        "master_cycle": 192,
+        "bank": 5,
+        "secondary_branch": 0,
+        "primary_close_s": 1.3897439495420055e-08,
+        "secondary_read_s": 1.3930939495420055e-08
+      },
+      {
+        "symbol_time_index": 1535,
+        "master_cycle": 192,
+        "bank": 6,
+        "secondary_branch": 0,
+        "primary_close_s": 1.3906367495420055e-08,
+        "secondary_read_s": 1.3939867495420055e-08
+      },
+      {
+        "symbol_time_index": 1536,
+        "master_cycle": 192,
+        "bank": 7,
+        "secondary_branch": 0,
+        "primary_close_s": 1.3915296495420054e-08,
+        "secondary_read_s": 1.3948796495420054e-08
+      },
+      {
+        "symbol_time_index": 1537,
+        "master_cycle": 193,
+        "bank": 0,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3924225117856499e-08,
+        "secondary_read_s": 1.3957725117856498e-08
+      },
+      {
+        "symbol_time_index": 1538,
+        "master_cycle": 193,
+        "bank": 1,
+        "secondary_branch": 1,
+        "primary_close_s": 1.39331541178565e-08,
+        "secondary_read_s": 1.39666541178565e-08
+      },
+      {
+        "symbol_time_index": 1539,
+        "master_cycle": 193,
+        "bank": 2,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3942082117856498e-08,
+        "secondary_read_s": 1.3975582117856498e-08
+      },
+      {
+        "symbol_time_index": 1540,
+        "master_cycle": 193,
+        "bank": 3,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3951011117856499e-08,
+        "secondary_read_s": 1.3984511117856499e-08
+      },
+      {
+        "symbol_time_index": 1541,
+        "master_cycle": 193,
+        "bank": 4,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3959939117856498e-08,
+        "secondary_read_s": 1.3993439117856498e-08
+      }
+    ],
+    "measured_primary_aperture": {
+      "phase_UI": 0.11219284222494252,
+      "CK_half_fall_time_s": 1.3438588646627226e-09,
+      "observed_symbol_time_index": 128,
+      "lane": 7,
+      "reference": "transmitted-symbol boundaries T0 + integer*UI",
+      "method": "first observed CK half-fall after warmup, modulo UI; not the requested clock delay increment"
+    }
+  },
+  "case": {
+    "case_id": "c0_00_tt_zero",
+    "skew_ps": 0.0,
+    "fixed_code": 0,
+    "stop_s": 1.4e-08,
+    "first_payload_s": 1.0485714285714285e-08,
+    "holdout_inputs": 256,
+    "FFE_scored_symbols": 240,
+    "saved_trace_count": 178,
+    "deck_sha256": "045006822ab3addba5ed6ff8e4273eaaae36f057f05cfb466fd0f4bed022e029"
+  },
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "run_status_sha256": "dea80ea5bfa8d0bfd24e7636489cf66baae401562773a5b0b623e261367c1189",
+  "tran_sha256": "43f0e2951929a483f992cdf026c3c20771ae23b8336c038c3308b5b3f3b03a0e",
+  "measurement_complete": true,
+  "bench_sha256": "60b5928554f2b8c7205b849415f14f5a377b282052d5c4d96f1d8468d1642f4a"
+}

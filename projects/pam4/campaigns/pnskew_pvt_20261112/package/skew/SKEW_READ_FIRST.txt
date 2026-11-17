@@ -1,0 +1,26 @@
+ECEN 721 Project #6　P/N skew 影響量化
+
+本研究使用 genuine r5_late1 / cml2_late1 的 r3 focus55 CTLE、實體 8 路主取樣、CML/64 次取樣以及原本凍結的數值量化與 FFE。原始驗證資料種子 2026101302、主/次取樣判讀的 lag 1/3 與 Vppd full-scale 0.10/0.075 V 固定。每個點留 2048 筆 held samples，17-tap FFE 輸出 2032 筆決策；沿用原始標籤、7-bit 量化、weights、bias 與 clipping 計數。
+
+固定平均延遲的測試
+
+δ = τP − τN。P 的資料時間軸加 δ/2，N 減 δ/2，保留 t=0 的固定初值。112 GBaud 的 1 UI 為 8.928571 ps，±0.5 UI 即 ±4.464286 ps。兩條合成 channel 由各自的相同 RC 和 ideal VCVS 緩衝構成。確定性信號先平移再經這些相同的線性時不變路徑，等效於 AFE 入口 X_ip / X_im 的相對平移。兩路平均延遲和所有取樣時鐘固定。雜訊分析中的電阻雜訊沿原電路產生。配對以相同 seed ID 及設定為準，solver 步階可能改變實際雜訊軌跡。
+
+這份計畫共 77 個可獨立執行的 classic 案例。先做 quiet 9 點，δ/UI 為 −0.5、−0.375、−0.25、−0.125、0、+0.125、+0.25、+0.375、+0.5。再做獨立的 56 GHz tone 診斷 8 案，以及在兩端點和零 skew 做 20 個配對雜訊種子的 60 案。雜訊結果只覆蓋端點與零點。tone 用兩個 testbench PWL 源換成小信號 DM/CM 刺激，仍保留所有原電路、clock、save 與 transient 分析選項。等條件且已保存完整的 classic 資料只有在能核對輸入、模型、時間窗、版本和分析規則一致時才可重用。
+
+判讀規則
+
+• 主、次取樣分列 held samples 按原始 frozen detector 極性（primary +1、secondary −1）對齊後，各相鄰 PAM4 電平的 p05(較高標籤)−p95(較低標籤)，以及最小間距。列原 FFE 與 ideal 7-bit→FFE 錯誤、Gray bit errors、sample/bit count、FFE MSE（目標 symbol unit²）與 clipping。
+• 以同一個 quiet 零 skew classic 結果比較。任一取樣點的 ideal 7-bit→FFE SER 增加至少 1 percentage point，或正的零 skew 最小 held 間距縮小至少 10%，標為本研究的明顯劣化。零 skew 間距 ≤0 時仍報 mV 差值，百分比不適用。每個方向各報從零連續可判讀的最後未觸發點與首個觸發點，不在未測的區間內插保證。
+• 20 組雜訊對照按 seed ID 1001–1020 成對，分別報兩個方向與兩個取樣點的逐 seed 差值、observed min/max 及配對平均。未收齊的組別保留 partial 數據。SER/Gray 比例為固定長度樣本的觀察值。
+• 56 GHz native tone 在固定 0.8 ns 起的 21 週期內，用複數基波比較 Vd=Vp−Vn、Vc=(Vp+Vn)/2。DM 輸入 peak 是整個 Vd，CM 輸入 peak 是每腿 Vc。保留 AFE 入口和輸出各兩個 modal phasors。Hdd/Hdc 以 launched modal peak 為基準，包含合成 channel。Hdd 的 56 GHz dip 以同條件 δ=0 為基準。新增 CM→DM 用複數 Hdc(δ)−Hdc(0) 除以 |Hdd(0)|，避免以兩個振幅相減。用 δ=0 的 1 mV/0.5 mV 複數比檢查小信號近似；超過 5% 顯示需釐清 tone 偏差，仍保留原量測。這些是 56 GHz 的基波傳遞，r3 DC/AC peaking 另由 PVT 套件定義。
+
+補償範圍與理想上限
+
+差動控制需覆蓋 −4.464 至 +4.464 ps。互補兩腿各在共同偏置附近移動最多 2.232 ps。理想逆校正抵消兩個時間位移，回到同一 quiet 或同 seed 的 zero-skew 源。用該零點的同一份 deck 和結果作代數上限，省下重複 solver；純延遲實作可能引入共同延遲，需另和原取樣相位驗證。
+
+線性 matched 模型在 56 GHz 給 Hdd 相對幅度 cos(π fδ)，CM→DM 相對幅度 |2 sin(π fδ)|。在 ±0.5 UI 模型預測 DM 約下降 3.01 dB，合成通道加上 AFE 的基波傳遞由 tone 取得。前一份架構研究的 0.25 ps residual 是草案。採用該預算時，理想均勻差動 delay code 的半步誤差 qδ/2 ≤0.25 ps，故 qδ≤0.50 ps 只是量化的必要條件，還須留給偏差、非線性及 PVT。九點 grid 的 1.116 ps 間距不夠量出 0.25 ps 等級的實際容差；若初測要細化，僅對每側首次觸發的相鄰點加局部掃描。
+
+執行預算
+
+各案 1 CPU / 6 GiB / 3 h。quiet 預估 45–90 min，noise 55–110 min，tone 45–110 min，仍沿用原始 29.414285714 ns transient。這些區間是排程估計。用首筆各類的 wall time、峰值 RSS、raw bytes 調整未派送工作資源，總 wall time取決於可併發數和 queue。分析與保存小型證據讀回後可在執行端退休這一筆新 raw。summary 讀取完整 case、receipt 與 compact 檔案，使用 summarize_skew.py。

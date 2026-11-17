@@ -1,0 +1,19 @@
+監看本聊天使用者在2026-10-22明確授權的「25fF/2um與原版做一次新資料獨立比較，背景跑、半小時檢查、崩潰回報且不要自動重跑」。每30分鐘只觀察已啟動工作；正常計算、容量等待或沒有重要變化時保持安靜。只在新失敗、VM重啟、連線無法確認、完成或需要使用者處理時以繁體中文通知。不得重複啟動、復活舊queue、自動重試、加候選、依本輪結果調參或再派另一輪holdout。
+
+先讀<LOCAL_ECEN720>/work/project6_r5_handoff.json與最新聊天。唯一新工作scripts/secondary_cap_validation_r7_20261022.py（SHA256 01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0）；protocol SHA256 2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f；主狀態runs/secondary_cap_validation_r7_20261022/status.json。原始程式與protocol SHA、啟動boot/PID/start/cwd/exe/cmdline均記在handoff的active_work.secondary_validation_r7_20261022與VM runs/secondary_cap_validation_r7_20261022_dispatch/launch_receipt.json。這些只是身分線索，每次仍要核對當下身分。觀察使用本機python work/control_secondary_validation_r7_20261022.py observe，僅讀取，不啟動或終止。輸出JSON陣列，實際物件存work/secondary_validation_r7_observe_20261022.json。runner等待或simulating正常時不可重啟。comm=spectre的ksh launcher不算actual simulator，依exe區分。
+
+VM user@192.0.2.1；SSH必須StrictHostKeyChecking=yes、HostKeyAlias=192.0.2.1；key工作區work/ssh/vm_pdk_access_ed25519不可讀出。只操作/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm，不影響其他程序、專案或使用者GUI。PDK、模型係數、native cards、網表、文件、原始波形、detector係數、決策TSV與ViVA XY留VM；既有約70KB交付不覆寫、不重複匯出。僅少量派生數字與雜湊寫本地handoff/work收據。
+
+固定兩組baseline_r5（次支路每側10fF/TG1um）與secondary_c25_w2（每側25fF/TG2um），先兩案無雜訊再兩案有雜訊，共4案各一次。新data2026102301/noise251；256warmup+2048score+128guard=2432符號；每支路2032個完整17tapFFE輸出。固定lag主1/次3、量化滿幅主100mVpp/次75mVpp、門檻-2/0/2、原相位/CML/偏壓/主取樣器。只比較已選電容與TG寬度；144時脈不變。新資料目標索引256..2303，FFE中心264..2295，不可按較晚的次支路讀出時間重新貼符號標籤。
+
+沿用各候選在r7訓練資料2026102202得到的完整raw/ADC detector，包括訓練均值/RMS、權重、bias；新無雜訊資料也不得fit或重新正規化。來源runs/secondary_cap_training_r7_20261022保持完整。baseline detector SHA650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847；C25W2 SHA04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f。兩份在新驗證準備時複製原bytes並固定，逐案前後核對。原r5 frozen SHA4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb；已驗證r7訓練來源SHAa83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac、phasehelperSHA660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e、safe runnerSHA1a01d14b611f5e3cad372bb428d4768acad181fd723a84fe55a90c70bbf97b2b。不要改凍結來源。
+
+本專案一次一個actualSpectre，啟動前全VM actual少於兩個；其他專案自行啟動工作不由本聊天停止。每案7200秒，容量等待1800秒，整批43200秒，磁碟至少8GiB。每案新session，timeout清理只限已核對的自身SID，禁止泛用kill。任何模擬、分析、hash失敗立即terminal，保留所有證據，不重試。SPECTRE-18原根因尚未知，先回報故障再補紀錄，不宣稱20GB記憶體不足或已修復。一次SSH連不上只能稱無法確認，不可直接稱模擬崩潰；未恢復確認前不得派發或重啟。正常時不評分中途波形。
+
+有重要狀態或完成數改變，可用本機work/record_secondary_validation_r7_20261022.py寫VM與本地交接；它只支援正常執行狀態，terminal需另做真實收據，勿硬套。所有舊r5、CDAC、三個相位目錄、r7訓練結果保留；不做舊波形cleanup，不壓縮或刪改歷史證據。
+
+4案完成後，逐案核對exit0、原frozen未改、protocol/deck/raw/summary SHA、兩份detector bytes相同、validation_fitting_performed=false、2048輸入/2032FFE輸出、種子/固定lag/range正確。以既有固定predict_window重新獨立計算錯誤數與MSE，不fit；不得把未完成當成功。交付本輪原版對候選的主/次支路無雜訊與有雜訊rawFFE/ADCFFE錯誤數、SER、MSE、clipping、擺幅與VDD功耗；只與本輪baseline比，不把31/224或26/224訓練數字直接當同資料改善率。固定seed跨硬體不代表同一或獨立雜訊實現；重疊FFE輸出也非獨立iid BER樣本。可作同ordinal配對差值/錯誤重疊的描述，但不能稱純元件雜訊分離或未經支持的顯著性。量測VDD不含時脈/偏壓產生、CDAC/參考/控制/DSP，不能說較大TG零額外功耗。
+
+完成或確認終止後，保存VM notes與本地handoff（結果、hash、程序狀態、限制、下一步），回報一次清楚數值結論，停止並刪除本監看排程。不得自動推進候選/新驗證或完整ADC。理想數值7bit量化器、數值FFE、reset比較器與理想時脈不能證明完整7bit112GS/s ADC；仍需真CDAC、參考、工作比較器、控制與七次相依判決。既有ViVA取樣相位掃描眼圖已完成，無需重建或操作GUI。
+
+2026-10-23T04:20:58Z啟動（Chicago 10月22日23:20），boot a9f090d5-3501-4278-90c0-da751a1880c4，runner PID10168/start2545193；首案SID10259、actualSpectre10272/start2545218。僅線索，必須重新核對。04:21:09Z已進入noiseless_baseline_r5瞬態、沒有SPECTRE-18。所有dispatch紀錄在獨立的runs/secondary_cap_validation_r7_20261022_dispatch，勿把worker.log或launch_receipt寫入已固定的新驗證ROOT。

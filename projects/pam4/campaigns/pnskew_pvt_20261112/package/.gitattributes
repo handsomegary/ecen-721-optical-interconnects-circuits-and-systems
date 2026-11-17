@@ -1,0 +1,2 @@
+# Keep delivered bytes exact so DELIVERY_MANIFEST.json SHA-256 values verify.
+* -text

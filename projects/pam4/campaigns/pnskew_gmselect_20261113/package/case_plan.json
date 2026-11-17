@@ -1,0 +1,1305 @@
+{
+  "format": "pam4_gm_select_sparse_v1",
+  "status": "REVIEW_PENDING",
+  "scope": "Static AC/DC/stationary noise, TT and two conditional corners only",
+  "resources": "Olympus Spectre 23.1 classic +mt=1, Python 3.11, 1 CPU per case",
+  "selectors": "Separate 0.58 V and 0 V bias buses, one whole input bank enabled. No RF switches.",
+  "cases": [
+    {
+      "case_id": "gm_tt_p25_v090_bypass_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_bypass_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_single_equal_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "single_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_single_equal_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "single_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_equal_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_equal_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_b_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_b_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_bypass_original_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "bypass_original",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_bypass_original_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "bypass_original",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_single_end_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "single_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_single_end_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "single_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_single_mid_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "single_mid",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_single_mid_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "single_mid",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_equal_b_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "b",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_equal_b_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "b",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_mid_a_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_mid",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        13,
+        9
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_mid_a_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_mid",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        13,
+        9
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_mid_b_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_mid",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        13,
+        9
+      ],
+      "active": "b",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_mid_b_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_mid",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        13,
+        9
+      ],
+      "active": "b",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_equal_a_off_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_equal_a_off_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_a_off_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_a_off_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_b_off_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "p",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_tt_p25_v090_dual_end_b_off_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "n",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_bypass_a_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_bypass_a_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_single_equal_a_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "single_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_single_equal_a_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "single_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_dual_equal_a_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_dual_equal_a_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_dual_end_a_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_dual_end_a_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_dual_end_b_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ss_p85_v081_dual_end_b_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_bypass_a_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_bypass_a_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_single_equal_a_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "single_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_single_equal_a_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "single_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_dual_equal_a_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_dual_equal_a_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "dual_equal",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_dual_end_a_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_dual_end_a_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "a",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_dual_end_b_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    },
+    {
+      "case_id": "gm_ff_m40_v099_dual_end_b_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "dual_end",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "active": "b",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        1,
+        12
+      ]
+    }
+  ]
+}

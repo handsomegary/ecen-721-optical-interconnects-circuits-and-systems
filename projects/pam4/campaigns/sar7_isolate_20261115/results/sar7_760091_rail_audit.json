@@ -1,0 +1,150 @@
+{
+  "job_id": "760091",
+  "tran_sha256": "1ce73eae3e824f0badd83876c8bdfe30e9851062cf4c8d18c5eaca912b40873a",
+  "rails_not_matching": [
+    {
+      "index": 1,
+      "expected_code": 0,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            5.986514825286692e-05,
+            0.899976994272625
+          ],
+          "compare_end_V": [
+            0.007611969957919102,
+            0.8999842047067557
+          ],
+          "output_end_V": [
+            0.32199149562418056,
+            0.7678572586067801
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "expected_code": 63,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            0.0009683612738630527,
+            0.8996056798168577
+          ],
+          "compare_end_V": [
+            0.0076362219866399515,
+            0.8999685543786378
+          ],
+          "output_end_V": [
+            0.3222066320375624,
+            0.767802288916695
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "expected_code": 65,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            0.0022016787401614836,
+            0.8992762880258152
+          ],
+          "compare_end_V": [
+            0.007664115531634888,
+            0.8999544211888235
+          ],
+          "output_end_V": [
+            0.3224822357806234,
+            0.767732366461699
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "expected_code": 42,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            0.003034205634719604,
+            0.8990889148164253
+          ],
+          "compare_end_V": [
+            0.007682022930400914,
+            0.899946217965279
+          ],
+          "output_end_V": [
+            0.3226660536441362,
+            0.7676858389908752
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "expected_code": 1,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            6.018492881023333e-05,
+            0.8999767257844826
+          ],
+          "compare_end_V": [
+            0.007611982873569992,
+            0.8999841926753902
+          ],
+          "output_end_V": [
+            0.32199161318637476,
+            0.7678572291347078
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "expected_code": 64,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            0.0003515384931021808,
+            0.8998232383930196
+          ],
+          "compare_end_V": [
+            0.007620773254885006,
+            0.8999777236388405
+          ],
+          "output_end_V": [
+            0.32206257546289385,
+            0.7678389337784893
+          ]
+        }
+      ]
+    }
+  ]
+}

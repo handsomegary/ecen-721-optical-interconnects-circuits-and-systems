@@ -1,0 +1,35 @@
+--- parent.scs
++++ bench.scs
+@@ -1,12 +1,16 @@
+ simulator lang=spectre
+-include "__pdk_root__/models/spectre/pdk_toplevel.scs" section=tt
+-simulatorOptions options temp=25 tnom=25 reltol=1e-4 vabstol=1u iabstol=1p
++include "la5_foundry_corners.scs" section=ss
++simulatorOptions options temp=85 tnom=25 reltol=1e-4 vabstol=1u iabstol=1p
+ // Schematic models with gate/contact/coupling parasitics enabled.
+-XVs (X_vdd 0) vsource dc=0.9
++XVs (X_vdd 0) vsource dc=0.81
+ XVcm (X_cm 0) vsource dc=0.7
+ XVb (X_vb 0) vsource dc=0.58
+-XVin (X_ip X_cm) vsource dc=0 mag=0.5
+-XEin (X_im X_cm X_ip X_cm) vcvs gain=-1
++XVin (PNC_PREP X_cm) vsource dc=0 mag=1
++PNCVN (PNC_PREN X_cm) vsource dc=0 mag=0
++// BEGIN PNC: four symmetric LC sections per leg, static controls
++PNCPRS (PNC_PREP X_ip) resistor r=25
++PNCNRS (PNC_PREN X_im) resistor r=25
++// END PNC
+ XR1p (X_vdd X_c_p) resistor r=50
+ XM1p0 (X_c_p X_ip X_s1_p 0) nmos_lvt l=30n w=3u multi=1 nf=1 sd=100n ad=2.25e-13 as=2.25e-13 pd=6.15u ps=6.15u nrd=0.096480 nrs=0.096480 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
+ XT1p0 (X_s1_p X_vb 0 0) nmos_lvt l=60n w=3u multi=1 nf=1 sd=100n ad=2.25e-13 as=2.25e-13 pd=6.15u ps=6.15u nrd=0.096480 nrs=0.096480 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=120.93n spba=121.82n spba1=124.403n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60
+@@ -144,8 +148,8 @@
+ XCH7m (X_h7m 0) capacitor c=5e-15
+ XRH7m (X_h7m X_o_m) resistor r=1T
+ saveOptions options save=selected currents=selected
+-save X_ip X_im X_c_p X_c_m X_o_p X_o_m X_s1_p X_s1_m X_s2_p X_s2_m XVs:p X_h0p X_h0m
++save X_ip X_im X_c_p X_c_m X_o_p X_o_m X_s1_p X_s1_m X_s2_p X_s2_m XVs:p X_h0p X_h0m PNC_PREP PNC_PREN XVin:p PNCVN:p
+ dcOp dc
+ dcOpInfo info what=oppoint where=rawfile
+ acResponse ac start=1K stop=150G dec=50
+-noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin
++noiseResponse (X_ip X_im) noise start=1M stop=56G dec=40 iprobe=XVin

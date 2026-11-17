@@ -1,0 +1,98 @@
+Project 6：正式 Cadence 專案第一階段
+
+已開始實作，原生原理圖與第一輪 PAM4 整合已完成；完整接收器尚未驗證。
+
+VM 專案：
+/home/user/Desktop/cadence_projects/project6_28nm
+
+Library：p6_224g_lib
+目前使用的 cells：
+  p6_ctle2_lvt_r2：兩級 CTLE，schematic + symbol
+  p6_sampler8_lvt_r2：8 路差動 TG 取樣器，schematic + symbol
+  tb_p6_ctle_sampler_ac_r2：原生 AC 測試原理圖
+
+從專案目錄執行 ./start_virtuoso.sh 可開啟環境。這次作業使用背景模式。
+原理圖保存後重新開啟，連線與 CDF 設定核對完成；兩個 symbol 共 43 個接腳通過核對。
+測試原理圖包含 96 個 MOS。原生網表與相同幾何的重建測試電路，TT AC 增益一致。
+早期 r0／r1 與 flag probe 是建立過程紀錄；使用 r2。
+
+一、原生幾何的基準
+
+TT、25°C、0.9 V，固定四路追蹤／四路保持的小訊號測試：
+  56 GHz 取樣追蹤增益：0.1906 V/V，−14.40 dB
+  CTLE 輸出在 56 GHz 相對 1 kHz 的提升：21.83 dB
+  輸出頻率響應最高點：約 22.39 GHz
+  靜態 VDD 功耗：9.56 mW
+
+慢速製程、85°C、0.81 V，固定設定的相對提升下降到 16.64 dB。
+快速製程、−40°C、0.99 V，相對提升為 24.78 dB。
+這三點只是初步角落檢查，不能當成完整 PVT 驗證。
+
+這裡使用 Cadence CDF 產生的完整元件幾何，與先前簡化 instance 參數的篩選結果不同。
+以上是新正式專案的基準。21.83 dB 相對提升不代表最高響應位於 56 GHz。
+
+二、112 Gbaud PAM4 整合
+
+來源為 224 Gb/s PAM4、通道前 0.4 Vpp 差動振幅。
+通道為明確假設的兩極 RC 合成模型，在 56 GHz 分別衰減 0、10、20 dB，並非真實板線模型。
+使用 8 路實際 MOS TG，每路每側 5 fF；時脈為理想、無抖動的 14 GHz 互補時脈。
+各通道掃四個相位，以 512 個訓練符號選設定，另用 2,048 個符號驗證；驗證期間固定相位、對齊與判決閾值。
+12 次相位校準、3 次主驗證、3 次 PN 偏斜／理想校正診斷及 1 次含雜訊驗證均正常完成。
+
+直接三閾值判讀的符號錯誤率：
+  無通道衰減：702 / 2048 = 34.28%
+  合成 10 dB 通道：956 / 2048 = 46.68%
+  合成 20 dB 通道：1035 / 2048 = 50.54%
+
+這不是完整 ADC 接收器的最佳可達錯碼率，因為直接判讀尚未使用數位等化。
+
+三、加入 17-tap 理想數位 FFE 的診斷
+
+FFE 權重、正規化與偏移只由訓練資料求得。17 taps 等效包含 8 UI 的判決延遲。
+每端排除 8 個符號，讓訓練與驗證的取樣視窗完全分開，因此以下每項驗證數量為 2032。
+下表是符號錯誤數；兩種 ADC full-scale 預先固定，全部列出，沒有據驗證结果挑選範圍。
+
+情境                 未量化取樣 + FFE    理想 7-bit、100 mVppd + FFE    理想 7-bit、400 mVppd + FFE
+無通道衰減            0 / 2032           727 / 2032                     0 / 2032
+合成 10 dB 通道       2 / 2032            52 / 2032                     6 / 2032
+合成 20 dB 通道      46 / 2032            46 / 2032                    91 / 2032
+20 dB 通道 + 雜訊    84 / 2032            94 / 2032                   157 / 2032
+
+100 mVppd 範圍在無衰減及 10 dB 測試會 clipping，因此大幅惡化。
+20 dB、含雜訊、100 mVppd 理想 ADC + FFE：SER = 4.626%，觀察到的 Gray BER = 2.313%。
+含雜訊測試只有一個 seed；模擬雜訊上限 150 GHz，500 MHz 以下使用固定 PSD，並包含合成通道電阻熱雜訊。
+上述仍是有限序列的診斷，不是低 BER 保證。理想量化與 FFE 不證明實體 7-bit ADC 的速度、ENOB 或功耗。
+FFE 沿用前一輪直接判讀選出的相位；尚未針對 FFE 重新最佳化相位、CTLE 或 taps。
+
+四、已定位的設計問題
+
+原生固定追蹤 AC 響應乘上 20 dB 合成通道後，在約 14.68 GHz 有明顯峰值，比 56 GHz 高 21.74 dB。
+這支持等化曲線失配是嚴重符號間干擾的可能原因。此 AC 診斷不等同切換取樣器的完整時變響應。
+下一個設計重點是完整「通道 × CTLE」的幅度、相位與脈衝響應，調整 CTLE／VGA，再與 ADC／DSP 一起校準。
+現有結果不足以宣告 28nm LVT 的速度極限，也不足以宣告完整 Project 6 可達標。
+
+PAM4 主測試的 AFE／TG VDD 功耗約 9.55–9.62 mW。
+這不包含實體時脈、ADC、DSP、偏壓電路與通道來源功耗。
+
+五、專案狀態與重跑
+
+可以繼續使用這個原生專案做設計，但目前這版尚未達到可交付的 Project 6 接收器。
+待完成：通道匹配的 CTLE／VGA、實體 ADC、PN 偏斜補償、實體時脈、真實通道及完整 PVT／版圖寄生驗證。
+PN 原始端點測試沒有重新置中共同時序；與理想校正的差異不能全部解釋為純 PN skew 效果。
+
+VM 中的主要結果：
+  project_status.json
+  README.txt
+  results/native_baseline_summary.json
+  results/pam4_integration_summary.json
+  results/pam4_ffe_diagnostic.json
+  results/channel_shape_diagnostic.json
+  results/Project6_started_summary.json
+
+在專案目錄重跑：
+  python3 scripts/pam4_integration.py --with-noise
+  python3 scripts/pam4_ffe_diagnostic.py
+
+原生 views 已存在，建立工具會拒絕覆寫；後續電路修改應建立新 revision。
+已核對原 LA5 來源檔與既有 PDK 主模型雜湊。/home/user/pdk_probe 已刪除且未重建。
+PDK、CDF、模型係數與原始波形保留在 VM。本聊天保存的 JSON 只有派生數值、條件與雜湊。

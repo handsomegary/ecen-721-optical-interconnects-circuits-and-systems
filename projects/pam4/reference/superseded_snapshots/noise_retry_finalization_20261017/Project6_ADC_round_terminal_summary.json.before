@@ -1,0 +1,85 @@
+{
+  "status": "bounded_round_closed_noise_interrupted",
+  "complete_ADC_verified": false,
+  "PAM4_conditions": "TT,25C,0.9V;112Gbaud PAM4;20dB channel at56GHz;0.4Vppd transmitter",
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "r5_noiseless_holdout": {
+    "input_symbols": 2048,
+    "FFE_windows": 2032,
+    "data_seed": 2026101302,
+    "fitting_performed": false,
+    "ideal7bit_FFE_errors_primary_secondary": [
+      0,
+      2
+    ],
+    "unquantized_FFE_errors_primary_secondary": [
+      0,
+      0
+    ],
+    "held_mVppd": [
+      90.50758454,
+      50.63726773
+    ],
+    "quantizer_fullscale_mVpp": [
+      100,
+      75
+    ],
+    "clipped_counts": [
+      0,
+      0
+    ],
+    "modeled_VDD_mW": 11.9683200676,
+    "summary_sha256": "ff8a466c80549cc476e8c768e56aea64cdab4ed4abb8a6b5d2709769519f716f"
+  },
+  "r5_noise": {
+    "status": "interrupted_by_VM_power_cycle",
+    "performance_result": null,
+    "noise_seed": 173,
+    "last_partial_write_UTC": "2026-10-13T17:36:21.893045Z",
+    "partial_files_preserved": 8,
+    "partial_summary_sha256": "ba3c4625a91c9483c1053d6877895f1cd2ed48920b4970fd51e29eaee8b4bbfa",
+    "terminal_receipt_sha256": "67685952f7d820c2bea5fcda9fc0a3133261102daf503f92bf81dde5334d3719"
+  },
+  "r6_r6b_training": {
+    "data_seed": 2026101303,
+    "noise_seed": 181,
+    "selection_windows": 224,
+    "r6_new_candidates_passing_gain_gate": 0,
+    "r6b_noiseless_secondary_errors": [
+      0,
+      0,
+      0
+    ],
+    "noise_secondary_errors_baseline_selected": [
+      14,
+      23
+    ],
+    "noise_VDD_mW_baseline_selected": [
+      11.9668304,
+      15.715749863
+    ],
+    "selected_adopted": false,
+    "r6_summary_sha256": "28f8cb0daccfef041212ad0d6df1506cc6ca3f54269c70c35e626e96ec3bf20d",
+    "r6b_summary_sha256": "c86f65e98af878baba356315adf1457add7e5749e250c173265aae89e2980855"
+  },
+  "native_split_CDAC": {
+    "acquisition_fixture": "Noiseless;50ohm input surrogate;one native CDAC branch;other seven 10fF loads;comparators reset",
+    "TG1_TG2_acquisition_RMS_mV": [
+      0.779606,
+      0.404355
+    ],
+    "TG1_TG2_acquisition_peak_mV": [
+      1.60707,
+      0.829912
+    ],
+    "TG1_TG2_hold_peak_drift_mV": [
+      0.754216,
+      0.625832
+    ],
+    "half_LSB_at_100mVpp_7bit_mV": 0.390625,
+    "independent_step_top_settle_ps": 41.42,
+    "acquisition_summary_sha256": "30a4c89deaef2292054d531e76cbb5ec16183ac0994b0a0d1f22ee0ef0082983",
+    "step_summary_sha256": "946d203168196025531d8eafabaf98a20edd2a4fa9c6241ac0b681ba638ed5b0"
+  },
+  "limitations": "Training is not holdout; unquantized FFE still uses equalization. Quantized/unquantized branches use different frozen FFEs. PAM4 uses numerical ADC with reset comparators; power excludes conversion and clock/bias/reference/control/DSP generators. CDAC steps are independent, not seven dependent SAR decisions. Interrupted noise is neither a performance pass nor fail."
+}

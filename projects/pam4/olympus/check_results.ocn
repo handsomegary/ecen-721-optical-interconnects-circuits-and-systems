@@ -1,0 +1,31 @@
+; Read the results of a previously completed standalone Spectre PAM4 transient.
+let((raw available waveP waveM xvec n)
+  raw = getShellEnvVar("PROJECT_RAW_DIR")
+  unless(raw
+    printf("ERROR: PROJECT_RAW_DIR is not set\n")
+    exit(1)
+  )
+  openResults(raw)
+  available = results()
+  printf("Available results: %L\n" available)
+  unless(member('tran available)
+    printf("ERROR: Transient result is not available\n")
+    exit(1)
+  )
+  selectResult('tran)
+  waveP = getData("X_o_p")
+  waveM = getData("X_o_m")
+  unless(waveP && waveM
+    printf("ERROR: Missing X_o_p/X_o_m; signals: %L\n" outputs())
+    exit(1)
+  )
+  xvec = drGetWaveformXVec(waveP)
+  n = drVectorLength(xvec)
+  unless(n > 1
+    printf("ERROR: Transient waveform has too few points\n")
+    exit(1)
+  )
+  printf("PAM4_OCEAN_READ_PASS: %d points, first time = %g s, last = %g s\n"
+         n drGetElem(xvec 0) drGetElem(xvec n-1))
+)
+exit(0)

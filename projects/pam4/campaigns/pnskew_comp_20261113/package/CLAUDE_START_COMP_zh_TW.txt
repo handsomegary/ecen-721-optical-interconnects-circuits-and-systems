@@ -1,0 +1,55 @@
+Olympus 交接　ECEN 721 Project #6　P/N deskew
+
+讀 DESIGN_zh_TW.txt 與 comp_plan.json。這是供使用者批准的原理圖第一版。現階段可唯讀驗入場及
+產生 review deck。只有收到明確 job 授權才編填 approval，且每個 case ID 及 stage 都要在授權範圍內。
+原 106 案的 baseline、分析工具及 r2 清理修補沿用。原有 run 路徑、輸入和結果可作比較來源。
+
+1. 解壓到新的私有資料夾。檢查 SHA256SUMS.txt，Linux 可執行 sha256sum -c SHA256SUMS.txt。
+   設定 PAM4_COMP_PACKAGE、PAM4_PDK_ROOT、PAM4_SKEW_ADMISSION、PAM4_COMP_RUN_ROOT。
+   model root 指既有私有 shrink tree；用原 r5 admission。Python 指定 /usr/bin/python3.11。
+   source 原 IC231 setup、Spectre PATH 及 Slurm partition/qos/account 由已在 Olympus 使用的 wrapper 提供。
+   Slurm 建新 campaign under ~/ecen720_28nm/runs。PDK、license 及完整 raw 保留在原受控環境。
+2. 先用 package 裡 portable_review 中的 TT/SS/FF 代表 deck 和逐行 diff 審查。
+   審查索引可從 comp_plan.json 的 cases 取得。先 stage 一個 AC 到全新 review root，例如：
+
+   /usr/bin/python3.11 -B comp_run.py --mode stage --kind ac --index 0 \
+     --plan comp_plan.json --model-root "$PAM4_PDK_ROOT" --root "$PAM4_COMP_REVIEW_ROOT"
+
+   每次 stage 驗證原 parent SHA、private model kit 及實際 corner 路徑，產生 bench.scs、case.json 和 diff。
+3. sparse 先做 TT 的 bypass/low/mid/high（兩種單腿 AC excitation）和最小必要的 SS/FF 端點。
+   記錄 AC、DC、noise 的 log 與數值。用 comp_summary.py 讀結果，先查帶寬、殘差及功耗。
+   若稀疏點顯示無法達 56GHz、碼域不夠或 dispersion 太大，先報告，後續完整掃描另行決定。
+4. 使用者批准後才填 approval_TEMPLATE.json 的副本。approved=true、platform=Olympus，
+   plan_sha256 為 comp_plan.json SHA，design_source_sha256 為 SHA256SUMS.txt SHA。
+   case_ids、stages 明列，residual_ps/repeat_ps 填使用者審定值。先設 retire_new_raw=false。
+   核對結果可重建、compact 完整及 SHA 一致後，依既有規則退休新 raw，保留收據。
+   如需新 job 自動退休，使用者授權後可令 retire_new_raw=true，沿用 r2 deferred 行為。
+
+   下列命令為語法範例。wrapper 先載入原環境並繫結 index。
+   AC 1 CPU 4GiB/30min，可用 comp_classic.sbatch 的預設資源。
+   Pilot 設 PAM4_COMP_KIND=pilot、PAM4_COMP_PILOT_CODE 為 coarse 或 fine code，
+   Slurm 以 --mem=6G --time=02:00:00 覆蓋。Pilot 的 --index 使用 integrated_plan 的案例。
+   Pilot IDs 形如 pilot_tt_p25_v090_+000000_c32。每個時域條件用 case 內的 TT/SS/FF 和 skew，
+   noise case 用同一個已完成的 quiet pilot selection，獨立保留 validation seeds。
+   Payload 設 PAM4_COMP_KIND=payload、PAM4_COMP_OBSERVATIONS 對應合格 pilot JSON，
+   Slurm 以 --mem=8G --time=04:00:00 覆蓋。PAM4_COMP_APPROVAL 指已審核的 JSON。
+   所有 job 1 CPU classic。comp_classic.sbatch 不會自動提交下一筆或執行大量掃描。
+
+5. 彙整盲校正觀測。PVT 與 skew key 只用於 matching，選碼 API 只讀每碼的 pilot P/N phasor。
+
+   /usr/bin/python3.11 -B comp_summary.py --run-root "$PAM4_COMP_RUN_ROOT" \
+     --calibration-id tt_p25_v090_+000000 --output new_zero_pilot_observations.json
+
+   pilot_controller.py --observations ... --residual-ps <approved> --repeat-ps <approved> --output ...
+   可先印出最優碼和驗證狀態供審查。NO_LOCK 會阻擋該 payload；保留候選和失敗診斷。
+   先準備 coarse，依粗候選訓練分數人工選 fine 範圍，只用 pilot 值。完成獨立窗口驗證後凍結碼。
+   配對結果彙整：
+
+   /usr/bin/python3.11 -B comp_summary.py --run-root "$PAM4_COMP_RUN_ROOT" --output new_summary.json
+
+   原 r2 影響掃描相對路徑修補在 skew/summarize_skew.py。測試覆蓋 CLI 相對 run-root。
+   新 summary 讀取保留的 r1 結果作對照。校正成果請同時交回 primary/secondary、各 seed 配對差、
+   同硬體零 skew、原無 cell 與 oracle；未量測的角落或條件留缺。
+
+6. 本地套件已做離線生成、解析模型及單元測試。Olympus 尚須驗證實際 Spectre 解析、PSF 欄位、
+   自然 loading、電容開關寄生與 runner 的 native 路徑。首筆若不成立，留 log 及 raw，先查原因。

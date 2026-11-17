@@ -1,0 +1,1415 @@
+{
+  "source_job": "760348",
+  "source_summary_sha256": "ab2cdaaa6840bbb81841bc120d5d2cb69a47553c1e71e2c8ec22f0f2283dec95",
+  "source_audit_sha256": "bc8c4e64c7d053b458adc5efe1c3c865202d1e02e52c7d48581f58c62898f9c4",
+  "measurements_available_locally": false,
+  "inference": "Per-conversion sampled input inferred from 7 measured held values, actual prefix states, and existing9parameterfit; not direct sample measurements",
+  "actual_codes": [
+    65,
+    0,
+    127,
+    28,
+    101,
+    65,
+    67,
+    90,
+    41,
+    0,
+    127,
+    66
+  ],
+  "expected_codes": [
+    64,
+    0,
+    127,
+    31,
+    96,
+    63,
+    65,
+    85,
+    42,
+    1,
+    126,
+    64
+  ],
+  "baseline_affine": {
+    "codes": [
+      64,
+      0,
+      127,
+      27,
+      100,
+      64,
+      66,
+      89,
+      39,
+      0,
+      127,
+      65
+    ],
+    "errors": [
+      0,
+      0,
+      0,
+      -4,
+      4,
+      1,
+      1,
+      4,
+      -3,
+      -1,
+      1,
+      1
+    ],
+    "wrong": 9,
+    "sum_abs_error": 20,
+    "max_abs_error": 4,
+    "matches_actual": 4,
+    "max_abs_difference_from_actual": 2
+  },
+  "baseline_path_residual": {
+    "codes": [
+      64,
+      0,
+      127,
+      27,
+      100,
+      64,
+      66,
+      89,
+      39,
+      0,
+      127,
+      65
+    ],
+    "errors": [
+      0,
+      0,
+      0,
+      -4,
+      4,
+      1,
+      1,
+      4,
+      -3,
+      -1,
+      1,
+      1
+    ],
+    "wrong": 9,
+    "sum_abs_error": 20,
+    "max_abs_error": 4,
+    "matches_actual": 4,
+    "max_abs_difference_from_actual": 2
+  },
+  "baseline_observed_held_sign_decision_matches": 75,
+  "existing_fit_cv_rmse_lsb": 0.8614466834199898,
+  "inferred_sample_records": [
+    {
+      "index": 0,
+      "expected": 64,
+      "actual": 65,
+      "nominal_input_lsb": 0.5,
+      "inferred_sampled_input_lsb": 0.027533721545348857,
+      "inferred_sample_error_lsb": -0.47246627845465117,
+      "intercept_std_lsb": 0.8200722881528294,
+      "intercept_minmax_lsb": [
+        56.45181663616923,
+        59.070042591924796
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 2.936183723130199,
+          "intercept_lsb": 59.070042591924796,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 1.9214350999174883
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": -28.260721395349293,
+          "intercept_lsb": 57.285909511280764,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.13730201927345576
+        },
+        {
+          "bit": 4,
+          "candidate": 80,
+          "held_lsb": -13.884363402804496,
+          "intercept_lsb": 56.94475952702115,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.20384796498615998
+        },
+        {
+          "bit": 3,
+          "candidate": 72,
+          "held_lsb": -6.683424809521625,
+          "intercept_lsb": 56.45181663616923,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.6967908558380813
+        },
+        {
+          "bit": 2,
+          "candidate": 68,
+          "held_lsb": -3.0887244453130336,
+          "intercept_lsb": 56.64552105270353,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5030864393037788
+        },
+        {
+          "bit": 1,
+          "candidate": 66,
+          "held_lsb": -1.300676674727157,
+          "intercept_lsb": 56.85409772971972,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.2945097622875892
+        },
+        {
+          "bit": 0,
+          "candidate": 65,
+          "held_lsb": -0.39936103041370075,
+          "intercept_lsb": 56.78810539523197,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.36050209677533473
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "expected": 0,
+      "actual": 0,
+      "nominal_input_lsb": -63.5,
+      "inferred_sampled_input_lsb": -64.62299047257054,
+      "inferred_sample_error_lsb": -1.1229904725705353,
+      "intercept_std_lsb": 0.7168065216554395,
+      "intercept_minmax_lsb": [
+        -7.39675012978514,
+        -5.170111924114131
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": -61.30397079290873,
+          "intercept_lsb": -5.170111924114131,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 1.7042055269171161
+        },
+        {
+          "bit": 5,
+          "candidate": 32,
+          "held_lsb": -36.79392362379332,
+          "intercept_lsb": -7.381151585957859,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5068341349266117
+        },
+        {
+          "bit": 4,
+          "candidate": 16,
+          "held_lsb": -21.598155234427736,
+          "intercept_lsb": -6.9028911733966964,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.028573722365448972
+        },
+        {
+          "bit": 3,
+          "candidate": 8,
+          "held_lsb": -14.398132706681395,
+          "intercept_lsb": -7.39675012978514,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5224326787538924
+        },
+        {
+          "bit": 2,
+          "candidate": 4,
+          "held_lsb": -10.806320438400263,
+          "intercept_lsb": -7.205933809178294,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.3316163581470466
+        },
+        {
+          "bit": 1,
+          "candidate": 2,
+          "held_lsb": -9.019225520728043,
+          "intercept_lsb": -6.998309985075767,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.12399253404451915
+        },
+        {
+          "bit": 0,
+          "candidate": 1,
+          "held_lsb": -8.118681106561922,
+          "intercept_lsb": -7.065073549710847,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.19075609867959908
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "expected": 127,
+      "actual": 127,
+      "nominal_input_lsb": 63.5,
+      "inferred_sampled_input_lsb": 64.6251799126154,
+      "inferred_sample_error_lsb": 1.125179912615394,
+      "intercept_std_lsb": 0.5792643507742625,
+      "intercept_minmax_lsb": [
+        120.09150190181778,
+        121.98507042693609
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 65.8512115581415,
+          "intercept_lsb": 121.98507042693609,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.8659026782147663
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": 34.54487099518772,
+          "intercept_lsb": 120.09150190181778,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -1.0276658469035453
+        },
+        {
+          "bit": 4,
+          "candidate": 112,
+          "held_lsb": 20.474730652786235,
+          "intercept_lsb": 120.71662562044733,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.4025421282739927
+        },
+        {
+          "bit": 3,
+          "candidate": 120,
+          "held_lsb": 13.66601244715298,
+          "intercept_lsb": 120.90928999171032,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.2098777570110002
+        },
+        {
+          "bit": 2,
+          "candidate": 124,
+          "held_lsb": 10.256669325619612,
+          "intercept_lsb": 121.10033349939893,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.018834249322395635
+        },
+        {
+          "bit": 1,
+          "candidate": 126,
+          "held_lsb": 8.546063393884964,
+          "intercept_lsb": 121.41064310331656,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.2914753545952351
+        },
+        {
+          "bit": 0,
+          "candidate": 127,
+          "held_lsb": 7.702522431139585,
+          "intercept_lsb": 121.62070969742226,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.5015419487009325
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "expected": 31,
+      "actual": 28,
+      "nominal_input_lsb": -32.5,
+      "inferred_sampled_input_lsb": -32.38241919818267,
+      "inferred_sample_error_lsb": 0.11758080181733277,
+      "intercept_std_lsb": 0.646792366749038,
+      "intercept_minmax_lsb": [
+        24.239257395252913,
+        26.45864724229856
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": -29.675211626496036,
+          "intercept_lsb": 26.45864724229856,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 1.4053709027030479
+        },
+        {
+          "bit": 5,
+          "candidate": 32,
+          "held_lsb": -5.173514642582546,
+          "intercept_lsb": 24.239257395252913,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.8140189443425996
+        },
+        {
+          "bit": 4,
+          "candidate": 16,
+          "held_lsb": 10.023318898952027,
+          "intercept_lsb": 24.718582959983067,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.33469337961244605
+        },
+        {
+          "bit": 3,
+          "candidate": 24,
+          "held_lsb": 3.0095213451141944,
+          "intercept_lsb": 24.70616798304149,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.34710835655402406
+        },
+        {
+          "bit": 2,
+          "candidate": 28,
+          "held_lsb": -0.4039473483715028,
+          "intercept_lsb": 24.89308591877776,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.16019042081775225
+        },
+        {
+          "bit": 1,
+          "candidate": 30,
+          "held_lsb": -2.115759474818759,
+          "intercept_lsb": 25.20218932798278,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.1489129883872664
+        },
+        {
+          "bit": 0,
+          "candidate": 29,
+          "held_lsb": -1.1956372741683197,
+          "intercept_lsb": 25.15500354983202,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.10172721023650766
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "expected": 96,
+      "actual": 101,
+      "nominal_input_lsb": 32.5,
+      "inferred_sampled_input_lsb": 32.922188689102754,
+      "inferred_sample_error_lsb": 0.42218868910275376,
+      "intercept_std_lsb": 0.5411961486292524,
+      "intercept_minmax_lsb": [
+        89.01967475201182,
+        90.89390913508001
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 34.76005026628542,
+          "intercept_lsb": 90.89390913508001,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 1.1699737201050624
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": 3.473043845381767,
+          "intercept_lsb": 89.01967475201182,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.7042606629631223
+        },
+        {
+          "bit": 4,
+          "candidate": 112,
+          "held_lsb": -10.595344719976225,
+          "intercept_lsb": 89.64655024768487,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.07738516729007472
+        },
+        {
+          "bit": 3,
+          "candidate": 104,
+          "held_lsb": -3.1928773132746358,
+          "intercept_lsb": 89.35513617025168,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.3687992447232631
+        },
+        {
+          "bit": 2,
+          "candidate": 100,
+          "held_lsb": 0.402618301276334,
+          "intercept_lsb": 89.54963583712836,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.17429957784658257
+        },
+        {
+          "bit": 1,
+          "candidate": 102,
+          "held_lsb": -1.343454024930395,
+          "intercept_lsb": 89.82447904657391,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.10054363159896695
+        },
+        {
+          "bit": 0,
+          "candidate": 101,
+          "held_lsb": -0.4224623766091895,
+          "intercept_lsb": 89.77816271609392,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.05422730111897067
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "expected": 63,
+      "actual": 65,
+      "nominal_input_lsb": -0.5,
+      "inferred_sampled_input_lsb": -0.4771444130714125,
+      "inferred_sample_error_lsb": 0.022855586928587523,
+      "intercept_std_lsb": 0.8159088647770661,
+      "intercept_minmax_lsb": [
+        55.95370071335451,
+        58.55959869602632
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 2.425739827231723,
+          "intercept_lsb": 58.55959869602632,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 1.9107701421749752
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": -28.75839499896159,
+          "intercept_lsb": 56.788235907668465,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.13940735381711988
+        },
+        {
+          "bit": 4,
+          "candidate": 80,
+          "held_lsb": -14.383478822018958,
+          "intercept_lsb": 56.445644107806686,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.20318444604465924
+        },
+        {
+          "bit": 3,
+          "candidate": 72,
+          "held_lsb": -7.1815407323363445,
+          "intercept_lsb": 55.95370071335451,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.6951278404968377
+        },
+        {
+          "bit": 2,
+          "candidate": 68,
+          "held_lsb": -3.5864104931185636,
+          "intercept_lsb": 56.147835004898,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5009935489533461
+        },
+        {
+          "bit": 1,
+          "candidate": 66,
+          "held_lsb": -1.7983979441957842,
+          "intercept_lsb": 56.35637646025109,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.2924520936002537
+        },
+        {
+          "bit": 0,
+          "candidate": 65,
+          "held_lsb": -0.8970574386913199,
+          "intercept_lsb": 56.290408986954354,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.35841956689699117
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "expected": 65,
+      "actual": 67,
+      "nominal_input_lsb": 1.5,
+      "inferred_sampled_input_lsb": 1.3964994566595843,
+      "inferred_sample_error_lsb": -0.1035005433404157,
+      "intercept_std_lsb": 0.8061139336235399,
+      "intercept_minmax_lsb": [
+        57.771948507568126,
+        60.38211302787392
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 4.248254159079323,
+          "intercept_lsb": 60.38211302787392,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 1.877829126412422
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": -26.939948393330155,
+          "intercept_lsb": 58.6066825132999,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.10239861183840304
+        },
+        {
+          "bit": 4,
+          "candidate": 80,
+          "held_lsb": -12.565209657518466,
+          "intercept_lsb": 58.26391327230718,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.24037062915432017
+        },
+        {
+          "bit": 3,
+          "candidate": 72,
+          "held_lsb": -5.363292938122726,
+          "intercept_lsb": 57.771948507568126,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.7323353938933721
+        },
+        {
+          "bit": 2,
+          "candidate": 68,
+          "held_lsb": -1.7682472917225311,
+          "intercept_lsb": 57.96599820629403,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5382856951674668
+        },
+        {
+          "bit": 1,
+          "candidate": 66,
+          "held_lsb": 0.01982799562270543,
+          "intercept_lsb": 58.17460240006958,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.3296815013919172
+        },
+        {
+          "bit": 0,
+          "candidate": 67,
+          "held_lsb": -0.8436525784802029,
+          "intercept_lsb": 58.36472938281774,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.1395545186437559
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "expected": 85,
+      "actual": 90,
+      "nominal_input_lsb": 21.5,
+      "inferred_sampled_input_lsb": 22.053397884725126,
+      "inferred_sample_error_lsb": 0.5533978847251255,
+      "intercept_std_lsb": 0.6861122317760441,
+      "intercept_minmax_lsb": [
+        78.42547882255207,
+        80.56098782872002
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 24.427128959925426,
+          "intercept_lsb": 80.56098782872002,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 1.6003337105978659
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": -6.769277448257611,
+          "intercept_lsb": 78.77735345837245,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.18330065974970466
+        },
+        {
+          "bit": 4,
+          "candidate": 80,
+          "held_lsb": 7.605014593482906,
+          "intercept_lsb": 78.43413752330855,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.5265165948136001
+        },
+        {
+          "bit": 3,
+          "candidate": 88,
+          "held_lsb": 0.594973315830174,
+          "intercept_lsb": 78.42547882255207,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.5351752955700846
+        },
+        {
+          "bit": 2,
+          "candidate": 92,
+          "held_lsb": -2.814872076253323,
+          "intercept_lsb": 78.61602005969054,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.344634058431609
+        },
+        {
+          "bit": 1,
+          "candidate": 90,
+          "held_lsb": -0.991305999792047,
+          "intercept_lsb": 78.86011504258212,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.10053907554002706
+        },
+        {
+          "bit": 0,
+          "candidate": 91,
+          "held_lsb": -1.8545425075959088,
+          "intercept_lsb": 79.05048609162934,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.08983197350718797
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "expected": 42,
+      "actual": 41,
+      "nominal_input_lsb": -21.5,
+      "inferred_sampled_input_lsb": -20.986658437477562,
+      "inferred_sample_error_lsb": 0.513341562522438,
+      "intercept_std_lsb": 0.6153847871750386,
+      "intercept_minmax_lsb": [
+        35.052355539824624,
+        37.281303230634286
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": -18.85255563816031,
+          "intercept_lsb": 37.281303230634286,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.9428912336568942
+        },
+        {
+          "bit": 5,
+          "candidate": 32,
+          "held_lsb": 5.639583501989165,
+          "intercept_lsb": 35.052355539824624,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -1.2860564571527675
+        },
+        {
+          "bit": 4,
+          "candidate": 48,
+          "held_lsb": -7.60889331337026,
+          "intercept_lsb": 36.49914278549624,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.1607307885188476
+        },
+        {
+          "bit": 3,
+          "candidate": 40,
+          "held_lsb": -0.20771917629261338,
+          "intercept_lsb": 36.2064354384391,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.13197655853829104
+        },
+        {
+          "bit": 2,
+          "candidate": 44,
+          "held_lsb": -3.711551841232108,
+          "intercept_lsb": 36.30298940272158,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.03542259425581307
+        },
+        {
+          "bit": 1,
+          "candidate": 42,
+          "held_lsb": -1.8885356643603757,
+          "intercept_lsb": 36.54653448602362,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.2081224890462252
+        },
+        {
+          "bit": 0,
+          "candidate": 41,
+          "held_lsb": -0.9876390758805087,
+          "intercept_lsb": 36.48012309570228,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.1417110987248904
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "expected": 1,
+      "actual": 0,
+      "nominal_input_lsb": -62.5,
+      "inferred_sampled_input_lsb": -64.34117684348035,
+      "inferred_sample_error_lsb": -1.8411768434803548,
+      "intercept_std_lsb": 0.7450798174332,
+      "intercept_minmax_lsb": [
+        -7.129163099690224,
+        -4.819742658620889
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": -60.953601527415486,
+          "intercept_lsb": -4.819742658620889,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 1.7754968878137518
+        },
+        {
+          "bit": 5,
+          "candidate": 32,
+          "held_lsb": -36.527003621114744,
+          "intercept_lsb": -7.114231583279285,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5189920368446437
+        },
+        {
+          "bit": 4,
+          "candidate": 16,
+          "held_lsb": -21.33099930220297,
+          "intercept_lsb": -6.635735241171929,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.04049569473728809
+        },
+        {
+          "bit": 3,
+          "candidate": 8,
+          "held_lsb": -14.130545676586479,
+          "intercept_lsb": -7.129163099690224,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5339235532555833
+        },
+        {
+          "bit": 2,
+          "candidate": 4,
+          "held_lsb": -10.53915724570814,
+          "intercept_lsb": -6.93877061648617,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.3435310700515295
+        },
+        {
+          "bit": 1,
+          "candidate": 2,
+          "held_lsb": -8.752054485424452,
+          "intercept_lsb": -6.731138949772176,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.13589940333753514
+        },
+        {
+          "bit": 0,
+          "candidate": 1,
+          "held_lsb": -7.851502232872889,
+          "intercept_lsb": -6.797894676021813,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.20265512958717213
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "expected": 126,
+      "actual": 127,
+      "nominal_input_lsb": 62.5,
+      "inferred_sampled_input_lsb": 63.60946716843194,
+      "inferred_sample_error_lsb": 1.1094671684319408,
+      "intercept_std_lsb": 0.5791440918428062,
+      "intercept_minmax_lsb": [
+        119.08570312159576,
+        120.97868173830722
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 64.84482286951263,
+          "intercept_lsb": 120.97868173830722,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.8653666349456302
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": 33.5390722149657,
+          "intercept_lsb": 119.08570312159576,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -1.0276119817658298
+        },
+        {
+          "bit": 4,
+          "candidate": 112,
+          "held_lsb": 19.46895780120201,
+          "intercept_lsb": 119.7108527688631,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.40246233449848035
+        },
+        {
+          "bit": 3,
+          "candidate": 120,
+          "held_lsb": 12.660251453896194,
+          "intercept_lsb": 119.90352899845354,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.20978610490804783
+        },
+        {
+          "bit": 2,
+          "candidate": 124,
+          "held_lsb": 9.2509146094514,
+          "intercept_lsb": 120.09457878323072,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.0187363201308699
+        },
+        {
+          "bit": 1,
+          "candidate": 126,
+          "held_lsb": 7.540314346508552,
+          "intercept_lsb": 120.40489405594015,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.29157895257856126
+        },
+        {
+          "bit": 0,
+          "candidate": 127,
+          "held_lsb": 6.696778990857979,
+          "intercept_lsb": 120.61496625714065,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 0.5016511537790649
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "expected": 64,
+      "actual": 66,
+      "nominal_input_lsb": 0.5,
+      "inferred_sampled_input_lsb": 0.7456885990684469,
+      "inferred_sample_error_lsb": 0.24568859906844687,
+      "intercept_std_lsb": 0.8036284423627775,
+      "intercept_minmax_lsb": [
+        57.12864067779434,
+        59.731287701347675
+      ],
+      "states": [
+        {
+          "bit": 6,
+          "candidate": 64,
+          "held_lsb": 3.597428832553078,
+          "intercept_lsb": 59.731287701347675,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": 1.871496867917081
+        },
+        {
+          "bit": 5,
+          "candidate": 96,
+          "held_lsb": -27.583838102512885,
+          "intercept_lsb": 57.96279280411717,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": 0.10300197068657724
+        },
+        {
+          "bit": 4,
+          "candidate": 80,
+          "held_lsb": -13.207510505279174,
+          "intercept_lsb": 57.62161242454647,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.23817840888412434
+        },
+        {
+          "bit": 3,
+          "candidate": 72,
+          "held_lsb": -6.006600767896515,
+          "intercept_lsb": 57.12864067779434,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.7311501556362572
+        },
+        {
+          "bit": 2,
+          "candidate": 68,
+          "held_lsb": -2.411919128282136,
+          "intercept_lsb": 57.32232636973443,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.5374644636961676
+        },
+        {
+          "bit": 1,
+          "candidate": 66,
+          "held_lsb": -0.6238861059186718,
+          "intercept_lsb": 57.530888298528204,
+          "actual_bit": 1,
+          "trajectory_residual_lsb": -0.3289025349023902
+        },
+        {
+          "bit": 0,
+          "candidate": 67,
+          "held_lsb": -1.4873944033520559,
+          "intercept_lsb": 57.72098755794589,
+          "actual_bit": 0,
+          "trajectory_residual_lsb": -0.1388032754847046
+        }
+      ]
+    }
+  ],
+  "nominal_reference_span_V": 0.057180411828988115,
+  "cap_shape_design": {
+    "main_group_total_units_before": 15.0,
+    "main_group_total_units_after": 15.0,
+    "low_group_total_units_excluding_dummy_before": 7.0,
+    "low_group_total_units_excluding_dummy_after": 7.0,
+    "dummy_unchanged": true,
+    "low_bank_unchanged": true,
+    "main_shape_constant": 0.8932234993141046,
+    "binary_bridge_scale": 0.9279413203755646,
+    "binary_low_to_main_attenuation": 0.12499999999999997,
+    "effective_fixed_extra_main_capacitance_F": 3.1947123272636125e-15,
+    "cap_and_top_bottom_shunts_scale_together": true,
+    "denominator_model": "Two-node linear capacitor matrix plus one fit-derived fixed main shunt; transistor voltage dependence and settling changes not identified"
+  },
+  "cases": [
+    {
+      "case": "ref_common_span127",
+      "reference_factor": 1.1148351553658304,
+      "cap_scales_b6_to_b0": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bridge_scale": 1.0,
+      "denominator_ratio_main": 1.0,
+      "denominator_ratio_low": 1.0,
+      "weights_lsb_b6_to_b0": [
+        62.57999927327622,
+        32.79039228454005,
+        16.382796992621444,
+        7.805387432889755,
+        4.013837587165733,
+        2.2529876851701256,
+        1.1745987443366819
+      ],
+      "predicted_span_lsb": 127.00000000000001,
+      "offset_lsb": 63.6622474227485,
+      "reference_span_V": 0.06374673330525213,
+      "reference_hi_V": 0.4818733666526261,
+      "reference_lo_V": 0.41812663334737393,
+      "correction": {
+        "reference_span_V": 0.06374673330525213,
+        "capacitance_F": {}
+      },
+      "capacitance_fF_b6_to_b0": [
+        11.684467999999999,
+        5.8422339999999995,
+        2.9211169999999997,
+        1.4605584999999999,
+        5.8422339999999995,
+        2.9211169999999997,
+        1.4605584999999999
+      ],
+      "affine_model": {
+        "codes": [
+          64,
+          0,
+          127,
+          30,
+          96,
+          64,
+          66,
+          86,
+          42,
+          0,
+          126,
+          65
+        ],
+        "errors": [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1
+        ],
+        "wrong": 6,
+        "sum_abs_error": 6,
+        "max_abs_error": 1,
+        "matches_actual": 3,
+        "max_abs_difference_from_actual": 5
+      },
+      "path_residual_model": {
+        "codes": [
+          64,
+          0,
+          127,
+          31,
+          96,
+          64,
+          65,
+          86,
+          42,
+          0,
+          127,
+          65
+        ],
+        "errors": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          -1,
+          1,
+          1
+        ],
+        "wrong": 5,
+        "sum_abs_error": 5,
+        "max_abs_error": 1,
+        "matches_actual": 4,
+        "max_abs_difference_from_actual": 5
+      },
+      "sensitivity_sense_stage_zero_as_threshold": {
+        "codes": [
+          65,
+          0,
+          127,
+          31,
+          96,
+          64,
+          66,
+          86,
+          42,
+          0,
+          126,
+          65
+        ],
+        "errors": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          -1,
+          0,
+          1
+        ],
+        "wrong": 6,
+        "sum_abs_error": 6,
+        "max_abs_error": 1,
+        "matches_actual": 4,
+        "max_abs_difference_from_actual": 5
+      },
+      "sensitivity_fit_rmse_code_intervals": [
+        [
+          64,
+          65
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          126,
+          127
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          96,
+          97
+        ],
+        [
+          61,
+          65
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          85,
+          86
+        ],
+        [
+          41,
+          42
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          125,
+          127
+        ],
+        [
+          64,
+          66
+        ]
+      ]
+    },
+    {
+      "case": "main_ratio_binary_bridge",
+      "reference_factor": 1.114745907738717,
+      "bridge_scale": 0.9279413203755646,
+      "cap_scales_b6_to_b0": [
+        1.018392555012498,
+        0.9717938840066852,
+        0.9725293761086017,
+        1.020625271656073,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "denominator_ratio_main": 1.004301180364369,
+      "denominator_ratio_low": 0.9419095335969031,
+      "weights_lsb_b6_to_b0": [
+        64.0,
+        32.0,
+        16.0,
+        8.0,
+        3.7803692296727234,
+        2.1219406951298363,
+        1.1062771858285616
+      ],
+      "predicted_span_lsb": 127.00858711063113,
+      "offset_lsb": 63.666540978064056,
+      "reference_span_V": 0.06374163008917902,
+      "reference_hi_V": 0.4818708150445895,
+      "reference_lo_V": 0.4181291849554105,
+      "correction": {
+        "reference_span_V": 0.06374163008917902,
+        "capacitance_F": {
+          "Cunit6p": 1.1899375220481772e-14,
+          "Ctop6p": 1.5308859802548554e-15,
+          "Cbott6p": 1.5308859802548554e-15,
+          "Cunit5p": 5.6774472701359125e-15,
+          "Ctop5p": 7.304185529444439e-16,
+          "Cbott5p": 7.304185529444439e-16,
+          "Cunit4p": 2.8408720935502302e-15,
+          "Ctop4p": 3.6548568131774795e-16,
+          "Cbott4p": 3.6548568131774795e-16,
+          "Cunit3p": 1.4906829158320868e-15,
+          "Ctop3p": 1.917802854829529e-16,
+          "Cbott3p": 1.917802854829529e-16,
+          "Cbridgep": 1.9120668894641726e-15,
+          "Cbridge_mainp": 1.9676262624920753e-16,
+          "Cbridge_lowp": 1.9676262624920753e-16,
+          "Cunit6n": 1.1899375220481772e-14,
+          "Ctop6n": 1.5308859802548554e-15,
+          "Cbott6n": 1.5308859802548554e-15,
+          "Cunit5n": 5.6774472701359125e-15,
+          "Ctop5n": 7.304185529444439e-16,
+          "Cbott5n": 7.304185529444439e-16,
+          "Cunit4n": 2.8408720935502302e-15,
+          "Ctop4n": 3.6548568131774795e-16,
+          "Cbott4n": 3.6548568131774795e-16,
+          "Cunit3n": 1.4906829158320868e-15,
+          "Ctop3n": 1.917802854829529e-16,
+          "Cbott3n": 1.917802854829529e-16,
+          "Cbridgen": 1.9120668894641726e-15,
+          "Cbridge_mainn": 1.9676262624920753e-16,
+          "Cbridge_lown": 1.9676262624920753e-16
+        }
+      },
+      "capacitance_fF_b6_to_b0": [
+        11.89937522048177,
+        5.677447270135912,
+        2.84087209355023,
+        1.4906829158320867,
+        5.8422339999999995,
+        2.9211169999999997,
+        1.4605584999999999
+      ],
+      "affine_model": {
+        "codes": [
+          63,
+          0,
+          127,
+          31,
+          96,
+          63,
+          64,
+          85,
+          42,
+          0,
+          126,
+          64
+        ],
+        "errors": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "wrong": 3,
+        "sum_abs_error": 3,
+        "max_abs_error": 1,
+        "matches_actual": 3,
+        "max_abs_difference_from_actual": 5
+      },
+      "path_residual_model": {
+        "codes": [
+          64,
+          0,
+          127,
+          31,
+          95,
+          64,
+          64,
+          85,
+          42,
+          0,
+          127,
+          64
+        ],
+        "errors": [
+          0,
+          0,
+          0,
+          0,
+          -1,
+          1,
+          -1,
+          0,
+          0,
+          -1,
+          1,
+          0
+        ],
+        "wrong": 5,
+        "sum_abs_error": 5,
+        "max_abs_error": 1,
+        "matches_actual": 4,
+        "max_abs_difference_from_actual": 6
+      },
+      "sensitivity_sense_stage_zero_as_threshold": {
+        "codes": [
+          63,
+          0,
+          127,
+          31,
+          96,
+          63,
+          65,
+          85,
+          42,
+          0,
+          126,
+          64
+        ],
+        "errors": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0
+        ],
+        "wrong": 2,
+        "sum_abs_error": 2,
+        "max_abs_error": 1,
+        "matches_actual": 3,
+        "max_abs_difference_from_actual": 5
+      },
+      "sensitivity_fit_rmse_code_intervals": [
+        [
+          62,
+          64
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          126,
+          127
+        ],
+        [
+          30,
+          32
+        ],
+        [
+          95,
+          97
+        ],
+        [
+          62,
+          64
+        ],
+        [
+          64,
+          65
+        ],
+        [
+          84,
+          86
+        ],
+        [
+          41,
+          43
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          125,
+          127
+        ],
+        [
+          63,
+          65
+        ]
+      ]
+    }
+  ],
+  "limits": [
+    "All outcomes are counterfactual model estimates, not simulator measurements",
+    "Exact sampled values absent locally; inferred samples absorb residual model error",
+    "Baseline affine match rate and 0.861LSB heldout RMSE bound confidence",
+    "Path-residual transfer assumes new paths preserve old bit-index residuals",
+    "Sense-stage zero crossing is not comparator offset; threshold variant is sensitivity only",
+    "Cap denominator correction omits unidentified voltage-dependent MOS parasitics and settling changes",
+    "Only main Cunit/Ctop/Cbott are rebalanced; low bank and dummy unchanged",
+    "Bridge coupling and both bridge shunts scale together to restore binary attenuation"
+  ]
+}

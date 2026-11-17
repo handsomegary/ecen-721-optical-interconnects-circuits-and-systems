@@ -1,0 +1,16 @@
+{
+  "historical_decks_byte_exact": 23,
+  "offline_tests": 86,
+  "recovery_cases": [
+    0,
+    11
+  ],
+  "new_run_candidates": [
+    1,
+    2,
+    12
+  ],
+  "Olympus_raw_checked": false,
+  "spectre_executed": false,
+  "slurm_submitted": false
+}

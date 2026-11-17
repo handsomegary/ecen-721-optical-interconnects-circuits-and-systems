@@ -1,0 +1,45 @@
+Olympus 交接｜LP_BIAS collect-only 復原
+
+舊 array 753756 的 30–77 已正常完成 Spectre。只從原 campaign 的
+48 個 case 目錄讀 PSF，另寫 measurements.json、recovery.json、
+completion.json。保留舊 deck、case、run status、log、raw 和 Slurm 證據。
+
+在解壓根目錄執行：
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B recover_bias.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+  sha256sum SHA256SUMS.txt RECOVERY_INPUTS.json
+
+待使用者另批 collect-only。複製 approval_TEMPLATE.json 到套件外，以最後
+一條指令的兩個 SHA 填 recovery_manifest_sha256 與 recovery_inputs_sha256，
+從 RECOVERY_INPUTS.json 填准許的 case IDs。設定 LP_BIAS_RUN_ROOT 為原 0–77
+case 目錄的上一層，LP_BIAS_RECOVERY_APPROVAL 為新 approval。使用 Olympus
+原位置的 PSF，以便核對原始檔案識別、大小、時間和 SHA。
+
+先核對配對 30、31（SS、cb0、4.2 mA/腿）：
+  /usr/bin/python3.11 -B recover_bias.py --mode collect-only \
+    --root "$LP_BIAS_RUN_ROOT" --approval "$LP_BIAS_RECOVERY_APPROVAL" --index 30 --index 31
+
+此設定的 Iref 為 300 µA，GMSR_REF 約 .6714 V。檢查兩案 receipt，
+對照 P 欄 noise、N 欄的 AC 及 OP，並確認 completion SHA。
+首對正常後再處理其餘獲准案。若 approval 已包含全 48 案，可用 Bash：
+  indices=()
+  for ((i=32; i<=77; i++)); do indices+=(--index "$i"); done
+  /usr/bin/python3.11 -B recover_bias.py --mode collect-only \
+    --root "$LP_BIAS_RUN_ROOT" --approval "$LP_BIAS_RECOVERY_APPROVAL" "${indices[@]}"
+
+只需 Python，可用核准的 CPU 工作環境。發現某案的舊檔或 PSF 與紀錄不符，
+保留該案、回報差異。已提交的完整結果可安全重試。
+完成後如需回收 raw 空間，另按使用者批准與收據處理。
+
+與原本 30 案合併：
+  /usr/bin/python3.11 -B bias_summary.py --run-root "$LP_BIAS_RUN_ROOT" --output bias_0_77_recovered.json
+
+預期 39 個 P/N 配對列、0 invalid。plan 的 78–93 是未提交的 upper 16 案，
+出現在 missing_cases 屬預期。回報每個電流目標的 6 個條件、2 dB 和
++10/+14 mW 判定、電流 tracking 與最差 corner。功耗包含原設計的 0.40 mW
+實體偏壓預留，Iref 支路功率已納入 GFVDD。
+
+未來新 deck 可用 --mode stage-fixed 在獨立的 review root 產生樣本。它已移除
+isource:p 與 replica 模式無負載的 GF_CTL。之後若要實際跑新網表，先用同一
+Spectre 版本做獲准的一案 smoke test，確認 save 無警告及完整 PSF，再擴展。

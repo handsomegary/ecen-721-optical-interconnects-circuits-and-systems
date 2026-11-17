@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "offline_tests": {
+    "command": "python -B -m unittest discover -v",
+    "passed": 5,
+    "failed": 0
+  },
+  "verified": [
+    "fresh separate training and payload seeds",
+    "physical delay shift applied to all 144 clock sources",
+    "portable deck circuit data outside clocks and stimulus preserved",
+    "phase detector fit and verification use distinct samples",
+    "uniform frozen receiver on both code candidates and fresh payload",
+    "stage, execution evidence, collection, choice and summary with synthetic solver and scoring samples",
+    "code-0 tie reuse and missing case refusal"
+  ],
+  "execution": "First real phase pilot on Olympus will establish native waveform coverage and resources",
+  "new_Spectre_runs": 0,
+  "campaign": {
+    "phase_jobs": 3,
+    "code_jobs": 6,
+    "payload_jobs_min": 3,
+    "payload_jobs_max": 5,
+    "case_stop_s": 6.5e-09,
+    "solver_timeout_s": 4200,
+    "slurm_wall_s": 5400,
+    "cpu_per_case": 1,
+    "mem_GiB": 6
+  }
+}

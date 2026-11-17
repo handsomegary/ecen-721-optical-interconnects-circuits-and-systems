@@ -1,0 +1,8843 @@
+{
+  "format": "pam4_gmdrive_low_power_v1",
+  "status": "REVIEW_PENDING",
+  "scope": "AC, DC operating point and stationary output noise",
+  "cases": [
+    {
+      "case_id": "gmdrivelp_000_ss_bypass_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_001_ss_bypass_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_002_ss_ideal_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_003_ss_ideal_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_004_ss_cs16_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_005_ss_cs16_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_006_ss_lp12lo80_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12lo80",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_007_ss_lp12lo80_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12lo80",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_008_ss_lp14lo120_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_009_ss_lp14lo120_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_010_ss_lp12l120_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12l120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_011_ss_lp12l120_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12l120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_012_ss_bypass_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_013_ss_bypass_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_014_ss_ideal_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_015_ss_ideal_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_016_ss_cs16_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_017_ss_cs16_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_018_ss_lp12lo80_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12lo80",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_019_ss_lp12lo80_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12lo80",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_020_ss_lp14lo120_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_021_ss_lp14lo120_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_022_ss_lp12l120_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12l120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_023_ss_lp12l120_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp12l120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_024_ss_cs16_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "dormant",
+      "drive": "p",
+      "off_probe": true,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_025_ss_cs16_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "dormant",
+      "drive": "n",
+      "off_probe": true,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_026_ss_lp14lo120_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "dormant",
+      "drive": "p",
+      "off_probe": true,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_027_ss_lp14lo120_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "dormant",
+      "drive": "n",
+      "off_probe": true,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_028_ss_ideal_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_029_ss_ideal_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_030_ss_cs16_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_031_ss_cs16_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_032_ss_lp14lo120_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_033_ss_lp14lo120_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_034_ss_shared16_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16",
+      "topology": "shared",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_035_ss_shared16_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16",
+      "topology": "shared",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_036_ss_shared16z50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_037_ss_shared16z50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_038_ss_shared14lo120z50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_039_ss_shared14lo120z50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_040_ss_direct_ideal_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_ideal",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_041_ss_direct_ideal_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_ideal",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_042_ss_direct_idealz50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_idealz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_043_ss_direct_idealz50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_idealz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_044_ss_direct_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_045_ss_direct_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_046_ss_directz50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "directz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_047_ss_directz50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "directz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_048_ss_shared16_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16",
+      "topology": "shared",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_049_ss_shared16_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16",
+      "topology": "shared",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_050_ss_shared16z50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_051_ss_shared16z50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared16z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_052_ss_shared14lo120z50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_053_ss_shared14lo120z50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_054_ss_ideal_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_055_ss_ideal_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_056_ss_cs16_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_057_ss_cs16_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_058_ss_lp14lo120_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_059_ss_lp14lo120_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "lp14lo120",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_060_ss_direct_ideal_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_ideal",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_061_ss_direct_ideal_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_ideal",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_062_ss_direct_idealz50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_idealz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_063_ss_direct_idealz50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct_idealz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_064_ss_direct_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_065_ss_direct_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "direct",
+      "topology": "direct",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_066_ss_directz50_p",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "directz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_067_ss_directz50_n",
+      "stage": "architecture",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "directz50",
+      "topology": "direct",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 0,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        1,
+        1
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_068_tt_bypass_p",
+      "stage": "fallback_short",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_069_tt_bypass_n",
+      "stage": "fallback_short",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_070_tt_ideal_p",
+      "stage": "fallback_short",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_071_tt_ideal_n",
+      "stage": "fallback_short",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_072_tt_cs16_p",
+      "stage": "fallback_short",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_073_tt_cs16_n",
+      "stage": "fallback_short",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_074_ff_bypass_p",
+      "stage": "fallback_short",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_075_ff_bypass_n",
+      "stage": "fallback_short",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_076_ff_ideal_p",
+      "stage": "fallback_short",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_077_ff_ideal_n",
+      "stage": "fallback_short",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_078_ff_cs16_p",
+      "stage": "fallback_short",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_079_ff_cs16_n",
+      "stage": "fallback_short",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          3,
+          3
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_080_ss_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_081_ss_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_082_ss_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_083_ss_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_084_ss_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_085_ss_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_086_ss_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_087_ss_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_088_ss_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_089_ss_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_090_ss_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_091_ss_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_092_ss_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_093_ss_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_094_ss_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_095_ss_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_096_ss_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_097_ss_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_098_ss_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_099_ss_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_100_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_101_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_102_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 1,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_103_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 1,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_104_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_105_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_106_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_107_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_108_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_109_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_110_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_111_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_112_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 7,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_113_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 7,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_114_ss_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_115_ss_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_116_tt_ideal_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_117_tt_ideal_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_118_tt_ideal_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_119_tt_ideal_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_120_tt_ideal_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_121_tt_ideal_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_122_tt_ideal_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_123_tt_ideal_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_124_tt_ideal_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_125_tt_ideal_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_126_tt_cs16_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_127_tt_cs16_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_128_tt_cs16_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_129_tt_cs16_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_130_tt_cs16_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_131_tt_cs16_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_132_tt_cs16_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_133_tt_cs16_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_134_tt_cs16_p",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_135_tt_cs16_n",
+      "stage": "fallback_edge",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_136_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_137_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_138_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 1,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_139_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 1,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_140_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_141_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_142_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_143_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_144_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_145_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_146_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_147_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_148_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 7,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_149_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 7,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_150_tt_cs16_p",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_151_tt_cs16_n",
+      "stage": "fallback_fine",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_152_ff_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_153_ff_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_154_ff_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_155_ff_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_156_ff_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_157_ff_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_158_ff_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_159_ff_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_160_ff_ideal_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_161_ff_ideal_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "ideal",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_162_ff_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_163_ff_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          30,
+          36
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        10,
+        12
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_164_ff_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_165_ff_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_166_ff_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_167_ff_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_168_ff_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_169_ff_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_170_ff_cs16_p",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_171_ff_cs16_n",
+      "stage": "fallback_edge",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 2,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_172_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_173_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_174_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 1,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_175_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 1,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_176_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_177_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          20,
+          46
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        6,
+        15
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 0,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_178_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_179_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_180_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_181_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          20,
+          46
+        ],
+        [
+          22,
+          44
+        ]
+      ],
+      "route_a": [
+        6,
+        15
+      ],
+      "route_b": [
+        7,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 1,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_182_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_183_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_184_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 7,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_185_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 7,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_186_ff_cs16_p",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    },
+    {
+      "case_id": "gmdrivelp_187_ff_cs16_n",
+      "stage": "fallback_fine",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "cs16",
+      "topology": "branch",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          22,
+          44
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        7,
+        14
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 8,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": 2,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ]
+    }
+  ]
+}

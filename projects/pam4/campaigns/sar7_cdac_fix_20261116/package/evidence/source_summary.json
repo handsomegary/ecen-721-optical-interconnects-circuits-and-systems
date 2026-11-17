@@ -1,0 +1,780 @@
+{
+  "status": "measured",
+  "case_id": "sar7_07_tt_r5_cml_rdeg",
+  "job_id": "760348",
+  "baseline_job_id": "760091",
+  "baseline_wrong_conversions": 10,
+  "baseline_unresolved_bits": 0,
+  "diagnostic_period_ps": 1080,
+  "trial_launch_to_compare_ps": 60,
+  "comparison_window_ps": 60,
+  "wrong_conversions": 10,
+  "unresolved_bits": {
+    "6": 0,
+    "5": 0,
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 0
+  },
+  "final_cm_change_mV": [
+    -4.001506501876362,
+    -3.909974541966399
+  ],
+  "max_abs_sample_error_lsb": 1.5953225670142501,
+  "max_observed_resolve_delay_s": 5.02500000060011e-11,
+  "logic_smoke_pass": false,
+  "solver_seconds": 188.75177872506902,
+  "raw_bytes": 87791072,
+  "tran_sha256": "1632e997754871f7c7957c5777285df18c6d5008576d505ba50a9e73ecb5a668",
+  "codes": [
+    {
+      "expected": 64,
+      "comparator": 65,
+      "registered": 65
+    },
+    {
+      "expected": 0,
+      "comparator": 0,
+      "registered": 0
+    },
+    {
+      "expected": 127,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 31,
+      "comparator": 28,
+      "registered": 28
+    },
+    {
+      "expected": 96,
+      "comparator": 101,
+      "registered": 101
+    },
+    {
+      "expected": 63,
+      "comparator": 65,
+      "registered": 65
+    },
+    {
+      "expected": 65,
+      "comparator": 67,
+      "registered": 67
+    },
+    {
+      "expected": 85,
+      "comparator": 90,
+      "registered": 90
+    },
+    {
+      "expected": 42,
+      "comparator": 41,
+      "registered": 41
+    },
+    {
+      "expected": 1,
+      "comparator": 0,
+      "registered": 0
+    },
+    {
+      "expected": 126,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 64,
+      "comparator": 66,
+      "registered": 66
+    }
+  ],
+  "ideal_sense_job_id": "760132",
+  "uncoupled_cml_job_id": "760254",
+  "sense": {
+    "tran_sha256": "1632e997754871f7c7957c5777285df18c6d5008576d505ba50a9e73ecb5a668",
+    "pairs": 84,
+    "sign_agreement": 83,
+    "projected_gain": 0.588093924594616,
+    "sense_common_mode_range_V": [
+      0.834782392391052,
+      0.8349419856612155
+    ],
+    "mean_precomparison_supply_current_A": -0.00026068628915198446,
+    "points": [
+      {
+        "index": 0,
+        "bit": 6,
+        "held_diff_V": 0.002293893533695468,
+        "sense_diff_V": 0.0019628638810589294,
+        "sense_common_mode_V": 0.834803275553875,
+        "supply_current_A": -0.00026078689778449995
+      },
+      {
+        "index": 0,
+        "bit": 5,
+        "held_diff_V": -0.022078688590116635,
+        "sense_diff_V": -0.012865578671501399,
+        "sense_common_mode_V": 0.834782392391052,
+        "supply_current_A": -0.0002608704304357922
+      },
+      {
+        "index": 0,
+        "bit": 4,
+        "held_diff_V": -0.010847158908441012,
+        "sense_diff_V": -0.006414179084556659,
+        "sense_common_mode_V": 0.8347904272211217,
+        "supply_current_A": -0.0002608382911155131
+      },
+      {
+        "index": 0,
+        "bit": 3,
+        "held_diff_V": -0.00522142563243877,
+        "sense_diff_V": -0.0030990422946047813,
+        "sense_common_mode_V": 0.8347954461267724,
+        "supply_current_A": -0.0002608182154929102
+      },
+      {
+        "index": 0,
+        "bit": 2,
+        "held_diff_V": -0.0024130659729008075,
+        "sense_diff_V": -0.001410016865042607,
+        "sense_common_mode_V": 0.8347966978898946,
+        "supply_current_A": -0.0002608132084404214
+      },
+      {
+        "index": 0,
+        "bit": 1,
+        "held_diff_V": -0.0010161536521305914,
+        "sense_diff_V": -0.0006103350640735972,
+        "sense_common_mode_V": 0.83479727263966,
+        "supply_current_A": -0.0002608109094413603
+      },
+      {
+        "index": 0,
+        "bit": 0,
+        "held_diff_V": -0.0003120008050107037,
+        "sense_diff_V": -0.0001910260296359434,
+        "sense_common_mode_V": 0.8347976911700206,
+        "supply_current_A": -0.00026080923531991777
+      },
+      {
+        "index": 1,
+        "bit": 6,
+        "held_diff_V": -0.047893727181959944,
+        "sense_diff_V": -0.02742508982520142,
+        "sense_common_mode_V": 0.8348929811633015,
+        "supply_current_A": -0.0002604280753467946
+      },
+      {
+        "index": 1,
+        "bit": 5,
+        "held_diff_V": -0.02874525283108853,
+        "sense_diff_V": -0.016946383973199586,
+        "sense_common_mode_V": 0.8348397048083419,
+        "supply_current_A": -0.0002606411807666327
+      },
+      {
+        "index": 1,
+        "bit": 4,
+        "held_diff_V": -0.01687355877689667,
+        "sense_diff_V": -0.009956146877047045,
+        "sense_common_mode_V": 0.8348211033840465,
+        "supply_current_A": -0.0002607155864638141
+      },
+      {
+        "index": 1,
+        "bit": 3,
+        "held_diff_V": -0.01124854117709484,
+        "sense_diff_V": -0.006644589098236842,
+        "sense_common_mode_V": 0.8348124765511051,
+        "supply_current_A": -0.0002607500937955792
+      },
+      {
+        "index": 1,
+        "bit": 2,
+        "held_diff_V": -0.008442437842500206,
+        "sense_diff_V": -0.004957994412853939,
+        "sense_common_mode_V": 0.8348055952672843,
+        "supply_current_A": -0.000260777618930863
+      },
+      {
+        "index": 1,
+        "bit": 1,
+        "held_diff_V": -0.007046269938068783,
+        "sense_diff_V": -0.004159103855637336,
+        "sense_common_mode_V": 0.8348009534767655,
+        "supply_current_A": -0.0002607961860929382
+      },
+      {
+        "index": 1,
+        "bit": 0,
+        "held_diff_V": -0.006342719614501502,
+        "sense_diff_V": -0.003740234704745826,
+        "sense_common_mode_V": 0.8347978620174765,
+        "supply_current_A": -0.0002608085519300943
+      },
+      {
+        "index": 2,
+        "bit": 6,
+        "held_diff_V": 0.05144625902979805,
+        "sense_diff_V": 0.030712917607760737,
+        "sense_common_mode_V": 0.8349230065601679,
+        "supply_current_A": -0.0002603079737593284
+      },
+      {
+        "index": 2,
+        "bit": 5,
+        "held_diff_V": 0.026988180464990408,
+        "sense_diff_V": 0.01597595364010518,
+        "sense_common_mode_V": 0.8348434686184,
+        "supply_current_A": -0.00026062612552640017
+      },
+      {
+        "index": 2,
+        "bit": 4,
+        "held_diff_V": 0.015995883322489246,
+        "sense_diff_V": 0.009345359549044696,
+        "sense_common_mode_V": 0.8348223463359782,
+        "supply_current_A": -0.0002607106146560875
+      },
+      {
+        "index": 2,
+        "bit": 3,
+        "held_diff_V": 0.010676572224338265,
+        "sense_diff_V": 0.006226729904585948,
+        "sense_common_mode_V": 0.8348126461653635,
+        "supply_current_A": -0.0002607494153385459
+      },
+      {
+        "index": 2,
+        "bit": 2,
+        "held_diff_V": 0.008013022910640322,
+        "sense_diff_V": 0.00471161566680478,
+        "sense_common_mode_V": 0.8348055286608718,
+        "supply_current_A": -0.0002607778853565131
+      },
+      {
+        "index": 2,
+        "bit": 1,
+        "held_diff_V": 0.006676612026472628,
+        "sense_diff_V": 0.0039111733197312315,
+        "sense_common_mode_V": 0.8348008362933536,
+        "supply_current_A": -0.0002607966548265857
+      },
+      {
+        "index": 2,
+        "bit": 0,
+        "held_diff_V": 0.0060175956493278004,
+        "sense_diff_V": 0.003530033656666598,
+        "sense_common_mode_V": 0.8347976170535422,
+        "supply_current_A": -0.0002608095317858316
+      },
+      {
+        "index": 3,
+        "bit": 6,
+        "held_diff_V": -0.02318375908320003,
+        "sense_diff_V": -0.013016541884293353,
+        "sense_common_mode_V": 0.8349253170235414,
+        "supply_current_A": -0.00026029873190583434
+      },
+      {
+        "index": 3,
+        "bit": 5,
+        "held_diff_V": -0.004041808314517614,
+        "sense_diff_V": -0.002442414805057025,
+        "sense_common_mode_V": 0.8348531115516039,
+        "supply_current_A": -0.00026058755379358456
+      },
+      {
+        "index": 3,
+        "bit": 4,
+        "held_diff_V": 0.007830717889806271,
+        "sense_diff_V": 0.004577800175893709,
+        "sense_common_mode_V": 0.8348255680956069,
+        "supply_current_A": -0.00026069772761757253
+      },
+      {
+        "index": 3,
+        "bit": 3,
+        "held_diff_V": 0.0023511885508704644,
+        "sense_diff_V": 0.0013285826748850038,
+        "sense_common_mode_V": 0.8348154590313037,
+        "supply_current_A": -0.0002607381638747851
+      },
+      {
+        "index": 3,
+        "bit": 2,
+        "held_diff_V": -0.00031558386591523657,
+        "sense_diff_V": -0.00018989136510039195,
+        "sense_common_mode_V": 0.8348072554833148,
+        "supply_current_A": -0.000260770978066741
+      },
+      {
+        "index": 3,
+        "bit": 1,
+        "held_diff_V": -0.0016529370897021556,
+        "sense_diff_V": -0.0009910432437568728,
+        "sense_common_mode_V": 0.8348020291485698,
+        "supply_current_A": -0.00026079188340572055
+      },
+      {
+        "index": 3,
+        "bit": 0,
+        "held_diff_V": -0.0009340916204439997,
+        "sense_diff_V": -0.0005571958455684589,
+        "sense_common_mode_V": 0.8347984846149883,
+        "supply_current_A": -0.000260806061540047
+      },
+      {
+        "index": 4,
+        "bit": 6,
+        "held_diff_V": 0.027156289270535483,
+        "sense_diff_V": 0.016600342044988614,
+        "sense_common_mode_V": 0.8349403859205689,
+        "supply_current_A": -0.0002602384563177247
+      },
+      {
+        "index": 4,
+        "bit": 5,
+        "held_diff_V": 0.0027133155042045054,
+        "sense_diff_V": 0.0017166956870852124,
+        "sense_common_mode_V": 0.834854072713838,
+        "supply_current_A": -0.000260583709144648
+      },
+      {
+        "index": 4,
+        "bit": 4,
+        "held_diff_V": -0.008277613062481426,
+        "sense_diff_V": -0.004936086164187836,
+        "sense_common_mode_V": 0.8348273282172254,
+        "supply_current_A": -0.00026069068713109855
+      },
+      {
+        "index": 4,
+        "bit": 3,
+        "held_diff_V": -0.002494435400995809,
+        "sense_diff_V": -0.0014943742243066493,
+        "sense_common_mode_V": 0.834814790876643,
+        "supply_current_A": -0.0002607408364934278
+      },
+      {
+        "index": 4,
+        "bit": 2,
+        "held_diff_V": 0.00031454554787213596,
+        "sense_diff_V": 0.00019545310975621621,
+        "sense_common_mode_V": 0.8348069514609093,
+        "supply_current_A": -0.000260772194156363
+      },
+      {
+        "index": 4,
+        "bit": 1,
+        "held_diff_V": -0.001049573456976871,
+        "sense_diff_V": -0.0006359933321591349,
+        "sense_common_mode_V": 0.8348020754792815,
+        "supply_current_A": -0.0002607916980828739
+      },
+      {
+        "index": 4,
+        "bit": 0,
+        "held_diff_V": -0.0003300487317259293,
+        "sense_diff_V": -0.00020175275969691597,
+        "sense_common_mode_V": 0.8347985325889046,
+        "supply_current_A": -0.0002608058696443816
+      },
+      {
+        "index": 5,
+        "bit": 6,
+        "held_diff_V": 0.0018951092400247838,
+        "sense_diff_V": 0.0017365871769000618,
+        "sense_common_mode_V": 0.8349409525938831,
+        "supply_current_A": -0.0002602361896244674
+      },
+      {
+        "index": 5,
+        "bit": 5,
+        "held_diff_V": -0.022467496092938744,
+        "sense_diff_V": -0.013092513433742403,
+        "sense_common_mode_V": 0.8348469607000673,
+        "supply_current_A": -0.00026061215719973144
+      },
+      {
+        "index": 5,
+        "bit": 4,
+        "held_diff_V": -0.011237092829702311,
+        "sense_diff_V": -0.0066434227067387885,
+        "sense_common_mode_V": 0.8348249174476003,
+        "supply_current_A": -0.0002607003302095985
+      },
+      {
+        "index": 5,
+        "bit": 3,
+        "held_diff_V": -0.005610578697137769,
+        "sense_diff_V": -0.003328134823881057,
+        "sense_common_mode_V": 0.8348147457743718,
+        "supply_current_A": -0.0002607410169025132
+      },
+      {
+        "index": 5,
+        "bit": 2,
+        "held_diff_V": -0.002801883197748878,
+        "sense_diff_V": -0.0016388208523052672,
+        "sense_common_mode_V": 0.8348070943812289,
+        "supply_current_A": -0.0002607716224750846
+      },
+      {
+        "index": 5,
+        "bit": 1,
+        "held_diff_V": -0.0014049983939029564,
+        "sense_diff_V": -0.0008392124359374309,
+        "sense_common_mode_V": 0.8348020426571714,
+        "supply_current_A": -0.0002607918293713146
+      },
+      {
+        "index": 5,
+        "bit": 0,
+        "held_diff_V": -0.0007008261239775937,
+        "sense_diff_V": -0.0004198894771768602,
+        "sense_common_mode_V": 0.8347987432221453,
+        "supply_current_A": -0.0002608050271114185
+      },
+      {
+        "index": 6,
+        "bit": 6,
+        "held_diff_V": 0.0033189485617807213,
+        "sense_diff_V": 0.002575879793825786,
+        "sense_common_mode_V": 0.8349413585461338,
+        "supply_current_A": -0.0002602345658154647
+      },
+      {
+        "index": 6,
+        "bit": 5,
+        "held_diff_V": -0.021046834682289184,
+        "sense_diff_V": -0.01225698200420311,
+        "sense_common_mode_V": 0.8348478374393102,
+        "supply_current_A": -0.0002606086502427592
+      },
+      {
+        "index": 6,
+        "bit": 4,
+        "held_diff_V": -0.009816570044936301,
+        "sense_diff_V": -0.00580795686090585,
+        "sense_common_mode_V": 0.834825359180744,
+        "supply_current_A": -0.0002606985632770245
+      },
+      {
+        "index": 6,
+        "bit": 3,
+        "held_diff_V": -0.004190072607908379,
+        "sense_diff_V": -0.002492159116565751,
+        "sense_common_mode_V": 0.8348149651332015,
+        "supply_current_A": -0.0002607401394671943
+      },
+      {
+        "index": 6,
+        "bit": 2,
+        "held_diff_V": -0.0013814431966582275,
+        "sense_diff_V": -0.0008027347177474997,
+        "sense_common_mode_V": 0.8348072159961206,
+        "supply_current_A": -0.0002607711360155175
+      },
+      {
+        "index": 6,
+        "bit": 1,
+        "held_diff_V": 1.5490621580238617e-05,
+        "sense_diff_V": -3.1134383202680027e-06,
+        "sense_common_mode_V": 0.8348020869162758,
+        "supply_current_A": -0.0002607916523348969
+      },
+      {
+        "index": 6,
+        "bit": 0,
+        "held_diff_V": -0.0006591035769376585,
+        "sense_diff_V": -0.0003994108579955524,
+        "sense_common_mode_V": 0.8347988348068813,
+        "supply_current_A": -0.0002608046607724747
+      },
+      {
+        "index": 7,
+        "bit": 6,
+        "held_diff_V": 0.01908369449994174,
+        "sense_diff_V": 0.011846627663322784,
+        "sense_common_mode_V": 0.8349419856612155,
+        "supply_current_A": -0.000260232057355138
+      },
+      {
+        "index": 7,
+        "bit": 5,
+        "held_diff_V": -0.005288498006451259,
+        "sense_diff_V": -0.0029936897093223447,
+        "sense_common_mode_V": 0.8348539913867455,
+        "supply_current_A": -0.0002605840344530179
+      },
+      {
+        "index": 7,
+        "bit": 4,
+        "held_diff_V": 0.00594141765115852,
+        "sense_diff_V": 0.0034662751550289528,
+        "sense_common_mode_V": 0.8348261177855306,
+        "supply_current_A": -0.0002606955288578776
+      },
+      {
+        "index": 7,
+        "bit": 3,
+        "held_diff_V": 0.00046482290299232343,
+        "sense_diff_V": 0.00021800160152574133,
+        "sense_common_mode_V": 0.8348159587614163,
+        "supply_current_A": -0.0002607361649543351
+      },
+      {
+        "index": 7,
+        "bit": 2,
+        "held_diff_V": -0.0021991188095729086,
+        "sense_diff_V": -0.0012984922060599313,
+        "sense_common_mode_V": 0.834807489137961,
+        "supply_current_A": -0.000260770043448156
+      },
+      {
+        "index": 7,
+        "bit": 1,
+        "held_diff_V": -0.0007744578123375367,
+        "sense_diff_V": -0.0004680941936981986,
+        "sense_common_mode_V": 0.834802149319142,
+        "supply_current_A": -0.0002607914027234325
+      },
+      {
+        "index": 7,
+        "bit": 0,
+        "held_diff_V": -0.0014488613340593037,
+        "sense_diff_V": -0.0008642653236936582,
+        "sense_common_mode_V": 0.8347988743096196,
+        "supply_current_A": -0.0002608045027615217
+      },
+      {
+        "index": 8,
+        "bit": 6,
+        "held_diff_V": -0.014728559092312743,
+        "sense_diff_V": -0.008048567896173697,
+        "sense_common_mode_V": 0.8349324998157893,
+        "supply_current_A": -0.0002602700007368427
+      },
+      {
+        "index": 8,
+        "bit": 5,
+        "held_diff_V": 0.004405924610929035,
+        "sense_diff_V": 0.0025334360411810586,
+        "sense_common_mode_V": 0.8348537747279176,
+        "supply_current_A": -0.0002605849010883298
+      },
+      {
+        "index": 8,
+        "bit": 4,
+        "held_diff_V": -0.005944447901070515,
+        "sense_diff_V": -0.0035632777390826043,
+        "sense_common_mode_V": 0.8348283800803531,
+        "supply_current_A": -0.0002606864796785876
+      },
+      {
+        "index": 8,
+        "bit": 3,
+        "held_diff_V": -0.0001622806064786042,
+        "sense_diff_V": -0.00012141753761452101,
+        "sense_common_mode_V": 0.8348152592914738,
+        "supply_current_A": -0.0002607389628341049
+      },
+      {
+        "index": 8,
+        "bit": 2,
+        "held_diff_V": -0.0028996498759625844,
+        "sense_diff_V": -0.0017108456062127075,
+        "sense_common_mode_V": 0.8348073769515367,
+        "supply_current_A": -0.0002607704921938532
+      },
+      {
+        "index": 8,
+        "bit": 1,
+        "held_diff_V": -0.0014754184877815435,
+        "sense_diff_V": -0.0008806735371222896,
+        "sense_common_mode_V": 0.8348020024915666,
+        "supply_current_A": -0.0002607919900337338
+      },
+      {
+        "index": 8,
+        "bit": 0,
+        "held_diff_V": -0.0007715930280316474,
+        "sense_diff_V": -0.0004615276302810667,
+        "sense_common_mode_V": 0.8347986684607086,
+        "supply_current_A": -0.0002608053261571655
+      },
+      {
+        "index": 9,
+        "bit": 6,
+        "held_diff_V": -0.04762000119329335,
+        "sense_diff_V": -0.027245234436906962,
+        "sense_common_mode_V": 0.8348936870456733,
+        "supply_current_A": -0.0002604252518173066
+      },
+      {
+        "index": 9,
+        "bit": 5,
+        "held_diff_V": -0.028536721578995894,
+        "sense_diff_V": -0.016827083469567516,
+        "sense_common_mode_V": 0.8348403410510925,
+        "supply_current_A": -0.0002606386357956297
+      },
+      {
+        "index": 9,
+        "bit": 4,
+        "held_diff_V": -0.01666484320484607,
+        "sense_diff_V": -0.009833553083177793,
+        "sense_common_mode_V": 0.8348216304417446,
+        "supply_current_A": -0.0002607134782330215
+      },
+      {
+        "index": 9,
+        "bit": 3,
+        "held_diff_V": -0.011039488809833187,
+        "sense_diff_V": -0.006521610448563697,
+        "sense_common_mode_V": 0.8348129730051572,
+        "supply_current_A": -0.0002607481079793713
+      },
+      {
+        "index": 9,
+        "bit": 2,
+        "held_diff_V": -0.008233716598209484,
+        "sense_diff_V": -0.004835203164341384,
+        "sense_common_mode_V": 0.8348060743812349,
+        "supply_current_A": -0.0002607757024750604
+      },
+      {
+        "index": 9,
+        "bit": 1,
+        "held_diff_V": -0.006837542566737853,
+        "sense_diff_V": -0.004036291225663624,
+        "sense_common_mode_V": 0.8348014211834736,
+        "supply_current_A": -0.0002607943152661059
+      },
+      {
+        "index": 9,
+        "bit": 0,
+        "held_diff_V": -0.0061339861194319445,
+        "sense_diff_V": -0.0036174108043368625,
+        "sense_common_mode_V": 0.8347983252023972,
+        "supply_current_A": -0.0002608066991904111
+      },
+      {
+        "index": 10,
+        "bit": 6,
+        "held_diff_V": 0.05066001786680674,
+        "sense_diff_V": 0.030260008512566272,
+        "sense_common_mode_V": 0.8349238311645228,
+        "supply_current_A": -0.0002603046753419091
+      },
+      {
+        "index": 10,
+        "bit": 5,
+        "held_diff_V": 0.026202400167941953,
+        "sense_diff_V": 0.015515997721209707,
+        "sense_common_mode_V": 0.8348440823512087,
+        "supply_current_A": -0.0002606236705951652
+      },
+      {
+        "index": 10,
+        "bit": 4,
+        "held_diff_V": 0.01521012328218907,
+        "sense_diff_V": 0.008883700403138683,
+        "sense_common_mode_V": 0.8348227825717054,
+        "supply_current_A": -0.0002607088697131784
+      },
+      {
+        "index": 10,
+        "bit": 3,
+        "held_diff_V": 0.009890821448356402,
+        "sense_diff_V": 0.005764601478707609,
+        "sense_common_mode_V": 0.8348129465120057,
+        "supply_current_A": -0.0002607482139519774
+      },
+      {
+        "index": 10,
+        "bit": 2,
+        "held_diff_V": 0.007227277038633906,
+        "sense_diff_V": 0.0042493290914368265,
+        "sense_common_mode_V": 0.834805738146468,
+        "supply_current_A": -0.0002607770474141281
+      },
+      {
+        "index": 10,
+        "bit": 1,
+        "held_diff_V": 0.005890870583209806,
+        "sense_diff_V": 0.0034488269483302636,
+        "sense_common_mode_V": 0.8348010126538694,
+        "supply_current_A": -0.0002607959493845227
+      },
+      {
+        "index": 10,
+        "bit": 0,
+        "held_diff_V": 0.005231858586607796,
+        "sense_diff_V": 0.003067665474847159,
+        "sense_common_mode_V": 0.834797771607939,
+        "supply_current_A": -0.0002608089135682442
+      },
+      {
+        "index": 11,
+        "bit": 6,
+        "held_diff_V": 0.002810491275432092,
+        "sense_diff_V": 0.002274705774792829,
+        "sense_common_mode_V": 0.8349411529517528,
+        "supply_current_A": -0.0002602353881929894
+      },
+      {
+        "index": 11,
+        "bit": 5,
+        "held_diff_V": -0.02154987351758819,
+        "sense_diff_V": -0.012554313130691108,
+        "sense_common_mode_V": 0.8348475581010015,
+        "supply_current_A": -0.000260609767595994
+      },
+      {
+        "index": 11,
+        "bit": 4,
+        "held_diff_V": -0.010318367582249355,
+        "sense_diff_V": -0.0061032593608351116,
+        "sense_common_mode_V": 0.8348252306920019,
+        "supply_current_A": -0.0002606990772319924
+      },
+      {
+        "index": 11,
+        "bit": 3,
+        "held_diff_V": -0.004692656849919152,
+        "sense_diff_V": -0.002787898397054067,
+        "sense_common_mode_V": 0.8348149102064943,
+        "supply_current_A": -0.0002607403591740225
+      },
+      {
+        "index": 11,
+        "bit": 2,
+        "held_diff_V": -0.0018843118189704189,
+        "sense_diff_V": -0.0010987519781875399,
+        "sense_common_mode_V": 0.834807195323941,
+        "supply_current_A": -0.0002607712187042361
+      },
+      {
+        "index": 11,
+        "bit": 1,
+        "held_diff_V": -0.0004874110202489623,
+        "sense_diff_V": -0.0002991194480631565,
+        "sense_common_mode_V": 0.8348020945127115,
+        "supply_current_A": -0.000260791621949154
+      },
+      {
+        "index": 11,
+        "bit": 0,
+        "held_diff_V": -0.0011620268776187936,
+        "sense_diff_V": -0.0006954276254128589,
+        "sense_common_mode_V": 0.834798834171127,
+        "supply_current_A": -0.0002608046633154924
+      }
+    ]
+  }
+}

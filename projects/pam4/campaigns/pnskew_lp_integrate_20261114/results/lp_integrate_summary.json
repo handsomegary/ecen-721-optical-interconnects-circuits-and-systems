@@ -1,0 +1,5599 @@
+{
+  "format": "lp14_native_integration_summary_v1",
+  "rows": [
+    {
+      "case_id": "lpint_00_ss_reference_p",
+      "stage": "integration",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 7.786074434265295,
+      "rail_mW": {
+        "XVs:p": 7.78607438666837,
+        "XVcm:p": 4.759692502925209e-08
+      },
+      "Hdd_56GHz_dB": -25.353144027793956,
+      "Hmatrix_56GHz": [
+        [
+          -0.018072607705426288,
+          -0.027673781588109445
+        ],
+        [
+          0.017164828407378943,
+          0.013236349612672787
+        ],
+        [
+          0.017164828407379016,
+          0.013236349612672777
+        ],
+        [
+          -0.018072607705426506,
+          -0.02767378158810961
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        1.457167719820518e-16,
+        1.7694179454963432e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 0.1690304505118785,
+      "input_Y_56GHz_S": [
+        [
+          0.013585758070485433,
+          0.0003093809948817971
+        ],
+        [
+          -6.34427158671094e-05,
+          3.0168675570193016e-06
+        ],
+        [
+          -6.344271586710952e-05,
+          3.016867557019366e-06
+        ],
+        [
+          0.013585758070485444,
+          0.000309380994881797
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007317466152464509,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006574621869687297,
+          "region": 2.0,
+          "ids_A": 0.0002986911179958203,
+          "gm_S": 0.001953733141038344
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006574621869687297,
+          "region": 2.0,
+          "ids_A": 0.0002986911179958203,
+          "gm_S": 0.001953733141038344
+        }
+      },
+      "added_mW_vs_r3": 0.0
+    },
+    {
+      "case_id": "lpint_02_ss_reference_p",
+      "stage": "integration",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 7.7867983795204125,
+      "rail_mW": {
+        "XVs:p": 7.785166642328297,
+        "XVcm:p": 5.628158144360583e-08,
+        "XVb:p": 0.0005127992949560352,
+        "GFVDD:p": 0.0011182375898075,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 8.050322120361954e-08,
+        "GMSAVE1:p": 8.050322120361954e-08,
+        "GMSAVE2:p": 8.050322120361954e-08,
+        "GMSAVE3:p": 8.050322120361954e-08,
+        "GMSAVE4:p": 8.050322120361954e-08,
+        "GMSAVE5:p": 8.050322120361954e-08,
+        "GMSAVE6:p": 8.050322120361954e-08,
+        "GMSAVE7:p": 8.050322120361952e-08,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -22.965606819214415,
+      "Hmatrix_56GHz": [
+        [
+          -0.01615910603886971,
+          0.0404029521489825
+        ],
+        [
+          0.003310879599599639,
+          -0.027953760807518085
+        ],
+        [
+          0.003310879599599824,
+          -0.027953760807517773
+        ],
+        [
+          -0.016159106038869813,
+          0.04040295214898195
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        -7.979727989493313e-17,
+        2.3592239273284576e-16
+      ],
+      "Hdd_56_over_7GHz_dB": -0.6489742520623027,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007303219844868112,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100368875093,
+          "region": 2.0,
+          "ids_A": 0.0002987015092212379,
+          "gm_S": 0.00195384579890217
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100368874982,
+          "region": 2.0,
+          "ids_A": 0.0002987015092212379,
+          "gm_S": 0.00195384579890217
+        }
+      },
+      "added_mW_vs_r3": 0.0007239452551175418
+    },
+    {
+      "case_id": "lpint_04_ss_reference_p",
+      "stage": "integration",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 7.952407475352406,
+      "rail_mW": {
+        "XVs:p": 7.950775743028493,
+        "XVcm:p": 5.6978941269504445e-08,
+        "XVb:p": 0.0005127937293992422,
+        "GFVDD:p": 0.0011182375898098498,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 8.050322120316683e-08,
+        "GMSAVE1:p": 8.050322120316683e-08,
+        "GMSAVE2:p": 8.050322120316683e-08,
+        "GMSAVE3:p": 8.050322120316683e-08,
+        "GMSAVE4:p": 8.050322120316683e-08,
+        "GMSAVE5:p": 8.050322120316683e-08,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 8.050322120242044e-08,
+        "GMSBVE1:p": 8.050322120242044e-08,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -20.81667837666678,
+      "Hmatrix_56GHz": [
+        [
+          -0.016776000732536194,
+          0.05330199888316999
+        ],
+        [
+          -7.061132126677267e-05,
+          -0.036178090471246135
+        ],
+        [
+          -7.061132126730523e-05,
+          -0.03617809047124604
+        ],
+        [
+          -0.016776000732536312,
+          0.053301998883172094
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        6.522560269672795e-16,
+        -2.1996293675385914e-15
+      ],
+      "Hdd_56_over_7GHz_dB": -2.137409470796753,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007292479414006493,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023154048751969913,
+          "region": 1.0,
+          "ids_A": 0.0002967676811996685,
+          "gm_S": 0.001932854118958595
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023154048751969913,
+          "region": 1.0,
+          "ids_A": 0.0002967676811996685,
+          "gm_S": 0.001932854118958595
+        }
+      },
+      "added_mW_vs_r3": 0.16633304108711133
+    },
+    {
+      "case_id": "lpint_06_tt_reference_p",
+      "stage": "integration",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 10.076882480300053,
+      "rail_mW": {
+        "XVs:p": 10.076882434067258,
+        "XVcm:p": 4.623279587935871e-08
+      },
+      "Hdd_56GHz_dB": -23.301260514203406,
+      "Hmatrix_56GHz": [
+        [
+          -0.02240143602529436,
+          -0.03325173251089387
+        ],
+        [
+          0.022838231126426262,
+          0.01802561679771345
+        ],
+        [
+          0.0228382311264262,
+          0.01802561679771344
+        ],
+        [
+          -0.022401436025294208,
+          -0.033251732510893806
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        -9.020562075079397e-17,
+        -5.551115123125783e-17
+      ],
+      "Hdd_56_over_7GHz_dB": 1.0853186778364234,
+      "input_Y_56GHz_S": [
+        [
+          0.013599641308915934,
+          0.00030213355765734966
+        ],
+        [
+          -6.835808746446475e-05,
+          5.49568334035112e-06
+        ],
+        [
+          -6.835808746446468e-05,
+          5.495683340351075e-06
+        ],
+        [
+          0.013599641308915934,
+          0.00030213355765735
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006954275154528222,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10049205877647882,
+          "region": 2.0,
+          "ids_A": 0.0003578604644220325,
+          "gm_S": 0.002635942109417063
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10049205877647882,
+          "region": 2.0,
+          "ids_A": 0.0003578604644220325,
+          "gm_S": 0.002635942109417063
+        }
+      },
+      "added_mW_vs_r3": 0.0
+    },
+    {
+      "case_id": "lpint_08_tt_reference_p",
+      "stage": "integration",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 10.077450906778294,
+      "rail_mW": {
+        "XVs:p": 10.07644723191909,
+        "XVcm:p": 5.1140624874261186e-08,
+        "XVb:p": 0.00019582749818865895,
+        "GFVDD:p": 0.0008046952035446118,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 3.876271054896292e-07,
+        "GMSAVE1:p": 3.876271054896292e-07,
+        "GMSAVE2:p": 3.876271054896292e-07,
+        "GMSAVE3:p": 3.876271054896292e-07,
+        "GMSAVE4:p": 3.876271054896292e-07,
+        "GMSAVE5:p": 3.876271054896292e-07,
+        "GMSAVE6:p": 3.876271054896292e-07,
+        "GMSAVE7:p": 3.876271054896292e-07,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -20.873039725837877,
+      "Hmatrix_56GHz": [
+        [
+          -0.019866129970944155,
+          0.049447617465108756
+        ],
+        [
+          0.005031035008499274,
+          -0.03749519385641965
+        ],
+        [
+          0.005031035008499529,
+          -0.03749519385641925
+        ],
+        [
+          -0.01986612997094433,
+          0.049447617465108056
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        -7.979727989493313e-17,
+        3.0531133177191805e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 0.30548566109022507,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006932419713392521,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251270290272,
+          "region": 2.0,
+          "ids_A": 0.0003578633928722562,
+          "gm_S": 0.00263596734917999
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251270290272,
+          "region": 2.0,
+          "ids_A": 0.0003578633928722562,
+          "gm_S": 0.00263596734917999
+        }
+      },
+      "added_mW_vs_r3": 0.0005684264782406245
+    },
+    {
+      "case_id": "lpint_10_tt_reference_p",
+      "stage": "integration",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 10.253710026843741,
+      "rail_mW": {
+        "XVs:p": 10.2527063562908,
+        "XVcm:p": 5.195470459005357e-08,
+        "XVb:p": 0.00019582237784499003,
+        "GFVDD:p": 0.0008046952035475495,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 3.876271054885778e-07,
+        "GMSAVE1:p": 3.876271054885778e-07,
+        "GMSAVE2:p": 3.876271054885778e-07,
+        "GMSAVE3:p": 3.876271054885778e-07,
+        "GMSAVE4:p": 3.876271054885778e-07,
+        "GMSAVE5:p": 3.876271054885778e-07,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 3.876271054867977e-07,
+        "GMSBVE1:p": 3.876271054867977e-07,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -18.720339736198298,
+      "Hmatrix_56GHz": [
+        [
+          -0.020336026207769486,
+          0.06485231254688727
+        ],
+        [
+          0.0008853059491427856,
+          -0.049061050616442635
+        ],
+        [
+          0.0008853059491425845,
+          -0.04906105061644171
+        ],
+        [
+          -0.020336026207769867,
+          0.06485231254688842
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        5.828670879282072e-16,
+        -2.0816681711721685e-15
+      ],
+      "Hdd_56_over_7GHz_dB": -1.3982184027308042,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006919125735590526,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0962671453283642,
+          "region": 2.0,
+          "ids_A": 0.0003566642887514515,
+          "gm_S": 0.002625559271019667
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.09626714532836442,
+          "region": 2.0,
+          "ids_A": 0.0003566642887514516,
+          "gm_S": 0.002625559271019667
+        }
+      },
+      "added_mW_vs_r3": 0.17682754654368793
+    },
+    {
+      "case_id": "lpint_12_ff_reference_p",
+      "stage": "integration",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 13.227445088866322,
+      "rail_mW": {
+        "XVs:p": 13.227445047376415,
+        "XVcm:p": 4.148990625663551e-08
+      },
+      "Hdd_56GHz_dB": -21.376481768672946,
+      "Hmatrix_56GHz": [
+        [
+          -0.02823519984704534,
+          -0.04040907556042937
+        ],
+        [
+          0.02854980209045244,
+          0.023302459917147286
+        ],
+        [
+          0.028549802090453855,
+          0.02330245991714724
+        ],
+        [
+          -0.028235199847046966,
+          -0.04040907556042975
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        2.1163626406917047e-16,
+        4.163336342344337e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 1.7216996079045777,
+      "input_Y_56GHz_S": [
+        [
+          0.013615050023251887,
+          0.00029211143262446843
+        ],
+        [
+          -7.037691625444449e-05,
+          7.673323623372269e-06
+        ],
+        [
+          -7.037691625444438e-05,
+          7.673323623372105e-06
+        ],
+        [
+          0.013615050023251887,
+          0.0002921114326244691
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006865755495851876,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19120809936879438,
+          "region": 2.0,
+          "ids_A": 0.0004329515775186341,
+          "gm_S": 0.003461739175263643
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19120809936879438,
+          "region": 2.0,
+          "ids_A": 0.0004329515775186341,
+          "gm_S": 0.003461739175263643
+        }
+      },
+      "added_mW_vs_r3": 0.0
+    },
+    {
+      "case_id": "lpint_14_ff_reference_p",
+      "stage": "integration",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 13.227915801556474,
+      "rail_mW": {
+        "XVs:p": 13.227292615906036,
+        "XVcm:p": 4.225318241661587e-08,
+        "XVb:p": 5.845908251429227e-05,
+        "GFVDD:p": 0.0005512830605096157,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 1.675156779456339e-06,
+        "GMSAVE1:p": 1.675156779456339e-06,
+        "GMSAVE2:p": 1.675156779456339e-06,
+        "GMSAVE3:p": 1.675156779456339e-06,
+        "GMSAVE4:p": 1.675156779456339e-06,
+        "GMSAVE5:p": 1.675156779456339e-06,
+        "GMSAVE6:p": 1.675156779456339e-06,
+        "GMSAVE7:p": 1.675156779456339e-06,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -18.91453925400899,
+      "Hmatrix_56GHz": [
+        [
+          -0.02464259749334969,
+          0.061128819680707304
+        ],
+        [
+          0.007463970853623492,
+          -0.04753859975315429
+        ],
+        [
+          0.0074639708536237,
+          -0.047538599753154
+        ],
+        [
+          -0.024642597493350016,
+          0.06112881968070674
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        1.1796119636642288e-16,
+        2.706168622523819e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 0.9758903656364717,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006834592457370002,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19121149374107776,
+          "region": 2.0,
+          "ids_A": 0.000432952398220745,
+          "gm_S": 0.003461744744014759
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1912114937410776,
+          "region": 2.0,
+          "ids_A": 0.0004329523982207455,
+          "gm_S": 0.00346174474401476
+        }
+      },
+      "added_mW_vs_r3": 0.0004707126901521974
+    },
+    {
+      "case_id": "lpint_16_ff_reference_p",
+      "stage": "integration",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 13.420609578905573,
+      "rail_mW": {
+        "XVs:p": 13.419986396101727,
+        "XVcm:p": 4.400369468360094e-08,
+        "XVb:p": 5.8454485397490356e-05,
+        "GFVDD:p": 0.0005512830605204525,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 1.6751567794535708e-06,
+        "GMSAVE1:p": 1.6751567794535708e-06,
+        "GMSAVE2:p": 1.6751567794535708e-06,
+        "GMSAVE3:p": 1.6751567794535708e-06,
+        "GMSAVE4:p": 1.6751567794535708e-06,
+        "GMSAVE5:p": 1.6751567794535708e-06,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 1.6751567794487634e-06,
+        "GMSBVE1:p": 1.6751567794487634e-06,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -16.724610047347472,
+      "Hmatrix_56GHz": [
+        [
+          -0.024947245562505896,
+          0.07995361353313514
+        ],
+        [
+          0.002876988911404299,
+          -0.06317089229793735
+        ],
+        [
+          0.0028769889114037923,
+          -0.06317089229793618
+        ],
+        [
+          -0.024947245562506708,
+          0.07995361353313729
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        1.3183898417423734e-15,
+        -3.316791286067655e-15
+      ],
+      "Hdd_56_over_7GHz_dB": -0.8795561340187625,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006815632086203815,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1869190102014911,
+          "region": 2.0,
+          "ids_A": 0.0004319076040339077,
+          "gm_S": 0.003454616047782431
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1869190102014911,
+          "region": 2.0,
+          "ids_A": 0.0004319076040339077,
+          "gm_S": 0.003454616047782431
+        }
+      },
+      "added_mW_vs_r3": 0.1931644900392513
+    },
+    {
+      "case_id": "lpint_18_ss_native_direct_p",
+      "stage": "integration",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 16.081409080884228,
+      "rail_mW": {
+        "XVs:p": 7.785166641747795,
+        "XVcm:p": 5.6281584338987536e-08,
+        "XVb:p": 0.0005127992949560555,
+        "GFVDD:p": 8.295728939534117,
+        "GMSAVE0:p": 8.050322120361954e-08,
+        "GMSAVE1:p": 8.050322120361954e-08,
+        "GMSAVE2:p": 8.050322120361954e-08,
+        "GMSAVE3:p": 8.050322120361954e-08,
+        "GMSAVE4:p": 8.050322120361954e-08,
+        "GMSAVE5:p": 8.050322120361954e-08,
+        "GMSAVE6:p": 8.050322120361954e-08,
+        "GMSAVE7:p": 8.050322120361954e-08,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -24.38403461699606,
+      "Hmatrix_56GHz": [
+        [
+          0.017060290868306953,
+          0.015996313741985874
+        ],
+        [
+          -0.02187111707436315,
+          -0.030139333390685
+        ],
+        [
+          -0.021871117074425073,
+          -0.030139333390771395
+        ],
+        [
+          0.017060290868260015,
+          0.01599631374194016
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        1.0886083701144855e-13,
+        1.3210960103648972e-13
+      ],
+      "Hdd_56_over_7GHz_dB": -1.9613399601521828,
+      "input_Y_56GHz_S": [
+        [
+          0.00516475866462471,
+          0.003924428878396835
+        ],
+        [
+          -5.8222747028274335e-06,
+          8.493332768423626e-06
+        ],
+        [
+          -5.822274702827317e-06,
+          8.49333276842376e-06
+        ],
+        [
+          0.005164758664622033,
+          0.00392442887839712
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.000732494107836435,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100383888805,
+          "region": 2.0,
+          "ids_A": 0.0002987015092278811,
+          "gm_S": 0.001953845798974199
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100383888805,
+          "region": 2.0,
+          "ids_A": 0.0002987015092278811,
+          "gm_S": 0.001953845798974199
+        }
+      },
+      "added_mW_vs_r3": 8.295334646618933,
+      "legs_mA": [
+        4.729074160975871,
+        4.729074160975871
+      ],
+      "iref_uA": 338.3350152017125,
+      "replica_minus_ref_mV": 0.241702843234326,
+      "replica_resistor_error_fraction": -0.0015462967291018299,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.634628798753206,
+      "OTA_input_drain_diff_mV": -3.673035795908386,
+      "bias_OP": {
+        "GMSQON20": {
+          "ids": 1.330321897616684e-05,
+          "vgs": 0.3798037712563495,
+          "vds": 0.4453003066068745,
+          "vbs": 0.0,
+          "vgd": -0.06549653535052496,
+          "vth": 0.4656595610401637,
+          "vdsat": 0.0904336463607379,
+          "gm": 0.0002553526609983653,
+          "gds": 3.847458249822043e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 6.253644740203114e-06,
+          "vgs": 0.3796817914406825,
+          "vds": 0.1440721576801884,
+          "vbs": -0.2740074315361263,
+          "vgd": 0.2356096337604941,
+          "vth": 0.4960190698361961,
+          "vdsat": 0.08241237734152816,
+          "gm": 0.0001343347692521686,
+          "gds": 6.093824660898583e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 6.263195152112572e-06,
+          "vgs": 0.3799234942839169,
+          "vds": 0.1403991218842801,
+          "vbs": -0.2740074315361263,
+          "vgd": 0.2395243723996368,
+          "vth": 0.4960242763467933,
+          "vdsat": 0.08246811715993972,
+          "gm": 0.0001343830261308802,
+          "gds": 6.389515147960204e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.251676970604965e-05,
+          "vgs": 0.3798037712563495,
+          "vds": 0.2740074315361263,
+          "vbs": 0.0,
+          "vgd": 0.1057963397202232,
+          "vth": 0.46579673937093,
+          "vdsat": 0.0903873614044597,
+          "gm": 0.0002408685169260943,
+          "gds": 5.628851059919425e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.303615695000298e-05,
+          "vgs": 0.3798037712563495,
+          "vds": 0.3798037712563495,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4657120376007406,
+          "vdsat": 0.0904158984427878,
+          "gm": 0.0002505095236360126,
+          "gds": 4.346299599326869e-06,
+          "region": 3.0
+        },
+        "GMSQRNM9": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM8": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM7": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM6": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM5": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM4": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM3": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM2": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM1": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNM0": {
+          "ids": 3.383307110000262e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.6536892229768089,
+          "vbs": 0.0,
+          "vgd": -0.2221741143715897,
+          "vth": 0.4655064530701746,
+          "vdsat": 0.111485123961433,
+          "gm": 0.0005137928418585735,
+          "gds": 6.401420561849447e-06,
+          "region": 3.0
+        },
+        "GMSQRNS3": {
+          "ids": 8.324405977950586e-06,
+          "vgs": 0.3671174836049285,
+          "vds": 0.2535991849748573,
+          "vbs": -0.06439762500029063,
+          "vgd": 0.1135182986300712,
+          "vth": 0.473065334157995,
+          "vdsat": 0.08452645109454016,
+          "gm": 0.0001727729436330444,
+          "gds": 4.074066118639438e-06,
+          "region": 3.0
+        },
+        "GMSQRNS2": {
+          "ids": 8.324405977950586e-06,
+          "vgs": 0.3671174836049285,
+          "vds": 0.2535991849748573,
+          "vbs": -0.06439762500029063,
+          "vgd": 0.1135182986300712,
+          "vth": 0.473065334157995,
+          "vdsat": 0.08452645109454016,
+          "gm": 0.0001727729436330444,
+          "gds": 4.074066118639438e-06,
+          "region": 3.0
+        },
+        "GMSQRNS1": {
+          "ids": 8.324405977950586e-06,
+          "vgs": 0.3671174836049285,
+          "vds": 0.2535991849748573,
+          "vbs": -0.06439762500029063,
+          "vgd": 0.1135182986300712,
+          "vth": 0.473065334157995,
+          "vdsat": 0.08452645109454016,
+          "gm": 0.0001727729436330444,
+          "gds": 4.074066118639438e-06,
+          "region": 3.0
+        },
+        "GMSQRNS0": {
+          "ids": 8.324405977950586e-06,
+          "vgs": 0.3671174836049285,
+          "vds": 0.2535991849748573,
+          "vbs": -0.06439762500029063,
+          "vgd": 0.1135182986300712,
+          "vth": 0.473065334157995,
+          "vdsat": 0.08452645109454016,
+          "gm": 0.0001727729436330444,
+          "gds": 4.074066118639438e-06,
+          "region": 3.0
+        },
+        "GMSQRND0": {
+          "ids": 3.216311486956121e-05,
+          "vgs": 0.4315151086052191,
+          "vds": 0.4315151086052191,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4656839844294264,
+          "vdsat": 0.1113836589277712,
+          "gm": 0.0004906552417989773,
+          "gds": 9.04128182172551e-06,
+          "region": 3.0
+        },
+        "GMSQOP22": {
+          "ids": -3.325836666080259e-06,
+          "vgs": -0.3955934465795936,
+          "vds": -0.3646996933931256,
+          "vbs": 0.0,
+          "vgd": -0.03089375318646803,
+          "vth": -0.4457437122214454,
+          "vdsat": -0.08560705226126353,
+          "gm": 6.600668029865461e-05,
+          "gds": 1.43094381828404e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -3.325836666080259e-06,
+          "vgs": -0.3955934465795936,
+          "vds": -0.3646996933931256,
+          "vbs": 0.0,
+          "vgd": -0.03089375318646803,
+          "vth": -0.4457437122214454,
+          "vdsat": -0.08560705226126353,
+          "gm": 6.600668029865461e-05,
+          "gds": 1.43094381828404e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -3.325836666080259e-06,
+          "vgs": -0.3955934465795936,
+          "vds": -0.3646996933931256,
+          "vbs": 0.0,
+          "vgd": -0.03089375318646803,
+          "vth": -0.4457437122214454,
+          "vdsat": -0.08560705226126353,
+          "gm": 6.600668029865461e-05,
+          "gds": 1.43094381828404e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -3.325836666080259e-06,
+          "vgs": -0.3955934465795936,
+          "vds": -0.3646996933931256,
+          "vbs": 0.0,
+          "vgd": -0.03089375318646803,
+          "vth": -0.4457437122214454,
+          "vdsat": -0.08560705226126353,
+          "gm": 6.600668029865461e-05,
+          "gds": 1.43094381828404e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -3.131621414458074e-06,
+          "vgs": -0.3919204107836853,
+          "vds": -0.3955934465795936,
+          "vbs": 0.0,
+          "vgd": 0.00367303579590833,
+          "vth": -0.4457303177348839,
+          "vdsat": -0.08434432129066204,
+          "gm": 6.280775076312633e-05,
+          "gds": 1.298746864663945e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -3.131621414458074e-06,
+          "vgs": -0.3919204107836853,
+          "vds": -0.3955934465795936,
+          "vbs": 0.0,
+          "vgd": 0.00367303579590833,
+          "vth": -0.4457303177348839,
+          "vdsat": -0.08434432129066204,
+          "gm": 6.280775076312633e-05,
+          "gds": 1.298746864663945e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -3.126848137754827e-06,
+          "vgs": -0.3919204107836853,
+          "vds": -0.3919204107836853,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457318562338911,
+          "vdsat": -0.08434386587758524,
+          "gm": 6.272335807862001e-05,
+          "gds": 1.303320754926053e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -3.126848137754827e-06,
+          "vgs": -0.3919204107836853,
+          "vds": -0.3919204107836853,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457318562338911,
+          "vdsat": -0.08434386587758524,
+          "gm": 6.272335807862001e-05,
+          "gds": 1.303320754926053e-06,
+          "region": 3.0
+        },
+        "GMSQRPM1": {
+          "ids": -1.608167219793291e-05,
+          "vgs": -0.4920031900248521,
+          "vds": -0.3784848913947809,
+          "vbs": 0.0,
+          "vgd": -0.1135182986300712,
+          "vth": -0.4457626252316175,
+          "vdsat": -0.1336353751332149,
+          "gm": 0.0002060722588380093,
+          "gds": 5.510342102175536e-06,
+          "region": 2.0
+        },
+        "GMSQRPM0": {
+          "ids": -1.608167219793291e-05,
+          "vgs": -0.4920031900248521,
+          "vds": -0.3784848913947809,
+          "vbs": 0.0,
+          "vgd": -0.1135182986300712,
+          "vth": -0.4457626252316175,
+          "vdsat": -0.1336353751332149,
+          "gm": 0.0002060722588380093,
+          "gds": 5.510342102175536e-06,
+          "region": 2.0
+        },
+        "GMSQRPD1": {
+          "ids": -1.665118488549785e-05,
+          "vgs": -0.4920031900248521,
+          "vds": -0.4920031900248521,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457158917337147,
+          "vdsat": -0.1336564728519052,
+          "gm": 0.0002122352413426828,
+          "gds": 4.664929206749026e-06,
+          "region": 2.0
+        },
+        "GMSQRPD0": {
+          "ids": -1.665118488549785e-05,
+          "vgs": -0.4920031900248521,
+          "vds": -0.4920031900248521,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457158917337147,
+          "vdsat": -0.1336564728519052,
+          "gm": 0.0002122352413426828,
+          "gds": 4.664929206749026e-06,
+          "region": 2.0
+        },
+        "GMSQSTON0": {
+          "ids": 4.559265749273247e-09,
+          "vgs": 0.00171789982919178,
+          "vds": 0.3177643717050389,
+          "vbs": 0.0,
+          "vgd": -0.3160464718758471,
+          "vth": 0.4558179649624175,
+          "vdsat": 0.07910371934464373,
+          "gm": 1.212920563946746e-07,
+          "gds": 5.23702350187273e-09,
+          "region": 0.0
+        },
+        "GMSQSTOFF0": {
+          "ids": 1.616567572206562e-06,
+          "vgs": 0.4315151086052191,
+          "vds": 0.00171789982919178,
+          "vbs": 0.0,
+          "vgd": 0.4297972087760273,
+          "vth": 0.457017525351907,
+          "vdsat": 0.1321818968126384,
+          "gm": 1.595552958857872e-05,
+          "gds": 0.0009449821243832964,
+          "region": 3.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003378109150494296,
+          "vgs": 0.4453003066068745,
+          "vds": 0.6539309258200432,
+          "vbs": 0.0,
+          "vgd": -0.2086306192131687,
+          "vth": 0.4173061987981331,
+          "vdsat": 0.1883432611454466,
+          "gm": 0.002677565218277525,
+          "gds": 0.0002151161912667625,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {},
+        "GMSQSTL": {},
+        "GMSQSTPU": {},
+        "GMSQRR": {}
+      },
+      "iref_error_fraction": 0.08889430179861502,
+      "nominal_leg_error_fraction": [
+        0.08714348528180937,
+        0.08714348528180937
+      ],
+      "servo_leg_error_fraction": [
+        -0.0016078847266567386,
+        -0.0016078847266567386
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": false,
+      "same_route_ideal_gain_delta_dB": -1.4184277977816473,
+      "budget_mW": 10,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 3.737661994067622,
+        "14.0": 3.007776341974764,
+        "28.0": 2.8490945945157646,
+        "42.0": 2.702894459618775,
+        "55.0": 2.686151015261664
+      },
+      "excess_tilt_dB": -1.3123657080898814,
+      "power_margin_mW": 1.704665353381067,
+      "gain_and_power_pass": true
+    },
+    {
+      "case_id": "lpint_20_ss_native_direct_p",
+      "stage": "integration",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 16.247019041777477,
+      "rail_mW": {
+        "XVs:p": 7.9507764150096545,
+        "XVcm:p": 5.697897333141925e-08,
+        "XVb:p": 0.000512793729405313,
+        "GFVDD:p": 8.295729132033669,
+        "GMSAVE0:p": 8.050322120316683e-08,
+        "GMSAVE1:p": 8.050322120316683e-08,
+        "GMSAVE2:p": 8.050322120316683e-08,
+        "GMSAVE3:p": 8.050322120316683e-08,
+        "GMSAVE4:p": 8.050322120316683e-08,
+        "GMSAVE5:p": 8.050322120316683e-08,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 8.050322120242042e-08,
+        "GMSBVE1:p": 8.050322120242044e-08,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -22.247310308031963,
+      "Hmatrix_56GHz": [
+        [
+          0.023588955829392293,
+          0.019741321262862238
+        ],
+        [
+          -0.025352410086538272,
+          -0.03996675492074875
+        ],
+        [
+          -0.025352410086580776,
+          -0.039966754920814994
+        ],
+        [
+          0.023588955829352498,
+          0.01974132126282984
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        8.229875114729168e-14,
+        9.864331573794516e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -3.560084731078895,
+      "input_Y_56GHz_S": [
+        [
+          0.0051689421950374586,
+          0.003924197693556784
+        ],
+        [
+          -5.843827243992054e-06,
+          1.4007253315709256e-05
+        ],
+        [
+          -5.843827243991723e-06,
+          1.400725331570936e-05
+        ],
+        [
+          0.005168942195035887,
+          0.003924197693556954
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007328434825956089,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023153875038150196,
+          "region": 1.0,
+          "ids_A": 0.0002967676731971855,
+          "gm_S": 0.00193285403200779
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023153875038150196,
+          "region": 1.0,
+          "ids_A": 0.0002967676731971855,
+          "gm_S": 0.00193285403200779
+        }
+      },
+      "added_mW_vs_r3": 8.460944607512182,
+      "legs_mA": [
+        4.729074265707424,
+        4.729074265707424
+      ],
+      "iref_uA": 338.33501520246995,
+      "replica_minus_ref_mV": 0.2416990569290567,
+      "replica_resistor_error_fraction": -0.0015462725061667097,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.6346288215876417,
+      "OTA_input_drain_diff_mV": -3.6729571395267,
+      "bias_OP": {
+        "GMSQON20": {
+          "ids": 1.330321898830877e-05,
+          "vgs": 0.3798037712563496,
+          "vds": 0.4453003097680724,
+          "vbs": 0.0,
+          "vgd": -0.06549653851172282,
+          "vth": 0.46565956103763,
+          "vdsat": 0.09043364636159669,
+          "gm": 0.0002553526612170872,
+          "gds": 3.84745822899131e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 6.253644588400588e-06,
+          "vgs": 0.3796817935630664,
+          "vds": 0.1440720810313476,
+          "vbs": -0.2740074294133926,
+          "vgd": 0.2356097125317188,
+          "vth": 0.4960190697188314,
+          "vdsat": 0.08241237786212137,
+          "gm": 0.000134334764067104,
+          "gds": 6.093830109204896e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 6.263194971312861e-06,
+          "vgs": 0.3799234926199954,
+          "vds": 0.140399123891821,
+          "vbs": -0.2740074294133926,
+          "vgd": 0.2395243687281745,
+          "vth": 0.4960242761181963,
+          "vdsat": 0.08246811681448585,
+          "gm": 0.0001343830229629976,
+          "gds": 6.38951478067949e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.251676969411781e-05,
+          "vgs": 0.3798037712563496,
+          "vds": 0.2740074294133926,
+          "vbs": 0.0,
+          "vgd": 0.105796341842957,
+          "vth": 0.4657967393726302,
+          "vdsat": 0.09038736140388506,
+          "gm": 0.0002408685167004687,
+          "gds": 5.628851096022583e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.3036156950003e-05,
+          "vgs": 0.3798037712563496,
+          "vds": 0.3798037712563496,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4657120376007406,
+          "vdsat": 0.0904158984427878,
+          "gm": 0.0002505095236360129,
+          "gds": 4.346299599326876e-06,
+          "region": 3.0
+        },
+        "GMSQRNM9": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM8": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM7": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM6": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM5": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM4": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM3": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM2": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM1": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNM0": {
+          "ids": 3.38330711001801e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.6536892229764589,
+          "vbs": 0.0,
+          "vgd": -0.2221741143708893,
+          "vth": 0.4655064530701749,
+          "vdsat": 0.1114851239615991,
+          "gm": 0.0005137928418604348,
+          "gds": 6.401420561882512e-06,
+          "region": 3.0
+        },
+        "GMSQRNS3": {
+          "ids": 8.324405977982968e-06,
+          "vgs": 0.3671174836051407,
+          "vds": 0.2535991849744679,
+          "vbs": -0.06439762500042892,
+          "vgd": 0.1135182986306729,
+          "vth": 0.4730653341580108,
+          "vdsat": 0.08452645109459281,
+          "gm": 0.0001727729436335964,
+          "gds": 4.074066118660897e-06,
+          "region": 3.0
+        },
+        "GMSQRNS2": {
+          "ids": 8.324405977982968e-06,
+          "vgs": 0.3671174836051407,
+          "vds": 0.2535991849744679,
+          "vbs": -0.06439762500042892,
+          "vgd": 0.1135182986306729,
+          "vth": 0.4730653341580108,
+          "vdsat": 0.08452645109459281,
+          "gm": 0.0001727729436335964,
+          "gds": 4.074066118660897e-06,
+          "region": 3.0
+        },
+        "GMSQRNS1": {
+          "ids": 8.324405977982968e-06,
+          "vgs": 0.3671174836051407,
+          "vds": 0.2535991849744679,
+          "vbs": -0.06439762500042892,
+          "vgd": 0.1135182986306729,
+          "vth": 0.4730653341580108,
+          "vdsat": 0.08452645109459281,
+          "gm": 0.0001727729436335964,
+          "gds": 4.074066118660897e-06,
+          "region": 3.0
+        },
+        "GMSQRNS0": {
+          "ids": 8.324405977982968e-06,
+          "vgs": 0.3671174836051407,
+          "vds": 0.2535991849744679,
+          "vbs": -0.06439762500042892,
+          "vgd": 0.1135182986306729,
+          "vth": 0.4730653341580108,
+          "vdsat": 0.08452645109459281,
+          "gm": 0.0001727729436335964,
+          "gds": 4.074066118660897e-06,
+          "region": 3.0
+        },
+        "GMSQRND0": {
+          "ids": 3.216311486973615e-05,
+          "vgs": 0.4315151086055696,
+          "vds": 0.4315151086055696,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4656839844294261,
+          "vdsat": 0.1113836589279373,
+          "gm": 0.0004906552418008439,
+          "gds": 9.041281821764225e-06,
+          "region": 3.0
+        },
+        "GMSQOP22": {
+          "ids": -3.325836669156779e-06,
+          "vgs": -0.3955934466947865,
+          "vds": -0.3646996902319277,
+          "vbs": 0.0,
+          "vgd": -0.03089375646285886,
+          "vth": -0.4457437122227838,
+          "vdsat": -0.08560705230136025,
+          "gm": 6.60066803447142e-05,
+          "gds": 1.430943826390863e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -3.325836669156779e-06,
+          "vgs": -0.3955934466947865,
+          "vds": -0.3646996902319277,
+          "vbs": 0.0,
+          "vgd": -0.03089375646285886,
+          "vth": -0.4457437122227838,
+          "vdsat": -0.08560705230136025,
+          "gm": 6.60066803447142e-05,
+          "gds": 1.430943826390863e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -3.325836669156779e-06,
+          "vgs": -0.3955934466947865,
+          "vds": -0.3646996902319277,
+          "vbs": 0.0,
+          "vgd": -0.03089375646285886,
+          "vth": -0.4457437122227838,
+          "vdsat": -0.08560705230136025,
+          "gm": 6.60066803447142e-05,
+          "gds": 1.430943826390863e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -3.325836669156779e-06,
+          "vgs": -0.3955934466947865,
+          "vds": -0.3646996902319277,
+          "vbs": 0.0,
+          "vgd": -0.03089375646285886,
+          "vth": -0.4457437122227838,
+          "vdsat": -0.08560705230136025,
+          "gm": 6.60066803447142e-05,
+          "gds": 1.430943826390863e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -3.131626362018629e-06,
+          "vgs": -0.3919204895552599,
+          "vds": -0.3955934466947865,
+          "vbs": 0.0,
+          "vgd": 0.003672957139526645,
+          "vth": -0.4457303177349335,
+          "vdsat": -0.08434434795129853,
+          "gm": 6.280783404528947e-05,
+          "gds": 1.298748672202313e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -3.131626362018629e-06,
+          "vgs": -0.3919204895552599,
+          "vds": -0.3955934466947865,
+          "vbs": 0.0,
+          "vgd": 0.003672957139526645,
+          "vth": -0.4457303177349335,
+          "vdsat": -0.08434434795129853,
+          "gm": 6.280783404528947e-05,
+          "gds": 1.298748672202313e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -3.126853181303815e-06,
+          "vgs": -0.3919204895552599,
+          "vds": -0.3919204895552599,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457318562005906,
+          "vdsat": -0.08434389254880763,
+          "gm": 6.272344308733417e-05,
+          "gds": 1.303322471746705e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -3.126853181303815e-06,
+          "vgs": -0.3919204895552599,
+          "vds": -0.3919204895552599,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457318562005906,
+          "vdsat": -0.08434389254880763,
+          "gm": 6.272344308733417e-05,
+          "gds": 1.303322471746705e-06,
+          "region": 3.0
+        },
+        "GMSQRPM1": {
+          "ids": -1.608167219798262e-05,
+          "vgs": -0.4920031900251033,
+          "vds": -0.3784848913944304,
+          "vbs": 0.0,
+          "vgd": -0.1135182986306729,
+          "vth": -0.4457626252316176,
+          "vdsat": -0.1336353751333664,
+          "gm": 0.0002060722588383796,
+          "gds": 5.510342102195005e-06,
+          "region": 2.0
+        },
+        "GMSQRPM0": {
+          "ids": -1.608167219798262e-05,
+          "vgs": -0.4920031900251033,
+          "vds": -0.3784848913944304,
+          "vbs": 0.0,
+          "vgd": -0.1135182986306729,
+          "vth": -0.4457626252316176,
+          "vdsat": -0.1336353751333664,
+          "gm": 0.0002060722588383796,
+          "gds": 5.510342102195005e-06,
+          "region": 2.0
+        },
+        "GMSQRPD1": {
+          "ids": -1.665118488555221e-05,
+          "vgs": -0.4920031900251033,
+          "vds": -0.4920031900251033,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457158917337146,
+          "vdsat": -0.1336564728520568,
+          "gm": 0.000212235241343097,
+          "gds": 4.66492920675982e-06,
+          "region": 2.0
+        },
+        "GMSQRPD0": {
+          "ids": -1.665118488555221e-05,
+          "vgs": -0.4920031900251033,
+          "vds": -0.4920031900251033,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4457158917337146,
+          "vdsat": -0.1336564728520568,
+          "gm": 0.000212235241343097,
+          "gds": 4.66492920675982e-06,
+          "region": 2.0
+        },
+        "GMSQSTON0": {
+          "ids": 4.559265749279928e-09,
+          "vgs": 0.001717899829257878,
+          "vds": 0.3177643717047874,
+          "vbs": 0.0,
+          "vgd": -0.3160464718755296,
+          "vth": 0.4558179649624184,
+          "vdsat": 0.07910371934464415,
+          "gm": 1.212920563948532e-07,
+          "gds": 5.237023501882135e-09,
+          "region": 0.0
+        },
+        "GMSQSTOFF0": {
+          "ids": 1.616567572274626e-06,
+          "vgs": 0.4315151086055696,
+          "vds": 0.001717899829257878,
+          "vbs": 0.0,
+          "vgd": 0.4297972087763118,
+          "vth": 0.4570175253519068,
+          "vdsat": 0.1321818968128158,
+          "gm": 1.5955529589218e-05,
+          "gds": 0.0009449821243860265,
+          "region": 3.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003378109225314549,
+          "vgs": 0.4453003097680724,
+          "vds": 0.653930922033388,
+          "vbs": 0.0,
+          "vgd": -0.2086306122653156,
+          "vth": 0.4173061989338104,
+          "vdsat": 0.1883432627787986,
+          "gm": 0.002677565246992434,
+          "gds": 0.0002151161951018063,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {},
+        "GMSQSTL": {},
+        "GMSQSTPU": {},
+        "GMSQRR": {}
+      },
+      "iref_error_fraction": 0.08889430180105284,
+      "nominal_leg_error_fraction": [
+        0.08714350935802861,
+        0.08714350935802861
+      ],
+      "servo_leg_error_fraction": [
+        -0.0016078626181884603,
+        -0.0016078626181884603
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": false,
+      "same_route_ideal_gain_delta_dB": -1.4306319313651814,
+      "budget_mW": 14,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 3.458306700049599,
+        "14.0": 2.822155676296199,
+        "28.0": 2.489104196438526,
+        "42.0": 2.440493809187788,
+        "55.0": 2.4709547475717777
+      },
+      "excess_tilt_dB": -1.4226752602821422,
+      "power_margin_mW": 5.539055392487818,
+      "gain_and_power_pass": true
+    },
+    {
+      "case_id": "lpint_22_tt_native_direct_p",
+      "stage": "integration",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 18.943464912770878,
+      "rail_mW": {
+        "XVs:p": 10.07644723151976,
+        "XVcm:p": 5.114062693294893e-08,
+        "XVb:p": 0.0001958274981886674,
+        "GFVDD:p": 8.866818701595468,
+        "GMSAVE0:p": 3.876271054896292e-07,
+        "GMSAVE1:p": 3.876271054896292e-07,
+        "GMSAVE2:p": 3.876271054896292e-07,
+        "GMSAVE3:p": 3.876271054896292e-07,
+        "GMSAVE4:p": 3.876271054896292e-07,
+        "GMSAVE5:p": 3.876271054896292e-07,
+        "GMSAVE6:p": 3.876271054896292e-07,
+        "GMSAVE7:p": 3.876271054896292e-07,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -21.956754341981124,
+      "Hmatrix_56GHz": [
+        [
+          0.024218666252364962,
+          0.02208732142373105
+        ],
+        [
+          -0.02830402682173824,
+          -0.03802992011411508
+        ],
+        [
+          -0.028304026821765325,
+          -0.03802992011415399
+        ],
+        [
+          0.02421866625234149,
+          0.02208732142370829
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        5.0556780983868066e-14,
+        6.166595012402354e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -1.5375628423221774,
+      "input_Y_56GHz_S": [
+        [
+          0.005306661306132424,
+          0.0037026313247084117
+        ],
+        [
+          -5.391657619419521e-06,
+          9.95703465442846e-06
+        ],
+        [
+          -5.391657619419354e-06,
+          9.957034654428627e-06
+        ],
+        [
+          0.005306661306131464,
+          0.003702631324708572
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006973888490242762,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1005025127124948,
+          "region": 2.0,
+          "ids_A": 0.000357863392874943,
+          "gm_S": 0.002635967349203148
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1005025127124948,
+          "region": 2.0,
+          "ids_A": 0.000357863392874943,
+          "gm_S": 0.002635967349203148
+        }
+      },
+      "added_mW_vs_r3": 8.866582432470825,
+      "legs_mA": [
+        4.547078267617175,
+        4.547078267617175
+      ],
+      "iref_uA": 324.78388178847337,
+      "replica_minus_ref_mV": -0.009431143490390426,
+      "replica_resistor_error_fraction": 6.285327457221451e-05,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.6820778198845545,
+      "OTA_input_drain_diff_mV": 0.14828159606750102,
+      "bias_OP": {
+        "GMSQON20": {
+          "ids": 1.504095333182806e-05,
+          "vgs": 0.4044573897247276,
+          "vds": 0.4092701345380378,
+          "vbs": 0.0,
+          "vgd": -0.004812744813310177,
+          "vth": 0.4691220034999169,
+          "vdsat": 0.0789841372294465,
+          "gm": 0.0003147627331328879,
+          "gds": 5.092043153040134e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 7.328797365065554e-06,
+          "vgs": 0.4112502836800891,
+          "vds": 0.1367652297392597,
+          "vbs": -0.3386995629336362,
+          "vgd": 0.2744850539408294,
+          "vth": 0.5019215549747522,
+          "vdsat": 0.0714443972961616,
+          "gm": 0.0001737327102371929,
+          "gds": 7.70519075695181e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 7.328301052116553e-06,
+          "vgs": 0.4112408525365988,
+          "vds": 0.1369135113353273,
+          "vbs": -0.3386995629336362,
+          "vgd": 0.2743273412012715,
+          "vth": 0.501921276992022,
+          "vdsat": 0.07144193388780078,
+          "gm": 0.0001737306924845327,
+          "gds": 7.69186490565077e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.465708713517859e-05,
+          "vgs": 0.4044573897247276,
+          "vds": 0.3386995629336362,
+          "vbs": 0.0,
+          "vgd": 0.06575782679109143,
+          "vth": 0.4691969074445511,
+          "vdsat": 0.07895381435671066,
+          "gm": 0.0003072424517092463,
+          "gds": 5.854620419555993e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.5016394413271e-05,
+          "vgs": 0.4044573897247276,
+          "vds": 0.4044573897247276,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4691271128153947,
+          "vdsat": 0.07898206611143874,
+          "gm": 0.0003142855809909773,
+          "gds": 5.136293076307877e-06,
+          "region": 3.0
+        },
+        "GMSQRNM9": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM8": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM7": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM6": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM5": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM4": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM3": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM2": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM1": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNM0": {
+          "ids": 3.247823656317626e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.7499498466137253,
+          "vbs": 0.0,
+          "vgd": -0.3092869145577296,
+          "vth": 0.4687701241529807,
+          "vdsat": 0.09407196444960934,
+          "gm": 0.0005573484839470805,
+          "gds": 6.043404447400717e-06,
+          "region": 3.0
+        },
+        "GMSQRNS3": {
+          "ids": 7.656908138620508e-06,
+          "vgs": 0.3814290462795043,
+          "vds": 0.3422044089455509,
+          "vbs": -0.05923388577649141,
+          "vgd": 0.03922463733395343,
+          "vth": 0.4750734226600851,
+          "vdsat": 0.07010583671841449,
+          "gm": 0.0001845604502907118,
+          "gds": 3.161748896085463e-06,
+          "region": 3.0
+        },
+        "GMSQRNS2": {
+          "ids": 7.656908138620508e-06,
+          "vgs": 0.3814290462795043,
+          "vds": 0.3422044089455509,
+          "vbs": -0.05923388577649141,
+          "vgd": 0.03922463733395343,
+          "vth": 0.4750734226600851,
+          "vdsat": 0.07010583671841449,
+          "gm": 0.0001845604502907118,
+          "gds": 3.161748896085463e-06,
+          "region": 3.0
+        },
+        "GMSQRNS1": {
+          "ids": 7.656908138620508e-06,
+          "vgs": 0.3814290462795043,
+          "vds": 0.3422044089455509,
+          "vbs": -0.05923388577649141,
+          "vgd": 0.03922463733395343,
+          "vth": 0.4750734226600851,
+          "vdsat": 0.07010583671841449,
+          "gm": 0.0001845604502907118,
+          "gds": 3.161748896085463e-06,
+          "region": 3.0
+        },
+        "GMSQRNS0": {
+          "ids": 7.656908138620508e-06,
+          "vgs": 0.3814290462795043,
+          "vds": 0.3422044089455509,
+          "vbs": -0.05923388577649141,
+          "vgd": 0.03922463733395343,
+          "vth": 0.4750734226600851,
+          "vdsat": 0.07010583671841449,
+          "gm": 0.0001845604502907118,
+          "gds": 3.161748896085463e-06,
+          "region": 3.0
+        },
+        "GMSQRND0": {
+          "ids": 3.023311046238797e-05,
+          "vgs": 0.4406629320559957,
+          "vds": 0.4406629320559957,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4690981305343661,
+          "vdsat": 0.09387973498932661,
+          "gm": 0.0005232422529366563,
+          "gds": 9.049808547082678e-06,
+          "region": 3.0
+        },
+        "GMSQOP22": {
+          "ids": -3.760251354270218e-06,
+          "vgs": -0.4243869257310366,
+          "vds": -0.4907298654619622,
+          "vbs": 0.0,
+          "vgd": 0.06634293973092564,
+          "vth": -0.4633189689365805,
+          "vdsat": -0.07000399390160383,
+          "gm": 8.560575209855128e-05,
+          "gds": 1.607796032659795e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -3.760251354270218e-06,
+          "vgs": -0.4243869257310366,
+          "vds": -0.4907298654619622,
+          "vbs": 0.0,
+          "vgd": 0.06634293973092564,
+          "vth": -0.4633189689365805,
+          "vdsat": -0.07000399390160383,
+          "gm": 8.560575209855128e-05,
+          "gds": 1.607796032659795e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -3.760251354270218e-06,
+          "vgs": -0.4243869257310366,
+          "vds": -0.4907298654619622,
+          "vbs": 0.0,
+          "vgd": 0.06634293973092564,
+          "vth": -0.4633189689365805,
+          "vdsat": -0.07000399390160383,
+          "gm": 8.560575209855128e-05,
+          "gds": 1.607796032659795e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -3.760251354270218e-06,
+          "vgs": -0.4243869257310366,
+          "vds": -0.4907298654619622,
+          "vbs": 0.0,
+          "vgd": 0.06634293973092564,
+          "vth": -0.4633189689365805,
+          "vdsat": -0.07000399390160383,
+          "gm": 8.560575209855128e-05,
+          "gds": 1.607796032659795e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -3.66415834595515e-06,
+          "vgs": -0.4245352073271041,
+          "vds": -0.4243869257310366,
+          "vbs": 0.0,
+          "vgd": -0.0001482815960675565,
+          "vth": -0.4633688196033359,
+          "vdsat": -0.07004079261833826,
+          "gm": 8.372655397166477e-05,
+          "gds": 1.675804291906265e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -3.66415834595515e-06,
+          "vgs": -0.4245352073271041,
+          "vds": -0.4243869257310366,
+          "vbs": 0.0,
+          "vgd": -0.0001482815960675565,
+          "vth": -0.4633688196033359,
+          "vdsat": -0.07004079261833826,
+          "gm": 8.372655397166477e-05,
+          "gds": 1.675804291906265e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -3.664406452905544e-06,
+          "vgs": -0.4245352073271041,
+          "vds": -0.4245352073271041,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633687082405175,
+          "vdsat": -0.07004082988445735,
+          "gm": 8.373140925449625e-05,
+          "gds": 1.675635112166235e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -3.664406452905544e-06,
+          "vgs": -0.4245352073271041,
+          "vds": -0.4245352073271041,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633687082405175,
+          "vdsat": -0.07004082988445735,
+          "gm": 8.373140925449625e-05,
+          "gds": 1.675635112166235e-06,
+          "region": 3.0
+        },
+        "GMSQRPM1": {
+          "ids": -1.511666050577673e-05,
+          "vgs": -0.4985617052779577,
+          "vds": -0.4593370679440043,
+          "vbs": 0.0,
+          "vgd": -0.03922463733395343,
+          "vth": -0.4633621391969569,
+          "vdsat": -0.1060390708911159,
+          "gm": 0.000231015651396774,
+          "gds": 5.149968315935445e-06,
+          "region": 2.0
+        },
+        "GMSQRPM0": {
+          "ids": -1.511666050577673e-05,
+          "vgs": -0.4985617052779577,
+          "vds": -0.4593370679440043,
+          "vbs": 0.0,
+          "vgd": -0.03922463733395343,
+          "vth": -0.4633621391969569,
+          "vdsat": -0.1060390708911159,
+          "gm": 0.000231015651396774,
+          "gds": 5.149968315935445e-06,
+          "region": 2.0
+        },
+        "GMSQRPD1": {
+          "ids": -1.531413458191748e-05,
+          "vgs": -0.4985617052779577,
+          "vds": -0.4985617052779577,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633329061804761,
+          "vdsat": -0.1060537435591884,
+          "gm": 0.0002333943568495372,
+          "gds": 4.967153261492099e-06,
+          "region": 2.0
+        },
+        "GMSQRPD0": {
+          "ids": -1.531413458191748e-05,
+          "vgs": -0.4985617052779577,
+          "vds": -0.4985617052779577,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633329061804761,
+          "vdsat": -0.1060537435591884,
+          "gm": 0.0002333943568495372,
+          "gds": 4.967153261492099e-06,
+          "region": 2.0
+        },
+        "GMSQSTON0": {
+          "ids": 5.535080395961002e-10,
+          "vgs": 0.001654554906682741,
+          "vds": 0.4014087091364373,
+          "vbs": 0.0,
+          "vgd": -0.3997541542297545,
+          "vth": 0.4491995362250966,
+          "vdsat": 0.06523722925935613,
+          "gm": 1.762382722367431e-08,
+          "gds": 7.259790424646782e-10,
+          "region": 0.0
+        },
+        "GMSQSTOFF0": {
+          "ids": 1.796695959429348e-06,
+          "vgs": 0.4406629320559957,
+          "vds": 0.001654554906682741,
+          "vbs": 0.0,
+          "vgd": 0.439008377149313,
+          "vth": 0.4522154711885481,
+          "vdsat": 0.1148541655198554,
+          "gm": 1.959955041796801e-05,
+          "gds": 0.001091706029906457,
+          "region": 3.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003248039571437119,
+          "vgs": 0.4092701345380378,
+          "vds": 0.7499404154702349,
+          "vbs": 0.0,
+          "vgd": -0.3406702809321971,
+          "vth": 0.3830208922456341,
+          "vdsat": 0.1580820082812151,
+          "gm": 0.002993957155053351,
+          "gds": 0.000248850283832511,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {},
+        "GMSQSTL": {},
+        "GMSQSTPU": {},
+        "GMSQRR": {}
+      },
+      "iref_error_fraction": 0.04528145862956956,
+      "nominal_leg_error_fraction": [
+        0.045305348877511475,
+        0.045305348877511475
+      ],
+      "servo_leg_error_fraction": [
+        2.2855325467308063e-05,
+        2.2855325467308063e-05
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": false,
+      "same_route_ideal_gain_delta_dB": -1.083714616143252,
+      "budget_mW": 10,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 3.9388857204607604,
+        "14.0": 3.155301507886669,
+        "28.0": 2.908425998319242,
+        "42.0": 2.6501294734365426,
+        "55.0": 2.5470622896458806
+      },
+      "excess_tilt_dB": -1.8430485034124025,
+      "power_margin_mW": 1.1334175675291753,
+      "gain_and_power_pass": true
+    },
+    {
+      "case_id": "lpint_24_tt_native_direct_p",
+      "stage": "integration",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 19.119724366767876,
+      "rail_mW": {
+        "XVs:p": 10.252706686341526,
+        "XVcm:p": 5.1954719042328596e-08,
+        "XVb:p": 0.0001958223778452988,
+        "GFVDD:p": 8.866818705076957,
+        "GMSAVE0:p": 3.876271054885778e-07,
+        "GMSAVE1:p": 3.876271054885778e-07,
+        "GMSAVE2:p": 3.876271054885778e-07,
+        "GMSAVE3:p": 3.876271054885778e-07,
+        "GMSAVE4:p": 3.876271054885778e-07,
+        "GMSAVE5:p": 3.876271054885778e-07,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 3.876271054867977e-07,
+        "GMSBVE1:p": 3.876271054867977e-07,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -19.765509992739712,
+      "Hmatrix_56GHz": [
+        [
+          0.03377484550801853,
+          0.027554286782081258
+        ],
+        [
+          -0.03395267659725084,
+          -0.049696980261237395
+        ],
+        [
+          -0.03395267659730668,
+          -0.04969698026131504
+        ],
+        [
+          0.033774845507964,
+          0.02755428678203906
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        1.1036310754164447e-13,
+        1.198451060613337e-13
+      ],
+      "Hdd_56_over_7GHz_dB": -3.311012738504098,
+      "input_Y_56GHz_S": [
+        [
+          0.00531071913293328,
+          0.0037016186922941676
+        ],
+        [
+          -4.929420344189802e-06,
+          1.6275165316239917e-05
+        ],
+        [
+          -4.929420344189328e-06,
+          1.6275165316240216e-05
+        ],
+        [
+          0.005310719132931677,
+          0.00370161869229453
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006990252969776553,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.09626713739349321,
+          "region": 2.0,
+          "ids_A": 0.0003566642864810462,
+          "gm_S": 0.002625559251172087
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.09626713739349321,
+          "region": 2.0,
+          "ids_A": 0.0003566642864810462,
+          "gm_S": 0.002625559251172087
+        }
+      },
+      "added_mW_vs_r3": 9.042841886467823,
+      "legs_mA": [
+        4.547078269645108,
+        4.547078269645104
+      ],
+      "iref_uA": 324.78388196996235,
+      "replica_minus_ref_mV": -0.009431117856784077,
+      "replica_resistor_error_fraction": 6.285310370350247e-05,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.6820778197157651,
+      "OTA_input_drain_diff_mV": 0.14828159346569336,
+      "bias_OP": {
+        "GMSQON20": {
+          "ids": 1.504095333210333e-05,
+          "vgs": 0.4044573897247274,
+          "vds": 0.4092701345922177,
+          "vbs": 0.0,
+          "vgd": -0.004812744867490282,
+          "vth": 0.4691220034998592,
+          "vdsat": 0.07898413722947002,
+          "gm": 0.0003147627331382331,
+          "gds": 5.092043152547282e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 7.328797360270551e-06,
+          "vgs": 0.4112502836457481,
+          "vds": 0.1367652297895162,
+          "vbs": -0.3386995628841293,
+          "vgd": 0.2744850538562319,
+          "vth": 0.5019215549701107,
+          "vdsat": 0.07144439728802035,
+          "gm": 0.0001737327101489769,
+          "gds": 7.705190747187702e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 7.328301051754281e-06,
+          "vgs": 0.4112408525278913,
+          "vds": 0.136913511382982,
+          "vbs": -0.3386995628841293,
+          "vgd": 0.2743273411449094,
+          "vth": 0.5019212769873852,
+          "vdsat": 0.0714419338865782,
+          "gm": 0.0001737306924800909,
+          "gds": 7.6918649011241e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.465708713488918e-05,
+          "vgs": 0.4044573897247274,
+          "vds": 0.3386995628841293,
+          "vbs": 0.0,
+          "vgd": 0.06575782684059817,
+          "vth": 0.4691969074446039,
+          "vdsat": 0.07895381435668872,
+          "gm": 0.000307242451703524,
+          "gds": 5.854620420193297e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.501639441327094e-05,
+          "vgs": 0.4044573897247274,
+          "vds": 0.4044573897247274,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4691271128153947,
+          "vdsat": 0.07898206611143874,
+          "gm": 0.0003142855809909766,
+          "gds": 5.13629307630786e-06,
+          "region": 3.0
+        },
+        "GMSQRNM9": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM8": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM7": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM6": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM5": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM4": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM3": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM2": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM1": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNM0": {
+          "ids": 3.247823660400103e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.7499498465298774,
+          "vbs": 0.0,
+          "vgd": -0.3092869143995988,
+          "vth": 0.4687701241530816,
+          "vdsat": 0.09407196448392387,
+          "gm": 0.0005573484844324655,
+          "gds": 6.043404454491204e-06,
+          "region": 3.0
+        },
+        "GMSQRNS3": {
+          "ids": 7.656908145534478e-06,
+          "vgs": 0.3814290463215673,
+          "vds": 0.3422044088638713,
+          "vbs": -0.05923388580871136,
+          "vgd": 0.039224637457696,
+          "vth": 0.4750734226633577,
+          "vdsat": 0.07010583672848496,
+          "gm": 0.0001845604504252026,
+          "gds": 3.161748899426661e-06,
+          "region": 3.0
+        },
+        "GMSQRNS2": {
+          "ids": 7.656908145534478e-06,
+          "vgs": 0.3814290463215673,
+          "vds": 0.3422044088638713,
+          "vbs": -0.05923388580871136,
+          "vgd": 0.039224637457696,
+          "vth": 0.4750734226633577,
+          "vdsat": 0.07010583672848496,
+          "gm": 0.0001845604504252026,
+          "gds": 3.161748899426661e-06,
+          "region": 3.0
+        },
+        "GMSQRNS1": {
+          "ids": 7.656908145534478e-06,
+          "vgs": 0.3814290463215673,
+          "vds": 0.3422044088638713,
+          "vbs": -0.05923388580871136,
+          "vgd": 0.039224637457696,
+          "vth": 0.4750734226633577,
+          "vdsat": 0.07010583672848496,
+          "gm": 0.0001845604504252026,
+          "gds": 3.161748899426661e-06,
+          "region": 3.0
+        },
+        "GMSQRNS0": {
+          "ids": 7.656908145534478e-06,
+          "vgs": 0.3814290463215673,
+          "vds": 0.3422044088638713,
+          "vbs": -0.05923388580871136,
+          "vgd": 0.039224637457696,
+          "vth": 0.4750734226633577,
+          "vdsat": 0.07010583672848496,
+          "gm": 0.0001845604504252026,
+          "gds": 3.161748899426661e-06,
+          "region": 3.0
+        },
+        "GMSQRND0": {
+          "ids": 3.023311050186901e-05,
+          "vgs": 0.4406629321302786,
+          "vds": 0.4406629321302786,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4690981305342971,
+          "vdsat": 0.09387973502362328,
+          "gm": 0.0005232422534169951,
+          "gds": 9.049808556387763e-06,
+          "region": 3.0
+        },
+        "GMSQOP22": {
+          "ids": -3.760251354341534e-06,
+          "vgs": -0.4243869257328888,
+          "vds": -0.4907298654077823,
+          "vbs": 0.0,
+          "vgd": 0.06634293967489352,
+          "vth": -0.4633189689366213,
+          "vdsat": -0.07000399390225766,
+          "gm": 8.560575209978872e-05,
+          "gds": 1.607796032760286e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -3.760251354341534e-06,
+          "vgs": -0.4243869257328888,
+          "vds": -0.4907298654077823,
+          "vbs": 0.0,
+          "vgd": 0.06634293967489352,
+          "vth": -0.4633189689366213,
+          "vdsat": -0.07000399390225766,
+          "gm": 8.560575209978872e-05,
+          "gds": 1.607796032760286e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -3.760251354341534e-06,
+          "vgs": -0.4243869257328888,
+          "vds": -0.4907298654077823,
+          "vbs": 0.0,
+          "vgd": 0.06634293967489352,
+          "vth": -0.4633189689366213,
+          "vdsat": -0.07000399390225766,
+          "gm": 8.560575209978872e-05,
+          "gds": 1.607796032760286e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -3.760251354341534e-06,
+          "vgs": -0.4243869257328888,
+          "vds": -0.4907298654077823,
+          "vbs": 0.0,
+          "vgd": 0.06634293967489352,
+          "vth": -0.4633189689366213,
+          "vdsat": -0.07000399390225766,
+          "gm": 8.560575209978872e-05,
+          "gds": 1.607796032760286e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -3.66415834589558e-06,
+          "vgs": -0.4245352073263545,
+          "vds": -0.4243869257328888,
+          "vbs": 0.0,
+          "vgd": -0.0001482815934657489,
+          "vth": -0.4633688196033345,
+          "vdsat": -0.07004079261806839,
+          "gm": 8.372655397056413e-05,
+          "gds": 1.675804291879603e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -3.66415834589558e-06,
+          "vgs": -0.4245352073263545,
+          "vds": -0.4243869257328888,
+          "vbs": 0.0,
+          "vgd": -0.0001482815934657489,
+          "vth": -0.4633688196033345,
+          "vdsat": -0.07004079261806839,
+          "gm": 8.372655397056413e-05,
+          "gds": 1.675804291879603e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -3.664406452841606e-06,
+          "vgs": -0.4245352073263545,
+          "vds": -0.4245352073263545,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.463368708240518,
+          "vdsat": -0.0700408298841866,
+          "gm": 8.373140925331017e-05,
+          "gds": 1.67563511214254e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -3.664406452841606e-06,
+          "vgs": -0.4245352073263545,
+          "vds": -0.4245352073263545,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.463368708240518,
+          "vdsat": -0.0700408298841866,
+          "gm": 8.373140925331017e-05,
+          "gds": 1.67563511214254e-06,
+          "region": 3.0
+        },
+        "GMSQRPM1": {
+          "ids": -1.511666051678657e-05,
+          "vgs": -0.4985617053274174,
+          "vds": -0.4593370678697214,
+          "vbs": 0.0,
+          "vgd": -0.039224637457696,
+          "vth": -0.463362139197027,
+          "vdsat": -0.1060390709197403,
+          "gm": 0.000231015651498304,
+          "gds": 5.149968319410704e-06,
+          "region": 2.0
+        },
+        "GMSQRPM0": {
+          "ids": -1.511666051678657e-05,
+          "vgs": -0.4985617053274174,
+          "vds": -0.4593370678697214,
+          "vbs": 0.0,
+          "vgd": -0.039224637457696,
+          "vth": -0.463362139197027,
+          "vdsat": -0.1060390709197403,
+          "gm": 0.000231015651498304,
+          "gds": 5.149968319410704e-06,
+          "region": 2.0
+        },
+        "GMSQRPD1": {
+          "ids": -1.531413459367203e-05,
+          "vgs": -0.4985617053274174,
+          "vds": -0.4985617053274174,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633329061804528,
+          "vdsat": -0.1060537435878654,
+          "gm": 0.000233394356959343,
+          "gds": 4.96715326420274e-06,
+          "region": 2.0
+        },
+        "GMSQRPD0": {
+          "ids": -1.531413459367203e-05,
+          "vgs": -0.4985617053274174,
+          "vds": -0.4985617053274174,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633329061804528,
+          "vdsat": -0.1060537435878654,
+          "gm": 0.000233394356959343,
+          "gds": 4.96715326420274e-06,
+          "region": 2.0
+        },
+        "GMSQSTON0": {
+          "ids": 5.535080398950922e-10,
+          "vgs": 0.001654554925685375,
+          "vds": 0.4014087090869555,
+          "vbs": 0.0,
+          "vgd": -0.3997541541612701,
+          "vth": 0.4491995362254698,
+          "vdsat": 0.06523722925935878,
+          "gm": 1.76238272332209e-08,
+          "gds": 7.259790428808071e-10,
+          "region": 0.0
+        },
+        "GMSQSTOFF0": {
+          "ids": 1.796695981631074e-06,
+          "vgs": 0.4406629321302786,
+          "vds": 0.001654554925685375,
+          "vbs": 0.0,
+          "vgd": 0.4390083772045932,
+          "vth": 0.4522154711884048,
+          "vdsat": 0.1148541655583508,
+          "gm": 1.959955065084451e-05,
+          "gds": 0.001091706030586952,
+          "region": 3.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003248039572885751,
+          "vgs": 0.4092701345922177,
+          "vds": 0.7499404154120206,
+          "vbs": 0.0,
+          "vgd": -0.3406702808198029,
+          "vth": 0.3830208922486172,
+          "vdsat": 0.1580820083086173,
+          "gm": 0.002993957155677235,
+          "gds": 0.0002488502839036186,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {},
+        "GMSQSTL": {},
+        "GMSQSTPU": {},
+        "GMSQRR": {}
+      },
+      "iref_error_fraction": 0.045281459213672104,
+      "nominal_leg_error_fraction": [
+        0.045305349343703005,
+        0.04530534934370234
+      ],
+      "servo_leg_error_fraction": [
+        2.2855212651551327e-05,
+        2.2855212650663148e-05
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": false,
+      "same_route_ideal_gain_delta_dB": -1.0451702565414178,
+      "budget_mW": 14,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 3.71505755179842,
+        "14.0": 3.024668751236571,
+        "28.0": 2.5779707760020045,
+        "42.0": 2.432688663827159,
+        "55.0": 2.3643530143046028
+      },
+      "excess_tilt_dB": -1.9127943357732926,
+      "power_margin_mW": 4.957158113532177,
+      "gain_and_power_pass": true
+    },
+    {
+      "case_id": "lpint_26_ff_native_direct_p",
+      "stage": "integration",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 22.469770984060332,
+      "rail_mW": {
+        "XVs:p": 13.227292615754676,
+        "XVcm:p": 4.225318295450716e-08,
+        "XVb:p": 5.84590825142932e-05,
+        "GFVDD:p": 9.242406465715716,
+        "GMSAVE0:p": 1.675156779456339e-06,
+        "GMSAVE1:p": 1.675156779456339e-06,
+        "GMSAVE2:p": 1.675156779456339e-06,
+        "GMSAVE3:p": 1.675156779456339e-06,
+        "GMSAVE4:p": 1.675156779456339e-06,
+        "GMSAVE5:p": 1.675156779456339e-06,
+        "GMSAVE6:p": 1.675156779456339e-06,
+        "GMSAVE7:p": 1.675156779456339e-06,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -19.73444664296957,
+      "Hmatrix_56GHz": [
+        [
+          0.032026404382288966,
+          0.028932836295634187
+        ],
+        [
+          -0.03685541421496291,
+          -0.047786361466363475
+        ],
+        [
+          -0.03685541421491675,
+          -0.04778636146630347
+        ],
+        [
+          0.03202640438232886,
+          0.028932836295670922
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        -8.605616219625745e-14,
+        -9.674205880827458e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -1.4648922820803922,
+      "input_Y_56GHz_S": [
+        [
+          0.0054230865870342326,
+          0.003454860455366444
+        ],
+        [
+          -4.328524090002284e-06,
+          1.0902728363985846e-05
+        ],
+        [
+          -4.32852409000214e-06,
+          1.0902728363985839e-05
+        ],
+        [
+          0.00542308658703547,
+          0.0034548604553661043
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006902379033568346,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19121149374444837,
+          "region": 2.0,
+          "ids_A": 0.0004329523982215584,
+          "gm_S": 0.003461744744020283
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19121149374444832,
+          "region": 2.0,
+          "ids_A": 0.0004329523982215584,
+          "gm_S": 0.003461744744020283
+        }
+      },
+      "added_mW_vs_r3": 9.24232589519401,
+      "legs_mA": [
+        4.306285945454793,
+        4.306285945454793
+      ],
+      "iref_uA": 307.09750691230965,
+      "replica_minus_ref_mV": -0.2271014298595997,
+      "replica_resistor_error_fraction": 0.0016006692513886257,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.7159602937152272,
+      "OTA_input_drain_diff_mV": 3.5730213903383268,
+      "bias_OP": {
+        "GMSQON20": {
+          "ids": 1.663753901600047e-05,
+          "vgs": 0.4285864152681,
+          "vds": 0.3700167920388523,
+          "vbs": 0.0,
+          "vgd": 0.05856962322924769,
+          "vth": 0.473042145820211,
+          "vdsat": 0.0657075053481585,
+          "gm": 0.0003844561629772304,
+          "gds": 6.767473982029364e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 8.448234336679126e-06,
+          "vgs": 0.4407840205466783,
+          "vds": 0.1289796668238653,
+          "vbs": -0.4073369312598346,
+          "vgd": 0.311804353722813,
+          "vth": 0.5065904806907999,
+          "vdsat": 0.05904267220877677,
+          "gm": 0.0002221524450922567,
+          "gds": 9.932084030935363e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 8.432637645403413e-06,
+          "vgs": 0.4405569191168187,
+          "vds": 0.1325526882142036,
+          "vbs": -0.4073369312598346,
+          "vgd": 0.3080042309026151,
+          "vth": 0.5065821744165591,
+          "vdsat": 0.05897812211221003,
+          "gm": 0.0002221025280870689,
+          "gds": 9.566931176134589e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.688089481312523e-05,
+          "vgs": 0.4285864152681,
+          "vds": 0.4073369312598346,
+          "vbs": 0.0,
+          "vgd": 0.02124948400826537,
+          "vth": 0.4729933902812545,
+          "vdsat": 0.0657305270638662,
+          "gm": 0.0003895273113324753,
+          "gds": 6.321941346353073e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.701248449708943e-05,
+          "vgs": 0.4285864152681,
+          "vds": 0.4285864152681,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4729656257204534,
+          "vdsat": 0.06574365381649436,
+          "gm": 0.0003922492033707709,
+          "gds": 6.100073808991107e-06,
+          "region": 3.0
+        },
+        "GMSQRNM9": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM8": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM7": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM6": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM5": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM4": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM3": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM2": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM1": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNM0": {
+          "ids": 3.070970905448241e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.8481209518065129,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549408,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732322,
+          "gds": 5.893668767761992e-06,
+          "region": 3.0
+        },
+        "GMSQRNS3": {
+          "ids": 6.885443474976067e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476496,
+          "vbs": -0.05326586049842093,
+          "vgd": -0.03390985269449842,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.0548014229649812,
+          "gm": 0.0001972347289821879,
+          "gds": 2.682355523563277e-06,
+          "region": 3.0
+        },
+        "GMSQRNS2": {
+          "ids": 6.885443474976067e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476496,
+          "vbs": -0.05326586049842093,
+          "vgd": -0.03390985269449842,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.0548014229649812,
+          "gm": 0.0001972347289821879,
+          "gds": 2.682355523563277e-06,
+          "region": 3.0
+        },
+        "GMSQRNS1": {
+          "ids": 6.885443474976067e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476496,
+          "vbs": -0.05326586049842093,
+          "vgd": -0.03390985269449842,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.0548014229649812,
+          "gm": 0.0001972347289821879,
+          "gds": 2.682355523563277e-06,
+          "region": 3.0
+        },
+        "GMSQRNS0": {
+          "ids": 6.885443474976067e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476496,
+          "vbs": -0.05326586049842093,
+          "vgd": -0.03390985269449842,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.0548014229649812,
+          "gm": 0.0001972347289821879,
+          "gds": 2.682355523563277e-06,
+          "region": 3.0
+        },
+        "GMSQRND0": {
+          "ids": 2.78960392570063e-05,
+          "vgs": 0.4512295861515721,
+          "vds": 0.4512295861515721,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4729419229828889,
+          "vdsat": 0.07504194047192707,
+          "gm": 0.0005632449684219248,
+          "gds": 9.034117924672033e-06,
+          "region": 3.0
+        },
+        "GMSQOP22": {
+          "ids": -4.159381065743049e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611477,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351859,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.000112582825373547,
+          "gds": 1.915266612901201e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -4.159381065743049e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611477,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351859,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.000112582825373547,
+          "gds": 1.915266612901201e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -4.159381065743049e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611477,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351859,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.000112582825373547,
+          "gds": 1.915266612901201e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -4.159381065743049e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611477,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351859,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.000112582825373547,
+          "gds": 1.915266612901201e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -4.216307756558252e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4501103805259618,
+          "vbs": 0.0,
+          "vgd": -0.003573021390338327,
+          "vth": -0.4805953984692305,
+          "vdsat": -0.05483996305637913,
+          "gm": 0.000113291862372341,
+          "gds": 2.189445896204027e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -4.216307756558252e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4501103805259618,
+          "vbs": 0.0,
+          "vgd": -0.003573021390338327,
+          "vth": -0.4805953984692305,
+          "vdsat": -0.05483996305637913,
+          "gm": 0.000113291862372341,
+          "gds": 2.189445896204027e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -4.22410844176969e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4536834019163001,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805914199310942,
+          "vdsat": -0.05484136978154554,
+          "gm": 0.0001134656729349454,
+          "gds": 2.185737494115062e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -4.22410844176969e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4536834019163001,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805914199310942,
+          "vdsat": -0.05484136978154554,
+          "gm": 0.0001134656729349454,
+          "gds": 2.185737494115062e-06,
+          "region": 3.0
+        },
+        "GMSQRPM1": {
+          "ids": -1.394814052254703e-05,
+          "vgs": -0.5048605611539294,
+          "vds": -0.5387704138484279,
+          "vbs": 0.0,
+          "vgd": 0.03390985269449853,
+          "vth": -0.4805108870872414,
+          "vdsat": -0.07868514602608406,
+          "gm": 0.0002622012305220068,
+          "gds": 5.200454643640821e-06,
+          "region": 2.0
+        },
+        "GMSQRPM0": {
+          "ids": -1.394814052254703e-05,
+          "vgs": -0.5048605611539294,
+          "vds": -0.5387704138484279,
+          "vbs": 0.0,
+          "vgd": 0.03390985269449853,
+          "vth": -0.4805108870872414,
+          "vdsat": -0.07868514602608406,
+          "gm": 0.0002622012305220068,
+          "gds": 5.200454643640821e-06,
+          "region": 2.0
+        },
+        "GMSQRPD1": {
+          "ids": -1.377089023815988e-05,
+          "vgs": -0.5048605611539294,
+          "vds": -0.5048605611539294,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805484923676476,
+          "vdsat": -0.07866661769677082,
+          "gm": 0.0002596976877123091,
+          "gds": 5.304748986134036e-06,
+          "region": 2.0
+        },
+        "GMSQRPD0": {
+          "ids": -1.377089023815988e-05,
+          "vgs": -0.5048605611539294,
+          "vds": -0.5048605611539294,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805484923676476,
+          "vdsat": -0.07866661769677082,
+          "gm": 0.0002596976877123091,
+          "gds": 5.304748986134036e-06,
+          "region": 2.0
+        },
+        "GMSQSTON0": {
+          "ids": 1.773264765247214e-11,
+          "vgs": 0.001492723416816294,
+          "vds": 0.4851381796957979,
+          "vbs": 0.0,
+          "vgd": -0.4836454562789816,
+          "vth": 0.4416915710571891,
+          "vdsat": 0.05042078227359325,
+          "gm": 7.181731477952304e-10,
+          "gds": 2.959145345544111e-11,
+          "region": 0.0
+        },
+        "GMSQSTOFF0": {
+          "ids": 1.977022341097477e-06,
+          "vgs": 0.4512295861515721,
+          "vds": 0.001492723416816294,
+          "vbs": 0.0,
+          "vgd": 0.4497368627347558,
+          "vth": 0.4473839911896511,
+          "vdsat": 0.09700115349536323,
+          "gm": 2.407888193755847e-05,
+          "gds": 0.001334896899326124,
+          "region": 1.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003075889444627572,
+          "vgs": 0.3700167920388523,
+          "vds": 0.8478938503766533,
+          "vbs": 0.0,
+          "vgd": -0.477877058337801,
+          "vth": 0.3435841638490136,
+          "vdsat": 0.1258971196757287,
+          "gm": 0.003363325437257101,
+          "gds": 0.0003058339405166362,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {},
+        "GMSQSTL": {},
+        "GMSQSTPU": {},
+        "GMSQRR": {}
+      },
+      "iref_error_fraction": -0.011640207638543565,
+      "nominal_leg_error_fraction": [
+        -0.01004920794142694,
+        -0.01004920794142694
+      ],
+      "servo_leg_error_fraction": [
+        0.001609737374398179,
+        0.001609737374398179
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": true,
+      "same_route_ideal_gain_delta_dB": -0.8199073889605812,
+      "budget_mW": 10,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 4.19623161385289,
+        "14.0": 3.334769007693407,
+        "28.0": 2.975013473512006,
+        "42.0": 2.583146413156581,
+        "55.0": 2.384701760021899
+      },
+      "excess_tilt_dB": -2.440782647716865,
+      "power_margin_mW": 0.7576741048059894,
+      "gain_and_power_pass": true
+    },
+    {
+      "case_id": "lpint_28_ff_native_direct_p",
+      "stage": "integration",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 22.6624673201709,
+      "rail_mW": {
+        "XVs:p": 13.419988954711584,
+        "XVcm:p": 4.400376685761632e-08,
+        "XVb:p": 5.845448539679116e-05,
+        "GFVDD:p": 9.24240646571591,
+        "GMSAVE0:p": 1.6751567794535708e-06,
+        "GMSAVE1:p": 1.6751567794535708e-06,
+        "GMSAVE2:p": 1.6751567794535708e-06,
+        "GMSAVE3:p": 1.6751567794535708e-06,
+        "GMSAVE4:p": 1.6751567794535708e-06,
+        "GMSAVE5:p": 1.6751567794535708e-06,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 1.6751567794487634e-06,
+        "GMSBVE1:p": 1.6751567794487634e-06,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -17.46475172696284,
+      "Hmatrix_56GHz": [
+        [
+          0.0453471962874816,
+          0.0364121157197675
+        ],
+        [
+          -0.04565057049888762,
+          -0.06180762164142053
+        ],
+        [
+          -0.04565057049896097,
+          -0.061807621641512295
+        ],
+        [
+          0.045347196287410706,
+          0.03641211571971507
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        1.4424572647442346e-13,
+        1.4419715421709611e-13
+      ],
+      "Hdd_56_over_7GHz_dB": -3.355557970218524,
+      "input_Y_56GHz_S": [
+        [
+          0.005426608861424937,
+          0.003453300840526967
+        ],
+        [
+          -3.348483424332005e-06,
+          1.7805044333971644e-05
+        ],
+        [
+          -3.3484834243315353e-06,
+          1.7805044333971833e-05
+        ],
+        [
+          0.0054266088614233895,
+          0.0034533008405274617
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006938182414728119,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1869189531742101,
+          "region": 2.0,
+          "ids_A": 0.0004319075900613411,
+          "gm_S": 0.003454615951911956
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1869189531742101,
+          "region": 2.0,
+          "ids_A": 0.0004319075900613411,
+          "gm_S": 0.003454615951911956
+        }
+      },
+      "added_mW_vs_r3": 9.435022231304579,
+      "legs_mA": [
+        4.306285945454872,
+        4.306285945454872
+      ],
+      "iref_uA": 307.0975069123106,
+      "replica_minus_ref_mV": -0.22710142986193116,
+      "replica_resistor_error_fraction": 0.0016006692514050536,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.7159602937152627,
+      "OTA_input_drain_diff_mV": 3.5730213903383268,
+      "bias_OP": {
+        "GMSQON20": {
+          "ids": 1.663753901600048e-05,
+          "vgs": 0.4285864152681,
+          "vds": 0.3700167920388545,
+          "vbs": 0.0,
+          "vgd": 0.05856962322924553,
+          "vth": 0.473042145820211,
+          "vdsat": 0.0657075053481585,
+          "gm": 0.0003844561629772307,
+          "gds": 6.767473982029335e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 8.44823433667919e-06,
+          "vgs": 0.4407840205466784,
+          "vds": 0.1289796668238659,
+          "vbs": -0.4073369312598341,
+          "vgd": 0.3118043537228126,
+          "vth": 0.5065904806907999,
+          "vdsat": 0.05904267220877677,
+          "gm": 0.000222152445092258,
+          "gds": 9.932084030935395e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 8.432637645402933e-06,
+          "vgs": 0.4405569191168165,
+          "vds": 0.1325526882142042,
+          "vbs": -0.4073369312598341,
+          "vgd": 0.3080042309026123,
+          "vth": 0.5065821744165591,
+          "vdsat": 0.05897812211220928,
+          "gm": 0.0002221025280870593,
+          "gds": 9.566931176133982e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.688089481312522e-05,
+          "vgs": 0.4285864152681,
+          "vds": 0.4073369312598341,
+          "vbs": 0.0,
+          "vgd": 0.02124948400826593,
+          "vth": 0.4729933902812545,
+          "vdsat": 0.0657305270638662,
+          "gm": 0.0003895273113324753,
+          "gds": 6.321941346353078e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.701248449708943e-05,
+          "vgs": 0.4285864152681,
+          "vds": 0.4285864152681,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4729656257204534,
+          "vdsat": 0.06574365381649436,
+          "gm": 0.0003922492033707709,
+          "gds": 6.100073808991107e-06,
+          "region": 3.0
+        },
+        "GMSQRNM9": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM8": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM7": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM6": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM5": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM4": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM3": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM2": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM1": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNM0": {
+          "ids": 3.070970905448245e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.8481209518065125,
+          "vbs": 0.0,
+          "vgd": -0.3968913656549402,
+          "vth": 0.4724234550391633,
+          "vdsat": 0.0753510826012413,
+          "gm": 0.0006108622711732327,
+          "gds": 5.893668767762e-06,
+          "region": 3.0
+        },
+        "GMSQRNS3": {
+          "ids": 6.885443474976083e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476494,
+          "vbs": -0.05326586049842105,
+          "vgd": -0.0339098526944982,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.05480142296498096,
+          "gm": 0.0001972347289821883,
+          "gds": 2.682355523563286e-06,
+          "region": 3.0
+        },
+        "GMSQRNS2": {
+          "ids": 6.885443474976083e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476494,
+          "vbs": -0.05326586049842105,
+          "vgd": -0.0339098526944982,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.05480142296498096,
+          "gm": 0.0001972347289821883,
+          "gds": 2.682355523563286e-06,
+          "region": 3.0
+        },
+        "GMSQRNS1": {
+          "ids": 6.885443474976083e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476494,
+          "vbs": -0.05326586049842105,
+          "vgd": -0.0339098526944982,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.05480142296498096,
+          "gm": 0.0001972347289821883,
+          "gds": 2.682355523563286e-06,
+          "region": 3.0
+        },
+        "GMSQRNS0": {
+          "ids": 6.885443474976083e-06,
+          "vgs": 0.3979637256531512,
+          "vds": 0.4318735783476494,
+          "vbs": -0.05326586049842105,
+          "vgd": -0.0339098526944982,
+          "vth": 0.4775126902801062,
+          "vdsat": 0.05480142296498096,
+          "gm": 0.0001972347289821883,
+          "gds": 2.682355523563286e-06,
+          "region": 3.0
+        },
+        "GMSQRND0": {
+          "ids": 2.789603925700639e-05,
+          "vgs": 0.4512295861515723,
+          "vds": 0.4512295861515723,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4729419229828889,
+          "vdsat": 0.07504194047192707,
+          "gm": 0.0005632449684219261,
+          "gds": 9.034117924672059e-06,
+          "region": 3.0
+        },
+        "GMSQOP22": {
+          "ids": -4.159381065743045e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611456,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351838,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.0001125828253735469,
+          "gds": 1.915266612901203e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -4.159381065743045e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611456,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351838,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.0001125828253735469,
+          "gds": 1.915266612901203e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -4.159381065743045e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611456,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351838,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.0001125828253735469,
+          "gds": 1.915266612901203e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -4.159381065743045e-06,
+          "vgs": -0.4501103805259618,
+          "vds": -0.6199832079611456,
+          "vbs": 0.0,
+          "vgd": 0.1698728274351838,
+          "vth": -0.4804056086355222,
+          "vdsat": -0.0536053001437357,
+          "gm": 0.0001125828253735469,
+          "gds": 1.915266612901203e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -4.216307756558239e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4501103805259618,
+          "vbs": 0.0,
+          "vgd": -0.003573021390338327,
+          "vth": -0.4805953984692305,
+          "vdsat": -0.05483996305637913,
+          "gm": 0.0001132918623723408,
+          "gds": 2.189445896204022e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -4.216307756558239e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4501103805259618,
+          "vbs": 0.0,
+          "vgd": -0.003573021390338327,
+          "vth": -0.4805953984692305,
+          "vdsat": -0.05483996305637913,
+          "gm": 0.0001132918623723408,
+          "gds": 2.189445896204022e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -4.22410844176969e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4536834019163001,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805914199310942,
+          "vdsat": -0.05484136978154554,
+          "gm": 0.0001134656729349454,
+          "gds": 2.185737494115062e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -4.22410844176969e-06,
+          "vgs": -0.4536834019163001,
+          "vds": -0.4536834019163001,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805914199310942,
+          "vdsat": -0.05484136978154554,
+          "gm": 0.0001134656729349454,
+          "gds": 2.185737494115062e-06,
+          "region": 3.0
+        },
+        "GMSQRPM1": {
+          "ids": -1.394814052254707e-05,
+          "vgs": -0.5048605611539295,
+          "vds": -0.5387704138484277,
+          "vbs": 0.0,
+          "vgd": 0.0339098526944982,
+          "vth": -0.4805108870872414,
+          "vdsat": -0.07868514602608406,
+          "gm": 0.0002622012305220072,
+          "gds": 5.200454643640828e-06,
+          "region": 2.0
+        },
+        "GMSQRPM0": {
+          "ids": -1.394814052254707e-05,
+          "vgs": -0.5048605611539295,
+          "vds": -0.5387704138484277,
+          "vbs": 0.0,
+          "vgd": 0.0339098526944982,
+          "vth": -0.4805108870872414,
+          "vdsat": -0.07868514602608406,
+          "gm": 0.0002622012305220072,
+          "gds": 5.200454643640828e-06,
+          "region": 2.0
+        },
+        "GMSQRPD1": {
+          "ids": -1.377089023815992e-05,
+          "vgs": -0.5048605611539295,
+          "vds": -0.5048605611539295,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805484923676476,
+          "vdsat": -0.07866661769677104,
+          "gm": 0.0002596976877123095,
+          "gds": 5.30474898613405e-06,
+          "region": 2.0
+        },
+        "GMSQRPD0": {
+          "ids": -1.377089023815992e-05,
+          "vgs": -0.5048605611539295,
+          "vds": -0.5048605611539295,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4805484923676476,
+          "vdsat": -0.07866661769677104,
+          "gm": 0.0002596976877123095,
+          "gds": 5.30474898613405e-06,
+          "region": 2.0
+        },
+        "GMSQSTON0": {
+          "ids": 1.773264765247217e-11,
+          "vgs": 0.001492723416816301,
+          "vds": 0.4851381796957978,
+          "vbs": 0.0,
+          "vgd": -0.4836454562789815,
+          "vth": 0.4416915710571891,
+          "vdsat": 0.05042078227359325,
+          "gm": 7.181731477952318e-10,
+          "gds": 2.959145345544116e-11,
+          "region": 0.0
+        },
+        "GMSQSTOFF0": {
+          "ids": 1.977022341097481e-06,
+          "vgs": 0.4512295861515723,
+          "vds": 0.001492723416816301,
+          "vbs": 0.0,
+          "vgd": 0.449736862734756,
+          "vth": 0.4473839911896511,
+          "vdsat": 0.0970011534953634,
+          "gm": 2.407888193755847e-05,
+          "gds": 0.001334896899326127,
+          "region": 1.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003075889444627632,
+          "vgs": 0.3700167920388545,
+          "vds": 0.8478938503766505,
+          "vbs": 0.0,
+          "vgd": -0.4778770583377961,
+          "vth": 0.3435841638490139,
+          "vdsat": 0.1258971196757299,
+          "gm": 0.003363325437257129,
+          "gds": 0.0003058339405166395,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {},
+        "GMSQSTL": {},
+        "GMSQSTPU": {},
+        "GMSQRR": {}
+      },
+      "iref_error_fraction": -0.011640207638540456,
+      "nominal_leg_error_fraction": [
+        -0.010049207941408733,
+        -0.010049207941408733
+      ],
+      "servo_leg_error_fraction": [
+        0.0016097373744135002,
+        0.0016097373744135002
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": true,
+      "same_route_ideal_gain_delta_dB": -0.7401416796153671,
+      "budget_mW": 14,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 4.019586585503303,
+        "14.0": 3.257125076205606,
+        "28.0": 2.6764509826467653,
+        "42.0": 2.4033154518407254,
+        "55.0": 2.2317955914096284
+      },
+      "excess_tilt_dB": -2.476001836199761,
+      "power_margin_mW": 4.564977768695421,
+      "gain_and_power_pass": true
+    },
+    {
+      "case_id": "lpint_30_tt_fixed_iref_ota_p",
+      "stage": "integration",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "fixed_iref_ota",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 18.5083169328508,
+      "rail_mW": {
+        "XVs:p": 10.076447231519769,
+        "XVcm:p": 5.114062693294895e-08,
+        "XVb:p": 0.0001958274981886675,
+        "GFVDD:p": 8.431670721675385,
+        "GMSAVE0:p": 3.876271054896292e-07,
+        "GMSAVE1:p": 3.876271054896292e-07,
+        "GMSAVE2:p": 3.876271054896292e-07,
+        "GMSAVE3:p": 3.876271054896292e-07,
+        "GMSAVE4:p": 3.876271054896292e-07,
+        "GMSAVE5:p": 3.876271054896292e-07,
+        "GMSAVE6:p": 3.876271054896292e-07,
+        "GMSAVE7:p": 3.876271054896292e-07,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -22.078836648300452,
+      "Hmatrix_56GHz": [
+        [
+          0.023834292025211794,
+          0.021831162775613328
+        ],
+        [
+          -0.027827612320800006,
+          -0.03755838107906376
+        ],
+        [
+          -0.02782761232075922,
+          -0.03755838107900588
+        ],
+        [
+          0.023834292025247512,
+          0.021831162775647117
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        -7.650477473752915e-14,
+        -9.166625791756644e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -1.4973197134464007,
+      "input_Y_56GHz_S": [
+        [
+          0.005283938379832515,
+          0.0037093552198839883
+        ],
+        [
+          -5.3989210905713484e-06,
+          9.83416250029894e-06
+        ],
+        [
+          -5.398921090571255e-06,
+          9.834162500299071e-06
+        ],
+        [
+          0.0052839383798339926,
+          0.0037093552198837294
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006972326004919373,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251271249513,
+          "region": 2.0,
+          "ids_A": 0.000357863392874943,
+          "gm_S": 0.002635967349203148
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251271249513,
+          "region": 2.0,
+          "ids_A": 0.000357863392874943,
+          "gm_S": 0.002635967349203148
+        }
+      },
+      "added_mW_vs_r3": 8.431434452550747,
+      "legs_mA": [
+        4.350705158618782,
+        4.350705158618782
+      ],
+      "iref_uA": 310.7143011090812,
+      "replica_minus_ref_mV": -0.028471890839099068,
+      "replica_resistor_error_fraction": 0.00019834127083537097,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.6004014361615777,
+      "OTA_input_drain_diff_mV": 0.4278451414652107,
+      "bias_OP": {
+        "GMSQOP22": {
+          "ids": -3.753386944492352e-06,
+          "vgs": -0.4242058170344492,
+          "vds": -0.496106624704287,
+          "vbs": 0.0,
+          "vgd": 0.07190080766983786,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443716e-05,
+          "gds": 1.597990298740167e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -3.753386944492352e-06,
+          "vgs": -0.4242058170344492,
+          "vds": -0.496106624704287,
+          "vbs": 0.0,
+          "vgd": 0.07190080766983786,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443716e-05,
+          "gds": 1.597990298740167e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -3.753386944492352e-06,
+          "vgs": -0.4242058170344492,
+          "vds": -0.496106624704287,
+          "vbs": 0.0,
+          "vgd": 0.07190080766983786,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443716e-05,
+          "gds": 1.597990298740167e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -3.753386944492352e-06,
+          "vgs": -0.4242058170344492,
+          "vds": -0.496106624704287,
+          "vbs": 0.0,
+          "vgd": 0.07190080766983786,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443716e-05,
+          "gds": 1.597990298740167e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -3.672093147011918e-06,
+          "vgs": -0.4246336621759144,
+          "vds": -0.4242058170344492,
+          "vbs": 0.0,
+          "vgd": -0.0004278451414652107,
+          "vth": -0.4633689697686207,
+          "vdsat": -0.07007629532559807,
+          "gm": 8.3873219689491e-05,
+          "gds": 1.679238044938576e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -3.672093147011918e-06,
+          "vgs": -0.4246336621759144,
+          "vds": -0.4242058170344492,
+          "vbs": 0.0,
+          "vgd": -0.0004278451414652107,
+          "vth": -0.4633689697686207,
+          "vdsat": -0.07007629532559807,
+          "gm": 8.3873219689491e-05,
+          "gds": 1.679238044938576e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -3.672810420311395e-06,
+          "vgs": -0.4246336621759144,
+          "vds": -0.4246336621759144,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633686484496757,
+          "vdsat": -0.0700764029625753,
+          "gm": 8.388724826677509e-05,
+          "gds": 1.678748498096668e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -3.672810420311395e-06,
+          "vgs": -0.4246336621759144,
+          "vds": -0.4246336621759144,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633686484496757,
+          "vdsat": -0.0700764029625753,
+          "gm": 8.388724826677509e-05,
+          "gds": 1.678748498096668e-06,
+          "region": 3.0
+        },
+        "GMSQON20": {
+          "ids": 1.501350233486751e-05,
+          "vgs": 0.404457389734093,
+          "vds": 0.403893375295713,
+          "vbs": 0.0,
+          "vgd": 0.000564014438379945,
+          "vth": 0.469127711576481,
+          "vdsat": 0.07898182342324514,
+          "gm": 0.0003142293574482431,
+          "gds": 5.141541279064376e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 7.345605475161556e-06,
+          "vgs": 0.4121226374544863,
+          "vds": 0.1310389823909675,
+          "vbs": -0.3443273554331182,
+          "vgd": 0.2810836550635188,
+          "vth": 0.5024489582083117,
+          "vdsat": 0.07155183663813101,
+          "gm": 0.0001737409240349558,
+          "gds": 8.270316812214443e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 7.344189182001439e-06,
+          "vgs": 0.4120941655636472,
+          "vds": 0.1314668275324327,
+          "vbs": -0.3443273554331182,
+          "vgd": 0.2806273380312145,
+          "vth": 0.5024481503829509,
+          "vdsat": 0.07154435760072637,
+          "gm": 0.0001737382632956518,
+          "gds": 8.224457851432194e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.468976349116488e-05,
+          "vgs": 0.404457389734093,
+          "vds": 0.3443273554331182,
+          "vbs": 0.0,
+          "vgd": 0.06013003430097474,
+          "vth": 0.469190935408873,
+          "vdsat": 0.07895622839287994,
+          "gm": 0.0003078880872149337,
+          "gds": 5.783276330404231e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.501639441625605e-05,
+          "vgs": 0.404457389734093,
+          "vds": 0.404457389734093,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4691271128153862,
+          "vdsat": 0.07898206611478843,
+          "gm": 0.0003142855810382724,
+          "gds": 5.136293077153959e-06,
+          "region": 3.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003107756081220928,
+          "vgs": 0.403893375295713,
+          "vds": 0.7564215209967654,
+          "vbs": 0.0,
+          "vgd": -0.3525281457010524,
+          "vth": 0.3826888317866631,
+          "vdsat": 0.1553942029388307,
+          "gm": 0.00293265157182893,
+          "gds": 0.0002418006285537498,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {}
+      },
+      "iref_error_fraction": 4.954646826149656e-08,
+      "nominal_leg_error_fraction": [
+        0.0001621054296050417,
+        0.0001621054296050417
+      ],
+      "servo_leg_error_fraction": [
+        0.0001620558751076473,
+        0.0001620558751076473
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": true,
+      "same_route_ideal_gain_delta_dB": -1.205796922462571,
+      "budget_mW": 10,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 3.921021389600366,
+        "14.0": 3.141762615399291,
+        "28.0": 2.899780736760389,
+        "42.0": 2.6512987526270617,
+        "55.0": 2.559203548686874
+      },
+      "excess_tilt_dB": -1.8028053745366206,
+      "power_margin_mW": 1.5685655474492535,
+      "gain_and_power_pass": true
+    },
+    {
+      "case_id": "lpint_32_tt_fixed_iref_ota_p",
+      "stage": "integration",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "fixed_iref_ota",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "total_mW": 18.68457638336616,
+      "rail_mW": {
+        "XVs:p": 10.252706686341526,
+        "XVcm:p": 5.1954719042328596e-08,
+        "XVb:p": 0.00019582237784529873,
+        "GFVDD:p": 8.431670721675236,
+        "GMSAVE0:p": 3.876271054885778e-07,
+        "GMSAVE1:p": 3.876271054885778e-07,
+        "GMSAVE2:p": 3.876271054885778e-07,
+        "GMSAVE3:p": 3.876271054885778e-07,
+        "GMSAVE4:p": 3.876271054885778e-07,
+        "GMSAVE5:p": 3.876271054885778e-07,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 3.876271054867977e-07,
+        "GMSBVE1:p": 3.876271054867977e-07,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hdd_56GHz_dB": -19.887260079999095,
+      "Hmatrix_56GHz": [
+        [
+          0.03324778344978886,
+          0.027243338722786444
+        ],
+        [
+          -0.03337429765936166,
+          -0.04907500996971272
+        ],
+        [
+          -0.033374297659368696,
+          -0.049075009969720654
+        ],
+        [
+          0.0332477834497832,
+          0.02724333872278263
+        ]
+      ],
+      "Hdc_56GHz_complex": [
+        1.2698175844150228e-14,
+        1.1744077932362984e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -3.270451226554132,
+      "input_Y_56GHz_S": [
+        [
+          0.0052879640954086315,
+          0.003708374462306632
+        ],
+        [
+          -4.977658663704817e-06,
+          1.6097129784928872e-05
+        ],
+        [
+          -4.977658663704663e-06,
+          1.609712978492883e-05
+        ],
+        [
+          0.0052879640954084746,
+          0.0037083744623066664
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006987135380488162,
+        "plane": "X_h0p-X_h0m"
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0962671373934931,
+          "region": 2.0,
+          "ids_A": 0.0003566642864810461,
+          "gm_S": 0.002625559251172087
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0962671373934931,
+          "region": 2.0,
+          "ids_A": 0.0003566642864810461,
+          "gm_S": 0.002625559251172087
+        }
+      },
+      "added_mW_vs_r3": 8.607693903066107,
+      "legs_mA": [
+        4.350705158618714,
+        4.350705158618714
+      ],
+      "iref_uA": 310.7143011090812,
+      "replica_minus_ref_mV": -0.0284718908357684,
+      "replica_resistor_error_fraction": 0.00019834127081216882,
+      "replica_voltage_within_2_percent": true,
+      "non_main_mW": 0.6004014361615502,
+      "OTA_input_drain_diff_mV": 0.4278451414652662,
+      "bias_OP": {
+        "GMSQOP22": {
+          "ids": -3.753386944492346e-06,
+          "vgs": -0.424205817034449,
+          "vds": -0.4961066247042888,
+          "vbs": 0.0,
+          "vgd": 0.0719008076698398,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443701e-05,
+          "gds": 1.597990298740162e-06,
+          "region": 3.0
+        },
+        "GMSQOP21": {
+          "ids": -3.753386944492346e-06,
+          "vgs": -0.424205817034449,
+          "vds": -0.4961066247042888,
+          "vbs": 0.0,
+          "vgd": 0.0719008076698398,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443701e-05,
+          "gds": 1.597990298740162e-06,
+          "region": 3.0
+        },
+        "GMSQOP23": {
+          "ids": -3.753386944492346e-06,
+          "vgs": -0.424205817034449,
+          "vds": -0.4961066247042888,
+          "vbs": 0.0,
+          "vgd": 0.0719008076698398,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443701e-05,
+          "gds": 1.597990298740162e-06,
+          "region": 3.0
+        },
+        "GMSQOP20": {
+          "ids": -3.753386944492346e-06,
+          "vgs": -0.424205817034449,
+          "vds": -0.4961066247042888,
+          "vbs": 0.0,
+          "vgd": 0.0719008076698398,
+          "vth": -0.4633149036280254,
+          "vdsat": -0.06994013395258886,
+          "gm": 8.548673885443701e-05,
+          "gds": 1.597990298740162e-06,
+          "region": 3.0
+        },
+        "GMSQOPM1": {
+          "ids": -3.672093147011912e-06,
+          "vgs": -0.4246336621759143,
+          "vds": -0.424205817034449,
+          "vbs": 0.0,
+          "vgd": -0.0004278451414652662,
+          "vth": -0.4633689697686207,
+          "vdsat": -0.07007629532559807,
+          "gm": 8.387321968949088e-05,
+          "gds": 1.679238044938574e-06,
+          "region": 3.0
+        },
+        "GMSQOPM0": {
+          "ids": -3.672093147011912e-06,
+          "vgs": -0.4246336621759143,
+          "vds": -0.424205817034449,
+          "vbs": 0.0,
+          "vgd": -0.0004278451414652662,
+          "vth": -0.4633689697686207,
+          "vdsat": -0.07007629532559807,
+          "gm": 8.387321968949088e-05,
+          "gds": 1.679238044938574e-06,
+          "region": 3.0
+        },
+        "GMSQOPD1": {
+          "ids": -3.672810420311395e-06,
+          "vgs": -0.4246336621759143,
+          "vds": -0.4246336621759143,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633686484496757,
+          "vdsat": -0.0700764029625753,
+          "gm": 8.388724826677509e-05,
+          "gds": 1.678748498096668e-06,
+          "region": 3.0
+        },
+        "GMSQOPD0": {
+          "ids": -3.672810420311395e-06,
+          "vgs": -0.4246336621759143,
+          "vds": -0.4246336621759143,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": -0.4633686484496757,
+          "vdsat": -0.0700764029625753,
+          "gm": 8.388724826677509e-05,
+          "gds": 1.678748498096668e-06,
+          "region": 3.0
+        },
+        "GMSQON20": {
+          "ids": 1.501350233486749e-05,
+          "vgs": 0.404457389734093,
+          "vds": 0.4038933752957112,
+          "vbs": 0.0,
+          "vgd": 0.0005640144383817769,
+          "vth": 0.469127711576481,
+          "vdsat": 0.07898182342324514,
+          "gm": 0.000314229357448243,
+          "gds": 5.141541279064393e-06,
+          "region": 3.0
+        },
+        "GMSQOIR0": {
+          "ids": 7.34560547516157e-06,
+          "vgs": 0.4121226374544863,
+          "vds": 0.1310389823909675,
+          "vbs": -0.3443273554331182,
+          "vgd": 0.2810836550635188,
+          "vth": 0.5024489582083117,
+          "vdsat": 0.07155183663813101,
+          "gm": 0.0001737409240349561,
+          "gds": 8.27031681221446e-06,
+          "region": 3.0
+        },
+        "GMSQOID0": {
+          "ids": 7.344189182002025e-06,
+          "vgs": 0.4120941655636505,
+          "vds": 0.1314668275324328,
+          "vbs": -0.3443273554331182,
+          "vgd": 0.2806273380312178,
+          "vth": 0.5024481503829509,
+          "vdsat": 0.07154435760072686,
+          "gm": 0.0001737382632956629,
+          "gds": 8.224457851432951e-06,
+          "region": 3.0
+        },
+        "GMSQOT0": {
+          "ids": 1.468976349116488e-05,
+          "vgs": 0.404457389734093,
+          "vds": 0.3443273554331182,
+          "vbs": 0.0,
+          "vgd": 0.06013003430097474,
+          "vth": 0.469190935408873,
+          "vdsat": 0.07895622839287994,
+          "gm": 0.0003078880872149337,
+          "gds": 5.783276330404231e-06,
+          "region": 3.0
+        },
+        "GMSQOBD0": {
+          "ids": 1.501639441625605e-05,
+          "vgs": 0.404457389734093,
+          "vds": 0.404457389734093,
+          "vbs": 0.0,
+          "vgd": 0.0,
+          "vth": 0.4691271128153862,
+          "vdsat": 0.07898206611478843,
+          "gm": 0.0003142855810382724,
+          "gds": 5.136293077153959e-06,
+          "region": 3.0
+        },
+        "GMSRCS0": {
+          "ids": 0.0003107756081220883,
+          "vgs": 0.4038933752957112,
+          "vds": 0.7564215209967687,
+          "vbs": 0.0,
+          "vgd": -0.3525281457010576,
+          "vth": 0.3826888317866629,
+          "vdsat": 0.1553942029388296,
+          "gm": 0.00293265157182891,
+          "gds": 0.0002418006285537473,
+          "region": 2.0
+        },
+        "GMSQOCF": {},
+        "GMSQOC": {},
+        "GMSQORF": {},
+        "GMSQOZ": {},
+        "GMSQOR": {}
+      },
+      "iref_error_fraction": 4.954646826149656e-08,
+      "nominal_leg_error_fraction": [
+        0.00016210542958949858,
+        0.00016210542958949858
+      ],
+      "servo_leg_error_fraction": [
+        0.00016205587509210417,
+        0.00016205587509210417
+      ],
+      "servo_within_2_percent": true,
+      "nominal_within_2_percent": true,
+      "same_route_ideal_gain_delta_dB": -1.1669203438007978,
+      "budget_mW": 14,
+      "within_2dB": true,
+      "excess_group_delay_ps": {
+        "7.0": 3.697312051505896,
+        "14.0": 3.0112516014631634,
+        "28.0": 2.5688528001969564,
+        "42.0": 2.434094017721604,
+        "55.0": 2.3771473541811923
+      },
+      "excess_tilt_dB": -1.8722328238233286,
+      "power_margin_mW": 5.392306096933893,
+      "gain_and_power_pass": true
+    }
+  ],
+  "missing_cases": [],
+  "invalid_cases": {},
+  "all_six_gain_and_power_pass": true,
+  "all_six_nominal_current_within_2_percent": false,
+  "all_six_servo_within_2_percent": true,
+  "all_six_replica_voltage_within_2_percent": true,
+  "startup_verified": false,
+  "stability_verified": false,
+  "FFE_SER": null
+}

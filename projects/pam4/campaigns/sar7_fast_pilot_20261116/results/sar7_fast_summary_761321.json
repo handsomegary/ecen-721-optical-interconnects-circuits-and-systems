@@ -1,0 +1,150 @@
+{
+  "schema": "pam4_sar7_fast_pilot_v1",
+  "stage": "single_slice_fixed_timing_tt_12_centers",
+  "case_id": "sar7_12_tt_175gs_matched_q",
+  "sampling_rate_gsps": 1.75,
+  "launch_to_compare_ps": 21,
+  "compare_to_read_ps": 42,
+  "compared_baseline_job": "761279",
+  "screen_pass": false,
+  "logic_smoke_pass": false,
+  "comparator": {
+    "available": 9,
+    "missing": 3,
+    "wrong": 7,
+    "sum_abs_code_error": 114,
+    "max_abs_code_error": 32
+  },
+  "registered": {
+    "available": 12,
+    "missing": 0,
+    "wrong": 9,
+    "sum_abs_code_error": 147,
+    "max_abs_code_error": 32
+  },
+  "comparator_registered_agreement": false,
+  "unresolved_bits": 3,
+  "per_bit": {
+    "6": {
+      "unresolved": 0,
+      "min_buffered_rail_read_margin_ps": 3.9285714281674924,
+      "max_precompare_to_read_dac_change_lsb": 19.560451237892238
+    },
+    "5": {
+      "unresolved": 2,
+      "min_buffered_rail_read_margin_ps": 1.9642857118602848,
+      "max_precompare_to_read_dac_change_lsb": 32.56106895742576
+    },
+    "4": {
+      "unresolved": 1,
+      "min_buffered_rail_read_margin_ps": 0.9642857143882555,
+      "max_precompare_to_read_dac_change_lsb": 16.55493713286063
+    },
+    "3": {
+      "unresolved": 0,
+      "min_buffered_rail_read_margin_ps": 11.964285714417686,
+      "max_precompare_to_read_dac_change_lsb": 8.83394078762123
+    },
+    "2": {
+      "unresolved": 0,
+      "min_buffered_rail_read_margin_ps": 9.285714283721266,
+      "max_precompare_to_read_dac_change_lsb": 4.730838304727598
+    },
+    "1": {
+      "unresolved": 0,
+      "min_buffered_rail_read_margin_ps": 6.285714283641763,
+      "max_precompare_to_read_dac_change_lsb": 1.9662651424833655
+    },
+    "0": {
+      "unresolved": 0,
+      "min_buffered_rail_read_margin_ps": 2.7857142835641753,
+      "max_precompare_to_read_dac_change_lsb": 1.0068792904239388
+    }
+  },
+  "final_dac_cm_change_mV": [
+    -4.02590811542769,
+    -3.9267160356095676
+  ],
+  "max_abs_sample_error_lsb": 1.2448211992342806,
+  "max_observed_resolve_delay_s": 4.103571428561139e-11,
+  "job_id": "761321",
+  "solver_seconds": 128.04017503373325,
+  "raw_bytes": 58856463,
+  "codes": [
+    {
+      "expected": 64,
+      "comparator": null,
+      "registered": 96
+    },
+    {
+      "expected": 0,
+      "comparator": 0,
+      "registered": 0
+    },
+    {
+      "expected": 127,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 31,
+      "comparator": null,
+      "registered": 31
+    },
+    {
+      "expected": 96,
+      "comparator": 112,
+      "registered": 112
+    },
+    {
+      "expected": 63,
+      "comparator": null,
+      "registered": 64
+    },
+    {
+      "expected": 65,
+      "comparator": 96,
+      "registered": 96
+    },
+    {
+      "expected": 85,
+      "comparator": 96,
+      "registered": 96
+    },
+    {
+      "expected": 42,
+      "comparator": 64,
+      "registered": 64
+    },
+    {
+      "expected": 1,
+      "comparator": 0,
+      "registered": 0
+    },
+    {
+      "expected": 126,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 64,
+      "comparator": 96,
+      "registered": 96
+    }
+  ],
+  "provenance": {
+    "manifest_sha256": "e049fa8bda238eb15777db392ec377634807d7f630eae51caa7b062372bf98d0",
+    "baseline_portable_deck_sha256": "2070f861b4e07e1037c6593ad5518bfd379fef185248ee60fa54c0c8c3832347",
+    "portable_deck_sha256": "903d79a53dcc36162f08c198f9337bbf8fcfe94308bc6fa2c4cb79ad2c785032",
+    "measurements_sha256": "935150c70665c0effde4c63cf47fcac6ffafc2412706a096420d7143c75c9cb5",
+    "tran_sha256": "6d6ab5f3f5052bc30e227772310ff35423067a81dfd580ee0a232ada9bab35b7",
+    "execution_files_sha256": {
+      "bench.scs": "ce82877e95b4bc950640e621ecfb7beccfcc3d63332a60a39cd1c40f381a6f5f",
+      "case.json": "502d04dc944c1f3f7a9e5c13e4fecac1449daa6c8a4e96fe9ac16fa644ebf1aa",
+      "run_status.json": "d58f9fcb77d1db17a88079eaa2e1a40bc80b213fbf9015cc2ccec1a43b8ca314",
+      "execution_intent.json": "a9b6e40c965f6729632cc425b21c7a3a828e0d6b58d4ecfb5835527136f5f190",
+      "spectre.log": "b3b4a7ecc84ef4467e503673293b89036ec41e2a91706b46ab7ff7e795f2582c",
+      ".study_owned": "df905fa61ea560edc6cf92480f682ddf8c147aca5671f1230cb8d4142c0efecb"
+    }
+  }
+}

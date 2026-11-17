@@ -1,0 +1,108 @@
+{
+  "schema": "pam4_sar7_cdac_fix_v1",
+  "cases": [
+    {
+      "case_id": "sar7_08_tt_cml_common_ref",
+      "input_cm_V": 0.756855,
+      "fullscale_Vppd": 0.1,
+      "source_resistance_ohm": 1.0,
+      "pattern_codes": [
+        64,
+        0,
+        127,
+        31,
+        96,
+        63,
+        65,
+        85,
+        42,
+        1,
+        126,
+        64
+      ],
+      "correction": {
+        "reference_span_V": 0.06374673330525213,
+        "capacitance_F": {}
+      }
+    },
+    {
+      "case_id": "sar7_09_tt_cml_main_ratio",
+      "input_cm_V": 0.756855,
+      "fullscale_Vppd": 0.1,
+      "source_resistance_ohm": 1.0,
+      "pattern_codes": [
+        64,
+        0,
+        127,
+        31,
+        96,
+        63,
+        65,
+        85,
+        42,
+        1,
+        126,
+        64
+      ],
+      "correction": {
+        "reference_span_V": 0.06374163008917902,
+        "capacitance_F": {
+          "Cunit6p": 1.1899375220481772e-14,
+          "Ctop6p": 1.5308859802548554e-15,
+          "Cbott6p": 1.5308859802548554e-15,
+          "Cunit5p": 5.6774472701359125e-15,
+          "Ctop5p": 7.304185529444439e-16,
+          "Cbott5p": 7.304185529444439e-16,
+          "Cunit4p": 2.8408720935502302e-15,
+          "Ctop4p": 3.6548568131774795e-16,
+          "Cbott4p": 3.6548568131774795e-16,
+          "Cunit3p": 1.4906829158320868e-15,
+          "Ctop3p": 1.917802854829529e-16,
+          "Cbott3p": 1.917802854829529e-16,
+          "Cbridgep": 1.9120668894641726e-15,
+          "Cbridge_mainp": 1.9676262624920753e-16,
+          "Cbridge_lowp": 1.9676262624920753e-16,
+          "Cunit6n": 1.1899375220481772e-14,
+          "Ctop6n": 1.5308859802548554e-15,
+          "Cbott6n": 1.5308859802548554e-15,
+          "Cunit5n": 5.6774472701359125e-15,
+          "Ctop5n": 7.304185529444439e-16,
+          "Cbott5n": 7.304185529444439e-16,
+          "Cunit4n": 2.8408720935502302e-15,
+          "Ctop4n": 3.6548568131774795e-16,
+          "Cbott4n": 3.6548568131774795e-16,
+          "Cunit3n": 1.4906829158320868e-15,
+          "Ctop3n": 1.917802854829529e-16,
+          "Cbott3n": 1.917802854829529e-16,
+          "Cbridgen": 1.9120668894641726e-15,
+          "Cbridge_mainn": 1.9676262624920753e-16,
+          "Cbridge_lown": 1.9676262624920753e-16
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "authorization_note": "20261116T0005_user_authorizes_sar7_cdac_fix.md",
+    "authorized_scope": "one bounded round; sequential smoke then at most one gated correction",
+    "source_job_id": "760348",
+    "source_audit_job_id": "760362",
+    "source_summary_sha256": "ab2cdaaa6840bbb81841bc120d5d2cb69a47553c1e71e2c8ec22f0f2283dec95",
+    "source_audit_sha256": "bc8c4e64c7d053b458adc5efe1c3c865202d1e02e52c7d48581f58c62898f9c4",
+    "measured_span_lsb": 113.91818726628267,
+    "common_reference_factor": 1.1148351553658304,
+    "main_counts_b6_to_b3": [
+      8.147140440099983,
+      3.8871755360267404,
+      1.9450587522172031,
+      1.020625271656073
+    ],
+    "bridge_and_shunt_scale": 0.9279413203755646,
+    "assumptions": [
+      "fixed-loading surrogate is descriptive, not a measured physical capacitor",
+      "capacitor correction applies to the existing linear MOM equivalent",
+      "no low-bit or dummy per-bit empirical correction",
+      "precompare residual does not fully predict later comparator decisions"
+    ],
+    "offline_prediction_sha256": "614dfd90d74d1d852d961ef03a50bfb65730983a04e37e6e66030e3ffdab11bf"
+  }
+}

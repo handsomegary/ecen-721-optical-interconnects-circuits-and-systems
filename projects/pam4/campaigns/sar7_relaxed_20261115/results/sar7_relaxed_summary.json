@@ -1,0 +1,93 @@
+{
+  "status": "measured",
+  "case_id": "sar7_03_tt_relaxed",
+  "job_id": "760091",
+  "baseline_job_id": "760002",
+  "baseline_wrong_conversions": 10,
+  "baseline_unresolved_bits": 0,
+  "diagnostic_period_ps": 1080,
+  "trial_launch_to_compare_ps": 60,
+  "comparison_window_ps": 60,
+  "wrong_conversions": 10,
+  "unresolved_bits": {
+    "6": 0,
+    "5": 0,
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 0
+  },
+  "final_cm_change_mV": [
+    -112.46008137578679,
+    -109.1232596872156
+  ],
+  "max_abs_sample_error_lsb": 1.3729474442119738,
+  "max_observed_resolve_delay_s": 5.425000000953108e-11,
+  "logic_smoke_pass": false,
+  "solver_seconds": 185.47572827199474,
+  "raw_bytes": 82624492,
+  "tran_sha256": "1ce73eae3e824f0badd83876c8bdfe30e9851062cf4c8d18c5eaca912b40873a",
+  "codes": [
+    {
+      "expected": 64,
+      "comparator": 65,
+      "registered": 65
+    },
+    {
+      "expected": 0,
+      "comparator": 0,
+      "registered": null
+    },
+    {
+      "expected": 127,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 31,
+      "comparator": 25,
+      "registered": 25
+    },
+    {
+      "expected": 96,
+      "comparator": 103,
+      "registered": 103
+    },
+    {
+      "expected": 63,
+      "comparator": 64,
+      "registered": null
+    },
+    {
+      "expected": 65,
+      "comparator": 66,
+      "registered": null
+    },
+    {
+      "expected": 85,
+      "comparator": 91,
+      "registered": 91
+    },
+    {
+      "expected": 42,
+      "comparator": 38,
+      "registered": null
+    },
+    {
+      "expected": 1,
+      "comparator": 0,
+      "registered": null
+    },
+    {
+      "expected": 126,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 64,
+      "comparator": 66,
+      "registered": null
+    }
+  ]
+}

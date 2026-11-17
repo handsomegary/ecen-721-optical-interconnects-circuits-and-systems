@@ -1,0 +1,30 @@
+Olympus 交接｜LP14 實體偏壓
+
+先讀 DESIGN_zh_TW.txt 與 physical_case_plan.json。
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B physical_bias.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議先審查 54/55（SS cb0）與 62/63（FF cb0）。新原生網表要核對
+Iref、startup gate、OTA 雙輸入、VGB、兩腿電流、電源和 Spectre save。
+首批候選索引是 0–3、12–15、54–55、62–63（12 個欄），包括同角落
+原 r3 bypass 與 50 Ω 理想驅動。保留首例 PSF。
+  /usr/bin/python3.11 -B physical_bias.py --mode stage --index 54 --index 62 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+獲准後沿用 Spectre 23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E、
+原私有 shrink 模型樹與帳號。每案 1 CPU／4 GiB／30 min，預估 solver
+3–30 s。確認 home quota 和儲存空間。以 physical_case_plan.json 的 SHA、
+本包 manifest SHA、精確 case IDs 與 stage 填新的 approval。
+建立新 run root，環境為 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、
+PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT，使用 lp_physical_classic.sbatch。
+
+核心 0–65 包括三角落 cb0/cb2 的參考、ideal replica、native Iref-only、
+native OTA-only 與整合版。首例工作點可用後才擴跑獲准案例。66–89 是
+共同電阻 trim；90–101 是補償敏感度。這兩段依核心結果擇案另行審查。
+  /usr/bin/python3.11 -B physical_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output physical_summary.json
+
+startup_slow/startup_fast/stb 可用 --mode diagnostic --diagnostic
+加 --index 在新目錄產生含模型佔位符的 review deck。這些 deck 不在
+本 AC array，需要另行實體化、核對並獲准。與端點、非理想電感、碼表及
+時域分批。保留 case、bench、parent diff、status、log、measurement、
+completion、資源與收據。raw 保存在 Olympus，另獲批准後才退役。

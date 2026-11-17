@@ -1,0 +1,938 @@
+{
+  "TT_dormant_only_probes": [
+    {
+      "active": "a",
+      "dormant_DM_fraction_of_full": 0.09650918005471092,
+      "dormant_DM_fraction_of_selected": 0.08840496873205603,
+      "dormant_Hdc_over_abs_Hdd_full": 2.222003025423965e-16,
+      "dormant_Hdc_over_abs_Hdd_same_bypass": 1.8314204653434982e-16,
+      "dormant_Hdd_vs_full_dB": -20.30862748286882,
+      "dormant_Hdd_vs_same_bypass_dB": -21.987759142790768,
+      "dormant_vs_selected_DM_phase_deg": 162.5909789562727,
+      "full_Hdd_vs_same_bypass_dB": -1.679131659921952,
+      "off_minus_full_Hdc_over_abs_Hdd_full": 1.4036005812625215e-15,
+      "process": "tt",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "selected_complex_subtraction_Hdd_vs_same_bypass_dB": -0.9172926403987268,
+      "temperature_C": 25,
+      "variant": "dual_equal",
+      "vdd_V": 0.9
+    },
+    {
+      "active": "a",
+      "dormant_DM_fraction_of_full": 0.09391890047894434,
+      "dormant_DM_fraction_of_selected": 0.0939714974881971,
+      "dormant_Hdc_over_abs_Hdd_full": 0.24480414941126483,
+      "dormant_Hdc_over_abs_Hdd_same_bypass": 0.13025429782199566,
+      "dormant_Hdd_vs_full_dB": -20.544940008198886,
+      "dormant_Hdd_vs_same_bypass_dB": -26.025474263551068,
+      "dormant_vs_selected_DM_phase_deg": -92.35119348574017,
+      "full_Hdd_vs_same_bypass_dB": -5.480534255352184,
+      "off_minus_full_Hdc_over_abs_Hdd_full": 2.605466120904902,
+      "process": "tt",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "selected_complex_subtraction_Hdd_vs_same_bypass_dB": -5.485397216254265,
+      "temperature_C": 25,
+      "variant": "dual_end",
+      "vdd_V": 0.9
+    },
+    {
+      "active": "b",
+      "dormant_DM_fraction_of_full": 0.09391890047894322,
+      "dormant_DM_fraction_of_selected": 0.09397149748819625,
+      "dormant_Hdc_over_abs_Hdd_full": 0.24480414941125841,
+      "dormant_Hdc_over_abs_Hdd_same_bypass": 0.13025429782199363,
+      "dormant_Hdd_vs_full_dB": -20.54494000819899,
+      "dormant_Hdd_vs_same_bypass_dB": -26.025474263551082,
+      "dormant_vs_selected_DM_phase_deg": -92.35119348573858,
+      "full_Hdd_vs_same_bypass_dB": -5.48053425535209,
+      "off_minus_full_Hdc_over_abs_Hdd_full": 2.6054661209048673,
+      "process": "tt",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "selected_complex_subtraction_Hdd_vs_same_bypass_dB": -5.485397216254193,
+      "temperature_C": 25,
+      "variant": "dual_end",
+      "vdd_V": 0.9
+    }
+  ],
+  "cases": [
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -6.349239600361203,
+      "Hdd_56GHz_vs_same_bypass_dB": 0.0,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4140913136907614,
+          "Hdd_absolute_dB": -22.680278825974224,
+          "Hdd_vs_bypass_dB": -3.0099735342610803
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4140913136907636,
+          "Hdd_absolute_dB": -22.68027882597419,
+          "Hdd_vs_bypass_dB": -3.009973534261052
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.0,
+      "static_rail_power_change_vs_same_bypass_nW": 0.0,
+      "static_schematic_rail_power_mW": 10.076882480823864,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": 0.0,
+      "stationary_tracking_noise_mVrms": 0.695182581321939,
+      "tau_effective_ps": -0.0,
+      "temperature_C": 25,
+      "variant": "bypass",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 0.0,
+      "worst_phase_error_ps": 0.0
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -6.677370747672528,
+      "Hdd_56GHz_vs_same_bypass_dB": -0.3281311473113241,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3616702444949162,
+          "Hdd_absolute_dB": -23.0084305584501,
+          "Hdd_vs_bypass_dB": -3.3381252667369594
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3616702444949151,
+          "Hdd_absolute_dB": -23.008430558450115,
+          "Hdd_vs_bypass_dB": -3.338125266736975
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -1.6319997761476548e-16,
+      "static_rail_power_change_vs_same_bypass_nW": 0.7020276235336631,
+      "static_schematic_rail_power_mW": 10.076883182851487,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.0004486566147265947,
+      "stationary_tracking_noise_mVrms": 0.6951794623393034,
+      "tau_effective_ps": 4.9925829216417243e-17,
+      "temperature_C": 25,
+      "variant": "single_equal",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 6.489972758481881e-16,
+      "worst_phase_error_ps": 3.797593382833199e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -8.028371260283153,
+      "Hdd_56GHz_vs_same_bypass_dB": -1.679131659921952,
+      "active": "a",
+      "dormant_tail_total_nA": 12.090068525426613,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.1655188201174322,
+          "Hdd_absolute_dB": -24.359379073182204,
+          "Hdd_vs_bypass_dB": -4.689073781469062
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.1655188201174265,
+          "Hdd_absolute_dB": -24.359379073182193,
+          "Hdd_vs_bypass_dB": -4.689073781469048
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -1.8144567340857517e-16,
+      "static_rail_power_change_vs_same_bypass_nW": 22.120845611858787,
+      "static_schematic_rail_power_mW": 10.076904601669476,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.464498971593974,
+      "stationary_tracking_noise_mVrms": 0.6919534653809981,
+      "tau_effective_ps": 6.843608543406053e-17,
+      "temperature_C": 25,
+      "variant": "dual_equal",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 9.603028713185987e-16,
+      "worst_phase_error_ps": 4.042515243374072e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -11.829773855713386,
+      "Hdd_56GHz_vs_same_bypass_dB": -5.480534255352184,
+      "active": "a",
+      "dormant_tail_total_nA": 12.090066669073131,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.7373927944012593,
+          "Hdd_absolute_dB": -37.43477059041305,
+          "Hdd_vs_bypass_dB": -17.76446529869991
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.2592543181533641,
+          "Hdd_absolute_dB": -20.89187669550715,
+          "Hdd_vs_bypass_dB": -1.2215714037940117
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.0069208369110076405,
+      "static_rail_power_change_vs_same_bypass_nW": 22.120796373467645,
+      "static_schematic_rail_power_mW": 10.076904601620237,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.46702536780404147,
+      "stationary_tracking_noise_mVrms": 0.6919359023146106,
+      "tau_effective_ps": -5.245676101513926,
+      "temperature_C": 25,
+      "variant": "dual_end",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 0.011000493632781837,
+      "worst_phase_error_ps": 0.01653277240128283
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -11.829773855713292,
+      "Hdd_56GHz_vs_same_bypass_dB": -5.48053425535209,
+      "active": "b",
+      "dormant_tail_total_nA": 12.090066669059714,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.259254318153356,
+          "Hdd_absolute_dB": -20.891876695507115,
+          "Hdd_vs_bypass_dB": -1.221571403793974
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.737392794401257,
+          "Hdd_absolute_dB": -37.434770590413066,
+          "Hdd_vs_bypass_dB": -17.764465298699925
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": 0.006920836910954,
+      "static_rail_power_change_vs_same_bypass_nW": 22.120796363059302,
+      "static_schematic_rail_power_mW": 10.076904601620226,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.46702536780397486,
+      "stationary_tracking_noise_mVrms": 0.691935902314611,
+      "tau_effective_ps": 5.245676101513936,
+      "temperature_C": 25,
+      "variant": "dual_end",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 0.011000493632776456,
+      "worst_phase_error_ps": 0.01653277240130591
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": 0.0,
+      "Hdd_56GHz_vs_same_bypass_dB": 6.349239600361204,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 2.9372467646838007,
+          "Hdd_absolute_dB": -16.331058986667223,
+          "Hdd_vs_bypass_dB": 3.3392463050459216
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 2.9372467646838087,
+          "Hdd_absolute_dB": -16.331058986667223,
+          "Hdd_vs_bypass_dB": 3.3392463050459176
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -2.1009760807524e-18,
+      "static_rail_power_change_vs_same_bypass_nW": 0.0015713576273501673,
+      "static_schematic_rail_power_mW": 10.076882482395222,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.11330599742974679,
+      "stationary_tracking_noise_mVrms": 0.6943948977642143,
+      "tau_effective_ps": 4.303762829607812e-17,
+      "temperature_C": 25,
+      "variant": "bypass_original",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 3.175219521027176e-16,
+      "worst_phase_error_ps": 1.0614669899446662e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -11.245458658417657,
+      "Hdd_56GHz_vs_same_bypass_dB": -4.896219058056454,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.852873781423645,
+          "Hdd_absolute_dB": -37.69663177792427,
+          "Hdd_vs_bypass_dB": -18.026326486211122
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.25105154612327774,
+          "Hdd_absolute_dB": -20.33325349198062,
+          "Hdd_vs_bypass_dB": -0.6629482002674804
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.011186158220997366,
+      "static_rail_power_change_vs_same_bypass_nW": 0.7019854766920908,
+      "static_schematic_rail_power_mW": 10.076883182809341,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.0031585896083097253,
+      "stationary_tracking_noise_mVrms": 0.6951606233571666,
+      "tau_effective_ps": -5.244601308974559,
+      "temperature_C": 25,
+      "variant": "single_end",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 0.01188297452779965,
+      "worst_phase_error_ps": 0.019207393058899777
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -7.535260030354445,
+      "Hdd_56GHz_vs_same_bypass_dB": -1.1860204299932418,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.7074255147648276,
+          "Hdd_absolute_dB": -28.07195196282774,
+          "Hdd_vs_bypass_dB": -8.401646671114602
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.7600491859075167,
+          "Hdd_absolute_dB": -21.043293804287195,
+          "Hdd_vs_bypass_dB": -1.372988512574055
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.01584032939971299,
+      "static_rail_power_change_vs_same_bypass_nW": 0.7019844878997095,
+      "static_schematic_rail_power_mW": 10.076883182808352,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.0036206531538685027,
+      "stationary_tracking_noise_mVrms": 0.6951574111718831,
+      "tau_effective_ps": -2.1000277751817276,
+      "temperature_C": 25,
+      "variant": "single_mid",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 0.007168129128693171,
+      "worst_phase_error_ps": 0.01584032939971299
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -6.9855491348127,
+      "Hdd_56GHz_vs_same_bypass_dB": -0.6363095344514964,
+      "active": "b",
+      "dormant_tail_total_nA": 12.090064804933817,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3142127313372873,
+          "Hdd_absolute_dB": -23.316660758977598,
+          "Hdd_vs_bypass_dB": -3.646355467264455
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3142127313372773,
+          "Hdd_absolute_dB": -23.316660758977577,
+          "Hdd_vs_bypass_dB": -3.6463554672644354
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": 2.3300979236687085e-16,
+      "static_rail_power_change_vs_same_bypass_nW": 22.12074708997369,
+      "static_schematic_rail_power_mW": 10.076904601570954,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.4695518243248209,
+      "stationary_tracking_noise_mVrms": 0.6919183388289534,
+      "tau_effective_ps": 7.495870278529335e-17,
+      "temperature_C": 25,
+      "variant": "dual_equal",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 1.169367802270753e-15,
+      "worst_phase_error_ps": 5.310571443638779e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -8.119824534146113,
+      "Hdd_56GHz_vs_same_bypass_dB": -1.7705849337849113,
+      "active": "a",
+      "dormant_tail_total_nA": 12.090066723371446,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.596233785944659,
+          "Hdd_absolute_dB": -28.604226458543707,
+          "Hdd_vs_bypass_dB": -8.933921166830563
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.714999737076203,
+          "Hdd_absolute_dB": -21.62791028030599,
+          "Hdd_vs_bypass_dB": -1.9576049885928475
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        13,
+        9
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.013019686155468935,
+      "static_rail_power_change_vs_same_bypass_nW": 22.120795572025397,
+      "static_schematic_rail_power_mW": 10.076904601619436,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.46737211815458535,
+      "stationary_tracking_noise_mVrms": 0.6919334917665729,
+      "tau_effective_ps": -2.1004254880083875,
+      "temperature_C": 25,
+      "variant": "dual_mid",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 0.00664660570033135,
+      "worst_phase_error_ps": 0.013189102394104535
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": -8.119824534146137,
+      "Hdd_56GHz_vs_same_bypass_dB": -1.7705849337849338,
+      "active": "b",
+      "dormant_tail_total_nA": 12.090066723358845,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.7149997370762087,
+          "Hdd_absolute_dB": -21.627910280306,
+          "Hdd_vs_bypass_dB": -1.95760498859286
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.596233785944647,
+          "Hdd_absolute_dB": -28.60422645854375,
+          "Hdd_vs_bypass_dB": -8.933921166830608
+        }
+      },
+      "process": "tt",
+      "route_a": [
+        9,
+        13
+      ],
+      "route_b": [
+        13,
+        9
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": 0.013019686155468304,
+      "static_rail_power_change_vs_same_bypass_nW": 22.120795572025397,
+      "static_schematic_rail_power_mW": 10.076904601619436,
+      "stationary_tracking_noise_bypass_mVrms": 0.695182581321939,
+      "stationary_tracking_noise_delta_percent": -0.46737211815462976,
+      "stationary_tracking_noise_mVrms": 0.6919334917665726,
+      "tau_effective_ps": 2.100425488008388,
+      "temperature_C": 25,
+      "variant": "dual_mid",
+      "vdd_V": 0.9,
+      "weighted_phase_rms_ps": 0.006646605700331661,
+      "worst_phase_error_ps": 0.013189102394103846
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": 0.0,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4141005480945532,
+          "Hdd_absolute_dB": -24.73845084866103,
+          "Hdd_vs_bypass_dB": -3.0100296090118994
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4141005480945525,
+          "Hdd_absolute_dB": -24.738450848661042,
+          "Hdd_vs_bypass_dB": -3.010029609011906
+        }
+      },
+      "process": "ss",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.0,
+      "static_rail_power_change_vs_same_bypass_nW": 0.0,
+      "static_schematic_rail_power_mW": 7.786074434734816,
+      "stationary_tracking_noise_bypass_mVrms": 0.7315649585852454,
+      "stationary_tracking_noise_delta_percent": 0.0,
+      "stationary_tracking_noise_mVrms": 0.7315649585852454,
+      "tau_effective_ps": -0.0,
+      "temperature_C": 85,
+      "variant": "bypass",
+      "vdd_V": 0.81,
+      "weighted_phase_rms_ps": 0.0,
+      "worst_phase_error_ps": 0.0
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -0.3281725669703561,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3616725996964543,
+          "Hdd_absolute_dB": -25.06664372808427,
+          "Hdd_vs_bypass_dB": -3.3382224884351333
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3616725996964503,
+          "Hdd_absolute_dB": -25.066643728084266,
+          "Hdd_vs_bypass_dB": -3.3382224884351275
+        }
+      },
+      "process": "ss",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -4.928316629664018e-16,
+      "static_rail_power_change_vs_same_bypass_nW": 0.5328655971331697,
+      "static_schematic_rail_power_mW": 7.786074967600413,
+      "stationary_tracking_noise_bypass_mVrms": 0.7315649585852454,
+      "stationary_tracking_noise_delta_percent": 0.00027143858183364955,
+      "stationary_tracking_noise_mVrms": 0.7315669443347943,
+      "tau_effective_ps": 1.6454288777481178e-16,
+      "temperature_C": 85,
+      "variant": "single_equal",
+      "vdd_V": 0.81,
+      "weighted_phase_rms_ps": 8.0579558671124875e-16,
+      "worst_phase_error_ps": 2.692191346072314e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -1.8651359917235948,
+      "active": "a",
+      "dormant_tail_total_nA": 97.32016959421513,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.1408303986365675,
+          "Hdd_absolute_dB": -26.60353911734341,
+          "Hdd_vs_bypass_dB": -4.875117877694276
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.1408303986365664,
+          "Hdd_absolute_dB": -26.60353911734342,
+          "Hdd_vs_bypass_dB": -4.875117877694286
+        }
+      },
+      "process": "ss",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": 3.558233375329062e-17,
+      "static_rail_power_change_vs_same_bypass_nW": 103.65187743006932,
+      "static_schematic_rail_power_mW": 7.786178086612247,
+      "stationary_tracking_noise_bypass_mVrms": 0.7315649585852454,
+      "stationary_tracking_noise_delta_percent": -0.29343449464006577,
+      "stationary_tracking_noise_mVrms": 0.729418294646057,
+      "tau_effective_ps": 2.513362926088354e-16,
+      "temperature_C": 85,
+      "variant": "dual_equal",
+      "vdd_V": 0.81,
+      "weighted_phase_rms_ps": 1.0090656368474253e-15,
+      "worst_phase_error_ps": 3.862710448808445e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -5.479463837068881,
+      "active": "a",
+      "dormant_tail_total_nA": 97.32016959296314,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.727085359085733,
+          "Hdd_absolute_dB": -39.39144351408169,
+          "Hdd_vs_bypass_dB": -17.663022274432556
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.26233060300546296,
+          "Hdd_absolute_dB": -23.001610555828865,
+          "Hdd_vs_bypass_dB": -1.2731893161797263
+        }
+      },
+      "process": "ss",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.007121050800794003,
+      "static_rail_power_change_vs_same_bypass_nW": 103.65183844996545,
+      "static_schematic_rail_power_mW": 7.786178086573266,
+      "stationary_tracking_noise_bypass_mVrms": 0.7315649585852454,
+      "stationary_tracking_noise_delta_percent": -0.29476956478184935,
+      "stationary_tracking_noise_mVrms": 0.7294085277407272,
+      "tau_effective_ps": -5.242482421880429,
+      "temperature_C": 85,
+      "variant": "dual_end",
+      "vdd_V": 0.81,
+      "weighted_phase_rms_ps": 0.009339244624747086,
+      "worst_phase_error_ps": 0.014822067177780706
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -5.479463837068861,
+      "active": "b",
+      "dormant_tail_total_nA": 97.32016959295473,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.26233060300545413,
+          "Hdd_absolute_dB": -23.00161055582891,
+          "Hdd_vs_bypass_dB": -1.2731893161797745
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.727085359085722,
+          "Hdd_absolute_dB": -39.391443514081935,
+          "Hdd_vs_bypass_dB": -17.663022274432794
+        }
+      },
+      "process": "ss",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": 0.0071210508007391,
+      "static_rail_power_change_vs_same_bypass_nW": 103.65183844996545,
+      "static_schematic_rail_power_mW": 7.786178086573266,
+      "stationary_tracking_noise_bypass_mVrms": 0.7315649585852454,
+      "stationary_tracking_noise_delta_percent": -0.2947695647815274,
+      "stationary_tracking_noise_mVrms": 0.7294085277407295,
+      "tau_effective_ps": 5.242482421880441,
+      "temperature_C": 85,
+      "variant": "dual_end",
+      "vdd_V": 0.81,
+      "weighted_phase_rms_ps": 0.00933924462474066,
+      "worst_phase_error_ps": 0.014822067177959409
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": 0.0,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4140844032896622,
+          "Hdd_absolute_dB": -20.749665391669826,
+          "Hdd_vs_bypass_dB": -3.0099315735466803
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4140844032896618,
+          "Hdd_absolute_dB": -20.749665391669833,
+          "Hdd_vs_bypass_dB": -3.009931573546691
+        }
+      },
+      "process": "ff",
+      "route_a": [
+        0,
+        0
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.0,
+      "static_rail_power_change_vs_same_bypass_nW": 0.0,
+      "static_schematic_rail_power_mW": 13.227445089402377,
+      "stationary_tracking_noise_bypass_mVrms": 0.6863056217279956,
+      "stationary_tracking_noise_delta_percent": 0.0,
+      "stationary_tracking_noise_mVrms": 0.6863056217279956,
+      "tau_effective_ps": -0.0,
+      "temperature_C": -40,
+      "variant": "bypass",
+      "vdd_V": 0.99,
+      "weighted_phase_rms_ps": 0.0,
+      "worst_phase_error_ps": 0.0
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -0.32799548175275917,
+      "active": "a",
+      "dormant_tail_total_nA": null,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.361684878226353,
+          "Hdd_absolute_dB": -21.07768158329023,
+          "Hdd_vs_bypass_dB": -3.3379477651670877
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3616848782263375,
+          "Hdd_absolute_dB": -21.07768158329022,
+          "Hdd_vs_bypass_dB": -3.337947765167076
+        }
+      },
+      "process": "ff",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        0,
+        0
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -7.396900311932475e-17,
+      "static_rail_power_change_vs_same_bypass_nW": 0.9820513343500314,
+      "static_schematic_rail_power_mW": 13.227446071453711,
+      "stationary_tracking_noise_bypass_mVrms": 0.6863056217279956,
+      "stationary_tracking_noise_delta_percent": -0.0018543719820796056,
+      "stationary_tracking_noise_mVrms": 0.6862928950688348,
+      "tau_effective_ps": -4.911370960692963e-17,
+      "temperature_C": -40,
+      "variant": "single_equal",
+      "vdd_V": 0.99,
+      "weighted_phase_rms_ps": 6.923362369477373e-16,
+      "worst_phase_error_ps": 3.784347278888096e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -1.5096650744054294,
+      "active": "a",
+      "dormant_tail_total_nA": 0.4052477527886624,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.1884782908855471,
+          "Hdd_absolute_dB": -22.259313988122994,
+          "Hdd_vs_bypass_dB": -4.51958016999985
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.1884782908855331,
+          "Hdd_absolute_dB": -22.259313988122994,
+          "Hdd_vs_bypass_dB": -4.51958016999985
+        }
+      },
+      "process": "ff",
+      "route_a": [
+        6,
+        6
+      ],
+      "route_b": [
+        16,
+        16
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -6.361500466108863e-17,
+      "static_rail_power_change_vs_same_bypass_nW": 2.5211650059309143,
+      "static_schematic_rail_power_mW": 13.227447610567383,
+      "stationary_tracking_noise_bypass_mVrms": 0.6863056217279956,
+      "stationary_tracking_noise_delta_percent": -0.6400789104332727,
+      "stationary_tracking_noise_mVrms": 0.6819127241821967,
+      "tau_effective_ps": -5.946770806516575e-17,
+      "temperature_C": -40,
+      "variant": "dual_equal",
+      "vdd_V": 0.99,
+      "weighted_phase_rms_ps": 1.1113193847559321e-15,
+      "worst_phase_error_ps": 4.780439001039018e-15
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -5.482171298510375,
+      "active": "a",
+      "dormant_tail_total_nA": 0.40524774158637933,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.7461407933439157,
+          "Hdd_absolute_dB": -35.54880880575125,
+          "Hdd_vs_bypass_dB": -17.809074987628104
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.25788172111372815,
+          "Hdd_absolute_dB": -18.917742951894713,
+          "Hdd_vs_bypass_dB": -1.1780091337715715
+        }
+      },
+      "process": "ff",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": -0.005989141260978152,
+      "static_rail_power_change_vs_same_bypass_nW": 2.5211218113163625,
+      "static_schematic_rail_power_mW": 13.22744761052419,
+      "stationary_tracking_noise_bypass_mVrms": 0.6863056217279956,
+      "stationary_tracking_noise_delta_percent": -0.6439109129769194,
+      "stationary_tracking_noise_mVrms": 0.681886424933315,
+      "tau_effective_ps": -5.247844049002607,
+      "temperature_C": -40,
+      "variant": "dual_end",
+      "vdd_V": 0.99,
+      "weighted_phase_rms_ps": 0.011967068886266585,
+      "worst_phase_error_ps": 0.018580157286396004
+    },
+    {
+      "Hdd_56GHz_vs_original_unterminated_dB": null,
+      "Hdd_56GHz_vs_same_bypass_dB": -5.482171298510609,
+      "active": "b",
+      "dormant_tail_total_nA": 0.4052477415743958,
+      "known_input_skew_AC_diagnostic": {
+        "-4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 0.2578817211137448,
+          "Hdd_absolute_dB": -18.917742951894628,
+          "Hdd_vs_bypass_dB": -1.1780091337714853
+        },
+        "4.464285714285714": {
+          "Hdc_increment_over_abs_Hdd_bypass": 1.7461407933439224,
+          "Hdd_absolute_dB": -35.54880880575025,
+          "Hdd_vs_bypass_dB": -17.809074987627106
+        }
+      },
+      "process": "ff",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        16,
+        6
+      ],
+      "signed_phase_delay_error_at_56_GHz_ps": 0.0059891412609251425,
+      "static_rail_power_change_vs_same_bypass_nW": 2.5211218113163625,
+      "static_schematic_rail_power_mW": 13.22744761052419,
+      "stationary_tracking_noise_bypass_mVrms": 0.6863056217279956,
+      "stationary_tracking_noise_delta_percent": -0.643910912976875,
+      "stationary_tracking_noise_mVrms": 0.6818864249333152,
+      "tau_effective_ps": 5.247844049002615,
+      "temperature_C": -40,
+      "variant": "dual_end",
+      "vdd_V": 0.99,
+      "weighted_phase_rms_ps": 0.011967068886261307,
+      "worst_phase_error_ps": 0.018580157286202607
+    }
+  ],
+  "format": "pam4_gmselect_independent_readback_v1",
+  "inputs": {
+    "archive": {
+      "bytes": 14024689,
+      "file": "olympus_compact_gmselect.tgz",
+      "sha256": "e1bf72c2a782f8ec48ef218aecb283327796ece0573aeae1e122122efee4b366"
+    },
+    "package": {
+      "bytes": 596034,
+      "file": "ECEN721_PAM4_PNSKEW_GMSELECT_20261113.zip",
+      "sha256": "51268ada6d19e22f8bee0d721149eb08c9a5915aa4149f6dedf09de0e8d756d7"
+    },
+    "summary": {
+      "bytes": 263522,
+      "file": "gmselect_summary.json",
+      "sha256": "920a67351006cbe0906edf6aba50661a62887a81a895731aecc491bc5428dbe4"
+    }
+  },
+  "limits": {
+    "dormant_normalization": "The existing off/full dB uses full enabled Hdd, not bypass. Off-minus-full Hdc includes removed selected response, not dormant conversion.",
+    "fine_resolution": "The \u00b12.10 ps intermediate fixed routes are sparse demonstration points. No fine step, monotone dense codebook, residual qualification or transient SER was measured.",
+    "gain_reference": "Same-termination bypass has Rs=Rt=25 ohm per leg. Only TT has an original 0-ohm unterminated bypass comparison.",
+    "leakage_scope": "OFF-only transfer was measured in TT. SS/FF dormant tail DC current is available, not dormant AC leakage.",
+    "plane": "Power is static ideal-bias schematic rail power; launch driver power is unmeasured. Noise is stationary fixed-track h0p-h0m, 1 MHz\u201356 GHz."
+  },
+  "signed_target_each_side_ps": 4.464285714285714,
+  "verification": {
+    "case_plan_sha256": "d436c5f422780ca07c9191059571bf2c1b3459d4b4725923f694e04c1032c763",
+    "exact_runtime_decks": 48,
+    "manifest_files": 200,
+    "retired_raw_files": 213,
+    "retired_raw_logical_bytes": 279445206,
+    "solver_wall_s_min_max": [
+      0.823043417185545,
+      1.677740550832823
+    ]
+  },
+  "weighted_band": "7_to_56_GHz"
+}

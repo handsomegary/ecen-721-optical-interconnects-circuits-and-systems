@@ -1,0 +1,67 @@
+ECEN 721 Project #6｜GMDRIVE 低功耗 AC 試驗
+
+首批證據
+
+GMDRIVE_0_17_REPLAY.json 可由 replay_pilot.py 從留存 compact 重算。已核對 18 案
+bench、量測與 log 的 SHA，以及 79 筆、190055116 B 的 raw 收據。SS cs16 在
+56 GHz 對同路徑理想驅動為 −0.92 dB，driver +14.32 mW，總 22.11 mW。
+每個啟用腿約 8.81 mA／52.78 mS。cs12 0.53 V／0.48 V 的 driver +11.15／8.42 mW。
+cs12 OFF/(full−OFF) = −43.01 dBc，另有 −46.40 dB 對匹配 bypass。
+cs16 的 OFF-only 是此次要補的量測。原 r3 第二級尾管的靜態裕度約 +7 mV。
+
+兩欄 Y 矩陣得到 H_R = H (I + RY)^−1。對同樣加 25 Ω 的參考，cs16 預估
+相對獨立理想 launch −3.05 dB，相對同外加 R 的原 25/25 Ω bypass −0.13 dB。
+此處只有 R=0 實測。理想 launch 用 VCVS，輸入電流為零；兩個分母回答不同問題。
+對 cs12，56 GHz 有效轉導比 DC 小。20 pH 實測只回復約 0.23 dB。80／120 pH
+是用留存短路徑的 Norton 負載擾動估出的可行性測試，理想 L 尚未含 layout、Q、SRF。
+文獻參考 https://doi.org/10.1109/JSSC.2006.883336
+
+優先候選及分批
+
+第一優先量 14×3 µm、0.48 V、33 Ω、120 pH，另測 12×／0.48 V／80 pH、
+12×／0.53 V／120 pH。保留原 cs16 做對照。所有新低功耗 MOS 採原生 3 µm 卡。
+三個低功耗候選的單 bank SS driver 初估約 +8.4／9.8／11.2 mW（依偏壓與寬度；
+對應 12×0.48／14×0.48／12×0.53）。所有值以實際量測為準。
+首批 0–27 為 R=0/25 Ω 的 SS 短路徑與兩個 R=0 OFF-only，含每個 R 的 bypass
+和 independent ideal。Dormant 的線性疊加要求輸入電壓固定，因此 OFF-only 只用 R=0。
+主驗收用 R=25 Ω、對同 LC 的 independent ideal 額外損失 <2 dB；R=0 供追溯。
+同時回報 56/7 GHz 額外 tilt、7/14/28/42/55 GHz 群延遲、絕對增益、OP、雜訊及功耗。
+單一頻點通過仍需看全頻相位。暫列額外高頻 tilt 1.5 dB 為審查參考，待用戶核定。
+
+第二批用 SS 兩條等長線、尾碼 0/2 看共用與直推。Shared 每個 P/N 只留一組
+共源級，測 16 個並聯單元及一個 14 個低偏壓／120 pH 候選。兩個 bank 的線一直
+接上，同一路的 25 Ω
+並聯使 source 見到約 12.5 Ω；50 Ω 版重設兩線與端接，L×2／C÷2，保持名義延遲。
+單 bank OFF 的 transconductor 仍可能帶來實際傳遞，因此報 GMS*VD:p 的兩欄
+複數 drain current，絕對輸出和輸入 Y。Shared 與 direct 沒有假設可拆的獨立輸入，
+也沒有用另一份 DC/負載不同的 case 假充 dormant-only。50 Ω 改變 CTLE gate 負載和
+相位，跨 Z0 的比較欄有標示。它須先通過等長與中碼 AC 才值得擴到 6/16。
+只在 P 或 N 一側加共源級會同時引入反相和 gain/phase 不對稱。若要保留此路線，
+需先設計另一腿的極性與頻率響應匹配，並一起量 CM→DM；首批以兩腿對稱的方案為主。
+
+direct_ideal 是 CHB2 理想源的架構對照。direct 拿掉此 ideal 緩衝，保留歷史最後一級
+100 Ω／85.2615767 fF，AC source 代表上一級 CHB1。由開路 RC 的複數響應把兩個
+參考對齊後才計算額外 load loss。56 GHz 開路阻抗約 10−j30 Ω；純阻近似下兩條
+25 Ω／50 Ω 線各約 −9.54／−5.32 dB 額外負載損失。實際 ladder 及 CTLE 由 deck 判定。
+direct_ideal 的 0 mW 是 fixture 定義。全實體前級的輸出能力、功耗與封裝寄生待評估。
+
+功耗預算與 cs16 備案
+
+題目無功耗上限。提議用同 corner 原 r3 AFE 之外的增量作預算，包含驅動與偏壓
+電源。首輪篩選建議單 bank +10 mW、雙 bank +14 mW，以 TT/SS/FF 各碼最差值核對。
+以既有 AFE 約 SS 7.79、TT 10.08、FF 13.23 mW 估算，對應總功耗約
+17.79/20.08/23.23 mW（單 bank）、21.79/24.08/27.23 mW（雙 bank）。
+這些為待核定的工程預算；實際用 matched case 的量測值加總。
+
+cs16 保留為性能備案。SS 單 bank +14.32 mW 已量到；若兩組都維持既有偏壓，
+只算 driver 的 SS 增量約 +28.54 mW。固定同一 SS 電流只換 rail 會得到 TT/FF
+單 bank 約 +15.9/+17.4 mW、雙 bank 約 +31.7/+34.9 mW。這些只是電流不變的
+敏感度，實際角落電流與總功耗待量。共用只消掉雙 bank 的一組偏壓，仍要算 fanout。
+
+如果要保留 cs16，先看此次 SS R=25 Ω 短路徑與實測功耗。接受其耗電且有增益餘量
+才排 fallback_short 的 TT/FF，然後 fallback_edge 的 TT/SS/FF 零 skew、兩個方向、
+粗端與 cb2。fallback_fine 先驗名義方向的兩端相鄰步、代表錨點及兩個接縫；
+完整碼表與鏡射細掃要另行補齊。看 7–56 GHz 加權相位延遲、兩端是否覆蓋 ±4.464 ps、
+端點步長 0.25 ps 目標／0.30 ps AC 檢查值，另看鏡射和接縫。
+上一包的 278 案使用 cs12 作為既定延伸，本包使用獨立 plan 與 SHA。等你確認
+架構、增量預算及 AC 後，再另做 payload、paired seed、FFE/SER 時域。

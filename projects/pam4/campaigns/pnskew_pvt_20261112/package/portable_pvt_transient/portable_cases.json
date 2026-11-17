@@ -1,0 +1,36 @@
+{
+  "status": "REVIEW_COPY_REQUIRES_RUNTIME_MODEL_ADMISSION",
+  "placeholder": "__pdk_root__",
+  "plan_sha256": "6030bda8600f2d5555d7a1b6ab10be43ab43b1ea6c0970d1fe924090f8b100f0",
+  "cases": [
+    {
+      "case_id": "r3_pvt_tran_ss_t85_v081",
+      "kind": "pam4_noiseless",
+      "pvt_corner": true,
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "delta_ui": 0,
+      "noise_seed": null,
+      "runtime_budget": "quiet",
+      "index": 0,
+      "portable_deck_sha256": "e95e26e00beb66fe61b7f6fc56cee8961e9920f14e95298c666eb0ebe19a2a77",
+      "diff_sha256": "89e86cbe7289034b92a5acb892f82a649b6e79c0018c73b0b1f20720c0cbaa4f"
+    },
+    {
+      "case_id": "r3_pvt_tran_ff_tm40_v099",
+      "kind": "pam4_noiseless",
+      "pvt_corner": true,
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "delta_ui": 0,
+      "noise_seed": null,
+      "runtime_budget": "quiet",
+      "index": 1,
+      "portable_deck_sha256": "119f6bfd4f22814a7b159884a624d898a7b5c21a1ec45760c2a5ee37021a7683",
+      "diff_sha256": "f5a8251508b38293b7b631c329b56b1b12cb598c0320fc604671d844a840d070"
+    }
+  ],
+  "solver_runs": 0
+}

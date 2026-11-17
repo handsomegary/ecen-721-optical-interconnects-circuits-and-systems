@@ -1,0 +1,63 @@
+{
+  "status": "portable_review",
+  "cases": [
+    {
+      "case_id": "c0_00_tt_zero",
+      "skew_ps": 0.0,
+      "fixed_code": 0,
+      "stop_s": 1.4e-08,
+      "first_payload_s": 1.0485714285714285e-08,
+      "holdout_inputs": 256,
+      "FFE_scored_symbols": 240,
+      "saved_trace_count": 178,
+      "deck_sha256": "045006822ab3addba5ed6ff8e4273eaaae36f057f05cfb466fd0f4bed022e029"
+    },
+    {
+      "case_id": "c0_01_tt_p_late_code0",
+      "skew_ps": 4.464285714285714,
+      "fixed_code": 0,
+      "stop_s": 1.4e-08,
+      "first_payload_s": 1.0485714285714285e-08,
+      "holdout_inputs": 256,
+      "FFE_scored_symbols": 240,
+      "saved_trace_count": 178,
+      "deck_sha256": "c24dfe6250eebf30019fe1e93a791c620658ce403587af85c76ae1e5235656f4"
+    },
+    {
+      "case_id": "c0_02_tt_p_late_preset",
+      "skew_ps": 4.464285714285714,
+      "fixed_code": -60,
+      "stop_s": 1.4e-08,
+      "first_payload_s": 1.0485714285714285e-08,
+      "holdout_inputs": 256,
+      "FFE_scored_symbols": 240,
+      "saved_trace_count": 178,
+      "deck_sha256": "9492e1cc2bf28e1ce3fcef44274f1c151c6c19974f6ab80a06471f0d31914de8"
+    },
+    {
+      "case_id": "c0_03_tt_n_late_code0",
+      "skew_ps": -4.464285714285714,
+      "fixed_code": 0,
+      "stop_s": 1.4e-08,
+      "first_payload_s": 1.0485714285714285e-08,
+      "holdout_inputs": 256,
+      "FFE_scored_symbols": 240,
+      "saved_trace_count": 178,
+      "deck_sha256": "6d09b71dc939dbacae1b7811fb2245bdf11034587d5ffd51871245856a56dcbd"
+    },
+    {
+      "case_id": "c0_04_tt_n_late_preset",
+      "skew_ps": -4.464285714285714,
+      "fixed_code": 60,
+      "stop_s": 1.4e-08,
+      "first_payload_s": 1.0485714285714285e-08,
+      "holdout_inputs": 256,
+      "FFE_scored_symbols": 240,
+      "saved_trace_count": 178,
+      "deck_sha256": "970c0323934d3d6d0c50fc341e9c080d797cb68c321b535a0aa3781a44ff2dda"
+    }
+  ],
+  "model_token": "__pdk_root__",
+  "unchanged_frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "endpoint_code_source": "COMMON64 preset controls; independent acquisition is pending"
+}

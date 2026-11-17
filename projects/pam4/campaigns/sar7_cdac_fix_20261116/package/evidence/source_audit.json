@@ -1,0 +1,163 @@
+{
+  "status": "measured_from_retained_evidence",
+  "job_id": "760348",
+  "case_id": "sar7_07_tt_r5_cml_rdeg",
+  "source_campaign": "pam4_sar7_cml_rdeg_20261115.ot1Vbg",
+  "source_read_only": true,
+  "new_solver_jobs": 0,
+  "source_receipts_sha256": {
+    "summary": "ab2cdaaa6840bbb81841bc120d5d2cb69a47553c1e71e2c8ec22f0f2283dec95",
+    "measurements": "0f311887f7e9803bf70afde08d36c40aab71b9d638196d7e5654f03987f07114",
+    "tran": "1632e997754871f7c7957c5777285df18c6d5008576d505ba50a9e73ecb5a668",
+    "staged_bench": "a6065cbd6820975f81026d3156214c330818ade9615e4bb5fa5bbc29fd674cd1",
+    "portable_bench": "362dc80f1ca8444f59c1f620d2fb5fdae2d8c8948ef2bb7aa3155b2533cbf006",
+    "pilot_manifest": "bd6428e1f85aa5eaf1a8ee99c521b05ffef64c848eb0c53402ccb1be4f995ce3",
+    "cdac_analysis_manifest": "91f528381bb0cc61b555f0ab673026faf61063803b1d19ed2c574b66143061c4",
+    "original_zip": {
+      "status": "measured",
+      "sha256": "938e179f33863ddec49894ba0a44f27b5249cf4efad3dfbfe4ac1bd9248e43dc"
+    }
+  },
+  "diagnostic_period_ps": 1080,
+  "comparison_window_ps": 60,
+  "lsb_V": 0.00078125,
+  "original_scores": {
+    "wrong_conversions": 10,
+    "logic_smoke_pass": false,
+    "codes": [
+      {
+        "expected": 64,
+        "comparator": 65,
+        "registered": 65
+      },
+      {
+        "expected": 0,
+        "comparator": 0,
+        "registered": 0
+      },
+      {
+        "expected": 127,
+        "comparator": 127,
+        "registered": 127
+      },
+      {
+        "expected": 31,
+        "comparator": 28,
+        "registered": 28
+      },
+      {
+        "expected": 96,
+        "comparator": 101,
+        "registered": 101
+      },
+      {
+        "expected": 63,
+        "comparator": 65,
+        "registered": 65
+      },
+      {
+        "expected": 65,
+        "comparator": 67,
+        "registered": 67
+      },
+      {
+        "expected": 85,
+        "comparator": 90,
+        "registered": 90
+      },
+      {
+        "expected": 42,
+        "comparator": 41,
+        "registered": 41
+      },
+      {
+        "expected": 1,
+        "comparator": 0,
+        "registered": 0
+      },
+      {
+        "expected": 126,
+        "comparator": 127,
+        "registered": 127
+      },
+      {
+        "expected": 64,
+        "comparator": 66,
+        "registered": 66
+      }
+    ],
+    "max_abs_sample_error_lsb": 1.5953225670142501,
+    "max_abs_sample_dac_error_from_target_lsb": 1.5953225670142501,
+    "final_cm_change_mV": [
+      -4.001506501876362,
+      -3.909974541966399
+    ]
+  },
+  "limits": [
+    "Measured 0.926 GS/s diagnostic; not 1.75 GS/s validation",
+    "Sense-stage zero crossing is not comparator offset",
+    "CDAC linear fit is descriptive, not a trim prediction",
+    "No timing scan, parameter tuning, or new simulation is authorized by this collector"
+  ],
+  "weight_fit": {
+    "status": "identified",
+    "usable_points": 84,
+    "heldout_points": 84,
+    "offset_lsb": 57.12134105588983,
+    "sample_gain": 0.9902924336824719,
+    "weight_b6_to_b0_lsb": [
+      56.1338588687946,
+      29.41277203783546,
+      14.69526406103104,
+      7.001382576896255,
+      3.600386629221969,
+      2.020915535652276,
+      1.0536075568510757
+    ],
+    "full_code_span_lsb": 113.91818726628267,
+    "ideal_full_code_span_lsb": 127,
+    "heldout_rmse_lsb": 0.8614466834199898
+  },
+  "omitted_control_state_points": 0,
+  "sense_affine": {
+    "fit_model": "sense_diff_V = slope_V_per_V * held_diff_V + output_intercept_V",
+    "slope_V_per_V": 0.588093924594616,
+    "output_intercept_V": 8.22362680850629e-05,
+    "fit_rmse_output_V": 0.00022455262481513167,
+    "zero_crossing_label": "SENSE STAGE ZERO CROSSING; not comparator offset",
+    "sense_stage_zero_crossing_input_V": -0.00013983526209992712,
+    "sense_stage_zero_crossing_input_LSB": -0.1789891354879067,
+    "sign_threshold_input_V": 0.0001953125,
+    "sign_threshold_input_LSB": 0.25,
+    "sign_all": {
+      "points": 84,
+      "same_sign": 83,
+      "opposite_sign": 1,
+      "zero_product": 0
+    },
+    "sign_abs_held_ge_0p25_LSB": {
+      "points": 82,
+      "same_sign": 82,
+      "opposite_sign": 0,
+      "zero_product": 0
+    },
+    "sign_abs_held_lt_0p25_LSB": {
+      "points": 2,
+      "same_sign": 1,
+      "opposite_sign": 1,
+      "zero_product": 0
+    },
+    "sign_correct_code_conversions": {
+      "points": 14,
+      "same_sign": 14,
+      "opposite_sign": 0,
+      "zero_product": 0
+    },
+    "sign_wrong_code_conversions": {
+      "points": 70,
+      "same_sign": 69,
+      "opposite_sign": 1,
+      "zero_product": 0
+    }
+  }
+}

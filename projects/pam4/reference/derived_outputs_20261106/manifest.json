@@ -1,0 +1,61 @@
+{
+  "scope": "Pre-existing locally derived figures and project notes; not raw simulator waveforms.",
+  "files": [
+    {
+      "file": "Project6_r5_paired_eyes.png",
+      "bytes": 1487283,
+      "source_sha256": "b387271a37ba6eac17dbf3e7188887108419edf5fad9602a51befb63e938c0fe",
+      "archived_sha256": "b387271a37ba6eac17dbf3e7188887108419edf5fad9602a51befb63e938c0fe",
+      "archive_note": "Byte-identical copy"
+    },
+    {
+      "file": "Project6_r5_sample_distributions.png",
+      "bytes": 184552,
+      "source_sha256": "56948af0ba6c8eac4948ae99c1e3a4d48b2de07e878e891b55a24299e243e219",
+      "archived_sha256": "56948af0ba6c8eac4948ae99c1e3a4d48b2de07e878e891b55a24299e243e219",
+      "archive_note": "Byte-identical copy"
+    },
+    {
+      "file": "Project6_ADC_r5_進度與判讀.txt",
+      "bytes": 3893,
+      "source_sha256": "d87c5952341aa68cfc34cb04630378a68a1e75c32d37fb400f8abdd57bbee115",
+      "archived_sha256": "d87c5952341aa68cfc34cb04630378a68a1e75c32d37fb400f8abdd57bbee115",
+      "archive_note": "Text newline normalization only"
+    },
+    {
+      "file": "Project6_FFE相位眼圖_實戰第一課.txt",
+      "bytes": 5859,
+      "source_sha256": "076a15f95bc23967ac1205eef0702c7a5502de551f20234f6cafb07fbb79ab57",
+      "archived_sha256": "12b3bb2ec80371f5ec1a0b63fe02669d37270859d9993ccb640f3fc2d1a37fe4",
+      "archive_note": "Text newline normalization only"
+    },
+    {
+      "file": "Project6_CTLE_VGA_調整結果.txt",
+      "bytes": 8053,
+      "source_sha256": "5485535a189e23514dbb0fcfe1fb073ae76b2cfef496b9e180c0886744b51b8c",
+      "archived_sha256": "5485535a189e23514dbb0fcfe1fb073ae76b2cfef496b9e180c0886744b51b8c",
+      "archive_note": "Text newline normalization only"
+    },
+    {
+      "file": "Project6_ADC_r4_實測結論.txt",
+      "bytes": 8213,
+      "source_sha256": "258749390d295afd60f851551a5e131986af9b8a28fe09797b688b6098fd7559",
+      "archived_sha256": "258749390d295afd60f851551a5e131986af9b8a28fe09797b688b6098fd7559",
+      "archive_note": "Text newline normalization only"
+    },
+    {
+      "file": "Project6_正式專案進度.txt",
+      "bytes": 5561,
+      "source_sha256": "de52abc09476a54272f10fca55835b9a1253793aba39b75146b29a40ca252d9b",
+      "archived_sha256": "de52abc09476a54272f10fca55835b9a1253793aba39b75146b29a40ca252d9b",
+      "archive_note": "Text newline normalization only"
+    },
+    {
+      "file": "Project6_可行性結論.txt",
+      "bytes": 6959,
+      "source_sha256": "af8bfdaf1c999d1c4d8fe9f4c9bf1654638942902d734003aba978f8e7372d9b",
+      "archived_sha256": "0fe94c584afb44f49c22f5d73ce79fa3aa2233ea4ad628248353c8ab77a66367",
+      "archive_note": "Text newline normalization only"
+    }
+  ]
+}

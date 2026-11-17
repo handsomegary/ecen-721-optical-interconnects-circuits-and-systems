@@ -1,0 +1,53 @@
+{
+  "purpose": "Derived raster visualizations from existing completed paired validation",
+  "new_simulations": false,
+  "validation_fitting_performed": false,
+  "complete_ADC_verified": false,
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "UI_ps": 8.928571428571429,
+  "saved_spacing_ps": 1.1160714285714286,
+  "holdout_input_symbols": 2048,
+  "eye_windows_per_panel": 2047,
+  "eye_timebase": "Fixed TX period; no phase optimization; lines connect saved samples only",
+  "conditions": "112 Gbaud PAM4, synthetic 20 dB channel at 56 GHz, TT 25 C, 0.9 V",
+  "pairs": {
+    "noiseless": {
+      "summary_sha256": "ff8a466c80549cc476e8c768e56aea64cdab4ed4abb8a6b5d2709769519f716f",
+      "raw_sha256": "752ed58c6e3f5980e5b40f93a0e2d0eced59e2da1a4a2e75b186a9d999b647ce",
+      "branches": {
+        "primary": {
+          "symbol_errors": 0,
+          "scored_symbols": 2032
+        },
+        "secondary": {
+          "symbol_errors": 2,
+          "scored_symbols": 2032
+        }
+      }
+    },
+    "noise": {
+      "summary_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+      "raw_sha256": "a3211485c81b255e1e13b2871e8f2712b31cdefd6e1f4f097f7611d2ea1b229e",
+      "branches": {
+        "primary": {
+          "symbol_errors": 0,
+          "scored_symbols": 2032
+        },
+        "secondary": {
+          "symbol_errors": 164,
+          "scored_symbols": 2032
+        }
+      }
+    }
+  },
+  "files": {
+    "Project6_r5_paired_eyes.png": {
+      "bytes": 1487283,
+      "sha256": "b387271a37ba6eac17dbf3e7188887108419edf5fad9602a51befb63e938c0fe"
+    },
+    "Project6_r5_sample_distributions.png": {
+      "bytes": 184552,
+      "sha256": "56948af0ba6c8eac4948ae99c1e3a4d48b2de07e878e891b55a24299e243e219"
+    }
+  }
+}

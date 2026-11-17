@@ -1,0 +1,14 @@
+{
+  "status": "PAM4_HANDOFF_R1_VERIFIED",
+  "zip": "ECEN721_PAM4_PNSKEW_PVT_20261112_r1.zip",
+  "zip_sha256": "80b7fa1e8e5cb4492cd569bc5fd3692b8632ddafe83c6a59d2d4f834c935cb76",
+  "zip_bytes": 14013964,
+  "members": 392,
+  "cases": 106,
+  "tests_passed": 16,
+  "source_and_deck_sha_verified": true,
+  "deck_and_diff_files_byte_identical_to_r0": 236,
+  "private_olympus_preflight": "PENDING_ON_OLYMPUS",
+  "new_native_runs": 0,
+  "slurm_submissions": 0
+}

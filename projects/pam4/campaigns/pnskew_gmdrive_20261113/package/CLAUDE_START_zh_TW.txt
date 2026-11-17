@@ -1,0 +1,29 @@
+Olympus 交接｜PAM4 GMDRIVE
+
+先閱讀 DESIGN_zh_TW.txt、case_plan.json、PORTABLE_VERIFICATION.json 與 portable_review。
+sha256sum -c SHA256SUMS.txt
+/usr/bin/python3.11 -B gm_drive.py --mode verify
+
+使用 Spectre 23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E、
+既有私有 VM shrink 樹及原 IC231／Olympus wrapper。保留原模型比例。
+每個 P 或 N 欄為一個 job，1 CPU／4 GiB／30 分鐘，solver 估計 3–30 秒／欄。
+以使用者授權的 Olympus 帳號、QOS 和時段提交，截止仍為 2026-12-31 美中。
+
+先把 0、2、4、14、16 各一份物化到新的 review root，核對 PDK section、模型、
+實體 transistor、串阻、far-end 端接、stage-2 gate 交叉與固定取樣。
+  /usr/bin/python3.11 -B gm_drive.py --mode stage --index 0 --index 2 --index 4 --index 14 --index 16 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+待使用者批准，複製 approval_TEMPLATE.json 到套件外，填兩個 SHA 與准許 case IDs、
+stages。先建新的 ~/ecen720_28nm/runs campaign 目錄。環境變數
+PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT。
+使用 gmdrive_classic.sbatch。首批只用核准的 0–17。先查短路徑和漏訊再申請下一階段。
+保留第一個 case raw 核對 PSF 及實際 SS OP。掃描 /proc 無權讀取時，保留該案 raw
+並寫 deferred receipt。只有另行批准且量測、SHA、檔案使用狀態可核對才退役 raw。
+交回 case.json、bench.scs、parent_diff.txt、summary、spectre.log、run_status.json、
+measurements.json、completion.json、資源觀測與收據。raw 留在 Olympus。
+
+  /usr/bin/python3.11 -B drive_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output gmdrive_summary.json
+
+同一 run root 可分批補新 case。彙整輸出每批使用新檔名。先回報 matched-reference
+driver delta、總功耗、OFF-only 比、零 skew 和最差導通裕度。AC review 通過後再
+另擬時域方案及資源。

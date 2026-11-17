@@ -1,0 +1,28 @@
+Olympus 交接｜LP BIAS
+
+先讀 DESIGN_zh_TW.txt、case_plan.json、VERIFICATION.json。
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_bias.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議首批只審查索引 0–77。0–29 為 bypass、idealz50、原固定偏壓，
+30–77 是三角落、單/雙組、4.2/4.5/4.7/5.0 mA 每腿。78–93 是獨立
+upper 階段，只有確定主掃描需要上界才另行請使用者批准。這包全為 AC/OP/noise。
+代表 deck 可先物化。注意 replica 與 Iref 均從 GF_VDD 取電。
+  /usr/bin/python3.11 -B lp_bias.py --mode stage --index 0 --index 6 --index 30 --index 42 --index 50 --index 54 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+使用既有 Olympus 帳號、QOS 與私有 shrink 樹、Spectre 23.1.0.722.isr15
+classic +mt=1、SPECTRE_DEFAULTS=-E。每欄 1 CPU／4 GiB／30 分鐘，solver
+估 3–30 秒。提交前先查實際用戶配額、檔案系統剩餘量與使用者授權時段。
+批准後將 approval_TEMPLATE.json 複製到套件外並填 exact case IDs、
+stage、plan SHA 與 manifest SHA。建立新的 ~/ecen720_28nm/runs campaign。
+設定 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、
+PAM4_PDK_ROOT，使用 lp_bias_classic.sbatch 與獲批索引。
+
+  /usr/bin/python3.11 -B bias_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output bias_summary.json
+
+先核對實測 replica 和主腿電流、GF_VDD、加預留的總功耗和 56 GHz gain。
+保留 first-case raw 確認 PSF 欄位。raw 留在 Olympus，另行批准且完整量測、
+SHA、檔案使用可核對時才退役並寫收據。保存 case、bench、parent diff、
+log、run status、量測、completion、資源與收據。上界、端點、電感、細碼
+與時域各等後續決定。

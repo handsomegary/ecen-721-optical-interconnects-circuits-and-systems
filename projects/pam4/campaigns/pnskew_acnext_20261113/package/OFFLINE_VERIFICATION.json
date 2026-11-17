@@ -1,0 +1,14 @@
+{
+  "status": "PASS_OFFLINE",
+  "planned_cases": 94,
+  "drive_pairs": 47,
+  "original_AC60_verified_compact_cases": 60,
+  "native_spectre_cases_started": 0,
+  "slurm_submissions": 0,
+  "generated_decks_and_diffs_verified": 94,
+  "test_count": 4,
+  "test_log": "test_carry_ablation_changes_only_declared_trim_and_load (test_ac_next.SparseAC.test_carry_ablation_changes_only_declared_trim_and_load) ... ok\ntest_exact_pairing_for_every_case (test_ac_next.SparseAC.test_exact_pairing_for_every_case) ... ok\ntest_sparse_metric_uses_full_modal_matrix_and_input_skew_sign (test_ac_next.SparseAC.test_sparse_metric_uses_full_modal_matrix_and_input_skew_sign) ... ok\ntest_ttd_native_switch_routing_and_pvt_keeps_afe_bytes (test_ac_next.SparseAC.test_ttd_native_switch_routing_and_pvt_keeps_afe_bytes) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.038s\n\nOK\n",
+  "parsed_only_python": true,
+  "actual_spectre_parse_and_measurement": "PENDING_OLYMPUS",
+  "planned_case_scope": "Sparse AC/DC/noise; prior r0/AC60 left unchanged"
+}

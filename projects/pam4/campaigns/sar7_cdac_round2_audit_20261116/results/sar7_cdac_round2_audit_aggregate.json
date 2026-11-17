@@ -1,0 +1,319 @@
+{
+ "schema": "pam4_sar7_cdac_round2_retained_audit_v1",
+ "status": "measured_from_retained_evidence",
+ "job_id": "760874",
+ "case_id": "sar7_09_tt_cml_main_ratio",
+ "source_campaign": "pam4_sar7_cdac_fix_20261116.zN5rXs",
+ "source_read_only": true,
+ "new_solver_jobs": 0,
+ "source_sha256": {
+  "summary": "6573a387cf24fccfad5ffbaa98016b59f22d21402b7b59cfbba8ef72527fc150",
+  "measurements": "416735e041446ec7e596498ae5ca537b5851139a42e030b899437e260ee47cd6",
+  "tran": "22de6869fca439d446ad6e04de2e1e1809708fce82081c8b40215ef7061fb4f9",
+  "portable": "f2231b54d5138538c57102e5cd25dcc1047829ed71f02d79ab3d37d5726a6153",
+  "staged_bench": "9b9fbd5ab33c2ca7659a1b77eb3b8a200e7be348f6e85717eb3bd6e34df696f7",
+  "parent_manifest": "bb97b973466cc63a8d6c282b7ab142e35b4af911e107d01da0efa51ef3005153",
+  "weight_analysis_manifest": "91f528381bb0cc61b555f0ab673026faf61063803b1d19ed2c574b66143061c4"
+ },
+ "lsb_V": 0.00078125,
+ "original_scores": {
+  "comparator": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 6,
+   "sum_abs_code_error": 7,
+   "max_abs_code_error": 2
+  },
+  "registered": {
+   "available": 12,
+   "missing": 0,
+   "wrong": 6,
+   "sum_abs_code_error": 7,
+   "max_abs_code_error": 2
+  },
+  "valid": true,
+  "logic_smoke_pass": false,
+  "unresolved_bits_total": 0,
+  "max_abs_sample_error_lsb": 1.6389965373552684
+ },
+ "limits": [
+  "No circuit design, parameter prediction or new simulation",
+  "Sparse observations interpolate existing storedPSF points, without changing timing",
+  "Weight fit uses actualpre_s control rails, never final-prefix assumptions",
+  "Sense affine zero crossing is not comparator offset"
+ ],
+ "cdac_weight_fit": {
+  "status": "identified",
+  "usable_points": 84,
+  "heldout_points": 84,
+  "offset_lsb": 63.638303580651325,
+  "sample_gain": 0.9899742412719461,
+  "weight_b6_to_b0_lsb": [
+   63.95032501648934,
+   32.10712351247045,
+   16.02546325086955,
+   7.969026660705447,
+   3.6477042577435994,
+   2.0253189042846516,
+   1.1768623688584454
+  ],
+  "full_code_span_lsb": 126.90182397142148,
+  "ideal_full_code_span_lsb": 127,
+  "heldout_rmse_lsb": 1.0068959958116857
+ },
+ "omitted_pre_control_states": 0,
+ "sense_affine": {
+  "slope_V_per_V": 0.5882443279590251,
+  "output_intercept_V": 9.139762841918779e-05,
+  "output_rmse_V": 0.00026057029619272866,
+  "sense_stage_zero_crossing_input_V": -0.0001553735821581168,
+  "sense_stage_zero_crossing_input_LSB": -0.19887818516238948,
+  "zero_crossing_label": "Sense stage affine zero crossing, not comparator offset"
+ },
+ "actual_control_vs_old_prefix": {
+  "available": 84,
+  "matches": 84,
+  "mismatches": 0,
+  "mismatch_records": []
+ },
+ "decision_vs_held_pre_sign": {
+  "available": 84,
+  "agrees": 79,
+  "disagrees": 5,
+  "zero_or_unresolved": 0,
+  "disagreement_records": [
+   {
+    "index": 4,
+    "bit": 5,
+    "decision": 1,
+    "pre_diff_V": -0.000502149972794963
+   },
+   {
+    "index": 4,
+    "bit": 0,
+    "decision": 1,
+    "pre_diff_V": -0.0007216305972487236
+   },
+   {
+    "index": 6,
+    "bit": 0,
+    "decision": 1,
+    "pre_diff_V": -0.00036987153599554734
+   },
+   {
+    "index": 7,
+    "bit": 1,
+    "decision": 1,
+    "pre_diff_V": -0.00025930696558806865
+   },
+   {
+    "index": 8,
+    "bit": 2,
+    "decision": 1,
+    "pre_diff_V": -0.000630315541060078
+   }
+  ]
+ },
+ "decision_vs_sense_pre_sign": {
+  "available": 84,
+  "agrees": 79,
+  "disagrees": 5,
+  "zero_or_unresolved": 0,
+  "disagreement_records": [
+   {
+    "index": 4,
+    "bit": 5,
+    "decision": 1,
+    "pre_diff_V": -0.0001885785236681592
+   },
+   {
+    "index": 4,
+    "bit": 0,
+    "decision": 1,
+    "pre_diff_V": -0.0004326341650031651
+   },
+   {
+    "index": 6,
+    "bit": 0,
+    "decision": 1,
+    "pre_diff_V": -0.00022554020095921778
+   },
+   {
+    "index": 7,
+    "bit": 1,
+    "decision": 1,
+    "pre_diff_V": -0.00017221563505231963
+   },
+   {
+    "index": 8,
+    "bit": 2,
+    "decision": 1,
+    "pre_diff_V": -0.0003765878807319156
+   }
+  ]
+ },
+ "run_root": "~/ecen720_28nm/runs/pam4_sar7_cdac_round2_audit_20261116.c85nB5",
+ "full_json_sha256": "0e9e091578e93bccaddbffc9c795de26e1d1c6594f263b844591f58f1830a4e9",
+ "conversions_brief": [
+  {
+   "index": 0,
+   "expected_code": 64,
+   "observed_comparator_code": 64,
+   "delta_code": 0,
+   "first_different_bit": null,
+   "sample_main_error_from_target_LSB": 0.013405711137124826,
+   "sample_low_error_from_target_LSB": 0.010163101564984317
+  },
+  {
+   "index": 1,
+   "expected_code": 0,
+   "observed_comparator_code": 0,
+   "delta_code": 0,
+   "first_different_bit": null,
+   "sample_main_error_from_target_LSB": -1.1613756276228404,
+   "sample_low_error_from_target_LSB": -1.1824064518557353
+  },
+  {
+   "index": 2,
+   "expected_code": 127,
+   "observed_comparator_code": 127,
+   "delta_code": 0,
+   "first_different_bit": null,
+   "sample_main_error_from_target_LSB": 0.942871447032525,
+   "sample_low_error_from_target_LSB": 0.7647703917987148
+  },
+  {
+   "index": 3,
+   "expected_code": 31,
+   "observed_comparator_code": 31,
+   "delta_code": 0,
+   "first_different_bit": null,
+   "sample_main_error_from_target_LSB": -0.2767059111155845,
+   "sample_low_error_from_target_LSB": -0.24836592269167568
+  },
+  {
+   "index": 4,
+   "expected_code": 96,
+   "observed_comparator_code": 97,
+   "delta_code": 1,
+   "first_different_bit": 0,
+   "sample_main_error_from_target_LSB": 0.3672942363465381,
+   "sample_low_error_from_target_LSB": 0.5637119704400106
+  },
+  {
+   "index": 5,
+   "expected_code": 63,
+   "observed_comparator_code": 64,
+   "delta_code": 1,
+   "first_different_bit": 6,
+   "sample_main_error_from_target_LSB": 0.327347016576482,
+   "sample_low_error_from_target_LSB": -0.021544835990255223
+  },
+  {
+   "index": 6,
+   "expected_code": 65,
+   "observed_comparator_code": 65,
+   "delta_code": 0,
+   "first_different_bit": null,
+   "sample_main_error_from_target_LSB": 0.24649188184716286,
+   "sample_low_error_from_target_LSB": -0.09716377564438994
+  },
+  {
+   "index": 7,
+   "expected_code": 85,
+   "observed_comparator_code": 86,
+   "delta_code": 1,
+   "first_different_bit": 1,
+   "sample_main_error_from_target_LSB": 0.6898437156623638,
+   "sample_low_error_from_target_LSB": 0.24577850051036965
+  },
+  {
+   "index": 8,
+   "expected_code": 42,
+   "observed_comparator_code": 44,
+   "delta_code": 2,
+   "first_different_bit": 2,
+   "sample_main_error_from_target_LSB": -0.19124972317391187,
+   "sample_low_error_from_target_LSB": -0.20688071548170317
+  },
+  {
+   "index": 9,
+   "expected_code": 1,
+   "observed_comparator_code": 0,
+   "delta_code": -1,
+   "first_different_bit": 0,
+   "sample_main_error_from_target_LSB": -1.6389965373552684,
+   "sample_low_error_from_target_LSB": -1.0044057336928347
+  },
+  {
+   "index": 10,
+   "expected_code": 126,
+   "observed_comparator_code": 127,
+   "delta_code": 1,
+   "first_different_bit": 0,
+   "sample_main_error_from_target_LSB": 0.9217881876688239,
+   "sample_low_error_from_target_LSB": 0.753849625662184
+  },
+  {
+   "index": 11,
+   "expected_code": 64,
+   "observed_comparator_code": 64,
+   "delta_code": 0,
+   "first_different_bit": null,
+   "sample_main_error_from_target_LSB": 0.4329521551246955,
+   "sample_low_error_from_target_LSB": 0.29953939295819504
+  }
+ ],
+ "index8_b2": {
+  "pre_control_word": 44,
+  "old_prefix_word": 44,
+  "held_pre_LSB": -0.8068038925568999,
+  "sense_pre_LSB": -0.482032487336852,
+  "decision": 1,
+  "expected_bit": 0,
+  "latch_diff_V_by_ps": {
+   "0.0": -0.0016102489713314613,
+   "0.25": -0.002677766725354516,
+   "0.5": -0.003607287282065918,
+   "1.0": -0.00305353964290362,
+   "2.0": -0.0006580114259814515,
+   "5.0": 0.001251329105925796,
+   "15.0": -0.015617404293368747,
+   "30.0": -0.03700058866581596,
+   "50.0": 0.8609235234180143,
+   "60.0": 0.8988001866144726
+  },
+  "sense_LSB_by_ps": {
+   "0.0": -0.4817538714164016,
+   "0.25": -0.48172087164829236,
+   "0.5": -0.4815800276892901,
+   "1.0": -0.48103365276830345,
+   "2.0": -0.4770792827291359,
+   "5.0": -0.4423496619868672,
+   "15.0": -0.4342081621538796,
+   "30.0": -0.323804346767389,
+   "50.0": -1.1540640518185796,
+   "60.0": -0.8398929676184252
+  }
+ },
+ "claude_threshold_bracket_descriptive": {
+  "note": "Claude read-only tabulation from the trial list; not a comparator-offset measurement",
+  "sense_LSB_negative_decided_1": [
+   -0.5537717312040513,
+   -0.482032487336852,
+   -0.28869145722779876,
+   -0.24138051029524377,
+   -0.22043601286696912
+  ],
+  "sense_LSB_negative_decided_0_max": -0.6733879103256868,
+  "positive_sense_decided_0_count": 0,
+  "held_LSB_negative_decided_1": [
+   -0.9236871644783662,
+   -0.8068038925568999,
+   -0.6427519651775526,
+   -0.4734355660743006,
+   -0.33191291595272787
+  ],
+  "held_LSB_negative_decided_0_max": -1.1270172142965862
+ }
+}

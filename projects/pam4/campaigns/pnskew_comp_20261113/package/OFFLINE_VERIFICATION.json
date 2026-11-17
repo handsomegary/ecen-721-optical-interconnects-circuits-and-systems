@@ -1,0 +1,19 @@
+{
+  "status": "OFFLINE_PASS",
+  "tests": 21,
+  "case_counts": {
+    "AC": 3534,
+    "planned_integrated": 95,
+    "pilot_dynamic": true
+  },
+  "reviews_generated": 8,
+  "test_log": "test_accepts_only_documented_thread_evidence (test_execution.TestClassicEvidence.test_accepts_only_documented_thread_evidence) ... ok\ntest_case_paths_are_leaf_names (test_execution.TestClassicEvidence.test_case_paths_are_leaf_names) ... ok\ntest_cross_case_measurement_and_raw_output_keeper_rejected (test_execution.TestClassicEvidence.test_cross_case_measurement_and_raw_output_keeper_rejected) ... ok\ntest_mode_or_failed_solver_blocks_collect (test_execution.TestClassicEvidence.test_mode_or_failed_solver_blocks_collect) ... ok\ntest_denied_same_or_unknown_uid_scan_defers_retirement (test_execution.TestRawRetirement.test_denied_same_or_unknown_uid_scan_defers_retirement) ... ok\ntest_other_uid_is_skipped_but_open_raw_defers (test_execution.TestRawRetirement.test_other_uid_is_skipped_but_open_raw_defers) ... ok\ntest_partial_readback_requires_the_exact_missing_paths (test_execution.TestRawRetirement.test_partial_readback_requires_the_exact_missing_paths) ... ok\ntest_permission_denial_keeps_raw_and_does_not_invalidate_measurements (test_execution.TestRawRetirement.test_permission_denial_keeps_raw_and_does_not_invalidate_measurements) ... ok\ntest_blind_signed_search_and_holdout_disagreement (test_compensation.CompensationTests.test_blind_signed_search_and_holdout_disagreement) ... ok\ntest_exact_r5_stimulus_then_only_named_integration_changes (test_compensation.CompensationTests.test_exact_r5_stimulus_then_only_named_integration_changes) ... ok\ntest_fixed_plan_27_full_codes_and_20_seeds (test_compensation.CompensationTests.test_fixed_plan_27_full_codes_and_20_seeds) ... ok\ntest_missing_phase_probe_cannot_be_labeled_measured (test_compensation.CompensationTests.test_missing_phase_probe_cannot_be_labeled_measured) ... ok\ntest_native_pilot_sample_reduction_with_known_time_skew (test_compensation.CompensationTests.test_native_pilot_sample_reduction_with_known_time_skew) ... ok\ntest_parent_circuit_and_corner_geometry_are_preserved (test_compensation.CompensationTests.test_parent_circuit_and_corner_geometry_are_preserved) ... ok\ntest_56GHz_model_polarity_and_differential_loss (test_skew.TestSkew.test_56GHz_model_polarity_and_differential_loss) ... ok\ntest_exact_grid_pairs_and_tone_cases (test_skew.TestSkew.test_exact_grid_pairs_and_tone_cases) ... ok\ntest_held_margin_uses_fixed_secondary_inversion (test_skew.TestSkew.test_held_margin_uses_fixed_secondary_inversion) ... ok\ntest_ideal_inverse_has_exact_zero_skew_deck (test_skew.TestSkew.test_ideal_inverse_has_exact_zero_skew_deck) ... ok\ntest_predeclared_label_and_missing_seed (test_skew.TestSkew.test_predeclared_label_and_missing_seed) ... ok\ntest_relative_run_root_reads_real_compact_csv (test_skew.TestSkew.test_relative_run_root_reads_real_compact_csv) ... ok\ntest_source_overlay_preserves_every_other_byte (test_skew.TestSkew.test_source_overlay_preserves_every_other_byte) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.441s\n\nOK\n",
+  "actual_Spectre_parser_or_PSF_run": false,
+  "physical_monitor_implemented": false,
+  "model_bodies_bundled": false,
+  "native_simulations": 0,
+  "r2_zip_sha256": "21856ffa4cf3bed8a27903bba24036194ea85cd9c5ff9f56b4070944e5b177d2",
+  "relative_summary_fix_regression": true,
+  "new_thresholds_approved": false,
+  "slurm_submissions": 0
+}

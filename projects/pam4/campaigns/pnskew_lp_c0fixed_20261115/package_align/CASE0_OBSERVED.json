@@ -1,0 +1,18 @@
+{
+  "source": "CODEX_FEEDBACK_PAM4_PNSKEW_LP_GMTAP_C0_CASE0_20261115.md",
+  "case_id": "c0_00_tt_zero",
+  "slurm_task_id": "757899",
+  "run_status": "spectre_completed",
+  "exit_code": 0,
+  "spectre_wall_seconds_reported": 2373,
+  "tran_size_MB_reported": 69.4,
+  "scored_symbols_per_plane": 240,
+  "original_counts": {
+    "primary": { "raw_FFE_errors": 173, "ideal7bit_FFE_errors": 174 },
+    "secondary": { "raw_FFE_errors": 175, "ideal7bit_FFE_errors": 175 }
+  },
+  "observed_full_window_lag_scan_for_diagnosis_only": {
+    "primary": { "old_lag": 1, "old_r": 0.005, "peak_lag": 3, "peak_r": 0.753 },
+    "secondary": { "old_lag": 3, "old_r": -0.735, "peak_lag": 3, "peak_r": -0.735 }
+  }
+}

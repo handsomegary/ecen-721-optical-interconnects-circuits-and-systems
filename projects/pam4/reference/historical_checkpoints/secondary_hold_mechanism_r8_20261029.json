@@ -1,0 +1,311 @@
+{
+  "receipt": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/notes/secondary_hold_mechanism_r8_20261029.json",
+  "receipt_sha256": "6f05fde14392ff686e4f58d27ae1d877817607542252079563be3cc30927ffee",
+  "result": {
+    "created_utc": "2026-10-30T03:12:12.696091Z",
+    "status": "existing_training_diagnostic_complete",
+    "scope": "Two existing noiseless r7 training cases, physical aperture indices256..767; no holdout opened, no fitting, no simulation, no hardware mutation.",
+    "script_sha256": "5c7fe7aa4abd319b420881621eaa105dd653fbcff6b0570f4dee4ff0451c6545",
+    "training_protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+    "boot_id": "b2b126f8-b065-46be-ab1a-d5b65d47344e",
+    "free_bytes": 4103770112,
+    "simulations_started": 0,
+    "full_ADC_verified": false,
+    "cases": {
+      "noiseless_baseline_r5": {
+        "raw_sha256": "e08203a2f92d2b8ece690fc57b13add7f68d7d8736a1e69d94b2c65c74a9f532",
+        "summary_sha256": "e2444b330ea4110905151400b602e945bcb0c176c2f0ad4731c0c428d6fa0498",
+        "physical_apertures": 512,
+        "buffer_apertures": 128,
+        "statistics": {
+          "primary_initial_V": {
+            "count": 512,
+            "mean": 4.183351754986388e-05,
+            "rms": 0.01849952226429655,
+            "peak_abs": 0.04045773103114947
+          },
+          "primary_late_V": {
+            "count": 512,
+            "mean": 4.6174019611470605e-05,
+            "rms": 0.01880132488691487,
+            "peak_abs": 0.040996075392866094
+          },
+          "primary_hold_change_V": {
+            "count": 512,
+            "mean": 4.340502061606728e-06,
+            "rms": 0.0007717396289485806,
+            "peak_abs": 0.0020865280760236082
+          },
+          "primary_final8ps_change_V": {
+            "count": 512,
+            "mean": -1.3156335643012794e-06,
+            "rms": 0.00042456516071724443,
+            "peak_abs": 0.001198840952235325
+          },
+          "primary_secondary_edge_bracket_change_V": {
+            "count": 512,
+            "mean": -3.594662830533075e-07,
+            "rms": 0.00015520336675936344,
+            "peak_abs": 0.00039551120218017655
+          },
+          "secondary_edge_bracket_change_V": {
+            "count": 512,
+            "mean": 2.585319770005874e-08,
+            "rms": 0.0003213514613912251,
+            "peak_abs": 0.0007772382504813713
+          },
+          "secondary_late_V": {
+            "count": 512,
+            "mean": -3.450021986507626e-05,
+            "rms": 0.010116840014828817,
+            "peak_abs": 0.02197974066601094
+          },
+          "secondary_close_delay_ps": {
+            "count": 512,
+            "mean": 31.99999999999989,
+            "rms": 31.99999999999989,
+            "peak_abs": 32.000000000000306
+          },
+          "secondary_to_primary_rise_midpoint_ps": {
+            "count": 512,
+            "mean": 3.658354868971585,
+            "rms": 3.658354893891088,
+            "peak_abs": 3.65910497226299
+          },
+          "buffer_late_V": {
+            "count": 128,
+            "mean": -0.000539762689028468,
+            "rms": 0.010620594409657371,
+            "peak_abs": 0.02164125086328228
+          },
+          "buffer_final8ps_change_V": {
+            "count": 128,
+            "mean": 3.4301949976075705e-05,
+            "rms": 0.0006403673530731714,
+            "peak_abs": 0.0013814416502545557
+          },
+          "secondary_to_buffer_lag_V": {
+            "count": 128,
+            "mean": -2.2083733577086227e-05,
+            "rms": 0.0004032781346693673,
+            "peak_abs": 0.0008717554218793389
+          },
+          "buffer_primary_close_to_secondary_close_change_V": {
+            "count": 128,
+            "mean": 0.00042299214267751094,
+            "rms": 0.006318779360132467,
+            "peak_abs": 0.013654297938488158
+          }
+        },
+        "per_bank_primary_hold_change_V": {
+          "0": {
+            "count": 64,
+            "mean": -2.3709329813003527e-05,
+            "rms": 0.0006920192119814005,
+            "peak_abs": 0.0018168342032600648
+          },
+          "1": {
+            "count": 64,
+            "mean": 0.00013310742692317253,
+            "rms": 0.0007586871939691669,
+            "peak_abs": 0.0020865280760236082
+          },
+          "2": {
+            "count": 64,
+            "mean": -4.567787215587274e-05,
+            "rms": 0.0007025985453915296,
+            "peak_abs": 0.0017204817311970988
+          },
+          "3": {
+            "count": 64,
+            "mean": -7.787391511344076e-05,
+            "rms": 0.0008248136366371401,
+            "peak_abs": 0.0018266822420408557
+          },
+          "4": {
+            "count": 64,
+            "mean": 5.223314756065342e-06,
+            "rms": 0.0008122674939655009,
+            "peak_abs": 0.001718331210048718
+          },
+          "5": {
+            "count": 64,
+            "mean": -8.464071980824987e-05,
+            "rms": 0.0008208949092910821,
+            "peak_abs": 0.001981684819913232
+          },
+          "6": {
+            "count": 64,
+            "mean": 0.00011850864523932532,
+            "rms": 0.00078911923371277,
+            "peak_abs": 0.0016903535871216624
+          },
+          "7": {
+            "count": 64,
+            "mean": 9.786466464857535e-06,
+            "rms": 0.0007614730730866726,
+            "peak_abs": 0.0017990411346404667
+          }
+        },
+        "final8ps_primary_buffer_change_correlation": -0.4175106467956773,
+        "strobe_period_s": 1.1160714285714286e-12,
+        "source_clock_mapping_verified": true
+      },
+      "noiseless_secondary_c25_w2": {
+        "raw_sha256": "b092d8bb024f5be4b520d36278808f52b1ed9b54e0f3a253d4dbb2a408909ba6",
+        "summary_sha256": "f74d3a091a5c5bfdcb82340832d6e7cbde0264b1e79049d3392dbb5083d83a58",
+        "physical_apertures": 512,
+        "buffer_apertures": 128,
+        "statistics": {
+          "primary_initial_V": {
+            "count": 512,
+            "mean": 4.176686748539574e-05,
+            "rms": 0.018522563341942955,
+            "peak_abs": 0.04052163656052632
+          },
+          "primary_late_V": {
+            "count": 512,
+            "mean": 4.6989932507356374e-05,
+            "rms": 0.018810125342148168,
+            "peak_abs": 0.04109398468284042
+          },
+          "primary_hold_change_V": {
+            "count": 512,
+            "mean": 5.223065021960635e-06,
+            "rms": 0.0007330622236818468,
+            "peak_abs": 0.0019772190598635886
+          },
+          "primary_final8ps_change_V": {
+            "count": 512,
+            "mean": -1.047239821240888e-06,
+            "rms": 0.0004209978194887377,
+            "peak_abs": 0.0011776358443992274
+          },
+          "primary_secondary_edge_bracket_change_V": {
+            "count": 512,
+            "mean": -2.547040520474442e-07,
+            "rms": 0.00015533307129553806,
+            "peak_abs": 0.0003931966188627234
+          },
+          "secondary_edge_bracket_change_V": {
+            "count": 512,
+            "mean": 2.573709483685415e-06,
+            "rms": 0.00033247834379472493,
+            "peak_abs": 0.0009258542001684411
+          },
+          "secondary_late_V": {
+            "count": 512,
+            "mean": -6.043389921581545e-05,
+            "rms": 0.00809567384329277,
+            "peak_abs": 0.01781844619796835
+          },
+          "secondary_close_delay_ps": {
+            "count": 512,
+            "mean": 31.99999999999989,
+            "rms": 31.99999999999989,
+            "peak_abs": 32.000000000000306
+          },
+          "secondary_to_primary_rise_midpoint_ps": {
+            "count": 512,
+            "mean": 3.658354868971585,
+            "rms": 3.658354893891088,
+            "peak_abs": 3.65910497226299
+          },
+          "buffer_late_V": {
+            "count": 128,
+            "mean": -0.000561783547600554,
+            "rms": 0.008852675584790786,
+            "peak_abs": 0.018720766030573155
+          },
+          "buffer_final8ps_change_V": {
+            "count": 128,
+            "mean": 2.5216969717499656e-05,
+            "rms": 0.0009982341240928002,
+            "peak_abs": 0.0022243775970751667
+          },
+          "secondary_to_buffer_lag_V": {
+            "count": 128,
+            "mean": -1.921895072600887e-05,
+            "rms": 0.000766955595972398,
+            "peak_abs": 0.0017088063649578489
+          },
+          "buffer_primary_close_to_secondary_close_change_V": {
+            "count": 128,
+            "mean": 0.0002166287065843613,
+            "rms": 0.005902840076272428,
+            "peak_abs": 0.013085970492709098
+          }
+        },
+        "per_bank_primary_hold_change_V": {
+          "0": {
+            "count": 64,
+            "mean": -4.3352889541919265e-05,
+            "rms": 0.0006550559391329666,
+            "peak_abs": 0.0017907288495807583
+          },
+          "1": {
+            "count": 64,
+            "mean": 0.0001270533748814369,
+            "rms": 0.0007200364234238596,
+            "peak_abs": 0.0019772190598635886
+          },
+          "2": {
+            "count": 64,
+            "mean": -3.4774667897141676e-05,
+            "rms": 0.0006688692375424439,
+            "peak_abs": 0.0015860673522974933
+          },
+          "3": {
+            "count": 64,
+            "mean": -7.995871143914347e-05,
+            "rms": 0.0007850382297520168,
+            "peak_abs": 0.0017290057199649267
+          },
+          "4": {
+            "count": 64,
+            "mean": 5.6248011945855825e-06,
+            "rms": 0.000775638481878382,
+            "peak_abs": 0.0016232215474850653
+          },
+          "5": {
+            "count": 64,
+            "mean": -7.021116153032615e-05,
+            "rms": 0.0007723507569076235,
+            "peak_abs": 0.001803813188744341
+          },
+          "6": {
+            "count": 64,
+            "mean": 0.0001281124909562597,
+            "rms": 0.0007506219043288361,
+            "peak_abs": 0.001520628175932237
+          },
+          "7": {
+            "count": 64,
+            "mean": 9.291283551933482e-06,
+            "rms": 0.0007254281406432877,
+            "peak_abs": 0.0016524893263085705
+          }
+        },
+        "final8ps_primary_buffer_change_correlation": -0.3007014270797473,
+        "strobe_period_s": 1.1160714285714286e-12,
+        "source_clock_mapping_verified": true
+      }
+    },
+    "limitations": [
+      "Observational waveform differences cannot isolate the causal source of disturbance.",
+      "Saved strobe interval about1.116ps;3ps edge brackets include signal dynamics and are not resolved charge-injection measurements.",
+      "Buffer nodes are saved only for banks0and7; primary and secondary hold nodes cover all8banks.",
+      "Noiseless excludes simulated random transient noise; no SNR/SER improvement is claimed.",
+      "Ideal numeric quantization, reset comparators and ideal clocks remain in the historical testbench."
+    ],
+    "source_state_protocol_frozen_detectors_unchanged": true,
+    "protected_hashes": {
+      "/home/user/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_training_r7_20261022/status.json": "b313c3ae8fdd84739cf381503161d2ba00c57034f599a3afecc5bcb850bd4a6c",
+      "/home/user/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_training_r7_20261022/protocol.json": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+      "/home/user/Desktop/cadence_projects/project6_28nm/runs/adc_backend_pam4_r5_20261013/r5_late1/frozen.json": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "/home/user/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_training_r7_20261022/baseline_r5_detectors.json": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+      "/home/user/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_training_r7_20261022/secondary_c25_w1_detectors.json": "7bb43800503c5b00e5f686f9b5e3eb82571f1b4475c6ac5d05b017d3f0426558",
+      "/home/user/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_training_r7_20261022/secondary_c25_w2_detectors.json": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+    }
+  }
+}

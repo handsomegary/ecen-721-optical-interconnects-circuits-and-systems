@@ -1,0 +1,40 @@
+{
+  "original_plan_sha256": "b74093eb9fc686d83afc27218aed8d39e966e695dd5613ebe4971a558bab34d9",
+  "original_manifest_sha256": "6acebdb55b371119172337903fc38f77ecf0dcb0ef81e1ba9cbea1145a49f3a8",
+  "cases": [
+    {
+      "case_id": "lpdiag_00_ss_fast_cb0",
+      "files": {
+        "case.json": "658134bc2f068c96c3d95797caf9a461c3410fe980ad6439b5d78519159ec2c6",
+        "run_status.json": "3ae0301a7a51c461bb41e4cb18d87440fd28588af47c136dc3e11e52001aa295",
+        "execution_intent.json": "52ab78e3f053082562476e103a86556b978d17143093e646de1783ef89b45cc9",
+        "bench.scs": "255e021296bde6dc3870d2d474b0bebd639b54e7f7df2879c0ffe7c34a801f15",
+        "parent_diff.txt": "9441ffad0d75da92ef640fffb23aeb02305a2338ae5e83370fc4e9cef7d4a7ec",
+        "la5_foundry_corners.scs": "8e63bd6fd18051bb3e15c3ebcfba0c3f58c12b8a5bf78fd62f373b0f19cadf78",
+        "spectre.log": "2654300bb4da2cf3a40a2a6425e0664cb38ed01c2c4d0885152707d0b7b00a9c",
+        ".study_owned": "72c88784da4e03fa6cac06accae110e097ab3f57a301ce1b787b892376e23154"
+      },
+      "slurm_job_id": "754103",
+      "solver_hostname": "<compute-node>",
+      "raw_files": 4
+    },
+    {
+      "case_id": "lpdiag_11_ss_replica_cb2",
+      "files": {
+        "case.json": "bfa7aaaae73980eeba9ca69bc2dd997befd376b4af2c93a274069f495872dd53",
+        "run_status.json": "37937fbd4949289ca3d957ca19c670032cad3505142daed61a8b961d2d8be50f",
+        "execution_intent.json": "01206a8306e99ded1c416ee1d4c13a76ebd4213cde1f34869d655d143c096355",
+        "bench.scs": "86e4caf281f93b778e893cd1d25bb5b447de902f20e64f4ac07ee372da5321ee",
+        "parent_diff.txt": "b607c3824c06eae381803b681de1a0471991286b7d72f7336da105df1de862db",
+        "la5_foundry_corners.scs": "8e63bd6fd18051bb3e15c3ebcfba0c3f58c12b8a5bf78fd62f373b0f19cadf78",
+        "spectre.log": "4898f3d7a2e3fb1f68bd2be34c7fc480f67015618b7a61cd7891bb6e16f91fdf",
+        ".study_owned": "1360bcc173518bec00fe5b474d22347bbaae9d1dc107345322fbfcfcd075d1ca",
+        "measurements.json": "783eb4d7c1fc6704434d40ffc33649e365f8c56b24c4ed7e8fa1d4629f5382d7",
+        "completion.json": "cdb3dbf02f0796266fcf1ae4d084dd8c27ca946fe1c3599e4b86888d1db6dde7"
+      },
+      "slurm_job_id": "754102",
+      "solver_hostname": "<compute-node>",
+      "raw_files": 5
+    }
+  ]
+}

@@ -1,0 +1,3378 @@
+{
+  "AC_columns_verified": 60,
+  "case_evidence": {
+    "ac_ff_m40_v099_00_n_r25": {
+      "deck_sha256_attested": "11ff0197a207b5ccc5693692bacdbb23c91071790f1b20e0f8aaa3194c97fc6e",
+      "job_id": "752303",
+      "measurement_sha256": "e1583457de7fa67bd31bcceb379291ac2f88d5050366e0e118a227d9bf8d6a8a",
+      "parent_diff_sha256": "835bf8d406e540d14c8c033e880d6b8551e676fed05eae2b31da222f84936c31"
+    },
+    "ac_ff_m40_v099_00_p_r25": {
+      "deck_sha256_attested": "b75e211b39e5e619e6d3bcd30fbb4f932586719614ee169ecef86f6826dcd645",
+      "job_id": "752302",
+      "measurement_sha256": "d2c1be66f627878cc0606222e9cbf9bf23dacf6d0b9c74b62c137e169f13c330",
+      "parent_diff_sha256": "cd70b1bd29d7b6063d53dd09c53b44204af7ebe005c4bc6b8635f0e0c2bfedb9"
+    },
+    "ac_ff_m40_v099_16_n_r25": {
+      "deck_sha256_attested": "6c9d6e966a12375ae1d207f1f2711d6c8d5f4c86d719e57eff8f1ec8cb065a8c",
+      "job_id": "752305",
+      "measurement_sha256": "ef86bf5bcf97db2d2ddeb25d2d2f020da518a5c61641bc7e9a7bb0e38d980e86",
+      "parent_diff_sha256": "d90eb7d3f07124dad31d03b0b6285301c6a60d54bc0ab938e052adf045dea810"
+    },
+    "ac_ff_m40_v099_16_p_r25": {
+      "deck_sha256_attested": "3b98b07898ca034d13e3fcc59ef8089ff8ffe03f5760fb96aa6662919c379c72",
+      "job_id": "752304",
+      "measurement_sha256": "d3e8e817b2c66899cda0e3fe137d8cadc567d2ea59cda915a9712c07e782731e",
+      "parent_diff_sha256": "083ab31406953d0e77415a39f2e9ad17797a350f44e7cbcfcc820faeb71dcd89"
+    },
+    "ac_ff_m40_v099_32_n_r25": {
+      "deck_sha256_attested": "877e05fb6da25250f4680027af85398e7e80e315b856ff7e1a9c6b13c16d5f4e",
+      "job_id": "752307",
+      "measurement_sha256": "180472e58cf23863bf7edb69ce43aaf38e239ddb5d495a0d6a7b14f1af817f93",
+      "parent_diff_sha256": "ec13f8dacec8c591a01b87b9a5af089a26fb596f5487555144ac14cbf1ec11ef"
+    },
+    "ac_ff_m40_v099_32_p_r25": {
+      "deck_sha256_attested": "fe80375d12e05f76eb7de5e3acc454638503e67f6e359c1da874de67a7a75348",
+      "job_id": "752306",
+      "measurement_sha256": "1f3af53fd5ed494215ffdc6a9740412b4939e8464fb7f4a18bc94f527d1daf5f",
+      "parent_diff_sha256": "61b2ea0819cbf613173cc5bdf1f5a0ab94b109a7916503664b709be8848606db"
+    },
+    "ac_ff_m40_v099_48_n_r25": {
+      "deck_sha256_attested": "9e3cfb0e7be0c33cd2948ae5964cd37f20f0ad5f6f516729912a99b1d2354fbe",
+      "job_id": "752309",
+      "measurement_sha256": "7f4fd51057db273362ec45b200cf79e5b5d43c6158f55c60f5fd850b06c80422",
+      "parent_diff_sha256": "9742595b37ebbe39c24fb44740cf7a4647aa5039d1b8e23207a6ee95a3ddaef4"
+    },
+    "ac_ff_m40_v099_48_p_r25": {
+      "deck_sha256_attested": "87e34530f47c27cd76bfd5e47ded6669c7bb8360780a085d293ce09f204e9bde",
+      "job_id": "752308",
+      "measurement_sha256": "c112c9aaa644897ef650a18fa6c1a1e68ecd3084fa834ac3fc2129e713e70123",
+      "parent_diff_sha256": "325b8d55f3d7bc2e12c4442a2e87358e31e49ae4c1ee5c620e3dac176d6fdcfa"
+    },
+    "ac_ff_m40_v099_63_n_r25": {
+      "deck_sha256_attested": "667d54b297d51f18326b53c04373d63e376b2e43fe2749e311fb4c4bf2a524e4",
+      "job_id": "752252",
+      "measurement_sha256": "fcae5d4d4bc74d0ce63bad68ca4e42b036907d6959ff3470421a40217aa65d58",
+      "parent_diff_sha256": "eb0b98bc7e94aa82f1a74346962bd0e9ab59ef9b4be58961a27f03cc8ef2f3da"
+    },
+    "ac_ff_m40_v099_63_p_r25": {
+      "deck_sha256_attested": "8706cae74ffc4f7d341bfe9eb8bcc6486c717d626dcd6c7c2898cbd721152bc5",
+      "job_id": "752310",
+      "measurement_sha256": "ece49e2798569fde4eb25583356d93b03cb9145d1cbdd38af0c2be1dd5877202",
+      "parent_diff_sha256": "36c907820bb1a5dad8b011166dbb9bcf8bc0b6a8057391b6ca3c2f3c4f361807"
+    },
+    "ac_ff_m40_v099_bypass_n_r25": {
+      "deck_sha256_attested": "7764bbf4f4b952ffacfbe9ddae0b3308f0af6e5f279dabcc50a89c9229b90c6b",
+      "job_id": "752301",
+      "measurement_sha256": "5d229eb4c64b2e94d1de12f6b899f0cfacbc1f5bb55e42e20763f48779f5db20",
+      "parent_diff_sha256": "1c6ac093b0a834d4a32affacddb282577abb3c1b45c804a1a9744e614a1497c8"
+    },
+    "ac_ff_m40_v099_bypass_p_r25": {
+      "deck_sha256_attested": "4461bec17a25c6f955490c648ccbd2945e994fe49599f3b7a9b410ed5a6c8cb8",
+      "job_id": "752300",
+      "measurement_sha256": "a5e1fd743463afbe9c4969296855843ef86ae1b7f0924d71dc32384d997ab345",
+      "parent_diff_sha256": "feefabd607a20fca752af1a9f0667b0685029aa290e72c199e898fbf413b7d42"
+    },
+    "ac_ss_p85_v081_00_n_r25": {
+      "deck_sha256_attested": "22add5822dd415dbb47604cbb515eca23b57fbeef86856348ac5e4df1e35415d",
+      "job_id": "752291",
+      "measurement_sha256": "9fcf6699bb38396580b47837274661311cd6e840cd0a7eb3cf106a5baa0ef44b",
+      "parent_diff_sha256": "0385c4b1c34c26a4e3d934fe5d549bf086acf1f865f44d9747d639311c81b44a"
+    },
+    "ac_ss_p85_v081_00_p_r25": {
+      "deck_sha256_attested": "22f593c260f20def3d504635dc7cb813f64262d7fc72599cc4b1fa51c6aa6b92",
+      "job_id": "752290",
+      "measurement_sha256": "926cafdc934ed356c2840aaa4f64a99b47183c0e27a0fd4cefdb5f036905bd28",
+      "parent_diff_sha256": "8472f9fbd0c4db2978911f143a687bc0111632d1f9d380bbf597128b569f55c9"
+    },
+    "ac_ss_p85_v081_16_n_r25": {
+      "deck_sha256_attested": "2ab828db3e93cbee069ce4d8b0ff97a2a617af8c84d384f093ab8b3264849215",
+      "job_id": "752293",
+      "measurement_sha256": "549a180a378009363defd45f0eba8850c376e658ab9192a616dd028b63117bf4",
+      "parent_diff_sha256": "4def7bc8f6120538e580291eefbe17e4524a391248a8075b8bc0670245a235ab"
+    },
+    "ac_ss_p85_v081_16_p_r25": {
+      "deck_sha256_attested": "1bcbc5771d5b8682cbe2c709e8ec8c24534d4ae5ae4d6c7f8fbdcb174a0767eb",
+      "job_id": "752292",
+      "measurement_sha256": "b23c183c5a88ec0d6e87d429a2adda64307328375faf8c87a500e6745b9e61ff",
+      "parent_diff_sha256": "81d8cea67f237bf54c30f2056c538336e1c1d71991ceb29f04daf32c49dabeb4"
+    },
+    "ac_ss_p85_v081_32_n_r25": {
+      "deck_sha256_attested": "aeb685be12192ed4e496edc116ddd438d719a6a6ceac248a87ebfc6b3bbbada1",
+      "job_id": "752295",
+      "measurement_sha256": "2fbcb11f80a30f39535a4e8d8847b58a941a99a5646b38c2796bc6745b2b3562",
+      "parent_diff_sha256": "874abb252a3a6365f6c557a76a26c0ccc48fa88573f5232d2f5a75413151b7c9"
+    },
+    "ac_ss_p85_v081_32_p_r25": {
+      "deck_sha256_attested": "6d38aa55ab81c4218652436354a5ca20bb732fdb128fea4f4e6ba3dbeca7caea",
+      "job_id": "752294",
+      "measurement_sha256": "73a0b850d0fba2e2eda702415176e48e9f06220825aef97888440e4e3e14ca53",
+      "parent_diff_sha256": "8cc66c5f4b4f0b6983decfee364686ebe73d62c40db002699b9f6ee0d029fb77"
+    },
+    "ac_ss_p85_v081_48_n_r25": {
+      "deck_sha256_attested": "37e6f6e8f97a983a5a52a239f67dc3d91ed59c7a2d3b6f086ebc2d7bc0da6d55",
+      "job_id": "752297",
+      "measurement_sha256": "11d98766dbec27d53e84cd89455fd45b9a23da4e8c0e180df86229a7db445215",
+      "parent_diff_sha256": "4558a7f1b031c14746c4e797d5640c1a45543192819c5ab03283c991e190c7e6"
+    },
+    "ac_ss_p85_v081_48_p_r25": {
+      "deck_sha256_attested": "4aa0bd79857eb1424f1bae6d6dc3444f5b2f0207558f74cb560bfccb54d01dda",
+      "job_id": "752296",
+      "measurement_sha256": "9c1d7d2bedff61f1d8c50fd25c0e72b71d84c7d59a43954d87d0de9270aa51ec",
+      "parent_diff_sha256": "4a91aa25585dad7d117a6df9901006d459678805db25ecc9566c0ea199d79f61"
+    },
+    "ac_ss_p85_v081_63_n_r25": {
+      "deck_sha256_attested": "41e69c379732974858f753fcab070ecb0b9516fb0155e649c5a45f03aeb741a6",
+      "job_id": "752299",
+      "measurement_sha256": "e0119a8eba7bba5213dfaf5cec139af0254c09b9f2333c5116ef1e7c4dd9e53b",
+      "parent_diff_sha256": "e11c9442b8986c2f6ccb17857a377db474275e4cc090cebf7c7a23f9afc5883d"
+    },
+    "ac_ss_p85_v081_63_p_r25": {
+      "deck_sha256_attested": "ae33a269c0bb817c32eda0b0f1d293644ec17392bdca42c77408294cdf3f778f",
+      "job_id": "752298",
+      "measurement_sha256": "fca4429aa5cdbc3eac2e675b1bc938888ea67afb2c238f10d535fc76fea64361",
+      "parent_diff_sha256": "a55a332b4ba3e1b527c5c2906fd374ba8b13b098c7980887e609821e8cade0e8"
+    },
+    "ac_ss_p85_v081_bypass_n_r25": {
+      "deck_sha256_attested": "b85e9b45b5b33cd14aaa5acd678ca3761d399f6d457dcee738308a63c1c456da",
+      "job_id": "752289",
+      "measurement_sha256": "1f411611beb3c6f6a0a22d250563bfbb96ad310614a8a56376a995d149a4eb2a",
+      "parent_diff_sha256": "8648207ad996ad1a53c51d9dc6b65634d5af4018aa0f8ea0797222b9e8263280"
+    },
+    "ac_ss_p85_v081_bypass_p_r25": {
+      "deck_sha256_attested": "11f072e5502b346c8f7375638c87e564991c998f3a3dadccabade7edccd21321",
+      "job_id": "752288",
+      "measurement_sha256": "4f08a996c38e2ce16eb55f7a3f3ff1af9ddf3d715b40d25c306991e9df5c89e2",
+      "parent_diff_sha256": "c4dc129b742215b69d4617632fcb7fe130483df142014ccf5d5b55211fb91b1a"
+    },
+    "ac_tt_p25_v090_00_n_r0": {
+      "deck_sha256_attested": "57de54cd597c780af42c7000d1adf6b3c005482ec6bbed77f12f6b882e220307",
+      "job_id": "752261",
+      "measurement_sha256": "d1425adceea8ba59244942d533f3090826da5eaccada3de8ea71e06d24c34389",
+      "parent_diff_sha256": "67775bdb9c56a677c5fe04b1660ac619aeb56771946fdb1481d54281de8782d1"
+    },
+    "ac_tt_p25_v090_00_n_r25": {
+      "deck_sha256_attested": "2ae356babfe8f99040d67bf904f68a73d7ccc4bce397e2dbbf02a868637d3eae",
+      "job_id": "752262",
+      "measurement_sha256": "f4e5a6e541c76df7348308a23c0f3d13a3f0f931adb84dd9585d0ab0ebf84a50",
+      "parent_diff_sha256": "c39be3d83292454d5f5995f6b13cbce5d0e0825324d3eac1f96a13c143a722c1"
+    },
+    "ac_tt_p25_v090_00_n_r50": {
+      "deck_sha256_attested": "b7be95e91f05d4f7ec0d166ba4933345e301eab15bc79f0b6b92b77eac7d44f3",
+      "job_id": "752263",
+      "measurement_sha256": "acd6add5b079d577ee2ed17c854514d4fa8ca53ce194427bf890a0050d12eb30",
+      "parent_diff_sha256": "7950e3b88860a52cbc7afeda6a64fcc9feb74a7b9d4c878ace66d6f973d875b2"
+    },
+    "ac_tt_p25_v090_00_p_r0": {
+      "deck_sha256_attested": "81e2d1911a60e189eafa2b053a7dddd3edbc25ec213a5ede6c149d05274f4553",
+      "job_id": "752258",
+      "measurement_sha256": "727561b3b7bae9f8a520412d048cb403e53522822da4a6e7bbe52892717548dc",
+      "parent_diff_sha256": "7cec78ecf205103bb367c388f826338be2fe9c2fc3257815d1dd4e4a4a1ce361"
+    },
+    "ac_tt_p25_v090_00_p_r25": {
+      "deck_sha256_attested": "5ddc501d4a5813b5d8b8f2bfb4aad387835f7dc8302d1cc4525a138d28c7b8a7",
+      "job_id": "752259",
+      "measurement_sha256": "d80b4ea96dec316eee60d46110f9cd87673e437fa79e4cbc8796a4b3e36e184a",
+      "parent_diff_sha256": "7afdb74eebc36519baee51ead7e52928c410088f76bfee0b0c4a45a8d76b136c"
+    },
+    "ac_tt_p25_v090_00_p_r50": {
+      "deck_sha256_attested": "e099be5723daa5f5437168d83d5d8f87f7bb371f0915085167807e626de9e294",
+      "job_id": "752260",
+      "measurement_sha256": "6c434f6215daa0e0806fef36db95cd38bace2eb15570a7b73029ac81163efd2a",
+      "parent_diff_sha256": "7805b5e96cac6b93ae165b788d1b17e4d7b969a4eed9ad9fdffdc3ddd2bfc20e"
+    },
+    "ac_tt_p25_v090_16_n_r0": {
+      "deck_sha256_attested": "0b46333d7282d7a5562d7e535ed43397d67403fddad1d92373afdcdd036c4392",
+      "job_id": "752267",
+      "measurement_sha256": "fe64d3288c2adae43b6d7c4ca873683f7f764f59d58f2abcd0b29d2744a3b41e",
+      "parent_diff_sha256": "5b77e33921b59d9c1f617c454300c91584eb1cda6c2f9aacf7118016c7e8869b"
+    },
+    "ac_tt_p25_v090_16_n_r25": {
+      "deck_sha256_attested": "14aad4095da6151b239fe52cc067fd05085965972dd390c4b71d9b764d75f8bb",
+      "job_id": "752268",
+      "measurement_sha256": "03e9488fd31bd7a062a76c4631cc751a07d797bb53a1ace2cefeab5f1924662a",
+      "parent_diff_sha256": "0f5b29ccda3c699703a4f5460e79be2c40cf0c08078d7e5143a33d15fee2b904"
+    },
+    "ac_tt_p25_v090_16_n_r50": {
+      "deck_sha256_attested": "2fa3bb27b8d80cf725574717433199fb21cd51dc2379393a0e36e0fc3433ca5a",
+      "job_id": "752269",
+      "measurement_sha256": "66e922f363711dade2e81338592d712138f91591b648e2caf58046591363d83e",
+      "parent_diff_sha256": "fc961ebe92655df923f3a26bc0f99e4a95033ce51ec5287b74476f98030055a3"
+    },
+    "ac_tt_p25_v090_16_p_r0": {
+      "deck_sha256_attested": "a035765a4cd261f64ad4e58020ac018b4dd93cb70c4353b50bc67e01de03bbe2",
+      "job_id": "752264",
+      "measurement_sha256": "22a2d82449b45a1450f12f848590a2a61590a643be3ca99571d721a166d769f8",
+      "parent_diff_sha256": "94341e053df643ff68688391428b8d8f3b04c40c26444adc0f0030422050562f"
+    },
+    "ac_tt_p25_v090_16_p_r25": {
+      "deck_sha256_attested": "659ed2d2b50a6bf428ae2d182db56723a435bce2000e36979105d735452457f7",
+      "job_id": "752265",
+      "measurement_sha256": "b0a04212cd0f6e2a416dcef9f87bf6c813263122f26b478dd2aeb3524e127481",
+      "parent_diff_sha256": "de0a3819547b0304d87c78c25a3f07d941f1beda8fb513250cdd4f36a9e616af"
+    },
+    "ac_tt_p25_v090_16_p_r50": {
+      "deck_sha256_attested": "3c64706c27f2ab4f3cdbd8df125d3aed8f30d0efcef27002f9848b79baf0d9c4",
+      "job_id": "752266",
+      "measurement_sha256": "be8afbd3311b1a2370ef07006fd2f0fe3376599a725156394c04667b5066c875",
+      "parent_diff_sha256": "787d89ee29d1f8847e00399645643d12adaafda4a32d93bd208234fe0f8bb02c"
+    },
+    "ac_tt_p25_v090_32_n_r0": {
+      "deck_sha256_attested": "90e1c96c7072e95983d221c41dd5a9c15c01b2f47fc97f7ec838f0a6a7ba274c",
+      "job_id": "752273",
+      "measurement_sha256": "7eec6bf7ff7f1af399388139e7a311f260f422d7375969604c06d12ac5726b92",
+      "parent_diff_sha256": "a97b1665673ccba3ddec851c241eb782cf390235f48c31a7eb771f3796c1a635"
+    },
+    "ac_tt_p25_v090_32_n_r25": {
+      "deck_sha256_attested": "bf605c31bf579800cdb05614445da77a974ac14a6afe839f84f9d9f240c1adfb",
+      "job_id": "752274",
+      "measurement_sha256": "6608f2a8be2d54cedc0d87977366c3c67524d04f898f47275d273f9c167b37b3",
+      "parent_diff_sha256": "9e28a89a6159344e2ff3076d6e40c93ba1d7f680540ead17cd3cb28dd051e1aa"
+    },
+    "ac_tt_p25_v090_32_n_r50": {
+      "deck_sha256_attested": "ec734d73c01e7f45e23915906ca905be5969225f5e272550ae5fbd1c6b5eeee5",
+      "job_id": "752275",
+      "measurement_sha256": "33277dca882ba65a8c2478b0d3509a7e19ba6ef3d30a29d87f500012e88724db",
+      "parent_diff_sha256": "d8a8d7971444f8f31d1a215a818667093fac3fc04fd3b1b1f4f0781574f99b25"
+    },
+    "ac_tt_p25_v090_32_p_r0": {
+      "deck_sha256_attested": "09c30987b739ff5279168857bc9f68dc0f933fd32fb4f9bd05a50f28465de785",
+      "job_id": "752270",
+      "measurement_sha256": "2723d3975a73c50f9ab4cc96206456d35e92888dac5b61648e2b9c31c5e3f0ca",
+      "parent_diff_sha256": "3f63711657428dab2ac221572665f4c6b3ef635afe24e7180483a4aa52b1f98f"
+    },
+    "ac_tt_p25_v090_32_p_r25": {
+      "deck_sha256_attested": "e251cb6ce5576fb532feace61cc4fad876a9d912a4b3a3b121e76d031cbfce8c",
+      "job_id": "752271",
+      "measurement_sha256": "792688d649734109d87c69635490961962a30cdd9849a2f67896c2dcd17cdeac",
+      "parent_diff_sha256": "90f51a920f9aacbcecd810a33b33df607ba86773f7f2d2db66060594ee8d30cc"
+    },
+    "ac_tt_p25_v090_32_p_r50": {
+      "deck_sha256_attested": "fd931260e104ba1a4299cc7b84b3bae5d0a9bdc8e8f624659ce40f16c11bf6d4",
+      "job_id": "752272",
+      "measurement_sha256": "b90bdca66e50914eee83c823dfb21179e0e2eaa301df2f869d278f7f3085a80e",
+      "parent_diff_sha256": "ab2fe30f5760d81d45db71522c6f905aa1e006014797db5d5aed7116cc6dc0bc"
+    },
+    "ac_tt_p25_v090_48_n_r0": {
+      "deck_sha256_attested": "b396b1c191376d38a3fa07d57a4a7f28a909b14c37cade7f48c7478734cdeb69",
+      "job_id": "752279",
+      "measurement_sha256": "2e98982de68b0da0c2678b5d7786e44444761ec8cbb02fddf3ec72a2bf3ea8e9",
+      "parent_diff_sha256": "3368538917986428967867bc866545197a59594a141e376b80305d88c061c496"
+    },
+    "ac_tt_p25_v090_48_n_r25": {
+      "deck_sha256_attested": "d30dd73c08990a21cc5841a8bb5ad3069ee01048642c9a23bdb981fb32c1e592",
+      "job_id": "752280",
+      "measurement_sha256": "0aa35b7aa26efa1442825d95c4b9299005881d0c26a9f8954e67405c1f8c79fb",
+      "parent_diff_sha256": "5a36e0a57c884c4ebc85451dc7726c10de2e0664410992de22036d1dd9d53dc4"
+    },
+    "ac_tt_p25_v090_48_n_r50": {
+      "deck_sha256_attested": "77ba51a9b63989d12b04441a3f6c21246e805830bceb8631c1ab9072097c4146",
+      "job_id": "752281",
+      "measurement_sha256": "2046678d29f9ac2c245f03a6443c613cb12558cdf440f6de9acfe917f59fe772",
+      "parent_diff_sha256": "fe2131588864c8caee858fb93107322b5ff980a556f686b7366421030507bad6"
+    },
+    "ac_tt_p25_v090_48_p_r0": {
+      "deck_sha256_attested": "9e3904a4d8073bf50e4f9ecb59f16e79e460340e832b705889cf45c7ec5275f4",
+      "job_id": "752276",
+      "measurement_sha256": "da0d426a9ab1209f15cfe487ded78c9448a05c9923012351f4ace6cefb938ecd",
+      "parent_diff_sha256": "2caad8bb5ae87cd13a87668483aef18d21cf92687670cb7c949a2774dd6c7c76"
+    },
+    "ac_tt_p25_v090_48_p_r25": {
+      "deck_sha256_attested": "5d815d1bf2ffbb149b87a4712b26a97dd64fc475a2a27ef239263423d8ddbcca",
+      "job_id": "752277",
+      "measurement_sha256": "c343ac6f8b3fe3e4deafda89c7f5874875c8c0fb663df7f1b915b787aebb6a4f",
+      "parent_diff_sha256": "ea3cd2a0291e6808d136ec6c774505a0b08d7dde2be37a3401eb0e4a9b15d802"
+    },
+    "ac_tt_p25_v090_48_p_r50": {
+      "deck_sha256_attested": "d861476ddd4f05556439e64e498f0b1b215462c59ed0e38629629772a54d3929",
+      "job_id": "752278",
+      "measurement_sha256": "c950de88bcc2663463d94b4e06c9d5e2ebaa3fe44fd17d5718b6f657fa448db7",
+      "parent_diff_sha256": "240653287fdc1fdd0e02904e5fb3577e0d57cb7f5e61ed2caa542492160cb6b3"
+    },
+    "ac_tt_p25_v090_63_n_r0": {
+      "deck_sha256_attested": "f05b533e8d9a41b7fdd7c30ba13af17a5ebac6830645f4aed6289b6c425207be",
+      "job_id": "752285",
+      "measurement_sha256": "f1767bf33778d127c0dd28251cf4bcebee69465eb63f2f77cee7afbdc36a0840",
+      "parent_diff_sha256": "92db902c1c09e1d6772261e7387a3a68e0c30500b912b25fb7aee976d6c98f31"
+    },
+    "ac_tt_p25_v090_63_n_r25": {
+      "deck_sha256_attested": "a51e04a5ee6aced42c8e687178a69387a87bc759fbbd5f4aba2ad8b22f57462d",
+      "job_id": "752286",
+      "measurement_sha256": "d063174a3c12b626e9cbf905cf6c5ac8e10eeae61d429f32fb70059140484418",
+      "parent_diff_sha256": "ed1fb28a0be85275ea12427ddcceb5743688b23ae719916861b29fc17a4d0fdf"
+    },
+    "ac_tt_p25_v090_63_n_r50": {
+      "deck_sha256_attested": "cef1caf00e33a973118813dd4e9179ebc8c67b5f73a20e68fbb6b9ead84d20b6",
+      "job_id": "752287",
+      "measurement_sha256": "a2ce83f2adf423ae1cdade98f077147a552e0fe72785ea8a96f45007b85d279a",
+      "parent_diff_sha256": "e2159da0fc37bab2faa118d9e99a82dcd434efc97ef095ec3b95aa5119bec2a0"
+    },
+    "ac_tt_p25_v090_63_p_r0": {
+      "deck_sha256_attested": "67e310fa02364137146d314dab5094852b3aed42da3e7ff9202dea45a1204d32",
+      "job_id": "752282",
+      "measurement_sha256": "c8827fc9859323c33616934a921d3a16161a42045641943248b658df02e0e4fe",
+      "parent_diff_sha256": "f9ca81e1715af5ce415507c92a3fe739d9be6664732fa2b08fe473952617ea33"
+    },
+    "ac_tt_p25_v090_63_p_r25": {
+      "deck_sha256_attested": "5c84da0cea1a303b06f6c0cc624d1f1db1d7e2dc9430863a1e17503a3b9a1ec4",
+      "job_id": "752283",
+      "measurement_sha256": "96d43310a864df594cd5e8740a6161bd6e9476f8bbf0bb6207eb0a1ce289644c",
+      "parent_diff_sha256": "4c035bb8c91acda8b5b25453afd8754347af9f7200d72f859d26c80659a2db93"
+    },
+    "ac_tt_p25_v090_63_p_r50": {
+      "deck_sha256_attested": "a92ffd50fad1e8e69cd5d29adceb38c19cadfdb96211ee45319813b50effa659",
+      "job_id": "752284",
+      "measurement_sha256": "64e45d5ee3b5797b4bb2eb446a1751ece4d375f8421edf18e644f4893d2f396c",
+      "parent_diff_sha256": "a2872f22b55000340a1a27373221b6ca6ae4e92e541be227f58b04897713ad6c"
+    },
+    "ac_tt_p25_v090_bypass_n_r0": {
+      "deck_sha256_attested": "904c2aa82202ba2e55c8c222664574cbca674d87f0bd5dadb06cf543a8ac7354",
+      "job_id": "752255",
+      "measurement_sha256": "9e51f6fe181cc9f7330fc150ab2145c62d4a0768f74344c6d057079a2a884f55",
+      "parent_diff_sha256": "5413726aea20d3850fdaf4cdc77aeac9bc85b547e9571b284391926b0f1ca6be"
+    },
+    "ac_tt_p25_v090_bypass_n_r25": {
+      "deck_sha256_attested": "ccb84d457f6584b30738635848f7a3f2cd5a2ba307c551fe54203e3841a0a36d",
+      "job_id": "752256",
+      "measurement_sha256": "5500f070e236ab38f8e1341a7ef835819a09e88c13d854abf033b7ee8284087a",
+      "parent_diff_sha256": "59ddc4254b49db6206b079d77c2f99b6939335ecacf19b7e44c10aa7f24a4fb6"
+    },
+    "ac_tt_p25_v090_bypass_n_r50": {
+      "deck_sha256_attested": "9b6442b0dec5e423aaf35ead29d589b218cfd74e41f53543f0db47640219f273",
+      "job_id": "752257",
+      "measurement_sha256": "edc731ad5f849d6c8b1cbc7fca5050e29a718c48891b7f8bf5c314c39af4fbea",
+      "parent_diff_sha256": "4032fa427b67f9123de37d2d3e17cba1386f3359657603f8dd3d4812b24ee30d"
+    },
+    "ac_tt_p25_v090_bypass_p_r0": {
+      "deck_sha256_attested": "6076e183d7d8b29290f84ed1e55204ba49c3262db6b55a9c19dc3470dd4f84a7",
+      "job_id": "752251",
+      "measurement_sha256": "a9d3603ab7892ed93d5d9e097120f1f4bb1e2de4b656bff012d4add6e83840ff",
+      "parent_diff_sha256": "16eab83227148ce313fba1918363265ec51ac935d2ca05919f24c14ba1fe68ce"
+    },
+    "ac_tt_p25_v090_bypass_p_r25": {
+      "deck_sha256_attested": "6aab31641415713e06d697c1bce612350faac07b56c739bc8c01c9a8ed890506",
+      "job_id": "752253",
+      "measurement_sha256": "add1a0eaf35ac8bb617aa18b9f3a12401a7cc5ae4f5425fcc97815a249e8b264",
+      "parent_diff_sha256": "29bf7964c79e6cab4e7f861043f0d16933406864123f85447700231e14d8b391"
+    },
+    "ac_tt_p25_v090_bypass_p_r50": {
+      "deck_sha256_attested": "8b4f1f37e1dea5c2439bebd2ffc33f8ea9bbe922db163014ff51546d5234a7be",
+      "job_id": "752254",
+      "measurement_sha256": "7ffedb24fa896dcae476b6c9a40f68f7a57c0ee678e69678648026e435f00c64",
+      "parent_diff_sha256": "82a6b6aab5e77cf8a50492dee6ee91c2217dd12c603a8eb1e2ed267c3e138a44"
+    }
+  },
+  "conditions": {
+    "ff_m40_v099_r25": {
+      "codes": {
+        "-1": {
+          "AFE_Hdd_56GHz_V_per_V": 0.24929944507954635,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.0,
+          "DC_power_W": 0.013227445046304255,
+          "DC_power_increment_vs_bypass_W": 0.0,
+          "Hdd_56_change_vs_bypass_dB": 0.0,
+          "d56_ps": -8.326672684688674e-17,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.9387742708551425,
+            0.9387742708551428
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -0.5487764338497804,
+            -0.5487764338497783
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.5487764338497804,
+              0.005717006988801566
+            ],
+            [
+              -0.5487764338497783,
+              0.005717006988801566
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -2.892982399659862e-15,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            0.19090619955012256,
+            0.19090619955012264
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -3.788636071533347e-15,
+            1.4432899320127035e-15
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -7.949196856316121e-14,
+            9.725553695716371e-14
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -3.3306690738754696e-16,
+            3.885780586188048e-16
+          ],
+          "differential_phase_delay_8probe_span_ps": 7.216449660063518e-16,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.4432899320127035e-15,
+            4.551914400963142e-15
+          ],
+          "differential_phase_delay_ps": [
+            3.885780586188048e-16,
+            -2.220446049250313e-16,
+            0.0,
+            3.885780586188048e-16,
+            3.885780586188048e-16,
+            -3.3306690738754696e-16,
+            -1.3877787807814457e-16,
+            -8.326672684688674e-17
+          ],
+          "differential_phase_slope_fit_ps": -1.3877787807814457e-16,
+          "gate_instance_mapping": null,
+          "input_noise_increase_mVrms": 0.0,
+          "input_noise_increase_percent": 0.0,
+          "input_noise_mVrms": 0.18802516331066513,
+          "input_noise_variance_change_V2": 0.0,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.015260862213881322,
+            0.01526086221388131
+          ]
+        },
+        "0": {
+          "AFE_Hdd_56GHz_V_per_V": 0.25717222529813877,
+          "CM_to_DM_delta_ratio_at_56GHz": 1.1727796809672872,
+          "DC_power_W": 0.013227445057244856,
+          "DC_power_increment_vs_bypass_W": 1.0940600855824378e-11,
+          "Hdd_56_change_vs_bypass_dB": 0.2700550201791586,
+          "d56_ps": -1.4741980629177602,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.5163621727259227,
+            0.5052178321521092
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            3.6160588389958175,
+            -5.930426580046459
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.16889093380540343,
+              4.14654737370541
+            ],
+            [
+              -5.930426580046459,
+              -1.139286432397181
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 9.546485419042273,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.08742785087259,
+            6.56162591379035
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -3.3523028923124074,
+            1.9353110839755567
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -4.569857452223779,
+            2.0582057135734395
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -7.577621933943037,
+            -1.4741980629177602
+          ],
+          "differential_phase_delay_8probe_span_ps": 6.103423871025277,
+          "differential_phase_delay_dense_min_max_ps": [
+            -7.577621933943037,
+            -1.4741980629177602
+          ],
+          "differential_phase_delay_ps": [
+            -7.577621933943037,
+            -5.464962413127724,
+            -4.459558113881155,
+            -3.823105254144528,
+            -3.2301937896249773,
+            -2.587376971414572,
+            -1.9612707981882336,
+            -1.4741980629177602
+          ],
+          "differential_phase_slope_fit_ps": -0.6047845497997955,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            }
+          },
+          "input_noise_increase_mVrms": 0.07077436774811477,
+          "input_noise_increase_percent": 37.64090215477043,
+          "input_noise_mVrms": 0.2587995310587799,
+          "input_noise_variance_change_V2": 3.162373523824208e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.031902479678207835,
+            0.038497496598391585
+          ]
+        },
+        "16": {
+          "AFE_Hdd_56GHz_V_per_V": 0.2082505751154036,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.5380554784412118,
+          "DC_power_W": 0.013227445057244887,
+          "DC_power_increment_vs_bypass_W": 1.0940632080846946e-11,
+          "Hdd_56_change_vs_bypass_dB": -1.5627020470021404,
+          "d56_ps": -1.1389349134870734,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.0139732597737596,
+            0.6157656865290092
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            0.12053004105425513,
+            -4.211690315356929
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.072651814148253,
+              0.8631410789678274
+            ],
+            [
+              -4.211690315356929,
+              -0.7790375214260375
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 4.332220356411185,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.2137546826732155,
+            6.352689596160289
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.5244443670598251,
+            0.3160891711998648
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -1.7301716224236898,
+            0.3647549292538521
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -3.5588458288891465,
+            -1.1389349134870734
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.419910915402073,
+          "differential_phase_delay_dense_min_max_ps": [
+            -3.5588458288891465,
+            -1.1389349134870734
+          ],
+          "differential_phase_delay_ps": [
+            -3.5588458288891465,
+            -2.4359344758448787,
+            -2.102994245249648,
+            -1.9583567757021925,
+            -1.7990024203705284,
+            -1.583934565183272,
+            -1.3467954970137788,
+            -1.1389349134870734
+          ],
+          "differential_phase_slope_fit_ps": -0.8618141780378741,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "101111",
+              "code": 47,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 58.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "010000",
+              "code": 16,
+              "enabled_bits_LSB_index": [
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 20.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.0540791388159427,
+          "input_noise_increase_percent": 28.761649698232294,
+          "input_noise_mVrms": 0.24210430212660783,
+          "input_noise_variance_change_V2": 2.326103107020951e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.027877208391539544,
+            0.028266147660565708
+          ]
+        },
+        "32": {
+          "AFE_Hdd_56GHz_V_per_V": 0.20484498588409644,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.5588558887689957,
+          "DC_power_W": 0.013227445057244887,
+          "DC_power_increment_vs_bypass_W": 1.0940632080846946e-11,
+          "Hdd_56_change_vs_bypass_dB": -1.705919477450835,
+          "d56_ps": -1.3772419402406602,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.9928397788704738,
+            0.6255975262277325
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -0.06241661653109902,
+            -4.074099545120479
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.8589963720715517,
+              0.44601099746867684
+            ],
+            [
+              -4.074099545120479,
+              -0.24445777180981274
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 4.01168292858938,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.064980564217945,
+            6.442222504458605
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -3.0996155465470054,
+            0.5055285941054617
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -3.1848405034404172,
+            0.6027925831870897
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -2.501991263497507,
+            -1.3772419402406602
+          ],
+          "differential_phase_delay_8probe_span_ps": 1.1247493232568466,
+          "differential_phase_delay_dense_min_max_ps": [
+            -2.5057036078053585,
+            -1.3772419402406602
+          ],
+          "differential_phase_delay_ps": [
+            -1.7492548396151326,
+            -2.4244351930810684,
+            -2.501991263497507,
+            -2.4087420960781047,
+            -2.217915907016618,
+            -1.9471699638555293,
+            -1.6462091594329635,
+            -1.3772419402406602
+          ],
+          "differential_phase_slope_fit_ps": -1.336184316121508,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "011111",
+              "code": 31,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 38.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "100000",
+              "code": 32,
+              "enabled_bits_LSB_index": [
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 40.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.05243861169837902,
+          "input_noise_increase_percent": 27.889145673410297,
+          "input_noise_mVrms": 0.24046377500904415,
+          "input_noise_variance_change_V2": 2.2469365053597914e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.02873332007793598,
+            0.027286801153853412
+          ]
+        },
+        "48": {
+          "AFE_Hdd_56GHz_V_per_V": 0.19444001726855323,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.2740562096064443,
+          "DC_power_W": 0.013227445057244866,
+          "DC_power_increment_vs_bypass_W": 1.0940611264165234e-11,
+          "Hdd_56_change_vs_bypass_dB": -2.158713216548387,
+          "d56_ps": -0.9601671359155821,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.7349298551353738,
+            0.7799699395953006
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -2.675082197401266,
+            -2.1584426979713074
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -2.675082197401266,
+              -0.889646845335053
+            ],
+            [
+              -2.1584426979713074,
+              0.5922780711814954
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -0.5166394994299587,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.328470263253777,
+            6.288637399169359
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.161569717481573,
+            -0.29909438385095477
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -2.1740647823720485,
+            -0.06194926877142937
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -1.0987323818613675,
+            2.2821389154437863
+          ],
+          "differential_phase_delay_8probe_span_ps": 3.380871297305154,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.0997437207764795,
+            2.2821389154437863
+          ],
+          "differential_phase_delay_ps": [
+            2.2821389154437863,
+            0.5104710587016941,
+            -0.34175134028349685,
+            -0.7967059345830156,
+            -1.0301724851536926,
+            -1.0987323818613675,
+            -1.054606100496243,
+            -0.9601671359155821
+          ],
+          "differential_phase_slope_fit_ps": -1.55268709073993,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "001111",
+              "code": 15,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "nominal_enabled_cap_fF_per_section": 18.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "110000",
+              "code": 48,
+              "enabled_bits_LSB_index": [
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 60.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.04983897105857196,
+          "input_noise_increase_percent": 26.506543156792993,
+          "input_noise_mVrms": 0.2378641343692371,
+          "input_noise_variance_change_V2": 2.1225884381224185e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.028680031028122284,
+            0.022563753149465557
+          ]
+        },
+        "63": {
+          "AFE_Hdd_56GHz_V_per_V": 0.25717222529814193,
+          "CM_to_DM_delta_ratio_at_56GHz": 1.172779680967306,
+          "DC_power_W": 0.013227445057244856,
+          "DC_power_increment_vs_bypass_W": 1.0940600855824378e-11,
+          "Hdd_56_change_vs_bypass_dB": 0.2700550201792652,
+          "d56_ps": 1.4741980629177416,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.5052178321521107,
+            1.5163621727259418
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -5.930426580046434,
+            3.6160588389959267
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -5.930426580046434,
+              -1.13928643239726
+            ],
+            [
+              0.16889093380542802,
+              4.1465473737056655
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -9.54648541904236,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            6.561625913790354,
+            5.087427850872612
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.9353110839756171,
+            3.3523028923122604
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -2.058205713574411,
+            4.569857452230657
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            1.4741980629177416,
+            7.577621933943012
+          ],
+          "differential_phase_delay_8probe_span_ps": 6.103423871025271,
+          "differential_phase_delay_dense_min_max_ps": [
+            1.4741980629177416,
+            7.577621933943012
+          ],
+          "differential_phase_delay_ps": [
+            7.577621933943012,
+            5.464962413127637,
+            4.459558113881115,
+            3.8231052541445245,
+            3.2301937896249773,
+            2.587376971414562,
+            1.961270798188222,
+            1.4741980629177416
+          ],
+          "differential_phase_slope_fit_ps": 0.6047845497997946,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            }
+          },
+          "input_noise_increase_mVrms": 0.07077436774811466,
+          "input_noise_increase_percent": 37.64090215477036,
+          "input_noise_mVrms": 0.2587995310587798,
+          "input_noise_variance_change_V2": 3.162373523824203e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.03849749659839245,
+            0.03190247967820794
+          ]
+        }
+      },
+      "d56_endpoint_midpoint_ps": -9.325873406851315e-15,
+      "d56_endpoint_offsets_ps": [
+        -1.4741980629177602,
+        1.4741980629177416
+      ],
+      "d56_endpoint_span_percent_of_required": 33.02203660935762,
+      "d56_endpoint_span_ps": 2.948396125835502,
+      "d56_observed_adjacent_steps_ps": [
+        0.3352631494306868,
+        -0.23830702675358673,
+        0.41707480432507804,
+        2.4343651988333237
+      ],
+      "d56_observed_min_max_ps": [
+        -1.4741980629177602,
+        1.4741980629177416
+      ],
+      "endpoint_swap": {
+        "AFE_8probe_max_complex_matrix_difference_V_per_V": 1.693284760088931e-14,
+        "AFE_8probe_max_relative_to_matrix_peak": 4.532136343280059e-14,
+        "trim_dense_max_complex_matrix_difference_V_per_V": 9.45481624484262e-14,
+        "trim_dense_max_relative_to_matrix_peak": 5.826887269067766e-14
+      },
+      "missing_mirror_codes": {
+        "16": 47,
+        "32": 31,
+        "48": 15
+      },
+      "observed_numbered_codes": [
+        0,
+        16,
+        32,
+        48,
+        63
+      ]
+    },
+    "ss_p85_v081_r25": {
+      "codes": {
+        "-1": {
+          "AFE_Hdd_56GHz_V_per_V": 0.15811606673832945,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.0,
+          "DC_power_W": 0.007786074385729121,
+          "DC_power_increment_vs_bypass_W": 0.0,
+          "Hdd_56_change_vs_bypass_dB": 0.0,
+          "d56_ps": 0.0,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.9451762674664903,
+            0.9451762674664905
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -0.4897438330012095,
+            -0.4897438330012075
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.4897438330012095,
+              0.003693716871422086
+            ],
+            [
+              -0.4897438330012075,
+              0.003693716871422086
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -1.9286549331065743e-15,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            0.20165252935591313,
+            0.20165252935591313
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.4155343563970746e-15,
+            1.4155343563970746e-15
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -3.391731340229853e-14,
+            3.2307490016592055e-14
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -5.551115123125783e-16,
+            5.551115123125783e-17
+          ],
+          "differential_phase_delay_8probe_span_ps": 6.106226635438361e-16,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.5543122344752192e-15,
+            9.992007221626409e-16
+          ],
+          "differential_phase_delay_ps": [
+            -5.551115123125783e-16,
+            5.551115123125783e-17,
+            -1.1102230246251565e-16,
+            -2.7755575615628914e-16,
+            0.0,
+            -1.6653345369377348e-16,
+            -1.942890293094024e-16,
+            0.0
+          ],
+          "differential_phase_slope_fit_ps": -5.551115123125783e-17,
+          "gate_instance_mapping": null,
+          "input_noise_increase_mVrms": 0.0,
+          "input_noise_increase_percent": 0.0,
+          "input_noise_mVrms": 0.23298863430663325,
+          "input_noise_variance_change_V2": 0.0,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.01374925326811277,
+            0.01374925326811274
+          ]
+        },
+        "0": {
+          "AFE_Hdd_56GHz_V_per_V": 0.1740479507310337,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.9994078098065386,
+          "DC_power_W": 0.007786073068007097,
+          "DC_power_increment_vs_bypass_W": -1.3177220243784649e-09,
+          "Hdd_56_change_vs_bypass_dB": 0.8338582361650857,
+          "d56_ps": -0.7793406480317424,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.5249723243791726,
+            0.6157352585584298
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            3.665239241151524,
+            -4.212119537917368
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.16869314096710758,
+              4.317947137985564
+            ],
+            [
+              -4.212119537917368,
+              -1.2639402616685862
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 7.877358779068894,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.270491446482463,
+            6.049832094514206
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.137813078336947,
+            2.229392155342298
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -2.8032242280387183,
+            2.431295871862665
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -6.154329516332377,
+            -0.7793406480317424
+          ],
+          "differential_phase_delay_8probe_span_ps": 5.374988868300634,
+          "differential_phase_delay_dense_min_max_ps": [
+            -6.154329516332377,
+            -0.7793406480317424
+          ],
+          "differential_phase_delay_ps": [
+            -6.154329516332377,
+            -4.146071297334662,
+            -3.3435290432393443,
+            -2.8440157768781966,
+            -2.350316414683571,
+            -1.7763176870734148,
+            -1.2040734238711694,
+            -0.7793406480317424
+          ],
+          "differential_phase_slope_fit_ps": -0.041691696210327756,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            }
+          },
+          "input_noise_increase_mVrms": 0.0906507231434755,
+          "input_noise_increase_percent": 38.907787675243966,
+          "input_noise_mVrms": 0.32363935745010874,
+          "input_noise_variance_change_V2": 5.045872997464917e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.03406315012429666,
+            0.0406209568990038
+          ]
+        },
+        "16": {
+          "AFE_Hdd_56GHz_V_per_V": 0.15283481872782953,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.5405976593104258,
+          "DC_power_W": 0.007786073067982881,
+          "DC_power_increment_vs_bypass_W": -1.3177462402508278e-09,
+          "Hdd_56_change_vs_bypass_dB": -0.2950739238662302,
+          "d56_ps": -0.7474355580773375,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.167801701696328,
+            0.7150116505896897
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            1.3473820752121466,
+            -2.9137376326332074
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.18192175436109603,
+              1.9074858103256387
+            ],
+            [
+              -2.9137376326332074,
+              -0.857647990532528
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 4.261119707845355,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.2171891295726605,
+            5.964624687649998
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.5562086697820798,
+            1.0189034468433116
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -1.5733425450293046,
+            1.0529005243769198
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -2.751719857924366,
+            -0.7474355580773375
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.0042842998470283,
+          "differential_phase_delay_dense_min_max_ps": [
+            -2.751719857924366,
+            -0.7474355580773375
+          ],
+          "differential_phase_delay_ps": [
+            -2.751719857924366,
+            -2.037384803318926,
+            -1.8769927588066428,
+            -1.7535470467220868,
+            -1.5673441218295014,
+            -1.2992088305023355,
+            -0.9997697016374305,
+            -0.7474355580773375
+          ],
+          "differential_phase_slope_fit_ps": -0.5300928608693161,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "101111",
+              "code": 47,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 58.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "010000",
+              "code": 16,
+              "enabled_bits_LSB_index": [
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 20.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.07587624270282572,
+          "input_noise_increase_percent": 32.56649961858913,
+          "input_noise_mVrms": 0.30886487700945897,
+          "input_noise_variance_change_V2": 4.1113808533998136e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.03213925229434136,
+            0.033547425607751306
+          ]
+        },
+        "32": {
+          "AFE_Hdd_56GHz_V_per_V": 0.15240471945976586,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.5547484227491696,
+          "DC_power_W": 0.0077860730679828825,
+          "DC_power_increment_vs_bypass_W": -1.3177462385161043e-09,
+          "Hdd_56_change_vs_bypass_dB": -0.3195517308396758,
+          "d56_ps": -0.8597824156222549,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.1652699211066777,
+            0.7175425720167552
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            1.3285307247378246,
+            -2.8830465401448615
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.6419479837579563,
+              1.7826058118895194
+            ],
+            [
+              -2.8830465401448615,
+              -0.40592264527709176
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 4.211577264882685,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.148277914557966,
+            6.0080603301802205
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.6235073309758343,
+            1.1736850344681509
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -3.1673095509382536,
+            1.2063662425315487
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -2.461480892285531,
+            -0.8597824156222549
+          ],
+          "differential_phase_delay_8probe_span_ps": 1.6016984766632762,
+          "differential_phase_delay_dense_min_max_ps": [
+            -2.503924169813831,
+            -0.8597824156222549
+          ],
+          "differential_phase_delay_ps": [
+            -2.299454453595229,
+            -2.461480892285531,
+            -2.2612831738164547,
+            -2.0568840312398446,
+            -1.8105095640161064,
+            -1.4937476142133832,
+            -1.1502777656351704,
+            -0.8597824156222549
+          ],
+          "differential_phase_slope_fit_ps": -0.6554460376270139,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "011111",
+              "code": 31,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 38.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "100000",
+              "code": 32,
+              "enabled_bits_LSB_index": [
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 40.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.07508179839772394,
+          "input_noise_increase_percent": 32.225519764586366,
+          "input_noise_mVrms": 0.3080704327043572,
+          "input_noise_variance_change_V2": 4.0623687790579786e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.03262614977259364,
+            0.03320891360163054
+          ]
+        },
+        "48": {
+          "AFE_Hdd_56GHz_V_per_V": 0.14382948221536812,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.2644346849855112,
+          "DC_power_W": 0.007786073067969039,
+          "DC_power_increment_vs_bypass_W": -1.3177600816094426e-09,
+          "Hdd_56_change_vs_bypass_dB": -0.8225617077590406,
+          "d56_ps": -0.7565832913756418,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.9303117785944699,
+            0.8433647486443591
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -0.6274296088898905,
+            -1.4796911157279728
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -1.3372187549760381,
+              -0.08963396149843592
+            ],
+            [
+              -1.4796911157279728,
+              0.4520979394136386
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 0.8522615068380851,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.202422058612083,
+            5.9590053499877245
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.941899879100394,
+            0.3671606007107959
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -2.0216417677954106,
+            0.5357809151455015
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -1.121746996922397,
+            1.0909467303437932
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.21269372726619,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.1231749961585962,
+            1.0909467303437932
+          ],
+          "differential_phase_delay_ps": [
+            1.0909467303437932,
+            -0.4254765743783002,
+            -0.8950170385922691,
+            -1.0758300454523395,
+            -1.121746996922397,
+            -1.0581007698847422,
+            -0.9171181331022762,
+            -0.7565832913756418
+          ],
+          "differential_phase_slope_fit_ps": -1.0731635197337681,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "001111",
+              "code": 15,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "nominal_enabled_cap_fF_per_section": 18.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "110000",
+              "code": 48,
+              "enabled_bits_LSB_index": [
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 60.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.07070662237688308,
+          "input_noise_increase_percent": 30.347670214602406,
+          "input_noise_mVrms": 0.3036952566835163,
+          "input_noise_variance_change_V2": 3.794710521599678e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.03257156723711901,
+            0.02888370486491181
+          ]
+        },
+        "63": {
+          "AFE_Hdd_56GHz_V_per_V": 0.17404795073104065,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.9994078098065938,
+          "DC_power_W": 0.007786073068007096,
+          "DC_power_increment_vs_bypass_W": -1.3177220252458266e-09,
+          "Hdd_56_change_vs_bypass_dB": 0.8338582361654308,
+          "d56_ps": 0.7793406480317024,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.6157352585584299,
+            1.5249723243792177
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -4.212119537917366,
+            3.6652392411517813
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -4.212119537917366,
+              -1.2639402616686266
+            ],
+            [
+              0.1686931409672116,
+              4.317947137985668
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -7.877358779069144,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            6.049832094514214,
+            5.270491446482511
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.2293921553422624,
+            2.1378130783364666
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -2.431295871863041,
+            2.8032242280364135
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            0.7793406480317024,
+            6.154329516332721
+          ],
+          "differential_phase_delay_8probe_span_ps": 5.374988868301019,
+          "differential_phase_delay_dense_min_max_ps": [
+            0.7793406480317024,
+            6.154329516332721
+          ],
+          "differential_phase_delay_ps": [
+            6.154329516332721,
+            4.146071297334594,
+            3.343529043239291,
+            2.844015776878195,
+            2.350316414683593,
+            1.7763176870734139,
+            1.2040734238711739,
+            0.7793406480317024
+          ],
+          "differential_phase_slope_fit_ps": 0.04169169621029134,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            }
+          },
+          "input_noise_increase_mVrms": 0.09065072314347555,
+          "input_noise_increase_percent": 38.90778767524399,
+          "input_noise_mVrms": 0.3236393574501088,
+          "input_noise_variance_change_V2": 5.045872997464921e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.040620956899005294,
+            0.034063150124297295
+          ]
+        }
+      },
+      "d56_endpoint_midpoint_ps": -1.9984014443252818e-14,
+      "d56_endpoint_offsets_ps": [
+        -0.7793406480317424,
+        0.7793406480317024
+      ],
+      "d56_endpoint_span_percent_of_required": 17.457230515910585,
+      "d56_endpoint_span_ps": 1.5586812960634449,
+      "d56_observed_adjacent_steps_ps": [
+        0.031905089954404886,
+        -0.11234685754491736,
+        0.10319912424661304,
+        1.5359239394073443
+      ],
+      "d56_observed_min_max_ps": [
+        -0.8597824156222549,
+        0.7793406480317024
+      ],
+      "endpoint_swap": {
+        "AFE_8probe_max_complex_matrix_difference_V_per_V": 7.899680058268651e-15,
+        "AFE_8probe_max_relative_to_matrix_peak": 3.378372826952392e-14,
+        "trim_dense_max_complex_matrix_difference_V_per_V": 5.5537817934287506e-14,
+        "trim_dense_max_relative_to_matrix_peak": 3.343189060170668e-14
+      },
+      "missing_mirror_codes": {
+        "16": 47,
+        "32": 31,
+        "48": 15
+      },
+      "observed_numbered_codes": [
+        0,
+        16,
+        32,
+        48,
+        63
+      ]
+    },
+    "tt_p25_v090_r0": {
+      "codes": {
+        "-1": {
+          "AFE_Hdd_56GHz_V_per_V": 0.21563788247028742,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.0,
+          "DC_power_W": 0.010076882436162468,
+          "DC_power_increment_vs_bypass_W": 0.0,
+          "Hdd_56_change_vs_bypass_dB": 0.0,
+          "d56_ps": 0.0,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.0,
+            1.0
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            0.0,
+            0.0
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 0.0,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            -0.0,
+            -0.0
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            0.0,
+            0.0
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            0.0,
+            0.0
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            0.0,
+            0.0
+          ],
+          "differential_phase_delay_8probe_span_ps": 0.0,
+          "differential_phase_delay_dense_min_max_ps": [
+            0.0,
+            0.0
+          ],
+          "differential_phase_delay_ps": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "differential_phase_slope_fit_ps": 0.0,
+          "gate_instance_mapping": null,
+          "input_noise_increase_mVrms": 0.0,
+          "input_noise_increase_percent": null,
+          "input_noise_mVrms": 0.0,
+          "input_noise_variance_change_V2": 0.0,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.0,
+            0.0
+          ]
+        },
+        "0": {
+          "AFE_Hdd_56GHz_V_per_V": 0.5025395936961319,
+          "CM_to_DM_delta_ratio_at_56GHz": 3.1258927204637357,
+          "DC_power_W": 0.010076882551847067,
+          "DC_power_increment_vs_bypass_W": 1.1568459905297868e-10,
+          "Hdd_56_change_vs_bypass_dB": 7.3489045163883,
+          "d56_ps": -0.7919471197644938,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            4.002065246036997,
+            0.8904527281485494
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            12.0456832940141,
+            -1.0077826233783622
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.20954837391692632,
+              14.57981301153433
+            ],
+            [
+              -1.0077826233783622,
+              5.100249364369329
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 13.05346591739246,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            6.23532810953506,
+            7.027275229299554
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -9.632777952784798,
+            15.744309257542696
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -10.657863894586896,
+            19.797296534483145
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -6.12513540882404,
+            -0.7919471197644938
+          ],
+          "differential_phase_delay_8probe_span_ps": 5.333188289059546,
+          "differential_phase_delay_dense_min_max_ps": [
+            -6.153116046097664,
+            -0.7919471197644938
+          ],
+          "differential_phase_delay_ps": [
+            -1.6251447548405842,
+            -2.597672306739497,
+            -3.8353162439386566,
+            -5.284681671150192,
+            -6.12513540882404,
+            -5.580762828923232,
+            -3.1542694593798064,
+            -0.7919471197644938
+          ],
+          "differential_phase_slope_fit_ps": -2.2954591490299467,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            }
+          },
+          "input_noise_increase_mVrms": 0.3285645734109561,
+          "input_noise_increase_percent": null,
+          "input_noise_mVrms": 0.3285645734109561,
+          "input_noise_variance_change_V2": 1.0795467890072353e-07,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.13796009289373598,
+            0.11109226789962796
+          ]
+        },
+        "16": {
+          "AFE_Hdd_56GHz_V_per_V": 0.3268401572805785,
+          "CM_to_DM_delta_ratio_at_56GHz": 1.170518882687618,
+          "DC_power_W": 0.01007688255184706,
+          "DC_power_increment_vs_bypass_W": 1.1568459211408477e-10,
+          "Hdd_56_change_vs_bypass_dB": 3.6122070468261462,
+          "d56_ps": -0.908967219872931,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            2.1434529718319797,
+            1.0636095135026684
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            6.62227918732333,
+            0.5356442648647988
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.32955783081040796,
+              8.70817340009565
+            ],
+            [
+              0.5131296122831407,
+              6.33989387226606
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 6.086634922458531,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            6.049433932676334,
+            6.958401152549265
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -6.991043724590231,
+            5.926300681810267
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -7.554239080417247,
+            6.84128524869123
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -3.4939962284296375,
+            -0.7768325638054057
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.717163664624232,
+          "differential_phase_delay_dense_min_max_ps": [
+            -3.5519989743807634,
+            -0.7768325638054057
+          ],
+          "differential_phase_delay_ps": [
+            -0.7768325638054057,
+            -1.0949750940392702,
+            -1.654894634386778,
+            -2.6197343543894895,
+            -3.4939962284296375,
+            -3.0890201615704544,
+            -1.801117183944637,
+            -0.908967219872931
+          ],
+          "differential_phase_slope_fit_ps": -1.729202878420157,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "101111",
+              "code": 47,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 58.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "010000",
+              "code": 16,
+              "enabled_bits_LSB_index": [
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 20.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.28953348397175227,
+          "input_noise_increase_percent": null,
+          "input_noise_mVrms": 0.28953348397175227,
+          "input_noise_variance_change_V2": 8.382963834082093e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.08576472742921341,
+            0.06997728192037293
+          ]
+        },
+        "32": {
+          "AFE_Hdd_56GHz_V_per_V": 0.3231250973071681,
+          "CM_to_DM_delta_ratio_at_56GHz": 1.2047240375434711,
+          "DC_power_W": 0.01007688255184706,
+          "DC_power_increment_vs_bypass_W": 1.1568459211408477e-10,
+          "Hdd_56_change_vs_bypass_dB": 3.5129126549680176,
+          "d56_ps": -1.1412746598461556,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            2.1259594631023138,
+            1.0677547407018038
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            6.5510995864471635,
+            0.569430166361465
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.3168369207382387,
+              8.243671468843253
+            ],
+            [
+              0.527850225342865,
+              6.818282892094154
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 5.981669420085698,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.884940268398598,
+            7.0262149282447535
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -8.303076901217306,
+            5.755621559909678
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -8.934487334857783,
+            6.835731265107863
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -3.654733426153279,
+            -0.05430325881286113
+          ],
+          "differential_phase_delay_8probe_span_ps": 3.600430167340418,
+          "differential_phase_delay_dense_min_max_ps": [
+            -3.762841796483076,
+            -0.05430325881286113
+          ],
+          "differential_phase_delay_ps": [
+            -0.05430325881286113,
+            -0.45062225912342524,
+            -1.2401124904661929,
+            -2.492647557387273,
+            -3.654733426153279,
+            -3.3936847313027907,
+            -2.126545548382703,
+            -1.1412746598461556
+          ],
+          "differential_phase_slope_fit_ps": -2.2819347546705577,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "011111",
+              "code": 31,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 38.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "100000",
+              "code": 32,
+              "enabled_bits_LSB_index": [
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 40.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.28716669388832156,
+          "input_noise_increase_percent": null,
+          "input_noise_mVrms": 0.28716669388832156,
+          "input_noise_variance_change_V2": 8.246471007874897e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.08701970951816544,
+            0.06816783406586424
+          ]
+        },
+        "48": {
+          "AFE_Hdd_56GHz_V_per_V": 0.2806763140950151,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.5226490446895296,
+          "DC_power_W": 0.01007688255184706,
+          "DC_power_increment_vs_bypass_W": 1.1568459211408477e-10,
+          "Hdd_56_change_vs_bypass_dB": 2.289614123316886,
+          "d56_ps": -1.052975672485445,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.4539306913083963,
+            1.3162263042866593
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            3.2508740850719247,
+            2.3866113152451334
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.4340091982973137,
+              5.613751792546934
+            ],
+            [
+              0.40795747818963113,
+              9.113427813515418
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 0.8642627698267908,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            6.003878562900124,
+            7.056854235385569
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -6.247939277352154,
+            2.053569673998183
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -8.372581560268479,
+            2.177967608907191
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -1.756969921424962,
+            1.0527185265838854
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.8096884480088473,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.7724578541253262,
+            1.06722492779071
+          ],
+          "differential_phase_delay_ps": [
+            0.7938379444812848,
+            1.0527185265838854,
+            0.9820625704787684,
+            0.4349944541919646,
+            -0.8587760502395234,
+            -1.756969921424962,
+            -1.4967678648402494,
+            -1.052975672485445
+          ],
+          "differential_phase_slope_fit_ps": -2.0706600427824426,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "001111",
+              "code": 15,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "nominal_enabled_cap_fF_per_section": 18.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "110000",
+              "code": 48,
+              "enabled_bits_LSB_index": [
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 60.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.2824987433262007,
+          "input_noise_increase_percent": null,
+          "input_noise_mVrms": 0.2824987433262007,
+          "input_noise_variance_change_V2": 7.98055399808826e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.07213553916978853,
+            0.057441094626016646
+          ]
+        },
+        "63": {
+          "AFE_Hdd_56GHz_V_per_V": 0.5025395936961589,
+          "CM_to_DM_delta_ratio_at_56GHz": 3.12589272046395,
+          "DC_power_W": 0.010076882551847067,
+          "DC_power_increment_vs_bypass_W": 1.1568459905297868e-10,
+          "Hdd_56_change_vs_bypass_dB": 7.348904516388767,
+          "d56_ps": 0.7919471197644086,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.8904527281485535,
+            4.002065246037191
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -1.0077826233783223,
+            12.04568329401452
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -1.0077826233783223,
+              5.1002493643691995
+            ],
+            [
+              0.20954837391693013,
+              14.579813011534359
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -13.053465917392844,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            7.027275229299555,
+            6.235328109535146
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -15.744309257543222,
+            9.632777952784421
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -19.79729653448009,
+            10.657863894585985
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            0.7919471197644086,
+            6.125135408823956
+          ],
+          "differential_phase_delay_8probe_span_ps": 5.333188289059548,
+          "differential_phase_delay_dense_min_max_ps": [
+            0.7919471197644086,
+            6.153116046097582
+          ],
+          "differential_phase_delay_ps": [
+            1.6251447548406306,
+            2.597672306739426,
+            3.8353162439387773,
+            5.284681671150189,
+            6.125135408823956,
+            5.580762828923202,
+            3.154269459379785,
+            0.7919471197644086
+          ],
+          "differential_phase_slope_fit_ps": 2.2954591490298624,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            }
+          },
+          "input_noise_increase_mVrms": 0.3285645734109452,
+          "input_noise_increase_percent": null,
+          "input_noise_mVrms": 0.3285645734109452,
+          "input_noise_variance_change_V2": 1.0795467890071639e-07,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.11109226789963324,
+            0.13796009289374367
+          ]
+        }
+      },
+      "d56_endpoint_midpoint_ps": -4.263256414560601e-14,
+      "d56_endpoint_offsets_ps": [
+        -0.7919471197644938,
+        0.7919471197644086
+      ],
+      "d56_endpoint_span_percent_of_required": 17.739615482723707,
+      "d56_endpoint_span_ps": 1.5838942395289024,
+      "d56_observed_adjacent_steps_ps": [
+        -0.11702010010843722,
+        -0.23230743997322456,
+        0.08829898736071051,
+        1.8449227922498537
+      ],
+      "d56_observed_min_max_ps": [
+        -1.1412746598461556,
+        0.7919471197644086
+      ],
+      "endpoint_swap": {
+        "AFE_8probe_max_complex_matrix_difference_V_per_V": 3.205285026811862e-14,
+        "AFE_8probe_max_relative_to_matrix_peak": 4.1661771464833214e-14,
+        "trim_dense_max_complex_matrix_difference_V_per_V": 6.063143330336532e-13,
+        "trim_dense_max_relative_to_matrix_peak": 1.0860364656988186e-13
+      },
+      "missing_mirror_codes": {
+        "16": 47,
+        "32": 31,
+        "48": 15
+      },
+      "observed_numbered_codes": [
+        0,
+        16,
+        32,
+        48,
+        63
+      ]
+    },
+    "tt_p25_v090_r25": {
+      "codes": {
+        "-1": {
+          "AFE_Hdd_56GHz_V_per_V": 0.1999871575806818,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.0,
+          "DC_power_W": 0.01007688243301967,
+          "DC_power_increment_vs_bypass_W": 0.0,
+          "Hdd_56_change_vs_bypass_dB": 0.0,
+          "d56_ps": -5.551115123125783e-17,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.9421464683266001,
+            0.9421464683266003
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -0.5176315101456592,
+            -0.5176315101456572
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.5176315101456592,
+              0.004810587921788408
+            ],
+            [
+              -0.5176315101456572,
+              0.004810587921780698
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -1.9286549331065743e-15,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            0.1971774890243167,
+            0.19717748902431675
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.373101715136272e-15,
+            2.2065682614424986e-15
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -9.298117831235686e-14,
+            9.57012247226885e-14
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -4.996003610813204e-16,
+            2.4424906541753444e-15
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.942091015256665e-15,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.7763568394002505e-15,
+            4.773959005888173e-15
+          ],
+          "differential_phase_delay_ps": [
+            2.4424906541753444e-15,
+            1.6653345369377348e-16,
+            0.0,
+            2.220446049250313e-16,
+            -1.1102230246251565e-16,
+            -4.996003610813204e-16,
+            -8.326672684688674e-17,
+            -5.551115123125783e-17
+          ],
+          "differential_phase_slope_fit_ps": -3.885780586188048e-16,
+          "gate_instance_mapping": null,
+          "input_noise_increase_mVrms": 0.0,
+          "input_noise_increase_percent": 0.0,
+          "input_noise_mVrms": 0.2125745928825215,
+          "input_noise_variance_change_V2": 0.0,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.014815861221537026,
+            0.01481586122153701
+          ]
+        },
+        "0": {
+          "AFE_Hdd_56GHz_V_per_V": 0.21394148364305807,
+          "CM_to_DM_delta_ratio_at_56GHz": 1.081339379700357,
+          "DC_power_W": 0.010076882207251125,
+          "DC_power_increment_vs_bypass_W": -2.257685444845281e-10,
+          "Hdd_56_change_vs_bypass_dB": 0.5858579083590947,
+          "d56_ps": -1.079088979575757,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.5234104094853897,
+            0.562382737332746
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            3.656338376159775,
+            -4.99936037413854
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              0.16871190353895654,
+              4.249270681880733
+            ],
+            [
+              -4.99936037413854,
+              -1.2182767641778882
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 8.655698750298315,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.1781228243891695,
+            6.2572118039649265
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.639256467526479,
+            2.1124570681625947
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -3.5588241657342294,
+            2.2927513567273348
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -6.826085679334037,
+            -1.079088979575757
+          ],
+          "differential_phase_delay_8probe_span_ps": 5.74699669975828,
+          "differential_phase_delay_dense_min_max_ps": [
+            -6.826085679334037,
+            -1.079088979575757
+          ],
+          "differential_phase_delay_ps": [
+            -6.826085679334037,
+            -4.732671073430258,
+            -3.83571888739919,
+            -3.2761935746527033,
+            -2.738945882535563,
+            -2.133574472153538,
+            -1.5350241292526654,
+            -1.079088979575757
+          ],
+          "differential_phase_slope_fit_ps": -0.2799802680557484,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            }
+          },
+          "input_noise_increase_mVrms": 0.08140230704340873,
+          "input_noise_increase_percent": 38.29352602283726,
+          "input_noise_mVrms": 0.29397689992593024,
+          "input_noise_variance_change_V2": 4.123446015089063e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.03407107525346558,
+            0.04083126594826052
+          ]
+        },
+        "16": {
+          "AFE_Hdd_56GHz_V_per_V": 0.18115121172486343,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.5437209320141339,
+          "DC_power_W": 0.01007688220725114,
+          "DC_power_increment_vs_bypass_W": -2.2576852887201682e-10,
+          "Hdd_56_change_vs_bypass_dB": -0.8592172884550552,
+          "d56_ps": -0.9361481769676887,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.0984330078439568,
+            0.6677825776845338
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            0.8154714989422006,
+            -3.5072983158207793
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.13758913542990614,
+              1.4259635481662243
+            ],
+            [
+              -3.5072983158207793,
+              -0.8345544369449719
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 4.322769814762981,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.187892757832366,
+            6.124040934800055
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.5540900319932751,
+            0.7210840386638626
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -1.61342244708906,
+            0.7462411175042538
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -3.1008653175525644,
+            -0.9361481769676887
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.1647171405848757,
+          "differential_phase_delay_dense_min_max_ps": [
+            -3.1008653175525644,
+            -0.9361481769676887
+          ],
+          "differential_phase_delay_ps": [
+            -3.1008653175525644,
+            -2.1774721007157396,
+            -1.9696780778082505,
+            -1.8553049855630022,
+            -1.6887859235286022,
+            -1.4461463977293691,
+            -1.1728956363436254,
+            -0.9361481769676887
+          ],
+          "differential_phase_slope_fit_ps": -0.7062036796004465,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "101111",
+              "code": 47,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 58.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "010000",
+              "code": 16,
+              "enabled_bits_LSB_index": [
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 20.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.06535839030664048,
+          "input_noise_increase_percent": 30.746096897271503,
+          "input_noise_mVrms": 0.277932983189162,
+          "input_noise_variance_change_V2": 3.2058785605257236e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.031145209320543765,
+            0.032022860359292915
+          ]
+        },
+        "32": {
+          "AFE_Hdd_56GHz_V_per_V": 0.17982532090745681,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.5616361682965311,
+          "DC_power_W": 0.01007688220725114,
+          "DC_power_increment_vs_bypass_W": -2.2576852887201682e-10,
+          "Hdd_56_change_vs_bypass_dB": -0.9230252763042648,
+          "d56_ps": -1.099556038293577,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            1.089628269434841,
+            0.6728289384000516
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            0.7455672419669902,
+            -3.4419067557016025
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.731315796172113,
+              1.198377358137325
+            ],
+            [
+              -3.4419067557016025,
+              -0.32555872951792325
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 4.187473997668593,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.086521200687632,
+            6.186077238981209
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.9314978264964586,
+            0.9030526677188444
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -3.210525520726395,
+            0.9409469388522602
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -2.483150356096754,
+            -1.099556038293577
+          ],
+          "differential_phase_delay_8probe_span_ps": 1.383594317803177,
+          "differential_phase_delay_dense_min_max_ps": [
+            -2.484007545270873,
+            -1.099556038293577
+          ],
+          "differential_phase_delay_ps": [
+            -2.03480288569705,
+            -2.483150356096754,
+            -2.4011094813459652,
+            -2.2395281095659287,
+            -2.013677691336918,
+            -1.7140094789323674,
+            -1.385642996295351,
+            -1.099556038293577
+          ],
+          "differential_phase_slope_fit_ps": -0.968452149535957,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "011111",
+              "code": 31,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 38.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "100000",
+              "code": 32,
+              "enabled_bits_LSB_index": [
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 40.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.06419219018150929,
+          "input_noise_increase_percent": 30.197489413508993,
+          "input_noise_mVrms": 0.2767667830640308,
+          "input_noise_variance_change_V2": 3.141189466844252e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.03180722905114825,
+            0.031430032555198516
+          ]
+        },
+        "48": {
+          "AFE_Hdd_56GHz_V_per_V": 0.16940857640192516,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.2689871682866952,
+          "DC_power_W": 0.010076882207251137,
+          "DC_power_increment_vs_bypass_W": -2.2576853234146377e-10,
+          "Hdd_56_change_vs_bypass_dB": -1.4413342972446432,
+          "d56_ps": -0.874907014647345,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.8385628211454442,
+            0.8121370126180129
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -1.5292879311677854,
+            -1.8074139273849352
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -1.5292879311677854,
+              -0.8916573322632064
+            ],
+            [
+              -1.8074139273849352,
+              0.5179393793985297
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 0.2781259962171488,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.2230203235944055,
+            6.0979273382417505
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.001629310644893,
+            0.06705103635676224
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -2.014901342316083,
+            0.28019460609796365
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -1.1144677945049501,
+            1.688395231755801
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.8028630262607512,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.128040198520929,
+            1.688395231755801
+          ],
+          "differential_phase_delay_ps": [
+            1.688395231755801,
+            -0.01384663631518901,
+            -0.6764408610917574,
+            -0.9844997334892716,
+            -1.1144677945049501,
+            -1.1090839533724504,
+            -1.0094724505050747,
+            -0.874907014647345
+          ],
+          "differential_phase_slope_fit_ps": -1.3275775273394483,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "001111",
+              "code": 15,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "nominal_enabled_cap_fF_per_section": 18.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "110000",
+              "code": 48,
+              "enabled_bits_LSB_index": [
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 60.0
+            }
+          },
+          "input_noise_increase_mVrms": 0.06053012784101508,
+          "input_noise_increase_percent": 28.474770677070893,
+          "input_noise_mVrms": 0.2731047207235366,
+          "input_noise_variance_change_V2": 2.939823094231114e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.031694512829410985,
+            0.026658486678673488
+          ]
+        },
+        "63": {
+          "AFE_Hdd_56GHz_V_per_V": 0.21394148364305493,
+          "CM_to_DM_delta_ratio_at_56GHz": 1.0813393797003343,
+          "DC_power_W": 0.010076882207251125,
+          "DC_power_increment_vs_bypass_W": -2.257685444845281e-10,
+          "Hdd_56_change_vs_bypass_dB": 0.5858579083589667,
+          "d56_ps": 1.0790889795757836,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.5623827373327465,
+            1.5234104094853533
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -4.999360374138533,
+            3.6563383761595674
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -4.999360374138533,
+              -1.2182767641780536
+            ],
+            [
+              0.16871190353898302,
+              4.249270681880853
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -8.6556987502981,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            6.2572118039649345,
+            5.178122824389151
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.1124570681623984,
+            2.6392564675264083
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -2.2927513567287754,
+            3.5588241657411444
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            1.0790889795757836,
+            6.826085679333903
+          ],
+          "differential_phase_delay_8probe_span_ps": 5.746996699758119,
+          "differential_phase_delay_dense_min_max_ps": [
+            1.0790889795757836,
+            6.826085679333903
+          ],
+          "differential_phase_delay_ps": [
+            6.826085679333903,
+            4.732671073430156,
+            3.8357188873991563,
+            3.276193574652673,
+            2.7389458825355826,
+            2.1335744721535574,
+            1.5350241292526663,
+            1.0790889795757836
+          ],
+          "differential_phase_slope_fit_ps": 0.279980268055799,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            }
+          },
+          "input_noise_increase_mVrms": 0.08140230704340795,
+          "input_noise_increase_percent": 38.293526022836886,
+          "input_noise_mVrms": 0.29397689992592946,
+          "input_noise_variance_change_V2": 4.1234460150890176e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.040831265948259456,
+            0.03407107525346497
+          ]
+        }
+      },
+      "d56_endpoint_midpoint_ps": 1.3322676295501878e-14,
+      "d56_endpoint_offsets_ps": [
+        -1.079088979575757,
+        1.0790889795757836
+      ],
+      "d56_endpoint_span_percent_of_required": 24.171593142497255,
+      "d56_endpoint_span_ps": 2.1581779591515406,
+      "d56_observed_adjacent_steps_ps": [
+        0.1429408026080683,
+        -0.16340786132588825,
+        0.22464902364623196,
+        1.9539959942231286
+      ],
+      "d56_observed_min_max_ps": [
+        -1.099556038293577,
+        1.0790889795757836
+      ],
+      "endpoint_swap": {
+        "AFE_8probe_max_complex_matrix_difference_V_per_V": 8.337423920553465e-15,
+        "AFE_8probe_max_relative_to_matrix_peak": 2.8281331527740177e-14,
+        "trim_dense_max_complex_matrix_difference_V_per_V": 6.466684592883095e-14,
+        "trim_dense_max_relative_to_matrix_peak": 3.9315437779538934e-14
+      },
+      "missing_mirror_codes": {
+        "16": 47,
+        "32": 31,
+        "48": 15
+      },
+      "observed_numbered_codes": [
+        0,
+        16,
+        32,
+        48,
+        63
+      ]
+    },
+    "tt_p25_v090_r50": {
+      "codes": {
+        "-1": {
+          "AFE_Hdd_56GHz_V_per_V": 0.18575496243449455,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.0,
+          "DC_power_W": 0.010076882429876869,
+          "DC_power_increment_vs_bypass_W": 0.0,
+          "Hdd_56_change_vs_bypass_dB": 0.0,
+          "d56_ps": 4.440892098500626e-16,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.8873884760172416,
+            0.8873884760172416
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -1.037724310104369,
+            -1.037724310104369
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -1.037724310104369,
+              0.008421600896076971
+            ],
+            [
+              -1.037724310104369,
+              0.008421600896076971
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 1.928654933106574e-15,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            0.37240256470568595,
+            0.3724025647056855
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.887379141862766e-15,
+            4.417473331574939e-15
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -1.4732659536775827e-13,
+            9.514611321037592e-14
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -8.881784197001252e-16,
+            4.440892098500626e-16
+          ],
+          "differential_phase_delay_8probe_span_ps": 1.3322676295501878e-15,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.5543122344752192e-15,
+            5.329070518200751e-15
+          ],
+          "differential_phase_delay_ps": [
+            0.0,
+            -8.881784197001252e-16,
+            -1.1102230246251565e-16,
+            2.220446049250313e-16,
+            -2.220446049250313e-16,
+            -1.1102230246251565e-16,
+            -1.1102230246251565e-16,
+            4.440892098500626e-16
+          ],
+          "differential_phase_slope_fit_ps": 3.3306690738754696e-16,
+          "gate_instance_mapping": null,
+          "input_noise_increase_mVrms": 0.0,
+          "input_noise_increase_percent": 0.0,
+          "input_noise_mVrms": 0.2970652517138628,
+          "input_noise_variance_change_V2": 0.0,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.0262721526558203,
+            0.026272152655820336
+          ]
+        },
+        "0": {
+          "AFE_Hdd_56GHz_V_per_V": 0.13688084484889887,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.6360227399256038,
+          "DC_power_W": 0.010076881862655434,
+          "DC_power_increment_vs_bypass_W": -5.672214347524074e-10,
+          "Hdd_56_change_vs_bypass_dB": -2.651954953430505,
+          "d56_ps": -0.9825383904513689,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.9225191109551774,
+            0.40143254232001546
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -0.7004925641605344,
+            -7.927748482653355
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -0.7004925641605344,
+              0.21206586957481374
+            ],
+            [
+              -7.927748482653355,
+              -3.223803692102729
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 7.227255918492821,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            4.933212215964035,
+            5.915750606415404
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -0.5966847597071432,
+            1.0739015212839136
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -1.259918404389425,
+            1.1071495127224753
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -9.386840991007503,
+            -0.9825383904513689
+          ],
+          "differential_phase_delay_8probe_span_ps": 8.404302600556134,
+          "differential_phase_delay_dense_min_max_ps": [
+            -9.386840991007503,
+            -0.9825383904513689
+          ],
+          "differential_phase_delay_ps": [
+            -9.386840991007503,
+            -4.516520251625275,
+            -2.653046327322212,
+            -1.7887612190441597,
+            -1.35901804666696,
+            -1.1440110684370524,
+            -1.0376603377005447,
+            -0.9825383904513689
+          ],
+          "differential_phase_slope_fit_ps": 0.2759285729212433,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            }
+          },
+          "input_noise_increase_mVrms": -0.009713407495561432,
+          "input_noise_increase_percent": -3.269789192617356,
+          "input_noise_mVrms": 0.28735184421830134,
+          "input_noise_variance_change_V2": -5.676681400161726e-09,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.015130828258304559,
+            0.02380234909005318
+          ]
+        },
+        "16": {
+          "AFE_Hdd_56GHz_V_per_V": 0.12375353338722665,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.34620935636550254,
+          "DC_power_W": 0.01007688186265545,
+          "DC_power_increment_vs_bypass_W": -5.672214191398961e-10,
+          "Hdd_56_change_vs_bypass_dB": -3.5276563413443736,
+          "d56_ps": -0.8583966448020544,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.7233938376417384,
+            0.47349563698692293
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -2.8125039034588877,
+            -6.493680368746732
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -2.8125039034588877,
+              -0.7690802708641511
+            ],
+            [
+              -6.493680368746732,
+              -2.3924653098865107
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 3.6811764652878436,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            4.899670428085408,
+            5.758067072887463
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -0.5317044924550354,
+            -0.0723933460181696
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -0.5378720961196457,
+            0.1330145926311248
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -4.112647025984247,
+            -0.8583966448020544
+          ],
+          "differential_phase_delay_8probe_span_ps": 3.2542503811821923,
+          "differential_phase_delay_dense_min_max_ps": [
+            -4.112647025984247,
+            -0.8583966448020544
+          ],
+          "differential_phase_delay_ps": [
+            -4.112647025984247,
+            -2.0925201860012086,
+            -1.5449243954813507,
+            -1.260744937198715,
+            -1.0838675255556431,
+            -0.9738433521810634,
+            -0.9050669522802002,
+            -0.8583966448020544
+          ],
+          "differential_phase_slope_fit_ps": -0.40517908399679303,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "101111",
+              "code": 47,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 58.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "010000",
+              "code": 16,
+              "enabled_bits_LSB_index": [
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 20.0
+            }
+          },
+          "input_noise_increase_mVrms": -0.02434768176484059,
+          "input_noise_increase_percent": -8.196071948627836,
+          "input_noise_mVrms": 0.2727175699490222,
+          "input_noise_variance_change_V2": -1.3872890816920834e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.016225405293603837,
+            0.01946593455949681
+          ]
+        },
+        "32": {
+          "AFE_Hdd_56GHz_V_per_V": 0.1232809621538353,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.3589634532108408,
+          "DC_power_W": 0.01007688186265545,
+          "DC_power_increment_vs_bypass_W": -5.672214191398961e-10,
+          "Hdd_56_change_vs_bypass_dB": -3.5608881908268253,
+          "d56_ps": -0.9978040011404818,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.7196015308936957,
+            0.4776101589524648
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -2.858158427986723,
+            -6.418528883383009
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -2.858158427986723,
+              -1.6921333384339583
+            ],
+            [
+              -6.418528883383009,
+              -1.5400741283806718
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 3.560370455396286,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            4.818044638967864,
+            5.815848640108346
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -2.828798216892345,
+            -0.01957185100170733
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -4.436107258958771,
+            0.0021140522802722828
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -3.5581601795772215,
+            -0.9978040011404818
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.5603561784367397,
+          "differential_phase_delay_dense_min_max_ps": [
+            -3.6610947443548536,
+            -0.9978040011404818
+          ],
+          "differential_phase_delay_ps": [
+            -3.5581601795772215,
+            -3.193479198234783,
+            -2.365120998584901,
+            -1.7933228943098412,
+            -1.4385726856482144,
+            -1.2218136190125506,
+            -1.0870637514273511,
+            -0.9978040011404818
+          ],
+          "differential_phase_slope_fit_ps": -0.45010083488570807,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "011111",
+              "code": 31,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4
+              ],
+              "nominal_enabled_cap_fF_per_section": 38.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "100000",
+              "code": 32,
+              "enabled_bits_LSB_index": [
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 40.0
+            }
+          },
+          "input_noise_increase_mVrms": -0.025277828086995024,
+          "input_noise_increase_percent": -8.509183736959901,
+          "input_noise_mVrms": 0.27178742362686775,
+          "input_noise_variance_change_V2": -1.4379360134090176e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.016666639511738825,
+            0.019230557195981185
+          ]
+        },
+        "48": {
+          "AFE_Hdd_56GHz_V_per_V": 0.11844311948663198,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.17656330941690151,
+          "DC_power_W": 0.010076881862655465,
+          "DC_power_increment_vs_bypass_W": -5.672214035273848e-10,
+          "Hdd_56_change_vs_bypass_dB": -3.9086117535432474,
+          "d56_ps": -0.7756570420502182,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.5770575722190444,
+            0.5672187197472011
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -4.7756171147110695,
+            -4.924988893990752
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -4.7756171147110695,
+              -2.486200478714936
+            ],
+            [
+              -4.924988893990752,
+              -0.5971137445315484
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": 0.1493717792796821,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            4.916307263844422,
+            5.69196430589464
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -3.7610795858218298,
+            -0.19865496231357316
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -4.13397488391808,
+            -0.1845214406603226
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            -1.4452844932674234,
+            1.515847705939846
+          ],
+          "differential_phase_delay_8probe_span_ps": 2.9611321992072694,
+          "differential_phase_delay_dense_min_max_ps": [
+            -1.4465229359232783,
+            1.515847705939846
+          ],
+          "differential_phase_delay_ps": [
+            1.515847705939846,
+            -1.1226159399409923,
+            -1.4452844932674234,
+            -1.3022700454331515,
+            -1.1126862807959652,
+            -0.9603477277155665,
+            -0.8516452872248133,
+            -0.7756570420502182
+          ],
+          "differential_phase_slope_fit_ps": -0.9197881408520274,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "001111",
+              "code": 15,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "nominal_enabled_cap_fF_per_section": 18.75
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "110000",
+              "code": 48,
+              "enabled_bits_LSB_index": [
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 60.0
+            }
+          },
+          "input_noise_increase_mVrms": -0.029258777740794162,
+          "input_noise_increase_percent": -9.84927640375004,
+          "input_noise_mVrms": 0.2678064739730686,
+          "input_noise_variance_change_V2": -1.6527456273932774e-08,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.018155388725859818,
+            0.01593881020458615
+          ]
+        },
+        "63": {
+          "AFE_Hdd_56GHz_V_per_V": 0.13688084484890023,
+          "CM_to_DM_delta_ratio_at_56GHz": 0.6360227399256287,
+          "DC_power_W": 0.010076881862655434,
+          "DC_power_increment_vs_bypass_W": -5.672214347524074e-10,
+          "Hdd_56_change_vs_bypass_dB": -2.651954953430416,
+          "d56_ps": 0.9825383904513929,
+          "dense_band_points": 47,
+          "diagonal_leg_magnitude_56GHz_V_per_V": [
+            0.40143254232000836,
+            0.9225191109551918
+          ],
+          "diagonal_leg_magnitude_56GHz_dB": [
+            -7.927748482653509,
+            -0.7004925641603985
+          ],
+          "diagonal_leg_magnitude_7_to_56GHz_min_max_dB": [
+            [
+              -7.927748482653509,
+              -3.2238036921028383
+            ],
+            [
+              -0.7004925641603985,
+              0.21206586957471588
+            ]
+          ],
+          "diagonal_leg_magnitude_imbalance_P_over_N_dB": -7.227255918493109,
+          "diagonal_leg_phase_delay_56GHz_ps": [
+            5.915750606415424,
+            4.933212215964031
+          ],
+          "differential_group_delay_8probe_min_max_ps": [
+            -1.073901521283723,
+            0.596684759707375
+          ],
+          "differential_group_delay_dense_min_max_ps": [
+            -1.107149512723268,
+            1.2599184043985536
+          ],
+          "differential_phase_delay_8probe_min_max_ps": [
+            0.9825383904513929,
+            9.386840991007166
+          ],
+          "differential_phase_delay_8probe_span_ps": 8.404302600555773,
+          "differential_phase_delay_dense_min_max_ps": [
+            0.9825383904513929,
+            9.386840991007166
+          ],
+          "differential_phase_delay_ps": [
+            9.386840991007166,
+            4.516520251625227,
+            2.6530463273222438,
+            1.7887612190442397,
+            1.3590180466670203,
+            1.1440110684369795,
+            1.0376603377005384,
+            0.9825383904513929
+          ],
+          "differential_phase_slope_fit_ps": -0.275928572921214,
+          "gate_instance_mapping": {
+            "N": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "000000",
+              "code": 0,
+              "enabled_bits_LSB_index": [],
+              "nominal_enabled_cap_fF_per_section": 0
+            },
+            "P": {
+              "TG_MOS_instances": 48,
+              "TG_pairs": 24,
+              "bits_MSB_first": "111111",
+              "code": 63,
+              "enabled_bits_LSB_index": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "nominal_enabled_cap_fF_per_section": 78.75
+            }
+          },
+          "input_noise_increase_mVrms": -0.0097134074955611,
+          "input_noise_increase_percent": -3.269789192617245,
+          "input_noise_mVrms": 0.2873518442183017,
+          "input_noise_variance_change_V2": -5.676681400161531e-09,
+          "trim_offdiagonal_magnitude_56GHz_V_per_V": [
+            0.023802349090053732,
+            0.01513082825830442
+          ]
+        }
+      },
+      "d56_endpoint_midpoint_ps": 1.199040866595169e-14,
+      "d56_endpoint_offsets_ps": [
+        -0.9825383904513689,
+        0.9825383904513929
+      ],
+      "d56_endpoint_span_percent_of_required": 22.00885994611093,
+      "d56_endpoint_span_ps": 1.9650767809027618,
+      "d56_observed_adjacent_steps_ps": [
+        0.12414174564931457,
+        -0.1394073563384275,
+        0.2221469590902636,
+        1.7581954325016111
+      ],
+      "d56_observed_min_max_ps": [
+        -0.9978040011404818,
+        0.9825383904513929
+      ],
+      "endpoint_swap": {
+        "AFE_8probe_max_complex_matrix_difference_V_per_V": 8.819680816778175e-15,
+        "AFE_8probe_max_relative_to_matrix_peak": 3.917523444257529e-14,
+        "trim_dense_max_complex_matrix_difference_V_per_V": 4.964600881980471e-14,
+        "trim_dense_max_relative_to_matrix_peak": 4.844037452804207e-14
+      },
+      "missing_mirror_codes": {
+        "16": 47,
+        "32": 31,
+        "48": 15
+      },
+      "observed_numbered_codes": [
+        0,
+        16,
+        32,
+        48,
+        63
+      ]
+    }
+  },
+  "format": "pn_skew_ac60_independent_diagnostic_v1",
+  "inputs": {
+    "r0_zip": {
+      "bytes": 1304993,
+      "file": "ECEN721_PAM4_PNSKEW_COMP_20261113_r0.zip",
+      "sha256": "6cd2afb099c61a640eb783b998d290703bf1ff75707852114758d60d3b8fc95c"
+    },
+    "summary": {
+      "bytes": 537494,
+      "file": "ac60_summary.json",
+      "sha256": "45819d80e7b259d6af8e6c6f00a8c402acca972412cbd993bba082f5a3a9be29"
+    },
+    "tgz": {
+      "bytes": 5320946,
+      "file": "olympus_compact_ac60.tgz",
+      "sha256": "4204f256b9386bbb0d3d36b98521811e8fb01cd9dff22e65b45ce6f6b0f09203"
+    }
+  },
+  "interpretation": {
+    "mechanism_limit": "The 31-to-32 carry switches five low bits off and one MSB on per leg. Code-dependent effective TG loading and r3 input interaction are plausible. Symmetric endpoints and matched wiring do not prove the carry mechanism or exclude orientation-dependent intermediate behavior.",
+    "missing_mirror_diagnostic": "Measure k=31,47,15 with both drive directions to pair against k=32,16,48. Compare antisymmetric (d(k)-d(63-k))/2 and orientation-even (d(k)+d(63-k))/2 with per-leg complex swaps.",
+    "not_measured": "No full 64-code DNL/INL, isolated mechanism, transistor nonideal transient, payload SER, post-layout, or compensator approval follows from AC60.",
+    "separate_ablations": "At fixed source impedance compare exact native TG vs controlled ideal switch with the same connected r3; independently compare loaded r3 vs the same declared symmetric substitute load while keeping each switch implementation fixed. Extract r3 input complex two-port admittance, not a guessed single capacitance.",
+    "verified_mapping": "P=32 selects only bit 5 (40fF/section). N=31 selects bits 0-4 (38.75fF/section). Gates are complementary, all 24 native TG pairs per leg present, and P/N device parameter tails exactly match.",
+    "what_data_support": "Broadband differential delay varies strongly with frequency, sparse d56 samples are nonmonotone, endpoint P/N swap can be quantified independently, and source termination changes diagonal gain, mode conversion and noise."
+  },
+  "method": {
+    "compact_limit": "Exact runner/deck hashes and actual parent diffs checked. The compact archive omits full runtime benches and raw PSF bytes.",
+    "dense_scope_GHz": [
+      7,
+      56
+    ],
+    "endpoint_symmetry": "Compare full H(0) against J H(63) J at identical frequency and source impedance; J exchanges P/N.",
+    "frequency_probes_GHz": [
+      7,
+      14,
+      21,
+      28,
+      35,
+      42,
+      49,
+      56
+    ],
+    "group_delay": "Finite differences of unwrapped phase; dense and eight-probe results reported separately.",
+    "noise": "Saved P-driven stationary X_ip-X_im RMS integrated over 1MHz-56GHz, with r3 connected; no sampled noise or BER claim.",
+    "phase_delay": "Unwrap diagonal trim-leg phases independently and compute -phase/(2*pi*f); d=P-N. This is phase delay, not group delay.",
+    "phase_range_target_each_sign_ps": 4.464285714285714,
+    "sparse_interpolation": "Complex linear interpolation in log frequency, as original summary."
+  },
+  "native_runs_started": 0,
+  "observed_resources": {
+    "job_ids": [
+      752251,
+      752252,
+      752253,
+      752254,
+      752255,
+      752256,
+      752257,
+      752258,
+      752259,
+      752260,
+      752261,
+      752262,
+      752263,
+      752264,
+      752265,
+      752266,
+      752267,
+      752268,
+      752269,
+      752270,
+      752271,
+      752272,
+      752273,
+      752274,
+      752275,
+      752276,
+      752277,
+      752278,
+      752279,
+      752280,
+      752281,
+      752282,
+      752283,
+      752284,
+      752285,
+      752286,
+      752287,
+      752288,
+      752289,
+      752290,
+      752291,
+      752292,
+      752293,
+      752294,
+      752295,
+      752296,
+      752297,
+      752298,
+      752299,
+      752300,
+      752301,
+      752302,
+      752303,
+      752304,
+      752305,
+      752306,
+      752307,
+      752308,
+      752309,
+      752310
+    ],
+    "peak_RSS_KiB_min_max": [
+      215204,
+      239612
+    ],
+    "wall_s_min_max": [
+      0.8175275141838938,
+      1.8479312749113888
+    ]
+  },
+  "paired_code_points_verified": 30,
+  "r0_source_member_sha256": {
+    "comp_cell.py": "f8f30c709ce5eef9d1fd1bf7bca1aefef68c78eaaa598953a3918a0f9399ef81",
+    "comp_measure.py": "7f5748c89c4cdee33cd6a70ac2a9a971e4386dec3d90b27c7f71e5c0e79f084f",
+    "comp_plan.json": "01f61d85d07375353e1a22e832745383127c4e03735950db9c192793b9ffc041",
+    "comp_summary.py": "dcb61198cfa57b28f37f164b0b7b301c2479f39e37f6ef9f6c6ee1a685df60f9",
+    "pvt/cases/nominal_parent.scs.txt": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+    "r5_original/quiet.scs": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3"
+  }
+}

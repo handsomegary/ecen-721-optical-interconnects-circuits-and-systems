@@ -1,0 +1,274 @@
+{
+ "schema": "pam4_sar7_cdac_fix_round_summary_v1",
+ "run_root": "~/ecen720_28nm/runs/pam4_sar7_cdac_fix_20261116.zN5rXs",
+ "zip_sha256": "8e290b0e44137488c27a3631e1246453f654ef345bb0fed3c090618cc922a9e7",
+ "baseline": {
+  "job": "760348",
+  "wrong": 10,
+  "sum_abs": 23,
+  "max_abs": 5,
+  "span_lsb": 113.918
+ },
+ "index1_gate": {
+  "recommendation": "ALLOW_INDEX1",
+  "valid": true,
+  "cdac_cm_within_10mV": true,
+  "max_abs_code_error": 2,
+  "sum_abs_code_error": 12,
+  "source_case_id": "sar7_08_tt_cml_common_ref",
+  "source_summary_sha256": "d23a25bde36989348cae4b18cbc2c87edf393803c279ac5afed154b108bed1b0",
+  "source_tran_sha256": "bf6751a24ea83cbdd7fae3e007557c9cf02677126f17ac34c6a5c3a6999c8155",
+  "source_measurements_sha256": "36ddb57f48d6d30b06f7e174ad2185e065990ace59ffb830c5fc821b845eb86b",
+  "manifest_sha256": "bb97b973466cc63a8d6c282b7ab142e35b4af911e107d01da0efa51ef3005153"
+ },
+ "cases": {
+  "sar7_08_tt_cml_common_ref": {
+   "index": 0,
+   "case_id": "sar7_08_tt_cml_common_ref",
+   "job_id": "760873",
+   "status": "measured",
+   "valid": true,
+   "tested_conversions": 12,
+   "comparison_records": 84,
+   "unresolved_bits_total": 0,
+   "registered_available_consistency": true,
+   "final_cm_change_mV": [
+    -4.001528438675184,
+    -3.910986842398101
+   ],
+   "max_abs_sample_error_lsb": 1.6165164152783973,
+   "max_observed_resolve_delay_s": 5.125000000355295e-11,
+   "logic_smoke_pass": false,
+   "solver_seconds": 187.51457768399268,
+   "raw_bytes": 87790857,
+   "tran_sha256": "bf6751a24ea83cbdd7fae3e007557c9cf02677126f17ac34c6a5c3a6999c8155",
+   "comparator": {
+    "available": 12,
+    "missing": 0,
+    "wrong": 9,
+    "sum_abs_code_error": 12,
+    "max_abs_code_error": 2
+   },
+   "registered": {
+    "available": 12,
+    "missing": 0,
+    "wrong": 9,
+    "sum_abs_code_error": 12,
+    "max_abs_code_error": 2
+   },
+   "sense": {
+    "tran_sha256": "bf6751a24ea83cbdd7fae3e007557c9cf02677126f17ac34c6a5c3a6999c8155",
+    "pairs": 84,
+    "sign_agreement": 84,
+    "projected_gain": 0.5882886188364246,
+    "sense_common_mode_range_V": [
+     0.8347795186495492,
+     0.8349420765230675
+    ],
+    "mean_precomparison_supply_current_A": -0.00026068679852640536
+   },
+   "summary_sha256": "d23a25bde36989348cae4b18cbc2c87edf393803c279ac5afed154b108bed1b0",
+   "measurements_sha256": "36ddb57f48d6d30b06f7e174ad2185e065990ace59ffb830c5fc821b845eb86b",
+   "portable_deck_sha256": "0103266aeabb74abc86aeba0999e2b638876a9b4d786c321822485784e3b6368",
+   "codes": [
+    {
+     "index": 0,
+     "expected": 64,
+     "comparator": 65,
+     "registered": 65
+    },
+    {
+     "index": 1,
+     "expected": 0,
+     "comparator": 0,
+     "registered": 0
+    },
+    {
+     "index": 2,
+     "expected": 127,
+     "comparator": 127,
+     "registered": 127
+    },
+    {
+     "index": 3,
+     "expected": 31,
+     "comparator": 31,
+     "registered": 31
+    },
+    {
+     "index": 4,
+     "expected": 96,
+     "comparator": 97,
+     "registered": 97
+    },
+    {
+     "index": 5,
+     "expected": 63,
+     "comparator": 65,
+     "registered": 65
+    },
+    {
+     "index": 6,
+     "expected": 65,
+     "comparator": 66,
+     "registered": 66
+    },
+    {
+     "index": 7,
+     "expected": 85,
+     "comparator": 87,
+     "registered": 87
+    },
+    {
+     "index": 8,
+     "expected": 42,
+     "comparator": 43,
+     "registered": 43
+    },
+    {
+     "index": 9,
+     "expected": 1,
+     "comparator": 0,
+     "registered": 0
+    },
+    {
+     "index": 10,
+     "expected": 126,
+     "comparator": 127,
+     "registered": 127
+    },
+    {
+     "index": 11,
+     "expected": 64,
+     "comparator": 66,
+     "registered": 66
+    }
+   ],
+   "peak_rss_KiB": 239252
+  },
+  "sar7_09_tt_cml_main_ratio": {
+   "index": 1,
+   "case_id": "sar7_09_tt_cml_main_ratio",
+   "job_id": "760874",
+   "status": "measured",
+   "valid": true,
+   "tested_conversions": 12,
+   "comparison_records": 84,
+   "unresolved_bits_total": 0,
+   "registered_available_consistency": true,
+   "final_cm_change_mV": [
+    -4.042144933463998,
+    -3.9708301242464827
+   ],
+   "max_abs_sample_error_lsb": 1.6389965373552684,
+   "max_observed_resolve_delay_s": 4.900000000967071e-11,
+   "logic_smoke_pass": false,
+   "solver_seconds": 188.03327776491642,
+   "raw_bytes": 87791329,
+   "tran_sha256": "22de6869fca439d446ad6e04de2e1e1809708fce82081c8b40215ef7061fb4f9",
+   "comparator": {
+    "available": 12,
+    "missing": 0,
+    "wrong": 6,
+    "sum_abs_code_error": 7,
+    "max_abs_code_error": 2
+   },
+   "registered": {
+    "available": 12,
+    "missing": 0,
+    "wrong": 6,
+    "sum_abs_code_error": 7,
+    "max_abs_code_error": 2
+   },
+   "sense": {
+    "tran_sha256": "22de6869fca439d446ad6e04de2e1e1809708fce82081c8b40215ef7061fb4f9",
+    "pairs": 84,
+    "sign_agreement": 84,
+    "projected_gain": 0.5882443279590251,
+    "sense_common_mode_range_V": [
+     0.8347783204774225,
+     0.8349419077102442
+    ],
+    "mean_precomparison_supply_current_A": -0.00026069066274725524
+   },
+   "summary_sha256": "6573a387cf24fccfad5ffbaa98016b59f22d21402b7b59cfbba8ef72527fc150",
+   "measurements_sha256": "416735e041446ec7e596498ae5ca537b5851139a42e030b899437e260ee47cd6",
+   "portable_deck_sha256": "f2231b54d5138538c57102e5cd25dcc1047829ed71f02d79ab3d37d5726a6153",
+   "codes": [
+    {
+     "index": 0,
+     "expected": 64,
+     "comparator": 64,
+     "registered": 64
+    },
+    {
+     "index": 1,
+     "expected": 0,
+     "comparator": 0,
+     "registered": 0
+    },
+    {
+     "index": 2,
+     "expected": 127,
+     "comparator": 127,
+     "registered": 127
+    },
+    {
+     "index": 3,
+     "expected": 31,
+     "comparator": 31,
+     "registered": 31
+    },
+    {
+     "index": 4,
+     "expected": 96,
+     "comparator": 97,
+     "registered": 97
+    },
+    {
+     "index": 5,
+     "expected": 63,
+     "comparator": 64,
+     "registered": 64
+    },
+    {
+     "index": 6,
+     "expected": 65,
+     "comparator": 65,
+     "registered": 65
+    },
+    {
+     "index": 7,
+     "expected": 85,
+     "comparator": 86,
+     "registered": 86
+    },
+    {
+     "index": 8,
+     "expected": 42,
+     "comparator": 44,
+     "registered": 44
+    },
+    {
+     "index": 9,
+     "expected": 1,
+     "comparator": 0,
+     "registered": 0
+    },
+    {
+     "index": 10,
+     "expected": 126,
+     "comparator": 127,
+     "registered": 127
+    },
+    {
+     "index": 11,
+     "expected": 64,
+     "comparator": 64,
+     "registered": 64
+    }
+   ],
+   "peak_rss_KiB": 243624
+  }
+ }
+}

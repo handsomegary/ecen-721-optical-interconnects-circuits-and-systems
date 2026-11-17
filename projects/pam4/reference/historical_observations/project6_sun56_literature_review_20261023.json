@@ -1,0 +1,43 @@
+{
+  "reviewed_utc": "2026-10-23T07:24:11.332656+00:00",
+  "source": "C:\\Users\\User\\Downloads\\A 56-GS_s 8-Bit Time-Interleaved SAR ADC in 28-nm CMOS.pdf",
+  "source_sha256": "c5abd092154f76cf12b3c67c0a230777af56feb916190ffdb1bd3533388314f5",
+  "source_pages": 118,
+  "scope": "Read-only literature and existing local topology review; no VM access, no new simulation, no parameter changes.",
+  "conclusion": "The limited C/TG sizing gain does not establish a design limit. The paper offers switched-buffer timing and parametric T/H mechanisms, whose suitability remains unverified for the current CML topology.",
+  "mechanisms": [
+    {
+      "name": "Switched sub-channel buffer",
+      "printed_pages": "42-46,86-88",
+      "PDF_pages": "56-60,100-102",
+      "figures": [
+        "3.7",
+        "4.1",
+        "4.3"
+      ],
+      "finding": "Reset output and disable buffer during primary track, enable during hold. Source-follower Cgs tracking-error coupling is analyzed in equations3.7-3.11. Compensation and settling time are required."
+    },
+    {
+      "name": "Parametric T/H gain",
+      "printed_pages": "37-38,89",
+      "PDF_pages": "51-52,103",
+      "figures": [
+        "3.3"
+      ],
+      "tables": [
+        "3.4",
+        "4.1"
+      ],
+      "finding": "Designed change in effective parasitic sampling capacitance100.8fF track to81.4fF hold produces approximately1.24x voltage gain. Does not cancel pre-existing sampled noise."
+    }
+  ],
+  "current_project_difference": "Existing selected interstage circuit is continuously biased resistively loaded CML, not the paper source follower; current code does not implement the paper reset/enable sequence or designed parametric topology. No causal diagnosis from paper alone.",
+  "NTUST_abstract_only": "Confirms input buffer/master sampling and pipelinedSAR ping-pong/passive residue transfer; no circuit or timing detail available, and results are post-simulation in UMC28nm at3.2GS/s.",
+  "limits": [
+    "Complete ADC56GS/s and separate THA64GS/s are distinct prototypes, not112GS/s proof.",
+    "Input buffer uses positive and negative supplies; common-mode and available device options need reconciliation.",
+    "ADC measurement required output decimation by2 and separate15tap corrections for two frequency bands; nominal8bit is not8ENOB.",
+    "Paper explicitly compensates feedthrough/common-mode; this is not proof of random-noise cancellation."
+  ],
+  "next": "Keep simulations and monitor stopped. First compare held-node disturbances, output settling and real topology; no new test or hardware change authorized by this review."
+}

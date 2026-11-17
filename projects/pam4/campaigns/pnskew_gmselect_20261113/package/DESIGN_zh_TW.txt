@@ -1,0 +1,68 @@
+ECEN 721 #6 PAM4 · r3 輸入對尾電流選路 · 2026-11-13
+
+實測依據與 TG 尺寸界線
+TT 的 46 案量測和 SHA 已核對。相同 25 Ω／25 Ω fixture 的中間共模 f4，
+06/06 在 56 GHz 為 −19.51 dB，移除關斷支路仍為 −19.06 dB。
+端點加權有效延遲 ±4.397 ps，離 ±4.464 ps 差 0.067 ps；最差頻帶殘差 4.086 ps。
+原生 f1 的每顆極性尺寸是 3 µm／30 nm。VDD/2 的 0.45 V 是 |VGS|；
+原生 OP 的 N/P 有效過驅約 9.6/13.3 mV。原 .70 V 共模的 PMOS 約有 272 mV 有效過驅。
+等效低頻 Ron 原共模 f1 約 170.7 Ω，中間共模 f1 約 272.4 Ω，f4 約 68.1 Ω。
+
+用實測完整 2×2 Y 重建 ON 路、OFF 路與同端接 r3 負載，再做並聯尺度分析。
+轉換 Y→ABCD 後，每一腿串接 ON TG、6 節 T、ON TG。OFF TG 加 16 節路徑轉成 Y
+並聯。每個 Y 元素乘尺寸倍率 k，因此 Ron 約 1/k，互電容與對地導納約 k。
+56 GHz 原共模 f1 和中間共模 f1 的 Ron×Coff 約 51 fs 和 80 fs（OFF 互電納等效）。
+同時 ON 對地寄生約 2.6 fF／顆，且 OFF 互導納有實部。只用 Ron×Coff 會低估總負載。
+以原理想 06/06 的 −0.34 dB 為參考，3 dB 總損失上限在匹配低頻近似下要求每顆
+Ron≤9.30 Ω；用實際 56 GHz 複數負載、先去掉所有寄生電容的模型是 ≤7.94 Ω。
+完整導納模型與已量測的五個負載案例差 ≤0.071 dB。寬度連續外推最佳點仍是：
+原共模 −8.11 dB，約 47.9 µm／極性；中間共模 −10.95 dB，約 55.3 µm／極性。
+等長損失已超過 3 dB，因此同一模型內沒有同時滿足該損失及 ±4.464 ps 的解。
+這個結論限於本 TG、偏壓、端接、路徑與 Y 線性外推。大型實體的互連、匹配與新拓撲需另量。
+TG_WIDTH_MODEL.json 保存曲線、模型驗證與來源 SHA。保留原 44 案的既有狀態，先不延伸 TG 掃描。
+
+首版新電路
+選在 r3 第一級 gate 後用輸入對的尾偏壓選路。每個 bank 都是完整差動 CTLE 第一級：
+每腿沿用原 8 顆 3 µm/30 nm 輸入 NMOS 和 8 顆 3 µm/60 nm tail，保留原生 CDF 參數；
+每個 bank 有自己的一對 source node 和 250 Ω ∥ 100 fF 退化支路。兩組只共用
+X_c_p/m 汲極和原每腿 50 Ω 電阻。原第二級、固定 track sampler、電源與 X_cm .70 V 保留。
+選中 bank 的兩腿尾 gate 連原 .58 V 偏壓，另一組連 0 V，不新增串在尾電流上的元件。
+未選 source 以 100 GΩ 接同腿 drain 作 DC 穩定用。保留 OFF MOS 的漏電與 RF 寄生。
+SS/85°C/.81 V 原第一級尾端 Vds−Vdsat 約 14.5 mV，需實測新 bank 的工作點。
+硬體偏壓選擇與先斷後接控制是後續工作。這一版以固定 bias connections 模擬已穩定的狀態。
+切換瞬間、bias gate charge、100 GΩ 所在節點的起始狀態與穩定時間仍待驗證。
+作法與以差動 transconductor 做高速電流選路的概念相近。此處以單 bank 的既有退化 CTLE
+為基準，驗證共用 drain 的代價。文獻的 CML 速率和電路不能直接當成此設計的 56 GHz 證明。
+https://www.seas.ucla.edu/brweb/papers/Journals/BROJSSCSep21.pdf
+
+每個 bank 的 P、N 各從原信號平面以獨立理想 unity VCVS 啟動，前置 25 Ω，終端 25 Ω
+回原 .70 V，使用已驗證的固定長度 T 節，原 13 pH / 20.8 fF / 0.305 Ω 每節不變。
+bank A 用 06/16，bank B 用 16/06，選一組即可得到兩個相反方向。
+正輸入 skew 由 06/16 校正，負輸入 skew 由 16/06 校正。
+單 bank、雙 bank 等長及 09/13、13/09 是獨立 fixture，目的在量雙 bank 的 OFF 寄生和中間延遲。
+目前尚未把等長、端點、中段做成同一個可程式碼表。若端點成立，再選 coarse/fine 方案，
+避免大量 bank 並聯增加 X_c 寄生。Shunt stub 適合另做小幅 fine trim，若採用需驗證反射與群延遲。
+理想啟動源用於隔離分配網路，沒有計入實體驅動器的輸入負載、噪音、帶寬與功耗。
+不能把兩個被動 25 Ω branch 接到 CHB2 的同一 25 Ω source 後沿用這份結果。
+下一步實體 driver 必須驅動兩條有終端的支路，先驗證 fan-out 和 rail/共模。
+
+驗證與判讀
+首批建議 TT 0–5：同端接 bypass、單 bank 06/06、雙 bank 06/06（另一組 16/16 尾偏壓關閉）。
+量每個案的 P/N AC 兩欄，1 kHz 到 150 GHz。共用 drain 若受未選 bank 的 Cgd/Cdb 載入，
+單 bank→雙 bank 的差會直接顯示在 56 GHz Hdd、共模與 pole；切掉 tail 偏壓不會移除 drain 電容。
+例如 50 Ω 單極模型總 C 約 29 fF 就有 56 GHz 約 1 dB 的 droop，僅作負載尺度。
+TT 等長結果可用再看 06/16、16/06，並列中間 09/13、13/09 和原 0 Ω／無端接 bypass。
+OFF-only 測試保留已選 bank 的 DC ON 和同終端，將該組兩個 launch 的 AC 係數設 0，
+只激發未選組，量 AFE leakage。用 full − off 的複數矩陣分出選中路徑的貢獻。
+報 AFE Hdd/Hdc、注入已知正負 skew 的線性對照、active gate 的 7–56 GHz 加權 delay、
+RMS／最差殘差。輸入已知 skew 只在 AC 分析後套用，用於離線診斷。
+比較同端接旁路的 56 GHz 等長損失（用戶指定 3 dB 比較線）與 ±4.464 ps 範圍。
+只有 TT 顯示值得繼續時才看 SS/85/.81 和 FF/−40/.99，同樣保留 bypass 和單 bank 控制。
+以已選與未選 drain、tail 電流、全部 rail、各 launch AC 導納、固定 track 差動噪音與
+Vds−Vdsat 檢查代價。每個 bank 可讀的 native OP 欄位留檔；ideal driver power 不在合計內。
+這是 AC、DC 和固定 track 噪音，未量時域 FFE SER、校正收斂、實體切換或全 PVT。
+既有 0.25 ps 目標維持待批准。本批沒有新增補償合格門檻。
+
+48 個 deck，TT 0–27，SS/FF 28–47，逐案 diff 及 SHA。每 job 1 CPU classic，
+4 GiB／30 min，估 Spectre 1–12 秒（上批整體約 3–4 秒），以首例的原生證據校正。
+沒有啟動本輪 Spectre。新 Olympus job 需新批准。

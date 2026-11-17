@@ -1,0 +1,49 @@
+{
+  "stages": {
+    "pilot": 28,
+    "architecture": 40,
+    "fallback_short": 12,
+    "fallback_edge": 60,
+    "fallback_fine": 48
+  },
+  "total_decks_rendered": 188,
+  "portable_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    34,
+    36,
+    38,
+    40,
+    44,
+    46,
+    68,
+    80,
+    100
+  ],
+  "pilot_cases_replayed": 18,
+  "checks": [
+    "unique cases and P/N summary keys",
+    "full deck render",
+    "AC and noise modes",
+    "no duplicate elements",
+    "compile",
+    "pinned archive reconstructed",
+    "missing-result handling"
+  ],
+  "spectre_executed": false,
+  "slurm_submitted": false,
+  "unittest_passed": 16
+}

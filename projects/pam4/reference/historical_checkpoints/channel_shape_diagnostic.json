@@ -1,0 +1,81 @@
+{
+  "analysis_scope": "native frozen-track small-signal AC multiplied by ideal synthetic channel; not exact clocked PAM4 transfer",
+  "source_ac_path_on_VM": "<retained VM project>/runs/native_baseline/oa_tt25/raw/acResponse.ac",
+  "source_ac_sha256": "b7bc5c86fa40466832b7e81c59a9b23a525dae6baa9f5d20d1b00e152d7ff902",
+  "method": "H=(h0p-h0n)/(inp-inn); complex linear interpolation against logarithmic frequency; synthetic channel=(1+j*f/fp)^(-2); peak is the existing grid maximum from 1kHz through56GHz",
+  "channel_poles_GHz": [
+    18.666666666666668,
+    18.666666666666668
+  ],
+  "columns": [
+    "frequency_GHz",
+    "native_held_gain_VV",
+    "native_held_gain_dB",
+    "channel_gain_dB",
+    "combined_gain_VV",
+    "combined_gain_dB"
+  ],
+  "rows": [
+    [
+      1,
+      0.021947304840531263,
+      -33.17237608224244,
+      -0.024891915377737807,
+      0.021884498562768216,
+      -33.19726799762017
+    ],
+    [
+      5,
+      0.09473334512215252,
+      -20.46994254167356,
+      -0.601849169141532,
+      0.0883914817920471,
+      -21.07179171081509
+    ],
+    [
+      10,
+      0.24974279896702406,
+      -12.050140505600922,
+      -2.1915020710494404,
+      0.19405188740351523,
+      -14.241642576650362
+    ],
+    [
+      20,
+      0.4439462339948125,
+      -7.053392475783166,
+      -6.640520489583846,
+      0.20668280727549468,
+      -13.69391296536701
+    ],
+    [
+      28,
+      0.42398613573339017,
+      -7.452966890453312,
+      -10.237667219577487,
+      0.13045727253335082,
+      -17.6906341100308
+    ],
+    [
+      40,
+      0.31258737523249636,
+      -10.100571324646399,
+      -14.951089655837484,
+      0.05590066199413257,
+      -25.051660980483884
+    ],
+    [
+      56,
+      0.19062615041543787,
+      -14.396350447290295,
+      -20.0,
+      0.019062615041543787,
+      -34.396350447290295
+    ]
+  ],
+  "combined_peak_frequency_Hz": 14677992676.22037,
+  "combined_peak_gain_dB": -12.660923145474246,
+  "combined_peak_above_56GHz_dB": 21.73542730181605,
+  "combined_gain_at_1kHz_VV": 0.017611060000004834,
+  "interpretation": "Strong midband hump plausibly contributes to ISI. Tune full channel times CTLE magnitude/phase and pulse response. This does not establish a MOS speed limit."
+}

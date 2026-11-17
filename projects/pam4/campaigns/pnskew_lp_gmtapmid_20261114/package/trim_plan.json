@@ -1,0 +1,823 @@
+{
+  "format": "pam4_lp_reftrim_v1",
+  "status": "REVIEW_PENDING",
+  "scope": "Isolated reference DC and replica OTA RF AC, with ideal stimulus controls",
+  "target_reference_A": 0.0003107142857142857,
+  "cases": [
+    {
+      "case_id": "lptrim_00_tt_r_bracket_p",
+      "stage": "smoke",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "dc",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ref",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "match_mode": "matched",
+      "length_nm": 120,
+      "revision": "r_bracket"
+    },
+    {
+      "case_id": "lptrim_01_tt_r_bracket_p",
+      "stage": "smoke",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "dc",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ref",
+      "ref_R_ohm": 2050,
+      "miller_pF": 2.0,
+      "match_mode": "matched",
+      "length_nm": 120,
+      "revision": "r_bracket"
+    },
+    {
+      "case_id": "lptrim_02_tt_regulated_n_p",
+      "stage": "smoke",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "dc",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ref",
+      "ref_R_ohm": 2050,
+      "miller_pF": 2.0,
+      "match_mode": "long",
+      "length_nm": 120,
+      "revision": "regulated_n",
+      "upper_units": 20
+    },
+    {
+      "case_id": "lptrim_03_ss_symmetric_ota_p",
+      "stage": "smoke",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 42,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 39000
+    },
+    {
+      "case_id": "lptrim_04_ss_symmetric_ota_n",
+      "stage": "smoke",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 43,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 39000
+    },
+    {
+      "case_id": "lptrim_05_ff_symmetric_ota_p",
+      "stage": "smoke",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 50,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 39000
+    },
+    {
+      "case_id": "lptrim_06_ff_symmetric_ota_n",
+      "stage": "smoke",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 51,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 39000
+    },
+    {
+      "case_id": "lptrim_07_tt_long_control_p",
+      "stage": "followup",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "dc",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ref",
+      "ref_R_ohm": 2050,
+      "miller_pF": 2.0,
+      "match_mode": "long",
+      "length_nm": 120,
+      "revision": "long_control"
+    },
+    {
+      "case_id": "lptrim_08_ss_regulated_n_p",
+      "stage": "followup",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "dc",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ref",
+      "ref_R_ohm": 2050,
+      "miller_pF": 2.0,
+      "match_mode": "long",
+      "length_nm": 120,
+      "revision": "regulated_n",
+      "upper_units": 20
+    },
+    {
+      "case_id": "lptrim_09_ff_regulated_n_p",
+      "stage": "followup",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "dc",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ref",
+      "ref_R_ohm": 2050,
+      "miller_pF": 2.0,
+      "match_mode": "long",
+      "length_nm": 120,
+      "revision": "regulated_n",
+      "upper_units": 20
+    },
+    {
+      "case_id": "lptrim_10_ss_symmetric_ota_p",
+      "stage": "followup",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 42,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 33000
+    },
+    {
+      "case_id": "lptrim_11_ss_symmetric_ota_n",
+      "stage": "followup",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 43,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 33000
+    },
+    {
+      "case_id": "lptrim_12_ff_symmetric_ota_p",
+      "stage": "followup",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 50,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 33000
+    },
+    {
+      "case_id": "lptrim_13_ff_symmetric_ota_n",
+      "stage": "followup",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_ota",
+      "ref_R_ohm": 1800,
+      "miller_pF": 2.0,
+      "old_index": 51,
+      "revision": "symmetric_ota",
+      "ota_load_ohm": 33000
+    }
+  ]
+}

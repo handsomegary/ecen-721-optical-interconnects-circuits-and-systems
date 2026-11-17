@@ -1,0 +1,65 @@
+Olympus 交接｜ECEN 721 SWITCH64 端點補跑｜2026-11-14
+
+只補 84（SS，0→−60，P 晚 4.464286 ps）及 86（FF，0→+60，
+N 晚 4.464286 ps）。83／85 是各自已完成的固定末碼對照。
+網表與原 87 案 plan 逐位元一致。Spectre、PSF 驗證及串流
+讀取的單檔限制只在這兩案放寬到 640 MiB（671088640 B）。
+保留 14 ns、刺激、save、maxstep 與量測判準。
+
+1. 解壓與核對
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_switch64_retry.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+原 plan SHA-256 為 a2f8774d9887630fd9a1d5138f2758207bd01c3648299673a76eb2017d991dcc。
+隨附 ORIGINAL_RECOVERY_SHA256SUMS.txt 是 f648e60c 原包的 manifest。
+
+2. 依現行常態授權準備這兩案的 approval 與獨立 run root
+
+approval 用 approval_TEMPLATE.json，approved=true，platform=Olympus，
+plan_sha256 填上面的原 plan SHA，design_source_sha256 填此包
+SHA256SUMS.txt 的 SHA-256，stages 填 ["switch"]，case_ids 填：
+
+  gmsw_084_ss_switch_p00_m60_latep
+  gmsw_086_ff_switch_p00_p60_laten
+
+retire_new_raw=false。保留原 run root 中 83–86 的網表與執行證據，
+並保留原 83、85 的量測。新 root 用 ~/ecen720_28nm/runs 下獨立
+空目錄。Slurm 日誌與後續 summary 放在兩個 run root 外的成果目錄。
+
+設定變數：
+  PAM4_DRIVE_PACKAGE            此包解壓目錄的絕對路徑
+  PAM4_SWITCH64_ORIGINAL_ROOT   原 pnskew_lp_gmtapsw64_20261114.*
+  PAM4_DRIVE_RUN_ROOT           這次新的補跑目錄
+  PAM4_DRIVE_APPROVAL           核准 JSON 的絕對路徑
+  PAM4_PDK_ROOT                 同一份既有私有模型根目錄
+  PAM4_SWITCH64_REPORT_DIR      成果與 Slurm 日誌目錄
+
+3. 提交 84、86
+
+  export PAM4_DRIVE_PACKAGE PAM4_DRIVE_RUN_ROOT PAM4_DRIVE_APPROVAL PAM4_PDK_ROOT
+  sbatch --output="$PAM4_SWITCH64_REPORT_DIR/slurm-switch64-retry-%A_%a.out" "$PAM4_DRIVE_PACKAGE/gm_switch64_retry_classic.sbatch"
+
+wrapper 預設 --array=84,86%2。每案 1 CPU、6 GiB、30 分鐘上限，
+估計含收集約 7–10 分鐘。依原截斷點外推，兩個 tran PSF 約
+550／535 MiB，兩個新主檔的邏輯上限合計 1.25 GiB。提交前請
+確認使用者配額有約 2 GiB 可用，涵蓋其他小檔與量測。
+
+4. 比對原對照組並產生新摘要
+
+  /usr/bin/python3.11 -B "$PAM4_DRIVE_PACKAGE/gm_switch64.py" --mode summarize --root "$PAM4_SWITCH64_ORIGINAL_ROOT" --retry-root "$PAM4_DRIVE_RUN_ROOT" --output "$PAM4_SWITCH64_REPORT_DIR/lp_gm_switch64_full_0_86_endpoint_retry.json"
+
+確認 total_measured_case_count=87、dynamic_measured_case_count=39，
+FF_dense.status=passes_nominal_dense_recheck。21 組切碼應各有對照，
+兩個新配對分別是 84／83、86／85，須各有 observed_recovery 與
+settled=true。檢查缺漏、無效、兩案的實際檔案大小及恢復時間。
+兩個端點與既有案件全部通過時，ready_to_design_C0 應為 true。
+若仍中止或未恢復，保留資料並回報這次的證據。
+
+5. C0 準備
+
+C0 用固定碼評分。若同一案在前導切碼，從最後致能邊沿起預留
+至少 3 ns，再用本次兩個實測端點核定空窗。FF 中心保留現有
+碼表。SS 的 XT2 及尾電流保留診斷量測。C0 的 5 案 deck、
+每案時間與 raw 預算另列，確認補跑結果後再交。

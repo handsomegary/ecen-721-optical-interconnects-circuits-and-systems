@@ -1,0 +1,35 @@
+Olympus 交接｜LP14 ENDPOINT FINE｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_endpoint.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議第一輪核准 0–13、30–39、74–81、136–143，共 40 欄。
+含 SS r3 與零 skew、SS cb2 Q15 的 R/Cp 拆解、SS 正端點
+cb0/cb2 的實體與理想，以及 TT 第一接縫兩邊四碼與 TT r3、零 skew。
+portable_review 有上述網表供比對。先檢查 P/N 齊全和 Q15
+零點重現既有量測，再審正式結果。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B lp_endpoint.py --mode stage --index 36 --index 74 --index 138 --index 140 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+同一份 endpoint_plan.json 與 SHA256SUMS.txt 的 SHA 綁定
+新 approval。只加入使用者核准的 case IDs 和 stages。
+使用實際新 run root 路徑，位於 ~/ecen720_28nm/runs 下。
+export PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、
+PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT，設定保留 raw。
+依核准索引使用 lp_endpoint_classic.sbatch。每欄 1 CPU、
+4 GiB、30 分鐘 walltime，solver 估 3–30 秒。
+沿用私有 shrink 與 Spectre 23.1 classic +mt=1、SPECTRE_DEFAULTS=-E。
+
+Pilot 結果正常後依序另外請核准：
+  1. 0–73 的剩餘欄，完成 r3、等長對照、兩級 R/Cp 拆解及容差。
+  2. 74–121 的剩餘欄，正負端點、三角落與理想驅動。
+  3. 122–295 的剩餘欄，細碼、接縫與剩餘 PVT。
+
+每次使用新的 JSON 檔名。
+  /usr/bin/python3.11 -B endpoint_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_endpoint_pilot.json
+
+把完工數、missing/invalid、P/N 配對、逐案與摘要數字交回。
+長 SER 依 SER_PLAN_zh_TW.md 另提一批，依實體可用碼表
+與短 transient 結果再估資源。raw 留在 Olympus。

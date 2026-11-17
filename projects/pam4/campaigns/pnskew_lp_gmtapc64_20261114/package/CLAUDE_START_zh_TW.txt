@@ -1,0 +1,38 @@
+Olympus 交接｜GMTAP CENTER64｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_center64.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+沿用常態授權與 SHA 綁定方式，用全新的 run root 及
+gm_center64_plan.json。先審 0、6、58、106、110、114、
+170、186。參考說明 DESIGN_CENTER64_zh_TW.md。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B gm_center64.py --mode stage --index 0 --index 6 --index 58 --index 106 --index 110 --index 114 --index 170 --index 186 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+  0–103    原 Split32、Vb1 565 mV，SS 中段 |q|=12…52 每 4 一格
+           （原 /32 的 ±6、±8…±26）、中心與原首碼 ±2
+ 104–123   Split64、Vb1 565 mV，SS 新中心 0／±1／±2
+ 124–147   Split64、Vb1 565 mV，SS ±12／±32／±52 同權重對照
+ 148–175   Split64、375 Ω／14.125 kΩ、2 pF，中心與 ±32
+ 176–187   舊 1 kΩ／57 kΩ、2 pF，Split32 中心與 ±32
+
+第一批建議 0–123，以 0、6、58、106、110、114 確認 Spectre、
+0.375 µm 幾何、電流與全部 XT2 region 資料再展開。兩種修正
+都取得可信結果後，再選 124–187 的必要子集。每個 P/N 組合
+分別是兩個 job，注意 oracle 使用相同 Vb1、相同導通權重。
+
+每欄 1 CPU／4 GiB／30 min walltime。依 MIDBIAS 預估 solver
+3–15 秒，0–123 raw 約 1.4 GB；若 188 欄全跑約 2.1 GB。
+沿用私有 shrink、Spectre 23.1 classic +mt=1、
+SPECTRE_DEFAULTS=-E。用 gm_center64_classic.sbatch，可沿用 %6。
+raw 留 Olympus。正式長案前再盤點配額與舊 raw 退役候選。
+
+  /usr/bin/python3.11 -B gm_center64_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_center64_ss_primary.json
+
+共用偏壓先看原 32 份中段兩份 P/N DC 的全部 16 顆 XT2 是否
+native region 2 且有正裕度。另報尾電流、Hdd、CM→DM、功耗。
+Split64 中心看 0→±1→±2 的帶權延遲有無缺口。
+相同權重比較兩份實體，分壓案回報受載 Vb1 與 XVb 功耗。
+新網路的端點、PVT 全碼及切碼短暫態依結果另提。

@@ -1,0 +1,12 @@
+{
+  "schema": "pam4_sar7_relaxed_reference_span_v1",
+  "cases": [
+    {
+      "case_id": "sar7_05_tt_ref_trim",
+      "input_cm_V": 0.756855,
+      "fullscale_Vppd": 0.100,
+      "source_resistance_ohm": 1.0,
+      "pattern_codes": [64, 0, 127, 31, 96, 63, 65, 85, 42, 1, 126, 64]
+    }
+  ]
+}

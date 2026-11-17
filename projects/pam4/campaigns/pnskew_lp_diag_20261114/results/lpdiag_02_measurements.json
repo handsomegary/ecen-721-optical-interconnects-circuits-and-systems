@@ -1,0 +1,212 @@
+{
+  "checks": {
+    "supply_within_2_percent": true,
+    "iref_within_2_percent": true,
+    "servo_within_2_percent": true,
+    "kick_below_0p01_uA": true,
+    "initial_supply_off": true,
+    "first_plateau_settled": true,
+    "restart_off_observed": true
+  },
+  "window_requested_start_s": 0.0010249999999999999,
+  "window_first_sample_s": 0.001025012608877969,
+  "window_last_sample_s": 0.00105,
+  "window_samples": 1251,
+  "target_iref_uA": 338.3,
+  "iref_uA": {
+    "min": 338.3350150709047,
+    "max": 338.335015331951,
+    "final": 338.33501532209937
+  },
+  "replica_uA": {
+    "min": 337.81179846267287,
+    "max": 337.8119136371212,
+    "final": 337.8119104633575
+  },
+  "startup_kick_uA": {
+    "min": 0.004648764928409932,
+    "max": 0.004648765873340732,
+    "final": 0.004648765802062194
+  },
+  "servo_error_percent": {
+    "min": -0.15464453458132482,
+    "max": -0.15461056928641295,
+    "final": -0.15461150488484657
+  },
+  "settled_node_voltages_V": {
+    "GF_VDD": {
+      "min": 0.81,
+      "max": 0.81,
+      "final": 0.81
+    },
+    "GMSR_REF": {
+      "min": 0.6536892229166387,
+      "max": 0.6536892230372421,
+      "final": 0.6536892229211901
+    },
+    "GMSR_D": {
+      "min": 0.65393089589965,
+      "max": 0.6539309491102452,
+      "final": 0.6539308973659289
+    },
+    "GMSR_BIAS": {
+      "min": 0.4453003085179454,
+      "max": 0.4453003100345099,
+      "final": 0.4453003099776282
+    },
+    "GMSQBP": {
+      "min": 0.3179968099531311,
+      "max": 0.3179968099975266,
+      "final": 0.3179968099960526
+    },
+    "GMSQK": {
+      "min": 0.3177643717009143,
+      "max": 0.3177643717096608,
+      "final": 0.3177643717059495
+    },
+    "GMSQBN": {
+      "min": 0.4315151085693169,
+      "max": 0.4315151086409865,
+      "final": 0.4315151086397269
+    },
+    "GMSQST": {
+      "min": 0.001717899826439249,
+      "max": 0.001717899831946507,
+      "final": 0.001717899826749355
+    }
+  },
+  "gate_voltages_over_supply": {
+    "GMSR_BIAS": {
+      "min": 0.5497534673061054,
+      "max": 0.5497534691784073,
+      "final": 0.5497534691081829
+    },
+    "GMSQBN": {
+      "min": 0.5327347019374282,
+      "max": 0.5327347020259092,
+      "final": 0.5327347020243541
+    },
+    "GMSQST": {
+      "min": 0.002120863983258332,
+      "max": 0.002120863990057416,
+      "final": 0.0021208639836411787
+    }
+  },
+  "restart_rail_cycle_observed": true,
+  "restart_first_plateau": {
+    "checks": {
+      "supply_within_2_percent": true,
+      "iref_within_2_percent": true,
+      "servo_within_2_percent": true,
+      "kick_below_0p01_uA": true
+    },
+    "window_requested_start_s": 0.000475,
+    "window_first_sample_s": 0.0004750007728823394,
+    "window_last_sample_s": 0.0005,
+    "window_samples": 1251,
+    "target_iref_uA": 338.3,
+    "iref_uA": {
+      "min": 338.3350148087438,
+      "max": 338.3350155935653,
+      "final": 338.3350148096271
+    },
+    "replica_uA": {
+      "min": 337.811511090002,
+      "max": 337.8122009909553,
+      "final": 337.8115301279884
+    },
+    "startup_kick_uA": {
+      "min": 0.004648760950632935,
+      "max": 0.004648769859957325,
+      "final": 0.004648761238901233
+    },
+    "servo_error_percent": {
+      "min": -0.1547294072251752,
+      "max": -0.15452570219423042,
+      "final": -0.15472376748627636
+    },
+    "settled_node_voltages_V": {
+      "GF_VDD": {
+        "min": 0.81,
+        "max": 0.81,
+        "final": 0.81
+      },
+      "GMSR_REF": {
+        "min": 0.6536892227957729,
+        "max": 0.6536892231583604,
+        "final": 0.6536892231579523
+      },
+      "GMSR_D": {
+        "min": 0.6539307631421787,
+        "max": 0.6539310818764191,
+        "final": 0.6539310730808694
+      },
+      "GMSR_BIAS": {
+        "min": 0.4453003046482334,
+        "max": 0.4453003139046117,
+        "final": 0.4453003049373725
+      },
+      "GMSQBP": {
+        "min": 0.3179968097463198,
+        "max": 0.3179968102043101,
+        "final": 0.3179968097605805
+      },
+      "GMSQK": {
+        "min": 0.3177643716955549,
+        "max": 0.3177643717147964,
+        "final": 0.3177643716986354
+      },
+      "GMSQBN": {
+        "min": 0.4315151077996843,
+        "max": 0.4315151094105488,
+        "final": 0.4315151078221777
+      },
+      "GMSQST": {
+        "min": 0.001717899785358578,
+        "max": 0.001717899873031392,
+        "final": 0.001717899869131534
+      }
+    },
+    "gate_voltages_over_supply": {
+      "GMSR_BIAS": {
+        "min": 0.5497534625286832,
+        "max": 0.5497534739563107,
+        "final": 0.549753462885645
+      },
+      "GMSQBN": {
+        "min": 0.5327347009872646,
+        "max": 0.5327347029759861,
+        "final": 0.5327347010150342
+      },
+      "GMSQST": {
+        "min": 0.0021208639325414544,
+        "max": 0.002120864040779496,
+        "final": 0.0021208640359648566
+      }
+    }
+  },
+  "restart_off_samples": 2528,
+  "restart_off_duration_observed_s": 5.0412720278959094e-05,
+  "initial_kick": {
+    "peak_signed_uA": 0.05196136753176695,
+    "at_s": 2.683177023407634e-07,
+    "samples": 23975,
+    "GMSQST_V_at_peak": 0.1695876005846351,
+    "GF_VDD_V_at_peak": 0.2173373388960183
+  },
+  "restart_kick": {
+    "peak_signed_uA": 0.051204764419312994,
+    "at_s": 0.0005702735999497712,
+    "samples": 22766,
+    "GMSQST_V_at_peak": 0.1640294285109916,
+    "GF_VDD_V_at_peak": 0.2216159593147055
+  },
+  "status": "pass",
+  "passed": true,
+  "profile": "restart",
+  "format": "pam4_lp_diagnostic_v1",
+  "case_id": "lpdiag_02_ss_restart_cb0",
+  "measurement_complete": true,
+  "bench_sha256": "b79499604308821916f573794bae6d38d97a908d686b51e080dd6bae24256f7a",
+  "run_status_sha256": "25502df165b335b80928d8f5543a14978550177851facdeaf46f7d16afbe91f0"
+}

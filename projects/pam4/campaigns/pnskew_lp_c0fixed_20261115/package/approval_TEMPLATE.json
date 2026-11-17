@@ -1,0 +1,15 @@
+{
+  "approved": false,
+  "platform": "Olympus",
+  "plan_sha256": "",
+  "design_source_sha256": "",
+  "case_ids": [
+    "c0_00_tt_zero",
+    "c0_01_tt_p_late_code0",
+    "c0_02_tt_p_late_preset",
+    "c0_03_tt_n_late_code0",
+    "c0_04_tt_n_late_preset"
+  ],
+  "stages": ["c0_fixed"],
+  "retire_new_raw": false
+}

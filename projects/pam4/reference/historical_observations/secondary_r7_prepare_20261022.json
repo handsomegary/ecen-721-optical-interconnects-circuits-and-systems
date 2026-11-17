@@ -1,0 +1,82 @@
+[
+  {
+    "status": "passed",
+    "simulations_started": 0,
+    "checks": [
+      "exact3fixedconfigs, onlyC/widthchanges, originalnotmutated",
+      "sixcases:3noiseless then3noise; fresh896symbolseed",
+      "fixedlag mapping returns exact512traininglabels",
+      "fit256 ->240FFEfitwindows;16guard;240score ->224FFEoutputs",
+      "changing later/noise score labels does not change frozenfit",
+      "evaluation alters scores but never detector; strictJSON",
+      "actual existing numerical FFE functions:256fit/240fitwindows/224scores, frozen noisy evaluation and small normal residual"
+    ]
+  },
+  {
+    "started_utc": "2026-10-23T02:12:57.766197Z",
+    "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+    "runner": {
+      "pid": 48495,
+      "state": "R",
+      "start_ticks": 1777186,
+      "pgid": 48200,
+      "sid": 48200,
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "comm": "python3"
+    },
+    "completed_cases": [],
+    "detector_sha256": {},
+    "current_case": null,
+    "protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+    "scope": "Training-only native r5 AFE/primary/CML/secondary TG-cap screen; numerical7bit quantizer and17tapFFE, reset comparators, ideal clocks; no full ADC or final BER certification. No previous holdout is read.",
+    "automatic_retry": false,
+    "training_only": true,
+    "status": "prepared",
+    "updated_utc": "2026-10-23T02:12:57.865709Z",
+    "prepared_sha256": {
+      "noiseless_baseline_r5": "43649ce23c2dd6bbf764a52c4579fe91440f25c154680cb172c7c410d73b19af",
+      "noiseless_secondary_c25_w1": "383568bc646c2fbd9a9300c531abe13993aad7cf63e0bf68e41b765c33684ec6",
+      "noiseless_secondary_c25_w2": "bc0bda497034627e03a790a1dd4bbbebea720ec016055d0ea87cd63e67bad5ae",
+      "noise_baseline_r5": "632162b4c96a70a6518f68cba33cf1324dc81be4576e5454dc2823e4344438ee",
+      "noise_secondary_c25_w1": "6c30a47a977d7bc1ac4b464873e89c4713642b415f2416d3508fc9054419d110",
+      "noise_secondary_c25_w2": "e9dba8ee95c90bd3fabc8b3ab0bd79383f36e9b2824376db6eb90b3a33ec0150"
+    },
+    "simulations_started": 0
+  },
+  {
+    "state": {
+      "automatic_retry": false,
+      "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+      "completed_cases": [],
+      "current_case": null,
+      "detector_sha256": {},
+      "prepared_sha256": {
+        "noise_baseline_r5": "632162b4c96a70a6518f68cba33cf1324dc81be4576e5454dc2823e4344438ee",
+        "noise_secondary_c25_w1": "6c30a47a977d7bc1ac4b464873e89c4713642b415f2416d3508fc9054419d110",
+        "noise_secondary_c25_w2": "e9dba8ee95c90bd3fabc8b3ab0bd79383f36e9b2824376db6eb90b3a33ec0150",
+        "noiseless_baseline_r5": "43649ce23c2dd6bbf764a52c4579fe91440f25c154680cb172c7c410d73b19af",
+        "noiseless_secondary_c25_w1": "383568bc646c2fbd9a9300c531abe13993aad7cf63e0bf68e41b765c33684ec6",
+        "noiseless_secondary_c25_w2": "bc0bda497034627e03a790a1dd4bbbebea720ec016055d0ea87cd63e67bad5ae"
+      },
+      "protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+      "runner": {
+        "comm": "python3",
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+        "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+        "pgid": 48200,
+        "pid": 48495,
+        "sid": 48200,
+        "start_ticks": 1777186,
+        "state": "R"
+      },
+      "scope": "Training-only native r5 AFE/primary/CML/secondary TG-cap screen; numerical7bit quantizer and17tapFFE, reset comparators, ideal clocks; no full ADC or final BER certification. No previous holdout is read.",
+      "simulations_started": 0,
+      "started_utc": "2026-10-23T02:12:57.766197Z",
+      "status": "prepared",
+      "training_only": true,
+      "updated_utc": "2026-10-23T02:12:57.865709Z"
+    },
+    "script_sha256": "a83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac"
+  }
+]

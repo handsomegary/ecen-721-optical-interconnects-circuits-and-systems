@@ -1,0 +1,42 @@
+Olympus 交接｜LP14 GM TAP PILOT｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_tap.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+第一輪只提 0–31 共 32 欄核准，包含 SS r3、三組舊固定
+路徑、最小負載 oracle、3／5／7 bank 的中心與正負極限。
+網表已放 portable_review。先核對案 0、2、8、10、26、
+28 以及 8／10 同導通 bank 與相同線路差異。確認 AC/DC
+保存、最小負載對照和各組恆定共八個啟用尾單元。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B gm_tap.py --mode stage --index 0 --index 2 --index 8 --index 10 --index 26 --index 28 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+用新的 gm_tap_plan.json、SHA256SUMS.txt 的 SHA、核准
+case IDs 和 stages 填 approval。run root 放在
+~/ecen720_28nm/runs 下，用實際路徑。用 gm_tap_classic.sbatch，
+每欄 1 CPU／4 GiB／30 分鐘，solver 暫估 3–45 秒。使用
+Spectre 23.1 classic +mt=1、SPECTRE_DEFAULTS=-E、原私有
+shrink。raw 留在 Olympus。
+
+  /usr/bin/python3.11 -B gm_tap_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_tap_ss_pilot.json
+
+首輪通過 56 GHz 篩選的組合，再提選定的 32–51 近端點，
+以及 52–95 launch 50 Ω 對照所需子集。每次用新摘要檔名。
+先看固定路徑重現、中心絕對 Hdd／CM→DM、極限範圍、
+注入 ±0.5 UI 的實際 Hdd 與支路傳輸、相對最小負載的
+損失和功耗。若三種都不合用，保留量測先定位負載。
+
+可對舊 GLOBAL SS 寫一份獨立的 notch 診斷。此命令只讀
+原已完成 AC 量測；不跑 Spectre。輸出放舊 run root 外。
+
+  /usr/bin/python3.11 -B inspect_old_tg.py --old-run-root "$PAM4_OLD_GLOBAL_ROOT" --output lp_old_tg_notch_45_80.json
+
+如要盤點過去的 raw，僅產生審查 JSON。該工具會核對
+原始 case、網表、run status、量測、完成憑證和 raw SHA，
+並列出候選及未解決原因。清除須另外核准。
+
+  /usr/bin/python3.11 -B review_historical_raw.py --campaign endpoint --run-root "$PAM4_OLD_ENDPOINT_ROOT" --output lp_endpoint_raw_review.json
+
+C0、C1、C2 繼續等本輪結果和之後實體碼表，再另提核准。

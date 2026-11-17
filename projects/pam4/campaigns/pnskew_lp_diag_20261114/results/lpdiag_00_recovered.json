@@ -1,0 +1,109 @@
+{
+  "checks": {
+    "supply_within_2_percent": true,
+    "iref_within_2_percent": true,
+    "servo_within_2_percent": true,
+    "kick_below_0p01_uA": true,
+    "initial_supply_off": true
+  },
+  "window_requested_start_s": 0.000475,
+  "window_first_sample_s": 0.0004750103939405916,
+  "window_last_sample_s": 0.0005,
+  "window_samples": 1251,
+  "target_iref_uA": 338.3,
+  "iref_uA": {
+    "min": 338.3350150852069,
+    "max": 338.33501531722834,
+    "final": 338.3350153048676
+  },
+  "replica_uA": {
+    "min": 337.81180969738995,
+    "max": 337.81190240234696,
+    "final": 337.81189984830297
+  },
+  "startup_kick_uA": {
+    "min": 0.004648764973268493,
+    "max": 0.004648765828545454,
+    "final": 0.00464876577491391
+  },
+  "servo_error_percent": {
+    "min": -0.1546412187555632,
+    "max": -0.15461388530047893,
+    "final": -0.15461463723856173
+  },
+  "settled_node_voltages_V": {
+    "GF_VDD": {
+      "min": 0.81,
+      "max": 0.81,
+      "final": 0.81
+    },
+    "GMSR_REF": {
+      "min": 0.6536892229234406,
+      "max": 0.6536892230306345,
+      "final": 0.6536892229291512
+    },
+    "GMSR_D": {
+      "min": 0.6539309010901158,
+      "max": 0.6539309439198059,
+      "final": 0.6539309022700841
+    },
+    "GMSR_BIAS": {
+      "min": 0.4453003086606471,
+      "max": 0.4453003098919553,
+      "final": 0.4453003098468656
+    },
+    "GMSQBP": {
+      "min": 0.317996809955265,
+      "max": 0.3179968099954745,
+      "final": 0.3179968099940402
+    },
+    "GMSQK": {
+      "min": 0.3177643717017519,
+      "max": 0.317764371708662,
+      "final": 0.3177643717052945
+    },
+    "GMSQBN": {
+      "min": 0.4315151085682337,
+      "max": 0.4315151086420381,
+      "final": 0.4315151086404291
+    },
+    "GMSQST": {
+      "min": 0.001717899827613588,
+      "max": 0.001717899830773947,
+      "final": 0.00171789982767906
+    }
+  },
+  "gate_voltages_over_supply": {
+    "GMSR_BIAS": {
+      "min": 0.5497534674822804,
+      "max": 0.549753469002414,
+      "final": 0.5497534689467476
+    },
+    "GMSQBN": {
+      "min": 0.532734701936091,
+      "max": 0.5327347020272075,
+      "final": 0.532734702025221
+    },
+    "GMSQST": {
+      "min": 0.0021208639847081334,
+      "max": 0.002120863988609811,
+      "final": 0.002120863984788963
+    }
+  },
+  "restart_rail_cycle_observed": null,
+  "initial_kick": {
+    "peak_signed_uA": 0.05196136753176695,
+    "at_s": 2.683177023407634e-07,
+    "samples": 23974,
+    "GMSQST_V_at_peak": 0.1695876005846351,
+    "GF_VDD_V_at_peak": 0.2173373388960183
+  },
+  "status": "pass",
+  "passed": true,
+  "profile": "fast",
+  "format": "pam4_lp_diagnostic_v1",
+  "case_id": "lpdiag_00_ss_fast_cb0",
+  "measurement_complete": true,
+  "bench_sha256": "255e021296bde6dc3870d2d474b0bebd639b54e7f7df2879c0ffe7c34a801f15",
+  "run_status_sha256": "3ae0301a7a51c461bb41e4cb18d87440fd28588af47c136dc3e11e52001aa295"
+}

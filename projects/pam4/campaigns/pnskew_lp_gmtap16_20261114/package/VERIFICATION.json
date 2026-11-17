@@ -1,0 +1,15 @@
+{
+  "planned_ac_columns": 432,
+  "rendered_netlists": 432,
+  "pilot_packaged": 48,
+  "python": "3.14.4",
+  "offline_tests_passed": 137,
+  "new_tests_passed": 12,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denies hardlink creation in inherited recovery tests (WinError 5).",
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "geometry": "Single W1.5um L60 native MOS with AD/AS/PD/PS and access squares inferred from archived CDF geometry.",
+  "stage_plan_sha256": "a37b2a5501bc43d8a3dcc33d2860d2b5932f232824cbbdfb8862d8a87b7b47af"
+}

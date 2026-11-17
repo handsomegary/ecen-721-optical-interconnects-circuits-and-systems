@@ -1,0 +1,52 @@
+ECEN 721 #6 PAM4　GMSELECT 後細調與實體 launch　2026-11-13
+
+1. 重新核對量測
+48 份 runtime deck、24 組 P/N AC、213 筆 raw 退役紀錄已核對。TT/SS/FF 的 ±5.246/5.242/
+5.248 ps 是固定路徑的 gate 有效延遲，SS/FF 端碼的加權 RMS 也維持在 0.012 ps 內。
+TT 等長 −1.68 dB 相對 25 Ω/25 Ω bypass；相對原 CHB2 0 Ω/無端接的 r3 則約 −8.03 dB。
+實體 driver 對 56 GHz、功耗、雜訊的代價還要量。
+端碼 TT OFF-only 的 −20.54 dB 已相對完整啟用的輸出。實際相對選中訊號約 9.4% 振幅，
+相對同端接 bypass 為 −26.03 dB。漏訊帶另一段延遲。OFF CM→DM 本身約 0.130 倍 bypass Hdd；
+2.61 是 OFF 與完整模態傳遞相減後再除以完整 Hdd。SS/FF 只有 dormant DC，尚缺其 AC 隔離。
+詳見 GM_EVIDENCE.json，功耗 10.077/7.786/13.227 mW 是原有電路的靜態 rail，未包含實體 launch。
+
+2. 細調採相鄰固定路徑間的電流內插
+粗 anchors P/N 取 6/16、8/14、10/12、11/11、12/10、14/8、16/6，總節數 22，
+名義共延遲約 5.77 ps，範圍涵蓋 ±4.464 ps。每一節沿用 13 pH/20.8 fF/0.305 Ω。
+局部兩組只各啟用 k 與 8−k 顆原生 tail（兩腿同步），故每腿總啟用數保持 8。
+每組仍保留完整輸入 MOS、原 250 Ω ∥100 fF 差動退化與獨立 source。
+物理 gm、尾工作點、雙組退化、漏訊可能使碼距不均；必須以實測碼表決定可用碼。
+理想等幅模型的 H=(1−α)e^(−jωtA)+αe^(−jωtB)。相鄰 anchor 的單腿距約 1.05 ps，
+56 GHz 半權重約 −0.149 dB；兩極端直接內插約 −4.39 dB。理想八等分的最大差動步階
+0.265 ps、半步 0.133 ps。碼距 0.5 ps 為量化必要條件；0.25 ps 殘餘仍待批准。
+全範圍 49 個不同理想碼只作解析估算。這次量 edge 與中心的局部兩組，
+還沒有全範圍的實體粗路由。不要平行掛七組完整 CTLE 輸入對到 X_c。
+未來可將粗 tap 在獨立終端／感測端選擇，再送兩個現有 gm bank；另做輸入負載與 OFF 量測。
+
+3. 漏訊抑制及第一版實體化
+先比同一工作點兩支路同激發、只激發 dormant、只讓選中路有 AC 這三個線性對照。
+量 OFF/selected 的複數比，保留相對 bypass 的絕對值，避免增益縮小時誤判隔離改善。
+優先讓休眠 launch 的 RF 變安靜並保持 .70 V/25 Ω 端接。接到 r3 的信號途徑無串聯 MOS。
+driver deck 用現有原生 3 µm/30 nm NMOS 每腿八顆 source follower，閘端 AC 耦合，
+ON 閘偏壓 .65 V、120 Ω source load、10 Ω launch 串阻；輸入、輸出隔直各 10 pF 理想值。
+OFF 閘偏壓 .10 V，並用四顆 1 µm NMOS 在 follower source（輸出 DC block 前）做 shunt。
+另有去掉 shunt drive 的同尺寸對照，以分辨 OFF follower 本身與 clamp。
+輸出電容後仍由 r3 端 25 Ω 回 .70 V；避免把 r3 休眠 source 直接拉地而令輸入 MOS 重新導通。
+driver 接同一源端而非 ideal fanout VCVS，保留雙組輸入負載。原驅動是零阻源，
+下一輪另量前級實際輸出阻抗。25 Ω 終端保持；10 Ω 是 follower 有限 Rout 的初始配值。
+AC 耦合、gate reference、控制命令為測試源，非已實現 bias generator 或 layout。
+供電、閘偏壓 rail 電流、X_c headroom、各輸入 admittance、實體短路對照、固定 track 噪音保留。
+源極 DC、擺幅、非線性、接合壓與切換時間均待原生量測。10 pF 的 Q/SRF/面積未估。
+尾偏壓用原生反相器、bias TG 和 OFF pull-down 切 .58 V／0 V，TG 在偏壓 bus 上。
+每碼一組靜態控制源，先測工作點。先斷後接、去重疊時序、碼更新與 .65/.10 V reference
+實體生成另做。SS 原 tail 裕量只有約 14.5 mV，先避免疊 cascode。
+若直接 Cgd 仍主導，再單獨試中和與 PVT；原第一級余裕未確認前不增加堆疊。
+例：兩腿各約 1.05 ps 的單一相鄰 echo，等效誤差預算若取差動 0.1 ps，
+一階最壞界要求單腿相對 echo 約 −27 dBc；長 5.25 ps 的 echo 則約 −40.5 dBc。
+這是解析例，實際判讀用完整複數響應與後續 SER，不套單點門檻。
+
+4. 本批範圍
+先用 TT 0–13 核對 baseline、漏訊、native bias 與 follower。通過原生工作點與增益檢查
+再展開局部碼表、P/N 反向和 SS/FF。不要直接從測試用 driver 推論全碼或 BER。
+AC 1 CPU classic +mt=1、4 GiB、30 min 上限；每案預估 1–15 s，首例先量實際值。
+時域條件另見 TRANSIENT_PLAN_zh_TW.txt，仍待後續核對與批准。

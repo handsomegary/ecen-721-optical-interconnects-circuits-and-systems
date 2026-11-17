@@ -1,0 +1,24 @@
+Olympus 交接｜LP14 Iref / OTA smoke
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B ref_smoke.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+首批建議只審 0–5，共六案。0–3 是 SS/FF 原生 OTA + 理想
+310.714 µA，4/5 是 TT Iref-only L120 直連／等 VDS。
+  /usr/bin/python3.11 -B ref_smoke.py --mode stage --index 0 --index 2 --index 4 --index 5 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+獲准後，用 smoke_plan.json SHA、SHA256SUMS.txt SHA、精確 case IDs
+與 ota/reference stages 填本包 approval。沿用 Olympus 私有
+shrink、Spectre 23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E。
+每案 1 CPU／4 GiB／30 min，預估 solver 3–30 秒。用新 run root 和
+ref_smoke_classic.sbatch。環境變數 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、
+PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT。先核對 TT 首例保存的 rail 與鏡電流
+在 PSF 齊全，再擴到其他獲准案。保留所有 raw 於 Olympus。
+
+  /usr/bin/python3.11 -B ref_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_refsmoke_summary.json
+
+6–9 是 SS／FF 兩種參考版本。10–12 是 TT R/L bracket。這七案需依
+首批資料另批准。回報 branch 電流、比例、頭間距、啟動漏電及 GFVDD；
+OTA 另外回報實測每腿、偏壓誤差與 56 GHz Hdd。等 VDS 理想診斷後再
+獨立核定實體 Iref 與功耗。現有 native_both、舊 trim 和補償先停。

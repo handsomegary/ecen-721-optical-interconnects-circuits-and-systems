@@ -1,0 +1,43 @@
+{
+  "total_decks_rendered": 94,
+  "stages": {
+    "bias": 78,
+    "upper": 16
+  },
+  "portable_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    16,
+    20,
+    26,
+    30,
+    34,
+    42,
+    46,
+    50,
+    54,
+    64,
+    70,
+    76,
+    78,
+    92
+  ],
+  "verified_previous_cases": 54,
+  "offline_unittests_passed": 30,
+  "checks": [
+    "paired keys",
+    "full netlist render",
+    "no duplicate elements",
+    "AC-only control",
+    "bias current not double-counted",
+    "archive and receipt audit",
+    "missing result handling",
+    "portable SHA checks"
+  ],
+  "spectre_executed": false,
+  "slurm_submitted": false
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-30T03:17:01.151070+00:00",
+  "handoff_before_sha256": "a62c9c15c2c7385f522ef585b613ce343d6263e102fe02a922cdf7636ccc9781",
+  "handoff_after_sha256": "2dd2751a1ef905390f8148be83c564011093f4eecea6148f41a552f5a2912371",
+  "diagnostic_receipt_sha256": "6f05fde14392ff686e4f58d27ae1d877817607542252079563be3cc30927ffee",
+  "plan_sha256": "d67a822fde73b477cdcba9059434f6ac779feeaf2ee6d3b2d0a443b2359fd16f",
+  "prior_validation_record_preserved": true,
+  "simulations_started": 0
+}

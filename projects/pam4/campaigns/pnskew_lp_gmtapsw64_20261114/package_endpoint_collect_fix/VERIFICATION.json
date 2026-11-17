@@ -1,0 +1,62 @@
+{
+  "planned_cases": 87,
+  "rendered_netlists": 87,
+  "collect_only_indices": [
+    84,
+    86
+  ],
+  "prior_review_files_unchanged": 84,
+  "reported_original_state": "spectre_evidence_incomplete",
+  "reported_original_exit_code": 0,
+  "reported_original_cap_bytes": 536870912,
+  "reported_retry_cap_bytes": 671088640,
+  "reported_tasks": {
+    "84": {
+      "original": "757710",
+      "retry": "757730"
+    },
+    "86": {
+      "original": "757597",
+      "retry": "757729"
+    }
+  },
+  "reported_retry_psf": {
+    "84": {
+      "bytes": 576370217,
+      "sha256_prefix": "fea911b3"
+    },
+    "86": {
+      "bytes": 560309741,
+      "sha256_prefix": "10c96868"
+    }
+  },
+  "python": "3.14.4",
+  "offline_tests_discovered": 233,
+  "offline_tests_passed": 227,
+  "opt_in_large_test_passed_separately": true,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denied real hardlinks in five inherited recovery tests (WinError 5).",
+  "reported_field_fixture": {
+    "both_endpoints": "Recovered and read by merged summary with synthetic raw/measurements",
+    "read_original_status_and_task_fields": true
+  },
+  "synthetic_end_to_end": {
+    "native_format_bytes": 587370368,
+    "samples": 177185,
+    "collect_only_wall_seconds": 54.82,
+    "total_wall_seconds": 64.12,
+    "prior_state_generated_by_run_classic": "spectre_evidence_incomplete",
+    "prior_exit_code_generated_by_run_classic": 0,
+    "recovery_and_summary_passed": true,
+    "mocked": "Spectre child/resources and private kit preflight; synthetic hold; Windows UID, locking and hardlink publication primitive."
+  },
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "actual_olympus_psf_available_locally": false,
+  "actual_olympus_collection_verified": false,
+  "prior_collect_zip_sha256": "addf8004108715e97df61b5bf5ae3c718ff22aec5558133e0506e0439e55cf1a",
+  "prior_collect_manifest_sha256": "c139060b8dddbe0e98291b6fbadf681d44e93e72edc18e5334f855698458ffce",
+  "original_retry_approval_manifest_sha256": "3ca95ec2ccde424ecad4f4b3e1e86cfbd3a801771b36e62adce72ea0a7fa935d",
+  "stage_plan_sha256": "a2f8774d9887630fd9a1d5138f2758207bd01c3648299673a76eb2017d991dcc"
+}

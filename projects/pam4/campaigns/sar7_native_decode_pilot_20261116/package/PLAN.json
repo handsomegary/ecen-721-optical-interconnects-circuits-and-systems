@@ -1,0 +1,30 @@
+{
+  "schema": "pam4_sar7_native_decode_pilot_v1",
+  "cases": [
+    {
+      "case_id": "sar7_14_tt_175gs_native_decode",
+      "parent_job": "761321",
+      "parent_deck_sha256": "903d79a53dcc36162f08c198f9337bbf8fcfe94308bc6fa2c4cb79ad2c785032",
+      "isolation_job": "761426",
+      "isolation_summary_sha256": "fdcca5230efa8c6a8b534d54c4acd6ecdd2b290d2af4cfc0a55bd24a87625748",
+      "waits_ps": [
+        42,
+        40,
+        24,
+        17,
+        13,
+        10,
+        8
+      ],
+      "reads_ps": [
+        39,
+        42,
+        38,
+        39,
+        42,
+        44,
+        54
+      ]
+    }
+  ]
+}

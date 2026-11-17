@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-23T03:54:43.994025Z",
+  "automation_id": "project-6",
+  "automation_status": "DELETED",
+  "reason": "Fixed6case training screen complete, every exit0/hash/recomputed metrics verified. No further authorized dispatch.",
+  "delivery_sha256": "c0408bc869314cd68285267c1c22e2b65397543e399bb898bd48beeb5f99f3ed",
+  "report_sha256": "e4d27d2f96f843cc44c52447c8427d0b889baca52b36acf604daa34b38fee6d4",
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+  "own_actual_simulators": 0,
+  "original_runner_still_active": false,
+  "numerical_comparison": [
+    {
+      "candidate": "baseline_r5",
+      "secondary_cap_fF": 10.0,
+      "TG_width_um": 1.0,
+      "secondary_noiseless_errors": 0,
+      "secondary_noise_errors": 31,
+      "secondary_noise_SER": 0.13839285714285715,
+      "secondary_noise_MSE": 0.48199384838581727,
+      "secondary_noise_held_mVpp": 40.171619084594546,
+      "primary_noise_errors": 0,
+      "measured_VDD_mW": 11.96980405400317,
+      "secondary_per_V_tap_L2": 649.741520958617
+    },
+    {
+      "candidate": "secondary_c25_w1",
+      "secondary_cap_fF": 25.0,
+      "TG_width_um": 1.0,
+      "secondary_noiseless_errors": 0,
+      "secondary_noise_errors": 26,
+      "secondary_noise_SER": 0.11607142857142858,
+      "secondary_noise_MSE": 0.4503516948636141,
+      "secondary_noise_held_mVpp": 31.445008893956626,
+      "primary_noise_errors": 0,
+      "measured_VDD_mW": 11.969929501819943,
+      "secondary_per_V_tap_L2": 837.3259063147254
+    },
+    {
+      "candidate": "secondary_c25_w2",
+      "secondary_cap_fF": 25.0,
+      "TG_width_um": 2.0,
+      "secondary_noiseless_errors": 0,
+      "secondary_noise_errors": 26,
+      "secondary_noise_SER": 0.11607142857142858,
+      "secondary_noise_MSE": 0.4173576123511069,
+      "secondary_noise_held_mVpp": 32.15318729524541,
+      "primary_noise_errors": 0,
+      "measured_VDD_mW": 11.969995961512693,
+      "secondary_per_V_tap_L2": 850.1187436417314
+    }
+  ],
+  "conclusion": {
+    "interpretation": "Slight training-screen improvement; secondary path remains unqualified.",
+    "noisy_secondary_errors_per_224": [
+      31,
+      26,
+      26
+    ],
+    "primary_noise_errors_per_224": [
+      0,
+      0,
+      0
+    ],
+    "preferred_for_possible_future_validation": "secondary_c25_w2",
+    "preference_reason": "Same26/224 errors as C25W1, but lowest ADC-FFE MSE. Not an adopted or validated hardware replacement.",
+    "independent_improvement_established": false,
+    "complete_ADC_verified": false,
+    "next": "Stop this finite screen. If the user later requests further testing, freeze baseline and C25W2 and predeclare one fresh-data independent comparison; no automatic dispatch, refitting, new candidates or holdout.",
+    "limitations": [
+      "One224-output training selection block and one noise seed; overlapping FFE windows are correlated. Five fewer errors does not establish robust gain or independent BER.",
+      "Only compare to this round baseline, not older55/496 or other-data validation counts.",
+      "Held swing decreases and equivalent per-V FFE gain increases with added capacitance.",
+      "Measured approximately11.97mW VDD excludes clock/bias generation, CDAC/reference/control and digital FFE. Larger capacitance/TG is not demonstrated power-free.",
+      "Paired noise-minus-noiseless differences include noise-induced dynamics and nonlinear changes; no pure device-noise decomposition.",
+      "Acquisition and final8ps buffer diagnostics use saved banks0/7,60samples; closing-edge diagnostics use240samples.",
+      "Ideal numeric7bit quantization, numerical FFE, reset comparators and ideal clocks do not verify a full physical7bit112GS/s ADC."
+    ]
+  }
+}

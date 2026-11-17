@@ -1,0 +1,24 @@
+Olympus 交接｜LP14 直連整合
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_integrate.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+待核准後，先審查索引 18（SS cb0 原生整合）與 30（TT OTA-only）。
+  /usr/bin/python3.11 -B lp_integrate.py --mode stage --index 18 --index 30 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+用 integration_plan.json SHA、SHA256SUMS.txt SHA、精確 case IDs 和
+integration stage 填 approval。沿用私有 shrink、Spectre
+23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E。
+每欄 1 CPU／4 GiB／30 min，預估 solver 1–10 秒。以現有 wrapper、
+核准帳號與 QOS，建立新 run root，設定 PAM4_DRIVE_PACKAGE、
+PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT，
+用 lp_integrate_classic.sbatch。先確認首例 GMSR_REF、GFVDD、OP
+及有效 PSF，再跑其餘核准索引。舊批次與本批 raw 留 Olympus。
+
+  /usr/bin/python3.11 -B integration_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_integrate_summary.json
+
+整批 0–33 預期 17 個 P/N 成對列。先回報六個 native_direct 的
+損失、功耗、Iref、三種追蹤誤差及 SS cb2 的 XT2 OP，再回報 TT
+理想 Iref OTA。portable_diagnostics 為下一階段 review deck，
+需要另外實體化及核准。非理想電感、端點、細碼和 SER 等此批結果。

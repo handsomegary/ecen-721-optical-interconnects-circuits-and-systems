@@ -1,0 +1,109 @@
+{
+  "format": "pam4_xt2_held_readback_v1",
+  "source": [
+    {
+      "case_id": "lpnextdiag_17_ss_vppd400_cb2",
+      "status_sha256": "b0cfe68aac7a024703137fc70219b9748a3769712fa50c576e774b77ca3100dc",
+      "measurement_sha256": "2053c943cb6ea9cb98efc30f4c2c7ba2e0e426bae2a2157e48c7db3d6f746f9d"
+    },
+    {
+      "case_id": "lpnextdiag_18_ss_vppd200_cb2",
+      "status_sha256": "2f9ddc194536fde73452f50fabbe496a1804d3394514be1a4ea88401ca132ba7",
+      "measurement_sha256": "a90b353822682658b1694394a7440f0a7ef0f3370fffb500fd9c91b9a9463ad3"
+    }
+  ],
+  "sampling": "Primary held differential voltage at each lane clock falling through VDD/2",
+  "normalization": "Full swing divided by the commanded 2:1 differential source ratio",
+  "residual": "Full/2 versus half after independent affine fit per lane",
+  "lanes": [
+    {
+      "lane": 0,
+      "n": 16,
+      "normalized_full_vs_half_slope": 1.0011537990107533,
+      "gain_change_dB": 0.010015993760575981,
+      "normalized_delta_mean_mV": -0.027817717201912964,
+      "normalized_delta_rms_mV": 0.02805549968864918,
+      "affine_residual_rms_mV": 0.00010294318421625078,
+      "affine_residual_p95_abs_mV": 0.00024351215595396283,
+      "affine_residual_max_abs_mV": 0.00024351215595396283
+    },
+    {
+      "lane": 1,
+      "n": 16,
+      "normalized_full_vs_half_slope": 0.9973960016548796,
+      "gain_change_dB": -0.022647542138619345,
+      "normalized_delta_mean_mV": -0.027705056717098463,
+      "normalized_delta_rms_mV": 0.02833604748156539,
+      "affine_residual_rms_mV": 3.353404233014609e-05,
+      "affine_residual_p95_abs_mV": 7.573302699976497e-05,
+      "affine_residual_max_abs_mV": 7.573302699976497e-05
+    },
+    {
+      "lane": 2,
+      "n": 16,
+      "normalized_full_vs_half_slope": 0.972999786262466,
+      "gain_change_dB": -0.23774510265026497,
+      "normalized_delta_mean_mV": -0.05981816915766528,
+      "normalized_delta_rms_mV": 0.07346422184026767,
+      "affine_residual_rms_mV": 0.0002783496277844865,
+      "affine_residual_p95_abs_mV": 0.0005437068364864614,
+      "affine_residual_max_abs_mV": 0.0005437068364864614
+    },
+    {
+      "lane": 3,
+      "n": 16,
+      "normalized_full_vs_half_slope": 0.9915780574708901,
+      "gain_change_dB": -0.07346184511840029,
+      "normalized_delta_mean_mV": -0.012809832193999155,
+      "normalized_delta_rms_mV": 0.016635219295965877,
+      "affine_residual_rms_mV": 7.046918115200673e-05,
+      "affine_residual_p95_abs_mV": 0.00018927653001746605,
+      "affine_residual_max_abs_mV": 0.00018927653001746605
+    },
+    {
+      "lane": 4,
+      "n": 16,
+      "normalized_full_vs_half_slope": 0.9890762142733425,
+      "gain_change_dB": -0.09540484221077578,
+      "normalized_delta_mean_mV": 0.03375420073451281,
+      "normalized_delta_rms_mV": 0.04482488607176707,
+      "affine_residual_rms_mV": 3.1511088955122474e-05,
+      "affine_residual_p95_abs_mV": 8.187263416661525e-05,
+      "affine_residual_max_abs_mV": 8.187263416661525e-05
+    },
+    {
+      "lane": 5,
+      "n": 16,
+      "normalized_full_vs_half_slope": 0.9906182784798957,
+      "gain_change_dB": -0.08187325713951152,
+      "normalized_delta_mean_mV": 0.05074962463276109,
+      "normalized_delta_rms_mV": 0.07058177720681948,
+      "affine_residual_rms_mV": 0.0002878533516976887,
+      "affine_residual_p95_abs_mV": 0.0007693564367441258,
+      "affine_residual_max_abs_mV": 0.0007693564367441258
+    },
+    {
+      "lane": 6,
+      "n": 16,
+      "normalized_full_vs_half_slope": 0.9911795675006103,
+      "gain_change_dB": -0.07695318456073691,
+      "normalized_delta_mean_mV": 0.045024712073315695,
+      "normalized_delta_rms_mV": 0.06309896635053869,
+      "affine_residual_rms_mV": 0.0002942690822562593,
+      "affine_residual_p95_abs_mV": 0.0007855150404526695,
+      "affine_residual_max_abs_mV": 0.0007855150404526695
+    },
+    {
+      "lane": 7,
+      "n": 16,
+      "normalized_full_vs_half_slope": 0.9949571022869287,
+      "gain_change_dB": -0.043912870345592575,
+      "normalized_delta_mean_mV": 0.0034857342713604683,
+      "normalized_delta_rms_mV": 0.02582829002817794,
+      "affine_residual_rms_mV": 0.0001743807528310369,
+      "affine_residual_p95_abs_mV": 0.0004688824703303132,
+      "affine_residual_max_abs_mV": 0.0004688824703303132
+    }
+  ],
+  "FFE_SER": null
+}

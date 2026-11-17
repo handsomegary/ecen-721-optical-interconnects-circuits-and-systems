@@ -1,0 +1,69 @@
+{
+  "recorded_utc": "2026-10-22T15:39:11.543975Z",
+  "failure_utc": "2026-10-22T15:33:11.093299Z",
+  "status": "failed_terminal",
+  "case": "noiseless_phase_02",
+  "run_status": {
+    "audit": [],
+    "error_lines": [],
+    "exit_code": -6,
+    "issue_codes": [
+      "SFE-1131",
+      "SPECTRE-18"
+    ],
+    "seconds": 1.279
+  },
+  "transient_started": false,
+  "completed_cases": [
+    {
+      "name": "noiseless_phase_00",
+      "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8",
+      "exit_code": 0,
+      "FFE_windows_per_branch": 496
+    },
+    {
+      "name": "noiseless_phase_01",
+      "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3",
+      "exit_code": 0,
+      "FFE_windows_per_branch": 496
+    }
+  ],
+  "total_cases": 18,
+  "unstarted_cases": 15,
+  "complete_phase_eye_available": false,
+  "all_noise_cases_unstarted": true,
+  "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "runner_sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+  "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+  "failure_manifest": {
+    "bench.scs": {
+      "bytes": 350700,
+      "sha256": "f130b7a4ab63971d58af8fadd7306df5c1b34d796171807a0f140e6e2e3bbaab"
+    },
+    "prepared.json": {
+      "bytes": 19745,
+      "sha256": "5e26d5d14969b075571f5e3a3c397513407c6186ccadf339ea284fe423761f6b"
+    },
+    "run_status.json": {
+      "bytes": 135,
+      "sha256": "e46a11410791909fbb440f246b63a46db74706b715dcca7d893d0fca2f66600f"
+    },
+    "spectre.log": {
+      "bytes": 4295,
+      "sha256": "d6c3ef4a46810c5949db1d821f07c60d1569b7c3fee9734cfe51cfbacf414e89"
+    },
+    "console.log": {
+      "bytes": 4084,
+      "sha256": "108ebe811f57e1537a21a8f4bd3ee962c6bd80e7cd66eefe3e2b2348a3bd14d4"
+    }
+  },
+  "automatic_retry": false,
+  "owned_running_simulators": 0,
+  "automation_id": "project-6",
+  "automation_status": "DELETED",
+  "interpretation": "Third noiseless case failed before transient with SPECTRE-18 and exit -6. Two earlier cases completed. Root cause undetermined; this does not establish a transient-noise-only fault or memory exhaustion.",
+  "next_action": "Keep all files in place. No restart, retries or additional simulation. User may later authorize a bounded simulator-startup diagnosis; no complete phase-eye claim.",
+  "VM_receipt": "notes/ffe_phase_sweep_terminal_20261022.json",
+  "VM_receipt_sha256": "4cf257db32903e9485150e4ebaee8c9a6f937d652c194e1ae635d3d6d930115a"
+}

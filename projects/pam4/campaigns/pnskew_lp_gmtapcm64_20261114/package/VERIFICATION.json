@@ -1,0 +1,16 @@
+{
+  "planned_ac_columns": 1228,
+  "rendered_netlists": 1228,
+  "audit_preview_decks": 24,
+  "python": "3.14.4",
+  "offline_tests_passed": 181,
+  "new_tests_passed": 9,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denies hardlink creation in inherited recovery tests (WinError 5).",
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "vb1_physical_candidate": "375-ohm/14.125-kohm 2 pF network; supplied by inherited ideal Vb2 0.580 V.",
+  "stage_plan_sha256": "74702aa4e19338eea594491643b7a2f9dbe3e1350f433cbac6fe7be583e21d3b",
+  "decoder_sha256": "3fb693798753baf82eae1bda92be12b129f9128abab3fd79d30ed0fea3df7931"
+}

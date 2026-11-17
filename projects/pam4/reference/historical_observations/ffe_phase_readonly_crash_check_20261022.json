@@ -1,0 +1,213 @@
+{
+  "checked_utc": "2026-10-22T15:54:01.867456Z",
+  "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+  "state": "failed_terminal",
+  "failed_case": "noiseless_phase_02",
+  "free_bytes": 53021044736,
+  "actual_simulators": [],
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "runner_sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+  "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+  "memory_now": {
+    "MemTotal": "20375404 kB",
+    "MemAvailable": "18361400 kB",
+    "SwapTotal": "4194300 kB",
+    "SwapFree": "4194300 kB"
+  },
+  "cases": {
+    "noiseless_phase_00": {
+      "run_status": {
+        "audit": [
+          "spectre completes with 0 errors, 3 warnings, and 5 notices."
+        ],
+        "exit_code": 0,
+        "issue_codes": [
+          "SFE-1131"
+        ],
+        "seconds": 770.501
+      },
+      "selected_log_lines": [
+        "Spectre (R) Circuit Simulator",
+        "Version 18.1.0.077 64bit -- 1 Aug 2018",
+        "Time for NDB Parsing: CPU = 1.06865 s, elapsed = 586.615 ms.",
+        "Peak resident memory used = 85.8 Mbytes.",
+        "Time for Elaboration: CPU = 191.606 ms, elapsed = 192.05 ms.",
+        "Peak resident memory used = 104 Mbytes.",
+        "Time for EDB Visiting: CPU = 69.882 ms, elapsed = 64.62 ms.",
+        "Peak resident memory used = 110 Mbytes.",
+        "Time for parsing: CPU = 38.409 ms, elapsed = 39.2492 ms.",
+        "Peak resident memory used = 115 Mbytes.",
+        "Total time required for dc analysis `dcOp': CPU = 63.606 ms, elapsed = 63.915 ms.",
+        "Peak resident memory used = 120 Mbytes.",
+        "Total time required for tran analysis `tranResponse': CPU = 769.218 s (12m  49.2s), elapsed = 769.262 s (12m  49.3s).",
+        "Peak resident memory used = 127 Mbytes.",
+        "Peak memory used = 128 Mbytes.",
+        "spectre completes with 0 errors, 3 warnings, and 5 notices."
+      ],
+      "transient_started": true,
+      "log_sha256": "4645df025e3aa517cf55e5348159aa6d3fe2ecb1a8b04be327392751eb0db360",
+      "files": [
+        {
+          "name": "bench.scs",
+          "bytes": 351748
+        },
+        {
+          "name": "prepared.json",
+          "bytes": 20906
+        },
+        {
+          "name": "console.log",
+          "bytes": 8341
+        },
+        {
+          "name": "spectre.log",
+          "bytes": 8619
+        },
+        {
+          "name": "run_status.json",
+          "bytes": 166
+        },
+        {
+          "name": "ffe_primary_decision_points.tsv",
+          "bytes": 86138
+        },
+        {
+          "name": "ffe_secondary_decision_points.tsv",
+          "bytes": 86391
+        },
+        {
+          "name": "summary.json",
+          "bytes": 34428
+        }
+      ]
+    },
+    "noiseless_phase_01": {
+      "run_status": {
+        "audit": [
+          "spectre completes with 0 errors, 3 warnings, and 5 notices."
+        ],
+        "exit_code": 0,
+        "issue_codes": [
+          "SFE-1131"
+        ],
+        "seconds": 743.983
+      },
+      "selected_log_lines": [
+        "Spectre (R) Circuit Simulator",
+        "Version 18.1.0.077 64bit -- 1 Aug 2018",
+        "Time for NDB Parsing: CPU = 715.299 ms, elapsed = 392.302 ms.",
+        "Peak resident memory used = 82.1 Mbytes.",
+        "Time for Elaboration: CPU = 204.739 ms, elapsed = 102.37 ms.",
+        "Peak resident memory used = 100 Mbytes.",
+        "Time for EDB Visiting: CPU = 40.737 ms, elapsed = 20.3691 ms.",
+        "Peak resident memory used = 106 Mbytes.",
+        "Time for parsing: CPU = 48.471 ms, elapsed = 25.9359 ms.",
+        "Peak resident memory used = 112 Mbytes.",
+        "Total time required for dc analysis `dcOp': CPU = 56.46 ms, elapsed = 46.2379 ms.",
+        "Peak resident memory used = 117 Mbytes.",
+        "Total time required for tran analysis `tranResponse': CPU = 743.214 s (12m  23.2s), elapsed = 743.205 s (12m  23.2s).",
+        "Peak resident memory used = 123 Mbytes.",
+        "Peak memory used = 124 Mbytes.",
+        "spectre completes with 0 errors, 3 warnings, and 5 notices."
+      ],
+      "transient_started": true,
+      "log_sha256": "7e491dcb373efd9654ce73c9dbe7fa2324b094b96ad2cfc110d72b14160b2d09",
+      "files": [
+        {
+          "name": "bench.scs",
+          "bytes": 351772
+        },
+        {
+          "name": "prepared.json",
+          "bytes": 20923
+        },
+        {
+          "name": "console.log",
+          "bytes": 8355
+        },
+        {
+          "name": "spectre.log",
+          "bytes": 8633
+        },
+        {
+          "name": "run_status.json",
+          "bytes": 166
+        },
+        {
+          "name": "ffe_primary_decision_points.tsv",
+          "bytes": 86954
+        },
+        {
+          "name": "ffe_secondary_decision_points.tsv",
+          "bytes": 87315
+        },
+        {
+          "name": "summary.json",
+          "bytes": 34389
+        }
+      ]
+    },
+    "noiseless_phase_02": {
+      "run_status": {
+        "audit": [],
+        "error_lines": [],
+        "exit_code": -6,
+        "issue_codes": [
+          "SFE-1131",
+          "SPECTRE-18"
+        ],
+        "seconds": 1.279
+      },
+      "selected_log_lines": [
+        "Spectre (R) Circuit Simulator",
+        "Version 18.1.0.077 64bit -- 1 Aug 2018",
+        "Time for NDB Parsing: CPU = 702.075 ms, elapsed = 383.513 ms.",
+        "Peak resident memory used = 82.1 Mbytes.",
+        "Time for Elaboration: CPU = 270.558 ms, elapsed = 135.281 ms.",
+        "Peak resident memory used = 100 Mbytes.",
+        "Internal error found in spectre in `pmos_lvt':`B6_COMP1.SQ', in `COMPLOAD':`B6_COMP1', during hierarchy flattening, during circuit read-in.",
+        "FATAL (SPECTRE-18): Segmentation fault.",
+        "Version 18.1.0.077 64bit -- 1 Aug 2018"
+      ],
+      "transient_started": false,
+      "log_sha256": "d6c3ef4a46810c5949db1d821f07c60d1569b7c3fee9734cfe51cfbacf414e89",
+      "files": [
+        {
+          "name": "bench.scs",
+          "bytes": 350700
+        },
+        {
+          "name": "prepared.json",
+          "bytes": 19745
+        },
+        {
+          "name": "console.log",
+          "bytes": 4084
+        },
+        {
+          "name": "spectre.log",
+          "bytes": 4295
+        },
+        {
+          "name": "run_status.json",
+          "bytes": 135
+        }
+      ]
+    }
+  },
+  "kernel_log_readable": true,
+  "kernel_counts_this_boot": {
+    "oom": 0,
+    "segfault": 0,
+    "general_protection": 0
+  },
+  "environment_paths_only": {
+    "PATH": "/usr/synopsys/wv/N-2017.12-SP2/bin:/usr/synopsys/hspice/N-2017.12-SP2/hspice/bin:/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/bin:/opt/eda/cadence/INNOVUS/bin:/opt/eda/cadence/SPECTRE181/bin:/opt/eda/cadence/SPECTRE181/tools/bin:/opt/eda/cadence/IC618/tools/bin:/opt/eda/cadence/IC618/tools/dfII/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/opt/eda/cadence/INCISIV/bin:/opt/eda/cadence/INCISIV/tools.lnx86/bin:/opt/eda/cadence/INCISIV/tools.lnx86/dfII/bin",
+    "LD_LIBRARY_PATH": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/shared/pkgs/icv/tools/calibre_client/lib/64:/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/calibre_base/lib64:/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_lib/lib64:/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_qt5_comp/plugins:/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_oa/22.41p004/lib/linux_rhel68_gcc44x_64/opt:/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python/asp/lib",
+    "LD_PRELOAD": null,
+    "SPECTRE_DEFAULTS": "-E",
+    "CDS_AUTO_64BIT": "ALL",
+    "LANG": null,
+    "LC_ALL": null
+  }
+}

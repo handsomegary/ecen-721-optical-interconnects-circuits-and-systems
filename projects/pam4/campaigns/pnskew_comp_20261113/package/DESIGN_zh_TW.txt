@@ -1,0 +1,88 @@
+ECEN 721 Project #6　P/N deskew 第一版設計　2026-11-13
+
+選 A。在原 r5 的 CHB2p/m 後、r3 第一級 XM1p/m gates 的 X_ip/X_im 前插入兩個獨立 LC trim。
+原 r3 第一級的 XRdeg1/XCdeg1 已跨腿耦合。B 要在該處之前另建兩個寬頻 track/hold 及量化觀測，
+再於數位域相減，會改變 r5 資料路徑與尚未完成的實體 ADC 邊界。本版延續 r5 全部採樣時脈、
+主次取樣、理想量化及凍結 TT FFE。原 CHB2 是零輸出阻抗的 VCVS。另用每腿 25 Ω、50 Ω
+探測源端負載敏感度。25 Ω 是工程 fixture 假設。實際負載採原 r3 input device 與四 track／四 hold
+snapshot。整合後再驗證時變取樣負載。保留原始固定 clock，將新增共同延遲列成量測。
+如共同延遲導致不可比較，停在零 skew 代價報告，另提一個先定義再凍結的共相位校正。
+
+已存 Olympus 結果
+無雜訊門檻首次出現在 ±0.375 UI，兩端的 secondary 由零 skew 2/2032 增到 126/2032。
+零 skew 的 held p05−p95 gap 已小於零，因此延用 SER 閾值，gap 報 mV。Noise 零 skew secondary
+161–236/2032 是原先的基準；±0.5 UI 的平均配對增量約 8.5 pp。實際 56 GHz Hdd dip 3.006 dB，
+新增 CM→DM 約 1.391×|Hdd0|，涵蓋合成 channel 加 AFE。端點以 sin 擬合的近零參考為
+1.9676·|sin(π·56GHz·δ)|；10% 假設預算約 0.289 ps，理想模型約 0.284 ps。這個擬合只有
+一個非零 |δ| 的幅度對照。0.25 ps 仍是待批准的工程目標，要靠實際殘差細掃驗證。
+AFE 輸出共模半振幅誤差約 17%，不足以直接當校正觀測。r3 的 27 個既有 corner 在 56 GHz
+對 1 kHz 提升 2.46–8.15 dB。SS 熱低壓的凍結 FFE 已是 227/635（主／次），FF 冷高壓 7/191。
+這些值是角落自身基準。每個新 corner 需同硬體零 skew，分開報 timing 與固定 FFE error。
+
+首版 cell 與控制
+每腿 4 個串聯的 L/2–C–L/2 T 型低通 ladder section（串聯半電感、中心 shunt C，再串聯半電感）。
+每節 L 總 65 pH，理想電感 ESR 總 1.5 Ω。中心固定 12 fF 加 6 個可開關的理想電容
+1.25/2.5/5/10/20/40 fF。上電前選好靜態 gate control，測試期間碼固定。
+每個 shunt C 用 native NMOS/PMOS transmission gate，L=30 nm、W 各 1 μm、nf=multi=1。
+逐字複用已入場的 B0_SN0p、B0_SP0p 幾何卡，替換 instance 與四個 terminal；保留寄生 flags。
+PMOS bulk 用 PNC_VDD，NMOS bulk 接 ground。1 TΩ 將浮動 cap node 拉到原 X_cm=.7 V。
+TG 靜態偏壓在原 PVT rail，0.81 V 時 N-overdrive 可能不足，尤其需看 PMOS 導通與非線性。
+這是具 native switch 的 schematic hybrid；L/C/ESR 是理想元件模型。passive Q、layout/EM、
+ESD/termination、數位控制與低負載量測電路留待實作。未經 Spectre 或 PEX。
+粗碼觀察 0、4、8、16、24、32、40、48、56、63，細搜較佳粗碼±3。P=k，N=63−k。
+粗細是搜尋階層，實體先共用一個 6-bit bank。電容總和固定並不能固定共同延遲。
+binary carry 需驗證 DNL，若非單調可用實測可用碼集合，缺區間時改分段 thermometer 或加獨立 fine bank。
+每角落量全部 64 個互補碼對，signed differential coverage 要觸及 ±4.464 ps。最大實際相鄰 gap
+比平均 LSB 更重要。待批准預算：局部 gap ≤0.25 ps 讓最接近碼的量化上界 0.125 ps，
+另保留 detector/漂移各約 0.075/0.05 ps。q≤0.5 ps 僅是理想均勻碼下的必要條件。
+
+模型先篩選
+behavioral_ladder.py 用等效 C 模型（16 個 5 fF 步階；與 6-bit native bench 使用不同 code index）
+檢查 Rs、CL、ESR。50 Ω／50 fF／ESR 1.5 Ω 時，15/0 在 56 GHz 有 5.189 ps，
+14–56 GHz 的 phase delay 變動 3.376–8.737 ps。已知目標時理想最佳碼對頻帶最差殘差仍 2.080 ps。
+因此首版 LC 是供篩選的實體候選。單頻 delay 過關不足以展開整合。若 sparse bench 的複數傳遞顯示
+明顯 dispersion 或損失，先交付該結果，改設計寬頻均化與端接。先確認 actual r3 load、最差功耗、
+headroom、噪音及 corner range，再決定做完整碼表。初版是否能達範圍與殘差仍待量測。
+
+前景校正與硬體接口
+校正讀取 trim 後 X_ip/X_im。先量兩段 224 UI，再用後兩段 224 UI 驗證。原驗證 stimulus
+的前 896 UI 落在原 2048-symbol scoring 窗之前。以既有已知 transition-rich 前綴為 pilot，
+以相同時間基準在兩腿擷取 32 樣本/UI，頻率取 7/14/21/28/35/42/49 GHz。
+分析使用反相 N 的相對複數傳遞、phase unwrap、斜率和各頻相位殘差，DC 與 gain 另報。
+分兩段求互功率比以降低噪音；真值、payload label、FFE 分數都不進選碼函式。
+觀測前台的實作是高阻抗對稱 tap 和共用 sampler，重複 pilot 時步進相位再做等效時間量測。
+這次 Spectre 用直接節點保存代表該觀測。實體 tap 的負載、offset、噪音、共享時基偏差需另驗。
+56 GHz 等於單點/UI 的 Nyquist 頻率，因此估測器用 49 GHz 以下多頻，不從單相位 Nyquist 樣本估相。
+pilot 的純資料長度共 8 ns，加 startup、每碼 settle 與多次試碼；量到實際有效樣本再定硬體成本。
+獨立窗口不穩定、幅度不足或殘差過大時回報 NO_LOCK，保留觀測。偏置誤差與噪音亦可能使斜率錯估。
+驗證下一步加入 zero-skew + gain mismatch、外加 CM、共同相位跳變、tap skew、上下電及反向初值。
+目前內建的是雙窗 readback 和無真值的碼選擇，這些額外擾動為下一個需批准的試驗。
+
+預先寫定的判讀（所有新數字待使用者批准）
+1. 校正殘差草案 ≤0.25 ps（斜率與跨頻 phase-equivalent 取較大），獨立窗口 repeatability ≤0.075 ps，
+   每腿至少 20 μV 複數 pilot 振幅。首輪 7–49 GHz，56 GHz 由 AC 和殘差診斷補證。
+2. 原同負載 bypass 為 AC 基準。草案 56 GHz |Hdd| 減損 ≤1.0 dB、7–56 GHz 不接受明顯窄帶峰谷，
+   先報每頻複數 Hdd/Hdc、phase delay、group delay 與源端 admittance，保留相位與幅度。
+   CM 轉換以同 reference 複數差正規化，草案 |ΔHdc|/|Hdd0|≤0.1。靜態噪音報 Vrms 和方差差，
+   功耗量 AFE/trim/靜態 driver rail；整合報原 rail 與新增 rail。噪音與功耗先報數值，沒有硬性合格線。
+3. 零 skew 以新增硬體和原無 cell 比，報主／次 FFE error、MSE、clipping、眼間距與共同延遲。
+   SER +1 pp 是上輪劣化標籤，沿用作本次診斷。已小於零的 gap 只報電壓差。補償後與
+   同硬體同 seed 零 skew 比得到增量，再與原無 cell skew 及數學 oracle 並列。
+4. 9 點、兩側 0.28125/0.3125/0.34375 UI 補點。殘差 stress 固定已選碼、施加
+   target−pilot residual 的額外差動 PWL time shift（±0/0.25/0.5/1 ps）。用輸出 pre-mix pilot
+   核對實際達到的殘差，按量測值歸類，禁止因目標標籤就宣稱達到。
+5. 雜訊在 0/±0.5 UI，使用 1001–1020 同 seed，比較未補償與同硬體零點，分主/次取樣報每 seed、
+   mean/range 及不完整清單。同 seed 是配對 ID，adaptive solver 的噪音軌跡可能不同。
+   SS/85°C/.81 V、FF/−40°C/.99 V 兩端各加零 skew 與±0.5 UI；不重新訓練 FFE。
+6. 既有 2048-symbol payload 用來配對本輪，不構成獨立最終 holdout。所有缺資料或 NO_LOCK 分列。
+   以原方案「新增 Hdc 低於預算」作工程篩選；實體 monitor、完整 ADC、功耗及課程符合性均未驗證。
+
+資源與交付狀態
+每 job 1 CPU classic +mt=1，Spectre 23.1.0.722.isr15，SPECTRE_DEFAULTS=-E，Olympus 私有模型核對。
+AC 首估 0.2–5 min／4 GiB／30 min cap；pilot 12–60 min／6 GiB／2 h；quiet 55–130 min 或
+noise 65–155 min／8 GiB／4 h。按新增 96 個 TG / lane pair、分析類別與上輪耗時做寬鬆估算。
+完整計畫有 3,534 個 AC job（每個碼對分兩種單腿激勵，含 bypass／源端阻抗檢查），95 個 payload。
+同一 corner/skew 的 pilot 可跨 residual stress 或 noise seeds 重用，試碼數依粗細搜尋結果。
+先用實際 Elapsed/MaxRSS/raw size 調整，依當下配額排 classic 獨立 job。完整 AC 計畫需要先
+證明少量代表碼值得執行，可在規劃下一批時把數個獨立 AC deck 放在同一份 1-CPU Slurm 任務。
+計畫不是提交指令。任何新 job、數值門檻及後續掃描都待你審查；本交付只有離線生成、解析與測試。

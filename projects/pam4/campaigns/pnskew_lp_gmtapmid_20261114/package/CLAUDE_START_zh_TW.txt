@@ -1,0 +1,36 @@
+Olympus 交接｜GMTAP MIDBIAS｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_tapmid.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+首審 SS 理想 570 mV 的中心／29:3、TT／FF 理想 570 mV 的
+29:3，以及 SS 分壓器中心／29:3。portable_review 含對照。
+見 DESIGN_MIDBIAS_zh_TW.md。沿用既有常態授權和 SHA 綁定
+approval 的方式，使用新 run root 和本包的 gm_tapmid_plan.json。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B gm_tapmid.py --mode stage --index 6 --index 18 --index 154 --index 186 --index 202 --index 214 --index 286 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+  0–135    SS 理想 570 mV 中段、中心與端點
+  136–199  TT／FF 理想 570 mV 中心與端點
+  200–283  SS／TT／FF 主分壓 1k／57k、2 pF
+  284–295  SS 低阻對照 250／14.25k、2 pF
+  296–407  SS 剩餘奇數碼，只挑需要填的間距
+
+每個 P/N pair 分別是兩個 job。先看能否重現 SS Trim32 並
+核對分壓器的 GMSKVDIV:p、GMSKV1:p、GMSKVBIAS、XVb:p
+及全部 XT2 DC，之後逐批擴跑。每欄 1 CPU／4 GiB／30 min
+walltime，solver 暫估 3–15 秒。可沿用 %6 並行。
+0–295 raw 暫估 3.2–3.6 GB（依上一輪 890 MB／82 欄推估）；
+若加跑全部奇數碼約再 1.2–1.4 GB。raw 留在 Olympus。
+用 gm_tapmid_classic.sbatch。沿用私有 shrink、Spectre 23.1
+classic +mt=1 與 SPECTRE_DEFAULTS=-E。
+
+  /usr/bin/python3.11 -B gm_tapmid_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_tapmid_ss_grid.json
+
+每批使用新的輸出檔名。
+回報超過 0.50 ps 的實測間距、能覆蓋目標的碼段、TT／FF
+端點和 XT2，以及分壓器的 Vb1／電流／功耗／噪聲差異。
+若要補碼，優先跑候選間距兩端之間的 odd code。先決定
+偏壓網路，再提在同一硬體偏壓下的共同全碼表與切碼暫態。

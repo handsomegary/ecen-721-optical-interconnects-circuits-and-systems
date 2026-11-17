@@ -1,0 +1,9 @@
+{
+  "cards": {
+    "n_l30": "nmos_lvt l=30n w=3u multi=1 nf=1 sd=100n ad=2.25e-13 as=2.25e-13 pd=6.15u ps=6.15u nrd=0.096480 nrs=0.096480 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60",
+    "n_l60": "nmos_lvt l=60n w=3u multi=1 nf=1 sd=100n ad=2.25e-13 as=2.25e-13 pd=6.15u ps=6.15u nrd=0.096480 nrs=0.096480 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=120.93n spba=121.82n spba1=124.403n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60",
+    "p_l30": "pmos_lvt l=30n w=3u multi=1 nf=1 sd=100n ad=2.25e-13 as=2.25e-13 pd=6.15u ps=6.15u nrd=0.055246 nrs=0.055246 sa=75.0n sb=75.0n sa1=75.0n sa2=75.0n sa3=75.0n sa4=75.0n sb1=75.0n sb2=75.0n sb3=75.0n spa=100n spa1=100n spa2=100n spa3=100n sap=91.9776n sapb=114.444n spba=115.715n spba1=117.043n dfm_flag=0 _ccoflag=1 _rcoflag=1 _rgflag=1 spmt=1.11111e+15 spomt=0 spomt1=1.11111e+60 spmb=1.11111e+15 spomb=0 spomb1=1.11111e+60"
+  },
+  "source": "ECEN720 published portable PAM4 candidate.scs, 20261106",
+  "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc"
+}

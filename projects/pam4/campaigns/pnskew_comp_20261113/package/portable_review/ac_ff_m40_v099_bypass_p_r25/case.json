@@ -1,0 +1,27 @@
+{
+  "bypass": true,
+  "case_id": "ac_ff_m40_v099_bypass_p_r25",
+  "cpus": 1,
+  "drive": "p",
+  "estimated_spectre_min": [
+    0.2,
+    5.0
+  ],
+  "kind": "ac",
+  "load_fF": 0,
+  "memory_GiB": 4,
+  "model_preflight": null,
+  "n_code": 0,
+  "p_code": 0,
+  "process": "ff",
+  "requested_wall_min": 30,
+  "source_ohm": 25,
+  "stage": "standalone_pilot_endpoints",
+  "staged_source_sha256": {
+    "bench.scs": "4461bec17a25c6f955490c648ccbd2945e994fe49599f3b7a9b410ed5a6c8cb8",
+    "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297",
+    "parent_diff.txt": "79b9cdbd1aa4a05c47f2688f558576350bddd8922062b4cb0d3f316a55cf1bb7"
+  },
+  "temperature_C": -40,
+  "vdd_V": 0.99
+}

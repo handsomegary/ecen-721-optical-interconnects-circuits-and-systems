@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "path": "assets/olympus/create_cds_lib.py",
+      "source_sha256": "8665c1a9e8b381d1deeba6dfd6dbbd15902349a0c9b8ecbd8568e49f8c218920",
+      "archived_sha256": "8665c1a9e8b381d1deeba6dfd6dbbd15902349a0c9b8ecbd8568e49f8c218920"
+    },
+    {
+      "path": "assets/olympus/prepare_spectre_deck.py",
+      "source_sha256": "5f9d1c100a9bf6bb64a1f67f63793508422aee271209b1d09e8b4ad2bd42f645",
+      "archived_sha256": "b7c02249a2b4d9e1f733e6c81afc50d061f7751b0750c4062d80153b64a0f23e"
+    },
+    {
+      "path": "assets/README_繁體中文.md",
+      "source_sha256": "9932aa86d85cfd93700cf6b509cf65c7a9577d472b0c191c394aa65ef55b8455",
+      "archived_sha256": "c8b27081c41598605614e05d1e083ed77fc3c5e4b97036303dbc008c7ba6a86b"
+    },
+    {
+      "path": "remote_collect.py",
+      "source_sha256": "2097527b2238894e157685abc65e8d52b52d781c15cb739b2d6a7747deb8a7d3",
+      "archived_sha256": "0cb3fe72fee55c4bb75228a3b297a06509bcc9e87db5986214e0707c0070ff95"
+    }
+  ],
+  "note": "Historical packaging scripts; addresses and local paths sanitized."
+}

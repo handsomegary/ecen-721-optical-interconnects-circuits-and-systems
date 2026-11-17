@@ -1,0 +1,38 @@
+Olympus 交接｜LP14 SIGNOFF AC｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_signoff.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+先審 0 與 28。0 是 TT cb0 replica 20 GHz，28 是 SS cb2
+非理想電感的 P 激勵。可和 portable_review 對照。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B lp_signoff.py --mode stage --index 0 --index 28 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+以 signoff_plan.json、SHA256SUMS.txt 的 SHA 與使用者核定的
+case IDs、stages 填寫新 approval。第一批只建議核定 0、28。
+在 repo 外建乾淨 run root，把真實路徑原樣傳入。export
+PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、
+PAM4_PDK_ROOT。依核准索引使用 lp_signoff_classic.sbatch。
+資源每案 1 CPU／4 GiB／30 min，預估 STB 2–10 s、AC/noise
+3–30 s，不含排隊及模型 preflight。沿用 Spectre 23.1 classic
++mt=1 與 SPECTRE_DEFAULTS=-E。
+
+首案 0 核對原生 STB、同一 DC 工作點、PM 頻率、20 GHz 頻帶尾端。
+若原生 GM 缺失，接受程式保留 null 和明確篩選狀態。
+首案 28 核對 native OP、rail、noise、兩顆 L/R/C 值及接線。
+P/N 兩欄齊全後才可判讀 Hdd。首案正常後，1–3 和 4–39 各另
+核准。先確認 18–25 與歷史理想電感的測量重現。
+
+  /usr/bin/python3.11 -B signoff_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_signoff_summary.json
+
+XT2 的補充量測直接讀 DIAG NEXT 17、18 原 PSF，請在原 run root
+外存輸出 JSON。這條命令只做 collect-only，無須新模擬。
+
+  /usr/bin/python3.11 -B xt2_readback.py --diag-next-root "$PAM4_OLD_DIAG_NEXT_ROOT" --output xt2_held_readback.json
+
+實際使用既有私有 shrink，不複製 PDK 或模型。raw 留在
+Olympus，approval 填 retire_new_raw=false。交回量測、原生
+警告、個案完成憑證及數值摘要。端點、細碼、長 SER 依
+NEXT_STAGES_zh_TW.md 分批提案。

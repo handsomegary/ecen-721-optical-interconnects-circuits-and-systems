@@ -1,0 +1,2 @@
+primary frozen lag 1 corr at frozen [0.005] best [(3, 0.753), (4, 0.549), (6, -0.236), (7, -0.188), (2, 0.177)]
+secondary frozen lag 3 corr at frozen [-0.735] best [(3, -0.735), (4, -0.579), (6, 0.197), (7, 0.189), (2, -0.184)]

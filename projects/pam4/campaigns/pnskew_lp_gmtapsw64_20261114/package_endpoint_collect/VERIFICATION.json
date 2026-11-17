@@ -1,0 +1,45 @@
+{
+  "planned_cases": 87,
+  "rendered_netlists": 87,
+  "collect_only_indices": [
+    84,
+    86
+  ],
+  "original_hold_indices": [
+    83,
+    85
+  ],
+  "reported_retry_array": "757729",
+  "reported_retained_psf_bytes": {
+    "84": 576370217,
+    "86": 560309741
+  },
+  "retry_max_file_bytes": 671088640,
+  "standard_max_file_bytes": 536870912,
+  "prior_review_files_unchanged": 84,
+  "python": "3.14.4",
+  "offline_tests_discovered": 231,
+  "offline_tests_passed": 225,
+  "opt_in_large_test_passed_separately": true,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denied real hardlinks in five inherited recovery tests (WinError 5).",
+  "synthetic_end_to_end": {
+    "native_format_bytes": 587370368,
+    "samples": 177185,
+    "collect_only_wall_seconds": 55.87,
+    "total_wall_seconds": 65.32,
+    "standard_end_check_rejected": true,
+    "recovery_and_summary_passed": true,
+    "reported_recovery_ps": 120.049,
+    "measured_lanes": 8,
+    "measured_xt2": 16,
+    "mocked": "Spectre child/resources and private kit preflight; synthetic hold; Windows UID, locking and hardlink publication primitive."
+  },
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "real_olympus_retry_collected": false,
+  "prior_zip_sha256": "b4efaeb797f38d0496c0a7dd5980ed65b5c19dbabbece8dd2c7cd364d67aa0eb",
+  "prior_manifest_sha256": "3ca95ec2ccde424ecad4f4b3e1e86cfbd3a801771b36e62adce72ea0a7fa935d",
+  "stage_plan_sha256": "a2f8774d9887630fd9a1d5138f2758207bd01c3648299673a76eb2017d991dcc"
+}

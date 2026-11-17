@@ -1,0 +1,25 @@
+{
+  "status": "PASS_OFFLINE",
+  "test_count": 5,
+  "test_log": "test_bias_restore_does_not_add_a_second_low_value_termination (test_selector.SelectorTests.test_bias_restore_does_not_add_a_second_low_value_termination) ... ok\ntest_center_bias_and_width_use_original_device_cards (test_selector.SelectorTests.test_center_bias_and_width_use_original_device_cards) ... ok\ntest_device_y_fixture_recovers_known_R_and_mutual_C (test_selector.SelectorTests.test_device_y_fixture_recovers_known_R_and_mutual_C) ... ok\ntest_on_only_ablation_removes_dormant_route (test_selector.SelectorTests.test_on_only_ablation_removes_dormant_route) ... ok\ntest_plan_is_paired_and_has_required_tt_controls (test_selector.SelectorTests.test_plan_is_paired_and_has_required_tt_controls) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.020s\n\nOK\n",
+  "portable_decks_and_diffs_verified": 90,
+  "preserved_TT_reference_decks_byte_identical": [
+    "sel_tt_p25_v090_bypass_native_f0_00_00_na_p",
+    "sel_tt_p25_v090_bypass_native_f0_00_00_na_n",
+    "sel_tt_p25_v090_ttd_selected_native_f0_06_06_na_p",
+    "sel_tt_p25_v090_ttd_selected_native_f0_06_06_na_n",
+    "sel_tt_p25_v090_ttd_selected_native_f0_06_16_na_p",
+    "sel_tt_p25_v090_ttd_selected_native_f0_06_16_na_n",
+    "sel_tt_p25_v090_ttd_selected_native_f0_16_06_na_p",
+    "sel_tt_p25_v090_ttd_selected_native_f0_16_06_na_n",
+    "sel_tt_p25_v090_ttd_switch_native_f1_06_06_na_p",
+    "sel_tt_p25_v090_ttd_switch_native_f1_06_06_na_n"
+  ],
+  "prior_acnext_sha256": "9a676e5032b6f39fd9140293e3521b3cd2d2f9dd838dfeb0232abf8f4da24ec4",
+  "TT0_13_runtime_decks_and_receipts_rechecked": 14,
+  "selector_RC_analytical_cases": 120,
+  "measurements_and_analysis_JSON_regenerated": true,
+  "actual_new_Spectre_parse_and_PSF_fields": "PENDING_OLYMPUS",
+  "new_native_runs": 0,
+  "slurm_submissions": 0
+}

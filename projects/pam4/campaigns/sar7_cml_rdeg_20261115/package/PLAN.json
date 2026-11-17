@@ -1,0 +1,25 @@
+{
+  "schema": "pam4_sar7_r5_cml_rdeg_v1",
+  "cases": [
+    {
+      "case_id": "sar7_07_tt_r5_cml_rdeg",
+      "input_cm_V": 0.756855,
+      "fullscale_Vppd": 0.1,
+      "source_resistance_ohm": 1.0,
+      "pattern_codes": [
+        64,
+        0,
+        127,
+        31,
+        96,
+        63,
+        65,
+        85,
+        42,
+        1,
+        126,
+        64
+      ]
+    }
+  ]
+}

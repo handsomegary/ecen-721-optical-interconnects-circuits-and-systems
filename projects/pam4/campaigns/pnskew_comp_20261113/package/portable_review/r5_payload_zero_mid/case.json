@@ -1,0 +1,33 @@
+{
+  "stimulus": {
+    "case_id": "portable_r5_zero_mid",
+    "kind": "pam4_noiseless",
+    "delta_ui": 0,
+    "noise_seed": null
+  },
+  "p_code": 31,
+  "n_code": 32,
+  "vdd_V": 0.9,
+  "added_differential_stress_ps": 0,
+  "profile": {
+    "source_kind": "noiseless",
+    "source_deck_sha256": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3",
+    "normalized_original_vm_sha256": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3",
+    "path_only_baseline_sha256": "b3ba5d443989490039e66c8f5edece69171b6a2447fc8dd266c4b2e80275f3f2",
+    "staged_deck_sha256": "b3ba5d443989490039e66c8f5edece69171b6a2447fc8dd266c4b2e80275f3f2",
+    "mean_input_delay_s": 0.0,
+    "clock_shift_s": 0.0,
+    "p_delay_s": 0.0,
+    "n_delay_s": -0.0,
+    "initial_PWL_t0_anchor_preserved": true,
+    "source_guard_s": 2.089285714285714e-10,
+    "baseline_path_rebase_reversible": true,
+    "stop_s": 2.941428571428571e-08,
+    "experiment_overlay_separate_from_migration": true,
+    "allowed_overlay": "Two P/N PWL time axes only; optional noise seed only",
+    "stop_save_geometry_and_clock_bytes_unchanged": true,
+    "no_new_physical_compensator": true
+  },
+  "bench_sha256": "56aac562feb959af5085d8f95028d6d67c2a91babe0ca569a2136da24c2dfa94",
+  "status": "PORTABLE_REVIEW_ONLY_NOT_RUN"
+}

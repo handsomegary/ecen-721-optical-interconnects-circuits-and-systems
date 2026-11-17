@@ -1,0 +1,30 @@
+{
+  "planned_cases": 87,
+  "dense_AC_columns": 48,
+  "transients": 39,
+  "rendered_netlists": 87,
+  "original_review_files_unchanged": 84,
+  "python": "3.14.4",
+  "offline_tests_discovered": 217,
+  "offline_tests_passed": 212,
+  "new_tests_passed": 12,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denies hardlink creation in inherited recovery tests (WinError 5).",
+  "synthetic_streaming_stress": {
+    "native_format_PSF_bytes": 379354029,
+    "samples": 117665,
+    "saved_traces_including_time": 94,
+    "measurement_traces_including_time": 81,
+    "parse_wall_seconds": 31.93,
+    "parse_peak_working_set_MiB": 121.06,
+    "SHA256_verified": true,
+    "includes_full_measurement": false
+  },
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "real_olympus_smoke_files_collected": false,
+  "original_zip_sha256": "63d0272a2e9b93c64ef1c79519133806bc86e559ea1ddebbf8cd1e528fc6fe28",
+  "original_manifest_sha256": "e4a1b61de0d81f13798f2654e77acaadc2fa4acaa1bb6a4c3a366a6adc3d7bbb",
+  "stage_plan_sha256": "a2f8774d9887630fd9a1d5138f2758207bd01c3648299673a76eb2017d991dcc"
+}

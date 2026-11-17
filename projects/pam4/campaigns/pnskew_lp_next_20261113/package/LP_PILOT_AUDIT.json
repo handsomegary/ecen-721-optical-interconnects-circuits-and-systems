@@ -1,0 +1,155 @@
+{
+  "format": "lp_next_prior_audit_v1",
+  "compact_sha256": "3332651d46c5b1d52fe8953ba9f79e25dae30fe625f731c0054a07a4ab8b73d5",
+  "verified_cases": 28,
+  "raw_files": 124,
+  "raw_bytes": 309232330,
+  "case_checks": [
+    {
+      "case_id": "gmdrivelp_000_ss_bypass_p",
+      "bench_sha256": "4099955b1929422449320d90512417791c1b6e815e8483e25321fc42f4136d2d",
+      "measurement_sha256": "3761db37637f82375ecbf8b1bd9dca51fecc71d42c263cf4d1d48793869be2e5"
+    },
+    {
+      "case_id": "gmdrivelp_001_ss_bypass_n",
+      "bench_sha256": "ea21db1af2ee30e8a05a09914d88489c7d1b2e8b4f34b4ea15ffb1a279c0229d",
+      "measurement_sha256": "7b346a05f08055d0d7b69a0743e0943181fd487b60a4c8386c3516004539538d"
+    },
+    {
+      "case_id": "gmdrivelp_002_ss_ideal_p",
+      "bench_sha256": "cd224bd81c038af79877fbdd8cd91f5f605395eba39a57c5b912fb0949f0bd8b",
+      "measurement_sha256": "a7ed62ad1435f4112d959a9b1c3e806fc705f235976dbdcbbe7610582d3fce0e"
+    },
+    {
+      "case_id": "gmdrivelp_003_ss_ideal_n",
+      "bench_sha256": "ae2b97cd616cc16f5b26152e72d8fa4e3b88338101c52bfcb01e8e8b2f12c6aa",
+      "measurement_sha256": "c471754e487b66ce8e6bde034a3da65f21077c53a549d38ab12768a14a10c7c1"
+    },
+    {
+      "case_id": "gmdrivelp_004_ss_cs16_p",
+      "bench_sha256": "874d2a092697cce2001f5b1e1dac53168eba4303ab4b4314c51b70abbdb816f6",
+      "measurement_sha256": "4113b9c23cf5db504ba415478fc12ed7e330233ea2e67b576a55c2aaa36f0249"
+    },
+    {
+      "case_id": "gmdrivelp_005_ss_cs16_n",
+      "bench_sha256": "fb2ebfe776c78597065b81b48c24f2e275806a16c5efea91e61f49de3e3a649d",
+      "measurement_sha256": "67090884f3aaa10f2f42ff2312bf498022d472b6712af4997175fadcc233cabe"
+    },
+    {
+      "case_id": "gmdrivelp_006_ss_lp12lo80_p",
+      "bench_sha256": "9bb72868326027c2fc6805244006ebf0263e524cea0658fdf3bd7718dfa476aa",
+      "measurement_sha256": "90037fd6a3ecec5d9d1c1db717d8940715fc95f80b619f3764c19a31b5ccef1b"
+    },
+    {
+      "case_id": "gmdrivelp_007_ss_lp12lo80_n",
+      "bench_sha256": "6bf02ebc8460450df1f48edab1820d279711c5b80ee84f6146d025241e5452b2",
+      "measurement_sha256": "5c50bab6235bcd9d62424d2e7d06604059618e35196ef678ad6a7dc2fedcb5b3"
+    },
+    {
+      "case_id": "gmdrivelp_008_ss_lp14lo120_p",
+      "bench_sha256": "cea0e56366c5d1362b21f708df4466d16049ae9673b166dcd84b92d3db1afd4e",
+      "measurement_sha256": "fed0dc388b72992332747a9852ca68004a86fee57b0de466bc3491321e6928af"
+    },
+    {
+      "case_id": "gmdrivelp_009_ss_lp14lo120_n",
+      "bench_sha256": "c7d6fee4f9a1a8de6f7a2e594649058133fe39c9e5ea0238f0db59529eafcae9",
+      "measurement_sha256": "e2a6fbaa3911a531af277e59ca5015409b8a121dcd2d33238b2a673efb5fb2cb"
+    },
+    {
+      "case_id": "gmdrivelp_010_ss_lp12l120_p",
+      "bench_sha256": "b7209e0fc235119032a4171f38ce36be79cba5d615c6817b15b1ecb617077c69",
+      "measurement_sha256": "7407a1db0f526a9af99ed159a76f75314d51c3836865de1df373db6a450e6b26"
+    },
+    {
+      "case_id": "gmdrivelp_011_ss_lp12l120_n",
+      "bench_sha256": "b3ed6f97e289e366921775fa922bf62330b4f33859c56e86680e8c0a1576353a",
+      "measurement_sha256": "f40ae14cbddd64347db8ef9ac7692ee62071b1f5a8b7347cd1404f3e3ffc918f"
+    },
+    {
+      "case_id": "gmdrivelp_012_ss_bypass_p",
+      "bench_sha256": "c4c92b05f5e345319fc2f3074ac199c326916bbb4b7c8f2790ef393157f81eaa",
+      "measurement_sha256": "d8b324dffafc1063f6fc04e4f1b97f3cf38a296c26b8247270bfc334ce0d57f3"
+    },
+    {
+      "case_id": "gmdrivelp_013_ss_bypass_n",
+      "bench_sha256": "9f50fc1b4ab9ace259e12e5d53dbc81cfbf5371c3c5281d1cd93bdcce8fc7433",
+      "measurement_sha256": "b630273dea0fde74ea537d55fc396916bfaa21100fc559f974fe18cb33d3c65e"
+    },
+    {
+      "case_id": "gmdrivelp_014_ss_ideal_p",
+      "bench_sha256": "3f8ca44f8e2bb820d47b08e7c2fe8b7b6b28507545d6e66265a47c6e7176c16b",
+      "measurement_sha256": "d7674a77760845c67674dc47f10a22328ed69e64b8dbab117305773f2161a47d"
+    },
+    {
+      "case_id": "gmdrivelp_015_ss_ideal_n",
+      "bench_sha256": "efc6f44d11c8645066b323fd6e868103695728fb57fc27c584bce9e0b20703fa",
+      "measurement_sha256": "92b7d0602d7c500f4bc42fd23c950d6201cfe22995bb90eaa1d910ffd4907d4c"
+    },
+    {
+      "case_id": "gmdrivelp_016_ss_cs16_p",
+      "bench_sha256": "cf684a11b78e4768645d1663f06006bcd327652288b13919c319b018043048a7",
+      "measurement_sha256": "245c445a7fe012b026b155e5b03af5439ec572fb5fec2af1fb3468c9a5136cb2"
+    },
+    {
+      "case_id": "gmdrivelp_017_ss_cs16_n",
+      "bench_sha256": "70dbf0f5b906b2906b3a521b66d188a3c77671fe741065144f83082e141748a7",
+      "measurement_sha256": "09e05f9dbf2f8a27ee03502dedfc0df02f5af58f05f99ad088803240c3fa0e26"
+    },
+    {
+      "case_id": "gmdrivelp_018_ss_lp12lo80_p",
+      "bench_sha256": "831588659ef81bdb36ef8e8d112a456369fb863a2ad8975fea6979ef4d9bdfa6",
+      "measurement_sha256": "69a5d9bd87a550fdacce1d798a66600d0d3b0c98aeb4ae59f73c033bc48bf458"
+    },
+    {
+      "case_id": "gmdrivelp_019_ss_lp12lo80_n",
+      "bench_sha256": "21b49c7414ac2ac83f7262202b5a13e35f1a7b424351720ffc5c3b184bf0bfe6",
+      "measurement_sha256": "99b0fd810f855aa50d670f095e507dda9d97b8034a26800c233e7a9d4b61d497"
+    },
+    {
+      "case_id": "gmdrivelp_020_ss_lp14lo120_p",
+      "bench_sha256": "1e58d6292d1bcda780a31810a1c79a9468ffe92a6f0d4d70645d25dcc135abd6",
+      "measurement_sha256": "ad9517c16f73ba5f8e2234e839cb796b96c5c97b2276d95da5db886f9c13dc2c"
+    },
+    {
+      "case_id": "gmdrivelp_021_ss_lp14lo120_n",
+      "bench_sha256": "82ca79914f7baa76d8bff2b8037977e18767cd789316c87671b0093b7d944b46",
+      "measurement_sha256": "dbb4da117b0a018464627ecc361fce9a7d69dec561fff16dae55893bb6ee9cc1"
+    },
+    {
+      "case_id": "gmdrivelp_022_ss_lp12l120_p",
+      "bench_sha256": "762676672224a96346e4d3a2cf063366bb722d9f753d7a7844bcb41b7719212b",
+      "measurement_sha256": "a648d90a12f65976158e23b7e5cfb1a653daf97fd4c196a37c427c800fd6c24c"
+    },
+    {
+      "case_id": "gmdrivelp_023_ss_lp12l120_n",
+      "bench_sha256": "bfb7852fb508d9cba8a887f233d50c6012476e88ffb3a18afb65194c5f3b2d54",
+      "measurement_sha256": "2993a771d572f6b26092134a422f2bb8d4a4655e6aa4b8dede5dd58b80fa536e"
+    },
+    {
+      "case_id": "gmdrivelp_024_ss_cs16_p",
+      "bench_sha256": "f11d61fa02d6b35414cdd140c2c8c4bbc06f8b1f8fd8509eb6d83771ff805f2e",
+      "measurement_sha256": "211db8548ce3aaea929f8b44fcfb666e586b8a0ef921e84d61142fbf54820ebb"
+    },
+    {
+      "case_id": "gmdrivelp_025_ss_cs16_n",
+      "bench_sha256": "72e048a0620346c2c4e033432403c22645e84f435353c8428b09853b1b0cb5fa",
+      "measurement_sha256": "b9be393244aed5a6ca10c5a5ea70ec76aaccb5436a36dc78cf128721a6dd917c"
+    },
+    {
+      "case_id": "gmdrivelp_026_ss_lp14lo120_p",
+      "bench_sha256": "5b8d807f6871e44b874ab93ba8db1479c2ec6af6323e2370ea79053f83db960c",
+      "measurement_sha256": "0459c311e0dc2691e0b54579af8cd9e1b1ad33addb9086abb57db9d5f7c7a175"
+    },
+    {
+      "case_id": "gmdrivelp_027_ss_lp14lo120_n",
+      "bench_sha256": "88e905847a663d2e0134137ea24c7acb10642aeec160bb9ed38dfe05c5c4d59a",
+      "measurement_sha256": "23d144e7f4a3089aa170ed28e906a59bb280cbf53b3a4a90211da8df35b5242f"
+    }
+  ],
+  "lp14_SS_25ohm_loss_vs_same_route_ideal_dB": -1.8526410058747338,
+  "lp14_SS_added_total_mW": 9.677765245331933,
+  "lp14_SS_0ohm_dormant_over_selected_dBc": -41.78655836664085,
+  "lp14_SS_one_active_leg_A": 0.005945216095459264,
+  "lp14_SS_one_off_leg_A": 2.867549503927472e-05,
+  "lp14_SS_dual_driver_mW_fixed_bias_estimate": 19.26250014928802
+}

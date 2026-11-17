@@ -1,0 +1,104 @@
+ECEN 721 Project #6：PN skew、AFE、校準與模擬流程文獻補查
+查核日期：2026-11-15
+
+結論
+目前值得採用的是「保留已通過的電路，用接收端可觀察的誤差校準，再以獨立資料評分」。文獻支持前置 deskew、共模偵測、以 BER/SNR 選碼，以及相位／等化校準；本次沒有找到與本案 28nm、112 GBaud、完整 gm-tap 拓樸及負載相同的量測晶片。不能把概念、專利或低速實測當成本案已達標的證明。
+
+依使用者「做到 reference paper 差不多即可」：保留已接受的 55 碼、FF 中心 5.2 fs 餘裕、SS XT2 診斷及偏壓。先交五案可執行診斷，不因新增文獻自動擴大模擬或重做架構。完整 physical ADC、獨立訓練選碼、共同相位與有雜訊 SER 仍是不同的待辦。
+
+1. PN skew 有人真正做過；補償位置與可觀察量很重要
+
+Forghani 等的 VLSI 2023 原文，採前饋電阻與 predriver 的被動 skew network，量測 ±3.2 ps。這是 28 nm、112 Gb/s PAM4 TX；資料 Nyquist 為 28 GHz，文中的 56 GHz 是 PLL。可借用被動前饋降低有源級負擔的概念，不能直接移植成 56 GHz RX 的證明。[1]
+
+Kim/Yoo 的 TVLSI 2020 大學出版摘要明載在 AFE 結合差動與共模訊號消除 intrapair skew，另接三 tap DFE。這說明保留共模觀察是另一條途徑；該晶片為 6 Gb/s/lane，遠低於本案。此次僅取得摘要，沒有核實其範圍、步階與完整控制電路。[2]
+
+Intel 專利提出量測 (Vp+Vn)/2 的最大／最小值，逐次調整一腿的延遲，無需預知真實 skew。可借用作為校準觀察量；專利不是 224 Gb/s 矽實測。共模量也受 P/N 增益與外部共模擾動影響，本案不能只因共模變小就宣布補償成功。[3]
+
+2. TG 的 Ron／Coff 與 bank 負載
+
+ADI 官方資料明確指出，加大開關 W/L 雖降低 Ron，卻增加寄生電容、降低頻寬；開關放在高阻抗位置能降低 Ron 的分壓影響，但仍須處理電容。[4]
+
+這和本案兩次不同的失敗機制相容：早期低阻抗節點串聯 TG 受 Ron 影響，GLOBAL 多 tap TG 則受掛載電容影響。哪一項主導仍以各次對照模擬為據，不能拿一個通則代替診斷。coarse3 已通過，沒有理由再盲目加寬 TG 或恢復 coarse5/7。
+
+IBM 專利的可借用重點是 T-coil 延遲、constant-load 選路、dummy capacitive load，以及由接收訊號品質選路。這不是本案真實 TG 能成功的證明，也未核實相同製程／56 GHz 性能。[5]
+
+3. 不均勻碼距、接縫與 dispersion
+
+JSSC 2023 的 PI 論文研究電流／電壓／積分式插值及線性度。作者稿指出輸入諧波、線性電流權重、振幅變化與 AM–PM 都會影響相位線性。[6]
+
+本案的寬頻資料混合另有直接的線性模型：H_w(f)=w H_A(f)+(1-w) H_B(f)。其相位是複數和的 arg，而不是兩個延遲的算術平均；因此 7:1 不應預設等於 7/8 延遲。實際 gm 與電流分配又會隨工作點改變。時脈 PI 的方法提供診斷方向，但不能保證寬頻 PAM4 的 group delay 平坦。
+
+實作決定：沿用跨角落量過的控制字映射，跳過重疊碼。加權延遲作碼表指標，56 GHz 相位延遲保留作另一欄；最後用相同條件下的接收誤差判斷。已接受的中心餘裕不因參考論文解析度更細而重開 1/128 設計。
+
+4. 選碼、共同相位、FFE 與 SER
+
+IBM 的 PN skew 專利明載可依接收 BER、符號 SNR 或所需高頻等化程度選碼，不必讀入注入 skew 真值。[5] 本案適合在獨立 training 上比較接收誤差與共同取樣相位，鎖定設定後才算 payload。
+
+Eiselt 等 JLT 2017 的 PAM4 實驗用訓練資料使等化器收斂，將這些資料排除於 BER 計數。這篇是光鏈路，可借用測試方法，不能把它的 BER／功耗當本案門檻。[7]
+
+C0 這次五案仍固定歷史相位、lag、17-tap FFE 及端點碼，目的是看插入新電路後的可用性與補償趨勢。它不能證明硬體已能自行找碼；若誤差高，也不能直接推論 delay cell 失敗，須先分辨新增共同延遲、增益改變、clipping、ISI 與 secondary 本身問題。正式訓練時不使用待評分 payload 選碼／相位，重訓 FFE 的結果另列，避免混淆電路改善與等化器適應。
+
+這五案每取樣層只有 240 個 FFE 符號。報 errors/count 與 SER，不以零錯誤聲稱達到論文的低 BER；沒有新增任意合格數字。
+
+5. 為何單一 AC 延遲不足以簽核
+
+Cisco 向 IEEE 802.3dj 提交的 224G 研究呈現不同實體通道的 frequency-dependent skew，並比較對 SNR／COM 的影響。其 0.3–0.4 UI 是當時的討論建議，不是本課程可放寬 ±0.5 UI 的依據。[8]
+
+Nozadze 等的預印本以 SILD／FOM_SILD 描述 skew 造成的傳輸失真，並報告與 224 Gb/s SerDes BER 的關聯。它研究通道評估，並非補償晶片。[9] 這支持本案下一步應看時域結果，而不是只繼續追逐某一 ps 指標。
+
+6. 次取樣端雜訊與 settling
+
+原參考 Sun 論文的官方摘要包含 parametric T/H 與 switched sub-channel buffer，目標是改善 SNR、settling 與線性；量測是 56 GS/s、31.5 GHz 輸入頻寬、Nyquist ENOB 5.2。[10] 這些可作次取樣端診斷方向，不能直接證明目前 continuously biased CML buffer 適用同一開關時序，或能消除已取樣的雜訊。
+
+因此 primary 與 secondary 分開報；零 skew 已有的 secondary noise failure 不歸因於 PN skew。C0 無雜訊先確認接線、有效取樣與資料對齊，再決定是否需要處理 buffer／settling。
+
+7. Iref、OTA、beta multiplier 與 XT2
+
+查到的原始課程資料將 beta-multiplier startup、短通道偏壓、wide-swing cascode、regulated mirror 及 replica bias 分別處理。[11] 這些是已採用長通道鏡、匹配 VDS、replica servo 的合理背景，並不支持「beta 一律要 10 dB」或「所有尾管任何瞬間都不可離開 saturation」這類普遍硬門檻。
+
+本案決策仍依已完成證據：三角落啟動／掉電重啟、小擾動恢復、replica STB，以及總功耗與增益。有限頻段 |T|<1 與無交越點不能單獨證明所有工作點的全域穩定；也不能把不存在的 margin 填成已量到的無限大。已結案的 beta review 不在本輪重開。
+
+SS XT2 的相同行為也見於不切碼對照；目前先看接收結果，不為追求漂亮的 operating-region 標籤改偏壓。這是本案工程決定，不是文獻已替本案證明無風險。
+
+8. PSF 太大、收集失敗與重跑
+
+Cadence 的 strobe 文件說明 strobeperiod 讓 solver 在指定時間點求解，strobeoutput=strobeonly 只存這些點；maxstep 本身不等於對齊的輸出網格。save 文件建議依需要存 selected signals／currents。[12][13] C0 已採 178 條必要訊號及 UI/8 strobe，第一案仍要核對真正的 held samples 與 clocks。
+
+320／512／640 MiB 是本專案不同版本的 collector／runner 限制。Linux RLIMIT_FSIZE 限制每個檔案的 byte 數，超限可觸發 SIGXFSZ 或寫入 EFBIG；不是已知 Spectre 原生最大 PSF。[14] solver exit=0 也不能取代 clean completion、結尾、終止時間、必要 traces 和 hash 的核對。
+
+Cadence 支援 openResults() 讀保留結果後執行後處理。[15] 因而 collect-only 是正常工程流程。這次補上 stage/run/collect-only/summary 與 approval；模擬完成而收集失敗時保留原始紀錄和 raw，重收集不呼叫 solver。舊 SWITCH64 raw 已退役，不再要求讀回它。
+
+測試使用與 runner 相同的 run_status 產生路徑，涵蓋 task ID、exit=0 但 FATAL、原生 .tran.tran 檔名、秒單位、完整解析／計分／摘要與收集復原。收集器另接受 .tran 檔名。離線 PSF 是明示的合成測試資料；不是本機已取得 Olympus 波形，也不是已完成 Spectre 模擬。第一案真正 PSF 是本輪新增計分的實機確認。
+
+參考來源（原文／作者或機構來源；未附他人 PDF 全文）
+[1] Forghani et al., A 112-Gb/s 58-mW PAM4 Transmitter in 28-nm CMOS Technology, VLSI 2023, pp.1–2/Fig.4/6.
+https://www.seas.ucla.edu/brweb/papers/Conferences/Mahdi_VLSI23.pdf
+[2] Kim & Yoo, TVLSI 28(5),1107–1117,2020. DOI 10.1109/TVLSI.2020.2971558；機構摘要。
+https://pure.skku.edu/en/publications/a-6-gbs-wireline-receiver-with-intrapair-skew-compensation-and-th/
+[3] Intel, Skew detection and compensation for high speed I/O links, CN115576384A；專利技術敘述。
+https://patents.google.com/patent/CN115576384A/en
+[4] Analog Devices, Selecting the Right CMOS Analog Switch.
+https://www.analog.com/en/resources/design-notes/selecting-the-right-cmos-analog-switch.html
+[5] IBM, Differential line time skew compensation for high data rate receivers, US10681802B1；專利技術敘述。
+https://patents.google.com/patent/US10681802B1/en
+[6] Mishra et al., Improving Linearity in CMOS Phase Interpolators, JSSC58(6),1623–1635,2023. DOI 10.1109/JSSC.2023.3243305；IEEE摘要與作者稿可搜尋內文，全文直開遇 browser verification。
+https://ieeexplore.ieee.org/document/10049096/
+https://sudip.sites.olt.ubc.ca/files/2023/04/77.-Improving_Linearity_in_CMOS_Phase_Interpolators.pdf
+[7] Eiselt et al., JLT35(8),1342–1349,2017. DOI 10.1109/JLT.2017.2662800；作者稿 Sec.III–IV。
+https://backend.orbit.dtu.dk/ws/portalfiles/portal/190318975/JLT2662800.pdf
+[8] Kareti et al., Intrapair Skew Considerations for 224Gbps/lane Electrical Signaling, IEEE802.3dj contribution, Jan2024.
+https://grouper.ieee.org/groups/802/3/dj/public/24_01/kareti_3dj_02_2401.pdf
+[9] Nozadze et al., Practical Approaches to Quantifying Intra-Pair Skew Impact via Insertion Loss Deviation, arXiv2511.01787v2, revised2026-10-21；本次依摘要引用。
+https://arxiv.org/abs/2511.01787v2
+[10] Sun, A 56-GS/s 8-Bit Time-Interleaved SAR ADC in 28-nm CMOS, SMU2018；本次核對官方摘要，細部時序沿用專案既有閱讀紀錄，未推測。
+https://scholar.smu.edu/engineering_electrical_etds/12/
+[11] Saxena, CMOS Analog IC Design, University of Delaware；課程第6–8講目錄。未取得完整鏡電路講義，僅作方法索引。
+https://www.eecis.udel.edu/~vsaxena/courses/ece5411/s15/Lectures.htm
+[12] Cadence, Spectre Tech Tips: Using the Spectre Strobe Feature.
+https://community.cadence.com/cadence_blogs_8/b/cic/posts/spectre-tech-tips-using-the-spectre-strobe-feature
+[13] Cadence, Spectre APS Save Overview, Part1.
+https://community.cadence.com/cadence_blogs_8/b/cic/posts/spectre-tech-tips-spectre-aps-save-overview---part-1
+[14] Linux man-pages, getrlimit(2), RLIMIT_FSIZE.
+https://man7.org/linux/man-pages/man2/getrlimit.2.html
+[15] Cadence/Andrew Beckett, opening existing PSF for postprocessing.
+https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/22533/writing-simulation-data-into-a-file-after-running/1311207

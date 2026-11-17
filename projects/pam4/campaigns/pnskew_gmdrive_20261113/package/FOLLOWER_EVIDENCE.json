@@ -1,0 +1,72 @@
+{
+  "case_id": "fine_tt_p25_v090_driver_short_p_0_full_p",
+  "measurement_sha256": "9837a6ef28b10cf2b54704a241a430a5a3c21a89d90f20320e1c16aa48532a2c",
+  "Hz": 56000000000.0,
+  "stage_gains": [
+    {
+      "from": "PNC_PREP",
+      "to": "GMSAPVIN",
+      "H_complex": [
+        1.0,
+        0.0
+      ],
+      "gain_dB": 0.0
+    },
+    {
+      "from": "GMSAPVIN",
+      "to": "GMSAPFG",
+      "H_complex": [
+        0.9992615488511436,
+        0.0005558665104264221
+      ],
+      "gain_dB": -0.0064151307004102764
+    },
+    {
+      "from": "GMSAPFG",
+      "to": "GMSAPFO",
+      "H_complex": [
+        0.23096870780030715,
+        -0.147306501749004
+      ],
+      "gain_dB": -11.246739009800015
+    },
+    {
+      "from": "GMSAPFO",
+      "to": "GMSAPL",
+      "H_complex": [
+        0.9996668117695671,
+        0.008504071467691728
+      ],
+      "gain_dB": -0.0025802419753166695
+    },
+    {
+      "from": "GMSAPL",
+      "to": "GMSAPI",
+      "H_complex": [
+        0.7007177886041692,
+        -0.009169873665927595
+      ],
+      "gain_dB": -3.0883934626018505
+    },
+    {
+      "from": "GMSAPI",
+      "to": "GMSAPG",
+      "H_complex": [
+        0.9789224412818218,
+        -0.1930732725825757
+      ],
+      "gain_dB": -0.01929753988225587
+    },
+    {
+      "from": "PNC_PREP",
+      "to": "GMSAPG",
+      "H_complex": [
+        0.13783923025180353,
+        -0.13272231783284583
+      ],
+      "gain_dB": -14.36342538495985
+    }
+  ],
+  "follower_gm_S": 0.021055786539855216,
+  "follower_drain_current_A": 0.002034507548430488
+}

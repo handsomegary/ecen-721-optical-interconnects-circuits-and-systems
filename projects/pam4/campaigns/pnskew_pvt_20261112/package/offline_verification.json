@@ -1,0 +1,73 @@
+{
+  "status": "PASS_OFFLINE_NO_SPECTRE",
+  "revision": "r2",
+  "tests_passed": 20,
+  "checks": [
+    {
+      "argv": [
+        "verify_delivery.py"
+      ],
+      "exit_code": 0,
+      "output": "{\r\n  \"status\": \"OFFLINE_SOURCE_SHA_VERIFIED\",\r\n  \"files\": 391,\r\n  \"decks\": 106,\r\n  \"private_model_readback\": \"ON_OLYMPUS_BEFORE_RUN\",\r\n  \"new_solver_runs\": 0\r\n}\r\n"
+    },
+    {
+      "argv": [
+        "-m",
+        "unittest",
+        "-v",
+        "test_execution"
+      ],
+      "exit_code": 0,
+      "output": "test_accepts_only_documented_thread_evidence (test_execution.TestClassicEvidence.test_accepts_only_documented_thread_evidence) ... ok\r\ntest_case_paths_are_leaf_names (test_execution.TestClassicEvidence.test_case_paths_are_leaf_names) ... ok\r\ntest_cross_case_measurement_and_raw_output_keeper_rejected (test_execution.TestClassicEvidence.test_cross_case_measurement_and_raw_output_keeper_rejected) ... ok\r\ntest_mode_or_failed_solver_blocks_collect (test_execution.TestClassicEvidence.test_mode_or_failed_solver_blocks_collect) ... ok\r\ntest_denied_same_or_unknown_uid_scan_defers_retirement (test_execution.TestRawRetirement.test_denied_same_or_unknown_uid_scan_defers_retirement) ... ok\r\ntest_other_uid_is_skipped_but_open_raw_defers (test_execution.TestRawRetirement.test_other_uid_is_skipped_but_open_raw_defers) ... ok\r\ntest_partial_readback_requires_the_exact_missing_paths (test_execution.TestRawRetirement.test_partial_readback_requires_the_exact_missing_paths) ... ok\r\ntest_permission_denial_keeps_raw_and_does_not_invalidate_measurements (test_execution.TestRawRetirement.test_permission_denial_keeps_raw_and_does_not_invalidate_measurements) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 8 tests in 0.021s\r\n\r\nOK\r\n"
+    },
+    {
+      "argv": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "skew"
+      ],
+      "exit_code": 0,
+      "output": "......\r\n----------------------------------------------------------------------\r\nRan 6 tests in 0.003s\r\n\r\nOK\r\n"
+    },
+    {
+      "argv": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "pvt"
+      ],
+      "exit_code": 0,
+      "output": "......\r\n----------------------------------------------------------------------\r\nRan 6 tests in 0.125s\r\n\r\nOK\r\n"
+    },
+    {
+      "argv": [
+        "summarize_pvt.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "output": "usage: summarize_pvt.py [-h] --run-root RUN_ROOT --admission ADMISSION\r\n                        --output OUTPUT\r\n\r\nRead retained compact r3 results and the two original-detector corner\r\ntransients.\r\n\r\noptions:\r\n  -h, --help            show this help message and exit\r\n  --run-root RUN_ROOT\r\n  --admission ADMISSION\r\n  --output OUTPUT\r\n"
+    },
+    {
+      "argv": [
+        "skew/summarize_skew.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "output": "usage: summarize_skew.py [-h] --plan PLAN --run-root RUN_ROOT\r\n                         --admission ADMISSION --output OUTPUT\r\n\r\nAnalyze compact r5 readbacks and report predeclared PN-skew effect sizes.\r\n\r\noptions:\r\n  -h, --help            show this help message and exit\r\n  --plan PLAN\r\n  --run-root RUN_ROOT\r\n  --admission ADMISSION\r\n  --output OUTPUT\r\n"
+    }
+  ],
+  "r1_zip_sha256": "80b7fa1e8e5cb4492cd569bc5fd3692b8632ddafe83c6a59d2d4f834c935cb76",
+  "changes": [
+    "RAW_RETIREMENT_R2_zh_TW.txt",
+    "native/readback_guard.py",
+    "olympus_common.py",
+    "run_case.py",
+    "test_execution.py"
+  ],
+  "new_native_runs": 0,
+  "slurm_submissions": 0,
+  "real_raw_files_deleted": 0
+}

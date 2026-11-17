@@ -1,0 +1,35 @@
+Olympus 交接｜LP14 DIAG 收集修復
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_diagnostics.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+先在原 754102 campaign 讀取案 0 與 11 的檔案識別與雜湊。
+舊 raw 仍須在原位置。各案 status/intent 的 job ID 按原值核對。
+  /usr/bin/python3.11 -B recover_diag.py --mode snapshot \
+    --root "$LP_DIAG_ORIGINAL_ROOT" --snapshot "$LP_DIAG_SNAPSHOT"
+
+請使用者核准新收集器與這份 snapshot。用 SHA256SUMS.txt 和 snapshot 的
+SHA 填 approval_RECOVERY_TEMPLATE.json 副本。再從保留的 raw 收集：
+  /usr/bin/python3.11 -B recover_diag.py --mode collect-only \
+    --root "$LP_DIAG_ORIGINAL_ROOT" --snapshot "$LP_DIAG_SNAPSHOT" --approval "$LP_DIAG_RECOVERY_APPROVAL"
+
+只需 Python。此指令保留原 deck、run status、原 measurements/completion、
+log 與 raw。另寫 diagnostic_recovered.json、diagnostic_recovery_receipt.json、
+diagnostic_recovered_completion.json。新的完成標記同時綁量測與收據 SHA。
+先核對案 0 正式判定與 Iref 338.34 µA、kick；案 11 原生 PM 84.034°、
+GM 19.625 dB，核對 10.336/513.16 MHz 交越和正式判定。若仍是 review，
+保留原生證據與差異，先處理再擴跑。
+
+0/11 確認後，使用另一份新 run approval 獨立核准 1、2、12。
+使用原 diagnostic_plan.json SHA、新 SHA256SUMS.txt SHA、精確 case IDs
+與 startup/stb stages。既有 lp_diag_classic.sbatch、Spectre
+23.1.0.722.isr15 classic +mt=1、私有 shrink 和原 QOS。
+設定 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、
+PAM4_PDK_ROOT，PAM4_DRIVE_RUN_ROOT 指向新 campaign。
+beta 判讀請讀 BETA_CRITERIA_zh_TW.txt。
+
+  /usr/bin/python3.11 -B diag_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" \
+    --recovery-root "$LP_DIAG_ORIGINAL_ROOT" --output lp_diag_recovered_summary.json
+
+保持各案 raw，啟動、STB 其餘角落和 XT2 等本批證據再擴。

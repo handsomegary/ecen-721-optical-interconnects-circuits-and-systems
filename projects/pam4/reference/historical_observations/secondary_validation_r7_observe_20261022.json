@@ -1,0 +1,99 @@
+{
+  "observed_utc": "2026-10-23T06:52:52.196950Z",
+  "status": {
+    "actual_spectre_before_case": [],
+    "automatic_resume": false,
+    "automatic_retry": false,
+    "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+    "case_pid": 74276,
+    "case_process": {
+      "comm": "spectre",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_validation_r7_20261022/noise_secondary_c25_w2",
+      "executable": "/usr/bin/ksh93",
+      "pgid": 74276,
+      "pid": 74276,
+      "sid": 74276,
+      "start_ticks": 3164156,
+      "state": "R"
+    },
+    "case_session_id": 74276,
+    "complete_ADC_verified": false,
+    "completed_cases": [
+      {
+        "name": "noiseless_baseline_r5",
+        "summary_sha256": "c8edc2a3a8e6a2fbc7576f4d5289446d9d027975e9abf466c12a735693801e2c"
+      },
+      {
+        "name": "noiseless_secondary_c25_w2",
+        "summary_sha256": "df5ed0369f2203beefbcf077ca48a965984b26f6b7a56b7c5e784115be49a724"
+      },
+      {
+        "name": "noise_baseline_r5",
+        "summary_sha256": "0d7e4d1b2a2d8192d0835357ac26c0ba1756ec1f3ea5a7429993d50bf14acaf0"
+      },
+      {
+        "name": "noise_secondary_c25_w2",
+        "summary_sha256": "6b4d42258ab72630a771bbd9f767f727015af80ed29ce62843a509abf8d32469"
+      }
+    ],
+    "current_case": null,
+    "detector_sha256": {
+      "baseline_r5": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+      "secondary_c25_w2": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+    },
+    "effective_case_timeout_s": 7200,
+    "independent_fresh_data_validation": true,
+    "prepared_sha256": {
+      "noise_baseline_r5": "ab9e76a7a51e06ac1d7f1e76e6460eee88554045b94c8d5d8b11533ea9bc4c37",
+      "noise_secondary_c25_w2": "8088f7f5b3aae556f6f2d7a918026921cbd6270fe29425f1ef1473f4c1a4a6de",
+      "noiseless_baseline_r5": "50ee52e659ec420cb5daeeec59e67506a9cdeba6368c00bbadd765bcbb3afaba",
+      "noiseless_secondary_c25_w2": "dafbc522f5df1c5d0631a2748fde1d22287f453aef74a4a985f9167f409908eb"
+    },
+    "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f",
+    "run_started_utc": "2026-10-23T04:20:57.888561Z",
+    "runner": {
+      "comm": "python3",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "pgid": 10168,
+      "pid": 10168,
+      "sid": 10168,
+      "start_ticks": 2545193,
+      "state": "R"
+    },
+    "scope": "Independent fresh-data comparison of original10fF/1um and selected25fF/2um secondary sampling branch, with each exact previously frozen detector. Numerical7bit quantizer and17tapFFE, reset comparators and ideal clocks remain; no full ADC certification or physical digital FFE verification.",
+    "simulations_started": 4,
+    "started_utc": "2026-10-23T04:20:43.936590Z",
+    "status": "complete",
+    "symbols_file_sha256": "ebbb0c237a2a32ce5cdd44331402cfd333e3a4d919bace72202a1560ff69712f",
+    "updated_utc": "2026-10-23T06:41:15.802486Z",
+    "validation_fitting_performed": false
+  },
+  "launch": {
+    "automatic_retry": false,
+    "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+    "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f",
+    "runner": {
+      "comm": "python3",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "pgid": 10168,
+      "pid": 10168,
+      "sid": 10168,
+      "start_ticks": 2545193,
+      "state": "S"
+    },
+    "scope": "2026-10-22 user explicitly authorized one independent fresh-data baseline vs25fF2um comparison: 2noiseless then2noise, fixed pre-existing trained detectors, no fitting or extra candidates; monitor30min, stop/report failures, no retry.",
+    "script_sha256": "01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0",
+    "started_utc": "2026-10-23T04:20:57.999923Z"
+  },
+  "identity": {
+    "live": null,
+    "boot_matches": true,
+    "start_matches": false,
+    "script_matches": true
+  },
+  "diagnostic": {},
+  "actual_simulators": [],
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb"
+}

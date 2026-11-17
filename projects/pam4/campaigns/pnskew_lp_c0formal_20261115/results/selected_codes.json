@@ -1,0 +1,46 @@
+{
+  "design_source_sha256": "3d9ebc0211077ef611dd17910412fa22388b0615163148357f7b68681b8f267e",
+  "phase_sha256": "39f5c214ff5114015794ba1a38c1c10bbff727a4ed6d03a5b0fe762064e1095b",
+  "codes": {
+    "a": 0,
+    "b": 60
+  },
+  "primary_training_rmse": {
+    "a": [
+      [
+        0,
+        0.3496804256499529
+      ],
+      [
+        -60,
+        0.4082694884246104
+      ],
+      [
+        60,
+        1.2222672986096283
+      ]
+    ],
+    "b": [
+      [
+        0,
+        0.43634010686287833
+      ],
+      [
+        -60,
+        1.2948005896423125
+      ],
+      [
+        60,
+        0.40160343245115293
+      ]
+    ]
+  },
+  "training_measurement_sha256": {
+    "c0f_training_a_cp00_phm1": "26bcce1811e369774806b04dddd59a5b9dfbb8848ba0e3fec38c6e2571572c03",
+    "c0f_training_a_cm60_phm1": "de98178aa651373b3848d7c2068b9f38a4d212aaa713e367dcf805752edbf6fb",
+    "c0f_training_a_cp60_phm1": "993dcb14cbf7b422cf1ac95eeba499da2aaba4c3ccbf704f66c3935b920bc56a",
+    "c0f_training_b_cp00_phm1": "d6952851e64f5d5717f370d5ed4e9033660b6f3e8c3e360e974bc34c25c33211",
+    "c0f_training_b_cm60_phm1": "40f2e31361117cfff882e64ab15666d6d845529db8bcd3b661fffdf94f1e407d",
+    "c0f_training_b_cp60_phm1": "fefdc2295c240c7d5284da88b695453a4a3dd579ce65cae89d3d189717657b31"
+  }
+}

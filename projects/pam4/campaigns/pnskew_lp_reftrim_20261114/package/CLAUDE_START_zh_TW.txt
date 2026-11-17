@@ -1,0 +1,21 @@
+Olympus 交接｜LP14 REFTRIM
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B ref_trim.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議先批准 0–6 共七案。0/1 是 TT 等 VDS R=1.80/2.05 kΩ。
+2 是 TT N 側疊接 gate headroom 診斷。3–6 是 SS/FF OTA-only，
+固定理想 Iref，P/N 成對。這批使用新 case IDs，舊 REFSMOKE 6–12 暫停。
+  /usr/bin/python3.11 -B ref_trim.py --mode stage --index 0 --index 2 --index 3 --index 5 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+用 trim_plan.json SHA、SHA256SUMS.txt SHA、精確 case IDs 與 smoke stage
+填新 approval。原私有 shrink、Spectre 23.1.0.722.isr15 classic +mt=1、
+SPECTRE_DEFAULTS=-E。用新的 campaign root 與 ref_trim_classic.sbatch。
+每欄 1 CPU／4 GiB／30 min；預估 solver 1–10 s。先試第 2 案的 DC 儲存
+與工作點，再擴至其他已核准索引。raw 留在 Olympus。
+  /usr/bin/python3.11 -B ref_summary.py --plan trim_plan.json --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_reftrim_summary.json
+
+回報 TT 斜率、R 內插值、疊接的 gate/VDD 與 VDS 餘裕，及兩個 OTA
+的實測 legs、增益、功耗與偏差。索引 7–13 等結果出來再審查，若 R 內插
+值有變，先重產 deck 與 SHA。PVT 同一 R、完整調節器、整合與時域另批批准。

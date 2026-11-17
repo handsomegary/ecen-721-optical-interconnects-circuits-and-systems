@@ -1,0 +1,2528 @@
+{
+  "schema_version": 1,
+  "milestone": "fixed_four_case_independent_validation_verified",
+  "updated_date": "2026-10-29",
+  "complete_ADC_verified": false,
+  "automation_id": "project-6",
+  "automation_stop": "No monitor restarted; next fixed two-case circuit diagnostic is planned only and awaits at least8GiB free space. No retry or old queue restart.",
+  "VM": "user@192.0.2.1",
+  "project_VM": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm",
+  "local_root": "<LOCAL_ECEN720>",
+  "SSH_options": [
+    "BatchMode=yes",
+    "IdentitiesOnly=yes",
+    "ConnectTimeout=8",
+    "StrictHostKeyChecking=yes",
+    "HostKeyAlias=192.0.2.1"
+  ],
+  "permissions": "User authorized project simulations/edits and approximately70KB derived numeric summaries in outputs. Never export PDK, model coefficients, native cards, documents or raw waveforms. /path/to/local/cadence-home/pdk_probe already deleted; do not recreate. Protect other projects and all historical results. User on 2026-10-22 additionally authorized retiring useless superseded waveforms while retaining latest complete reanalyzable data; follow waveform_retention_20261022 and current paused-run protection.",
+  "license_environment_paths_only": {
+    "CDS_LIC_FILE": "<LICENSE_FILE>",
+    "LM_LICENSE_FILE": "<LICENSE_FILE>"
+  },
+  "active_work": {
+    "PAM4_training": {
+      "VM_python_script": "scripts/adc_backend_pam4_r5.py",
+      "study": "r5_late1",
+      "variant": "cml2_late1",
+      "directory": "runs/adc_backend_pam4_r5_20261013/r5_late1",
+      "log": "runs/r5_dispatch_20261013/pam4_training.log",
+      "started": true,
+      "training_timeout_s": 1800,
+      "training_data_seed": 2026101301,
+      "training_noise_seed": 157,
+      "validation_data_seed": 2026101302,
+      "validation_noise_seed": 173,
+      "validation_symbols": 2048,
+      "next": "Bounded round complete; no further automatic simulations. Secondary path remains unsuitable for complete receiver claim.",
+      "validation_queue": {
+        "pid": 6762,
+        "state": "runs/project6_reboot_resume_20261013/status.json",
+        "script": "scripts/run_r5_reboot_resume.py",
+        "note": "Historical retired 10/13 queue; never restart. Latest 10/17 retry is terminal; see r5_noise_retry_20261017."
+      },
+      "status": "training_complete_frozen",
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "training_diagnostic": "training_diagnostic_v1.json SHA ed9822ebf8417901c357632eba5ad5f16c19c2fb3d581c26142c6ff098ab8ae9. Secondarygain-.556,transferresidual1.266mV;bufferfinal8psmovement1.116mVrms,secondaryacquisitionlag.909mVrms. 64UIhistorydoesnotimproveerrors. Futurehardware r6 isseparate withnewseeds.",
+      "validation_noiseless_result": {
+        "status": "validation_complete",
+        "training_only": false,
+        "data_seed": 2026101302,
+        "input_symbols": 2048,
+        "FFE_windows": 2032,
+        "frozen_unchanged": true,
+        "validation_fitting_performed": false,
+        "summary_sha256": "ff8a466c80549cc476e8c768e56aea64cdab4ed4abb8a6b5d2709769519f716f",
+        "primary_ideal7bit_FFE_errors": 0,
+        "secondary_ideal7bit_FFE_errors": 2,
+        "primary_raw_FFE_errors": 0,
+        "secondary_raw_FFE_errors": 0,
+        "held_Vppd": [
+          0.09050758453918628,
+          0.050637267733864344
+        ],
+        "quantizer_fullscale_Vpp": [
+          0.1,
+          0.075
+        ],
+        "clipped_counts": [
+          0,
+          0
+        ],
+        "VDD_power_mW": 11.968320067635869,
+        "limitations": "Fresh data with frozen hardware/FFE, no holdout fitting. Paired noise remains unavailable after interrupted run and 10/17 simulator read-in failure. Different frozen FFEs for quantized/unquantized branches prevent isolated quantization attribution. Reset comparators and ideal numeric quantizer are not a complete physical ADC.",
+        "VM_note": "notes/r5_noiseless_validation_complete_20261013.json"
+      },
+      "validation_noise_result": {
+        "status": "validation_complete",
+        "input_symbols": 2048,
+        "FFE_windows": 2032,
+        "data_seed": 2026101302,
+        "noise_seed": 173,
+        "fitting_performed": false,
+        "frozen_unchanged": true,
+        "ideal7bit_FFE_errors_primary_secondary": [
+          0,
+          164
+        ],
+        "ideal7bit_FFE_SER": [
+          0.0,
+          0.08070866141732283
+        ],
+        "gray_bit_errors": [
+          0,
+          164
+        ],
+        "scored_bits": 4064,
+        "gray_BER": [
+          0.0,
+          0.040354330708661415
+        ],
+        "unquantized_FFE_errors_primary_secondary": [
+          0,
+          156
+        ],
+        "held_mVppd": [
+          90.60792733825163,
+          52.38487405013614
+        ],
+        "quantizer_fullscale_mVpp": [
+          100.0,
+          75.0
+        ],
+        "clipped_counts": [
+          0,
+          0
+        ],
+        "modeled_VDD_mW": 11.968388924576237,
+        "noise_conditions": {
+          "noise_seed": 173,
+          "noisefmax_Hz": 150000000000.0,
+          "noisefmin_Hz": 500000000.0
+        },
+        "simulator_exit_code": 0,
+        "simulator_seconds": 4139.794,
+        "summary_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+        "raw_transient_sha256": "a3211485c81b255e1e13b2871e8f2712b31cdefd6e1f4f097f7611d2ea1b229e",
+        "latest_receipt_VM": "notes/r5_pair_complete_20261020.json"
+      },
+      "previous_noise_interruption": {
+        "status": "interrupted_by_VM_power_cycle",
+        "performance_result": null,
+        "noise_seed": 173,
+        "last_partial_write_UTC": "2026-10-13T17:36:21.893045Z",
+        "partial_files_preserved": 8,
+        "partial_summary_sha256": "ba3c4625a91c9483c1053d6877895f1cd2ed48920b4970fd51e29eaee8b4bbfa",
+        "terminal_receipt_sha256": "67685952f7d820c2bea5fcda9fc0a3133261102daf503f92bf81dde5334d3719"
+      }
+    },
+    "native_CDAC": {
+      "status": "Both native topologies successfully simulated. runs/adc_cdac_native_r5_20261013/cdac_summary.json. Binary composedDNL.031859LSB INL.015929, maxendpointLSBsettling256.7ps. Split composedDNL.031281LSB INL.028883, maxendpointLSBsettling41.42ps; independent7stepdiagnostic, notfullSAR.",
+      "scope": "Native capacitor and switch charge redistribution/weights; no complete SAR claim"
+    },
+    "r6_preparation": "Implemented, rootreviewed andactuallylaunched. See r6_screen.",
+    "r6_screen": {
+      "status": "complete; all3originalnewcandidatesfailedDCgain;baseline matchednoiseless/noise181 completed",
+      "pid": 6039,
+      "script": "scripts/adc_backend_screen_r6.py",
+      "script_sha256": "f14fb804fafa9f6b4f59b793ba0ddb232ed3eeb25ed380bf922b064a13c74b2b",
+      "root": "runs/adc_backend_r6_screen_20261013",
+      "state": "summary.json",
+      "log": "worker_resume1.log",
+      "lock": "runner.lock",
+      "CLI": "--run --noise-check --timeout 7200",
+      "scope": "Max4DC+4noiseless512+2noise512; newdata2026101303 noise181;trainingonly,nofinalBER",
+      "next": "Baselinecomplete andalreadyverified/reusedbyr6b. Do notrestartPID6039 orre-runbaseline.",
+      "DC_results": "baselinegain.58646,total11.87055mW;R350bias.60gain.788426,CM.764755,total15.0917mW;R250bias.65gain.622598,CM.779058,total16.1647mW,C25sameDC. Internalgaingate.8 failed;do notcountnewcandidatespassed.",
+      "training_comparison": "512training224selection windows. Ideal7bit+17tapFFE:noiseless primary0/224 secondary0/224;noise181 primary0/224 secondary14/224 SER.0625. Raw_FFE stillmeans FFEwithoutquantization, notunequalized. ThisdoesnotproveBER ormemoryelimination. ClockedVDD11.9679mWnoiseless/11.9668mWnoise excludesactualclocks,CDAC/reference/control/DSP."
+    },
+    "r6b": "COMPLETE, sourceSHA9edd0dc301205d0626944f7d7723ed24787fdd3f520da2c4642d55279e948553. No further r6b jobs. Selectednoise23/224 vsbaseline14/224; power+31.3percent. FinalsummarySHA c86f65e98af878baba356315adf1457add7e5749e250c173265aae89e2980855. See r6b_progress.selected_noise_result; VM note notes/r6b_noise_complete_20261013.json.",
+    "resume_pipeline": {
+      "pid": 6762,
+      "process_start": "67454",
+      "boot_id": "da22485f-18e2-4df3-8a4e-f94b425c4ca8",
+      "root": "runs/project6_reboot_resume_20261013",
+      "state": "status.json",
+      "log": "worker.log",
+      "script": "scripts/run_r5_reboot_resume.py",
+      "script_sha256": "0c02120d0a049f22b52f5fa08392cb1498f13718c6a6a410f35c263416b25b16",
+      "stage": "interrupted_by_VM_power_cycle",
+      "sequence": "Originalfrozenr5 noiseless retry -> originalfrozenr5 noise",
+      "child_pid": 21723,
+      "child_process_start": "398995",
+      "own_simultaneous_simulations": 1,
+      "global_start_gate": "Beforeeachcase requirestablebootuptime>=600, totalactualSpectre<2, nootherownedworker/orphans. Externalprojects untouched; noslotreservation againstotherlaunchers.",
+      "next": "Historical retired work. Latest 10/17 noise retry failed before transient; automation PAUSED. Do not restart historical processes.",
+      "current_observation": "New boot c0a881ae-b1e7-4b6a-9093-112dcebd35dc; no owned workers/simulators; stale running state snapshotted and marked terminal in VM.",
+      "active_pid": null
+    },
+    "r6b_progress": {
+      "status": "COMPLETE:3noiseless+1selectednoise. Selected input2_r400_bias060 did NOT improve noisy training: secondary23/224 vs baseline14/224; primary0/224 both. No more r6b runs.",
+      "pid": 45216,
+      "process_start": "199991",
+      "case_order": [
+        "input3_r350_bias060",
+        "input2_r400_bias060",
+        "input3_r350_bias065"
+      ],
+      "gain_1GHz_VV": [
+        0.9828100711,
+        0.8853102939,
+        1.0697682213
+      ],
+      "static_power_mW": [
+        15.45961406,
+        15.07874549,
+        16.78031009
+      ],
+      "primary_H56_additional_dB": [
+        -0.7448136974,
+        -0.6490471648,
+        -0.7556007346
+      ],
+      "note": "Historical fixed candidate screen completed. Do not continue or rerun candidates. DC eligibility is not PAM4/SER/ADC qualification; selected noisy candidate was not adopted.",
+      "first_candidate_result": {
+        "case": "input3_r350_bias060",
+        "training_only": true,
+        "primary_errors": 0,
+        "secondary_errors": 0,
+        "selection_symbols": 224,
+        "secondary_MSE": 0.007415576528640272,
+        "secondary_fullscale_Vpp": 0.075,
+        "modeled_VDD_mW": 15.967341671170248,
+        "summary_sha256": "5d00caf83561a1180375b3dac16e7a00f14de1be8561e3ebd0d8d65aa6a58332",
+        "noise_status": "not selected; no further noise run authorized in bounded screen",
+        "note": "Baseline also0/224 noiseless; no demonstrated noisy SER improvement. Ideal7bit+17tapFFE only; excludes actual converter and clock/reference/control/DSP power.",
+        "VM_record": "notes/r6b_first_candidate_complete_20261013.json"
+      },
+      "observed_simulator": {
+        "pid": 105291,
+        "start_ticks": "474560",
+        "case": "noise181/input2_r400_bias060",
+        "observed_utc": "2026-10-13T13:58:28.193514Z",
+        "note": "Historical snapshot; verify before acting."
+      },
+      "second_candidate_result": {
+        "case": "input2_r400_bias060",
+        "training_only": true,
+        "primary_errors": 0,
+        "secondary_errors": 0,
+        "selection_symbols": 224,
+        "secondary_MSE": 0.006589633001539613,
+        "secondary_fullscale_Vpp": 0.075,
+        "modeled_VDD_mW": 15.716778782059494,
+        "summary_sha256": "f5a16670c746c89beaad15ada0d5da02e9347aec7cbdf99d0c98f65c8e155958",
+        "noise_status": "complete,23/224",
+        "VM_record": "notes/r6b_second_candidate_complete_20261013.json"
+      },
+      "third_candidate_result": {
+        "case": "input3_r350_bias065",
+        "training_only": true,
+        "primary_errors": 0,
+        "secondary_errors": 0,
+        "selection_symbols": 224,
+        "secondary_MSE": 0.008209529916859151,
+        "secondary_fullscale_Vpp": 0.075,
+        "modeled_VDD_mW": 17.683820615134312,
+        "summary_sha256": "4bb9d783b037e793de40c51c2b4b7d36bd4db79ffd29b80140bfb086f4f50995",
+        "secondary_fit_clipped": 2,
+        "secondary_selection_clipped": 2
+      },
+      "selected_case": "input2_r400_bias060",
+      "selected_before_noise_sha256": "72e931a576657ceaf3d3efb3a641ac5ce9fc0131b8b2ad4e20f57c912f2fd318",
+      "selected_noise_result": {
+        "case": "input2_r400_bias060",
+        "data_seed": 2026101303,
+        "noise_seed": 181,
+        "training_only": true,
+        "primary_errors": 0,
+        "secondary_errors": 23,
+        "selection_symbols": 224,
+        "secondary_SER": 0.10267857142857142,
+        "secondary_MSE": 0.44726629725267814,
+        "secondary_fullscale_Vpp": 0.2,
+        "secondary_lag": 6,
+        "secondary_raw_FFE_errors": 24,
+        "modeled_VDD_mW": 15.71574986316674,
+        "summary_sha256": "87f9fd0be67c266acf76961f9db0bd3923d8323db4ae678430c13aff06226faf",
+        "aggregate_summary_sha256": "c86f65e98af878baba356315adf1457add7e5749e250c173265aae89e2980855",
+        "interpretation": "No support to replace baseline: higher selected noisy error count and about31percent higher power. Short training selection, independent FFE/lag/range; same seed is not same analog noise realization across hardware. Not independent BER or completeADC."
+      },
+      "final_VM_note": "notes/r6b_noise_complete_20261013.json"
+    },
+    "admission_watcher": {
+      "status": "retired afterVMreboot; oldstatussnapshotted; replacedbynewwrapper per-casecapacitygate",
+      "pid": 111089,
+      "process_start": "518921",
+      "script": "scripts/watch_project6_admission.py",
+      "script_sha256": "a25a775c9a04cd527e3587d30695bb4a1e7936f8587bf44213a6887cd7848482",
+      "state": "runs/project6_admission_watch_20261013/status.json",
+      "log": "runs/project6_admission_watch_20261013/worker.log",
+      "events": "runs/project6_admission_watch_20261013/events.jsonl",
+      "scope": "One-shot r5 noiseless-to-noise dispatch gate only. No r6b signaling. Exact pipeline11646/start67680; exact directchild queue; exact noiseless validation child. Stops queue parent only while first child completes; CONT only after child ends and global actual Spectre count <2, with no owned orphan simulator.",
+      "paused_by_watcher": false,
+      "max_runtime_hours": 6,
+      "normal_wait": "A T-state r5 queue may be intentionally held. Inspect watcher status/identities before any intervention; never manually CONT just because queue is T. Spectre and validation child are not paused.",
+      "failure": "On source/process mismatch, watcher error, six-hour bound, or pipeline exit, no cleanup CONT is sent. Preserve receipt, inspect current authorization and exact identities before repair. Prior status prevents duplicate replay.",
+      "limitations": "Capacity check cannot reserve against unrelated launchers. Existing r6b last noise run continues; it has no additional launches. Existing pipeline handles initial r5 admission. Source files and frozen design untouched.",
+      "tests": "Local and VM Python3.6 compile and synthetic identity/capacity tests passed; no tests sent process signals.",
+      "queue_identity": {
+        "pid": 121662,
+        "start": "570334",
+        "ppid": 11646
+      },
+      "first_validation_identity": {
+        "pid": 121749,
+        "start": "570344",
+        "ppid": 121662
+      }
+    },
+    "reboot_recovery": {
+      "status": "Historical 10/13 recovery: noiseless completed; noise later interrupted. Latest 10/17 unchanged retry terminated before transient; automation PAUSED.",
+      "first_observed_utc": "2026-10-13T14:42:12.183983Z",
+      "first_boot_id": "26c8f3c5-17e9-492b-820b-e94446715e10",
+      "latest_observed_utc": "2026-10-13T17:02:40.45616Z",
+      "latest_boot_id": "da22485f-18e2-4df3-8a4e-f94b425c4ca8",
+      "latest_uptime_s": 8242.29,
+      "all_old_workers_gone": true,
+      "partial_status": "validation_noiseless generated_only; no run_status or Spectrecompletion; partialraw preserved",
+      "archive_done": true,
+      "archive_preflight_result": "Historicalfirstattempt abortedbeforemutations aftersecondVMreboot. Subsequentstablebootpreflight passed; archivecompleted at14:55:56UTC, asrecordedbyarchive_doneandreceipt.",
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "r6b_complete_sha256": "c86f65e98af878baba356315adf1457add7e5749e250c173265aae89e2980855",
+      "next": "Historical retired work. Latest 10/17 noise retry failed before transient; automation PAUSED. Do not restart historical processes.",
+      "archive": "runs/adc_backend_pam4_r5_20261013/r5_late1/validation_noiseless_interrupted_vmreboot_20261013T1440Z",
+      "receipt": "notes/reboot_recovery_20261013T1440Z/receipt.json",
+      "receipt_sha256": "94c81b7cfa60d968baad15b43191f9f386adf81bd27be9fe5c3d4cfab7f97020",
+      "identical_retry_deck_sha256": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3",
+      "identical_symbols_sha256": "67fa287fe82d08414b207177bf915c50e4b61692cc1fde0d4b9dbf4774f54633",
+      "actual_simulator": {
+        "pid": 21864,
+        "start": "399016",
+        "observed_utc": "2026-10-13T17:02:40.45616Z",
+        "state": "R",
+        "CPU_seconds": 4245.3,
+        "note": "noise validation. Historicalidentity; verifybootandstartbeforeacting."
+      },
+      "resume_note": "notes/reboot_recovery_20261013T1440Z/resume.json",
+      "resume_note_sha256": "9dca81f9923f06ab89a3db01550ea13295c283789ab3908b981680e0fd1f960d",
+      "validation": "Local+VMPython3.6compile/synthetichelpertests passed. Frozenidentity10scripts/native/frontend+protectedPDK/configSHA verified; holdoutledgercompatible; actualretrydeckandsymbolhashmatch archivedpartial. NoPC/VMpoweractions orotherprojectsignals performed."
+    },
+    "previous_resume_pipeline": {
+      "pid": 11646,
+      "root": "runs/project6_resume_pipeline_20261013",
+      "state": "pipeline_status.json",
+      "log": "worker.log",
+      "script": "scripts/run_project6_resume_pipeline.py",
+      "script_sha256": "2fe6681d0fa104433758776f061a6a478489391cd965458a8daa92871c4e7468",
+      "stage": "interrupted_by_VM_reboot; oldPID no longeralive",
+      "sequence": "resumedr6PID6039 -> r6b3fixedcandidate/noise -> frozenr5pairedvalidation",
+      "own_simultaneous_simulations": 1,
+      "global_start_gate": "Pipeline gates before whole groups; queue-only admission watcher PID111089/start518921 now gates r5 inter-pair transition. Current r6b final noise run already dispatched, no more r6b launches. No global reservation against unrelated launchers.",
+      "next": "Historical retired work. Latest 10/17 noise retry failed before transient; automation PAUSED. Do not restart historical processes.",
+      "process_start": "67680",
+      "child_pid": 121662,
+      "child_process_start": "570334"
+    },
+    "r5_noise_retry_20261017": {
+      "status": "simulator_readin_failure",
+      "root": "runs/project6_noise_retry_20261017",
+      "state": "runs/project6_noise_retry_20261017/status.json",
+      "script": "scripts/run_r5_noise_retry_20261017.py",
+      "expected_boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+      "host_D_free_bytes_preflight": 42549620736,
+      "guest_free_bytes_preflight": 84186988544,
+      "owned_simulators_preflight": 0,
+      "other_simulators_preflight": 0,
+      "scope": "Same frozen r5 hardware/FFE/range/data2026101302/noise173; unchanged retry, not an independent holdout. Completed noiseless reused.",
+      "source_immutable_verified": true,
+      "next": "Resolve simulator/tool-environment compatibility before any further dispatch; preserve frozen design and failed evidence. No additional parameter candidates or automatic retries.",
+      "started_UTC": "2026-10-17T17:08:07.769971Z",
+      "ended_UTC": "2026-10-17T17:08:10.86554Z",
+      "performance_result": null,
+      "simulator": "Spectre 18.1.0.077 64bit",
+      "simulator_exit_code": -6,
+      "simulator_seconds": 1.179,
+      "issue": "SPECTRE-18 segmentation fault during hierarchy flattening/circuit read-in; no transient result",
+      "state_sha256": "9de9116a61eb937ff3cf7fb8bc16a74f3289ddb5d47243848e7578b9c094fb03",
+      "script_sha256": "5af5a72130fd22af6786297c44115343beda6c9ba522749eafff17a41e2e9873",
+      "summary_sha256": "7c1b3e2b0e3eef0cbda8c6b0ab5b6d9bf7f05b26dcb8a750ad7cf153bbba86bb",
+      "log_sha256": "cd1dd2b40f10aab44e1bc4e7e17aedb4e9f224eb1ab321b356a9bd303ee8ff19",
+      "deck_sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2",
+      "symbol_sequence_sha256": "67fa287fe82d08414b207177bf915c50e4b61692cc1fde0d4b9dbf4774f54633",
+      "archive": "runs/adc_backend_pam4_r5_20261013/r5_late1/validation_noise_interrupted_powercycle_20261013_archived_20261017",
+      "archive_manifest_sha256": "cc72d98512be321810e587d31f3f8c616b51a76159e0b47b3ada9ac27b554675",
+      "archived_file_count": 8,
+      "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+      "historical_wrapper": {
+        "pid": 16292,
+        "start": "101207"
+      },
+      "historical_child": {
+        "pid": 16511,
+        "start": "101310",
+        "sid": 16511,
+        "pgid": 16511
+      },
+      "diagnosis": "Old/new tool version, deck hash and logged include paths agree. Main PDK hash unchanged; no complete prior environment/transitive-include hash baseline. No proven root cause or verified fix. Failure cannot establish MOS/receiver performance.",
+      "owned_workers_remaining": [],
+      "cleanup_signals": [],
+      "other_projects_signaled": false,
+      "automatic_retry_permitted": false,
+      "final_VM_receipt": "notes/noise_retry_failure_20261017.json",
+      "final_VM_receipt_sha256": "09c51f1b7e9d4fa9360d1998bed52237613c5ac095d1f0447e5e90e2887c18fc"
+    },
+    "readin_diagnostic_20261020": {
+      "state": "runs/project6_readin_diagnostic_20261020/status.json",
+      "script": "scripts/diagnose_readin_20261020.py",
+      "script_sha256": "4e9251e8ba4c30cb0d2b298136188c6b59ecbd32fb222f18bead5a1d7b816ff6",
+      "scope": "Max three sequential 30-second read-in diagnostics; no waveform metrics or fitting. Same deck; B only if A early SPECTRE-18, A2 only if B progresses.",
+      "status": "complete",
+      "summary_sha256": "7ecbcfa75c135d15593363141997e73a310fc18e835498bf53454dbde5e35e90",
+      "cases_executed": 1,
+      "interpretation": "A_original reached transient; 30s intentional SIGINT; no metric extraction; not holdout completion"
+    },
+    "r5_noise_retry_20261020": {
+      "status": "simulator_readin_failure",
+      "started_UTC": "2026-10-20T15:21:40.109045Z",
+      "ended_UTC": "2026-10-20T15:21:43.461666Z",
+      "performance_result": null,
+      "simulator": "Spectre 18.1.0.077 64bit",
+      "simulator_exit_code": -6,
+      "simulator_seconds": 1.784,
+      "issue": "SPECTRE-18 segmentation fault during hierarchy flattening/circuit read-in; no transient result",
+      "root": "runs/project6_noise_retry_20261020",
+      "state": "runs/project6_noise_retry_20261020/status.json",
+      "state_sha256": "4d6bef1ea9a56a9cca84a7aadc3e5b1e94511b9a399a597e707dffa6dc20231e",
+      "script": "scripts/run_r5_noise_retry_20261020.py",
+      "script_sha256": "333c848818715bc34fceb2b0ee526242b3aa60c96ac791f64635f5e2b5372849",
+      "summary_sha256": "282aa605d96b7b65c9a8e2e918189af2f082bd22c53b145460d45437311c55f0",
+      "log_sha256": "1a87bbeaa04eadcfa862869fefea319706eb4f4d298ea367671b872248e2c0ea",
+      "deck_sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2",
+      "archive": "runs/adc_backend_pam4_r5_20261013/r5_late1/validation_noise_failed_readin_20261017_archived_20261020",
+      "archive_manifest_sha256": "1ef9c2c4867821adab36663e78f1b9301e516530fe90d82faa689b53ec0a7ba1",
+      "archived_file_count": 5,
+      "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+      "historical_wrapper": {
+        "pid": 86326,
+        "start": "2297349"
+      },
+      "historical_child": {
+        "pid": 86417,
+        "start": "2297376",
+        "sid": 86417,
+        "pgid": 86417
+      },
+      "scope": "One unchanged frozen r5 noise retry; original environment, data2026101302/noise173; not new independent holdout; noiseless reused.",
+      "diagnosis": "Original-environment byte-identical short diagnostic reached transient, exit3 after deliberate 30s SIGINT. Full validation failed before transient at a different instance. Import changed no environment keys; logged model include sets agree; no hidden files in inspected run/parent directories. No proven root cause or verified fix.",
+      "diagnostic_summary_sha256": "7ecbcfa75c135d15593363141997e73a310fc18e835498bf53454dbde5e35e90",
+      "owned_workers_remaining": [],
+      "cleanup_signals": [],
+      "other_projects_signaled": false,
+      "automatic_retry_permitted": false,
+      "next": "No further automatic replay. Resolve reproducible simulator execution failure with verified tool/environment evidence; consider an already available supported ISR or vendor diagnosis without exporting protected content. Preserve frozen design and holdout integrity.",
+      "final_VM_receipt": "notes/noise_retry_failure_20261020.json",
+      "final_VM_receipt_sha256": "3e34221e3aa083e60b4d3308dab72a5524f4ef6e2c4f6f752b2880290f2cc41e"
+    },
+    "r5_noise_retry2_20261020": {
+      "status": "complete",
+      "stage": "noise_validation_complete",
+      "updated_UTC": "2026-10-20T16:02:59.671111Z",
+      "pid": 95837,
+      "start": "2524186",
+      "child": null,
+      "error": null,
+      "child_exit_code": null,
+      "exit_code": 0,
+      "cleanup": null,
+      "startup_MemAvailable_bytes": 18590920704,
+      "elapsed_s": 210.8,
+      "archive_manifest_sha256": "7486c05054cb766c33e5c3aeed45c351cdc478056594c825bcd343629a011302",
+      "noise_summary_sha256": null,
+      "root": "runs/project6_noise_retry2_20261020",
+      "state": "runs/project6_noise_retry2_20261020/status.json",
+      "script": "scripts/run_r5_noise_retry2_20261020.py",
+      "script_sha256": "a8e2db3fe63ab7777f6ff0300dfa8927248308f45936fe54a249ad9e7506c81e",
+      "launch": {
+        "started_UTC": "2026-10-20T15:59:28.47753Z",
+        "pid": 95837,
+        "start": "2524186",
+        "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+        "script_sha256": "a8e2db3fe63ab7777f6ff0300dfa8927248308f45936fe54a249ad9e7506c81e",
+        "scope": "User requested one immediate unchanged retry and immediate crash report; no automatic replay"
+      },
+      "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+      "automatic_retries": 0,
+      "monitoring_only": true,
+      "recorded_UTC": "2026-10-20T16:03:01.124943Z",
+      "last_observed_transient_started": true,
+      "VM_receipt": "notes/noise_retry2_started_20261020.json",
+      "VM_receipt_sha256": "0db4d9634c22459720d993a971fd65288e0738ec657f83c2ef8a8ea3d29ffd7a",
+      "ended_UTC": "2026-10-20T17:08:54.553158Z",
+      "state_sha256": "400fcbb245fdb44040fdb5f29c46a04dfb30bb6db2cafa7f966c172d99c02e18",
+      "owned_workers_remaining": [],
+      "summary_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+      "log_sha256": "2245e25007465c2466c7a38917f7ba5a142e91ead4262ef7ee642518aff51dbf",
+      "simulator_seconds": 4139.794,
+      "performance_result": {
+        "status": "validation_complete",
+        "input_symbols": 2048,
+        "FFE_windows": 2032,
+        "data_seed": 2026101302,
+        "noise_seed": 173,
+        "fitting_performed": false,
+        "frozen_unchanged": true,
+        "ideal7bit_FFE_errors_primary_secondary": [
+          0,
+          164
+        ],
+        "ideal7bit_FFE_SER": [
+          0.0,
+          0.08070866141732283
+        ],
+        "gray_bit_errors": [
+          0,
+          164
+        ],
+        "scored_bits": 4064,
+        "gray_BER": [
+          0.0,
+          0.040354330708661415
+        ],
+        "unquantized_FFE_errors_primary_secondary": [
+          0,
+          156
+        ],
+        "held_mVppd": [
+          90.60792733825163,
+          52.38487405013614
+        ],
+        "quantizer_fullscale_mVpp": [
+          100.0,
+          75.0
+        ],
+        "clipped_counts": [
+          0,
+          0
+        ],
+        "modeled_VDD_mW": 11.968388924576237,
+        "noise_conditions": {
+          "noise_seed": 173,
+          "noisefmax_Hz": 150000000000.0,
+          "noisefmin_Hz": 500000000.0
+        },
+        "simulator_exit_code": 0,
+        "simulator_seconds": 4139.794,
+        "summary_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+        "raw_transient_sha256": "a3211485c81b255e1e13b2871e8f2712b31cdefd6e1f4f097f7611d2ea1b229e"
+      },
+      "next": "Bounded round complete; no further automatic simulations. Secondary path remains unsuitable for complete receiver claim.",
+      "final_VM_receipt": "notes/r5_pair_complete_20261020.json",
+      "final_VM_receipt_sha256": "a1f5c8d537ef24e3b03c644a01f7b8f3689abad2ea76a8995517de25050a12af"
+    },
+    "ffe_phase_sweep_20261022": {
+      "root": "runs/ffe_phase_sweep_20261022",
+      "state": "runs/ffe_phase_sweep_20261022/status.json",
+      "runner": "scripts/ffe_phase_sweep_20261022.py",
+      "runner_sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+      "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+      "launch": {
+        "automatic_retry": false,
+        "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+        "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+        "runner": {
+          "comm": "python3",
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+          "executable": "/usr/bin/bash",
+          "pgid": 8702,
+          "pid": 8702,
+          "sid": 8702,
+          "start_ticks": 95993,
+          "state": "R"
+        },
+        "scope": "One bounded 18-case phase sweep, no old queue restart or parameter fitting",
+        "script_sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+        "started_utc": "2026-10-22T15:07:41.72098Z"
+      },
+      "verified_runner": {
+        "comm": "python3",
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+        "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+        "pgid": 8702,
+        "pid": 8702,
+        "sid": 8702,
+        "start_ticks": 95993,
+        "state": "R"
+      },
+      "last_observed_utc": "2026-10-22T15:39:11.543975Z",
+      "status": "failed_terminal",
+      "current_case": "noiseless_phase_02",
+      "completed_cases": [
+        {
+          "name": "noiseless_phase_00",
+          "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8",
+          "exit_code": 0,
+          "FFE_windows_per_branch": 496
+        },
+        {
+          "name": "noiseless_phase_01",
+          "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3",
+          "exit_code": 0,
+          "FFE_windows_per_branch": 496
+        }
+      ],
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "phase_offsets_UI": [
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5
+      ],
+      "total_cases": 18,
+      "data_seed": 2026102201,
+      "noise_seed": 197,
+      "warmup": 256,
+      "score_inputs": 512,
+      "FFE_windows": 496,
+      "guard": 128,
+      "observation_command": "python work/control_ffe_phase_20261022.py observe",
+      "viewer_script": "scripts/ffe_phase_viva_20261022.py",
+      "viewer_build_requires": "all 18 cases complete with verified hashes",
+      "viewer_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09",
+      "native_API_check": "notes/ffe_viva_api_check_20261022/receipt.json",
+      "native_API_check_passed": true,
+      "native_API_check_scope": "Synthetic parser/family/helper load only; no GUI opened; actual data check still required after completion.",
+      "learning_guide_local": "outputs/Project6_FFE相位眼圖_實戰第一課.txt",
+      "viewer_directory": "runs/ffe_phase_sweep_20261022/viva_sampled_eye",
+      "authorization": "User chose real sampling-clock phase sweep with fixed FFE on 2026-10-22 for practical learning.",
+      "limits": "One owned Spectre at a time, global actual simulators <2 before launch, 3600s/case, 10h dispatch bound, no automatic retry.",
+      "scope": "Native AFE and both sampler stages, ideal numerical 7-bit quantizer plus frozen FFE. Sampled phase eye, not physical continuous FFE or full ADC.",
+      "next": "Keep all files in place. No restart, retries or additional simulation. User may later authorize a bounded simulator-startup diagnosis; no complete phase-eye claim.",
+      "terminal_receipt": {
+        "recorded_utc": "2026-10-22T15:39:11.543975Z",
+        "failure_utc": "2026-10-22T15:33:11.093299Z",
+        "status": "failed_terminal",
+        "case": "noiseless_phase_02",
+        "run_status": {
+          "audit": [],
+          "error_lines": [],
+          "exit_code": -6,
+          "issue_codes": [
+            "SFE-1131",
+            "SPECTRE-18"
+          ],
+          "seconds": 1.279
+        },
+        "transient_started": false,
+        "completed_cases": [
+          {
+            "name": "noiseless_phase_00",
+            "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8",
+            "exit_code": 0,
+            "FFE_windows_per_branch": 496
+          },
+          {
+            "name": "noiseless_phase_01",
+            "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3",
+            "exit_code": 0,
+            "FFE_windows_per_branch": 496
+          }
+        ],
+        "total_cases": 18,
+        "unstarted_cases": 15,
+        "complete_phase_eye_available": false,
+        "all_noise_cases_unstarted": true,
+        "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+        "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+        "runner_sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+        "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+        "failure_manifest": {
+          "bench.scs": {
+            "bytes": 350700,
+            "sha256": "f130b7a4ab63971d58af8fadd7306df5c1b34d796171807a0f140e6e2e3bbaab"
+          },
+          "prepared.json": {
+            "bytes": 19745,
+            "sha256": "5e26d5d14969b075571f5e3a3c397513407c6186ccadf339ea284fe423761f6b"
+          },
+          "run_status.json": {
+            "bytes": 135,
+            "sha256": "e46a11410791909fbb440f246b63a46db74706b715dcca7d893d0fca2f66600f"
+          },
+          "spectre.log": {
+            "bytes": 4295,
+            "sha256": "d6c3ef4a46810c5949db1d821f07c60d1569b7c3fee9734cfe51cfbacf414e89"
+          },
+          "console.log": {
+            "bytes": 4084,
+            "sha256": "108ebe811f57e1537a21a8f4bd3ee962c6bd80e7cd66eefe3e2b2348a3bd14d4"
+          }
+        },
+        "automatic_retry": false,
+        "owned_running_simulators": 0,
+        "automation_id": "project-6",
+        "automation_status": "DELETED",
+        "interpretation": "Third noiseless case failed before transient with SPECTRE-18 and exit -6. Two earlier cases completed. Root cause undetermined; this does not establish a transient-noise-only fault or memory exhaustion.",
+        "next_action": "Keep all files in place. No restart, retries or additional simulation. User may later authorize a bounded simulator-startup diagnosis; no complete phase-eye claim.",
+        "VM_receipt": "notes/ffe_phase_sweep_terminal_20261022.json",
+        "VM_receipt_sha256": "4cf257db32903e9485150e4ebaee8c9a6f937d652c194e1ae635d3d6d930115a"
+      }
+    },
+    "ffe_phase_resume1_20261022": {
+      "root": "runs/ffe_phase_resume1_20261022",
+      "state": "runs/ffe_phase_resume1_20261022/status.json",
+      "script": "scripts/ffe_phase_resume1_20261022.py",
+      "script_sha256": "7cedd4fd32a8c69915dacf144bdcf40217fbfa98847dacd08ba19bdcd6cead71",
+      "launch": {
+        "automatic_retry": false,
+        "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+        "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+        "runner": {
+          "comm": "python3",
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+          "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+          "pgid": 41112,
+          "pid": 41112,
+          "sid": 41112,
+          "start_ticks": 401063,
+          "state": "R"
+        },
+        "scope": "User continue: reuse first two completed cases, attempt failed third case once, then remaining cases once. Stop on failure.",
+        "script_sha256": "7cedd4fd32a8c69915dacf144bdcf40217fbfa98847dacd08ba19bdcd6cead71",
+        "started_utc": "2026-10-22T15:58:32.722576Z"
+      },
+      "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+      "resume_provenance_sha256": "b627e84eb18b8c1fa09cc64dd599bde96fd49b980701c5615125586b4d5e5ebd",
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "status": "interrupted_by_VM_reboot_preserved",
+      "current_case": "noiseless_phase_08",
+      "completed_cases": [
+        {
+          "name": "noiseless_phase_00",
+          "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8"
+        },
+        {
+          "name": "noiseless_phase_01",
+          "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3"
+        },
+        {
+          "name": "noiseless_phase_02",
+          "summary_sha256": "49ac94a67ec1d1d636b6194e5c572edda7a67563bd8e4a17764ac077e47d8a8d"
+        },
+        {
+          "name": "noiseless_phase_03",
+          "summary_sha256": "4538e1aea36c1a1fad9f8cc53f77b978700dbbe11536d67a984136ec67d3b683"
+        },
+        {
+          "name": "noiseless_phase_04",
+          "summary_sha256": "8a71aa427bedeca92a69adc3619e1d7e17b6fbe45eb05c4c2f60fb9f82d593cc"
+        },
+        {
+          "name": "noiseless_phase_05",
+          "summary_sha256": "33c56a7765cc699001b6307969dd8f50c61b770e9bd9b6745e558342e27a8a9d"
+        },
+        {
+          "name": "noiseless_phase_06",
+          "summary_sha256": "5e6b4dec253709ba4ad7d2c5c841045b8380adb3983b8f197ac56a50c5857fe4"
+        },
+        {
+          "name": "noiseless_phase_07",
+          "summary_sha256": "71940df7033718aa3ba9cc9e402a376911af457ec442cd1118ffad58a65d7555"
+        }
+      ],
+      "last_observed_utc": "2026-10-22T17:30:46.179333Z",
+      "last_observation_identity": {
+        "live": {
+          "pid": 41112,
+          "state": "S",
+          "start_ticks": 401063,
+          "pgid": 41112,
+          "sid": 41112,
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+          "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+          "comm": "python3"
+        },
+        "boot_matches": true,
+        "start_matches": true,
+        "script_matches": true,
+        "command_matches": true
+      },
+      "transient_started": true,
+      "reused_cases": [
+        "noiseless_phase_00",
+        "noiseless_phase_01"
+      ],
+      "original_terminal_root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_sweep_20261022",
+      "original_files_preserved": true,
+      "authorization": "2026-10-22 user said continue after the third-case failure was reported.",
+      "attempt_policy": "One authorized attempt for failed case02 and each remaining case once; no automatic retry.",
+      "data_seed": 2026102201,
+      "noise_seed": 197,
+      "score_inputs": 512,
+      "FFE_windows": 496,
+      "total_cases": 18,
+      "phase_offsets_UI": [
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5
+      ],
+      "observer": "python work/control_ffe_phase_resume1_20261022.py observe",
+      "viewer_build": "python work/control_ffe_phase_resume1_20261022.py build-viewer",
+      "viewer_directory": "runs/ffe_phase_resume1_20261022/viva_sampled_eye",
+      "viewer_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09",
+      "monitoring": {
+        "automation_id": "project-6",
+        "status": "PAUSED",
+        "interval_minutes": 5,
+        "routine_notifications": false
+      },
+      "next": "Historical pinned immutable root; never restart old dispatcher or modify files.",
+      "travel_pause_receipt": "work/ffe_phase_resume1_travel_pause_20261022.json",
+      "waveform_retention": "waveform_retention_20261022: cleanup pending fresh VM inventory; paused/source-manifest roots protected."
+    },
+    "ffe_phase_resume2_20261022": {
+      "root": "runs/ffe_phase_resume2_20261022",
+      "state": "runs/ffe_phase_resume2_20261022/status.json",
+      "script": "scripts/ffe_phase_resume2_20261022.py",
+      "script_sha256": "1a01d14b611f5e3cad372bb428d4768acad181fd723a84fe55a90c70bbf97b2b",
+      "launch": {
+        "automatic_retry": false,
+        "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+        "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+        "runner": {
+          "comm": "python3",
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+          "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+          "pgid": 39846,
+          "pid": 39846,
+          "sid": 39846,
+          "start_ticks": 542528,
+          "state": "R"
+        },
+        "scope": "User continue after travel and verified VM reboot: reuse eight complete cases, one retry of case08 lacking recorded exit status, and nine untouched noise cases once.",
+        "script_sha256": "1a01d14b611f5e3cad372bb428d4768acad181fd723a84fe55a90c70bbf97b2b",
+        "started_utc": "2026-10-22T22:47:11.346799Z"
+      },
+      "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+      "resume_provenance_sha256": "b16698607ac0392b3ccb8db32c0abfcf2f98a4a1f3fb250b5c1af0c174dd716c",
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "status": "complete_verified_native_view_ready",
+      "current_case": null,
+      "completed_cases": [
+        {
+          "name": "noiseless_phase_00",
+          "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_01",
+          "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_02",
+          "summary_sha256": "49ac94a67ec1d1d636b6194e5c572edda7a67563bd8e4a17764ac077e47d8a8d",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_03",
+          "summary_sha256": "4538e1aea36c1a1fad9f8cc53f77b978700dbbe11536d67a984136ec67d3b683",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_04",
+          "summary_sha256": "8a71aa427bedeca92a69adc3619e1d7e17b6fbe45eb05c4c2f60fb9f82d593cc",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_05",
+          "summary_sha256": "33c56a7765cc699001b6307969dd8f50c61b770e9bd9b6745e558342e27a8a9d",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_06",
+          "summary_sha256": "5e6b4dec253709ba4ad7d2c5c841045b8380adb3983b8f197ac56a50c5857fe4",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_07",
+          "summary_sha256": "71940df7033718aa3ba9cc9e402a376911af457ec442cd1118ffad58a65d7555",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noiseless_phase_08",
+          "summary_sha256": "4a81ffb9e436c3cd1b0d6af70fb1c8e8cee708a77429c0c767c75d6e99d38ee8",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_00",
+          "summary_sha256": "0ea34976acfbc285658ee575c412d4eb1cf7725d5a815ea8c5b7d23df4c727e2",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_01",
+          "summary_sha256": "c64a3752c37d88f3714282f1ae4ea75a3f402581bcc69bc34fe833e9b18a37eb",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_02",
+          "summary_sha256": "3592f406cd15c661eb99c379371cd3db8d07f6b443f318fe17f6964dd44eda02",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_03",
+          "summary_sha256": "8849c13a3cc0e2da3bdbd4e866b083dac59b1cd1f98c48f4e72eb3d27be4d53d",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_04",
+          "summary_sha256": "b17b24658015f8a2a07b9217f3f351af1d1b7f54dbc47da57e335b5f9b660d58",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_05",
+          "summary_sha256": "2fe2c37f5163f691b9eac16fe5216cd6893f0c85a57ea4398d198daa046df749",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_06",
+          "summary_sha256": "5354e68d0fd34df01f860144d104c0001e7e75f695862c7dcd651ae49a05dded",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_07",
+          "summary_sha256": "5641e3d197e39792df05f2df41d9af1e36ee1e7641be80b83ab1c8afb35f4907",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        },
+        {
+          "name": "noise_phase_08",
+          "summary_sha256": "818566549963a4e5ac0fbde3198f9242ae3195bc6e04c6b1e00f8e922086abd6",
+          "exit_code": 0,
+          "raw_hash_verified": true,
+          "deck_hash_verified": true
+        }
+      ],
+      "last_observed_utc": "2026-10-23T01:56:32.466157Z",
+      "last_observation_identity": {
+        "live": {
+          "pid": 39846,
+          "state": "S",
+          "start_ticks": 542528,
+          "pgid": 39846,
+          "sid": 39846,
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+          "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+          "comm": "python3"
+        },
+        "boot_matches": true,
+        "start_matches": true,
+        "script_matches": true,
+        "command_matches": true
+      },
+      "transient_started": true,
+      "protected_prior_roots": [
+        "runs/ffe_phase_sweep_20261022",
+        "runs/ffe_phase_resume1_20261022"
+      ],
+      "authorization": "User said continue after travel pause on 2026-10-22; verified VM reboot and changed DHCP address. Reuse8verified cases; case08 log alone cannot prove exit0; retry that exact case once and attempt9untouched noise cases once.",
+      "data_seed": 2026102201,
+      "noise_seed": 197,
+      "input_symbols": 896,
+      "score_inputs": 512,
+      "FFE_windows": 496,
+      "total_cases": 18,
+      "phase_offsets_UI": [
+        -0.5,
+        -0.375,
+        -0.25,
+        -0.125,
+        0,
+        0.125,
+        0.25,
+        0.375,
+        0.5
+      ],
+      "observer": "python work/control_ffe_phase_resume2_20261022.py observe",
+      "viewer_build": "python work/control_ffe_phase_resume2_20261022.py build-viewer",
+      "viewer_directory": "runs/ffe_phase_resume2_20261022/viva_sampled_eye",
+      "viewer_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09",
+      "monitoring": {
+        "automation_id": "project-6",
+        "status": "DELETED",
+        "interval_minutes": 30,
+        "routine_notifications": false
+      },
+      "next": "Teach native ViVA sampled-phase results; no new simulation. Secondary noisy path remains unqualified; full physical ADC not verified.",
+      "completed_case_count": 18,
+      "finished_utc": "2026-10-23T01:25:34.137050Z",
+      "native_check": {
+        "GUI_opened": false,
+        "exit_code": 0,
+        "log_sha256": "7b81892b23f07cfa7f869f6f032235e73e33b30e12bd7a50f03df7202aa6ca6a",
+        "passed": true,
+        "points": 17856,
+        "provenance_sha256": "883983097311f14190b52496529aba68c0cab604d13d989d6328b3e620ee4b76",
+        "summary_sha256": "4287ceaba89033552074f92f8a9e7eb8759faecb80a620e0e77f101eb62a8a82",
+        "viewer_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09"
+      },
+      "delivery_receipt": "work/ffe_phase_resume2_delivery_20261022.json"
+    },
+    "secondary_r7_20261022": {
+      "root": "runs/secondary_cap_training_r7_20261022",
+      "state": "runs/secondary_cap_training_r7_20261022/status.json",
+      "script": "scripts/secondary_cap_training_r7_20261022.py",
+      "script_sha256": "a83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac",
+      "launch": {
+        "automatic_retry": false,
+        "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+        "protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+        "runner": {
+          "comm": "python3",
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+          "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+          "pgid": 51089,
+          "pid": 51089,
+          "sid": 51089,
+          "start_ticks": 1778336,
+          "state": "S"
+        },
+        "scope": "User explicitly requested background improvement: new training only; fixed3secondarycap/TG configurations x noiseless/noise, maximum6simulations; no holdout access/refit.",
+        "script_sha256": "a83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac",
+        "started_utc": "2026-10-23T02:13:09.432338Z"
+      },
+      "status": "complete_verified_training_delivered",
+      "current_case": null,
+      "completed_cases": [
+        {
+          "name": "noiseless_baseline_r5",
+          "summary_sha256": "e2444b330ea4110905151400b602e945bcb0c176c2f0ad4731c0c428d6fa0498",
+          "deck_sha256": "8e980b6ed71f72a33f514afbf5ed38fbe56fa8c9c5ab46b5c2c7024cd9f09087",
+          "raw_transient_sha256": "e08203a2f92d2b8ece690fc57b13add7f68d7d8736a1e69d94b2c65c74a9f532",
+          "exit_code": 0,
+          "independent_metrics_recomputed": true
+        },
+        {
+          "name": "noiseless_secondary_c25_w1",
+          "summary_sha256": "d146105e645c97f177e35335f6c136db4d005c55dfd310ba12eed98e4faa3723",
+          "deck_sha256": "6626414a9ce6c05c4044afad77fb3ef08d82fe46c48e96565507798385d1b039",
+          "raw_transient_sha256": "04e8870dcd79378fa3e527c55d8db7edcf6af20bd5f592a101b4e2ca601cb6f5",
+          "exit_code": 0,
+          "independent_metrics_recomputed": true
+        },
+        {
+          "name": "noiseless_secondary_c25_w2",
+          "summary_sha256": "f74d3a091a5c5bfdcb82340832d6e7cbde0264b1e79049d3392dbb5083d83a58",
+          "deck_sha256": "2ca7491b4e7bc801bec799ec880a10425a22dd051bf6cfe1938d85b9e6cdae4e",
+          "raw_transient_sha256": "b092d8bb024f5be4b520d36278808f52b1ed9b54e0f3a253d4dbb2a408909ba6",
+          "exit_code": 0,
+          "independent_metrics_recomputed": true
+        },
+        {
+          "name": "noise_baseline_r5",
+          "summary_sha256": "ed244de3a98dd845fd9c4248c41d8821819f9d43b2527c06f40e5c9f9f78435b",
+          "deck_sha256": "7e2c3b052e8cf103a1331d092a61a79cb40b754c3dac332a7b4f02883c32798d",
+          "raw_transient_sha256": "ac46c63ef410e7d300652b422bcdfb520f93b2524cec6fd9de479625b40570c1",
+          "exit_code": 0,
+          "independent_metrics_recomputed": true
+        },
+        {
+          "name": "noise_secondary_c25_w1",
+          "summary_sha256": "6a5b2f15ab0caa13651ca565790d8855a334de08892314394cb9e159f568f3b2",
+          "deck_sha256": "aaac8ae1e3755c2cfa9de2ca07ac477bccf3ab26346c456184f4f2435b875557",
+          "raw_transient_sha256": "ff6a00e05e3c82e45f9f6ba8b3471e7790c6227bac4d62b285b75d6cc93242b9",
+          "exit_code": 0,
+          "independent_metrics_recomputed": true
+        },
+        {
+          "name": "noise_secondary_c25_w2",
+          "summary_sha256": "a8b4ba5e6213962b366ada6950a47f0e89de427f26f91fac3b0488ec542135ce",
+          "deck_sha256": "ac890ad920e73cc59ff5ea0951aeb0930d1a87da84976bf0804aa102b2afe5ed",
+          "raw_transient_sha256": "cdcfe339a8a2bcbc1e3f531e6d0fe0eda60cb18a49f4d061a7edcb2cfb15484d",
+          "exit_code": 0,
+          "independent_metrics_recomputed": true
+        }
+      ],
+      "protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "last_observed_utc": "2026-10-23T03:46:55.272063Z",
+      "identity": {
+        "live": null,
+        "boot_matches": true,
+        "start_matches": false,
+        "script_matches": true
+      },
+      "diagnostic": {},
+      "candidates": [
+        {
+          "name": "baseline_r5",
+          "secondary_cap_F": 1e-14,
+          "TG_width_m": 1e-06
+        },
+        {
+          "name": "secondary_c25_w1",
+          "secondary_cap_F": 2.5e-14,
+          "TG_width_m": 1e-06
+        },
+        {
+          "name": "secondary_c25_w2",
+          "secondary_cap_F": 2.5e-14,
+          "TG_width_m": 2e-06
+        }
+      ],
+      "data_seed": 2026102202,
+      "noise_seed": 223,
+      "generated_symbols": 896,
+      "warmup_symbols": 256,
+      "training_inputs": 512,
+      "fit_inputs": 256,
+      "fit_FFE_windows": 240,
+      "internal_guard": 16,
+      "score_inputs": 240,
+      "score_FFE_windows": 224,
+      "fit_policy": "Candidate-specific noiseless first256 fit only, all3detectors frozen before noise; no phase/lag/range/noise refit.",
+      "training_only": true,
+      "holdout_accessed": false,
+      "full_ADC_verified": false,
+      "automatic_retry": false,
+      "observer": "python work/control_secondary_r7_20261022.py observe",
+      "monitoring": {
+        "automation_id": "project-6",
+        "status": "DELETED",
+        "interval_minutes": 30,
+        "routine_notifications": false,
+        "closed_utc": "2026-10-23T03:54:42.245179Z"
+      },
+      "next": "Stop this finite screen. If the user later requests further testing, freeze baseline and C25W2 and predeclare one fresh-data independent comparison; no automatic dispatch, refitting, new candidates or holdout.",
+      "completed_case_count": 6,
+      "finished_utc": "2026-10-23T03:29:13.259969Z",
+      "delivery_receipt": "notes/secondary_r7_delivery_20261022.json",
+      "local_delivery_receipt": "work/secondary_r7_delivery_20261022.json",
+      "numerical_comparison": [
+        {
+          "candidate": "baseline_r5",
+          "secondary_cap_fF": 10.0,
+          "TG_width_um": 1.0,
+          "secondary_noiseless_errors": 0,
+          "secondary_noise_errors": 31,
+          "secondary_noise_SER": 0.13839285714285715,
+          "secondary_noise_MSE": 0.48199384838581727,
+          "secondary_noise_held_mVpp": 40.171619084594546,
+          "primary_noise_errors": 0,
+          "measured_VDD_mW": 11.96980405400317,
+          "secondary_per_V_tap_L2": 649.741520958617
+        },
+        {
+          "candidate": "secondary_c25_w1",
+          "secondary_cap_fF": 25.0,
+          "TG_width_um": 1.0,
+          "secondary_noiseless_errors": 0,
+          "secondary_noise_errors": 26,
+          "secondary_noise_SER": 0.11607142857142858,
+          "secondary_noise_MSE": 0.4503516948636141,
+          "secondary_noise_held_mVpp": 31.445008893956626,
+          "primary_noise_errors": 0,
+          "measured_VDD_mW": 11.969929501819943,
+          "secondary_per_V_tap_L2": 837.3259063147254
+        },
+        {
+          "candidate": "secondary_c25_w2",
+          "secondary_cap_fF": 25.0,
+          "TG_width_um": 2.0,
+          "secondary_noiseless_errors": 0,
+          "secondary_noise_errors": 26,
+          "secondary_noise_SER": 0.11607142857142858,
+          "secondary_noise_MSE": 0.4173576123511069,
+          "secondary_noise_held_mVpp": 32.15318729524541,
+          "primary_noise_errors": 0,
+          "measured_VDD_mW": 11.969995961512693,
+          "secondary_per_V_tap_L2": 850.1187436417314
+        }
+      ],
+      "conclusion": {
+        "interpretation": "Slight training-screen improvement; secondary path remains unqualified.",
+        "noisy_secondary_errors_per_224": [
+          31,
+          26,
+          26
+        ],
+        "primary_noise_errors_per_224": [
+          0,
+          0,
+          0
+        ],
+        "preferred_for_possible_future_validation": "secondary_c25_w2",
+        "preference_reason": "Same26/224 errors as C25W1, but lowest ADC-FFE MSE. Not an adopted or validated hardware replacement.",
+        "independent_improvement_established": false,
+        "complete_ADC_verified": false,
+        "next": "Stop this finite screen. If the user later requests further testing, freeze baseline and C25W2 and predeclare one fresh-data independent comparison; no automatic dispatch, refitting, new candidates or holdout.",
+        "limitations": [
+          "One224-output training selection block and one noise seed; overlapping FFE windows are correlated. Five fewer errors does not establish robust gain or independent BER.",
+          "Only compare to this round baseline, not older55/496 or other-data validation counts.",
+          "Held swing decreases and equivalent per-V FFE gain increases with added capacitance.",
+          "Measured approximately11.97mW VDD excludes clock/bias generation, CDAC/reference/control and digital FFE. Larger capacitance/TG is not demonstrated power-free.",
+          "Paired noise-minus-noiseless differences include noise-induced dynamics and nonlinear changes; no pure device-noise decomposition.",
+          "Acquisition and final8ps buffer diagnostics use saved banks0/7,60samples; closing-edge diagnostics use240samples.",
+          "Ideal numeric7bit quantization, numerical FFE, reset comparators and ideal clocks do not verify a full physical7bit112GS/s ADC."
+        ]
+      },
+      "VM_report": "notes/secondary_r7_result_and_learning_20261022.txt",
+      "VM_report_sha256": "e4d27d2f96f843cc44c52447c8427d0b889baca52b36acf604daa34b38fee6d4"
+    },
+    "secondary_validation_r7_20261022": {
+      "root": "runs/secondary_cap_validation_r7_20261022",
+      "state": "runs/secondary_cap_validation_r7_20261022/status.json",
+      "script": "scripts/secondary_cap_validation_r7_20261022.py",
+      "script_sha256": "01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0",
+      "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f",
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "launch": {
+        "automatic_retry": false,
+        "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+        "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f",
+        "runner": {
+          "comm": "python3",
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+          "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+          "pgid": 10168,
+          "pid": 10168,
+          "sid": 10168,
+          "start_ticks": 2545193,
+          "state": "S"
+        },
+        "scope": "2026-10-22 user explicitly authorized one independent fresh-data baseline vs25fF2um comparison: 2noiseless then2noise, fixed pre-existing trained detectors, no fitting or extra candidates; monitor30min, stop/report failures, no retry.",
+        "script_sha256": "01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0",
+        "started_utc": "2026-10-23T04:20:57.999923Z"
+      },
+      "identity": {
+        "live": null,
+        "boot_matches": true,
+        "start_matches": false,
+        "script_matches": true
+      },
+      "diagnostic": {},
+      "status": "complete_verified_independent_validation_delivered",
+      "current_case": null,
+      "completed_cases": [
+        {
+          "name": "noiseless_baseline_r5",
+          "exit_code": 0,
+          "summary_sha256": "c8edc2a3a8e6a2fbc7576f4d5289446d9d027975e9abf466c12a735693801e2c",
+          "deck_sha256": "4a68e2eba2ed60fb7dc4d97e9ee5c63b1cd4488cb35530ff20b8fa193eac05c1",
+          "raw_sha256": "52eeeda59caf1a26ea0af5336fb0bb4618b5518f34c9daed907bfc36fac22a30",
+          "detector_sha256": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+          "validation_fitting_performed": false,
+          "independent_counts_MSE_power_recomputed": true
+        },
+        {
+          "name": "noiseless_secondary_c25_w2",
+          "exit_code": 0,
+          "summary_sha256": "df5ed0369f2203beefbcf077ca48a965984b26f6b7a56b7c5e784115be49a724",
+          "deck_sha256": "d8876f3a02fd7407f2df279c1e0c24ff3ac106424e1ac20d781a71a96ebd7fe6",
+          "raw_sha256": "32bd1e523bdeef20ad9b0dce3042b6b41859b70a1781d285d6a6597fafd17369",
+          "detector_sha256": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f",
+          "validation_fitting_performed": false,
+          "independent_counts_MSE_power_recomputed": true
+        },
+        {
+          "name": "noise_baseline_r5",
+          "exit_code": 0,
+          "summary_sha256": "0d7e4d1b2a2d8192d0835357ac26c0ba1756ec1f3ea5a7429993d50bf14acaf0",
+          "deck_sha256": "3394a71c4489dc53dea2d74b65dce91e85d5c228e06ffbf3b7ead5c5d2ea2443",
+          "raw_sha256": "22c0ec9417dde306039a8b923b8d38f7c5e2438aaf7729efba388759d4cfd01e",
+          "detector_sha256": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+          "validation_fitting_performed": false,
+          "independent_counts_MSE_power_recomputed": true
+        },
+        {
+          "name": "noise_secondary_c25_w2",
+          "exit_code": 0,
+          "summary_sha256": "6b4d42258ab72630a771bbd9f767f727015af80ed29ce62843a509abf8d32469",
+          "deck_sha256": "df05df7419cdc4841355dfd311d51ceaf1053d265d3553ff18a8c25ead4247cf",
+          "raw_sha256": "5020c002940ecc137cfd0cfa18278e579f6708241b797500597f342bce47429f",
+          "detector_sha256": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f",
+          "validation_fitting_performed": false,
+          "independent_counts_MSE_power_recomputed": true
+        }
+      ],
+      "completed_case_count": 4,
+      "last_observed_utc": "2026-10-23T06:52:52.196950Z",
+      "candidates": [
+        "baseline_r5",
+        "secondary_c25_w2"
+      ],
+      "maximum_simulations": 4,
+      "order": "Two noiseless then two noise cases; no retries.",
+      "data_seed": 2026102301,
+      "noise_seed": 251,
+      "generated_symbols": 2432,
+      "warmup_symbols": 256,
+      "score_input_symbols": 2048,
+      "end_guard_symbols": 128,
+      "complete_FFE_outputs_per_branch": 2032,
+      "fixed_lags": {
+        "primary": 1,
+        "secondary": 3
+      },
+      "fixed_quantizer_fullscale_Vpp": {
+        "primary": 0.1,
+        "secondary": 0.075
+      },
+      "source_training_root": "runs/secondary_cap_training_r7_20261022",
+      "source_training_protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+      "frozen_candidate_detector_sha256": {
+        "baseline_r5": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+        "secondary_c25_w2": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+      },
+      "fitting_performed": false,
+      "independent_fresh_data": true,
+      "automatic_retry": false,
+      "complete_ADC_verified": false,
+      "monitor": {
+        "automation_id": "project-6",
+        "status": "DELETED",
+        "interval_minutes": 30,
+        "routine_notifications": false,
+        "closed_utc": "2026-10-23T07:00:13.535384Z"
+      },
+      "observer": "python work/control_secondary_validation_r7_20261022.py observe",
+      "limits": {
+        "case_s": 7200,
+        "capacity_wait_s": 1800,
+        "batch_s": 43200,
+        "minimum_free_bytes": 8589934592
+      },
+      "next": "Stop after delivering this fixed comparison. No new simulations, candidates, fitting, retries or holdout automatically. Preserve all evidence; further design work requires a new user instruction.",
+      "finished_utc": "2026-10-23T06:41:15.802486Z",
+      "delivery_receipt": "notes/secondary_validation_r7_delivery_20261022.json",
+      "local_delivery_receipt": "work/secondary_validation_r7_delivery_20261022.json",
+      "conclusion": {
+        "interpretation": "Modest observed improvement on this fresh-data independent comparison; secondary path still has substantial symbol errors.",
+        "baseline_errors": 235,
+        "candidate_errors": 210,
+        "symbols": 2032,
+        "baseline_SER": 0.1156496062992126,
+        "candidate_SER": 0.10334645669291338,
+        "fewer_errors": 25,
+        "relative_error_reduction": 0.10638297872340426,
+        "absolute_SER_reduction_percentage_points": 1.2303149606299213,
+        "baseline_MSE": 0.4709822803194678,
+        "candidate_MSE": 0.4673044385843206,
+        "relative_MSE_reduction": 0.00780887495948368,
+        "baseline_raw_FFE_errors": 218,
+        "candidate_raw_FFE_errors": 190,
+        "baseline_held_mVpp": 49.46614191320864,
+        "candidate_held_mVpp": 39.79274085957096,
+        "noiseless_secondary_baseline_MSE": 0.02040219094798785,
+        "noiseless_secondary_candidate_MSE": 0.05523533033903391,
+        "all_primary_errors_zero": true,
+        "all_noiseless_errors_zero": true,
+        "all_clipping_zero": true,
+        "robust_improvement_or_BER_certified": false,
+        "complete_ADC_verified": false,
+        "limitations": [
+          "One data sequence and one noise seed; overlapping FFE windows are correlated, not iid BER certification.",
+          "Shared declared noise seed across hardware does not guarantee identical noise realization or independent replicas.",
+          "Each candidate retains its own fixed training detector; comparison is the full candidate chain, not isolated component noise.",
+          "Noise-minus-noiseless differences include noise-induced dynamics and nonlinear changes, not pure device-noise decomposition.",
+          "Measured VDD excludes clock and bias generation, CDAC/reference/control and digital FFE power.",
+          "Numerical7bit quantization and FFE, reset comparators and ideal clocks do not establish complete physical7bit112GS/s ADC performance."
+        ],
+        "next": "Stop after delivering this fixed comparison. No new simulations, candidates, fitting, retries or holdout automatically. Preserve all evidence; further design work requires a new user instruction."
+      },
+      "VM_report": "notes/secondary_validation_r7_result_20261022.txt",
+      "VM_report_sha256": "494f9e6243d9461bbc92e6b0a4a14b4751ccabf5a996a1f8b595f7162a53c295"
+    },
+    "r8_buffer_mechanism_20261029": {
+      "authorization": "User clarified no continue the circuit design on2026-10-29. Backup preparation stopped; Project6 design resumed.",
+      "status": "waiting_for_disk_capacity",
+      "diagnostic_VM": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/notes/secondary_hold_mechanism_r8_20261029.json",
+      "diagnostic_sha256": "6f05fde14392ff686e4f58d27ae1d877817607542252079563be3cc30927ffee",
+      "diagnostic_local": "work/secondary_hold_mechanism_r8_20261029.json",
+      "script_VM": "scripts/secondary_hold_mechanism_r8_20261029.py",
+      "script_sha256": "5c7fe7aa4abd319b420881621eaa105dd653fbcff6b0570f4dee4ff0451c6545",
+      "plan_VM": "notes/secondary_load_isolation_r8_plan_20261029.json",
+      "plan_local": "work/secondary_load_isolation_r8_plan_20261029.json",
+      "plan_sha256": "d67a822fde73b477cdcba9059434f6ac779feeaf2ee6d3b2d0a443b2359fd16f",
+      "scope": "Existing noiseless training only;512 physical apertures/case, buffer128points frombanks0/7. No fitting/holdout/new simulation.",
+      "RMS_statistics_V": {
+        "noiseless_baseline_r5": {
+          "primary_hold_change_V": 0.0007717396289485806,
+          "primary_final8ps_change_V": 0.00042456516071724443,
+          "buffer_final8ps_change_V": 0.0006403673530731714,
+          "secondary_to_buffer_lag_V": 0.0004032781346693673
+        },
+        "noiseless_secondary_c25_w2": {
+          "primary_hold_change_V": 0.0007330622236818468,
+          "primary_final8ps_change_V": 0.0004209978194887377,
+          "buffer_final8ps_change_V": 0.0009982341240928002,
+          "secondary_to_buffer_lag_V": 0.000766955595972398
+        }
+      },
+      "interpretation": "C25W2 has larger deterministic final8ps buffer movement and acquisition lag, while primary held-node movement changes little. Investigate buffer/load settling; no causal reverse-feedback or pure-noise claim.",
+      "next": "Continue circuit work on buffer/load settling and held-node disturbance; existing C/TG comparison does not establish a fundamental design limit. No further simulation until capacity gate is satisfied; no automatic monitor resumes.",
+      "storage_block": {
+        "observed_utc": "2026-10-30T04:36:55.579327Z",
+        "observed_free_bytes": 7946653696,
+        "required_free_bytes": 8589934592,
+        "shortfall_bytes": 643280896,
+        "HW2_CSV_cleanup_complete": true,
+        "no_Project6_or_other_project_cleanup_performed": true,
+        "receipt_local": "work/hw2_csv_cleanup_final_20261029.json"
+      },
+      "simulations_started": 0,
+      "monitor_created": false,
+      "original_sources_unchanged": true,
+      "historical_results_preserved": true,
+      "full_ADC_verified": false,
+      "latest_preflight": {
+        "local_receipt": "work/secondary_load_isolation_r8_preflight_20261029.json",
+        "sha256": "dca22fde700ab686f1d321bb1ad6bb17e0e598e11489ea35e8a4cfe860cf4520",
+        "observed_utc": "2026-10-30T03:40:33.201868+00:00",
+        "status": "not_launched_VM_not_running",
+        "ssh_target": "user@192.0.2.1",
+        "ssh_observation": "Connection timed out after8seconds",
+        "vmware_observation": "vmrun -T ws list: Total running VMs:0; no vmware-vmx process observed",
+        "simulator_crash_claimed": false,
+        "simulations_started": 0,
+        "VM_power_state_changed": false,
+        "old_queues_restarted": false,
+        "space_requirement_bytes": 8589934592,
+        "next": "User starts existing IC618 VM; then verify current host key/MAC/IP/boot and free disk before preparing/launching the fixed two-case r8 circuit diagnostic. Do not duplicate/retry or restart old queues."
+      },
+      "latest_VM_observation": {
+        "utc": "2026-10-30T03:54:36.504736Z",
+        "host": "user@192.0.2.1",
+        "boot": "743eed3b-0732-4255-83e1-cd2adc9f37a0",
+        "mac": "00:0c:29:ff:7e:e8",
+        "ssh_hostkey_alias": "192.0.2.1",
+        "reachable": true,
+        "running_other_project_simulators": 2,
+        "new_simulations_started_by_this_chat": 0
+      }
+    }
+  },
+  "completed_families": {
+    "native_geometry": "20 N/P widths0.24/0.5/1/2/3um lengths30/60nm verified via nativeCDF saved/reopened, DC/AC fixture",
+    "strongarm": "19 successful simulations:16fast29.6ps +3longcontrol; nofastcasepasses32decisions; small1umtail3control32/32 max42.11ps",
+    "doubletail": "5successfulsimulations; fourfastonly8/32largesignalsresolve; balancedlongcontrol32/32 max40.52ps",
+    "burst": "6successfulsimulations butfailedperformance:10pslocalacquisition leaves~1.83mVreferenceerror;15/20psreset alsohelddecisionerrors",
+    "ideal_clamp_reset": "4successfulsimulations butno48psallpass;baseline22/32correct10wrong;pre1eq.5 28correct4unresolved;pre2eq1 andnregenpre1 each16correct16unresolved. Idealclampedinputdiagnostic only.",
+    "isolation": "5noiselesspresets+2CMLW2noise seeds101/151; W2 source6/8,held7+1indet;fitRMS.207737mV. Noiseheld4/8and5/8+indet;notBER",
+    "acquisition": "4latecapturevariants+2noise seeds181/191. BestW2TG1umlate32ps fitRMS.114920mV,peak.272396mV,gain-.62586945;source6/8,held7/8;noise stillneeds numeric extraction",
+    "frontend_load": "3DC/AC/noisefrozenstates. BareH56-14.458983dB,total10.076882mW;CMLW1additional-.285467dB,total11.073778mW;CMLW2additional-.558772dB,total11.870501mW. Includes64RESETcmp; excludesclock/CDAC/control",
+    "native_capacitor": "6requestedgeometries in one DC/ACfixture, actualCDFsnapshot andfullnativecards VM only. HardCons clampsN4to6,L.2/.5uto1u. Smallesttestedmutual1.4605585fF,total1.6484632fF,substrate.1879047fF;N8mutual2.0605472,total2.2725893fF. Cardkeyl1000_n4meansREQUESTEDN4, actualN6. NotglobalPDKminimum orDRCproof. LosslessnativecapmodeldoesnotproveRFQ.",
+    "native_CDAC_acquisition_r6": "2successfulnativeMOS+MOMruns. splitmainTG1/2umlowTG1;weakoldCML50ohmsurrogate,1CDACbranch7ideal10f. LagRMS.779606/.404355mV peak1.60707/.829912mV;helddriftpeak.754216/.625832mV;source-sign4/8vsref7/8. NoSAR/noiseless. runs/adc_cdac_acquisition_r6_20261013/acquisition_summary.json. SourceSHA5cdb6805bc0e952ddded4b98947a55397619f2868695ff1070253848865fc517."
+  },
+  "native_card_paths_VM_only": [
+    "configs/native_geometry_cards_r5.json",
+    "configs/native_capacitor_cards_r5.json"
+  ],
+  "native_capacitor_fixture": "runs/oa-20261013-021644-IbyL2J",
+  "split_CDAC_plan": "4MSBbits8/4/2/1units=15;3LSBbits4/2/1+dummy=8;bridgeM-L. UnitallidenticalactualN6. ExistingN8bridgeavailablebutuntrimmed. NeedCb=(8*1.6484632fF + bridgeLbulk + LnodeotherC)/7 >=1.8839579fF, notideal8Cu/7=1.6692fF. Effectiveinput~26.4fFplusotherparas vsrawbinary128*1.64846=211fF. NativeL1.2/1.3/1.4umN6bridges notyetbuilt. Clarification:~26.4fF estimate assumeslowtopfloating. Completeddual-topacquisitionsamplesM+L,initialnativecapload~37.9fF+bridge/switch/comparator parasitics.",
+  "protected_hashes": {
+    "configs/native_device_cards.json": "8d05bd62f3e668c64569459e90373024ca76998f510ec5d2b7a23cd3f5749b9a",
+    "configs/pam4_optimization_frozen.json": "2eef7e17f3e51248f82d8f2ff7b643905f2e906c040ffb18b4e8d24a3f7f0309",
+    "PDK_model": "002300afbc872cca7c0bab744740eb74ff2cc71e770832c6e6d97c447dbfff78"
+  },
+  "reporting": "Use TraditionalChinese concise updates onlymeaningfulnewdata. NozeroBERclaim fromsmallwindow; sourceerrorsnotallcomparatorerrors. Noise/swing/powerandrealconversionlimitations explicit. Do not claim16.6GHzTIA-3dBcornerwasMOSfT.",
+  "export": "COMPLETED localoutputs/Project6_ADC_r5_block_summary.json 62049bytes SHA256 5832a5489e05ba0110c96ceaaed0b7b8f761b35db4553fd22a641180299312ff, VMidentical. LocalChineseprogressreportupdated. Exportexcludesholdout/nativecards/models/rawwaves.",
+  "session_status": "r8_not_launched_waiting_for_disk_capacity",
+  "automatic_resume_authorized": false,
+  "automation_status": "DELETED",
+  "shutdown_receipt": {
+    "VM": "notes/session_closed_20261013.json",
+    "terminated_pids": [
+      108316,
+      119080,
+      108883,
+      109011,
+      109024,
+      119895,
+      119908
+    ],
+    "remaining_live_owned_pids": [],
+    "other_projects_signaled": false,
+    "files_deleted": false,
+    "force_kill_used": false
+  },
+  "last_heartbeat_update_UTC": "2026-10-17T17:16:25.099177Z",
+  "last_health_check": {
+    "observed_UTC": "2026-10-20T17:16:03.197187Z",
+    "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+    "stage": "paired_validation_complete",
+    "owned_simulations": 0,
+    "owned_workers": [],
+    "action": "Completed with exit0; original frozen design verified; no new jobs."
+  },
+  "current_progress_report": {
+    "path": "outputs\\Project6_ADC_r5_進度與判讀.txt",
+    "bytes": 3893,
+    "sha256": "d87c5952341aa68cfc34cb04630378a68a1e75c32d37fb400f8abdd57bbee115",
+    "combined_summary_bytes": 69968,
+    "VM_sync_complete": true
+  },
+  "last_connection_check": {
+    "observed_UTC": "2026-10-20T17:16:03.197187Z",
+    "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+    "stage": "paired_validation_complete",
+    "owned_simulations": 0,
+    "owned_workers": [],
+    "action": "Completed with exit0; original frozen design verified; no new jobs.",
+    "status": "SSH_connected"
+  },
+  "pending_VM_sync": null,
+  "travel_pause": {
+    "updated_UTC": "2026-10-13T17:52:00.504726Z",
+    "user_request": "Pause VMware and all simulations for laptop travel; resume at next location.",
+    "VM_name": "Centos618_user",
+    "VMX": "D:\\IC618(don't delete)\\IC618-OK\\IC618-OK\\IC618.vmx",
+    "operation": "vmrun pause",
+    "pause_exit_code": 0,
+    "confirmed_mode": "paused in memory",
+    "durable_VM_suspend_completed": false,
+    "reason": "Host D: free space measured 32768 then 40960 bytes; VM configured memory 20480 MiB. No suspend attempted with disk full.",
+    "C_free_bytes": 156855865344,
+    "host_hibernate_available": true,
+    "automation_id": "project-6",
+    "automation_status": "PAUSED",
+    "vmx_process_id_last_observed": 17532,
+    "vmx_process_start_local": "2026-10-13T12:48:06.794418-05:00",
+    "actions_not_taken": [
+      "No VM shutdown/reset/kill",
+      "No files deleted or moved",
+      "No simulation restarted",
+      "No host power action"
+    ],
+    "resume_requirements": "Wait for explicit user resume. Check host disk capacity and VM pause/suspend state, then exact guest boot/process identities and saved Project6 noise summary before any new dispatch. Full D: capacity must be addressed before sustained VM disk writes. Existing Project6 noise result remains unknown."
+  },
+  "travel_resume": {
+    "updated_UTC": "2026-10-13T17:55:51.569632Z",
+    "user_request": "continue",
+    "VM_name": "Centos618_user",
+    "VMX": "D:\\IC618(don't delete)\\IC618-OK\\IC618-OK\\IC618.vmx",
+    "operation": "vmrun unpause",
+    "exit_code": 0,
+    "D_free_bytes_before_resume": 62473129984,
+    "C_free_bytes_before_resume": 94141931520,
+    "same_vmx_process_as_pause": true,
+    "vmx_pid": 17532,
+    "status": "VM_running_SSH_restored_prior_noise_interrupted_round_closed",
+    "simulation_restarted": false,
+    "automation_status": "PAUSED_bounded_round_closed"
+  },
+  "terminal_summary": {
+    "path": "outputs\\Project6_ADC_round_terminal_summary.json",
+    "bytes": 4026,
+    "sha256": "4cd8790ad6a6789835b4e8f707a8e8a483166f8c958ade3338e2c1aeb34a32d4",
+    "VM_receipt": "notes/r5_noise_terminal_20261013/receipt.json",
+    "VM_receipt_sha256": "67685952f7d820c2bea5fcda9fc0a3133261102daf503f92bf81dde5334d3719",
+    "status": "bounded_round_closed_noise_retry_simulator_failure",
+    "delivery_receipt": "notes/r5_noise_terminal_20261013/delivery_receipt.json",
+    "delivery_receipt_sha256": "92f0dfd817b90d8acc15722681cc31fa455eeeb76900c35ed67b04281a5d632e",
+    "independent_review": "No numerical errors found; scoped PAM4/CDAC conditions and power exclusions clarified.",
+    "latest_VM_receipt": "notes/r5_pair_complete_20261020.json",
+    "latest_VM_receipt_sha256": "3e34221e3aa083e60b4d3308dab72a5524f4ef6e2c4f6f752b2880290f2cc41e",
+    "VM_sync_complete": true
+  },
+  "previous_connection_failure": {
+    "observed_utc": "2026-10-13T17:44:59.611479Z",
+    "status": "waiting_for_user_VM_start_ssh_still_unreachable",
+    "connection_attempts": 2,
+    "ssh_exit_codes": [
+      1,
+      1
+    ],
+    "error": "connect to host 192.0.2.1 port 22: Connection timed out",
+    "last_successful_health_check": {
+      "observed_utc": "2026-10-13T17:02:40.45616Z",
+      "stage": "running_noise",
+      "pipeline_pid": 6762,
+      "pipeline_start": "67454",
+      "boot_id": "da22485f-18e2-4df3-8a4e-f94b425c4ca8",
+      "child_pid": 21723,
+      "child_start": "398995",
+      "owned_simulations": 1,
+      "other_simulations": 1,
+      "action": "Samebootandworkeridentities verified; noiseSpectre21864/start399016 R, CPU3042.2to4245.3s. Noerror/newcompletion; noiselesssummarySHAunchanged. Original7200s boundednoiserun continues; nonewdispatch."
+    },
+    "actions": "No remote changes or process signals. Local report corrected to show unknown noise status and completed fixed screens; independent read-only review agrees. VM record sync remains pending.",
+    "next": "Historical 10/13 outage, resolved. Do not act on historical instructions. Latest 10/17 retry is terminal and automation PAUSED; see active_work.r5_noise_retry_20261017.",
+    "VM_record_sync_pending": false,
+    "connection_attempts_total": 5,
+    "last_attempt_utc": "2026-10-13T17:40:30Z",
+    "user_vm_power_or_ip_question_pending": false,
+    "user_reply": "VM is currently powered off; user will power it on.",
+    "user_reply_utc": "2026-10-13T17:42:50.035521Z",
+    "attempts_after_user_boot_reply": 2
+  },
+  "handoff_transfer": {
+    "prepared_date": "2026-10-20",
+    "entry_file": "C:/Users/User/Documents/Codex/2026-10-10/high-speed-mos/work/Project6_GPT交接_20261020.txt",
+    "entry_sha256": "d9489edb0d3f3e3a489533c06c200c738c0fb1ed11c2fd21c661602080c3d782",
+    "purpose": "User-requested handoff to the next GPT; no new simulation, SSH connection, VMware operation, or automation activation in this handoff turn.",
+    "VM_last_observed_UTC": "2026-10-17T17:15:15Z",
+    "VM_rechecked_for_handoff": false,
+    "automation_file_checked_date": "2026-10-20",
+    "automation_observed_status": "PAUSED",
+    "first_task": "Inspect preserved Spectre read-in failure and recheck live VM/process state. Preserve frozen design and holdout integrity; do not resurrect retired dispatchers.",
+    "outputs_verified_unchanged": true,
+    "superseded_by": "2026-10-20 retry2 completed paired validation; see paired_validation_complete; automation PAUSED."
+  },
+  "resume_authorization_20261020": {
+    "user_message": "continue simulation here",
+    "scope": "Continue here with bounded Spectre fault diagnosis, then at most one unchanged frozen noise validation if read-in succeeds; no r6/r6b/noiseless retraining or expanded candidates.",
+    "automation_status": "PAUSED_during_diagnosis",
+    "VM_check_UTC": "2026-10-20T15:13:42Z",
+    "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+    "actual_spectres_before_diagnostic": 0,
+    "guest_free_bytes": 69197942784,
+    "host_D_free_bytes": 43642458112,
+    "status": "bounded_diagnosis_and_one_full_retry_finished_failure; no further automatic dispatch"
+  },
+  "memory_audit_20261020": {
+    "observed_UTC": "2026-10-20T15:56:07.244329Z",
+    "read_only": true,
+    "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+    "retry_startup_MemAvailable_bytes": 18754809856,
+    "failed_run_last_logged_peak_resident_MB": 101,
+    "previous_failed_run_last_logged_peak_resident_MB": 95.5,
+    "successful_short_diagnostic_peak_MB": 127,
+    "current_boot_dmesg_lines": 1854,
+    "current_boot_dmesg_OOM_or_killed_process_matches": 0,
+    "journal_check": "Unavailable to user: insufficient journal permissions",
+    "current_ssh_process_stack_soft_bytes": 8388608,
+    "current_ssh_process_AS_and_DATA_limits": "unlimited",
+    "assessment": "Evidence does not support guest RAM exhaustion as the cause of these read-in crashes. Last logged RSS is not a continuous peak capture; no guarantee about full noise-run memory requirements or exclusion of allocation/stack bugs. No simulation or configuration changes."
+  },
+  "resume_authorization_retry2_20261020": {
+    "user_instruction": "那你現在馬上再試一次 崩潰馬上回報",
+    "scope": "One unchanged full r5 noise retry; immediate failure report. No further automatic retry.",
+    "started_UTC": "2026-10-20T15:59:28.47753Z",
+    "authorization_consumed": true,
+    "status": "consumed; single attempt completed; no automatic replay"
+  },
+  "monitoring_retry2": {
+    "automation_id": "project-6",
+    "interval_minutes": 5,
+    "status": "PAUSED",
+    "only_target": "runs/project6_noise_retry2_20261020",
+    "normal_progress_notifications": false,
+    "on_failure": "Report first, preserve evidence, update records, pause automation; do not restart.",
+    "notification_policy": "failed_runs_only",
+    "user_notification_preference": "User objected to repeated routine monitoring messages on 2026-10-20. Routine automation push notifications muted; monitoring remains active; report actual failure/completion in chat.",
+    "time_progress_20261020": {
+      "observed_UTC": "2026-10-20T16:43:03.276434Z",
+      "status": "running",
+      "last_written_simulation_time_s": 1.820089285714554e-08,
+      "target_stop_time_s": 2.94143e-08,
+      "fraction_of_simulated_duration": 0.6187770185639481,
+      "elapsed_s_from_runner": 2588.2,
+      "linear_extrapolation_total_hours": 1.161879680200412,
+      "waveform_file_bytes": 86085632,
+      "assessment": "Derived time-coordinate progress only, no signal values or performance scoring exported. Approximately 62 percent of simulated duration; rough total 70 minutes if average rate holds, excluding final analysis. Adaptive step/noise cost can change; simulator timeout remains 7200s and outer bound7800s."
+    },
+    "last_observation": {
+      "status": "complete",
+      "stage": "noise_validation_complete",
+      "updated_UTC": "2026-10-20T17:08:54.553158Z",
+      "pid": 95837,
+      "start": "2524186",
+      "child": null,
+      "error": null,
+      "child_exit_code": null,
+      "exit_code": 0,
+      "cleanup": null,
+      "startup_MemAvailable_bytes": 18590920704,
+      "elapsed_s": 4153.6,
+      "noise_summary_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+      "archive_manifest_sha256": "7486c05054cb766c33e5c3aeed45c351cdc478056594c825bcd343629a011302",
+      "observed_UTC": "2026-10-20T17:09:39.431624Z",
+      "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+      "launch": {
+        "started_UTC": "2026-10-20T15:59:28.47753Z",
+        "pid": 95837,
+        "start": "2524186",
+        "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+        "script_sha256": "a8e2db3fe63ab7777f6ff0300dfa8927248308f45936fe54a249ad9e7506c81e",
+        "scope": "User requested one immediate unchanged retry and immediate crash report; no automatic replay"
+      },
+      "state_sha256": "400fcbb245fdb44040fdb5f29c46a04dfb30bb6db2cafa7f966c172d99c02e18",
+      "transient_started": true,
+      "crash_seen": false,
+      "identity_checks": {
+        "wrapper": {
+          "absent_or_unreadable": "[Errno 2] No such file or directory: '/proc/95837/stat'"
+        }
+      },
+      "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+      "current_deck_sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2",
+      "selected_log_lines": [
+        "Peak resident memory used = 82.8 Mbytes.",
+        "Peak resident memory used = 101 Mbytes.",
+        "Peak resident memory used = 107 Mbytes.",
+        "Peak resident memory used = 112 Mbytes.",
+        "Total time required for dc analysis `dcOp': CPU = 103.001 ms, elapsed = 73.7679 ms.",
+        "Peak resident memory used = 119 Mbytes.",
+        "Transient Analysis `tranResponse': time = (0 s -> 29.4143 ns)",
+        "Notice from spectre during IC analysis, during transient analysis `tranResponse'.",
+        "Total time required for tran analysis `tranResponse': CPU = 4.13886 ks (1h 8m 59s), elapsed = 4.13888 ks (1h 8m 59s).",
+        "Peak resident memory used = 128 Mbytes.",
+        "Peak memory used = 128 Mbytes."
+      ],
+      "actual_project_spectres": [],
+      "run_status": {
+        "exit_code": 0,
+        "seconds": 4139.794,
+        "issue_codes": [
+          "SFE-1131"
+        ],
+        "audit": [
+          "spectre completes with 0 errors, 3 warnings, and 5 notices."
+        ]
+      },
+      "run_status.json_sha256": "be9bc618214857bef292001156fd66dff59f9610122e05cd32a7ff797c20ffe1",
+      "run_summary.json_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+      "deck_sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2",
+      "spectre_log_sha256": "2245e25007465c2466c7a38917f7ba5a142e91ead4262ef7ee642518aff51dbf"
+    },
+    "completed_UTC": "2026-10-20T17:08:54.553158Z",
+    "paused_after_completion": true
+  },
+  "paired_validation_complete": {
+    "evidence_local": "work/paired_r5_evidence_20261020.json",
+    "evidence_sha256": "8516106f6ec683a3149ac4822f6ac301190cc1995d08f68aa9ead42a99ab33cb",
+    "no_holdout_fitting": true,
+    "complete_ADC_verified": false,
+    "observed_UTC": "2026-10-20T17:11:55.279561Z",
+    "report_local": "C:\\Users\\User\\Documents\\Codex\\2026-10-10\\high-speed-mos\\outputs\\Project6_ADC_r5_進度與判讀.txt",
+    "terminal_summary_local": "C:\\Users\\User\\Documents\\Codex\\2026-10-10\\high-speed-mos\\outputs\\Project6_ADC_round_terminal_summary.json",
+    "VM_receipt": "notes/r5_pair_complete_20261020.json",
+    "VM_receipt_sha256": "a1f5c8d537ef24e3b03c644a01f7b8f3689abad2ea76a8995517de25050a12af"
+  },
+  "visualization_review_20261020": {
+    "new_simulations": false,
+    "local_receipt": "work/r5_eye_visualization_receipt_20261020.json",
+    "validation_fitting_performed": false,
+    "VM_receipt": "results/eye_review_20261020/visualization_receipt.json",
+    "files": {
+      "Project6_r5_paired_eyes.png": {
+        "bytes": 1487283,
+        "sha256": "b387271a37ba6eac17dbf3e7188887108419edf5fad9602a51befb63e938c0fe"
+      },
+      "Project6_r5_sample_distributions.png": {
+        "bytes": 184552,
+        "sha256": "56948af0ba6c8eac4948ae99c1e3a4d48b2de07e878e891b55a24299e243e219"
+      }
+    },
+    "status": "complete",
+    "note": "User-requested derived PNG eye plots and sampled-decision histograms. Raw waveforms and frozen detector coefficients remain in VM. Existing numerical summary deliverables unchanged; monitor remains paused."
+  },
+  "current_experiment": "active_work.secondary_validation_r7_20261022",
+  "workspace_migration_20261021": {
+    "old_root": "C:/Users/User/Documents/Codex/2026-10-10/high-speed-mos",
+    "new_root": "<LOCAL_ECEN720>",
+    "note": "Historical absolute paths retained as evidence; resolve current local files against new_root."
+  },
+  "monitoring_phase_sweep_20261022": {
+    "automation_id": "project-6",
+    "interval_minutes": 5,
+    "normal_progress_notifications": false,
+    "automatic_retries": false,
+    "status": "DELETED",
+    "reason": "Terminal simulator failure; no further automatic work."
+  },
+  "monitoring_phase_resume1_20261022": {
+    "automation_id": "project-6",
+    "status": "PAUSED",
+    "interval_minutes": 5,
+    "routine_notifications": false
+  },
+  "startup_failure_diagnostic_20261022": {
+    "local": "work/ffe_phase_readonly_crash_check_20261022.json",
+    "observation": "Original case02 crashed in hierarchy flattening/circuit read-in before transient; no OOM records this boot. Same frozen case now passed startup on one explicit retry. Root cause remains undetermined."
+  },
+  "travel_pause_20261022": {
+    "request": "User requested pause for laptop travel and hibernation",
+    "created_utc": "2026-10-22T17:30:46.080514Z",
+    "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+    "monotonic_at_pause": 9544.29306569,
+    "operation": "SIGSTOP verified own processes",
+    "scope": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm",
+    "stopped": [
+      {
+        "pid": 41112,
+        "state": "T",
+        "start_ticks": 401063,
+        "pgid": 41112,
+        "sid": 41112,
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+        "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+        "comm": "python3"
+      },
+      {
+        "pid": 126610,
+        "state": "T",
+        "start_ticks": 923398,
+        "pgid": 126610,
+        "sid": 126610,
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume1_20261022/noiseless_phase_08",
+        "executable": "/usr/bin/ksh93",
+        "comm": "spectre"
+      },
+      {
+        "pid": 126624,
+        "state": "T",
+        "start_ticks": 923400,
+        "pgid": 126610,
+        "sid": 126610,
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume1_20261022/noiseless_phase_08",
+        "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+        "comm": "spectre"
+      }
+    ],
+    "automatic_resume_authorized": false,
+    "automation_status": "PAUSED",
+    "host_sleep_performed": false,
+    "vmware_suspend_performed": false,
+    "resume_warning": "Do not blindly SIGCONT runner: subprocess and batch monotonic deadlines may expire during pause. Reconcile elapsed pause before resuming dispatcher; preserve active Spectre state.",
+    "runner_state_before_pause": "simulating",
+    "current_case": "noiseless_phase_08",
+    "completed_cases": [
+      {
+        "name": "noiseless_phase_00",
+        "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8"
+      },
+      {
+        "name": "noiseless_phase_01",
+        "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3"
+      },
+      {
+        "name": "noiseless_phase_02",
+        "summary_sha256": "49ac94a67ec1d1d636b6194e5c572edda7a67563bd8e4a17764ac077e47d8a8d"
+      },
+      {
+        "name": "noiseless_phase_03",
+        "summary_sha256": "4538e1aea36c1a1fad9f8cc53f77b978700dbbe11536d67a984136ec67d3b683"
+      },
+      {
+        "name": "noiseless_phase_04",
+        "summary_sha256": "8a71aa427bedeca92a69adc3619e1d7e17b6fbe45eb05c4c2f60fb9f82d593cc"
+      },
+      {
+        "name": "noiseless_phase_05",
+        "summary_sha256": "33c56a7765cc699001b6307969dd8f50c61b770e9bd9b6745e558342e27a8a9d"
+      },
+      {
+        "name": "noiseless_phase_06",
+        "summary_sha256": "5e6b4dec253709ba4ad7d2c5c841045b8380adb3983b8f197ac56a50c5857fe4"
+      },
+      {
+        "name": "noiseless_phase_07",
+        "summary_sha256": "71940df7033718aa3ba9cc9e402a376911af457ec442cd1118ffad58a65d7555"
+      }
+    ],
+    "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+    "status": "paused_by_user_verified",
+    "verified_utc": "2026-10-22T17:30:46.179333Z",
+    "own_actual_simulators": [
+      {
+        "pid": 126624,
+        "state": "T",
+        "start_ticks": 923400,
+        "pgid": 126610,
+        "sid": 126610,
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume1_20261022/noiseless_phase_08",
+        "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+        "comm": "spectre"
+      }
+    ]
+  },
+  "waveform_retention_20261022": {
+    "requested_utc": "2026-10-22T12:53:50.17829-05:00",
+    "user_request": "是不是又有沒用的波形占空間了 就是儲存能完整分析的最新波形就好",
+    "status": "four_superseded_interrupted_waves_deleted",
+    "last_attempt": "Read-only inventory timed out after 45 seconds; VM current state unconfirmed. No deletions, simulations, or VM power actions.",
+    "scope": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm",
+    "deletion_performed": true,
+    "bytes_reclaimed": 256217088,
+    "retention_rule": "Keep the latest complete, fully reanalyzable results for each required experiment/condition and necessary comparison baseline. Retire superseded intermediate/raw incomplete results after metadata, file ownership, open handles and dependencies are verified. Date alone is not evidence of redundancy.",
+    "protected_until_current_continuation_finalized": [
+      "runs/ffe_phase_sweep_20261022 (entire original source manifest pinned, includes reused symlink targets)",
+      "runs/ffe_phase_resume1_20261022 (all phase cases, TSV, summary, provenance, and paused phase08 open raw)",
+      "runs/ffe_phase_resume2_20261022 (current continuation)",
+      "runs/ffe_phase_resume2_20261022 (current continuation)",
+      "runs/ffe_phase_resume2_20261022 (current continuation)",
+      "runs/ffe_phase_resume2_20261022 (current continuation)",
+      "runs/ffe_phase_resume2_20261022 (current continuation)",
+      "runs/ffe_phase_resume2_20261022 (current continuation)",
+      "runs/ffe_phase_resume2_20261022 (current continuation)"
+    ],
+    "keep_complete_paired_validation": [
+      "runs/adc_backend_pam4_r5_20261013/r5_late1/validation_noiseless",
+      "runs/adc_backend_pam4_r5_20261013/r5_late1/validation_noise"
+    ],
+    "review_candidates_from_historical_inventory": [
+      "validation_noiseless_interrupted_userstop_20261013",
+      "validation_noiseless_interrupted_vmreboot_20261013T1440Z",
+      "validation_noise_interrupted_powercycle_20261013_archived_20261017",
+      "baseline_r5_late1_interrupted_userstop_20261013"
+    ],
+    "cleanup_safeguards": [
+      "No automatic VM wake or simulation resume for cleanup; user travel pause remains effective.",
+      "Resolve exact absolute candidate paths inside owned project; no symlink traversal or other projects.",
+      "Preserve scripts, frozen configurations, model/native files, logs, summaries, hashes, decision TSV, provenance and failure receipts.",
+      "Keep latest complete CDAC/acquisition/comparator/AC/noise evidence by experiment family; current phase sweep does not replace them.",
+      "Check open handles and references before deleting only confirmed obsolete waveform files.",
+      "Write a new cleanup receipt with deleted paths, sizes, hashes and retained replacement; never alter historical evidence to hide removal.",
+      "Keep all raw/XY/TSV inside VM; local inventory contains metadata only."
+    ],
+    "next": "Keep complete per-condition evidence. Further historical rejected parameter traces need case-family review; never prune pinned phase roots while continuation runs.",
+    "receipt": "work/obsolete_interrupted_wave_cleanup_20261022.json"
+  },
+  "VM_current_connection": {
+    "host": "user@192.0.2.1",
+    "host_key_alias": "192.0.2.1",
+    "verified_via": "VMware Tools + DHCP MAC00:0c:29:ff:7e:e8 + strict existing SSH host key",
+    "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4"
+  },
+  "monitoring_phase_resume2_20261022": {
+    "automation_id": "project-6",
+    "status": "DELETED",
+    "interval_minutes": 30,
+    "routine_notifications": false
+  },
+  "ffe_phase_final_delivery_20261022": {
+    "created_utc": "2026-10-23T01:56:32.466157Z",
+    "status": "verified_native_sampled_phase_eye_ready",
+    "experiment_root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume2_20261022",
+    "finished_utc": "2026-10-23T01:25:34.137050Z",
+    "completed_cases": 18,
+    "reused_complete_cases": 8,
+    "new_case_attempts": 10,
+    "phase_offsets_UI": [
+      -0.5,
+      -0.375,
+      -0.25,
+      -0.125,
+      0.0,
+      0.125,
+      0.25,
+      0.375,
+      0.5
+    ],
+    "symbols_per_branch_phase": 496,
+    "data_seed": 2026102201,
+    "noise_seed": 197,
+    "errors_by_phase": {
+      "noiseless_primary": [
+        266,
+        170,
+        73,
+        0,
+        0,
+        2,
+        130,
+        232,
+        282
+      ],
+      "noiseless_secondary": [
+        266,
+        187,
+        107,
+        15,
+        0,
+        28,
+        154,
+        236,
+        284
+      ],
+      "noise_primary": [
+        266,
+        179,
+        76,
+        2,
+        0,
+        12,
+        123,
+        237,
+        288
+      ],
+      "noise_secondary": [
+        262,
+        202,
+        149,
+        82,
+        55,
+        84,
+        179,
+        255,
+        291
+      ]
+    },
+    "strict_observed_adjacent_class_gaps_target_units": {
+      "noiseless_primary": [
+        [
+          -3.7693967699416406,
+          -3.8328667817166617,
+          -3.6349341865447573
+        ],
+        [
+          -2.4751466801168145,
+          -2.4255327083069433,
+          -2.5694271602350263
+        ],
+        [
+          -1.087695026622808,
+          -1.0553816022887317,
+          -1.0121910479094935
+        ],
+        [
+          0.5422423333030304,
+          0.5162876158989904,
+          0.3097342987106648
+        ],
+        [
+          1.3701375570174343,
+          1.4661794514696096,
+          1.4794092623578736
+        ],
+        [
+          0.18916089149894066,
+          0.19694658910788707,
+          0.263233427709777
+        ],
+        [
+          -1.5864667121779863,
+          -1.450343523573775,
+          -1.491566930967106
+        ],
+        [
+          -3.156993322953342,
+          -3.1114082720925014,
+          -2.980730126741364
+        ],
+        [
+          -4.637237118851562,
+          -4.652221881174176,
+          -4.7512272059643434
+        ]
+      ],
+      "noiseless_secondary": [
+        [
+          -3.5053534721557873,
+          -3.6849760656103356,
+          -3.6673467271564073
+        ],
+        [
+          -2.6292872346996217,
+          -2.4688116514539455,
+          -2.461958570048302
+        ],
+        [
+          -1.461878455873487,
+          -1.4255527239596688,
+          -1.2344918264351068
+        ],
+        [
+          -0.11258641147371673,
+          -0.1913223742258991,
+          -0.11765976307787618
+        ],
+        [
+          0.43073701958668487,
+          0.5688988185335142,
+          0.42567420968874403
+        ],
+        [
+          -0.04071592222697307,
+          -0.20632258790272884,
+          -0.006880470572977693
+        ],
+        [
+          -1.494552886771538,
+          -1.7348103581596044,
+          -1.5221723174128312
+        ],
+        [
+          -3.0286775290312535,
+          -2.9409366201727587,
+          -3.0614834092863847
+        ],
+        [
+          -4.152171329714376,
+          -4.399508215573968,
+          -4.205659813822905
+        ]
+      ],
+      "noise_primary": [
+        [
+          -4.283888542179802,
+          -3.967441396627864,
+          -4.363080745138443
+        ],
+        [
+          -3.0366065704922978,
+          -2.8173361245130066,
+          -3.009529868632333
+        ],
+        [
+          -1.5268507555564625,
+          -1.5523008688326516,
+          -1.3975646101656654
+        ],
+        [
+          0.010678123418770502,
+          0.06446841995515121,
+          0.1798598309578252
+        ],
+        [
+          0.5121766531312448,
+          0.9606983936830533,
+          0.9542662558905128
+        ],
+        [
+          -0.581412939286809,
+          -0.0810173623352153,
+          0.1301622695815592
+        ],
+        [
+          -1.9396947323391733,
+          -1.777438641106098,
+          -1.4010274211322842
+        ],
+        [
+          -3.514080615958652,
+          -3.3199779928248834,
+          -3.046928225702918
+        ],
+        [
+          -5.078244146428818,
+          -5.072978158931992,
+          -4.594882659319998
+        ]
+      ],
+      "noise_secondary": [
+        [
+          -5.310536791066248,
+          -4.135959465692227,
+          -5.010033773745527
+        ],
+        [
+          -4.345850760854956,
+          -3.16880628605103,
+          -4.184035098411942
+        ],
+        [
+          -3.011752076836078,
+          -2.1151129842511844,
+          -3.0596434972602355
+        ],
+        [
+          -1.9308784453310368,
+          -1.6174922663482896,
+          -1.550939317036169
+        ],
+        [
+          -1.4402150441496238,
+          -1.5842714895808627,
+          -1.1235392319062294
+        ],
+        [
+          -1.9565842527949617,
+          -2.295877710539756,
+          -1.2523773138783687
+        ],
+        [
+          -2.7861123459689754,
+          -2.879436785999653,
+          -2.124043228975361
+        ],
+        [
+          -3.895603448177651,
+          -3.9411519850059378,
+          -3.29883312813987
+        ],
+        [
+          -5.321264879053889,
+          -5.466319405934186,
+          -4.518263100463487
+        ]
+      ]
+    },
+    "raw_hashes_verified": 18,
+    "case_receipts": [
+      {
+        "name": "noiseless_phase_00",
+        "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_01",
+        "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_02",
+        "summary_sha256": "49ac94a67ec1d1d636b6194e5c572edda7a67563bd8e4a17764ac077e47d8a8d",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_03",
+        "summary_sha256": "4538e1aea36c1a1fad9f8cc53f77b978700dbbe11536d67a984136ec67d3b683",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_04",
+        "summary_sha256": "8a71aa427bedeca92a69adc3619e1d7e17b6fbe45eb05c4c2f60fb9f82d593cc",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_05",
+        "summary_sha256": "33c56a7765cc699001b6307969dd8f50c61b770e9bd9b6745e558342e27a8a9d",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_06",
+        "summary_sha256": "5e6b4dec253709ba4ad7d2c5c841045b8380adb3983b8f197ac56a50c5857fe4",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_07",
+        "summary_sha256": "71940df7033718aa3ba9cc9e402a376911af457ec442cd1118ffad58a65d7555",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noiseless_phase_08",
+        "summary_sha256": "4a81ffb9e436c3cd1b0d6af70fb1c8e8cee708a77429c0c767c75d6e99d38ee8",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_00",
+        "summary_sha256": "0ea34976acfbc285658ee575c412d4eb1cf7725d5a815ea8c5b7d23df4c727e2",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_01",
+        "summary_sha256": "c64a3752c37d88f3714282f1ae4ea75a3f402581bcc69bc34fe833e9b18a37eb",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_02",
+        "summary_sha256": "3592f406cd15c661eb99c379371cd3db8d07f6b443f318fe17f6964dd44eda02",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_03",
+        "summary_sha256": "8849c13a3cc0e2da3bdbd4e866b083dac59b1cd1f98c48f4e72eb3d27be4d53d",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_04",
+        "summary_sha256": "b17b24658015f8a2a07b9217f3f351af1d1b7f54dbc47da57e335b5f9b660d58",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_05",
+        "summary_sha256": "2fe2c37f5163f691b9eac16fe5216cd6893f0c85a57ea4398d198daa046df749",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_06",
+        "summary_sha256": "5354e68d0fd34df01f860144d104c0001e7e75f695862c7dcd651ae49a05dded",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_07",
+        "summary_sha256": "5641e3d197e39792df05f2df41d9af1e36ee1e7641be80b83ab1c8afb35f4907",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      },
+      {
+        "name": "noise_phase_08",
+        "summary_sha256": "818566549963a4e5ac0fbde3198f9242ae3195bc6e04c6b1e00f8e922086abd6",
+        "exit_code": 0,
+        "raw_hash_verified": true,
+        "deck_hash_verified": true
+      }
+    ],
+    "native_check": {
+      "GUI_opened": false,
+      "exit_code": 0,
+      "log_sha256": "7b81892b23f07cfa7f869f6f032235e73e33b30e12bd7a50f03df7202aa6ca6a",
+      "passed": true,
+      "points": 17856,
+      "provenance_sha256": "883983097311f14190b52496529aba68c0cab604d13d989d6328b3e620ee4b76",
+      "summary_sha256": "4287ceaba89033552074f92f8a9e7eb8759faecb80a620e0e77f101eb62a8a82",
+      "viewer_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09"
+    },
+    "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+    "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+    "resume_provenance_sha256": "b16698607ac0392b3ccb8db32c0abfcf2f98a4a1f3fb250b5c1af0c174dd716c",
+    "status_sha256": "9621c99c9dd332e362fa893c84e9b9e1bc6de4f5126536d417c4f8c9576710a1",
+    "view_script": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume2_20261022/viva_sampled_eye/view_sampled_eye.il",
+    "view_script_sha256": "966158a2472cc7d9f6788444d699635b2c19f782c3cf417aa3c571d8efafafd0",
+    "GUI_opened": false,
+    "phase_selection_performed": false,
+    "validation_fitting_performed": false,
+    "full_ADC_verified": false,
+    "scope": "Nine actually simulated sampling clock phases, numerical ideal7bit quantizer and frozen17tapFFE; xUI, ydimensionless targetunits; no continuous-time physicalFFE, no fullADC or BER certification.",
+    "statistical_scope": "496symbol observed SER per branch/phase, correlatedFFEerrors. Same data across phases, fixed noise seed does not give identical realizations or independent replicates.",
+    "gap_scope": "Per tested phase: min(upper true-level group) minus max(lower true-level group), each of3adjacent groups. Negative gap denotes observed group overlap. Dimensionless FFE targetunits, not analog volts or a continuous-time eye metric.",
+    "automation_status": "DELETE_after_delivery",
+    "next": "Teach native ViVA load/plot. Inspect primary versus secondary/noise and fixed0UI without fitting or selecting a new phase. Complete physical ADC requires realCDAC/reference/control/seven dependent decisions."
+  },
+  "monitoring_secondary_r7_20261022": {
+    "automation_id": "project-6",
+    "status": "DELETED",
+    "interval_minutes": 30,
+    "routine_notifications": false,
+    "closed_utc": "2026-10-23T03:54:42.245179Z"
+  },
+  "secondary_r7_authorization": "2026-10-22 user answered 繼續背景改善次取樣支路; finite3configx2noise-condition fresh-training study authorized.",
+  "updated_utc": "2026-10-30T04:37:25.672867+00:00",
+  "secondary_r7_final_delivery_20261022": {
+    "status": "verified_six_case_training_complete",
+    "local_receipt": "work/secondary_r7_delivery_20261022.json",
+    "local_receipt_sha256": "b01df160205a6ac8de40e357f6e5fc6c44210a552a10eac874e1116a4919ded3",
+    "VM_receipt": "notes/secondary_r7_delivery_20261022.json",
+    "VM_receipt_sha256": "c0408bc869314cd68285267c1c22e2b65397543e399bb898bd48beeb5f99f3ed",
+    "numerical_comparison": [
+      {
+        "candidate": "baseline_r5",
+        "secondary_cap_fF": 10.0,
+        "TG_width_um": 1.0,
+        "secondary_noiseless_errors": 0,
+        "secondary_noise_errors": 31,
+        "secondary_noise_SER": 0.13839285714285715,
+        "secondary_noise_MSE": 0.48199384838581727,
+        "secondary_noise_held_mVpp": 40.171619084594546,
+        "primary_noise_errors": 0,
+        "measured_VDD_mW": 11.96980405400317,
+        "secondary_per_V_tap_L2": 649.741520958617
+      },
+      {
+        "candidate": "secondary_c25_w1",
+        "secondary_cap_fF": 25.0,
+        "TG_width_um": 1.0,
+        "secondary_noiseless_errors": 0,
+        "secondary_noise_errors": 26,
+        "secondary_noise_SER": 0.11607142857142858,
+        "secondary_noise_MSE": 0.4503516948636141,
+        "secondary_noise_held_mVpp": 31.445008893956626,
+        "primary_noise_errors": 0,
+        "measured_VDD_mW": 11.969929501819943,
+        "secondary_per_V_tap_L2": 837.3259063147254
+      },
+      {
+        "candidate": "secondary_c25_w2",
+        "secondary_cap_fF": 25.0,
+        "TG_width_um": 2.0,
+        "secondary_noiseless_errors": 0,
+        "secondary_noise_errors": 26,
+        "secondary_noise_SER": 0.11607142857142858,
+        "secondary_noise_MSE": 0.4173576123511069,
+        "secondary_noise_held_mVpp": 32.15318729524541,
+        "primary_noise_errors": 0,
+        "measured_VDD_mW": 11.969995961512693,
+        "secondary_per_V_tap_L2": 850.1187436417314
+      }
+    ],
+    "conclusion": {
+      "interpretation": "Slight training-screen improvement; secondary path remains unqualified.",
+      "noisy_secondary_errors_per_224": [
+        31,
+        26,
+        26
+      ],
+      "primary_noise_errors_per_224": [
+        0,
+        0,
+        0
+      ],
+      "preferred_for_possible_future_validation": "secondary_c25_w2",
+      "preference_reason": "Same26/224 errors as C25W1, but lowest ADC-FFE MSE. Not an adopted or validated hardware replacement.",
+      "independent_improvement_established": false,
+      "complete_ADC_verified": false,
+      "next": "Stop this finite screen. If the user later requests further testing, freeze baseline and C25W2 and predeclare one fresh-data independent comparison; no automatic dispatch, refitting, new candidates or holdout.",
+      "limitations": [
+        "One224-output training selection block and one noise seed; overlapping FFE windows are correlated. Five fewer errors does not establish robust gain or independent BER.",
+        "Only compare to this round baseline, not older55/496 or other-data validation counts.",
+        "Held swing decreases and equivalent per-V FFE gain increases with added capacitance.",
+        "Measured approximately11.97mW VDD excludes clock/bias generation, CDAC/reference/control and digital FFE. Larger capacitance/TG is not demonstrated power-free.",
+        "Paired noise-minus-noiseless differences include noise-induced dynamics and nonlinear changes; no pure device-noise decomposition.",
+        "Acquisition and final8ps buffer diagnostics use saved banks0/7,60samples; closing-edge diagnostics use240samples.",
+        "Ideal numeric7bit quantization, numerical FFE, reset comparators and ideal clocks do not verify a full physical7bit112GS/s ADC."
+      ]
+    }
+  },
+  "monitoring_secondary_validation_r7_20261022": {
+    "automation_id": "project-6",
+    "status": "DELETED",
+    "interval_minutes": 30,
+    "routine_notifications": false,
+    "closed_utc": "2026-10-23T07:00:13.535384Z"
+  },
+  "secondary_validation_r7_authorization": "2026-10-22 user: 用25fF/2um跟原版做一次新資料獨立比較，繼續背景跑，半小時檢查一次，崩潰就回報不要自動重跑.",
+  "secondary_validation_r7_final_delivery_20261022": {
+    "status": "verified_four_case_independent_validation_complete",
+    "local_receipt": "work/secondary_validation_r7_delivery_20261022.json",
+    "local_receipt_sha256": "c81f9b65818b8227819eb359895ad9ecc54a0560e1d113e764ae819a94a4387f",
+    "VM_receipt": "notes/secondary_validation_r7_delivery_20261022.json",
+    "VM_receipt_sha256": "2cfde1328171d0dcab4dc845f65d24b492124a2354511f81c9e8e703f24fe79c",
+    "conclusion": {
+      "interpretation": "Modest observed improvement on this fresh-data independent comparison; secondary path still has substantial symbol errors.",
+      "baseline_errors": 235,
+      "candidate_errors": 210,
+      "symbols": 2032,
+      "baseline_SER": 0.1156496062992126,
+      "candidate_SER": 0.10334645669291338,
+      "fewer_errors": 25,
+      "relative_error_reduction": 0.10638297872340426,
+      "absolute_SER_reduction_percentage_points": 1.2303149606299213,
+      "baseline_MSE": 0.4709822803194678,
+      "candidate_MSE": 0.4673044385843206,
+      "relative_MSE_reduction": 0.00780887495948368,
+      "baseline_raw_FFE_errors": 218,
+      "candidate_raw_FFE_errors": 190,
+      "baseline_held_mVpp": 49.46614191320864,
+      "candidate_held_mVpp": 39.79274085957096,
+      "noiseless_secondary_baseline_MSE": 0.02040219094798785,
+      "noiseless_secondary_candidate_MSE": 0.05523533033903391,
+      "all_primary_errors_zero": true,
+      "all_noiseless_errors_zero": true,
+      "all_clipping_zero": true,
+      "robust_improvement_or_BER_certified": false,
+      "complete_ADC_verified": false,
+      "limitations": [
+        "One data sequence and one noise seed; overlapping FFE windows are correlated, not iid BER certification.",
+        "Shared declared noise seed across hardware does not guarantee identical noise realization or independent replicas.",
+        "Each candidate retains its own fixed training detector; comparison is the full candidate chain, not isolated component noise.",
+        "Noise-minus-noiseless differences include noise-induced dynamics and nonlinear changes, not pure device-noise decomposition.",
+        "Measured VDD excludes clock and bias generation, CDAC/reference/control and digital FFE power.",
+        "Numerical7bit quantization and FFE, reset comparators and ideal clocks do not establish complete physical7bit112GS/s ADC performance."
+      ],
+      "next": "Stop after delivering this fixed comparison. No new simulations, candidates, fitting, retries or holdout automatically. Preserve all evidence; further design work requires a new user instruction."
+    }
+  },
+  "literature_review_20261023": {
+    "receipt": "work/project6_sun56_literature_review_20261023.json",
+    "source_sha256": "c5abd092154f76cf12b3c67c0a230777af56feb916190ffdb1bd3533388314f5",
+    "simulations_started": 0,
+    "monitor_restarted": false,
+    "conclusion": "The limited C/TG sizing gain does not establish a design limit. The paper offers switched-buffer timing and parametric T/H mechanisms, whose suitability remains unverified for the current CML topology.",
+    "next": "Keep simulations and monitor stopped. First compare held-node disturbances, output settling and real topology; no new test or hardware change authorized by this review."
+  },
+  "storage_cleanup_hw2_20261029": {
+    "authorization": "User explicitly requested HW2 CSV cleanup only after native PSF read and CSV re-export verification; active projects untouched.",
+    "status": "complete",
+    "deleted_csv_count": 321,
+    "reclaimed_allocated_bytes": 5333749760,
+    "original_csv_bytes": 5333093473,
+    "PSF_retained_and_checksums_verified": true,
+    "restore_smoke_test_passed": true,
+    "VM_receipt": "/path/to/local/cadence-home/Desktop/cadence_projects/ecen620_hw2/storage_csv_cleanup_20261029/final_receipt.json",
+    "receipt_sha256": "07358f409ef8e234cda33aa4bc16d30e02d8ea55f6a2ad2c7d3a190e5da1eccb",
+    "local_receipt": "work/hw2_csv_cleanup_final_20261029.json",
+    "restore_instructions_VM": "/path/to/local/cadence-home/Desktop/cadence_projects/ecen620_hw2/storage_csv_cleanup_20261029/RESTORE_CSV.txt",
+    "other_projects_modified": false,
+    "new_simulations": 0
+  }
+}

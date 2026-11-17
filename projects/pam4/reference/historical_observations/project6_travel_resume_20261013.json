@@ -1,0 +1,15 @@
+{
+  "updated_UTC": "2026-10-13T17:55:51.569632Z",
+  "user_request": "continue",
+  "VM_name": "Centos618_user",
+  "VMX": "D:\\IC618(don't delete)\\IC618-OK\\IC618-OK\\IC618.vmx",
+  "operation": "vmrun unpause",
+  "exit_code": 0,
+  "D_free_bytes_before_resume": 62473129984,
+  "C_free_bytes_before_resume": 94141931520,
+  "same_vmx_process_as_pause": true,
+  "vmx_pid": 17532,
+  "status": "VM_unpaused_guest_SSH_not_yet_available",
+  "simulation_restarted": false,
+  "automation_status": "PAUSED_pending_guest_result_inspection"
+}

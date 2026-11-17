@@ -1,0 +1,23 @@
+Olympus 交接｜LP14 REFMIRROR
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B ref_mirror.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議核准新版 0–9。0–2 是 SS/TT/FF 的 1934 Ω 直連，3–5 是相同
+設定的 rail-limited PMOS pass；6–9 是 SS/FF 新鏡負載 OTA P/N。
+先驗 3 的 bsource 語法、Gate、VSD、Iref、完整 PSF 和 completion。
+  /usr/bin/python3.11 -B ref_mirror.py --mode stage --index 0 --index 3 --index 6 --index 8 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+待使用者批准，填 mirror_plan.json SHA、manifest SHA、精確 case IDs
+與 smoke stage。沿用 Olympus 私有 shrink、Spectre 23.1.0.722.isr15
+classic +mt=1、SPECTRE_DEFAULTS=-E，使用 ref_mirror_classic.sbatch。
+新 run root，1 CPU／4 GiB／30 min，solver 估 1–10 s。
+環境變數 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、
+PAM4_DRIVE_APPROVAL、PAM4_PDK_ROOT。
+
+  /usr/bin/python3.11 -B ref_summary.py --plan mirror_plan.json --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_refmirror_summary.json
+
+回報 1934 Ω 的同角落差異、最差 Iref、gate 限幅、ND_OUT 誤差，
+及兩角落 OTA 的追蹤／增益／功耗。10–16 為尺寸敏感度，依首批結果
+另審查。舊批次 raw 和本批 raw 留在 Olympus。

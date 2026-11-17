@@ -1,0 +1,19 @@
+[
+  {
+    "status": "native_view_data_ready",
+    "path": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume2_20261022/viva_sampled_eye",
+    "GUI_opened": false,
+    "simulations_started": 0,
+    "scope": "Native ViVA scatter display of actual clock-phase simulation samples after ideal numerical 7-bit quantization and the frozen digital FFE. Nine tested phases, 496 fixed target symbols per phase. No interpolation, no physical continuous-time FFE waveform, no physical ADC/FFE verification."
+  },
+  {
+    "passed": true,
+    "exit_code": 0,
+    "points": 17856,
+    "GUI_opened": false,
+    "log_sha256": "7b81892b23f07cfa7f869f6f032235e73e33b30e12bd7a50f03df7202aa6ca6a",
+    "viewer_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09",
+    "provenance_sha256": "883983097311f14190b52496529aba68c0cab604d13d989d6328b3e620ee4b76",
+    "summary_sha256": "4287ceaba89033552074f92f8a9e7eb8759faecb80a620e0e77f101eb62a8a82"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "schema": "pam4_sar7_qbuffer_retained_audit_v1",
+  "sources": {
+    "qbuffer": {
+      "job": "761549",
+      "root": "pam4_sar7_qbuffer_pilot_20261116.GscWI6",
+      "summary": "8ab3c03c13658704b2c4a20be6bd453e864f74c4e7e1a6169434a275bbe2eb93",
+      "measurements": "569c78e621d19bd6a9ab066b8fd87e0b1382c13fb872abd928f55964d1e4308a",
+      "tran": "1abec792de375805df2b212a6ef8681855acc619d3202d09384180e067a3568a",
+      "manifest": "928590bc897d6755e208f2729f8c0c9882e15a42262032edddf9b491fa0188ca",
+      "portable": "509bbedfdc2be956eafade7021b968eeb60d29f0fcb654d2c0037a22b5da813a"
+    },
+    "strong": {
+      "job": "761524",
+      "root": "pam4_sar7_strong_decode_pilot_20261116.qUaOJ0",
+      "summary": "73dafa11235da6c63048536e447cd3bda60dba23155b03a399d86c725a84ac03",
+      "measurements": "a8b0c965f0a4a7e9ccdf11523aa7f0b2fb9142e24a3349fc0b6cb343c3813a18",
+      "tran": "fc21cd54451e4c2798e08366c859db125e898eaf0a4f5584c280450ec4fcb318",
+      "manifest": "43b93d73f5f5e08fc350a6b9a12ae6c54ec3c5eac280190be93a38b3fe4b8bd8",
+      "portable": "31d7e4e66c8f33a6432d640050285736454e63fa8cc171b04f13b39875180da8"
+    }
+  },
+  "targets": [
+    [
+      0,
+      6
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      1
+    ]
+  ]
+}

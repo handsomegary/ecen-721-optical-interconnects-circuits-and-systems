@@ -1,0 +1,2 @@
+# Keep delivered bytes exact so SHA256SUMS.txt verifies.
+* -text

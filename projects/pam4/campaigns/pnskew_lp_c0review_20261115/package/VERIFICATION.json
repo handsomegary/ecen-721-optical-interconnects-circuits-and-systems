@@ -1,0 +1,15 @@
+{
+  "status": "portable_review_pending_olympus_readback",
+  "review_decks_verified": 5,
+  "offline_native_synthetic_psf_bytes": 31297084,
+  "offline_held_inputs_per_plane": 256,
+  "offline_FFE_scores_per_plane": 240,
+  "offline_summary_combined_five_fixture_reports": true,
+  "offline_summary_rejected_missing_case": true,
+  "device_masks_preset": true,
+  "historical_clock_and_FFE_used": true,
+  "independent_code_and_phase_training_complete": false,
+  "spectre_run_started": false,
+  "Olympus_real_file_replay_complete": false,
+  "contains_PDK_model_files": false
+}

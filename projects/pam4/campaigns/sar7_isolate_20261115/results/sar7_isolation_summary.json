@@ -1,0 +1,220 @@
+{
+  "status": "measured",
+  "case_id": "sar7_04_tt_ideal_sense_isolation",
+  "job_id": "760132",
+  "baseline_job_id": "760091",
+  "baseline_wrong_conversions": 10,
+  "baseline_unresolved_bits": 0,
+  "diagnostic_period_ps": 1080,
+  "trial_launch_to_compare_ps": 60,
+  "comparison_window_ps": 60,
+  "wrong_conversions": 10,
+  "unresolved_bits": {
+    "6": 0,
+    "5": 0,
+    "4": 0,
+    "3": 0,
+    "2": 0,
+    "1": 0,
+    "0": 0
+  },
+  "final_cm_change_mV": [
+    -4.299191072606123,
+    -4.260045728108786
+  ],
+  "max_abs_sample_error_lsb": 1.6874419019406162,
+  "max_observed_resolve_delay_s": 4.5999999999993844e-11,
+  "logic_smoke_pass": false,
+  "solver_seconds": 184.8105559819378,
+  "raw_bytes": 82623749,
+  "tran_sha256": "a3c3572cbaa07a1f2d4fe85dd8ec33f1fd1d86f061f53c1f7319c4e015cea4b7",
+  "codes": [
+    {
+      "expected": 64,
+      "comparator": 65,
+      "registered": 65
+    },
+    {
+      "expected": 0,
+      "comparator": 0,
+      "registered": null
+    },
+    {
+      "expected": 127,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 31,
+      "comparator": 29,
+      "registered": 29
+    },
+    {
+      "expected": 96,
+      "comparator": 99,
+      "registered": 99
+    },
+    {
+      "expected": 63,
+      "comparator": 64,
+      "registered": null
+    },
+    {
+      "expected": 65,
+      "comparator": 66,
+      "registered": null
+    },
+    {
+      "expected": 85,
+      "comparator": 88,
+      "registered": null
+    },
+    {
+      "expected": 42,
+      "comparator": 41,
+      "registered": 41
+    },
+    {
+      "expected": 1,
+      "comparator": 0,
+      "registered": null
+    },
+    {
+      "expected": 126,
+      "comparator": 127,
+      "registered": 127
+    },
+    {
+      "expected": 64,
+      "comparator": 65,
+      "registered": 65
+    }
+  ],
+  "diagnostic_load": "unloaded CDAC hold nodes with ideal unity drives for comparator gates",
+  "baseline_final_cm_change_mV_approx": [
+    -112.5,
+    -109.1
+  ],
+  "rails_not_matching": [
+    {
+      "index": 1,
+      "expected_code": 0,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            6.836961568881629e-05,
+            0.8999750760483728
+          ],
+          "compare_end_V": [
+            0.007612180444238028,
+            0.8999844211081777
+          ],
+          "output_end_V": [
+            0.3219935806895871,
+            0.7678567388640786
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "expected_code": 63,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            0.0006301725784154353,
+            0.8997874979671754
+          ],
+          "compare_end_V": [
+            0.007625574310005348,
+            0.8999780574144892
+          ],
+          "output_end_V": [
+            0.3221267385150137,
+            0.7678230256301467
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "expected_code": 65,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            0.0005959137954118157,
+            0.8997968252440587
+          ],
+          "compare_end_V": [
+            0.007624816832059346,
+            0.899978373348272
+          ],
+          "output_end_V": [
+            0.32211879563805246,
+            0.7678250282479084
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "expected_code": 85,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            0.00041701099665637396,
+            0.8998480843218879
+          ],
+          "compare_end_V": [
+            0.00762079086043678,
+            0.8999801084828569
+          ],
+          "output_end_V": [
+            0.3220770497026367,
+            0.7678355626891411
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "expected_code": 1,
+      "bits": [
+        {
+          "bit": 0,
+          "original_cmp": 0,
+          "final_cmp": 0,
+          "final_out": null,
+          "compare_read_V": [
+            6.976912860806547e-05,
+            0.8999743256793367
+          ],
+          "compare_end_V": [
+            0.007612222014374858,
+            0.8999843949981786
+          ],
+          "output_end_V": [
+            0.32199394487649224,
+            0.7678566457228401
+          ]
+        }
+      ]
+    }
+  ]
+}

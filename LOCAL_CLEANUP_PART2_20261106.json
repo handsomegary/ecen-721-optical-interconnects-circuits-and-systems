@@ -1,0 +1,416 @@
+{
+  "backup_commit": "49546c407eca69340092df4f4ccc903a33841757",
+  "scope": "Verified Windows local project copies and caches; VMware, Olympus, PDK, shared repo and unrelated projects retained.",
+  "deleted_file_count": 68,
+  "deleted_bytes": 1454689,
+  "files": [
+    {
+      "relative_path": "work/project6_r5_handoff.json",
+      "sha256": "f6845f3c61d430cf56646c8934ca1d1dde426f837d1a56c80fb2a792f5f13fe9",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 123174
+    },
+    {
+      "relative_path": "work/ffe_phase_resume2_delivery_20261022.json",
+      "sha256": "ad123c1f2669557d60e2798c2a6d75157e3c61a1e220fcff0052253beb7087a2",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 11630
+    },
+    {
+      "relative_path": "work/secondary_r7_delivery_20261022.json",
+      "sha256": "b01df160205a6ac8de40e357f6e5fc6c44210a552a10eac874e1116a4919ded3",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 23256
+    },
+    {
+      "relative_path": "work/secondary_validation_r7_delivery_20261022.json",
+      "sha256": "c81f9b65818b8227819eb359895ad9ecc54a0560e1d113e764ae819a94a4387f",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 15867
+    },
+    {
+      "relative_path": "work/secondary_hold_mechanism_r8_20261029.json",
+      "sha256": "7fb98fd35ac3588dda3d4378656b6f8ac734143826bf5af7d2c98aff5ef61f79",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 12618
+    },
+    {
+      "relative_path": "work/secondary_load_isolation_r8_plan_20261029.json",
+      "sha256": "d67a822fde73b477cdcba9059434f6ac779feeaf2ee6d3b2d0a443b2359fd16f",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 4256
+    },
+    {
+      "relative_path": "work/secondary_load_isolation_r8_preflight_20261029.json",
+      "sha256": "dca22fde700ab686f1d321bb1ad6bb17e0e598e11489ea35e8a4cfe860cf4520",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 698
+    },
+    {
+      "relative_path": "work/project6_r8_continuation_receipt_20261029.json",
+      "sha256": "00c2e820529568731f4784625ff9cc17934be5a68ea735a6e59c9f059bb1b7a7",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 511
+    },
+    {
+      "relative_path": "outputs/Project6_Feasibility_Test_Package.zip",
+      "sha256": "220d94b32fa7c291db3475e8e643f83b076585cbd289485b9b66e212fdf60728",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 54410
+    },
+    {
+      "relative_path": "work/project6_start/channel_shape_diagnostic.json",
+      "sha256": "2135c90e9cd2bf3158bbd899aaff987359321ff0c8c8ac7dda5cab3e67aaa1e5",
+      "reason": "GitHub historical checkpoint",
+      "bytes": 1941
+    },
+    {
+      "relative_path": "work/ffe_phase_last_observation_20261022.json",
+      "sha256": "8624b4a578237877cb52dad5373c2f473506410405722fea9ab77bdea80957ca",
+      "reason": "GitHub historical observation",
+      "bytes": 4912
+    },
+    {
+      "relative_path": "work/ffe_phase_readonly_crash_check_20261022.json",
+      "sha256": "e7b2c79c6676af67bdaa8f014e77c27860d70136075fa048c6268304c6676814",
+      "reason": "GitHub historical observation",
+      "bytes": 7870
+    },
+    {
+      "relative_path": "work/ffe_phase_resume1_last_observation_20261022.json",
+      "sha256": "6d8698e75c720bdb3180744d969f07475f15dd51589951aa367d84a86b99de14",
+      "reason": "GitHub historical observation",
+      "bytes": 8712
+    },
+    {
+      "relative_path": "work/ffe_phase_resume1_travel_pause_20261022.json",
+      "sha256": "1c9fb0e39bf734e082ea543772faa67fc18c5588c6201f0ffbe862254acfe014",
+      "reason": "GitHub historical observation",
+      "bytes": 3664
+    },
+    {
+      "relative_path": "work/ffe_phase_resume2_build-viewer_20261022.json",
+      "sha256": "80ff0a5496e0fdb3d16da6a9dd771843624018f37a5c4616c3c117e054069fff",
+      "reason": "GitHub historical observation",
+      "bytes": 1013
+    },
+    {
+      "relative_path": "work/ffe_phase_resume2_last_observation_20261022.json",
+      "sha256": "1a236228a000f6b3a47eaf810c7824168c20b7112c6f3224b010a1bf50539b71",
+      "reason": "GitHub historical observation",
+      "bytes": 8920
+    },
+    {
+      "relative_path": "work/ffe_phase_resume2_launch_20261022.json",
+      "sha256": "518935a2ff0aba51d4264c7ea88a6580788d1c35dfdf39d6921d56e4162b4980",
+      "reason": "GitHub historical observation",
+      "bytes": 5055
+    },
+    {
+      "relative_path": "work/ffe_phase_resume2_monitor_closed_20261022.json",
+      "sha256": "ccd3628a385228f6bad55cef7535bd723fc9286ddb7c3e18e590cdada5da7518",
+      "reason": "GitHub historical observation",
+      "bytes": 351
+    },
+    {
+      "relative_path": "work/ffe_phase_resume2_prepare_20261022.json",
+      "sha256": "5c395e9a602aafc712df3a2fa965a43b4d0141773eb8988f9328e1acd4ee2afa",
+      "reason": "GitHub historical observation",
+      "bytes": 5668
+    },
+    {
+      "relative_path": "work/ffe_phase_terminal_20261022.json",
+      "sha256": "d4ac889725622290aa23989c1c18fdd49d868aded96382444a3ad73c615de476",
+      "reason": "GitHub historical observation",
+      "bytes": 2683
+    },
+    {
+      "relative_path": "work/paired_r5_evidence_20261020.json",
+      "sha256": "8516106f6ec683a3149ac4822f6ac301190cc1995d08f68aa9ead42a99ab33cb",
+      "reason": "GitHub historical observation",
+      "bytes": 6516
+    },
+    {
+      "relative_path": "work/project6_connection_failure_20261013T1739Z.json",
+      "sha256": "23e839c871a4c1ff6b801ef6f2b8d853e69a28e2f11d70422d89861a400670fc",
+      "reason": "GitHub historical observation",
+      "bytes": 1382
+    },
+    {
+      "relative_path": "work/Project6_GPT交接_20261020.txt",
+      "sha256": "9694e146114d00c735c656cf21ad941e9b5334f14e59896d85b5667315d1a16e",
+      "reason": "GitHub historical observation",
+      "bytes": 14276
+    },
+    {
+      "relative_path": "work/project6_heartbeat_prompt_20261017.txt",
+      "sha256": "a9779484bb359ead60d1210a053f237a3119893fe2d9024f52c5f38406ea2a60",
+      "reason": "GitHub historical observation",
+      "bytes": 3110
+    },
+    {
+      "relative_path": "work/project6_heartbeat_prompt_20261020.txt",
+      "sha256": "780a6ae3bc875c33556056d0838ec20b1193db4ce482192a49ad27e1baa7ee82",
+      "reason": "GitHub historical observation",
+      "bytes": 3765
+    },
+    {
+      "relative_path": "work/project6_resume2_monitor_prompt_20261022.txt",
+      "sha256": "6d055acd2591666e7f3aa4d98da443172a4cf1bc014f3486e9e25ea5bf36c5a5",
+      "reason": "GitHub historical observation",
+      "bytes": 5116
+    },
+    {
+      "relative_path": "work/project6_retention_inventory_20261022.json",
+      "sha256": "0629a17d4e144e15568a06b719e6f4d0e601461d23f4dfe56bce86883f5411d0",
+      "reason": "GitHub historical observation",
+      "bytes": 491317
+    },
+    {
+      "relative_path": "work/project6_secondary_r7_monitor_20261022.txt",
+      "sha256": "831605df728bb3cac66dc3596c68524a1143fc782fea8bdb8a303f65245d7a82",
+      "reason": "GitHub historical observation",
+      "bytes": 5265
+    },
+    {
+      "relative_path": "work/project6_secondary_validation_r7_monitor_20261022.txt",
+      "sha256": "f2803cbc787baf2ba2633b138ac2e1bf18b1fd81a12e35ebb1e950c91de3bbb0",
+      "reason": "GitHub historical observation",
+      "bytes": 6071
+    },
+    {
+      "relative_path": "work/project6_storage_audit_20261020.json",
+      "sha256": "cbfc90055d96596af124ca0af7fc1d57c5afc3783d45d3b964506fc160c9f788",
+      "reason": "GitHub historical observation",
+      "bytes": 4535
+    },
+    {
+      "relative_path": "work/project6_sun56_literature_review_20261023.json",
+      "sha256": "bc1cb085dbb4eb1183b81a25420a87ec2959fa7ac2e87691ca208639dbac78d2",
+      "reason": "GitHub historical observation",
+      "bytes": 2659
+    },
+    {
+      "relative_path": "work/project6_travel_pause_20261013.json",
+      "sha256": "8334e4edc9d2cd84847b0980de123437a370545890a984a27f9f50fc4d6c922b",
+      "reason": "GitHub historical observation",
+      "bytes": 1264
+    },
+    {
+      "relative_path": "work/project6_travel_resume_20261013.json",
+      "sha256": "7145b364e35ed8da942776c1a9ea9cc71bc5eb869cbe860c1f55f55780bbd3dc",
+      "reason": "GitHub historical observation",
+      "bytes": 546
+    },
+    {
+      "relative_path": "work/project6_waveform_retention_20261022.json",
+      "sha256": "70f1788306b3b3b01800dafc6cdd12a04fd8d0d4a3124cb47ba575cac85437fd",
+      "reason": "GitHub historical observation",
+      "bytes": 2708
+    },
+    {
+      "relative_path": "work/r5_eye_visualization_receipt_20261020.json",
+      "sha256": "3caab717b859fc518b3e8ddc16da1ae47faff264ec7c4b2f280d4689b12c42df",
+      "reason": "GitHub historical observation",
+      "bytes": 1843
+    },
+    {
+      "relative_path": "work/secondary_r7_launch_20261022.json",
+      "sha256": "f974fc8231b63e8f0bae722de5b843fd568c872938542a569d8ac8d80cb33d14",
+      "reason": "GitHub historical observation",
+      "bytes": 3844
+    },
+    {
+      "relative_path": "work/secondary_r7_monitor_closed_20261022.json",
+      "sha256": "41edc860da62602242e6401b31cc84bdfb1e70b9c1018650243bda1e3cae15f3",
+      "reason": "GitHub historical observation",
+      "bytes": 3869
+    },
+    {
+      "relative_path": "work/secondary_r7_observe_20261022.json",
+      "sha256": "2e47cf1afa6feb4c49f2c42e59432f07ea46bde9e2890c26b9968c0a385b78b1",
+      "reason": "GitHub historical observation",
+      "bytes": 4763
+    },
+    {
+      "relative_path": "work/secondary_r7_prepare_20261022.json",
+      "sha256": "21c02836390c6515df7f49395710ce18d4d6ca38873245ed4b9845ff0bc2eb23",
+      "reason": "GitHub historical observation",
+      "bytes": 4173
+    },
+    {
+      "relative_path": "work/secondary_r7_readonly_training_review_20261022.json",
+      "sha256": "0193674e6ea43f6e89469e6e030ee7f5e0fef99dcd95f1ac725a4f2a8302b3d5",
+      "reason": "GitHub historical observation",
+      "bytes": 5891
+    },
+    {
+      "relative_path": "work/secondary_validation_r7_launch_20261022.json",
+      "sha256": "36226455ac03a5959ec5aa09f7fe42dc729fa91977d5ab9cb885d647c19321e7",
+      "reason": "GitHub historical observation",
+      "bytes": 3677
+    },
+    {
+      "relative_path": "work/secondary_validation_r7_monitor_closed_20261022.json",
+      "sha256": "919d5e0a06bfcb5e0da1a7476b5293022062391dc2f04fbf66eafa9f52c278ba",
+      "reason": "GitHub historical observation",
+      "bytes": 2866
+    },
+    {
+      "relative_path": "work/secondary_validation_r7_observe_20261022.json",
+      "sha256": "93911eac53ff68174d796943f109f0197d1d89dee8f796914872b6467df2d97d",
+      "reason": "GitHub historical observation",
+      "bytes": 4453
+    },
+    {
+      "relative_path": "work/secondary_validation_r7_preflight_20261022.json",
+      "sha256": "4b5a0cee9f1dd15c2d54b36c210e81f616add1b6da0c17cbd00e490892e63d22",
+      "reason": "GitHub historical observation",
+      "bytes": 1016
+    },
+    {
+      "relative_path": "work/secondary_validation_r7_prepare_20261022.json",
+      "sha256": "46ceaa7fbce851d94fe7652337d29e9527bff430a18bca84a7b4248d0430bb25",
+      "reason": "GitHub historical observation",
+      "bytes": 4301
+    },
+    {
+      "relative_path": "work/noise_retry_finalization_20261017/Project6_ADC_r5_進度與判讀.txt.before",
+      "sha256": "d23f345938de98d7ed67317bad1999575ff9dc41d6d97cc5c909481c62c6501e",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 4480
+    },
+    {
+      "relative_path": "work/noise_retry_finalization_20261017/Project6_ADC_round_terminal_summary.json.before",
+      "sha256": "8b7f9f0a5c8b72a12d506c53abbb974d86a709dd64db94c775b691d5f9e865ab",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 2451
+    },
+    {
+      "relative_path": "work/noise_retry_finalization_20261017/project6_r5_handoff.json.before",
+      "sha256": "a1e11e677348cdd8f1b2e4bc426e38352453088b42883e7eb2f5d4eabd3a38a7",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 28181
+    },
+    {
+      "relative_path": "work/noise_retry_finalization_20261020/Project6_ADC_r5_進度與判讀.txt.before",
+      "sha256": "fc90c1a83842f3f100a0566fdd5fc6b0c52cbe9fac8c5837a60dd48159ac9847",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 4724
+    },
+    {
+      "relative_path": "work/noise_retry_finalization_20261020/Project6_ADC_round_terminal_summary.json.before",
+      "sha256": "78de3fe1371e305d7ccddf49802abd17199658e77925517b3764c71c8b6bd967",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 2853
+    },
+    {
+      "relative_path": "work/noise_retry_finalization_20261020/project6_r5_handoff.json.before",
+      "sha256": "7129cab667e4b6e35937942289ab2763ff60964b1916710d3f1f38bb19a77d76",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 32679
+    },
+    {
+      "relative_path": "work/paired_finalization_20261020/Project6_ADC_r5_進度與判讀.txt.before",
+      "sha256": "7f3a769428c11d1b77692a11deea24a3048347b8e45117a852747077cd7c3581",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 4733
+    },
+    {
+      "relative_path": "work/paired_finalization_20261020/Project6_ADC_round_terminal_summary.json.before",
+      "sha256": "be269c120070dc63d20dda721f1d0950e7c17a1ec0d17c674455bb30cddb4620",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 3007
+    },
+    {
+      "relative_path": "work/paired_finalization_20261020/project6_r5_handoff.json.before",
+      "sha256": "6cd11b20cc7193aae7f64d4ff1dad128b8d77e7b3b3b4f5f23cbbe893b01b295",
+      "reason": "GitHub superseded checkpoint",
+      "bytes": 43414
+    },
+    {
+      "relative_path": "work/project6_olympus_packaging_20261106/assets/olympus/create_cds_lib.py",
+      "sha256": "8665c1a9e8b381d1deeba6dfd6dbbd15902349a0c9b8ecbd8568e49f8c218920",
+      "reason": "GitHub packaging source",
+      "bytes": 1382
+    },
+    {
+      "relative_path": "work/project6_olympus_packaging_20261106/assets/olympus/prepare_spectre_deck.py",
+      "sha256": "5f9d1c100a9bf6bb64a1f67f63793508422aee271209b1d09e8b4ad2bd42f645",
+      "reason": "GitHub packaging source",
+      "bytes": 3165
+    },
+    {
+      "relative_path": "work/project6_olympus_packaging_20261106/assets/README_繁體中文.md",
+      "sha256": "9932aa86d85cfd93700cf6b509cf65c7a9577d472b0c191c394aa65ef55b8455",
+      "reason": "GitHub packaging source",
+      "bytes": 4688
+    },
+    {
+      "relative_path": "work/project6_olympus_packaging_20261106/remote_collect.py",
+      "sha256": "2097527b2238894e157685abc65e8d52b52d781c15cb739b2d6a7747deb8a7d3",
+      "reason": "GitHub packaging source",
+      "bytes": 5371
+    },
+    {
+      "relative_path": "outputs/Project6_ADC_r4_summary.json",
+      "sha256": "19be09ad5e2d3f6bd922459305835d9881d826f5358b00fd18fcb55d57abd9ca",
+      "reason": "matching retained VMware summary",
+      "bytes": 69768
+    },
+    {
+      "relative_path": "outputs/Project6_ADC_round_terminal_summary.json",
+      "sha256": "4cd8790ad6a6789835b4e8f707a8e8a483166f8c958ade3338e2c1aeb34a32d4",
+      "reason": "matching retained VMware summary",
+      "bytes": 4026
+    },
+    {
+      "relative_path": "outputs/Project6_CTLE_VGA_optimization_summary.json",
+      "sha256": "9dd5953ae121d8e416142abea6d57b4d7dfcb986408cd91d2b12a6a512216af0",
+      "reason": "matching retained VMware summary",
+      "bytes": 68464
+    },
+    {
+      "relative_path": "outputs/Project6_feasibility_results.json",
+      "sha256": "96d0a014ccf391b69bd84bf7b68c651799de2a9ef609200ecbb8c93feec5d8de",
+      "reason": "matching retained VMware summary",
+      "bytes": 145975
+    },
+    {
+      "relative_path": "outputs/Project6_native_PAM4_summary.json",
+      "sha256": "ae0cbad2ae512984d85d55df42235d6befae8b6575af99bfaff607e7c04269bd",
+      "reason": "matching retained VMware summary",
+      "bytes": 62735
+    },
+    {
+      "relative_path": "outputs/Project6_manifest.json",
+      "sha256": "f6ef76ad25bac1beeb202575ff46c03dfb3a02064f0e875f413c75cc6bb74f44",
+      "reason": "byte-identical file in GitHub feasibility package",
+      "bytes": 1550
+    },
+    {
+      "relative_path": "outputs/Project6_重跑說明.txt",
+      "sha256": "01a744884478acfddc9dc9a03fe714142f004e34731001798e580e5eb4ceed73",
+      "reason": "byte-identical file in GitHub feasibility package",
+      "bytes": 1132
+    },
+    {
+      "relative_path": "work/project6/p6_bench.py",
+      "sha256": "bd0ddf7376b8c3273a0f51a9c60fdcc3dbc207e0f5e3849f0599fd83ac7b43b7",
+      "reason": "byte-identical file in GitHub feasibility package",
+      "bytes": 16714
+    },
+    {
+      "relative_path": "work/project6/__pycache__/p6_bench.cpython-314.pyc",
+      "sha256": "eaa4d8af8f50dd3af887351e05d115180d2a3fc17a6c313868545ee2c6dfb014",
+      "reason": "regenerable Python cache",
+      "bytes": 33498
+    },
+    {
+      "relative_path": "work/project6/__pycache__/p6_dynamic.cpython-314.pyc",
+      "sha256": "1a452f8c91a29edcbb97593a5eb2030e827505e097009d29fff4b8b3b0ab7e9a",
+      "reason": "regenerable Python cache",
+      "bytes": 23264
+    }
+  ]
+}

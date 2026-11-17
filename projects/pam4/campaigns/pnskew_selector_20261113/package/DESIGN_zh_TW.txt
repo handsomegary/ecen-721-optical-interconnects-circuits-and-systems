@@ -1,0 +1,80 @@
+ECEN 721 #6 PAM4 TTD selector · TT0–13 後的設計
+2026-11-13　新套件待核對與新批准
+
+原生數據的定位
+14 個 ACNEXT runtime deck、SHA 和 63 個 raw 退休清單項目已由保留的證據核對。
+實際的 TG 是每顆 W=3 μm、L=30 nm、nf=multi=1，取自 r5 XSN0p/XSP0p；
+1 μm 是較早 LC bank 用的尺寸。每腿選通路徑串聯兩個 3 μm 互補 TG。
+TT 06/06 的 1 kHz 輸出相對相同 bypass 已掉 17.91 dB。由選通支路的壓差與電流反推，
+前後各一顆約 170.7 Ω，這是該電路在 .70 V 共模下的等效值。
+只代入這個 Ron、已知 ladder 和同端接 bypass 推回的 r3 複數負載，56 GHz 預測
+約 −29.28 dB，實測 −30.11 dB，差約 0.83 dB、0.21°。高 Ron 證據在 1 kHz 就存在，
+加上高阻抗驅動線路的頻率響應，已可解釋等長案例的主要損失。
+關斷路徑在 56 GHz 有訊號，單靠保留探點無法將 switch 自身 Coff、對地寄生、耦合和
+通帶響應唯一分離。SELECTOR_MEASURED.json 保留 KCL 和相位證據。
+SELECTOR_RC_MODEL.json 的假設敏感度為 Ron 0–170 Ω、off coupling 0–30 fF。
+其中 Ron=2 Ω、Coff=0 fF 約 −1.02 dB，Coff=10 fF 則約 −1.42 dB；
+這些是模型數字。以等長 ideal −0.33 dB 為參考，若日後想爭取總計約 −1 dB，
+低頻 25 Ω/25 Ω 近似下只剩 0.67 dB 給兩顆開關，每顆約 2.08 Ω。這只是設計尺度。
+即使電阻理想地隨寬度反比，將原 .70 V 下的 3 μm 直接放大四倍也只到約 43 Ω。
+加寬同時會增加關斷及對地寄生，先改工作點，再量尺寸折衷。
+
+兩個數字的解讀
+先前理想路徑 06/16 的 −4.90 dB 是零輸入 skew 的輸出，包含刻意加入的差動延遲抵消。
+同矩陣施加正 +4.464 ps 時，AFE 輸出是 −0.663 dB（相對相同 25/25 bypass）。
+06/16 原生 TG 在相同正 +4.464 ps 時是 −25.66 dB；約 −33 dB 對應反方向。
+06/06 的 −0.33 與 −30.11 dB 才是等長下直接對比選擇器代價。
+TT 的 ±5.245 ps 是理想長短路徑可用範圍。全範圍 selector 是否跨 SS/FF 仍需量測。
+
+下一版選擇器
+本版先試使用原 rails 的 AC 耦合、局部 VDD/2 選擇器。保留原 6/16 T 節，
+每節 L=13 pH、C=20.8 fF、ESR 0.305 Ω，維持每腿 Rs=25 Ω、局部 Rt=25 Ω。
+原 r3 輸入維持 .70 V DC 及原 gate/load。以 10 pF 理想串聯 DC blocks 接兩邊，
+在 selector 域建立 VDD/2，輸出 Rt 回到局部 VDD/2，r3 gate 由 100 kΩ 回到原 X_cm。
+避免在輸出再放第二個 25 Ω 終端。以無 TG 的同樣 DC blocks 作比較，直接量 coupling 的代價。
+TT 中央 .45 V、SS .405 V、FF .495 V。原 .70 V 工作點下 TT NMOS 的 Vgs 約 .20 V，
+SS nominal 只有約 .11 V；改中央偏壓可分配 N、P 的 gate headroom，實際導通由獨立 Y 量測。
+沒有 boost 或負 gate rail。所有 switch 仍使用原始 VDD/0 V 控制及 bulk。
+比較單顆 3 μm TG 和每種極性 4 顆相同 CDF 卡並聯的 12 μm schematic 探索點。
+這是 AC 候選，不假定 12 μm 可符合 2 Ω 或接近 −0.33 dB。實體電容面積、ESR/SRF、偏壓
+buffer、clock/過壓、控制切換、負載非線性與起始預充均要另驗；AC OP 收斂不證明 transient。
+低頻角落仍在 sweep，可見 DC block 的高通。兩顆 10 pF 只是用來隔離 bias 的工程假設，
+需要實體實作時應另設計高頻路徑與共同偏壓。
+
+如何拆 Ron、Coff 與端接
+1. 獨立 TG 使用兩個 AC 端口，掃 ON/OFF，固定原 .70 V 或 VDD/2。
+   由電壓源流入元件的電流 −I(vsource:p) 取得完整 2×2 Y。低頻以 −(Ypn+Ynp)/2
+   的倒數作等效導通阻抗，OFF 用同一符號的 Im(Ytransfer)/ω 報等效互電容。
+   同時報 Ypp+Ypn 和 Ynn+Ynp 作對地寄生指標。可讀的原生 OP 欄位與兩端 DC 一起留存。
+   等效互電容保留正負，絕不從載入後單一數值宣稱某顆 MOS 的 Coff。
+2. r3 負載下，先比較舊原生雙路 06/06、原 bias 移除關斷路徑，以及理想 06/06；
+   兩顆導通 TG 都在，對照只拿掉 inactive 支路時的變化。
+3. 局部中間共模的 06/06，依序看直接路徑、3 μm 完整 mux、12 μm 只有 ON path、
+   12 μm 完整 mux。各案保存局部輸入、輸出及每條路首尾探點、原 r3 gate 和供電電流。
+   同碼直接路徑可隔離因 DC coupling／bias 引入的額外增益變化。
+4. TT 通過初步損失與頻帶判讀後才看 06/16、16/06 與中間 09/13（約 −2.08 ps 名義）。
+   09/13 是中段路徑長度可行性檢查，各 deck 的未選支路長度明列；尚無全碼 mux。
+   SS/85/.81、FF/−40/.99 檢查同端接 bypass、局部直通及候選 mux 的等長和雙方向端點。
+   輸出原 7–56 GHz 加權延遲、RMS、最差 phase-error、56 GHz 已知方向校正 Hdd，
+   並列噪聲、共模和 rail power。較小絕對 CM→DM 同時要看保留下來的差動增益。
+   保留 −0.33 dB 參考，不新增固定損失或殘餘門檻。
+
+備選方向
+若中間共模下 ON 阻抗或 OFF 負載仍不合用，就停止 passive series TG。下一版評估兩條
+一直維持終端的固定延遲路徑，以高阻抗感測並在輸出用有源 current steering buffer 選路。
+該方向需明確設計單腿高頻輸入、off buffer 隔離、原 .70 V 輸出共模、SS/FF headroom
+及輸出負載。driver、兩路端接、偏壓/選路的功耗與雜訊納入。分佈式／series-shunt 在實體
+可能改善隔離和匹配，但在目前 170 Ω 條件額外串一個開關會更難。窄帶共振不可取代
+7–56 GHz 的群延遲驗證。60 GHz 寬帶開關文獻的製程、偏壓和端接不同，只作取捨參考：
+https://www.sciencedirect.com/science/article/abs/pii/S0026269215001512
+
+舊 LC
+停止舊 6-bit LC 碼表診斷（原 ACNEXT 42–77）。新 TTD 選固定電長，沒有該 bank 的 31→32
+進位路徑。已存 AC60 和診斷足以說明設計轉向。只有日後把該 bank 重新選作 fine trim
+時，才挑必要的等碼／鏡像／carry ablation 重啟。
+
+交付資源
+90 個 portable deck（45 組雙端口條件），每組兩個單腿 AC。最先審查 TT device 0–11，
+TT 代表的等長比較可用 28–31、38–43、50–55，端點和 PVT 分段。
+上批實際 1.5–2.4 秒、約 230 MB RSS。本批先估 1–12 秒/案，Slurm 1 CPU / 4 GiB / 30 min。
+未執行本批 Spectre 或提交。新 approval 對新 plan 和 SHA，原 94 案批准不能套用。

@@ -1,0 +1,29 @@
+LP14｜beta multiplier 正回授的延伸驗證
+
+SS cb2 舊案 12 的 Spectre 原生判定為穩定且無 PM/GM。保留舊 review。
+已量 max|T|=0.50476、min|1−T|=0.4952、1 GHz 終點 |T|=0.3574。
+低頻 T 約為 +0.50476，倍增到臨界 +1 約需 1.981 倍，亦即 5.94 dB。
+這是現有工作點的低頻純增益擾動儲備，和 replica 的原生 GM 分開。
+
+維持原電路。10 dB 只是先前 beta 的保守篩選，保留報表但不作改版門檻。
+要求實際 circuit stability 的證據。Replica 仍沿用 PM≥60°、GM≥10 dB。
+延伸掃頻 1 Hz–20 GHz，每 decade 100 點。直接用原生 Spectre return
+T，臨界點為 +1。保留所有複數資料、unity 和正實軸交越、max|T|、
+min|1−T|、低頻平台及最後一 octave/decade 最大值。
+最後一 octave 的 |T|≤0.1、末端不高於該 octave 峰值的 90%
+（整段已≤0.01 可視為充分低），
+全段 max|T|<1、無 unity 交越、且原生未報不穩定時，只標為
+extended sampled screen_pass。舊 10 dB 掃頻篩選另列。
+如末端仍高、出現回升或正實軸接近 +1，先補密掃與更高頻率，
+再以完整 Nyquist 與開環右半平面極點數，或足夠可觀測性的
+閉環極點檢查。原生 PM/GM 未定義時保持空白。
+有限頻帶證據仍需對照閉合迴路擾動，才能排除其他動態問題。
+參考 Tian 等人的 Spectre 迴路演算法 https://kenkundert.com/docs/cd2001-01.pdf
+
+STB 先確認 probe 插入後仍在同一非零 DC Iref，且 startup kick
+已退出。再用供電不變的原生完整電路，在 SS/TT/FF cb2 的
+GMSR_REF 分別加 +5/−5 µA、各 200 ns、邊沿 10 ns。
+前後迴路都保持閉合，連續 transient 25 µs。
+依 4–5、14–15、24–25 µs 的全窗量測判定，Iref 和 replica 都須
+回到同角落既有工作點的允許範圍，追蹤誤差≤2%、原啟動 kick
+<0.01 µA。再看振鈴和收斂波形。此前的掉電重啟提供啟動證據。

@@ -1,0 +1,1564 @@
+{
+  "format": "pam4_acnext_sparse_summary_v1",
+  "missing_cases": [
+    "acnext_ss_p85_v081_bypass_00_00_r25_t25_r3_p",
+    "acnext_ss_p85_v081_bypass_00_00_r25_t25_r3_n",
+    "acnext_ss_p85_v081_ttd_selected_06_16_r25_t25_r3_p",
+    "acnext_ss_p85_v081_ttd_selected_06_16_r25_t25_r3_n",
+    "acnext_ss_p85_v081_ttd_selected_16_06_r25_t25_r3_p",
+    "acnext_ss_p85_v081_ttd_selected_16_06_r25_t25_r3_n",
+    "acnext_ss_p85_v081_ttd_selected_06_06_r25_t25_r3_p",
+    "acnext_ss_p85_v081_ttd_selected_06_06_r25_t25_r3_n",
+    "acnext_ss_p85_v081_ttd_switch_06_16_r25_t25_r3_p",
+    "acnext_ss_p85_v081_ttd_switch_06_16_r25_t25_r3_n",
+    "acnext_ss_p85_v081_ttd_switch_16_06_r25_t25_r3_p",
+    "acnext_ss_p85_v081_ttd_switch_16_06_r25_t25_r3_n",
+    "acnext_ss_p85_v081_ttd_switch_06_06_r25_t25_r3_p",
+    "acnext_ss_p85_v081_ttd_switch_06_06_r25_t25_r3_n",
+    "acnext_ff_m40_v099_bypass_00_00_r25_t25_r3_p",
+    "acnext_ff_m40_v099_bypass_00_00_r25_t25_r3_n",
+    "acnext_ff_m40_v099_ttd_selected_06_16_r25_t25_r3_p",
+    "acnext_ff_m40_v099_ttd_selected_06_16_r25_t25_r3_n",
+    "acnext_ff_m40_v099_ttd_selected_16_06_r25_t25_r3_p",
+    "acnext_ff_m40_v099_ttd_selected_16_06_r25_t25_r3_n",
+    "acnext_ff_m40_v099_ttd_selected_06_06_r25_t25_r3_p",
+    "acnext_ff_m40_v099_ttd_selected_06_06_r25_t25_r3_n",
+    "acnext_ff_m40_v099_ttd_switch_06_16_r25_t25_r3_p",
+    "acnext_ff_m40_v099_ttd_switch_06_16_r25_t25_r3_n",
+    "acnext_ff_m40_v099_ttd_switch_16_06_r25_t25_r3_p",
+    "acnext_ff_m40_v099_ttd_switch_16_06_r25_t25_r3_n",
+    "acnext_ff_m40_v099_ttd_switch_06_06_r25_t25_r3_p",
+    "acnext_ff_m40_v099_ttd_switch_06_06_r25_t25_r3_n",
+    "acnext_tt_p25_v090_lc_native_15_48_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_15_48_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_native_30_33_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_30_33_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_native_31_32_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_31_32_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_native_31_31_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_31_31_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_native_32_31_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_32_31_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_native_32_32_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_32_32_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_native_33_30_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_33_30_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_native_47_16_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_native_47_16_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_ideal_00_63_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_ideal_00_63_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_ideal_31_32_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_ideal_31_32_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_ideal_32_31_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_ideal_32_31_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_ron_00_63_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_ron_00_63_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_ron_31_32_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_ron_31_32_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_ron_32_31_r25_t0_r3_p",
+    "acnext_tt_p25_v090_lc_ron_32_31_r25_t0_r3_n",
+    "acnext_tt_p25_v090_lc_ideal_00_63_r25_t0_cap_p",
+    "acnext_tt_p25_v090_lc_ideal_00_63_r25_t0_cap_n",
+    "acnext_tt_p25_v090_lc_ideal_31_32_r25_t0_cap_p",
+    "acnext_tt_p25_v090_lc_ideal_31_32_r25_t0_cap_n",
+    "acnext_tt_p25_v090_lc_ideal_32_31_r25_t0_cap_p",
+    "acnext_tt_p25_v090_lc_ideal_32_31_r25_t0_cap_n",
+    "acnext_tt_p25_v090_bypass_00_00_r25_t0_cap_p",
+    "acnext_tt_p25_v090_bypass_00_00_r25_t0_cap_n",
+    "acnext_tt_p25_v090_ttd_switch_06_16_r0_t25_r3_p",
+    "acnext_tt_p25_v090_ttd_switch_06_16_r0_t25_r3_n",
+    "acnext_tt_p25_v090_bypass_00_00_r0_t25_r3_p",
+    "acnext_tt_p25_v090_bypass_00_00_r0_t25_r3_n",
+    "acnext_tt_p25_v090_ttd_switch_06_16_r25_t0_r3_p",
+    "acnext_tt_p25_v090_ttd_switch_06_16_r25_t0_r3_n",
+    "acnext_tt_p25_v090_bypass_00_00_r25_t0_r3_p",
+    "acnext_tt_p25_v090_bypass_00_00_r25_t0_r3_n",
+    "acnext_tt_p25_v090_ttd_switch_06_16_r0_t0_r3_p",
+    "acnext_tt_p25_v090_ttd_switch_06_16_r0_t0_r3_n",
+    "acnext_tt_p25_v090_bypass_00_00_r0_t0_r3_p",
+    "acnext_tt_p25_v090_bypass_00_00_r0_t0_r3_n",
+    "acnext_tt_p25_v090_ttd_switch_06_15_r25_t25_r3_p",
+    "acnext_tt_p25_v090_ttd_switch_06_15_r25_t25_r3_n",
+    "acnext_tt_p25_v090_ttd_switch_07_16_r25_t25_r3_p",
+    "acnext_tt_p25_v090_ttd_switch_07_16_r25_t25_r3_n"
+  ],
+  "invalid_cases": {},
+  "paired_rows": [
+    {
+      "config": {
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "source_ohm": 25,
+        "termination_ohm": 25,
+        "load": "r3",
+        "variant": "bypass",
+        "p_code": 0,
+        "n_code": 0
+      },
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.00015111034632489138,
+        "scope": "Stationary differential X_ip-X_im"
+      },
+      "DC_supply_power_W": {
+        "XVs:p": 0.010076882434591069,
+        "XVcm:p": 4.62327958993782e-11
+      },
+      "DC_voltage_V": {
+        "X_ip": 0.6999999995872072,
+        "X_im": 0.6999999995872072
+      },
+      "single_leg_driven_source_admittance_56GHz_S": [
+        [
+          0.020597706888288828,
+          0.0006934421019235144
+        ],
+        [
+          0.020597706888288828,
+          0.0006934421019235146
+        ]
+      ],
+      "delay": {
+        "format": "pam4_weighted_differential_delay_v1",
+        "primary_band": "7_to_56_GHz",
+        "bands": {
+          "7_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              7000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 93,
+            "tau_effective_ps": -0.0,
+            "weighted_phase_rms_ps": 0.0,
+            "worst_phase_error_ps": 0.0,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -4.464285714285714,
+                "weighted_phase_rms_ps": 4.464285714285714,
+                "worst_phase_error_ps": 4.464285714285714,
+                "signed_phase_delay_error_at_56_GHz_ps": -4.464285714285714
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 0.0,
+                "weighted_phase_rms_ps": 0.0,
+                "worst_phase_error_ps": 0.0,
+                "signed_phase_delay_error_at_56_GHz_ps": -0.0
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 4.464285714285714,
+                "weighted_phase_rms_ps": 4.464285714285714,
+                "worst_phase_error_ps": 4.464285714285714,
+                "signed_phase_delay_error_at_56_GHz_ps": 4.464285714285714
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -0.0,
+            "phase_delay_span_ps": [
+              -0.0,
+              -0.0
+            ],
+            "local_group_delay_span_ps": [
+              -0.0,
+              -0.0
+            ]
+          },
+          "14_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              14000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 62,
+            "tau_effective_ps": -0.0,
+            "weighted_phase_rms_ps": 0.0,
+            "worst_phase_error_ps": 0.0,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -4.464285714285714,
+                "weighted_phase_rms_ps": 4.464285714285714,
+                "worst_phase_error_ps": 4.464285714285714,
+                "signed_phase_delay_error_at_56_GHz_ps": -4.464285714285714
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 0.0,
+                "weighted_phase_rms_ps": 0.0,
+                "worst_phase_error_ps": 0.0,
+                "signed_phase_delay_error_at_56_GHz_ps": -0.0
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 4.464285714285714,
+                "weighted_phase_rms_ps": 4.464285714285714,
+                "worst_phase_error_ps": 4.464285714285714,
+                "signed_phase_delay_error_at_56_GHz_ps": 4.464285714285714
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -0.0,
+            "phase_delay_span_ps": [
+              -0.0,
+              -0.0
+            ],
+            "local_group_delay_span_ps": [
+              -0.0,
+              -0.0
+            ]
+          }
+        },
+        "at_56_GHz": {
+          "frequency_Hz": 56000000000.0,
+          "differential_phase_delay_vs_bypass_ps": -0.0,
+          "P_branch_magnitude_V_per_V": 0.4814326775045535,
+          "N_branch_magnitude_V_per_V": 0.48143267750455354,
+          "P_over_N_magnitude_dB": -9.643274665532871e-16,
+          "Hdd_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_bypass_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_magnitude_change_vs_bypass_dB": 0.0,
+          "Hdc_complex_V_per_V": [
+            -5.551115123125783e-17,
+            1.0408340855860843e-17
+          ],
+          "Hdc_increment_normalized_complex": [
+            0.0,
+            0.0
+          ],
+          "Hdc_increment_normalized_magnitude": 0.0
+        },
+        "branch_floor_V_per_V": {
+          "P": 0.005003471819581208,
+          "N": 0.005003471819581208
+        },
+        "weights": {
+          "TX_power_spectrum": "sinc^2(f/112e9), rectangular-pulse approximation",
+          "channel": "|1+j*2*pi*f*RC|^-4, two independent buffered poles",
+          "channel_RC_s": 8.526157665637249e-12,
+          "fixed_receiver": "|Hdd_track,bypass(f)|^2",
+          "quadrature": "trapezoidal in linear frequency"
+        },
+        "scope": "Static AC diagnostic for code comparison. Correlate with independent frozen-FFE transient results."
+      },
+      "unskewed_AFE_56GHz": {
+        "Hdd_absolute_dB": -19.67030529171314,
+        "Hdd_vs_bypass_dB": 0.0,
+        "Hdc_increment_over_abs_Hdd_bypass": 0.0
+      },
+      "known_input_skew_AFE_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -22.680278825974224,
+          "Hdd_vs_bypass_dB": -3.0099735342610803,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4140913136907616
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -19.67030529171314,
+          "Hdd_vs_bypass_dB": 0.0,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.0
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -22.68027882597419,
+          "Hdd_vs_bypass_dB": -3.009973534261052,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4140913136907636
+        }
+      },
+      "known_input_skew_trim_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -9.360044924860006,
+          "Hdd_vs_bypass_dB": -3.0107562231277942,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4142201884785823
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -6.34928870173221,
+          "Hdd_vs_bypass_dB": 0.0,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.0
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -9.360044924860006,
+          "Hdd_vs_bypass_dB": -3.0107562231277942,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4142201884785823
+        }
+      },
+      "AFE_56GHz_vs_original_0ohm_bypass_dB": null
+    },
+    {
+      "config": {
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "source_ohm": 25,
+        "termination_ohm": 25,
+        "load": "r3",
+        "variant": "ttd_selected",
+        "p_code": 6,
+        "n_code": 6
+      },
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.00015301387837986805,
+        "scope": "Stationary differential X_ip-X_im"
+      },
+      "DC_supply_power_W": {
+        "XVs:p": 0.010076882434535556,
+        "XVcm:p": 4.6233659511991334e-11
+      },
+      "DC_voltage_V": {
+        "X_ip": 0.6999999995726244,
+        "X_im": 0.6999999995726244
+      },
+      "single_leg_driven_source_admittance_56GHz_S": [
+        [
+          0.01999428843564329,
+          -0.0002937259087273694
+        ],
+        [
+          0.0199942884356433,
+          -0.0002937259087273673
+        ]
+      ],
+      "delay": {
+        "format": "pam4_weighted_differential_delay_v1",
+        "primary_band": "7_to_56_GHz",
+        "bands": {
+          "7_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              7000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 93,
+            "tau_effective_ps": 3.2456236559887057e-16,
+            "weighted_phase_rms_ps": 1.3047182932760279e-15,
+            "worst_phase_error_ps": 4.394923244230109e-15,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -4.464285714285714,
+                "weighted_phase_rms_ps": 4.464285714285714,
+                "worst_phase_error_ps": 4.464285714285719,
+                "signed_phase_delay_error_at_56_GHz_ps": -4.464285714285714
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 3.2456236559887057e-16,
+                "weighted_phase_rms_ps": 1.344481518642873e-15,
+                "worst_phase_error_ps": 4.070360878631238e-15,
+                "signed_phase_delay_error_at_56_GHz_ps": 1.9514745282899968e-16
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 4.464285714285714,
+                "weighted_phase_rms_ps": 4.464285714285714,
+                "worst_phase_error_ps": 4.464285714285718,
+                "signed_phase_delay_error_at_56_GHz_ps": 4.464285714285714
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -1.2941491276987086e-16,
+            "phase_delay_span_ps": [
+              -4.070360878631238e-15,
+              3.312621612460391e-15
+            ],
+            "local_group_delay_span_ps": [
+              -1.7799893580693849e-13,
+              1.948148112446341e-13
+            ]
+          },
+          "14_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              14000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 62,
+            "tau_effective_ps": 3.7661812664540296e-16,
+            "weighted_phase_rms_ps": 1.2684831429486913e-15,
+            "worst_phase_error_ps": 3.0284871444527307e-15,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -4.464285714285714,
+                "weighted_phase_rms_ps": 4.4642857142857135,
+                "worst_phase_error_ps": 4.464285714285717,
+                "signed_phase_delay_error_at_56_GHz_ps": -4.464285714285714
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 3.7661812664540296e-16,
+                "weighted_phase_rms_ps": 1.3232122646283487e-15,
+                "worst_phase_error_ps": 3.1338655704600067e-15,
+                "signed_phase_delay_error_at_56_GHz_ps": 1.9514745282899968e-16
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 4.464285714285714,
+                "weighted_phase_rms_ps": 4.464285714285714,
+                "worst_phase_error_ps": 4.464285714285718,
+                "signed_phase_delay_error_at_56_GHz_ps": 4.464285714285714
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -1.814706738164033e-16,
+            "phase_delay_span_ps": [
+              -2.6518690178073276e-15,
+              3.1338655704600067e-15
+            ],
+            "local_group_delay_span_ps": [
+              -1.75338908912408e-13,
+              1.621538297420758e-13
+            ]
+          }
+        },
+        "at_56_GHz": {
+          "frequency_Hz": 56000000000.0,
+          "differential_phase_delay_vs_bypass_ps": 1.9514745282899968e-16,
+          "P_branch_magnitude_V_per_V": 0.4636601199086378,
+          "N_branch_magnitude_V_per_V": 0.4636601199086379,
+          "P_over_N_magnitude_dB": -1.9286549331065747e-15,
+          "Hdd_magnitude_V_per_V": 0.46366011990863787,
+          "Hdd_bypass_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_magnitude_change_vs_bypass_dB": -0.32671643441431353,
+          "Hdc_complex_V_per_V": [
+            -8.326672684688674e-17,
+            1.1102230246251565e-16
+          ],
+          "Hdc_increment_normalized_complex": [
+            -5.765203924149165e-17,
+            2.0898864225040724e-16
+          ],
+          "Hdc_increment_normalized_magnitude": 2.1679485745370252e-16
+        },
+        "branch_floor_V_per_V": {
+          "P": 0.005003471819581208,
+          "N": 0.005003471819581208
+        },
+        "weights": {
+          "TX_power_spectrum": "sinc^2(f/112e9), rectangular-pulse approximation",
+          "channel": "|1+j*2*pi*f*RC|^-4, two independent buffered poles",
+          "channel_RC_s": 8.526157665637249e-12,
+          "fixed_receiver": "|Hdd_track,bypass(f)|^2",
+          "quadrature": "trapezoidal in linear frequency"
+        },
+        "scope": "Static AC diagnostic for code comparison. Correlate with independent frozen-FFE transient results."
+      },
+      "unskewed_AFE_56GHz": {
+        "Hdd_absolute_dB": -19.998436439024516,
+        "Hdd_vs_bypass_dB": -0.32813114731137516,
+        "Hdc_increment_over_abs_Hdd_bypass": 4.040022313305599e-15
+      },
+      "known_input_skew_AFE_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -23.00843055845016,
+          "Hdd_vs_bypass_dB": -3.338125266737019,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3616702444949091
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -19.998436439024516,
+          "Hdd_vs_bypass_dB": -0.32813114731137516,
+          "Hdc_increment_over_abs_Hdd_bypass": 4.040022313305599e-15
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -23.00843055845016,
+          "Hdd_vs_bypass_dB": -3.338125266737017,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3616702444949058
+        }
+      },
+      "known_input_skew_trim_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -9.686766242138402,
+          "Hdd_vs_bypass_dB": -3.3374775404061916,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.3620136491198807
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -6.676005136146523,
+          "Hdd_vs_bypass_dB": -0.32671643441431353,
+          "Hdc_increment_over_abs_Hdd_bypass": 9.368456376742393e-17
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -9.686766242138402,
+          "Hdd_vs_bypass_dB": -3.3374775404061916,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.362013649119881
+        }
+      },
+      "AFE_56GHz_vs_original_0ohm_bypass_dB": null
+    },
+    {
+      "config": {
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "source_ohm": 25,
+        "termination_ohm": 25,
+        "load": "r3",
+        "variant": "ttd_selected",
+        "p_code": 6,
+        "n_code": 16
+      },
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0001528829912414361,
+        "scope": "Stationary differential X_ip-X_im"
+      },
+      "DC_supply_power_W": {
+        "XVs:p": 0.010076882434493428,
+        "XVcm:p": 4.6233659510381305e-11
+      },
+      "DC_voltage_V": {
+        "X_ip": 0.6999999995726244,
+        "X_im": 0.6999999995504926
+      },
+      "single_leg_driven_source_admittance_56GHz_S": [
+        [
+          0.019994256646366396,
+          -0.0002937214708077594
+        ],
+        [
+          0.02033590251574341,
+          0.0007911434205567164
+        ]
+      ],
+      "PN_swap_max_absolute_error_VV": 7.301351988545593e-16,
+      "delay": {
+        "format": "pam4_weighted_differential_delay_v1",
+        "primary_band": "7_to_56_GHz",
+        "bands": {
+          "7_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              7000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 93,
+            "tau_effective_ps": -5.244601308974558,
+            "weighted_phase_rms_ps": 0.011882974527799562,
+            "worst_phase_error_ps": 0.01920739305889893,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -9.708887023260273,
+                "weighted_phase_rms_ps": 9.708894295207635,
+                "worst_phase_error_ps": 9.728094416319172,
+                "signed_phase_delay_error_at_56_GHz_ps": -9.72007318148127
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": -5.244601308974558,
+                "weighted_phase_rms_ps": 5.244614770903701,
+                "worst_phase_error_ps": 5.263808702033457,
+                "signed_phase_delay_error_at_56_GHz_ps": -5.255787467195556
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": -0.7803155946888438,
+                "weighted_phase_rms_ps": 0.7804060689142759,
+                "worst_phase_error_ps": 0.7995229877477429,
+                "signed_phase_delay_error_at_56_GHz_ps": -0.7915017529098415
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -0.011186158220997998,
+            "phase_delay_span_ps": [
+              -5.263808702033457,
+              -5.228367264857751
+            ],
+            "local_group_delay_span_ps": [
+              -5.300330086977684,
+              -5.195508892811347
+            ]
+          },
+          "14_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              14000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 62,
+            "tau_effective_ps": -5.246542804349407,
+            "weighted_phase_rms_ps": 0.011127334178973712,
+            "worst_phase_error_ps": 0.017265897684050045,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -9.710828518635122,
+                "weighted_phase_rms_ps": 9.710834893864849,
+                "worst_phase_error_ps": 9.728094416319172,
+                "signed_phase_delay_error_at_56_GHz_ps": -9.72007318148127
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": -5.246542804349407,
+                "weighted_phase_rms_ps": 5.24655460425568,
+                "worst_phase_error_ps": 5.263808702033457,
+                "signed_phase_delay_error_at_56_GHz_ps": -5.255787467195556
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": -0.7822570900636929,
+                "weighted_phase_rms_ps": 0.7823362272839266,
+                "worst_phase_error_ps": 0.7995229877477429,
+                "signed_phase_delay_error_at_56_GHz_ps": -0.7915017529098415
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -0.009244662846148726,
+            "phase_delay_span_ps": [
+              -5.263808702033457,
+              -5.229375600660559
+            ],
+            "local_group_delay_span_ps": [
+              -5.300330086977684,
+              -5.201458871801024
+            ]
+          }
+        },
+        "at_56_GHz": {
+          "frequency_Hz": 56000000000.0,
+          "differential_phase_delay_vs_bypass_ps": -5.255787467195556,
+          "P_branch_magnitude_V_per_V": 0.4685915900415086,
+          "N_branch_magnitude_V_per_V": 0.44087666516225865,
+          "P_over_N_magnitude_dB": 0.5295475386559474,
+          "Hdd_magnitude_V_per_V": 0.2740265611758605,
+          "Hdd_bypass_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_magnitude_change_vs_bypass_dB": -4.894858084704278,
+          "Hdc_complex_V_per_V": [
+            0.6256289114751237,
+            -0.34516496505659444
+          ],
+          "Hdc_increment_normalized_complex": [
+            1.2995148453943621,
+            -0.7169537532136667
+          ],
+          "Hdc_increment_normalized_magnitude": 1.48417031288444
+        },
+        "branch_floor_V_per_V": {
+          "P": 0.005003471819581208,
+          "N": 0.005003471819581208
+        },
+        "weights": {
+          "TX_power_spectrum": "sinc^2(f/112e9), rectangular-pulse approximation",
+          "channel": "|1+j*2*pi*f*RC|^-4, two independent buffered poles",
+          "channel_RC_s": 8.526157665637249e-12,
+          "fixed_receiver": "|Hdd_track,bypass(f)|^2",
+          "quadrature": "trapezoidal in linear frequency"
+        },
+        "scope": "Static AC diagnostic for code comparison. Correlate with independent frozen-FFE transient results."
+      },
+      "unskewed_AFE_56GHz": {
+        "Hdd_absolute_dB": -24.566524349769647,
+        "Hdd_vs_bypass_dB": -4.896219058056504,
+        "Hdc_increment_over_abs_Hdd_bypass": 1.4836171983214739
+      },
+      "known_input_skew_AFE_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -37.69663177792468,
+          "Hdd_vs_bypass_dB": -18.02632648621154,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.852873781423624
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -24.566524349769647,
+          "Hdd_vs_bypass_dB": -4.896219058056504,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4836171983214739
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -20.33325349198072,
+          "Hdd_vs_bypass_dB": -0.6629482002675762,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.2510515461232656
+        }
+      },
+      "known_input_skew_trim_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -24.364941078222326,
+          "Hdd_vs_bypass_dB": -18.015652376490117,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.8533738559339412
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -11.244146786436488,
+          "Hdd_vs_bypass_dB": -4.894858084704278,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4841703128844401
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -7.009650052117347,
+          "Hdd_vs_bypass_dB": -0.6603613503851378,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.2511456065413254
+        }
+      },
+      "AFE_56GHz_vs_original_0ohm_bypass_dB": null
+    },
+    {
+      "config": {
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "source_ohm": 25,
+        "termination_ohm": 25,
+        "load": "r3",
+        "variant": "ttd_selected",
+        "p_code": 16,
+        "n_code": 6
+      },
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.00015288299124143596,
+        "scope": "Stationary differential X_ip-X_im"
+      },
+      "DC_supply_power_W": {
+        "XVs:p": 0.010076882434493428,
+        "XVcm:p": 4.623365951038131e-11
+      },
+      "DC_voltage_V": {
+        "X_ip": 0.6999999995504926,
+        "X_im": 0.6999999995726244
+      },
+      "single_leg_driven_source_admittance_56GHz_S": [
+        [
+          0.020335902515743392,
+          0.0007911434205567177
+        ],
+        [
+          0.01999425664636639,
+          -0.0002937214708077637
+        ]
+      ],
+      "PN_swap_max_absolute_error_VV": 7.301351988545593e-16,
+      "delay": {
+        "format": "pam4_weighted_differential_delay_v1",
+        "primary_band": "7_to_56_GHz",
+        "bands": {
+          "7_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              7000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 93,
+            "tau_effective_ps": 5.244601308974558,
+            "weighted_phase_rms_ps": 0.011882974527799333,
+            "worst_phase_error_ps": 0.019207393058901474,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": 0.7803155946888438,
+                "weighted_phase_rms_ps": 0.7804060689142758,
+                "worst_phase_error_ps": 0.7995229877477454,
+                "signed_phase_delay_error_at_56_GHz_ps": 0.7915017529098415
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 5.244601308974558,
+                "weighted_phase_rms_ps": 5.244614770903701,
+                "worst_phase_error_ps": 5.26380870203346,
+                "signed_phase_delay_error_at_56_GHz_ps": 5.255787467195556
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 9.708887023260273,
+                "weighted_phase_rms_ps": 9.708894295207635,
+                "worst_phase_error_ps": 9.728094416319173,
+                "signed_phase_delay_error_at_56_GHz_ps": 9.72007318148127
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": 0.011186158220997998,
+            "phase_delay_span_ps": [
+              5.2283672648577495,
+              5.26380870203346
+            ],
+            "local_group_delay_span_ps": [
+              5.195508892811403,
+              5.30033008697758
+            ]
+          },
+          "14_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              14000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 62,
+            "tau_effective_ps": 5.246542804349407,
+            "weighted_phase_rms_ps": 0.011127334178973424,
+            "worst_phase_error_ps": 0.017265897684052588,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": 0.7822570900636929,
+                "weighted_phase_rms_ps": 0.7823362272839266,
+                "worst_phase_error_ps": 0.7995229877477454,
+                "signed_phase_delay_error_at_56_GHz_ps": 0.7915017529098415
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 5.246542804349407,
+                "weighted_phase_rms_ps": 5.24655460425568,
+                "worst_phase_error_ps": 5.26380870203346,
+                "signed_phase_delay_error_at_56_GHz_ps": 5.255787467195556
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 9.710828518635122,
+                "weighted_phase_rms_ps": 9.710834893864849,
+                "worst_phase_error_ps": 9.728094416319173,
+                "signed_phase_delay_error_at_56_GHz_ps": 9.72007318148127
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": 0.009244662846148726,
+            "phase_delay_span_ps": [
+              5.229375600660565,
+              5.26380870203346
+            ],
+            "local_group_delay_span_ps": [
+              5.201458871801376,
+              5.30033008697758
+            ]
+          }
+        },
+        "at_56_GHz": {
+          "frequency_Hz": 56000000000.0,
+          "differential_phase_delay_vs_bypass_ps": 5.255787467195556,
+          "P_branch_magnitude_V_per_V": 0.4408766651622587,
+          "N_branch_magnitude_V_per_V": 0.46859159004150847,
+          "P_over_N_magnitude_dB": -0.5295475386559454,
+          "Hdd_magnitude_V_per_V": 0.2740265611758605,
+          "Hdd_bypass_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_magnitude_change_vs_bypass_dB": -4.894858084704278,
+          "Hdc_complex_V_per_V": [
+            -0.6256289114751236,
+            0.34516496505659444
+          ],
+          "Hdc_increment_normalized_complex": [
+            -1.2995148453943617,
+            0.7169537532136667
+          ],
+          "Hdc_increment_normalized_magnitude": 1.4841703128844397
+        },
+        "branch_floor_V_per_V": {
+          "P": 0.005003471819581208,
+          "N": 0.005003471819581208
+        },
+        "weights": {
+          "TX_power_spectrum": "sinc^2(f/112e9), rectangular-pulse approximation",
+          "channel": "|1+j*2*pi*f*RC|^-4, two independent buffered poles",
+          "channel_RC_s": 8.526157665637249e-12,
+          "fixed_receiver": "|Hdd_track,bypass(f)|^2",
+          "quadrature": "trapezoidal in linear frequency"
+        },
+        "scope": "Static AC diagnostic for code comparison. Correlate with independent frozen-FFE transient results."
+      },
+      "unskewed_AFE_56GHz": {
+        "Hdd_absolute_dB": -24.566524349769765,
+        "Hdd_vs_bypass_dB": -4.896219058056619,
+        "Hdc_increment_over_abs_Hdd_bypass": 1.4836171983214466
+      },
+      "known_input_skew_AFE_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -20.33325349198083,
+          "Hdd_vs_bypass_dB": -0.6629482002676874,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.25105154612325603
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -24.566524349769765,
+          "Hdd_vs_bypass_dB": -4.896219058056619,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4836171983214466
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -37.69663177792467,
+          "Hdd_vs_bypass_dB": -18.02632648621153,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.8528737814235912
+        }
+      },
+      "known_input_skew_trim_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -7.0096500521173475,
+          "Hdd_vs_bypass_dB": -0.6603613503851389,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.2511456065413249
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -11.244146786436488,
+          "Hdd_vs_bypass_dB": -4.894858084704278,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.4841703128844395
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -24.364941078222326,
+          "Hdd_vs_bypass_dB": -18.01565237649012,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.853373855933941
+        }
+      },
+      "AFE_56GHz_vs_original_0ohm_bypass_dB": null
+    },
+    {
+      "config": {
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "source_ohm": 25,
+        "termination_ohm": 25,
+        "load": "r3",
+        "variant": "ttd_switch",
+        "p_code": 6,
+        "n_code": 6
+      },
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.00019782801214675248,
+        "scope": "Stationary differential X_ip-X_im"
+      },
+      "DC_supply_power_W": {
+        "ACNVDD:p": 6.11979287060174e-11,
+        "ACNPFVN:p": 1.6714700896694589e-12,
+        "ACNPFVP:p": -0.0,
+        "ACNPSVN:p": -0.0,
+        "ACNPSVP:p": 4.288621909646467e-12,
+        "ACNNFVN:p": 1.6714700896694589e-12,
+        "ACNNFVP:p": -0.0,
+        "ACNNSVN:p": -0.0,
+        "ACNNSVP:p": 4.28862190964656e-12,
+        "XVs:p": 0.010076882352018326,
+        "XVcm:p": 2.435609861880895e-09
+      },
+      "DC_voltage_V": {
+        "X_ip": 0.6999999778960919,
+        "X_im": 0.6999999778960919
+      },
+      "single_leg_driven_source_admittance_56GHz_S": [
+        [
+          0.005276430430922461,
+          0.001959129791504009
+        ],
+        [
+          0.00527643043092246,
+          0.001959129791504006
+        ]
+      ],
+      "delay": {
+        "format": "pam4_weighted_differential_delay_v1",
+        "primary_band": "7_to_56_GHz",
+        "bands": {
+          "7_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              7000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 93,
+            "tau_effective_ps": 1.2616162742541299e-14,
+            "weighted_phase_rms_ps": 4.877174337954146e-13,
+            "worst_phase_error_ps": 5.198000560009405e-12,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -4.464285714285702,
+                "weighted_phase_rms_ps": 4.464285714285702,
+                "worst_phase_error_ps": 4.46428571428847,
+                "signed_phase_delay_error_at_56_GHz_ps": -4.4642857142857135
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 1.2616162742541299e-14,
+                "weighted_phase_rms_ps": 4.878805825100348e-13,
+                "worst_phase_error_ps": 5.210616722751946e-12,
+                "signed_phase_delay_error_at_56_GHz_ps": 9.216738383312682e-16
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 4.464285714285727,
+                "weighted_phase_rms_ps": 4.464285714285727,
+                "worst_phase_error_ps": 4.464285714290925,
+                "signed_phase_delay_error_at_56_GHz_ps": 4.464285714285715
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -1.169448890421003e-14,
+            "phase_delay_span_ps": [
+              -2.756353466765503e-12,
+              5.210616722751946e-12
+            ],
+            "local_group_delay_span_ps": [
+              -3.4478927450543004e-10,
+              2.383381842119436e-10
+            ]
+          },
+          "14_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              14000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 62,
+            "tau_effective_ps": -2.850059861160401e-14,
+            "weighted_phase_rms_ps": 2.2226031022086587e-13,
+            "worst_phase_error_ps": 6.949626440126443e-13,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -4.464285714285743,
+                "weighted_phase_rms_ps": 4.464285714285743,
+                "worst_phase_error_ps": 4.464285714286438,
+                "signed_phase_delay_error_at_56_GHz_ps": -4.4642857142857135
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": -2.850059861160401e-14,
+                "weighted_phase_rms_ps": 2.2408018569408428e-13,
+                "worst_phase_error_ps": 7.234632426242483e-13,
+                "signed_phase_delay_error_at_56_GHz_ps": 9.216738383312682e-16
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 4.464285714285686,
+                "weighted_phase_rms_ps": 4.464285714285686,
+                "worst_phase_error_ps": 4.464285714286269,
+                "signed_phase_delay_error_at_56_GHz_ps": 4.464285714285715
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": 2.942227244993528e-14,
+            "phase_delay_span_ps": [
+              -7.234632426242483e-13,
+              5.5470913977465e-13
+            ],
+            "local_group_delay_span_ps": [
+              -5.706128540004315e-11,
+              3.739986359934398e-11
+            ]
+          }
+        },
+        "at_56_GHz": {
+          "frequency_Hz": 56000000000.0,
+          "differential_phase_delay_vs_bypass_ps": 9.216738383312682e-16,
+          "P_branch_magnitude_V_per_V": 0.015025855972408433,
+          "N_branch_magnitude_V_per_V": 0.015025855972408388,
+          "P_over_N_magnitude_dB": 2.7001169063491996e-14,
+          "Hdd_magnitude_V_per_V": 0.01502585597240841,
+          "Hdd_bypass_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_magnitude_change_vs_bypass_dB": -30.113926864798962,
+          "Hdc_complex_V_per_V": [
+            -1.8431436932253575e-18,
+            -4.5102810375396984e-17
+          ],
+          "Hdc_increment_normalized_complex": [
+            1.11475622752103e-16,
+            -1.153040784829833e-16
+          ],
+          "Hdc_increment_normalized_magnitude": 1.6038031357613427e-16
+        },
+        "branch_floor_V_per_V": {
+          "P": 0.005003471819581208,
+          "N": 0.005003471819581208
+        },
+        "weights": {
+          "TX_power_spectrum": "sinc^2(f/112e9), rectangular-pulse approximation",
+          "channel": "|1+j*2*pi*f*RC|^-4, two independent buffered poles",
+          "channel_RC_s": 8.526157665637249e-12,
+          "fixed_receiver": "|Hdd_track,bypass(f)|^2",
+          "quadrature": "trapezoidal in linear frequency"
+        },
+        "scope": "Static AC diagnostic for code comparison. Correlate with independent frozen-FFE transient results."
+      },
+      "unskewed_AFE_56GHz": {
+        "Hdd_absolute_dB": -49.78401951419117,
+        "Hdd_vs_bypass_dB": -30.113714222478034,
+        "Hdc_increment_over_abs_Hdd_bypass": 4.836284299670197e-15
+      },
+      "known_input_skew_AFE_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -52.79367128525031,
+          "Hdd_vs_bypass_dB": -33.12336599353718,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.04413422153313141
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -49.78401951419117,
+          "Hdd_vs_bypass_dB": -30.113714222478034,
+          "Hdc_increment_over_abs_Hdd_bypass": 4.836284299670197e-15
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -52.79367128525032,
+          "Hdd_vs_bypass_dB": -33.12336599353718,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.044134221533124705
+        }
+      },
+      "known_input_skew_trim_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -39.47365255457762,
+          "Hdd_vs_bypass_dB": -33.124363852845406,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.0441371762874098
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -36.463215566531176,
+          "Hdd_vs_bypass_dB": -30.113926864798962,
+          "Hdc_increment_over_abs_Hdd_bypass": 1.6038031357613427e-16
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -39.47365255457762,
+          "Hdd_vs_bypass_dB": -33.12436385284541,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.04413717628740958
+        }
+      },
+      "AFE_56GHz_vs_original_0ohm_bypass_dB": null
+    },
+    {
+      "config": {
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "source_ohm": 25,
+        "termination_ohm": 25,
+        "load": "r3",
+        "variant": "ttd_switch",
+        "p_code": 6,
+        "n_code": 16
+      },
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.000197528800502264,
+        "scope": "Stationary differential X_ip-X_im"
+      },
+      "DC_supply_power_W": {
+        "ACNVDD:p": 6.119792870601777e-11,
+        "ACNPFVN:p": 1.6714700896694589e-12,
+        "ACNPFVP:p": -0.0,
+        "ACNPSVN:p": -0.0,
+        "ACNPSVP:p": 4.2886219096464654e-12,
+        "ACNNFVN:p": -0.0,
+        "ACNNFVP:p": 4.288621909646681e-12,
+        "ACNNSVN:p": 1.6714700896694607e-12,
+        "ACNNSVP:p": -0.0,
+        "XVs:p": 0.010076882352017561,
+        "XVcm:p": 2.4356098618808605e-09
+      },
+      "DC_voltage_V": {
+        "X_ip": 0.6999999778960919,
+        "X_im": 0.699999977895688
+      },
+      "single_leg_driven_source_admittance_56GHz_S": [
+        [
+          0.005276430506083176,
+          0.0019591298387392738
+        ],
+        [
+          0.003972564611135545,
+          0.0011555977852805092
+        ]
+      ],
+      "PN_swap_max_absolute_error_VV": 1.4357988917406466e-13,
+      "delay": {
+        "format": "pam4_weighted_differential_delay_v1",
+        "primary_band": "7_to_56_GHz",
+        "bands": {
+          "7_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              7000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 93,
+            "tau_effective_ps": -3.3555836891651114,
+            "weighted_phase_rms_ps": 1.5338632525859976,
+            "worst_phase_error_ps": 7.6649250086442065,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -7.819869403450825,
+                "weighted_phase_rms_ps": 7.968882855498635,
+                "worst_phase_error_ps": 15.484794412095033,
+                "signed_phase_delay_error_at_56_GHz_ps": -8.192376943287233
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": -3.3555836891651114,
+                "weighted_phase_rms_ps": 3.689536335723588,
+                "worst_phase_error_ps": 11.020508697809317,
+                "signed_phase_delay_error_at_56_GHz_ps": -3.7280912290015182
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 1.108702025120603,
+                "weighted_phase_rms_ps": 1.8926057851914702,
+                "worst_phase_error_ps": 6.556222983523603,
+                "signed_phase_delay_error_at_56_GHz_ps": 0.7361944852841963
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -0.3725075398364067,
+            "phase_delay_span_ps": [
+              -11.020508697809317,
+              -1.9697384664321946
+            ],
+            "local_group_delay_span_ps": [
+              -19.27191744765627,
+              1.1500889718651717
+            ]
+          },
+          "14_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              14000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 62,
+            "tau_effective_ps": -2.9285436363425967,
+            "weighted_phase_rms_ps": 0.8549679303931152,
+            "worst_phase_error_ps": 2.3267509851735615,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -7.392829350628311,
+                "weighted_phase_rms_ps": 7.442102926559945,
+                "worst_phase_error_ps": 9.719580335801872,
+                "signed_phase_delay_error_at_56_GHz_ps": -8.192376943287233
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": -2.9285436363425967,
+                "weighted_phase_rms_ps": 3.0507930103439347,
+                "worst_phase_error_ps": 5.255294621516158,
+                "signed_phase_delay_error_at_56_GHz_ps": -3.7280912290015182
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 1.5357420779431177,
+                "weighted_phase_rms_ps": 1.7576899305525222,
+                "worst_phase_error_ps": 2.4945472478535202,
+                "signed_phase_delay_error_at_56_GHz_ps": 0.7361944852841963
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": -0.7995475926589217,
+            "phase_delay_span_ps": [
+              -5.255294621516158,
+              -1.9697384664321946
+            ],
+            "local_group_delay_span_ps": [
+              -19.27191744765627,
+              1.1259281127748877
+            ]
+          }
+        },
+        "at_56_GHz": {
+          "frequency_Hz": 56000000000.0,
+          "differential_phase_delay_vs_bypass_ps": -3.7280912290015182,
+          "P_branch_magnitude_V_per_V": 0.015145185768868731,
+          "N_branch_magnitude_V_per_V": 0.03607031690501333,
+          "P_over_N_magnitude_dB": -7.53750706479424,
+          "Hdd_magnitude_V_per_V": 0.021273860478011327,
+          "Hdd_bypass_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_magnitude_change_vs_bypass_dB": -27.093785165312156,
+          "Hdc_complex_V_per_V": [
+            0.03427707863240199,
+            -0.002909107931478692
+          ],
+          "Hdc_increment_normalized_complex": [
+            0.07119807240769992,
+            -0.006042605887406111
+          ],
+          "Hdc_increment_normalized_magnitude": 0.07145403138019991
+        },
+        "branch_floor_V_per_V": {
+          "P": 0.005003471819581208,
+          "N": 0.005003471819581208
+        },
+        "weights": {
+          "TX_power_spectrum": "sinc^2(f/112e9), rectangular-pulse approximation",
+          "channel": "|1+j*2*pi*f*RC|^-4, two independent buffered poles",
+          "channel_RC_s": 8.526157665637249e-12,
+          "fixed_receiver": "|Hdd_track,bypass(f)|^2",
+          "quadrature": "trapezoidal in linear frequency"
+        },
+        "scope": "Static AC diagnostic for code comparison. Correlate with independent frozen-FFE transient results."
+      },
+      "unskewed_AFE_56GHz": {
+        "Hdd_absolute_dB": -46.77282561891022,
+        "Hdd_vs_bypass_dB": -27.102520327197077,
+        "Hdc_increment_over_abs_Hdd_bypass": 0.07135956494957403
+      },
+      "known_input_skew_AFE_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -52.62149988031893,
+          "Hdd_vs_bypass_dB": -32.95119458860579,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.10415493297162665
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -46.77282561891022,
+          "Hdd_vs_bypass_dB": -27.102520327197077,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.07135956494957403
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -45.33170074665354,
+          "Hdd_vs_bypass_dB": -25.661395454940397,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.045110517500811485
+        }
+      },
+      "known_input_skew_trim_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -39.28032533793878,
+          "Hdd_vs_bypass_dB": -32.93103663620657,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.10425999209981363
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -33.44307386704436,
+          "Hdd_vs_bypass_dB": -27.093785165312156,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.07145403138019993
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -32.00297651417096,
+          "Hdd_vs_bypass_dB": -25.653687812438754,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.045196505481438914
+        }
+      },
+      "AFE_56GHz_vs_original_0ohm_bypass_dB": null
+    },
+    {
+      "config": {
+        "process": "tt",
+        "temperature_C": 25,
+        "vdd_V": 0.9,
+        "source_ohm": 25,
+        "termination_ohm": 25,
+        "load": "r3",
+        "variant": "ttd_switch",
+        "p_code": 16,
+        "n_code": 6
+      },
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.00019752880050226393,
+        "scope": "Stationary differential X_ip-X_im"
+      },
+      "DC_supply_power_W": {
+        "ACNVDD:p": 6.119792870601834e-11,
+        "ACNPFVN:p": -0.0,
+        "ACNPFVP:p": 4.288621909646658e-12,
+        "ACNPSVN:p": 1.6714700896694607e-12,
+        "ACNPSVP:p": -0.0,
+        "ACNNFVN:p": 1.6714700896694589e-12,
+        "ACNNFVP:p": -0.0,
+        "ACNNSVN:p": -0.0,
+        "ACNNSVP:p": 4.288621909646676e-12,
+        "XVs:p": 0.010076882352017561,
+        "XVcm:p": 2.4356098618808534e-09
+      },
+      "DC_voltage_V": {
+        "X_ip": 0.699999977895688,
+        "X_im": 0.6999999778960919
+      },
+      "single_leg_driven_source_admittance_56GHz_S": [
+        [
+          0.003972564611135551,
+          0.0011555977852805482
+        ],
+        [
+          0.005276430506083236,
+          0.0019591298387392664
+        ]
+      ],
+      "PN_swap_max_absolute_error_VV": 1.4357988917406466e-13,
+      "delay": {
+        "format": "pam4_weighted_differential_delay_v1",
+        "primary_band": "7_to_56_GHz",
+        "bands": {
+          "7_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              7000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 93,
+            "tau_effective_ps": 3.3555836891651087,
+            "weighted_phase_rms_ps": 1.5338632525859552,
+            "worst_phase_error_ps": 7.664925008643689,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -1.1087020251206057,
+                "weighted_phase_rms_ps": 1.8926057851914377,
+                "worst_phase_error_ps": 6.556222983523083,
+                "signed_phase_delay_error_at_56_GHz_ps": -0.7361944852842057
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 3.3555836891651087,
+                "weighted_phase_rms_ps": 3.689536335723567,
+                "worst_phase_error_ps": 11.020508697808797,
+                "signed_phase_delay_error_at_56_GHz_ps": 3.7280912290015085
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 7.819869403450824,
+                "weighted_phase_rms_ps": 7.968882855498623,
+                "worst_phase_error_ps": 15.484794412094514,
+                "signed_phase_delay_error_at_56_GHz_ps": 8.192376943287222
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": 0.3725075398363998,
+            "phase_delay_span_ps": [
+              1.9697384664322515,
+              11.020508697808797
+            ],
+            "local_group_delay_span_ps": [
+              -1.150088971809756,
+              19.271917447656406
+            ]
+          },
+          "14_to_56_GHz": {
+            "status": "MEASURED_AC_ESTIMATE",
+            "limits_Hz": [
+              14000000000.0,
+              56000000000.0
+            ],
+            "grid_count": 62,
+            "tau_effective_ps": 2.9285436363425954,
+            "weighted_phase_rms_ps": 0.8549679303930727,
+            "worst_phase_error_ps": 2.326750985172651,
+            "target_known_diagnostics": {
+              "-4.464285714": {
+                "injected_skew_ps": -4.464285714285714,
+                "required_correction_ps": 4.464285714285714,
+                "signed_effective_residual_ps": -1.535742077943119,
+                "weighted_phase_rms_ps": 1.757689930552503,
+                "worst_phase_error_ps": 2.494547247853463,
+                "signed_phase_delay_error_at_56_GHz_ps": -0.7361944852842057
+              },
+              "0.000000000": {
+                "injected_skew_ps": 0.0,
+                "required_correction_ps": -0.0,
+                "signed_effective_residual_ps": 2.9285436363425954,
+                "weighted_phase_rms_ps": 3.0507930103439214,
+                "worst_phase_error_ps": 5.2552946215152465,
+                "signed_phase_delay_error_at_56_GHz_ps": 3.7280912290015085
+              },
+              "4.464285714": {
+                "injected_skew_ps": 4.464285714285714,
+                "required_correction_ps": -4.464285714285714,
+                "signed_effective_residual_ps": 7.392829350628309,
+                "weighted_phase_rms_ps": 7.442102926559939,
+                "worst_phase_error_ps": 9.71958033580096,
+                "signed_phase_delay_error_at_56_GHz_ps": 8.192376943287222
+              }
+            },
+            "branch_null_frequencies_Hz": [],
+            "signed_phase_delay_error_at_56_GHz_ps": 0.7995475926589135,
+            "phase_delay_span_ps": [
+              1.9697384664322515,
+              5.2552946215152465
+            ],
+            "local_group_delay_span_ps": [
+              -1.1259281128199867,
+              19.271917447656406
+            ]
+          }
+        },
+        "at_56_GHz": {
+          "frequency_Hz": 56000000000.0,
+          "differential_phase_delay_vs_bypass_ps": 3.7280912290015085,
+          "P_branch_magnitude_V_per_V": 0.03607031690501124,
+          "N_branch_magnitude_V_per_V": 0.015145185768868665,
+          "P_over_N_magnitude_dB": 7.537507064793772,
+          "Hdd_magnitude_V_per_V": 0.021273860478010345,
+          "Hdd_bypass_magnitude_V_per_V": 0.4814326775045535,
+          "Hdd_magnitude_change_vs_bypass_dB": -27.093785165312557,
+          "Hdc_complex_V_per_V": [
+            -0.034277078632399996,
+            0.0029091079314793027
+          ],
+          "Hdc_increment_normalized_complex": [
+            -0.07119807240769555,
+            0.006042605887407336
+          ],
+          "Hdc_increment_normalized_magnitude": 0.07145403138019567
+        },
+        "branch_floor_V_per_V": {
+          "P": 0.005003471819581208,
+          "N": 0.005003471819581208
+        },
+        "weights": {
+          "TX_power_spectrum": "sinc^2(f/112e9), rectangular-pulse approximation",
+          "channel": "|1+j*2*pi*f*RC|^-4, two independent buffered poles",
+          "channel_RC_s": 8.526157665637249e-12,
+          "fixed_receiver": "|Hdd_track,bypass(f)|^2",
+          "quadrature": "trapezoidal in linear frequency"
+        },
+        "scope": "Static AC diagnostic for code comparison. Correlate with independent frozen-FFE transient results."
+      },
+      "unskewed_AFE_56GHz": {
+        "Hdd_absolute_dB": -46.77282561891069,
+        "Hdd_vs_bypass_dB": -27.10252032719755,
+        "Hdc_increment_over_abs_Hdd_bypass": 0.0713595649495616
+      },
+      "known_input_skew_AFE_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -45.33170074665398,
+          "Hdd_vs_bypass_dB": -25.66139545494083,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.04511051750081127
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -46.77282561891069,
+          "Hdd_vs_bypass_dB": -27.10252032719755,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.0713595649495616
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -52.6214998803199,
+          "Hdd_vs_bypass_dB": -32.95119458860676,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.10415493297161196
+        }
+      },
+      "known_input_skew_trim_56GHz": {
+        "-4.464285714285714": {
+          "Hdd_absolute_dB": -32.00297651417134,
+          "Hdd_vs_bypass_dB": -25.653687812439124,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.04519650548143482
+        },
+        "0.0": {
+          "Hdd_absolute_dB": -33.44307386704477,
+          "Hdd_vs_bypass_dB": -27.093785165312557,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.07145403138019567
+        },
+        "4.464285714285714": {
+          "Hdd_absolute_dB": -39.28032533793956,
+          "Hdd_vs_bypass_dB": -32.931036636207345,
+          "Hdc_increment_over_abs_Hdd_bypass": 0.10425999209980895
+        }
+      },
+      "AFE_56GHz_vs_original_0ohm_bypass_dB": null
+    }
+  ],
+  "scope": "AC diagnostics only",
+  "thresholds_applied": false,
+  "FFE_SER": null
+}

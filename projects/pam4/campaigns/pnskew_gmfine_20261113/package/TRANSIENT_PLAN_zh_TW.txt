@@ -1,0 +1,33 @@
+Olympus 時域驗證計畫　待 AC 證據與分段批准
+
+本批交付原生 AC deck。時域案例和條件定在 transient_plan.json。
+等原生 driver、隔離、局部碼距、TT 正負方向、SS/FF 端點都取得 AC 證據後，
+再把可用電路版本與全碼路由凍結，建立 r5 時域 deck。完整粗碼選路和切換控制尚待實作。
+
+1. 先用短 PRBS/PAM4 pilot 比較同硬體零 skew、±0.5 UI 及 ±0.25 UI。
+   保留電源、偏壓、P/N、取樣時鐘和 enable 邊緣。先斷後接，量到每個 bias bus、
+   follower、r3 輸入和第一級共模的 settling；只計穩定後的樣本。前景先固定碼，
+   再驗證盲選碼。從 trim 後的 P/N pilot 或兩條已量測的路徑提取相對相位，另用一段驗證。
+   真實注入值只進驗證資料與理想對照，不能參與選碼。NO_LOCK 個案留在結果中。
+2. 共同延遲名義約 5.77 ps，實體 follower 另有延遲。先用新硬體的零 skew pilot
+   確立一個全鏈路共相位，然後全組固定，另保留原 clock 相位對照。若要修改 clock，
+   先定義同一套 8 路時脈和次取樣的共同平移，不逐碼或逐 seed 搜尋最佳 lag；
+   最終用相同 2048 symbols、2032 個 FFE 窗、原理想7bit及原凍結17-tap FFE。
+3. 先做 TT 無雜訊 5 點 0/±0.25/±0.5 UI，再視結果補成九點。
+   以同硬體零 skew 做增量比較，再對同配置原 r1 無補償、零 skew 理想反向對照。
+   只有確認 deck／PDK／版本、時脈和 label 對齊可比時才引用原 r1 絕對數。
+   若共同相位規則不同，保留兩套參考並另列 clock 差異。
+4. 雜訊在 0/±0.5 UI 各 20 組 seed 1001–1020。同 seed 配對，不把數值積分
+   路徑不同的波形當成同一 noise realization。先做 seeds 1001–1003 的 9 案，
+   再補同一組 60 案剩餘 51 案。從同硬體 zero 比較恢復量，另列原 r1 zero baseline
+   secondary 的 161–236 錯誤。每個點報 primary/secondary errors/2032、SER、clipping、
+   MSE、held 間距、配對 mean/range。沿用 r1 的 +1 percentage point SER 或正基準間距
+   降 10% 的劣化標籤；負基準間距只報 mV。這是判讀標籤，0.25 ps 未列通過門檻。
+5. SS 與 FF 各做同硬體零及 ±0.5 UI 無雜訊。原 FFE 不重訓，絕對錯誤率
+   與各角落同硬體零點的差分開列。保留本輪碼表、校正估值、headroom/功耗、必要短波形。
+
+Spectre classic +mt=1。歷史 quiet 45–90 min、noise 55–110 min；新實體全窗 provisional
+1–4 h，先用 1 CPU/8 GiB/6 h 的首例留餘量，pilot 1 CPU/6 GiB/2 h。
+估算是規劃範圍；量到 Elapsed/MaxRSS/raw bytes 後再調整。60 個 noise case 單核工時
+約 60–240 小時，與 queue 或多案平行後的經過時間不同。不得用前一版 AC approval 提交。
+只在 Olympus 核對結果、保留資料及 SHA 後退休本批原始輸出。

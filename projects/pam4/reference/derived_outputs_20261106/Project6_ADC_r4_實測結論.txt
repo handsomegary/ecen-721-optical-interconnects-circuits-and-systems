@@ -1,0 +1,90 @@
+Project 6 實體 ADC 介面與比較器 r4：2026-10-13 實測結論
+
+結論
+28nm LVT 與既有 r3 CTLE/VGA 值得保留，但本輪「大尺寸 CML 隔離緩衝器＋8×8 二級取樣」不適合直接定案成 Project 6 的 ADC。
+本輪確實改善比較器重置記憶，並把返回第一級的額外擾動壓低；代價是明顯的取樣記憶、前端負載與功耗。完整 7-bit、112 GS/s ADC 尚未通過，也沒有新的完整 PAM4 BER 結果。
+這是對目前電路拓樸、尺寸與時序的判斷，不能推論 28nm LVT 製程本身做不到。
+
+完成的工作
+共 33 組成功的原生 MOS 模擬：16 組重置掃描、4 組 PMOS 重置等化器、7 組無雜訊隔離介面、2 組暫態雜訊、4 組真實 r3 前端負載 DC/AC/noise。
+另保留 1 組最初測試平台的電源節點命名衝突紀錄；該組沒有產生有效模擬結果，未算入上述 33 組。
+全部使用 callback 產生、已驗證的 native W=3um MOS cards，以平行副本改變尺寸；沒有直接修改模型或使用理想放大器替代隔離緩衝器。
+本輪為 Spectre 原生 MOS netlist 測試，尚未把未通過的 ADC 候選建立成正式 OA schematic。
+
+1. 比較器重置改善
+條件：TT、25°C、0.9 V；原生 TG、每側 5 fF、每側 50Ω 訊號源；差動滿刻度 100 mVpp，名目 7-bit LSB=0.78125 mV。
+每組 16 次有效判決，包含同號重複、正負 0.25 LSB、正負 32 LSB 後接反向小訊號。這是壓力測試，並非 BER 統計。
+重置低電位中點間隔為 28/42/70/100 ps，判決評估 120 ps。28 ps 與下一次 acquisition 重疊，僅作診斷。
+
+相同 42 ps 重置、tail 4×、precharge 1×：
+  原比較器：10/16 正確、6/16 錯誤。
+  新增兩顆 PMOS，分別跨接 P–Q 與 X–Y：16/16 正確。
+  新版最慢 buffered 判決約 91.02 ps，prelaunch X–Y 最大殘差約 98.52 uV。
+  原版 X–Y 殘差約 1.117 mV。
+70 ps 重置、tail 4×、無等化器也能 16/16 正確，最慢 buffered 判決約 77.44 ps。
+增加 precharge 到 4×可改善重置，但也增加判決節點電容；不能只看重置是否乾淨。
+
+時序意義：64 路交錯時，每路週期 571.43 ps；若做 7 次 SAR 比較，平均每 bit 只有 81.63 ps，還要包含 DAC settling、reset、邏輯與結果擷取。
+目前 91 ps 單次判決超過此平均預算；77 ps 的另一版本還需要較長 reset。非同步 SAR 可以給不同 bit 不同時間，因此這個平均值不是每次判決的硬性上限；本輪尚未證明能在可用週期內完成全部七次判決及周邊操作。
+本輪沒有實際跑七次 CDAC 判決。也不能用「判決時間＋重置時間」的算術和取代更短週期的實際驗證。
+
+2. MOS 隔離與第二級取樣保持
+保留每主路 14 GHz、35.714 ps track；每主路後接實際 CML 緩衝器及 8 組輪流工作的 TG/保持電容，第二級每支路 1.75 GHz。
+第一級停止追蹤後約 25 ps 關閉第二級；關閉後再啟動比較器，給 120 ps 單次判決時間。
+暫態只在第二級支路 0 放實際比較器，其他 7 路保留 TG 與電容但沒有比較器閘極負載；故仍是隔離與傳遞篩選。
+所有暫態使用有限 50Ω/側訊號源，尚未連入真正的 CTLE/VGA；真正前端的負載另做第 4 節的凍結 DC/AC/noise 測試。
+
+目前探索中較低誤差的高增益候選 cml8_m25_sw4_c25：
+  第一級每側 25 fF、TG 4×。
+  CML 每側 8× native input/tail、75Ω load、25Ω differential degeneration、0.58 V bias。
+  第二級每側 25 fF；比較器 precharge/tail 均 4×。
+  有限測試序列的傳遞擬合增益約 -1.132 V/V，64 個取樣點的擬合殘差 0.651 mVrms。
+  單主路 buffer/hold bank 平均 VDD 功耗約 5.143 mW。
+  無雜訊時，主取樣端「DUT 減無比較器參考」的額外差動擾動峰值約 6.14 uV。
+  這個差值含比較器閘極負載與評估擾動，不是嚴格隔離出的純 kickback。
+
+8 次來源極性壓力測試為 6/8；另外 2 次在比較器啟動前，保持訊號的符號就已反轉。
+以實際 prelaunch 保持訊號的符號為準，8/8 有效輸出均相符。因此這兩次不應直接稱為比較器判錯。
+擬合殘差不是雜訊或 ENOB；部分穩定的線性記憶可能由 FFE 補償，但需要整合後重新訓練與使用新 holdout 的 PAM4 驗證。
+單純把第一級電容增到 50 fF，或把緩衝器尺寸放大，並沒有解決整體取樣問題。
+
+3. 真實 MOS 暫態雜訊
+上述候選固定電路與時序，使用兩個獨立 noise seeds 41、83；noisefmax=150 GHz、noisefmin=500 MHz。
+每個 seed 只有 8 個支路 0 觀測點，故下面只是診斷，不是精確 RMS 收斂、BER 或 ENOB 證明。
+與相同無雜訊案例相減後，第二級 prelaunch 差動電壓的 RMS 差為：
+  seed 41：約 0.933 mV；去平均後約 0.890 mV。
+  seed 83：約 0.407 mV；去平均後約 0.345 mV。
+兩組各有 6/8 的 buffered 輸出與 prelaunch 保持訊號符號相符。輸入在 evaluation 中仍會受到雜訊與回灌影響，所以也不是獨立的 comparator offset/error 測量。
+雜訊 DUT 與參考是獨立產生的雜訊，兩者相減不可當作純 kickback。
+
+4. 接上真正 r3 CTLE/VGA 的負載代價
+這四組使用真正 r3 AFE、全部 8 主路、4 track/4 hold 的凍結狀態。
+有負載者包含全部 8 CML 緩衝 bank、64 組 secondary TG/cap，以及 64 組保持 reset 的原生比較器。
+增益均以 AFE 差動輸入為分母，表中量測位置是第一級 tracking 取樣端；不是 secondary backend 的連續波頻寬。
+
+配置                         第一級 |H56|     H56(dB)    相對原版損失    總靜態功耗
+原 r3，5fF/TG1，無新 bank       0.189257       -14.459       0 dB         10.077 mW
+加 bank，5fF/TG1               0.111890       -19.024       4.565 dB     47.834 mW
+加 bank，25fF/TG4              0.068431       -23.295       8.836 dB     48.119 mW
+加 bank，50fF/TG4              0.051076       -25.836      11.377 dB     48.119 mW
+
+25fF/TG4 案例的 primary frozen output noise，1MHz–56GHz 約 0.385 mVrms；secondary 約 0.742 mVrms。
+這些是凍結小訊號積分雜訊，不含取樣混疊與實際比較器判決雜訊。頻寬下降也會降低積分雜訊，不能僅憑噪聲電壓變小就說 SNR 改善。
+48.119 mW 為 DC 靜態總和：AFE 約 10.077 mW、8 個 bank 約 38.015 mW，另有少量 reset 比較器與輸出反相器電流。
+尚未包含實際時脈與偏壓產生、比較器動態轉換、CDAC/reference、SAR 邏輯與 DSP。
+凍結 hold 節點透過 1T 漏電阻形成 DC 工作點，與真實取樣歷史不同；此靜態功耗不可冒充整機動態功耗。
+時間解交錯後的 backend 不必直接通過連續 56GHz 正弦波。摘要中的 secondary H56 只作診斷，真正關鍵是第一級 aperture/load 與後端 settling，不能用 secondary H56 單獨判定接收器失敗。
+
+設計決策與下一個關卡
+保留 r3 前端及原有 PAM4 結果；本輪 r4 僅作研究候選，不替換已驗證的 r3 schematic。
+不建議把目前大尺寸 CML bank 直接擴成完整 ADC 或開始版圖；目前取樣負載、雜訊與時序餘裕都不夠清楚。
+下一步應優先降低 ADC 介面的輸入電容，使用由 native CDF 正確產生的較小幾何尺寸與更快比較器，再決定交錯數與 SAR/pipelined 架構。
+新的介面需要接回實際 AFE 做完整 clocked PAM4/雜訊測試，重新訓練並使用全新 holdout；不能沿用 r3 的 0/8128 當作 r4 的 BER。
+仍缺 CDAC、控制/擷取邏輯、時脈與抖動、PN-skew 補償、PVT/mismatch、版圖/PEX，以及完整 7-bit 112GS/s 轉換驗證。
+
+結果與保存
+數值摘要：Project6_ADC_r4_summary.json，69,768 bytes；數字保留 8 位有效數字。
+SHA256：19be09ad5e2d3f6bd922459305835d9881d826f5358b00fd18fcb55d57abd9ca
+完整精度、測試 netlists、原始波形及原生 cards 均保存在 VM 專案內；本機只保存派生數值、測試條件、腳本及結果雜湊。
+VM 專案：/home/user/Desktop/cadence_projects/project6_28nm
+本輪沒有改動 PDK、r3 frozen validation 或原生 cards。沒有新增完整 PAM4 BER/ENOB 達標宣告。

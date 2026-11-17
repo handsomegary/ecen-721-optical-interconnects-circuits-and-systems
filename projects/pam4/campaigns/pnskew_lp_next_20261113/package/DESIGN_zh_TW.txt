@@ -1,0 +1,74 @@
+ECEN 721 Project #6｜LP14 跨角落與細碼 AC
+
+量測重核
+
+LP_PILOT_AUDIT.json 由 compact 重建 28 份 runtime deck、量測與 log SHA，
+並核對 124 個已退休 raw。lp14lo120 SS 短路徑在 25 Ω 時的 56 GHz Hdd
+相對同路徑理想為 −1.8526 dB，單組增量 +9.6778 mW。增益餘裕 0.1474 dB，
+功耗餘裕 0.3222 mW。漏訊是 −42.44 dB 對 bypass，或 −41.79 dBc 對
+full−OFF。此兩個數字屬原 25 Ω 獨立驅動、Rsource=0 的短路徑。
+
+每條導通腿實測 5.9452 mA，原 driver 固定 gate 0.48 V。兩組同偏壓估
+4×5.9452 mA×0.81 V＝19.26 mW，只算 driver 就超出 +14 mW 約 5.26 mW。
+SS、TT、FF 的雙組 driver 電流上限分別約 17.28、15.56、14.14 mA，尚未
+扣除新增偏壓／控制功耗。TT/FF 的固定 0.48 V 電流要以實測為準。
+
+選路與第一批
+
+主線保留 LP14 單元、0.48 V、33 Ω、120 pH。比較兩種放置方式。
+- branch 保留每 bank 一組差動 driver 與兩條獨立 25 Ω 路徑。
+- shared 每腿僅一組 LP14 同時餵兩條 50 Ω 路徑。每節 L×2、C÷2，R 不變，
+  遠端 50 Ω。兩條線一直掛在共同輸出，因此 OFF 路徑的 isolation 必須重測。
+  shared 量兩個 bank 的複數 drain 電流，單組啟用時給 OFF/selected 的 drain
+  電流比。這是同案支路指標，分母與 pilot 的完整輸出量測不同。
+
+0–53 共 54 案是 SS、TT、FF 的 11/11 零 skew，包含原 r3 bypass，
+單組 cb0、雙組 cb2、25 Ω 與 50 Ω 同路徑理想參考，以及兩種 LP14。
+所有候選使用 25 Ω 外加源阻抗。對照 idealz50 使用獨立 50 Ω Thevenin launch、
+相同逐節 LC 與 far-end 50 Ω，額外分數包含實體 shared fanout 的代價。
+功耗相對同角落的原 r3 AFE bypass。單／雙組分別沿用已核定 +10／+14 mW，
+功耗加總所有模擬電源。電壓偏壓和數位控制仍以理想電源表示，實體開銷待驗。
+雙組的 branch 主要用來定位功耗，優先看 shared 能否同時通過增益與功耗。
+若 shared 單組增益可行但 TT/FF 過預算，下一步需重新選擇定電流偏壓，
+並驗證實體偏壓開銷與擺幅。這包保持固定偏壓，以便量出跨角落實際差異。
+上一包 28–67 的 CS16／直推矩陣已縮成這裡的兩種 LP14 對照。
+移除 CHB2 的直推和上一包 68–187 的 cs16 備案暫停。
+
+通過第一批後的分批
+
+- 54–85 為 SS 短路徑電感敏感度。branch 理想錨點保留 pilot 1/1、8/14 路徑。
+  shared 短路徑兩組同長 1/1。先選第一批合格的拓撲及相應參考，再提交。
+- 86–181 為 TT/SS/FF 的正負 6/16 端點與 cb0/cb2。±0.5UI=±4.464 ps，
+  用相同 P/N 量測、同 Z0 reference，再以原 r3 bypass 看絕對增益及 CM→DM。
+  known-skew phase rotation 只供 AC 離線評分。
+- 182–209 為較接近實體的標稱電感。TT/SS/FF 正負 6/16 cb2，另補 TT/FF
+  shared 11/11 cb2。需要前段同拓撲相同路徑的理想電感及同 Z0 參考。
+- 210–453 為 shared 的候選碼表及同路徑的代表參考。TT 名義方向三段各 0–8，
+  其他角落與鏡射只驗首末相鄰步及兩個接縫。主量 7–56 GHz 權重相位延遲，
+  同報 14–56 GHz、56 GHz、dispersion、可見範圍與離線最近碼。
+  0.25 ps 是工程目標，0.30 ps 用於檢查已量的相鄰步。未量部分保持空白。
+  跨段比較是在獨立 fixture 上量的。實體共用多段路由及全域靜態碼還要設計。
+
+電感模型與判讀
+
+使用 series RL，並在整顆線圈兩端跨 C。R=2π·56GHz·L/Q_series，
+C=1/[(2π·SRF_ideal)^2·L]。120 pH 的 Q15/Q8 對應 2.81/5.28 Ω，
+150/110 GHz 的無損 SRF 參數對應 9.38/17.45 fF。SS 短路徑分開量 R-only、
+C-only、Q15+150、Q8+110 和 nominal ±10% L。最後兩點同時調 R/C，使指定
+Q_series 和 SRF_ideal 保持不變。輸出另列實際 terminal Q@56。
+常數 R 也算入 DC 電阻，因此是明確的 DC／RF 敏感度假設。layout 後須以
+EM／PDK 的頻率依賴電阻、基板寄生、互感及 SRF 取代。可用 Shekhar 等人的
+shunt-peaking 分析作設計背景 https://doi.org/10.1109/JSSC.2006.883336
+
+所有可比實體行要求 56 GHz 對同 Z0、同碼、同路徑、同源條件理想 Hdd 的損失
+不超過 2 dB。單／雙組功耗另外判定。保留 56/7 GHz tilt、7–55 GHz 群延遲、
+輸入 Y、Hdc、輸出 noise 和 OP。稀疏碼若沒有對應理想案，增益判定保持空白。
+原 r3 第二級尾管是歷史最薄裕度，與 LP14 自身的 OP 分開回報。
+
+未來時域
+
+同硬體零 skew 時以訓練序列校共同 RX 相位一次，並保留原時鐘診斷。
+固定全組時鐘相對時序、ADC 範圍、symbol indexing 和原 17-tap FFE，再用凍結
+相位比較零 skew、端點、兩方向及配對 noise seeds。新 FFE 若需訓練另作一臂。
+AC 的共同 2–4 ps 群延遲和頻帶 tilt 會改變取樣與等化。SER、實體偏壓、
+電感 EM、PAM4 擺幅及實體全域碼表都仍需驗證。

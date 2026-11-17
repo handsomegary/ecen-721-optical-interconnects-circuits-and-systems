@@ -1,0 +1,7398 @@
+{
+  "format": "pam4_lp14_gm_tap_pilot_v1",
+  "status": "REVIEW_PENDING",
+  "cases": [
+    {
+      "case_id": "gmt_000_r3_ss_p",
+      "stage": "baseline",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "r3_ss",
+      "group": "baseline",
+      "variant_name": "r3",
+      "point": "center",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_001_r3_ss_n",
+      "stage": "baseline",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "hardware": "reference",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "reference",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "r3_ss",
+      "group": "baseline",
+      "variant_name": "r3",
+      "point": "center",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_002_fixed_center_p",
+      "stage": "fixed",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "fixed_center",
+      "group": "fixed",
+      "variant_name": "fixed_route",
+      "point": "center",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_003_fixed_center_n",
+      "stage": "fixed",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "fixed_center",
+      "group": "fixed",
+      "variant_name": "fixed_route",
+      "point": "center",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_004_fixed_neg_end_p",
+      "stage": "fixed",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "fixed_neg_end",
+      "group": "fixed",
+      "variant_name": "fixed_route",
+      "point": "neg_end",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_005_fixed_neg_end_n",
+      "stage": "fixed",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          18,
+          48
+        ],
+        [
+          24,
+          42
+        ]
+      ],
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "fixed_neg_end",
+      "group": "fixed",
+      "variant_name": "fixed_route",
+      "point": "neg_end",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_006_fixed_pos_end_p",
+      "stage": "fixed",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "fixed_pos_end",
+      "group": "fixed",
+      "variant_name": "fixed_route",
+      "point": "pos_end",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_007_fixed_pos_end_n",
+      "stage": "fixed",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          48,
+          18
+        ],
+        [
+          42,
+          24
+        ]
+      ],
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "count_b": 0,
+      "direction": -1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "fixed_pos_end",
+      "group": "fixed",
+      "variant_name": "fixed_route",
+      "point": "pos_end",
+      "anchors": [],
+      "weights": [],
+      "anchor_set": "",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_008_oracle_line_11x8_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_11x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        11
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_009_oracle_line_11x8_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_11x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        11
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_010_coarse3_line_center_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        8,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_011_coarse3_line_center_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        8,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_012_oracle_line_6x8_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_6x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_013_oracle_line_6x8_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_6x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_014_coarse3_line_neg_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_015_coarse3_line_neg_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_016_oracle_line_16x8_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_16x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        16
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_017_oracle_line_16x8_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_16x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        16
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_018_coarse3_line_pos_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_019_coarse3_line_pos_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_020_coarse5_line_center_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_021_coarse5_line_center_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_022_coarse5_line_neg_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_023_coarse5_line_neg_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_024_coarse5_line_pos_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_025_coarse5_line_pos_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_026_coarse7_line_center_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_027_coarse7_line_center_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_028_coarse7_line_neg_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_029_coarse7_line_neg_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_030_coarse7_line_pos_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_031_coarse7_line_pos_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_032_oracle_line_6x7_11x1_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_6x7_11x1",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11
+      ],
+      "weights": [
+        7,
+        1
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_033_oracle_line_6x7_11x1_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_6x7_11x1",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11
+      ],
+      "weights": [
+        7,
+        1
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_034_coarse3_line_near_neg_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        7,
+        1,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x7_11x1",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_035_coarse3_line_near_neg_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        7,
+        1,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x7_11x1",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_036_oracle_line_11x1_16x7_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_11x1_16x7",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        11,
+        16
+      ],
+      "weights": [
+        1,
+        7
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_037_oracle_line_11x1_16x7_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_11x1_16x7",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        11,
+        16
+      ],
+      "weights": [
+        1,
+        7
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_038_coarse3_line_near_pos_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        1,
+        7
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x1_16x7",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_039_coarse3_line_near_pos_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_line_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        1,
+        7
+      ],
+      "anchor_set": "coarse3",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_11x1_16x7",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_040_oracle_line_6x5_8x3_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_6x5_8x3",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8
+      ],
+      "weights": [
+        5,
+        3
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_041_oracle_line_6x5_8x3_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_6x5_8x3",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8
+      ],
+      "weights": [
+        5,
+        3
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_042_coarse5_line_near_neg_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_043_coarse5_line_near_neg_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_044_oracle_line_14x3_16x5_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_14x3_16x5",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        14,
+        16
+      ],
+      "weights": [
+        3,
+        5
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_045_oracle_line_14x3_16x5_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_line_14x3_16x5",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        14,
+        16
+      ],
+      "weights": [
+        3,
+        5
+      ],
+      "anchor_set": "minimal",
+      "match_load": false,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_046_coarse5_line_near_pos_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_14x3_16x5",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_047_coarse5_line_near_pos_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_line_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse5",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_14x3_16x5",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_048_coarse7_line_near_neg_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_049_coarse7_line_near_neg_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_050_coarse7_line_near_pos_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_14x3_16x5",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_051_coarse7_line_near_pos_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_line_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse7",
+      "match_load": false,
+      "oracle_fixture_id": "oracle_line_14x3_16x5",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_052_oracle_match_11x8_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_11x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        11
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_053_oracle_match_11x8_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_11x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        11
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_054_coarse3_match_center_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        8,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_055_coarse3_match_center_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        8,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_056_oracle_match_6x8_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_6x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_057_oracle_match_6x8_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_6x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_058_coarse3_match_neg_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_059_coarse3_match_neg_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_060_oracle_match_16x8_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_16x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        16
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_061_oracle_match_16x8_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_16x8",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        16
+      ],
+      "weights": [
+        8
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_062_coarse3_match_pos_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_063_coarse3_match_pos_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_064_oracle_match_6x7_11x1_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_6x7_11x1",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11
+      ],
+      "weights": [
+        7,
+        1
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_065_oracle_match_6x7_11x1_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_6x7_11x1",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11
+      ],
+      "weights": [
+        7,
+        1
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_066_coarse3_match_near_neg_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        7,
+        1,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x7_11x1",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_067_coarse3_match_near_neg_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        7,
+        1,
+        0
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x7_11x1",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_068_oracle_match_11x1_16x7_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_11x1_16x7",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        11,
+        16
+      ],
+      "weights": [
+        1,
+        7
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_069_oracle_match_11x1_16x7_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_11x1_16x7",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        11,
+        16
+      ],
+      "weights": [
+        1,
+        7
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_070_coarse3_match_near_pos_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        1,
+        7
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x1_16x7",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_071_coarse3_match_near_pos_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse3_match_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        11,
+        16
+      ],
+      "weights": [
+        0,
+        1,
+        7
+      ],
+      "anchor_set": "coarse3",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x1_16x7",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_072_coarse5_match_center_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_073_coarse5_match_center_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_074_coarse5_match_neg_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_075_coarse5_match_neg_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_076_coarse5_match_pos_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_077_coarse5_match_pos_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_078_oracle_match_6x5_8x3_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_6x5_8x3",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8
+      ],
+      "weights": [
+        5,
+        3
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_079_oracle_match_6x5_8x3_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_6x5_8x3",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8
+      ],
+      "weights": [
+        5,
+        3
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_080_coarse5_match_near_neg_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_081_coarse5_match_near_neg_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_082_oracle_match_14x3_16x5_p",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_14x3_16x5",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        14,
+        16
+      ],
+      "weights": [
+        3,
+        5
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_083_oracle_match_14x3_16x5_n",
+      "stage": "oracle",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "oracle_match_14x3_16x5",
+      "group": "oracle",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        14,
+        16
+      ],
+      "weights": [
+        3,
+        5
+      ],
+      "anchor_set": "minimal",
+      "match_load": true,
+      "oracle_fixture_id": null,
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_084_coarse5_match_near_pos_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_14x3_16x5",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_085_coarse5_match_near_pos_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse5_match_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        11,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse5",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_14x3_16x5",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_086_coarse7_match_center_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_087_coarse7_match_center_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_center",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "center",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_11x8",
+      "fixed_fixture_id": "fixed_center"
+    },
+    {
+      "case_id": "gmt_088_coarse7_match_neg_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_089_coarse7_match_neg_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_neg_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "neg_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x8",
+      "fixed_fixture_id": "fixed_neg_end"
+    },
+    {
+      "case_id": "gmt_090_coarse7_match_pos_end_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_091_coarse7_match_pos_end_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_pos_end",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "pos_end",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_16x8",
+      "fixed_fixture_id": "fixed_pos_end"
+    },
+    {
+      "case_id": "gmt_092_coarse7_match_near_neg_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_093_coarse7_match_near_neg_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_near_neg",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_neg",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        5,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_6x5_8x3",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_094_coarse7_match_near_pos_p",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_14x3_16x5",
+      "fixed_fixture_id": null
+    },
+    {
+      "case_id": "gmt_095_coarse7_match_near_pos_n",
+      "stage": "pilot",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "coil_Q56": 15,
+      "coil_SRF_GHz": 150,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "replica",
+      "target_mA_per_leg": 4.35,
+      "hardware": "native_both",
+      "ref_R_ohm": 1934,
+      "miller_pF": 2.0,
+      "integration": "native_direct",
+      "p_output_units": 4,
+      "n_output_units": 1,
+      "fixture_id": "coarse7_match_near_pos",
+      "group": "pilot",
+      "variant_name": "gmtap",
+      "point": "near_pos",
+      "anchors": [
+        6,
+        8,
+        10,
+        11,
+        12,
+        14,
+        16
+      ],
+      "weights": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        5
+      ],
+      "anchor_set": "coarse7",
+      "match_load": true,
+      "oracle_fixture_id": "oracle_match_14x3_16x5",
+      "fixed_fixture_id": null
+    }
+  ]
+}

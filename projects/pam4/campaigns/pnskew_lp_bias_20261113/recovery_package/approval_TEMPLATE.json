@@ -1,0 +1,10 @@
+{
+  "approved": false,
+  "platform": "Olympus",
+  "mode": "collect-only",
+  "original_plan_sha256": "e1431e2c4787ba03af5369d376ca6bfc5efe8f51207ab0341317f2256b523aec",
+  "original_manifest_sha256": "c12278bc3628d1be9dd468af7be8fc50dfb3074532d28f3b9cf8612de98d7fe6",
+  "recovery_manifest_sha256": "",
+  "recovery_inputs_sha256": "",
+  "case_ids": []
+}

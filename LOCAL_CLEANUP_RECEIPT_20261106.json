@@ -1,0 +1,764 @@
+{
+  "remote_commit": "7f6f31affc56d15af873c9173a702795f3849e20",
+  "scope": "Verified local Windows project copies and regenerable caches only; VMware and Olympus retained.",
+  "deleted_file_count": 126,
+  "deleted_bytes": 3684477,
+  "files": [
+    {
+      "relative_path": "work/project6_start/adc_acquisition_r5.py",
+      "sha256": "9d9b62429cb21f327dbe985056714b803dd07e73542b72fce0954ffcb4c12845",
+      "reason": "GitHub source manifest",
+      "bytes": 9485
+    },
+    {
+      "relative_path": "work/project6_start/adc_backend_pam4_r5.py",
+      "sha256": "25f7168a47ea1a9b62b4548675534ac9c85c04d55d0a24414a9279f5c86e34f4",
+      "reason": "GitHub source manifest",
+      "bytes": 22363
+    },
+    {
+      "relative_path": "work/project6_start/adc_backend_screen_r6.py",
+      "sha256": "f14fb804fafa9f6b4f59b793ba0ddb232ed3eeb25ed380bf922b064a13c74b2b",
+      "reason": "GitHub source manifest",
+      "bytes": 18012
+    },
+    {
+      "relative_path": "work/project6_start/adc_backend_screen_r6b.py",
+      "sha256": "9edd0dc301205d0626944f7d7723ed24787fdd3f520da2c4642d55279e948553",
+      "reason": "GitHub source manifest",
+      "bytes": 18496
+    },
+    {
+      "relative_path": "work/project6_start/adc_cdac_acquisition_r6.py",
+      "sha256": "5cdb6805bc0e952ddded4b98947a55397619f2868695ff1070253848865fc517",
+      "reason": "GitHub source manifest",
+      "bytes": 15985
+    },
+    {
+      "relative_path": "work/project6_start/adc_cdac_native_r5.py",
+      "sha256": "e46302b1a1ba74e1f1b9d1d8a6943d6f2ff46fdd08b5eb0be69f78e14573e60c",
+      "reason": "GitHub source manifest",
+      "bytes": 18027
+    },
+    {
+      "relative_path": "work/project6_start/adc_comparator_burst_r5.py",
+      "sha256": "81f47f0e553169205fa759af4163cbeefe3e7d7168eeec1f8da607c6c30f6360",
+      "reason": "GitHub source manifest",
+      "bytes": 18675
+    },
+    {
+      "relative_path": "work/project6_start/adc_comparator_diagnostic.py",
+      "sha256": "cd6c654ba77fef77f2ba37923ecdb4ebdfabdd5dc7a79234d1d87de9447b3498",
+      "reason": "GitHub source manifest",
+      "bytes": 8674
+    },
+    {
+      "relative_path": "work/project6_start/adc_comparator_probe.py",
+      "sha256": "d66e31333aa75f2ec7c625c67aa143eff33e620aab8095fb15a302ca5e2b250c",
+      "reason": "GitHub source manifest",
+      "bytes": 30054
+    },
+    {
+      "relative_path": "work/project6_start/adc_comparator_r5.py",
+      "sha256": "bc27c27f162d14fb76daefa7618c5fc97b78fa0e958bac296bcf2796186261ef",
+      "reason": "GitHub source manifest",
+      "bytes": 23004
+    },
+    {
+      "relative_path": "work/project6_start/adc_doubletail_r5.py",
+      "sha256": "d91a00426dd5decac8ff5c74e286aa6522a5180ff2fce134f84955727a5df140",
+      "reason": "GitHub source manifest",
+      "bytes": 10909
+    },
+    {
+      "relative_path": "work/project6_start/adc_equalizer_r4.py",
+      "sha256": "7b828bb10b01f30271ef0ffe4e9bdd98beceef3703c6108f9621adb031e7a70d",
+      "reason": "GitHub source manifest",
+      "bytes": 9600
+    },
+    {
+      "relative_path": "work/project6_start/adc_frontend_load_r4.py",
+      "sha256": "a5a8257b4db92cb820f1b3ade47a593677a78b739530ba651e45d7b445a68d4f",
+      "reason": "GitHub source manifest",
+      "bytes": 16244
+    },
+    {
+      "relative_path": "work/project6_start/adc_frontend_load_r5.py",
+      "sha256": "82b07d83b016e433861f783a19f45b41847512fbbeb46a7e2451136497f5d932",
+      "reason": "GitHub source manifest",
+      "bytes": 9543
+    },
+    {
+      "relative_path": "work/project6_start/adc_isolation_r4.py",
+      "sha256": "d2baacf1b53e26174bedb9339b96cc9f34c529161fdcd28eef0ceb8605f85382",
+      "reason": "GitHub source manifest",
+      "bytes": 14972
+    },
+    {
+      "relative_path": "work/project6_start/adc_isolation_r5.py",
+      "sha256": "d6bb6db3425e573d8fd628d78a815d016575c72791e1b858d909cba784fa0821",
+      "reason": "GitHub source manifest",
+      "bytes": 16297
+    },
+    {
+      "relative_path": "work/project6_start/adc_reset_clamp_r5.py",
+      "sha256": "b46c6e371ef1ecdda042de3a5a106533815f43a80ab4840b7fd35fc9ba36c0b7",
+      "reason": "GitHub source manifest",
+      "bytes": 13676
+    },
+    {
+      "relative_path": "work/project6_start/adc_reset_sweep_r4.py",
+      "sha256": "0db2a358b8d4e6e0cc5585ce690c9974176f76498ac6d11d27cbb9c17def5adb",
+      "reason": "GitHub source manifest",
+      "bytes": 19429
+    },
+    {
+      "relative_path": "work/project6_start/adc_training_diagnostic_r5.py",
+      "sha256": "34dea2a9b01a0c79f5e654a8ac8b50a64388408805dffd82b811b83930a5b4be",
+      "reason": "GitHub source manifest",
+      "bytes": 14906
+    },
+    {
+      "relative_path": "work/project6_start/create_symbols.il",
+      "sha256": "41361ce78bf3878de278c21e8bce560fe5c403fb327a2061caac527ae9135f59",
+      "reason": "GitHub source manifest",
+      "bytes": 7751
+    },
+    {
+      "relative_path": "work/project6_start/create_symbols_r3.il",
+      "sha256": "bf3a92b6b515f473a4b84970980ce4449d2dda571aa52693fef101956e09086c",
+      "reason": "GitHub source manifest",
+      "bytes": 7665
+    },
+    {
+      "relative_path": "work/project6_start/diagnose_readin_20261020.py",
+      "sha256": "4e9251e8ba4c30cb0d2b298136188c6b59ecbd32fb222f18bead5a1d7b816ff6",
+      "reason": "GitHub source manifest",
+      "bytes": 17252
+    },
+    {
+      "relative_path": "work/project6_start/export_adc_r4.py",
+      "sha256": "c945853517cec5db83ed2b42a19d15a92091e729bf7ef8f03c96fec539ed6cb8",
+      "reason": "GitHub source manifest",
+      "bytes": 8690
+    },
+    {
+      "relative_path": "work/project6_start/export_adc_r5.py",
+      "sha256": "c9620a9cf3adc75b8087dac656a7f4cb6353116a5681fd213b46f93f3baae566",
+      "reason": "GitHub source manifest",
+      "bytes": 24006
+    },
+    {
+      "relative_path": "work/project6_start/export_optimization.py",
+      "sha256": "b66cf15c534d177d1b502ef10157ff15bb957705e4d1aef3e09fee26241b40b5",
+      "reason": "GitHub source manifest",
+      "bytes": 7371
+    },
+    {
+      "relative_path": "work/project6_start/ffe_phase_resume1_20261022.py",
+      "sha256": "7cedd4fd32a8c69915dacf144bdcf40217fbfa98847dacd08ba19bdcd6cead71",
+      "reason": "GitHub source manifest",
+      "bytes": 24098
+    },
+    {
+      "relative_path": "work/project6_start/ffe_phase_resume2_20261022.py",
+      "sha256": "1a01d14b611f5e3cad372bb428d4768acad181fd723a84fe55a90c70bbf97b2b",
+      "reason": "GitHub source manifest",
+      "bytes": 32325
+    },
+    {
+      "relative_path": "work/project6_start/ffe_phase_sweep_20261022.py",
+      "sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+      "reason": "GitHub source manifest",
+      "bytes": 29602
+    },
+    {
+      "relative_path": "work/project6_start/ffe_phase_viva_20261022.py",
+      "sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09",
+      "reason": "GitHub source manifest",
+      "bytes": 20884
+    },
+    {
+      "relative_path": "work/project6_start/finalize_milestone.py",
+      "sha256": "7aa7210a3824afce652be61ba7a427c856907b8b670605904ebb86c3860cfbb6",
+      "reason": "GitHub source manifest",
+      "bytes": 8856
+    },
+    {
+      "relative_path": "work/project6_start/native_baseline.py",
+      "sha256": "be4876909514593037fbd7638e90e8b79266f1e4c8b01e4b914fba80877bceec",
+      "reason": "GitHub source manifest",
+      "bytes": 6320
+    },
+    {
+      "relative_path": "work/project6_start/native_capacitor_r5.py",
+      "sha256": "ab10f9893e4a6d5c283a90aed3632bd6e80f9317041383e6f97c62702273e499",
+      "reason": "GitHub source manifest",
+      "bytes": 15305
+    },
+    {
+      "relative_path": "work/project6_start/native_geometry_r5.py",
+      "sha256": "76296ec7e958beed26e6058c2fc1009915c1366b2fb48a3ee4d010adb11b0697",
+      "reason": "GitHub source manifest",
+      "bytes": 7246
+    },
+    {
+      "relative_path": "work/project6_start/noise_band_check.py",
+      "sha256": "a0e546f0f48f0b87bc73cd12be007a4f6442d080caccbcd8821bd3fee370c37b",
+      "reason": "GitHub source manifest",
+      "bytes": 14915
+    },
+    {
+      "relative_path": "work/project6_start/oa_manifest.py",
+      "sha256": "427e40bb091bc07d398869862803f2f62c433893236da56bb3047934f156bd8f",
+      "reason": "GitHub source manifest",
+      "bytes": 12534
+    },
+    {
+      "relative_path": "work/project6_start/oa_revision.py",
+      "sha256": "35127d67d542caa96263f9fc8f9540608cf395738496b34ee0a9ac3f2cd95a2b",
+      "reason": "GitHub source manifest",
+      "bytes": 5837
+    },
+    {
+      "relative_path": "work/project6_start/optimization_op_probe.py",
+      "sha256": "231360c5c753039e73fc9d2d0b212cc753c88f020f3c2e6cced46ef67f63832f",
+      "reason": "GitHub source manifest",
+      "bytes": 3676
+    },
+    {
+      "relative_path": "work/project6_start/optimize_ac.py",
+      "sha256": "5796bcb2e066f90577763cb6296e8f11843d466a5613bea043e91e32f1132cf4",
+      "reason": "GitHub source manifest",
+      "bytes": 22287
+    },
+    {
+      "relative_path": "work/project6_start/optimize_ac_focus.py",
+      "sha256": "cfd93501e0216d8c89bc1ed82615b6c11bdd0a313e0336c4e6dd3c7aee0a49b7",
+      "reason": "GitHub source manifest",
+      "bytes": 6825
+    },
+    {
+      "relative_path": "work/project6_start/optimize_pam4.py",
+      "sha256": "760ad363ebe89d31c4d1f7c0cd64bcb09b543e84a7d63b40d4946fb1a6aa1108",
+      "reason": "GitHub source manifest",
+      "bytes": 39451
+    },
+    {
+      "relative_path": "work/project6_start/pam4_ffe_diagnostic.py",
+      "sha256": "d52ff387dfa874f41432a079949953fa06b3cdfa95bcaa6fc1df88e9f8aed0ef",
+      "reason": "GitHub source manifest",
+      "bytes": 22322
+    },
+    {
+      "relative_path": "work/project6_start/pam4_integration.py",
+      "sha256": "c5c0a3478666e62e2798bf57aa7b47b8b4dfce6c67b806f924c946e9b273c936",
+      "reason": "GitHub source manifest",
+      "bytes": 29350
+    },
+    {
+      "relative_path": "work/project6_start/pam4_metrics.py",
+      "sha256": "84e43e71e2add6c142cdee8ac74ec9297b04d88ebf984e88a6168ccf79a76371",
+      "reason": "GitHub source manifest",
+      "bytes": 12710
+    },
+    {
+      "relative_path": "work/project6_start/run_project6_resume_pipeline.py",
+      "sha256": "2fe6681d0fa104433758776f061a6a478489391cd965458a8daa92871c4e7468",
+      "reason": "GitHub source manifest",
+      "bytes": 7549
+    },
+    {
+      "relative_path": "work/project6_start/run_r5_noise_retry2_20261020.py",
+      "sha256": "a8e2db3fe63ab7777f6ff0300dfa8927248308f45936fe54a249ad9e7506c81e",
+      "reason": "GitHub source manifest",
+      "bytes": 26187
+    },
+    {
+      "relative_path": "work/project6_start/run_r5_noise_retry_20261017.py",
+      "sha256": "5af5a72130fd22af6786297c44115343beda6c9ba522749eafff17a41e2e9873",
+      "reason": "GitHub source manifest",
+      "bytes": 17211
+    },
+    {
+      "relative_path": "work/project6_start/run_r5_noise_retry_20261020.py",
+      "sha256": "333c848818715bc34fceb2b0ee526242b3aa60c96ac791f64635f5e2b5372849",
+      "reason": "GitHub source manifest",
+      "bytes": 26705
+    },
+    {
+      "relative_path": "work/project6_start/run_r5_reboot_resume.py",
+      "sha256": "0c02120d0a049f22b52f5fa08392cb1498f13718c6a6a410f35c263416b25b16",
+      "reason": "GitHub source manifest",
+      "bytes": 12672
+    },
+    {
+      "relative_path": "work/project6_start/run_r5_validation_queue.py",
+      "sha256": "af1f05981690fb565f11f0311527f95bea45b92a8fa1b68b62b6a267e6c0005a",
+      "reason": "GitHub source manifest",
+      "bytes": 2614
+    },
+    {
+      "relative_path": "work/project6_start/secondary_cap_training_r7_20261022.py",
+      "sha256": "a83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac",
+      "reason": "GitHub source manifest",
+      "bytes": 30374
+    },
+    {
+      "relative_path": "work/project6_start/secondary_cap_validation_r7_20261022.py",
+      "sha256": "01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0",
+      "reason": "GitHub source manifest",
+      "bytes": 35359
+    },
+    {
+      "relative_path": "work/project6_start/secondary_hold_mechanism_r8_20261029.py",
+      "sha256": "5c7fe7aa4abd319b420881621eaa105dd653fbcff6b0570f4dee4ff0451c6545",
+      "reason": "GitHub source manifest",
+      "bytes": 8419
+    },
+    {
+      "relative_path": "work/project6_start/verify_revision.py",
+      "sha256": "61dd6d51b1621f251823cc2473521e1bca00d7c6982194e2ae3256db0132e9ba",
+      "reason": "GitHub source manifest",
+      "bytes": 5722
+    },
+    {
+      "relative_path": "work/project6_start/watch_project6_admission.py",
+      "sha256": "a25a775c9a04cd527e3587d30695bb4a1e7936f8587bf44213a6887cd7848482",
+      "reason": "GitHub source manifest",
+      "bytes": 13920
+    },
+    {
+      "relative_path": "work/audit_project6_retention_20261022.py",
+      "sha256": "c44d8ee068bc5b92a55d41d7b9a368980caa418049ebdce54350159266902a3c",
+      "reason": "GitHub helper manifest",
+      "bytes": 3357
+    },
+    {
+      "relative_path": "work/audit_project6_storage_20261020.py",
+      "sha256": "09b9d7565a3c559d3a19ffe555a26d3f69740c645d780328697a5cd22781bb29",
+      "reason": "GitHub helper manifest",
+      "bytes": 3194
+    },
+    {
+      "relative_path": "work/collect_r5_pair_complete_20261020.py",
+      "sha256": "9fdefc7030e7dac7d29c042f819d025b5d9de617247255effda8e8547aefdd69",
+      "reason": "GitHub helper manifest",
+      "bytes": 4751
+    },
+    {
+      "relative_path": "work/control_ffe_phase_20261022.py",
+      "sha256": "5fbfd0264d220b9fbd592ae977c148fbd2c96e9ce4b9320cb69dfaaa6fb9117b",
+      "reason": "GitHub helper manifest",
+      "bytes": 8927
+    },
+    {
+      "relative_path": "work/control_ffe_phase_resume1_20261022.py",
+      "sha256": "f672e7b253f6ef62f53e3cb373d469ad9b7766425aff15a974d6667dee116da5",
+      "reason": "GitHub helper manifest",
+      "bytes": 7610
+    },
+    {
+      "relative_path": "work/control_ffe_phase_resume2_20261022.py",
+      "sha256": "371cdc9c16b60b1ddafcf8379f0b4a7dcaef1092fe61acef2ea276ac569f430e",
+      "reason": "GitHub helper manifest",
+      "bytes": 4906
+    },
+    {
+      "relative_path": "work/control_secondary_r7_20261022.py",
+      "sha256": "5e617a4ae54ef39f1aa4a0be11424df5b829c562c051666a2a82fa92c93e528e",
+      "reason": "GitHub helper manifest",
+      "bytes": 5022
+    },
+    {
+      "relative_path": "work/control_secondary_validation_r7_20261022.py",
+      "sha256": "42d671f9d0360d3aebbb560e0301572876af56c801a7f4e9a338d327ebdb0a3e",
+      "reason": "GitHub helper manifest",
+      "bytes": 8074
+    },
+    {
+      "relative_path": "work/fetch_r5_eye_visuals_20261020.py",
+      "sha256": "1ab9ae5ae27ce2227d26c4a5a0dfa731ae478720218f168321faeafc7589401f",
+      "reason": "GitHub helper manifest",
+      "bytes": 1610
+    },
+    {
+      "relative_path": "work/finalize_ffe_phase_failure_20261022.py",
+      "sha256": "e7211a8570f7e7e38a9e745aa05f4dfd74e20ff21b71aa57bb57d613a34f04eb",
+      "reason": "GitHub helper manifest",
+      "bytes": 5869
+    },
+    {
+      "relative_path": "work/finalize_r5_pair_local_20261020.py",
+      "sha256": "7720207aa676c74d7aa9c9799168792c79432277f2f627141172a62701a1f6ac",
+      "reason": "GitHub helper manifest",
+      "bytes": 10205
+    },
+    {
+      "relative_path": "work/finalize_secondary_r7_20261022.py",
+      "sha256": "7083f8915a4992fd4f6eb059303a2766015a58a5a583275a02518ec4c5cc17ab",
+      "reason": "GitHub helper manifest",
+      "bytes": 9926
+    },
+    {
+      "relative_path": "work/finalize_secondary_validation_r7_20261022.py",
+      "sha256": "31541cc958300d7534600f7d380d255824c3ff47719549a7e1e07e8964c27b9e",
+      "reason": "GitHub helper manifest",
+      "bytes": 11248
+    },
+    {
+      "relative_path": "work/project6_finish_round.py",
+      "sha256": "829f8ee6f6bac67bdedf7b8813b3d003d280bb525846258892def54657dd5e3d",
+      "reason": "GitHub helper manifest",
+      "bytes": 9902
+    },
+    {
+      "relative_path": "work/record_ffe_phase_20261022.py",
+      "sha256": "6df44b22fb3e0bf81c9dd6c690b72754ba0ea5e7f4b250935716daa0a7068c98",
+      "reason": "GitHub helper manifest",
+      "bytes": 4817
+    },
+    {
+      "relative_path": "work/record_secondary_r7_20261022.py",
+      "sha256": "b3c4cde14a7256f2f0c4c6a323baff5a0e8997ccd77177524753524bf1486d05",
+      "reason": "GitHub helper manifest",
+      "bytes": 3844
+    },
+    {
+      "relative_path": "work/record_secondary_validation_r7_20261022.py",
+      "sha256": "eaea732a4e23c814aae80d87e841cd6745ecfbba4d239fc2de63e88365aede30",
+      "reason": "GitHub helper manifest",
+      "bytes": 5673
+    },
+    {
+      "relative_path": "work/register_secondary_r7_delivery_20261022.py",
+      "sha256": "f9f97866336fd05316fa2a147e14b0312972f3a7c98d1d48e910693caaed92b4",
+      "reason": "GitHub helper manifest",
+      "bytes": 11549
+    },
+    {
+      "relative_path": "work/register_secondary_validation_r7_delivery_20261022.py",
+      "sha256": "42df71140cb663ed0d1aa98bfe14b0e38a47149175768c3ea490adef658cc756",
+      "reason": "GitHub helper manifest",
+      "bytes": 12132
+    },
+    {
+      "relative_path": "work/render_r5_existing_eye_20261020.py",
+      "sha256": "5607b8b2e1de46c67ca99368e4ee121fb4f181a210e295a515a62b5465912333",
+      "reason": "GitHub helper manifest",
+      "bytes": 7405
+    },
+    {
+      "relative_path": "work/review_secondary_training_r7_20261022.py",
+      "sha256": "6ea2f3117f051463e2ffcef98ad0790890708e41cc7839f2a51e7ea82711e128",
+      "reason": "GitHub helper manifest",
+      "bytes": 2072
+    },
+    {
+      "relative_path": "work/sync_r5_pair_complete_20261020.py",
+      "sha256": "27cdf28d3b552aedd337e4d08b556ba443f25044d6e8fb77e36f7c70fd181925",
+      "reason": "GitHub helper manifest",
+      "bytes": 7206
+    },
+    {
+      "relative_path": "outputs/Project6_r5_paired_eyes.png",
+      "sha256": "b387271a37ba6eac17dbf3e7188887108419edf5fad9602a51befb63e938c0fe",
+      "reason": "GitHub derived manifest",
+      "bytes": 1487283
+    },
+    {
+      "relative_path": "outputs/Project6_r5_sample_distributions.png",
+      "sha256": "56948af0ba6c8eac4948ae99c1e3a4d48b2de07e878e891b55a24299e243e219",
+      "reason": "GitHub derived manifest",
+      "bytes": 184552
+    },
+    {
+      "relative_path": "outputs/Project6_ADC_r5_進度與判讀.txt",
+      "sha256": "d87c5952341aa68cfc34cb04630378a68a1e75c32d37fb400f8abdd57bbee115",
+      "reason": "GitHub derived manifest",
+      "bytes": 3893
+    },
+    {
+      "relative_path": "outputs/Project6_FFE相位眼圖_實戰第一課.txt",
+      "sha256": "076a15f95bc23967ac1205eef0702c7a5502de551f20234f6cafb07fbb79ab57",
+      "reason": "GitHub derived manifest",
+      "bytes": 5859
+    },
+    {
+      "relative_path": "outputs/Project6_CTLE_VGA_調整結果.txt",
+      "sha256": "5485535a189e23514dbb0fcfe1fb073ae76b2cfef496b9e180c0886744b51b8c",
+      "reason": "GitHub derived manifest",
+      "bytes": 8053
+    },
+    {
+      "relative_path": "outputs/Project6_ADC_r4_實測結論.txt",
+      "sha256": "258749390d295afd60f851551a5e131986af9b8a28fe09797b688b6098fd7559",
+      "reason": "GitHub derived manifest",
+      "bytes": 8213
+    },
+    {
+      "relative_path": "outputs/Project6_正式專案進度.txt",
+      "sha256": "de52abc09476a54272f10fca55835b9a1253793aba39b75146b29a40ca252d9b",
+      "reason": "GitHub derived manifest",
+      "bytes": 5561
+    },
+    {
+      "relative_path": "outputs/Project6_可行性結論.txt",
+      "sha256": "af8bfdaf1c999d1c4d8fe9f4c9bf1654638942902d734003aba978f8e7372d9b",
+      "reason": "GitHub derived manifest",
+      "bytes": 6959
+    },
+    {
+      "relative_path": "work/project6/build_report.py",
+      "sha256": "37f49115d80005d48e721375a3f074eaacadaeaf00fa07e4601316798c33c248",
+      "reason": "GitHub normalized source",
+      "bytes": 11709
+    },
+    {
+      "relative_path": "work/project6/p6_collect.py",
+      "sha256": "42ea5079ad7f02f364b4d2ae23252d4a0f568c13d416d3f82393ea0c476b6848",
+      "reason": "GitHub normalized source",
+      "bytes": 8950
+    },
+    {
+      "relative_path": "work/project6/p6_dynamic.py",
+      "sha256": "792489f2d9124addddbf58cda0242098634e336448f4c06a6ec3423d963ed7a4",
+      "reason": "GitHub normalized source",
+      "bytes": 9160
+    },
+    {
+      "relative_path": "work/project6/p6_equalized.py",
+      "sha256": "6e7a5e0a2c91d472fe1d7a4cd2bac11f63b1ccc9083a5cedf3260df90390e0af",
+      "reason": "GitHub normalized source",
+      "bytes": 3124
+    },
+    {
+      "relative_path": "work/project6/p6_extra.py",
+      "sha256": "06527adbc2f160630386e875cf9df4295f837a1accb11d4c240427c782a91723",
+      "reason": "GitHub normalized source",
+      "bytes": 3241
+    },
+    {
+      "relative_path": "work/project6/p6_peaking_range.py",
+      "sha256": "db2743232d3cbadebc74523302eb665df18af71d5555d1a044f10d409a0f38d1",
+      "reason": "GitHub normalized source",
+      "bytes": 3457
+    },
+    {
+      "relative_path": "work/project6/p6_tune.py",
+      "sha256": "f7d87102c5cbddd45266326c9ab411562f926ed8a9e51ea85ca02c434b0e6e2d",
+      "reason": "GitHub normalized source",
+      "bytes": 2283
+    },
+    {
+      "relative_path": "outputs/Project6_ADC_r5_block_summary.json",
+      "sha256": "5832a5489e05ba0110c96ceaaed0b7b8f761b35db4553fd22a641180299312ff",
+      "reason": "matching retained VMware copy; not uploaded",
+      "bytes": 62049
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_acquisition_r5.cpython-314.pyc",
+      "sha256": "3db0d1d1436fff7db85ddb45313fc34093f474b1005185d827631e033f5fe984",
+      "reason": "regenerable Python cache",
+      "bytes": 15924
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_backend_pam4_r5.cpython-314.pyc",
+      "sha256": "1dc6cafd6294c6565485e3dc0b8dcee53fa6b7eef74999fc25c0b10c7514bbee",
+      "reason": "regenerable Python cache",
+      "bytes": 34903
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_backend_screen_r6.cpython-314.pyc",
+      "sha256": "f22f3d90532517a929ebb81b238090549714c1153ebd3fc71e79d71842f3595c",
+      "reason": "regenerable Python cache",
+      "bytes": 26086
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_backend_screen_r6b.cpython-314.pyc",
+      "sha256": "041adc72e15a174b8b0e8a3c375c00f08a3939db8098f85dba1c854dcd8d65d2",
+      "reason": "regenerable Python cache",
+      "bytes": 27723
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_cdac_acquisition_r6.cpython-314.pyc",
+      "sha256": "a595f3ea96e2f1516be213846e35d87a32c5d000f992452ae1b62fd2c0994dd4",
+      "reason": "regenerable Python cache",
+      "bytes": 26912
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_cdac_native_r5.cpython-314.pyc",
+      "sha256": "e6ef86d0961f8e2f950ea3f3ad49485c2a243a87b92bf8c05f6cbb2b993acafe",
+      "reason": "regenerable Python cache",
+      "bytes": 30170
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_comparator_burst_r5.cpython-314.pyc",
+      "sha256": "7836fcb503049bfdc632b443ad4c9ac16d7eb2b5e720ea32436ad55ab2e68cdb",
+      "reason": "regenerable Python cache",
+      "bytes": 33080
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_comparator_diagnostic.cpython-314.pyc",
+      "sha256": "0ea21c4968205e153d3507dfc34f78fe34c102bb5b5ec8687c8185c2ca615cdb",
+      "reason": "regenerable Python cache",
+      "bytes": 14527
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_comparator_probe.cpython-314.pyc",
+      "sha256": "d12ae3dd20a01ce56620a301518073b85195d8a21257c88d11ca0ba6c79115ca",
+      "reason": "regenerable Python cache",
+      "bytes": 51891
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_comparator_r5.cpython-314.pyc",
+      "sha256": "d301a12211529d20baffafaeb8b0d619a0612a15e41290641affbc758fbcee9c",
+      "reason": "regenerable Python cache",
+      "bytes": 36404
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_doubletail_r5.cpython-314.pyc",
+      "sha256": "273c260d30240f023eadafd1693e1c9e1df64e14e110282b80e572bfd7a7f5e9",
+      "reason": "regenerable Python cache",
+      "bytes": 17612
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_equalizer_r4.cpython-314.pyc",
+      "sha256": "b7cb4c0da12904a993022c420be5bf5d09eb1151f4ff064239dcfad89ed5bcd2",
+      "reason": "regenerable Python cache",
+      "bytes": 15271
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_frontend_load_r4.cpython-314.pyc",
+      "sha256": "9773faef76f0de57de7c6d178d2c025188bc2b8780b459f654262f563e1914e3",
+      "reason": "regenerable Python cache",
+      "bytes": 26143
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_frontend_load_r5.cpython-314.pyc",
+      "sha256": "828b25b676eded91ff9db3b2796387e0977f17b95cdd0ca79221e4f9c5727d2c",
+      "reason": "regenerable Python cache",
+      "bytes": 15456
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_isolation_r4.cpython-314.pyc",
+      "sha256": "73c686b2ceca99cf761be348831a5a5833418ea5e40759192b24481b169b9a9e",
+      "reason": "regenerable Python cache",
+      "bytes": 29509
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_isolation_r5.cpython-314.pyc",
+      "sha256": "c93388bbed756fd1ef16d84ae43297ab08c8fddd34b7db5e14315340521c9894",
+      "reason": "regenerable Python cache",
+      "bytes": 25116
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_reset_clamp_r5.cpython-314.pyc",
+      "sha256": "a8be56d75a0485aa2dfe24497c687d85ba40a84c6e04b71f12c0459d76a80ebe",
+      "reason": "regenerable Python cache",
+      "bytes": 25559
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_reset_sweep_r4.cpython-314.pyc",
+      "sha256": "ecc8906fe38ca438a38ed888bb1843dbfb0e499bbee5b95183e6b3ba0fc7f63e",
+      "reason": "regenerable Python cache",
+      "bytes": 32973
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/adc_training_diagnostic_r5.cpython-314.pyc",
+      "sha256": "3dfd7172b4fc19a1d68ccd7a1e2853e8f24967904db8d39aef71dbdc75c82751",
+      "reason": "regenerable Python cache",
+      "bytes": 27549
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/export_adc_r5.cpython-314.pyc",
+      "sha256": "c793ff247b53ac3510b52cab2aa928189bbc4c9999a77545a9c1da645a00a594",
+      "reason": "regenerable Python cache",
+      "bytes": 36006
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/export_optimization.cpython-314.pyc",
+      "sha256": "f13b51bc195fc30112f6ea3123c7505209a232d309433fae3fef5ac517d76008",
+      "reason": "regenerable Python cache",
+      "bytes": 6364
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/finalize_milestone.cpython-314.pyc",
+      "sha256": "6d7cda0803b66d0a7ccacb508fc03c03e76698bf123b2dcba2a88e25c44edfc7",
+      "reason": "regenerable Python cache",
+      "bytes": 11852
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/native_capacitor_r5.cpython-314.pyc",
+      "sha256": "e370ae1741b2788d214b5c15ef8d8d887bdd0d2748e739fe7fc84e309c889692",
+      "reason": "regenerable Python cache",
+      "bytes": 24172
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/native_geometry_r5.cpython-314.pyc",
+      "sha256": "431fcb4e4eab96722716f533ac977b3f65a2f3d5a1a8a01b80dc75121f99fc21",
+      "reason": "regenerable Python cache",
+      "bytes": 14229
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/oa_manifest.cpython-314.pyc",
+      "sha256": "f0fddf05e7e4e4f43c8c5d9af2af3d7f2c6bc3f2ddabd644348ac6a3f2d55327",
+      "reason": "regenerable Python cache",
+      "bytes": 16165
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/oa_revision.cpython-314.pyc",
+      "sha256": "a8e2a3deb4615563fc9fa367063ab9bf363c42791f0aa3f7c51cc54c600cce1e",
+      "reason": "regenerable Python cache",
+      "bytes": 9464
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/optimize_pam4.cpython-314.pyc",
+      "sha256": "b426c987efd486fec7d8ddc99aecec9485e3d8731ba1f0ba7f4ba1fbe77104a1",
+      "reason": "regenerable Python cache",
+      "bytes": 51542
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/pam4_ffe_diagnostic.cpython-314.pyc",
+      "sha256": "f41c5d839decb5c8fc78788cf3320d11065ef50ae1b91ce75738f0d5f7707d3a",
+      "reason": "regenerable Python cache",
+      "bytes": 31902
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/pam4_integration.cpython-314.pyc",
+      "sha256": "16ef096be06d7a6b25acbf05d5aea5ae7c026050412fc3da548dcc1195a0bd59",
+      "reason": "regenerable Python cache",
+      "bytes": 38877
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/pam4_metrics.cpython-314.pyc",
+      "sha256": "5e8a4273c8dc7c7d919ad0a6452b5af1dfe3b14bfc1c746c89445bc5598a89b7",
+      "reason": "regenerable Python cache",
+      "bytes": 17780
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/run_project6_resume_pipeline.cpython-314.pyc",
+      "sha256": "f6bfb5a5b36dacbb43ecfe34a32c08c3baec248632feff717eaef402e20e72e8",
+      "reason": "regenerable Python cache",
+      "bytes": 14697
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/run_r5_reboot_resume.cpython-314.pyc",
+      "sha256": "88510b357d84ada1f4743f862dc8a86321de5fc88a07f04399725f40b3e07746",
+      "reason": "regenerable Python cache",
+      "bytes": 21427
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/verify_revision.cpython-314.pyc",
+      "sha256": "5c173f848fcee5afd7bac0561d1126b28519965b7ed6e134a830a582f8799186",
+      "reason": "regenerable Python cache",
+      "bytes": 9031
+    },
+    {
+      "relative_path": "work/project6_start/__pycache__/watch_project6_admission.cpython-314.pyc",
+      "sha256": "29206e771f30578268b18ece3f2381a63d1462df7e4c65d9df03bdbbf994602d",
+      "reason": "regenerable Python cache",
+      "bytes": 22155
+    }
+  ]
+}

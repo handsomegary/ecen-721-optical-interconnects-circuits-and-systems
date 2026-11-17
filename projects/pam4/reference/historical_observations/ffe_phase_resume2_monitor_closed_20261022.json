@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "automation_id": "project-6",
+  "automation_status": "DELETED",
+  "cases": 18,
+  "native_points": 17856,
+  "native_check_passed": true,
+  "fixed_zero_UI_primary_noisy_errors": 0,
+  "fixed_zero_UI_secondary_noisy_errors": 55,
+  "symbols": 496,
+  "summary_path": "work/ffe_phase_resume2_delivery_20261022.json"
+}

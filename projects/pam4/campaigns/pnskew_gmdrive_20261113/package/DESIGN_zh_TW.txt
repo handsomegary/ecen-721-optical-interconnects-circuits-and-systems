@@ -1,0 +1,79 @@
+ECEN 721 Project #6｜PAM4 PN skew 實體 launch 與端點細碼
+
+1. GMFINE 量測結論
+
+TT 的短路徑 1/1 在 56 GHz 相對同端接的 r3 bypass 為 −8.75 dB。
+同一支路的 source→MOS gate −0.006 dB，gate→follower source −11.247 dB／−32.53°，
+source→隔直輸出 −0.003 dB，原 10 Ω 串阻 −3.088 dB，單節 LC −0.019 dB。
+局部增益從激勵到第一級 gate 為 −14.36 dB。r3 bypass 本身也有輸入衰減，因此局部
+增益與相對 AFE 增益的分母不同。TT follower 約 21.06 mS、2.03 mA／腿，
+負載為 120 Ω 並聯約 33.4−j1.3 Ω。僅實部負載的小訊號估算已約 −9.25 dB，
+56 GHz 複數殘差約等效 114 fF，包含未分離的主動與寄生項。
+SS follower gate→source −11.88 dB。TT 選中 6/16 路徑的鉗位控制 ablation 差異
+低於 0.001 dB，兩個 deck 都保留鉗位器件本體。
+
+SS／FF 原始最低 −0.731／−0.947 V 為關閉的 PMOS 反相器上拉 GMSAIP*／GMSBIP*。
+它們的 VGS=0、region=0，Ids 僅數十 nA。原摘要將 PMOS 的有號 VDS 直接減有號
+VDSAT。應先分類用途及控制狀態，對導通類比 PMOS 使用 VSD−|VDSAT|。
+92 案已保存的導通類比元件靜態裕度均為正。SS 第一級尾管最低 +14.59 mV，
+原第二級 XT2p0 最低 +2.29 mV。GMFINE_OP_AUDIT.json 有逐顆與 SHA 稽核。
+
+2. 新實體 launch
+
+每個 bank 每腿一個電阻負載 NMOS 共源級，原生 28nm LVT 3 µm／30 nm
+單元並聯，source/bulk 接地。保留第一級 MOS、尾管與原生尾偏壓控制、遠端 25 Ω
+端接及所有既有取樣負載。用 10 pF 理想電容隔直，保留 CTLE 輸入 0.70 V。
+共源級的 33 Ω 或 27 Ω drain 上拉同時提供有限輸出阻抗，串聯 RF 電阻為 1 mΩ。
+使閒置支路 gate 偏壓為 0.10 V，仍量測實體 drain/load 及 Cgd 的 feedthrough。
+共源的固定反相在第二級輸入交叉一次補回，P/N 的 LC 路徑及 skew 座標維持原定義。
+要保存 Hdd 複數和 2×2 相位檢查，交叉也會改變共模轉換的相位。
+
+預先列好的 SS 0.81 V 短路徑候選為 12×3 µm／33 Ω／0.53 V（cs12）、
+同版 0.48 V、同版 27 Ω、16×3 µm、同版加 20 pH drain shunt peaking。
+0.48／0.53 V 是試值，實際靜態電流由私有模型量測。初估若有效 gm 約 40 mS，
+33 Ω∥25 Ω 的短路徑可能滿足額外損失小於 2 dB。每腿 3.5–4.5 mA 時，
+一組差動 driver 在 0.81 V 約 5.7–7.3 mW，兩組同開約 11.3–14.6 mW，
+加在 AFE 及偏壓的原功耗上。另跑 cs12 的 ±100 mV 差動 gate DC offset 與 25 Ω
+來源阻抗敏感度。這個 DC offset 只檢查 swing 端點下的 OP 和小訊號響應。
+偏壓源、隔直電容、LC、20 pH peaking 及已知控制碼屬於原理圖模型。
+參考 Shekhar 等人的 shunt peaking 分析 https://doi.org/10.1109/JSSC.2006.883336
+
+3. 端點細調
+
+原 7–56 GHz 加權第一／最後步 0.5606／0.5607 ps，直接看 56 GHz 約 0.512 ps。
+第一步分給 B 的 DC 電流約 13.5%，卻走完有效延遲的約 26.9%，直接線性分配不適用。
+保持已驗證的 8×3 µm 尾管單元與 0.58 V bias，先把原 6/16 到 8/14 的兩節
+間距分三段，錨點以原節為單位是 6/16、6⅔/15⅓、7⅓/14⅔、8/14。
+兩腿總節數固定 22。每節 13 pH、20.8 fF、0.305 Ω，分數節按比例縮放，理想
+特性阻抗不變。把舊步階按錨點間距縮放，預估約 0.187 ps，實測端點與接縫才決定。
+每個子段的原理圖是獨立兩組路徑 fixture。跨子段的共用硬體選路與中段到 0 UI
+的全域碼表仍需設計，獨立 fixture 不足以宣稱實體全域碼表已完成。
+
+4. AC 判讀與工作順序
+
+計畫只授權到 review。先核對短路徑，再依結果選要提交的索引。
+首批是 SS 索引 0–17，包含 matched bypass、同路徑理想 launch、五個實體候選、
+cs12 和 ideal 的 dormant 欄。18–21 查來源阻抗，22–25 查 ±100 mV 偏移。
+cs12 是後續 deck 的固定候選。若勝出者為別版，先改 plan、重產 SHA 與重新審查。
+
+設計門檻小於 2 dB 是 56 GHz 的 Hdd 對同 LC、同尾偏壓、同來源條件 ideal launch
+之比。另外報相對同端接原 r3 bypass 的絕對結果、同路徑總功耗差、輸入 Y、雜訊、
+每顆導通類比 MOS 的靜態裕度及差動 swing 端點。兩個 ±4.464 ps 的已知 skew
+只用在離線評分，不能用來決定實體碼。先比相對原 r3 的零 skew、未補償 −3.01 dB
+與同路徑 ideal，再看 20 dB peaking 課程指標所需的低頻基準和完整響應。
+為比較兩版漏訊，報與 GMFINE 相同的 OFF-only / (full − OFF-only) 複數比，
+同分母的 GMFINE TT 6/16 參考為 −35.70 dBc（鉗位）／−33.48 dBc（無鉗位）。
+GMFINE 的 −49.22 dB 是對原 r3 bypass 的增益差。零 skew / 兩端增益、容許隔離劣化、功耗、雜訊與最小
+動態裕度的門檻須由使用者核定。全程保留測量值，未量測項目以空值或缺案呈現。
+
+端點先量原方向與鏡射方向、TT/SS/FF 的第一與最後相鄰步。主指標使用既有
+7–56 GHz 以通道、PAM4 頻譜與固定取樣基準加權的 phase-fit effective delay，
+同報 14–56 GHz、56 GHz、dispersion 與跨段接縫差。0.25 ps 是設計目標，
+0.30 ps 是本輪 AC 檢查值。兩者皆為工程值。完整 TT 碼表只給 cs12 名義方向。
+應同時看到覆蓋兩端 ±4.464 ps、嚴格單調及接縫可去重；未掃碼不算通過。
+完整細碼表中的實體曲線用於碼距與接縫，只有列出同碼 ideal 參考的列才計算 driver delta。
+
+AC 過關後才另做靜態前景校正與時域。先用已知訓練序列做實際 P/N 或共模
+誤差估測，選定並凍結碼，再以未見過的 payload 和配對 20 noise seed 評估。
+沿用 r1 的 primary/secondary 分欄，先對照零 skew 的 secondary 噪聲基線。
+本包不含 transient deck 或排程。無法由此判定 FFE 後 SER、動態 settling 或 BER。

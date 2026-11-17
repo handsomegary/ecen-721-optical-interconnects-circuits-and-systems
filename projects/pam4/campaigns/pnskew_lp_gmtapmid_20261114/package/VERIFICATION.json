@@ -1,0 +1,15 @@
+{
+  "planned_ac_columns": 408,
+  "rendered_netlists": 408,
+  "audit_preview_decks": 36,
+  "python": "3.14.4",
+  "offline_tests_passed": 159,
+  "new_tests_passed": 10,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denies hardlink creation in inherited recovery tests (WinError 5).",
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "vb1_physical_candidate": "Passive divider and bypass capacitor, fed by the original stiff 0.580 V bench Vb2 source.",
+  "stage_plan_sha256": "6874c311ab31b8f3e5abbdc66dc7574f0839d5de2f6f1f96f3d69c21af950fc5"
+}

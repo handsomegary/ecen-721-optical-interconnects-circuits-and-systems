@@ -1,0 +1,1276 @@
+{
+  "boundary": "Standalone r3 AFE with 4 track and 4 hold primary TG loads; absolute clocked RX and layout are separate",
+  "cases": [
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "d063cc44bdf1f75784d118bcb10f3d3c1e357a8d46f73b972722bc9d41701ae6",
+      "case_id": "r3_pvt_ac_tt_tm40_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "d063cc44bdf1f75784d118bcb10f3d3c1e357a8d46f73b972722bc9d41701ae6"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "6330daf62742304a8cf8b2349b2f24225aad390f2f97feb96e7274b8341fd0f9",
+      "case_id": "r3_pvt_ac_tt_tm40_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "6330daf62742304a8cf8b2349b2f24225aad390f2f97feb96e7274b8341fd0f9"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        3
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "3705de945222598673eb2400b10fcc2a05461b50fc3d56efa538b2070ac3ab68",
+      "case_id": "r3_pvt_ac_tt_tm40_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "3705de945222598673eb2400b10fcc2a05461b50fc3d56efa538b2070ac3ab68"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "2671cad05effc24a6c4bb3dbf4cdea09fc298cdb2f22f1b8fb5fe85753da24bb",
+      "case_id": "r3_pvt_ac_tt_t25_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "2671cad05effc24a6c4bb3dbf4cdea09fc298cdb2f22f1b8fb5fe85753da24bb"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "case_id": "r3_pvt_ac_tt_t25_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": 21.83,
+      "inputs_sha256": {
+        "bench.scs": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "7ade12c40312462e69c091f1604166e568f6d56f0120bfde7b5fa5b9a604160a",
+      "case_id": "r3_pvt_ac_tt_t25_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "7ade12c40312462e69c091f1604166e568f6d56f0120bfde7b5fa5b9a604160a"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "74711f51cfa405ad0b12a23f210b5c7f8b076c338d468fdeb71c91549741eddf",
+      "case_id": "r3_pvt_ac_tt_t85_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "74711f51cfa405ad0b12a23f210b5c7f8b076c338d468fdeb71c91549741eddf"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "89580ace502673fd69dab1019030dccff7f5e7806f574f99132e442edebc4755",
+      "case_id": "r3_pvt_ac_tt_t85_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "89580ace502673fd69dab1019030dccff7f5e7806f574f99132e442edebc4755"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        3
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "60c5427eface6c16c014fb821759fa9edaf45f31248e3694d1573246d2bdc5df",
+      "case_id": "r3_pvt_ac_tt_t85_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "60c5427eface6c16c014fb821759fa9edaf45f31248e3694d1573246d2bdc5df"
+      },
+      "model_section": "tt",
+      "modified_deck_lines_one_based": [
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "tt",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "bfebbfd65fe0f9b7ea71b13dad5fdd623978c50f5bd5f9ea887e420ac8cde976",
+      "case_id": "r3_pvt_ac_ss_tm40_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "bfebbfd65fe0f9b7ea71b13dad5fdd623978c50f5bd5f9ea887e420ac8cde976",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "4ca6ab91faa36174b24fc8a0a8523b4229086dadf0bab8416f841e240a3e3aad",
+      "case_id": "r3_pvt_ac_ss_tm40_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "4ca6ab91faa36174b24fc8a0a8523b4229086dadf0bab8416f841e240a3e3aad",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        3
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "cc68e53ad4ff8090f8287d3007c621461816547c89378b07692c73811ff6af26",
+      "case_id": "r3_pvt_ac_ss_tm40_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "cc68e53ad4ff8090f8287d3007c621461816547c89378b07692c73811ff6af26",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "884b0a801fb3dda8abc03b6b2e7cbab170037258322d770187a6a700d7d15828",
+      "case_id": "r3_pvt_ac_ss_t25_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "884b0a801fb3dda8abc03b6b2e7cbab170037258322d770187a6a700d7d15828",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "18a0b13bc043d0fdc4a66d6098a71cc434d4ca25979d83a54aa2354575560c18",
+      "case_id": "r3_pvt_ac_ss_t25_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "18a0b13bc043d0fdc4a66d6098a71cc434d4ca25979d83a54aa2354575560c18",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "60624a9412873cad0385bc9a2ca7c2edc812149d31f8c7a4a88749be963bbca3",
+      "case_id": "r3_pvt_ac_ss_t25_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "60624a9412873cad0385bc9a2ca7c2edc812149d31f8c7a4a88749be963bbca3",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "d787fe363343d15a49176d36b68dc4081a34ff38329e8bc3c458aaa636c6227a",
+      "case_id": "r3_pvt_ac_ss_t85_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": 16.64,
+      "inputs_sha256": {
+        "bench.scs": "d787fe363343d15a49176d36b68dc4081a34ff38329e8bc3c458aaa636c6227a",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "4cfb3f97e8a3aeade5ae29555d23656ee8b63d0354c795192ba609d422aaab96",
+      "case_id": "r3_pvt_ac_ss_t85_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "4cfb3f97e8a3aeade5ae29555d23656ee8b63d0354c795192ba609d422aaab96",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        3
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "e82eedf5e2d6dab88c308f6a8c2fa0386726e8843ca26a800bdb865c8b22c6cc",
+      "case_id": "r3_pvt_ac_ss_t85_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "e82eedf5e2d6dab88c308f6a8c2fa0386726e8843ca26a800bdb865c8b22c6cc",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ss",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ss",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "4e0e17bd10398a76bee81c324842b043f082afb298ec2816f9de0b749b0831ba",
+      "case_id": "r3_pvt_ac_ff_tm40_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "4e0e17bd10398a76bee81c324842b043f082afb298ec2816f9de0b749b0831ba",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "93d3ab9ddf9147a7e965f9293646c86586c28b002a704210b759de946918d92d",
+      "case_id": "r3_pvt_ac_ff_tm40_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "93d3ab9ddf9147a7e965f9293646c86586c28b002a704210b759de946918d92d",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        3
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "8e1951bfec063ce65aa59dd1b00897feb4269e5dca097101a572af05f41dae17",
+      "case_id": "r3_pvt_ac_ff_tm40_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": 24.78,
+      "inputs_sha256": {
+        "bench.scs": "8e1951bfec063ce65aa59dd1b00897feb4269e5dca097101a572af05f41dae17",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": -40,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "d031858ed088b270097a33bc41ef6f8b03c8d886db3e4c2c139aacf1d7210b91",
+      "case_id": "r3_pvt_ac_ff_t25_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "d031858ed088b270097a33bc41ef6f8b03c8d886db3e4c2c139aacf1d7210b91",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "67ea02df3d5622c638409ca26e374d83788b7011588caa181d0cbd62f21bfb8f",
+      "case_id": "r3_pvt_ac_ff_t25_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "67ea02df3d5622c638409ca26e374d83788b7011588caa181d0cbd62f21bfb8f",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "0a125e5f2a93519ba0c1af28636a1b115e06a896596a333f5b53813975583fd7",
+      "case_id": "r3_pvt_ac_ff_t25_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "0a125e5f2a93519ba0c1af28636a1b115e06a896596a333f5b53813975583fd7",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 25,
+      "vdd_V": 0.99
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "d7e85286268ab6ad5781dd9fe34561fb63998d96f7886d915da37bd4ace08c24",
+      "case_id": "r3_pvt_ac_ff_t85_v081",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "d7e85286268ab6ad5781dd9fe34561fb63998d96f7886d915da37bd4ace08c24",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.81
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "d022f261ff13150a868a906009b6f51c8387d153f447103ae353a785d108c989",
+      "case_id": "r3_pvt_ac_ff_t85_v090",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "d022f261ff13150a868a906009b6f51c8387d153f447103ae353a785d108c989",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        3
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.9
+    },
+    {
+      "analysis_kind": "pvt_ac",
+      "analysis_statements": [
+        "dcOp dc",
+        "dcOpInfo info what=oppoint where=rawfile",
+        "acResponse ac start=1K stop=150G dec=50",
+        "noiseResponse (X_h0p X_h0m) noise start=1M stop=56G dec=40 iprobe=XVin"
+      ],
+      "bench_sha256": "dc4d4ec1775a77ab63adf31521aa3d241fd4e93a0877248278f9ab441de0c321",
+      "case_id": "r3_pvt_ac_ff_t85_v099",
+      "estimate": {
+        "classic_cpus": 1,
+        "estimated_maximum_peak_RSS_MiB": 1024,
+        "requested_memory_MiB": 4096,
+        "requested_wall_minutes": 30,
+        "solver_timeout_minutes": 20,
+        "status": "PLANNING_ESTIMATE_UNMEASURED_R3",
+        "typical_wall_s_range": [
+          10,
+          120
+        ]
+      },
+      "execution_state": "PREPARED_PORTABLE_REQUIRES_PRIVATE_KIT_PREFLIGHT",
+      "historical_r2_56GHz_vs_1kHz_dB": null,
+      "inputs_sha256": {
+        "bench.scs": "dc4d4ec1775a77ab63adf31521aa3d241fd4e93a0877248278f9ab441de0c321",
+        "la5_foundry_corners.scs": "d2f7ce6fde421a0be9c25663e32a8e00be6a79c2caef45452eb038eccce5b297"
+      },
+      "model_section": "ff",
+      "modified_deck_lines_one_based": [
+        2,
+        3,
+        5
+      ],
+      "nominal_parent_relative": "../nominal_parent.scs.txt",
+      "nominal_parent_sha256": "a5608d0445047bde7211f365d0b56c38a6d42dd73b29d639ec85180c94046c28",
+      "process": "ff",
+      "raw_files": [
+        "acResponse.ac",
+        "dcOp.dc",
+        "dcOpInfo.info",
+        "noiseResponse.noise"
+      ],
+      "schema": "PAM4_FOCUS55_PVT_AC_CASE_V1",
+      "source_deck_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+      "temperature_C": 85,
+      "vdd_V": 0.99
+    }
+  ],
+  "historical_r2_only": {
+    "ff_tm40_v099": 24.78,
+    "ss_t85_v081": 16.64,
+    "tt_t25_v090": 21.83
+  },
+  "no_corner_results_measured": true,
+  "runtime_requirements": "Use exact private VM shrink model tree; verify with model_preflight.py",
+  "schema": "PAM4_FOCUS55_PVT_AC_MATRIX_V1",
+  "unsupported_processes": [
+    "SF",
+    "FS"
+  ]
+}

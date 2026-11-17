@@ -1,0 +1,93 @@
+{
+  "archive": {
+    "bytes": 26483214,
+    "file": "ECEN 720/work/remaining_cleanup_source_graph_20261102.json",
+    "sha256": "7b39c63c878eaab10144f83981f97a0121c9cbbe3bfd9a8d14eb5992488b0dda"
+  },
+  "files": {
+    "frozen.json": {
+      "bytes": 93524,
+      "sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb"
+    },
+    "noise173.scs": {
+      "bytes": 694250,
+      "sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2"
+    },
+    "quiet.scs": {
+      "bytes": 694206,
+      "sha256": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3"
+    },
+    "source_dir/adc_backend_pam4_r5.py": {
+      "bytes": 22363,
+      "sha256": "25f7168a47ea1a9b62b4548675534ac9c85c04d55d0a24414a9279f5c86e34f4"
+    },
+    "source_dir/adc_comparator_probe.py": {
+      "bytes": 30054,
+      "sha256": "d66e31333aa75f2ec7c625c67aa143eff33e620aab8095fb15a302ca5e2b250c"
+    },
+    "source_dir/adc_comparator_r5.py": {
+      "bytes": 23004,
+      "sha256": "bc27c27f162d14fb76daefa7618c5fc97b78fa0e958bac296bcf2796186261ef"
+    },
+    "source_dir/adc_frontend_load_r5.py": {
+      "bytes": 9543,
+      "sha256": "82b07d83b016e433861f783a19f45b41847512fbbeb46a7e2451136497f5d932"
+    },
+    "source_dir/adc_isolation_r5.py": {
+      "bytes": 16297,
+      "sha256": "d6bb6db3425e573d8fd628d78a815d016575c72791e1b858d909cba784fa0821"
+    },
+    "source_dir/native_geometry_r5.py": {
+      "bytes": 7246,
+      "sha256": "76296ec7e958beed26e6058c2fc1009915c1366b2fb48a3ee4d010adb11b0697"
+    },
+    "source_dir/optimize_pam4.py": {
+      "bytes": 39451,
+      "sha256": "760ad363ebe89d31c4d1f7c0cd64bcb09b543e84a7d63b40d4946fb1a6aa1108"
+    },
+    "source_dir/pam4_ffe_diagnostic.py": {
+      "bytes": 22322,
+      "sha256": "d52ff387dfa874f41432a079949953fa06b3cdfa95bcaa6fc1df88e9f8aed0ef"
+    },
+    "source_dir/pam4_integration.py": {
+      "bytes": 29350,
+      "sha256": "c5c0a3478666e62e2798bf57aa7b47b8b4dfce6c67b806f924c946e9b273c936"
+    },
+    "source_dir/pam4_metrics.py": {
+      "bytes": 12710,
+      "sha256": "84e43e71e2add6c142cdee8ac74ec9297b04d88ebf984e88a6168ccf79a76371"
+    },
+    "source_dir/psf_ascii.py": {
+      "bytes": 11206,
+      "sha256": "8875a6b7c89ade6b419a196aa0d772b3798fa17af3cf4090a1807bce768db0e1"
+    }
+  },
+  "historical_comparison": {
+    "noise173.scs": {
+      "exact_match": true,
+      "historical_deck_sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2",
+      "historical_summary_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+      "noise_seed": 173,
+      "original_case": "validation_noise",
+      "regenerated_deck_sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2"
+    },
+    "quiet.scs": {
+      "exact_match": true,
+      "historical_deck_sha256": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3",
+      "historical_summary_sha256": "ff8a466c80549cc476e8c768e56aea64cdab4ed4abb8a6b5d2709769519f716f",
+      "noise_seed": null,
+      "original_case": "validation_noiseless",
+      "regenerated_deck_sha256": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3"
+    }
+  },
+  "regeneration": {
+    "archived_native_geometry_sha256": "8a9a60bd9f313c5a933508c801664a173b68700a8f34036b33fbee3d6c32860c",
+    "generator_source_sha256": "25f7168a47ea1a9b62b4548675534ac9c85c04d55d0a24414a9279f5c86e34f4",
+    "geometry_archive_copy_included": false,
+    "method": "Archived original r5 builder and exact native geometry cards loaded in memory. Generated netlists are UTF-8 with original LF bytes. No simulation performed.",
+    "private_model_bytes_included": false,
+    "reference_model_root": "<PDK_ROOT>",
+    "source_scope": "Nine original frozen identity scripts and two hash-admitted parser/helpers."
+  },
+  "schema": "pam4_r5_local_admission_inputs_v1"
+}

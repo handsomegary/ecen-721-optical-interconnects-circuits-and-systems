@@ -1,0 +1,59 @@
+Olympus 交接｜SWITCH64 收集復原｜2026-11-14
+
+此包是舊 ZIP 63d0272a 的程式修正。保留原 87 案 plan 與
+網表、模型設定、時域刺激、儲存訊號和取樣精度。
+既有案 0–49 直接使用原 run root。
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_switch64.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+一、先重算已完成的 0–47，不啟動 Spectre。
+
+  /usr/bin/python3.11 -B gm_switch64.py --mode summarize --root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_switch64_dense_rechecked.json
+
+PAM4_DRIVE_RUN_ROOT 指原本 pnskew_lp_gmtapsw64_20261114.* 的
+run root。在同一個 run root 復原既有案並寫入後續的新案。
+摘要用新檔名，另存於 run root 外的成果目錄也可以。
+
+確認 FF_dense.status 為 passes_nominal_dense_recheck，四個
+profile 都有效；tight400 兩向 0↔±1 與診斷版相符
+（約 0.4947874 ps，對 0.50 ps 約 5.21 fs）。
+收斂代理分開列最後密度與 solver 容差的差。此結果驗證
+名義數值，製程失配與版圖寄生仍各自保留證據狀態。
+
+二、從既有動態 PSF 復原 48 與 49。先核對原 job 終止與
+原 approval 的路徑。使用原 0–86 approval 的 SHA 綁定；
+原案 48、49 的 solver 輸出、bench 與執行證據不改。
+
+  /usr/bin/python3.11 -B recover_switch64.py --mode snapshot --root "$PAM4_DRIVE_RUN_ROOT" --snapshot "$PAM4_SWITCH64_RECOVERY_SNAPSHOT"
+  /usr/bin/python3.11 -B recover_switch64.py --mode collect-only --root "$PAM4_DRIVE_RUN_ROOT" --snapshot "$PAM4_SWITCH64_RECOVERY_SNAPSHOT" --approval "$PAM4_SWITCH64_ORIGINAL_APPROVAL"
+
+完成後各案應有 measurements.json、recovery.json、
+completion.json。復原器重讀既有原生 ASCII PSF，檢查
+完整 END、波形檔 SHA、歷史清單、既有來源和執行狀態。
+原始模擬時間仍是各約 272 秒；復原不計 solver CPU。
+361.8 MiB 合成 PSF 在本機約 32 秒讀完，讀取階段峰值
+工作集約 121 MiB。此數字只涵蓋解析，未包含 Olympus
+檔案讀取、完整量測及寫出。建議先串行收兩案並記錄
+實際時間與峰值 RSS。
+
+  /usr/bin/python3.11 -B gm_switch64.py --mode summarize --root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_switch64_smoke_recovered.json
+
+核對 49 相對 48 的 paired hold。comparison.status 應為
+observed_recovery、settled 應為 true，並確認八個 lane、16 顆 XT2、
+Vb1／Vb2 和每腿尾電流。回報恢復時間、最後 1 ns、
+每 lane 採樣數與 XT2 的差異。若參考未收斂或轉換未恢復，
+保留兩份 raw，依比較結果查原因。
+
+三、只有 smoke 量測和配對檢查通過，再用修正版 runner
+送尚未執行的 50–86。這批的 approval 繼續以相同 plan SHA
+和新 SHA256SUMS.txt 綁定，stages 是 hold 和 switch。
+仍用 gm_switch64_classic.sbatch，1 CPU／6 GiB，solver
+暫採 smoke 的 4.5 分鐘／案。每案可能約 353–361 MiB
+邏輯 PSF、135–136 MB 實占；較大的切換以首案重估，
+原 solver 單檔上限為 512 MiB。
+
+等 summary 與量測核對、commit 成功後，依原規則處理
+已完成且沒有依賴的 raw。保留 failure 或 review 案的
+波形與對照。C0 依兩項修正及短切碼完成後的結果另提。

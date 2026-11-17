@@ -1,0 +1,708 @@
+{
+  "format": "pam4_tg_width_model_v1",
+  "status": "OFFLINE_MEASURED_Y_SCALING_MODEL",
+  "source_archive_name": "olympus_compact_selector_tt.tgz",
+  "source_archive_sha256": "31aa0f90a8f508a042e009b90fd8af1e420ac221119f73236efc663d823e089f",
+  "frequency_Hz": 56000000000.0,
+  "process_temperature_C_vdd_V": [
+    "TT",
+    25,
+    0.9
+  ],
+  "source_ohm_per_leg": 25.0,
+  "termination_ohm_per_leg": 25.0,
+  "bypass_measurement_proof": [
+    {
+      "case_id": "sel_tt_p25_v090_bypass_native_f0_00_00_na_p",
+      "measurement_sha256": "7fb16921cb79835dd6de2fc7c08ebb0fed924895e1b21c3a248f6f3c516e6727",
+      "run_status_sha256": "0ef2bf04c671ce4e62d2bccf0c61fc30dd14935542b98dee5729add30f52f338",
+      "bench_sha256": "2443487f92b2e1f3c417dddd6b6ca49d5d9522e97c0b78a4671dd7e264e1cfe2"
+    },
+    {
+      "case_id": "sel_tt_p25_v090_bypass_native_f0_00_00_na_n",
+      "measurement_sha256": "0ce318c5b1e008ea4a8637f04d2aeee425ae9114851bec132b9de90c2c4b558d",
+      "run_status_sha256": "70f888590f39fdc450642c6a334bc9c74dca94607ae2248d33f27101b9ce7794",
+      "bench_sha256": "0c21d21863a5168c6db591e62dd43fbdf64e08d000d4e7aa302bb4be5b23844f"
+    }
+  ],
+  "ideal_midrail_06_06_proof": [
+    {
+      "case_id": "sel_tt_p25_v090_ttd_mid_direct_mid_f0_06_06_na_p",
+      "measurement_sha256": "78ccb1edcf373596ce38f4a39f889605d2a840501c4f5496fa186637aca57f05",
+      "run_status_sha256": "d936a1605f78ea287f17c7009fe6f549d98e7f3aed096d9052d9ac9a27221e1d",
+      "bench_sha256": "5ea6ad017e3f672eae014313c0df5f14307a2739cfc7b755543e2d3c78a7e4ab"
+    },
+    {
+      "case_id": "sel_tt_p25_v090_ttd_mid_direct_mid_f0_06_06_na_n",
+      "measurement_sha256": "a12a2153cf247b11b0278096c44c725b01dda7685cf24d3446b7d2cc9655ecba",
+      "run_status_sha256": "b814e3635a61b5075f76de5da7eca3f2d7c3131a08f130b05e32400ade7cd603",
+      "bench_sha256": "01170e9ba1b5360c29d1120cee0a76c4bebe5b2e1fce8f7e220ce901b9914732"
+    }
+  ],
+  "Y_load_S_pp_pn_np_nn_including_termination": [
+    [
+      0.04236469439468122,
+      0.00294349748575837
+    ],
+    [
+      -0.0006681590602983082,
+      -9.42729166915738e-06
+    ],
+    [
+      -0.0006681590602983089,
+      -9.427291669157518e-06
+    ],
+    [
+      0.04236469439468122,
+      0.0029434974857583712
+    ]
+  ],
+  "modeled_ladder": {
+    "short_sections": 6,
+    "dormant_sections": 16,
+    "section_L_H": 1.3e-11,
+    "section_C_F": 2.08e-14,
+    "section_R_ohm": 0.305
+  },
+  "loss_screen": {
+    "equal_length_gain_min_dB": -3.0,
+    "observed_ideal_06_06_AFE_gain_dB": -0.3361773955330485,
+    "matched_50ohm_dc_style_Ron_limit_ohm_per_selected_switch": 9.30118797748328,
+    "measured_complex_load_series_only_Ron_limit_ohm_per_selected_switch": 7.94311732799772,
+    "width_limit_method": "First remove all shunts and unused path. Bisect the two equal positive series resistances for a 3 dB loss at 56 GHz with the same measured complex bypass load. Convert using measured Re(Ztransfer)/width scaling. This is a series-only sizing bound, conditional on this fixed load and route."
+  },
+  "width_model": {
+    "native": {
+      "isolated_device_measurement": {
+        "on_proof": [
+          {
+            "case_id": "sel_tt_p25_v090_device_native_f1_00_00_on_p",
+            "measurement_sha256": "e22f7681d5ab19aceb68b03dcb06cf07e96570a2c2bef00f370a9ab31975bf82",
+            "run_status_sha256": "1125fec5475fa82036230f88742b70f3616c1f9d3876672ce5c82319ec883f60",
+            "bench_sha256": "628357a2d29ffdeb3fe93d92516f1d083bed9213d3d55b21523f2f32ec4012c7"
+          },
+          {
+            "case_id": "sel_tt_p25_v090_device_native_f1_00_00_on_n",
+            "measurement_sha256": "91c4037f179db7ac6dbdb39eb8cc2af75879f84c5411152973b0dbb3b4e21095",
+            "run_status_sha256": "d87ba019376d401ae72d6dca4766dbb9b5443629da3d0247f3fda2bf4a4d729a",
+            "bench_sha256": "0db6af268c7484204a55260f55607d86de60de77b4341a72ff85e940fa3ba852"
+          }
+        ],
+        "off_proof": [
+          {
+            "case_id": "sel_tt_p25_v090_device_native_f1_00_00_off_p",
+            "measurement_sha256": "60980df16616a0366c3b07a56d4988e6273d7b7871d692bfce9cd77987b10076",
+            "run_status_sha256": "e2c3665c8bdf67b2646a1b5d46237400fdfe2d8c974b7b8eb665f9196a96f894",
+            "bench_sha256": "913c1e10ab92baa2a97d2c24daa7fabf43c6237e462c2ba1cd387452eeae1b03"
+          },
+          {
+            "case_id": "sel_tt_p25_v090_device_native_f1_00_00_off_n",
+            "measurement_sha256": "bbfa2842ac312135711deac730a964c6deb4a7a00b34231622fa6342f7322ec0",
+            "run_status_sha256": "82ed681357eb2c6a73d497bc53ee051fbc28cd8775405e52524ede820b3098f4",
+            "bench_sha256": "29a3ea9cf3cf8a597315a753a2f38a78b823a037dbd9b0c193a3c74931af560d"
+          }
+        ],
+        "Y_on_S_pp_pn_np_nn": [
+          [
+            0.006034131322040204,
+            0.001239208462553857
+          ],
+          [
+            -0.005729507698616398,
+            -0.00032508089499478894
+          ],
+          [
+            -0.005687993465296127,
+            -0.00024867012590460476
+          ],
+          [
+            0.005992617088719933,
+            0.001162797693463673
+          ]
+        ],
+        "Y_off_S_pp_pn_np_nn": [
+          [
+            0.0001048770290926658,
+            0.001016263159345753
+          ],
+          [
+            0.00010202618919695804,
+            -0.00010275031940287938
+          ],
+          [
+            0.00010133920147283592,
+            -0.00010293733463590608
+          ],
+          [
+            0.00010556401681680336,
+            0.0010164501745787793
+          ]
+        ],
+        "on_transfer_Z_ohm": [
+          174.7284443409361,
+          -8.78043469245606
+        ],
+        "off_mutual_C_fF": 0.29228756136828893,
+        "on_terminal_shunt_C_fF": 2.5979985891713606,
+        "Ron_times_Coff_fs": 51.07095089808702,
+        "Ron_times_on_terminal_shunt_C_fs": 453.9442518858586
+      },
+      "series_only_width_lower_bound_um": 65.99239459489938,
+      "linear_Coff_at_that_width_fF": 6.429585361665664,
+      "linear_on_terminal_shunt_C_at_that_width_fF": 57.14938268452944,
+      "best_modeled_widths": {
+        "full_mux": {
+          "continuous_factor": 15.959441263644853,
+          "um_per_polarity": 47.87832379093456,
+          "gain_dB": -8.113962842959669,
+          "at_search_boundary": false,
+          "nearest_integer_fingers": 16,
+          "nearest_integer_gain_dB": -8.113988743825546
+        },
+        "on_only": {
+          "continuous_factor": 20.16061672164855,
+          "um_per_polarity": 60.481850164945655,
+          "gain_dB": -6.71167194557977,
+          "at_search_boundary": false,
+          "nearest_integer_fingers": 20,
+          "nearest_integer_gain_dB": -6.711883169631311
+        }
+      },
+      "width_sweep": [
+        {
+          "finger_factor": 1,
+          "um_per_polarity": 3.0,
+          "linear_Ron_ohm": 174.7284443409361,
+          "linear_Coff_fF": 0.29228756136828893,
+          "linear_on_terminal_shunt_C_fF": 2.5979985891713606,
+          "full_mux_gain_dB": -30.184000623570824,
+          "on_only_gain_dB": -30.098567568686278
+        },
+        {
+          "finger_factor": 2,
+          "um_per_polarity": 6.0,
+          "linear_Ron_ohm": 87.36422217046805,
+          "linear_Coff_fF": 0.5845751227365779,
+          "linear_on_terminal_shunt_C_fF": 5.195997178342721,
+          "full_mux_gain_dB": -21.002283995375386,
+          "on_only_gain_dB": -20.827422168098746
+        },
+        {
+          "finger_factor": 4,
+          "um_per_polarity": 12.0,
+          "linear_Ron_ohm": 43.68211108523403,
+          "linear_Coff_fF": 1.1691502454731557,
+          "linear_on_terminal_shunt_C_fF": 10.391994356685442,
+          "full_mux_gain_dB": -14.0140178032795,
+          "on_only_gain_dB": -13.647469126729678
+        },
+        {
+          "finger_factor": 8,
+          "um_per_polarity": 24.0,
+          "linear_Ron_ohm": 21.841055542617013,
+          "linear_Coff_fF": 2.3383004909463114,
+          "linear_on_terminal_shunt_C_fF": 20.783988713370885,
+          "full_mux_gain_dB": -9.675506530322778,
+          "on_only_gain_dB": -9.02324707980878
+        },
+        {
+          "finger_factor": 12,
+          "um_per_polarity": 36.0,
+          "linear_Ron_ohm": 14.56070369507801,
+          "linear_Coff_fF": 3.507450736419467,
+          "linear_on_terminal_shunt_C_fF": 31.17598307005633,
+          "full_mux_gain_dB": -8.406072437766397,
+          "on_only_gain_dB": -7.477611453445573
+        },
+        {
+          "finger_factor": 16,
+          "um_per_polarity": 48.0,
+          "linear_Ron_ohm": 10.920527771308507,
+          "linear_Coff_fF": 4.676600981892623,
+          "linear_on_terminal_shunt_C_fF": 41.56797742674177,
+          "full_mux_gain_dB": -8.113988743825546,
+          "on_only_gain_dB": -6.874592858264633
+        },
+        {
+          "finger_factor": 24,
+          "um_per_polarity": 72.0,
+          "linear_Ron_ohm": 7.280351847539005,
+          "linear_Coff_fF": 7.014901472838934,
+          "linear_on_terminal_shunt_C_fF": 62.35196614011266,
+          "full_mux_gain_dB": -8.946143625893088,
+          "on_only_gain_dB": -6.820634438084294
+        },
+        {
+          "finger_factor": 32,
+          "um_per_polarity": 96.0,
+          "linear_Ron_ohm": 5.460263885654253,
+          "linear_Coff_fF": 9.353201963785246,
+          "linear_on_terminal_shunt_C_fF": 83.13595485348354,
+          "full_mux_gain_dB": -10.916886816445325,
+          "on_only_gain_dB": -7.6043635680265425
+        },
+        {
+          "finger_factor": 48,
+          "um_per_polarity": 144.0,
+          "linear_Ron_ohm": 3.6401759237695024,
+          "linear_Coff_fF": 14.029802945677869,
+          "linear_on_terminal_shunt_C_fF": 124.70393228022532,
+          "full_mux_gain_dB": -15.875157866453812,
+          "on_only_gain_dB": -10.554016673295287
+        },
+        {
+          "finger_factor": 64,
+          "um_per_polarity": 192.0,
+          "linear_Ron_ohm": 2.7301319428271267,
+          "linear_Coff_fF": 18.70640392757049,
+          "linear_on_terminal_shunt_C_fF": 166.27190970696708,
+          "full_mux_gain_dB": -20.3802344269825,
+          "on_only_gain_dB": -14.059057380844566
+        },
+        {
+          "finger_factor": 96,
+          "um_per_polarity": 288.0,
+          "linear_Ron_ohm": 1.8200879618847512,
+          "linear_Coff_fF": 28.059605891355737,
+          "linear_on_terminal_shunt_C_fF": 249.40786456045063,
+          "full_mux_gain_dB": -27.25285274412157,
+          "on_only_gain_dB": -20.24057174750947
+        },
+        {
+          "finger_factor": 128,
+          "um_per_polarity": 384.0,
+          "linear_Ron_ohm": 1.3650659714135633,
+          "linear_Coff_fF": 37.41280785514098,
+          "linear_on_terminal_shunt_C_fF": 332.54381941393416,
+          "full_mux_gain_dB": -32.25252952777503,
+          "on_only_gain_dB": -25.023836479658407
+        },
+        {
+          "finger_factor": 256,
+          "um_per_polarity": 768.0,
+          "linear_Ron_ohm": 0.6825329857067817,
+          "linear_Coff_fF": 74.82561571028197,
+          "linear_on_terminal_shunt_C_fF": 665.0876388278683,
+          "full_mux_gain_dB": -44.367612233874084,
+          "on_only_gain_dB": -36.92881497426875
+        }
+      ],
+      "meets_3dB_loss_screen_in_model": false
+    },
+    "mid": {
+      "isolated_device_measurement": {
+        "on_proof": [
+          {
+            "case_id": "sel_tt_p25_v090_device_mid_f1_00_00_on_p",
+            "measurement_sha256": "b50da0d8c141ae23add14187d8c2bc3192b64404867c323f1a77eff7b4570d03",
+            "run_status_sha256": "39919158fb4622c0e7f283c152bd5cb1431abe8e69e452a174c7786ade338d53",
+            "bench_sha256": "a352d79a44b59c09bf3fc4e36aa7256dfad2a3c5d6c695be6d1cd5ef3b35bc5a"
+          },
+          {
+            "case_id": "sel_tt_p25_v090_device_mid_f1_00_00_on_n",
+            "measurement_sha256": "a02c2241df0b5a6dcd1b60421132be9d332bf42cd8f8bd962a0ee5d4d52a1b3e",
+            "run_status_sha256": "7a46c4cd9a0d39697e01b05c3bb338585b6b84ea859cc7c0358b38902df6035b",
+            "bench_sha256": "4f1abb7798fd5e0bac3037dadcb971fb5cfb66c4d9c03cef75e7097bde328947"
+          }
+        ],
+        "off_proof": [
+          {
+            "case_id": "sel_tt_p25_v090_device_mid_f1_00_00_off_p",
+            "measurement_sha256": "cad5e0f1d9af2e236b7896cb4f90fb2f586de38b3b27d6fc0228574b05ba3cf4",
+            "run_status_sha256": "38bb18091e86226942771ab43abe3f76e03c254099a7a22e1e8e71dcc244e3b4",
+            "bench_sha256": "0423e9533d4f2a66ebe7d3e9d635771081cc40cafbb71378512a15d9535213bc"
+          },
+          {
+            "case_id": "sel_tt_p25_v090_device_mid_f1_00_00_off_n",
+            "measurement_sha256": "1b13746201951a6a9f0f845cf6b4d875a297bd0f92e7ee3de94768d8f0cf7f0a",
+            "run_status_sha256": "1bfeed9b76bc7896e17d63e8e8d04e377da4b66880677e127385ca7d3d71c260",
+            "bench_sha256": "cd0899338e716c5736632e7c7fd28ed6e18dc8d6d78f74dbf00429c7d9437dc1"
+          }
+        ],
+        "Y_on_S_pp_pn_np_nn": [
+          [
+            0.003863143902152956,
+            0.00122767572990934
+          ],
+          [
+            -0.0034867045274053128,
+            -0.00032024634241250004
+          ],
+          [
+            -0.003485659498405383,
+            -0.00038538115768274985
+          ],
+          [
+            0.003862098873153005,
+            0.0012928105451795898
+          ]
+        ],
+        "Y_off_S_pp_pn_np_nn": [
+          [
+            0.00010425909695377307,
+            0.0009864584221718285
+          ],
+          [
+            0.0001006813357798048,
+            -9.856301858087422e-05
+          ],
+          [
+            0.0001009083960208453,
+            -9.85057448245832e-05
+          ],
+          [
+            0.00010403203671274429,
+            0.0009864011484155377
+          ]
+        ],
+        "on_transfer_Z_ohm": [
+          283.93861538450824,
+          -28.735575855275485
+        ],
+        "off_mutual_C_fF": 0.28003989129451573,
+        "on_terminal_shunt_C_fF": 2.5789620094102323,
+        "Ron_times_Coff_fs": 79.514138986593,
+        "Ron_times_on_terminal_shunt_C_fs": 732.2669020811904
+      },
+      "series_only_width_lower_bound_um": 107.23948935653559,
+      "linear_Coff_at_that_width_fF": 10.010444980627867,
+      "linear_on_terminal_shunt_C_at_that_width_fF": 92.18885631968607,
+      "best_modeled_widths": {
+        "full_mux": {
+          "continuous_factor": 18.425560247799663,
+          "um_per_polarity": 55.276680743398984,
+          "gain_dB": -10.949982173283221,
+          "at_search_boundary": false,
+          "nearest_integer_fingers": 18,
+          "nearest_integer_gain_dB": -10.952673476909744
+        },
+        "on_only": {
+          "continuous_factor": 22.86865220224114,
+          "um_per_polarity": 68.60595660672342,
+          "gain_dB": -9.165799940038925,
+          "at_search_boundary": false,
+          "nearest_integer_fingers": 23,
+          "nearest_integer_gain_dB": -9.165944855111524
+        }
+      },
+      "width_sweep": [
+        {
+          "finger_factor": 1,
+          "um_per_polarity": 3.0,
+          "linear_Ron_ohm": 283.93861538450824,
+          "linear_Coff_fF": 0.28003989129451573,
+          "linear_on_terminal_shunt_C_fF": 2.5789620094102323,
+          "full_mux_gain_dB": -37.70999376057301,
+          "on_only_gain_dB": -37.59092683881686
+        },
+        {
+          "finger_factor": 2,
+          "um_per_polarity": 6.0,
+          "linear_Ron_ohm": 141.96930769225412,
+          "linear_Coff_fF": 0.5600797825890315,
+          "linear_on_terminal_shunt_C_fF": 5.157924018820465,
+          "full_mux_gain_dB": -27.70249734574302,
+          "on_only_gain_dB": -27.475430782779604
+        },
+        {
+          "finger_factor": 4,
+          "um_per_polarity": 12.0,
+          "linear_Ron_ohm": 70.98465384612706,
+          "linear_Coff_fF": 1.120159565178063,
+          "linear_on_terminal_shunt_C_fF": 10.31584803764093,
+          "full_mux_gain_dB": -19.467314782492092,
+          "on_only_gain_dB": -19.012964078507856
+        },
+        {
+          "finger_factor": 8,
+          "um_per_polarity": 24.0,
+          "linear_Ron_ohm": 35.49232692306353,
+          "linear_Coff_fF": 2.240319130356126,
+          "linear_on_terminal_shunt_C_fF": 20.63169607528186,
+          "full_mux_gain_dB": -13.693201885407365,
+          "on_only_gain_dB": -12.951066848146437
+        },
+        {
+          "finger_factor": 12,
+          "um_per_polarity": 36.0,
+          "linear_Ron_ohm": 23.661551282042353,
+          "linear_Coff_fF": 3.360478695534189,
+          "linear_on_terminal_shunt_C_fF": 30.947544112922785,
+          "full_mux_gain_dB": -11.737200153400593,
+          "on_only_gain_dB": -10.681521890774025
+        },
+        {
+          "finger_factor": 16,
+          "um_per_polarity": 48.0,
+          "linear_Ron_ohm": 17.746163461531765,
+          "linear_Coff_fF": 4.480638260712252,
+          "linear_on_terminal_shunt_C_fF": 41.26339215056372,
+          "full_mux_gain_dB": -11.043625092280667,
+          "on_only_gain_dB": -9.663411331235173
+        },
+        {
+          "finger_factor": 24,
+          "um_per_polarity": 72.0,
+          "linear_Ron_ohm": 11.830775641021177,
+          "linear_Coff_fF": 6.720957391068378,
+          "linear_on_terminal_shunt_C_fF": 61.89508822584557,
+          "full_mux_gain_dB": -11.342697298745462,
+          "on_only_gain_dB": -9.176281694691813
+        },
+        {
+          "finger_factor": 32,
+          "um_per_polarity": 96.0,
+          "linear_Ron_ohm": 8.873081730765882,
+          "linear_Coff_fF": 8.961276521424503,
+          "linear_on_terminal_shunt_C_fF": 82.52678430112744,
+          "full_mux_gain_dB": -12.889139637177827,
+          "on_only_gain_dB": -9.740799954525954
+        },
+        {
+          "finger_factor": 48,
+          "um_per_polarity": 144.0,
+          "linear_Ron_ohm": 5.915387820510588,
+          "linear_Coff_fF": 13.441914782136756,
+          "linear_on_terminal_shunt_C_fF": 123.79017645169114,
+          "full_mux_gain_dB": -17.30247086489259,
+          "on_only_gain_dB": -12.416811877901466
+        },
+        {
+          "finger_factor": 64,
+          "um_per_polarity": 192.0,
+          "linear_Ron_ohm": 4.436540865382941,
+          "linear_Coff_fF": 17.922553042849007,
+          "linear_on_terminal_shunt_C_fF": 165.05356860225487,
+          "full_mux_gain_dB": -21.564309043073035,
+          "on_only_gain_dB": -15.720298645256337
+        },
+        {
+          "finger_factor": 96,
+          "um_per_polarity": 288.0,
+          "linear_Ron_ohm": 2.957693910255294,
+          "linear_Coff_fF": 26.883829564273512,
+          "linear_on_terminal_shunt_C_fF": 247.58035290338228,
+          "full_mux_gain_dB": -28.25545243041798,
+          "on_only_gain_dB": -21.655167084209364
+        },
+        {
+          "finger_factor": 128,
+          "um_per_polarity": 384.0,
+          "linear_Ron_ohm": 2.2182704326914706,
+          "linear_Coff_fF": 35.84510608569801,
+          "linear_on_terminal_shunt_C_fF": 330.10713720450974,
+          "full_mux_gain_dB": -33.189156040858435,
+          "on_only_gain_dB": -26.308889784782824
+        },
+        {
+          "finger_factor": 256,
+          "um_per_polarity": 768.0,
+          "linear_Ron_ohm": 1.1091352163457353,
+          "linear_Coff_fF": 71.69021217139603,
+          "linear_on_terminal_shunt_C_fF": 660.2142744090195,
+          "full_mux_gain_dB": -45.237397908601096,
+          "on_only_gain_dB": -38.02342813211671
+        }
+      ],
+      "meets_3dB_loss_screen_in_model": false
+    }
+  },
+  "parallel_f4_measured_check": {
+    "on": {
+      "measured_f4_proof": [
+        {
+          "case_id": "sel_tt_p25_v090_device_mid_f4_00_00_on_p",
+          "measurement_sha256": "257036594cda1a724210cb363964d34042570d73831425e63a8bc4a33aa0e395",
+          "run_status_sha256": "a1dc233a5386906b55ab7ce4835676c1a95829faaeedb34a75174753fb32b1a0",
+          "bench_sha256": "190eb4ea5e16cd475d9020ab8512a7a991017fc81c0837c84cb1e0c1b4002279"
+        },
+        {
+          "case_id": "sel_tt_p25_v090_device_mid_f4_00_00_on_n",
+          "measurement_sha256": "30a93dc96b63011d4c3c07cdc6b7336ef09ecd963315d131455afbe4e19c08f5",
+          "run_status_sha256": "76418d9991a3d28e8eb5fbf076d2ea65a83599ec8eea0f6a01f6c11597b80855",
+          "bench_sha256": "43735ca03a1907247100803bff747be8362e6aa97b884862e30c97a735e8a1bd"
+        }
+      ],
+      "measured_f4_Y_S_pp_pn_np_nn": [
+        [
+          0.015452575470932144,
+          0.004910702918675404
+        ],
+        [
+          -0.013946817973357813,
+          -0.0012809853683058096
+        ],
+        [
+          -0.01394263785797296,
+          -0.00154152463028788
+        ],
+        [
+          0.01544839535554719,
+          0.005171242180657476
+        ]
+      ],
+      "max_relative_mismatch_to_four_parallel_f1": 8.451510874853036e-09
+    },
+    "off": {
+      "measured_f4_proof": [
+        {
+          "case_id": "sel_tt_p25_v090_device_mid_f4_00_00_off_p",
+          "measurement_sha256": "a9ba5852884e63f3c5441ffe10f73d3b5dcc898facefc0a71b66b742eb4b1875",
+          "run_status_sha256": "25ab56e6a740cf80f36aae8865132f309886a2a2150c0b80f713dc5ad8092a35",
+          "bench_sha256": "bdf2d5bf2c98f7bf22519320f18e7bf24215fe8853ec03d9f9493cc8da5f9364"
+        },
+        {
+          "case_id": "sel_tt_p25_v090_device_mid_f4_00_00_off_n",
+          "measurement_sha256": "d0aae381c9fe1a09bc82ca8e31078801fe675a768fc41c75a49a481042536510",
+          "run_status_sha256": "c55197dabd04284f05a5def4f9e212647aedfff8e0bc09bb3c0b7a8d8df73f68",
+          "bench_sha256": "53a46b8e14a1512a0dd2f02cfcd3819facb17becdd819df1a418345ac496ca97"
+        }
+      ],
+      "measured_f4_Y_S_pp_pn_np_nn": [
+        [
+          0.0004170363878153142,
+          0.003945833688687316
+        ],
+        [
+          0.0004027253431192193,
+          -0.00039425207432349695
+        ],
+        [
+          0.00040363358408338125,
+          -0.0003940229792983329
+        ],
+        [
+          0.00041612814685118116,
+          0.003945604593662151
+        ]
+      ],
+      "max_relative_mismatch_to_four_parallel_f1": 5.592221120800061e-14
+    }
+  },
+  "measured_loaded_validation": [
+    {
+      "variant": "ttd_switch",
+      "bias": "native",
+      "finger_factor": 1,
+      "measured_trim_gain_dB": -30.113926864798962,
+      "measured_AFE_gain_dB": -30.113714222478038,
+      "modeled_trim_gain_dB": -30.184000623570824,
+      "model_minus_measured_trim_dB": -0.07007375877186206,
+      "measurement_proof": [
+        {
+          "case_id": "sel_tt_p25_v090_ttd_switch_native_f1_06_06_na_p",
+          "measurement_sha256": "e836347ced524f6eb63a0053051a67f720b1b392d1b90939c55c0a2540d11862",
+          "run_status_sha256": "d27bf2ec7c542cddde442b49ccb0d006bccbae65d2d22a51784b38052ea0eb91",
+          "bench_sha256": "6cd5736a1f4809710e5ed7a0d509a4428b0bea7bd73bda2b9f52570e75539156"
+        },
+        {
+          "case_id": "sel_tt_p25_v090_ttd_switch_native_f1_06_06_na_n",
+          "measurement_sha256": "1ea38d31cacc8fba42a65e7b7f6b8fd95c95151f163434c2a81da538945b1e1e",
+          "run_status_sha256": "389ded62afd121a00d5ed7041600a817f24f3f216070f71b896f4ae14b084d7c",
+          "bench_sha256": "4db25ce173a15fd718a367f5a380159445e0ca314392eecb239f6b06215bc6bd"
+        }
+      ]
+    },
+    {
+      "variant": "ttd_on_only",
+      "bias": "native",
+      "finger_factor": 1,
+      "measured_trim_gain_dB": -30.02918773512213,
+      "measured_AFE_gain_dB": -30.028959472164445,
+      "modeled_trim_gain_dB": -30.098567568686278,
+      "model_minus_measured_trim_dB": -0.0693798335641489,
+      "measurement_proof": [
+        {
+          "case_id": "sel_tt_p25_v090_ttd_on_only_native_f1_06_06_na_p",
+          "measurement_sha256": "6cda04328f0e16824c05fbde701a0eab4c61b94b2fd5c14a5b74386216322da5",
+          "run_status_sha256": "f59dbf89672086159fc1d8710a8327943934ee2012106cc14eee163d27b2beff",
+          "bench_sha256": "13da0d2d5093c83dd6bfb27e9abe5d4a11f115dae09ff0ae0d5eec56dee6cc56"
+        },
+        {
+          "case_id": "sel_tt_p25_v090_ttd_on_only_native_f1_06_06_na_n",
+          "measurement_sha256": "88705325e421eaf5cd6b99fcacfcffa19e8baba71287572e5255ed8f644df7cb",
+          "run_status_sha256": "996045be38c70b4464fc0f58ac35e77e2d91ddd269214fb0deebe1afe6c64558",
+          "bench_sha256": "a39e036c3dfc0776073e90d5500692d654c1f0765244b85b5f4ea106ecbf2c8d"
+        }
+      ]
+    },
+    {
+      "variant": "ttd_mid_mux",
+      "bias": "mid",
+      "finger_factor": 1,
+      "measured_trim_gain_dB": -37.751467856995234,
+      "measured_AFE_gain_dB": -37.75086243442514,
+      "modeled_trim_gain_dB": -37.70999376057301,
+      "model_minus_measured_trim_dB": 0.04147409642222044,
+      "measurement_proof": [
+        {
+          "case_id": "sel_tt_p25_v090_ttd_mid_mux_mid_f1_06_06_na_p",
+          "measurement_sha256": "d57d824b95c84df7a899df5b6c9a89b8d1c8cc2983755fb827026eafb16aa3c5",
+          "run_status_sha256": "18a84b93ca2e9f4eae078bb2c3b295d83d8a4fb930c4b823e66edcc84ef5db7f",
+          "bench_sha256": "0696101e40cb2310c0676d41f79ce4a27b3afa8e8f221fd0551a0aa3a47d505c"
+        },
+        {
+          "case_id": "sel_tt_p25_v090_ttd_mid_mux_mid_f1_06_06_na_n",
+          "measurement_sha256": "fd162f74626a077e508b0e9278b1d6d61564e904c29061bce99125647b3bdd91",
+          "run_status_sha256": "b201b9c7a0fd885e919f1ce9c2ba91484c20f5d53e1403d6773e6f1f24d2832c",
+          "bench_sha256": "85e2bc07bde9e88ecfa3f07ca96fd9f201cc631d936d0c8b63e190a866937edd"
+        }
+      ]
+    },
+    {
+      "variant": "ttd_mid_mux",
+      "bias": "mid",
+      "finger_factor": 4,
+      "measured_trim_gain_dB": -19.51348723128058,
+      "measured_AFE_gain_dB": -19.51342551785508,
+      "modeled_trim_gain_dB": -19.467314782492092,
+      "model_minus_measured_trim_dB": 0.04617244878848581,
+      "measurement_proof": [
+        {
+          "case_id": "sel_tt_p25_v090_ttd_mid_mux_mid_f4_06_06_na_p",
+          "measurement_sha256": "d28dacb94183fd5e049ffc6c37135625d67a813fe2e04509bdc45223289749f8",
+          "run_status_sha256": "c149b9a78620530f41da148d90081ad38741e3eefe1df5f8852eb1d7381542fe",
+          "bench_sha256": "0a453ef06155a1a8cb26d9d9f2082ba628b7c9d48c05d42c94c0e120be24a264"
+        },
+        {
+          "case_id": "sel_tt_p25_v090_ttd_mid_mux_mid_f4_06_06_na_n",
+          "measurement_sha256": "80b4885004a4035bbca9159514749963dd37e07f037cd091388c8a810cecee7f",
+          "run_status_sha256": "6111de4dc2e10855a1177edfcfbb9a1ce11f8bc2ae97349a57e6fc5582e2985c",
+          "bench_sha256": "617490cf73c506d4c63eb3e38cd1441b3711651dbdefd3392f8c2af8d6674bbb"
+        }
+      ]
+    },
+    {
+      "variant": "ttd_mid_on_only",
+      "bias": "mid",
+      "finger_factor": 4,
+      "measured_trim_gain_dB": -19.057308049415237,
+      "measured_AFE_gain_dB": -19.057664132926455,
+      "modeled_trim_gain_dB": -19.012964078507856,
+      "model_minus_measured_trim_dB": 0.044343970907380736,
+      "measurement_proof": [
+        {
+          "case_id": "sel_tt_p25_v090_ttd_mid_on_only_mid_f4_06_06_na_p",
+          "measurement_sha256": "892dec0017ec01aa3155f6b8107d9c9a59d6052d4d35f8e91006a120291e0df6",
+          "run_status_sha256": "650ae9cbf1449b17968fdc1d103cd0950e1d1d5f27104b83e6fe1f2785b3cf2f",
+          "bench_sha256": "9fca999ecd3fcc657824bd01867289c3a123f8954f89c93b539ba7d5d8f7b994"
+        },
+        {
+          "case_id": "sel_tt_p25_v090_ttd_mid_on_only_mid_f4_06_06_na_n",
+          "measurement_sha256": "f9dc3cf1b0946f1523b8c14a99a3fc4a62609b87756d13f9963eec67d01cf379",
+          "run_status_sha256": "0873152aef4ca4513e0baf119fb67f306adb08f88c99802216e7ad8fc3446e80",
+          "bench_sha256": "ca7e52827157d1298c23cff244ff37bad24ee4b3578d29be52ba0545ed58eb42"
+        }
+      ]
+    }
+  ],
+  "width_search_factors": [
+    0.1,
+    100000.0
+  ],
+  "scope": [
+    "Scale every measured complex 2x2 device Y element linearly with count, including OFF transfer, terminal shunts and conductance. Cascade two ON switches around the 6-section path and add the OFF branch admittance around the 16-section path.",
+    "Matched measured fixture is TT, 25 ohm source and termination per leg, with the fixed-track r3 load. Ideal bias-isolation components are approximated at 56 GHz. Results apply to this topology and device/bias range. Larger native devices, changed bias, retuned routes, layout parasitics and corners require their own characterization.",
+    "Equal-length 06/06 loss is a necessary screening condition. Endpoint delay versus width and FFE SER were not evaluated. This result does not establish a universal TG feasibility bound."
+  ]
+}

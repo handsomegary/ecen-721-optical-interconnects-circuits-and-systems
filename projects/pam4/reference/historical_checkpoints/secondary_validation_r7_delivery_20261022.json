@@ -1,0 +1,416 @@
+{
+  "status": "verified_four_case_independent_validation_complete",
+  "created_utc": "2026-10-23T06:58:08.054454Z",
+  "finished_utc": "2026-10-23T06:41:15.802486Z",
+  "root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_validation_r7_20261022",
+  "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+  "original_runner_active": false,
+  "owned_actual_simulators": 0,
+  "script_sha256": "01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0",
+  "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f",
+  "status_sha256": "85866692698a960c5c5a368e6ef432b177334b73bc6768fdfc4deb40e7370bc4",
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "detector_sha256": {
+    "baseline_r5": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+    "secondary_c25_w2": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+  },
+  "data_seed": 2026102301,
+  "noise_seed": 251,
+  "generated_symbols": 2432,
+  "score_inputs": 2048,
+  "FFE_outputs_per_branch": 2032,
+  "validation_fitting_performed": false,
+  "all_four_exit0": true,
+  "independent_metrics_recomputed": true,
+  "independent_fresh_data": true,
+  "complete_ADC_verified": false,
+  "case_hashes": [
+    {
+      "name": "noiseless_baseline_r5",
+      "exit_code": 0,
+      "summary_sha256": "c8edc2a3a8e6a2fbc7576f4d5289446d9d027975e9abf466c12a735693801e2c",
+      "deck_sha256": "4a68e2eba2ed60fb7dc4d97e9ee5c63b1cd4488cb35530ff20b8fa193eac05c1",
+      "raw_sha256": "52eeeda59caf1a26ea0af5336fb0bb4618b5518f34c9daed907bfc36fac22a30",
+      "detector_sha256": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+      "validation_fitting_performed": false,
+      "independent_counts_MSE_power_recomputed": true
+    },
+    {
+      "name": "noiseless_secondary_c25_w2",
+      "exit_code": 0,
+      "summary_sha256": "df5ed0369f2203beefbcf077ca48a965984b26f6b7a56b7c5e784115be49a724",
+      "deck_sha256": "d8876f3a02fd7407f2df279c1e0c24ff3ac106424e1ac20d781a71a96ebd7fe6",
+      "raw_sha256": "32bd1e523bdeef20ad9b0dce3042b6b41859b70a1781d285d6a6597fafd17369",
+      "detector_sha256": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f",
+      "validation_fitting_performed": false,
+      "independent_counts_MSE_power_recomputed": true
+    },
+    {
+      "name": "noise_baseline_r5",
+      "exit_code": 0,
+      "summary_sha256": "0d7e4d1b2a2d8192d0835357ac26c0ba1756ec1f3ea5a7429993d50bf14acaf0",
+      "deck_sha256": "3394a71c4489dc53dea2d74b65dce91e85d5c228e06ffbf3b7ead5c5d2ea2443",
+      "raw_sha256": "22c0ec9417dde306039a8b923b8d38f7c5e2438aaf7729efba388759d4cfd01e",
+      "detector_sha256": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+      "validation_fitting_performed": false,
+      "independent_counts_MSE_power_recomputed": true
+    },
+    {
+      "name": "noise_secondary_c25_w2",
+      "exit_code": 0,
+      "summary_sha256": "6b4d42258ab72630a771bbd9f767f727015af80ed29ce62843a509abf8d32469",
+      "deck_sha256": "df05df7419cdc4841355dfd311d51ceaf1053d265d3553ff18a8c25ead4247cf",
+      "raw_sha256": "5020c002940ecc137cfd0cfa18278e579f6708241b797500597f342bce47429f",
+      "detector_sha256": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f",
+      "validation_fitting_performed": false,
+      "independent_counts_MSE_power_recomputed": true
+    }
+  ],
+  "results": {
+    "noiseless_baseline_r5": {
+      "candidate": "baseline_r5",
+      "kind": "noiseless",
+      "branches": {
+        "primary": {
+          "raw_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.0032787032501616358
+          },
+          "ADC_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.008150754759704991
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.08977113121891389,
+          "held_centered_RMS_V": 0.017301984126277155,
+          "fullscale_Vpp": 0.1,
+          "normalized_ADC_FFE_tap_L2": 6.244327804182569,
+          "equivalent_per_V_ADC_FFE_tap_L2": 319.34143434650497
+        },
+        "secondary": {
+          "raw_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.00740327098058524
+          },
+          "ADC_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.02040219094798785
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.049746375178485014,
+          "held_centered_RMS_V": 0.009758208906948796,
+          "fullscale_Vpp": 0.075,
+          "normalized_ADC_FFE_tap_L2": 7.214047038840809,
+          "equivalent_per_V_ADC_FFE_tap_L2": 649.741520958617
+        }
+      },
+      "measured_VDD_mW": 11.967978782725785,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "seconds": 1963.95
+    },
+    "noiseless_secondary_c25_w2": {
+      "candidate": "secondary_c25_w2",
+      "kind": "noiseless",
+      "branches": {
+        "primary": {
+          "raw_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.0032758427817922574
+          },
+          "ADC_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.009094275863339387
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.08990379723106234,
+          "held_centered_RMS_V": 0.01732333737977411,
+          "fullscale_Vpp": 0.1,
+          "normalized_ADC_FFE_tap_L2": 6.177017430084197,
+          "equivalent_per_V_ADC_FFE_tap_L2": 315.63363953896874
+        },
+        "secondary": {
+          "raw_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.03503966535495581
+          },
+          "ADC_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.05523533033903391
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.03936876739656503,
+          "held_centered_RMS_V": 0.007840695531678868,
+          "fullscale_Vpp": 0.075,
+          "normalized_ADC_FFE_tap_L2": 7.613447160824283,
+          "equivalent_per_V_ADC_FFE_tap_L2": 850.1187436417314
+        }
+      },
+      "measured_VDD_mW": 11.968471769053373,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "seconds": 1606.854
+    },
+    "noise_baseline_r5": {
+      "candidate": "baseline_r5",
+      "kind": "noise",
+      "branches": {
+        "primary": {
+          "raw_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.0514475455558081
+          },
+          "ADC_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.056576330768160134
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.0896300572776233,
+          "held_centered_RMS_V": 0.017291864672337766,
+          "fullscale_Vpp": 0.1,
+          "normalized_ADC_FFE_tap_L2": 6.244327804182569,
+          "equivalent_per_V_ADC_FFE_tap_L2": 319.34143434650497
+        },
+        "secondary": {
+          "raw_FFE": {
+            "errors": 218,
+            "symbols": 2032,
+            "SER": 0.10728346456692914,
+            "MSE_target_units_squared": 0.45225099308373634
+          },
+          "ADC_FFE": {
+            "errors": 235,
+            "symbols": 2032,
+            "SER": 0.1156496062992126,
+            "MSE_target_units_squared": 0.4709822803194678
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.04946614191320864,
+          "held_centered_RMS_V": 0.009769784173748065,
+          "fullscale_Vpp": 0.075,
+          "normalized_ADC_FFE_tap_L2": 7.214047038840809,
+          "equivalent_per_V_ADC_FFE_tap_L2": 649.741520958617
+        }
+      },
+      "measured_VDD_mW": 11.968232187754657,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "seconds": 2573.906
+    },
+    "noise_secondary_c25_w2": {
+      "candidate": "secondary_c25_w2",
+      "kind": "noise",
+      "branches": {
+        "primary": {
+          "raw_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.05286189652462735
+          },
+          "ADC_FFE": {
+            "errors": 0,
+            "symbols": 2032,
+            "SER": 0.0,
+            "MSE_target_units_squared": 0.05998367602705209
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.0899663315551763,
+          "held_centered_RMS_V": 0.017306869159283828,
+          "fullscale_Vpp": 0.1,
+          "normalized_ADC_FFE_tap_L2": 6.177017430084197,
+          "equivalent_per_V_ADC_FFE_tap_L2": 315.63363953896874
+        },
+        "secondary": {
+          "raw_FFE": {
+            "errors": 190,
+            "symbols": 2032,
+            "SER": 0.09350393700787402,
+            "MSE_target_units_squared": 0.4324060181309664
+          },
+          "ADC_FFE": {
+            "errors": 210,
+            "symbols": 2032,
+            "SER": 0.10334645669291338,
+            "MSE_target_units_squared": 0.4673044385843206
+          },
+          "clipped_inputs": 0,
+          "input_count": 2048,
+          "held_Vpp": 0.03979274085957096,
+          "held_centered_RMS_V": 0.007860070277919674,
+          "fullscale_Vpp": 0.075,
+          "normalized_ADC_FFE_tap_L2": 7.613447160824283,
+          "equivalent_per_V_ADC_FFE_tap_L2": 850.1187436417314
+        }
+      },
+      "measured_VDD_mW": 11.968501357951741,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "seconds": 2211.14
+    }
+  },
+  "same_round_comparison": {
+    "noiseless": {
+      "primary": {
+        "raw_FFE": {
+          "baseline_errors": 0,
+          "candidate_errors": 0,
+          "symbols": 2032,
+          "error_reduction_count": 0,
+          "absolute_SER_change": 0.0,
+          "relative_error_reduction": null,
+          "both_wrong": 0,
+          "baseline_only_wrong": 0,
+          "candidate_only_wrong": 0,
+          "both_correct": 2032
+        },
+        "ADC_FFE": {
+          "baseline_errors": 0,
+          "candidate_errors": 0,
+          "symbols": 2032,
+          "error_reduction_count": 0,
+          "absolute_SER_change": 0.0,
+          "relative_error_reduction": null,
+          "both_wrong": 0,
+          "baseline_only_wrong": 0,
+          "candidate_only_wrong": 0,
+          "both_correct": 2032
+        }
+      },
+      "secondary": {
+        "raw_FFE": {
+          "baseline_errors": 0,
+          "candidate_errors": 0,
+          "symbols": 2032,
+          "error_reduction_count": 0,
+          "absolute_SER_change": 0.0,
+          "relative_error_reduction": null,
+          "both_wrong": 0,
+          "baseline_only_wrong": 0,
+          "candidate_only_wrong": 0,
+          "both_correct": 2032
+        },
+        "ADC_FFE": {
+          "baseline_errors": 0,
+          "candidate_errors": 0,
+          "symbols": 2032,
+          "error_reduction_count": 0,
+          "absolute_SER_change": 0.0,
+          "relative_error_reduction": null,
+          "both_wrong": 0,
+          "baseline_only_wrong": 0,
+          "candidate_only_wrong": 0,
+          "both_correct": 2032
+        }
+      }
+    },
+    "noise": {
+      "primary": {
+        "raw_FFE": {
+          "baseline_errors": 0,
+          "candidate_errors": 0,
+          "symbols": 2032,
+          "error_reduction_count": 0,
+          "absolute_SER_change": 0.0,
+          "relative_error_reduction": null,
+          "both_wrong": 0,
+          "baseline_only_wrong": 0,
+          "candidate_only_wrong": 0,
+          "both_correct": 2032
+        },
+        "ADC_FFE": {
+          "baseline_errors": 0,
+          "candidate_errors": 0,
+          "symbols": 2032,
+          "error_reduction_count": 0,
+          "absolute_SER_change": 0.0,
+          "relative_error_reduction": null,
+          "both_wrong": 0,
+          "baseline_only_wrong": 0,
+          "candidate_only_wrong": 0,
+          "both_correct": 2032
+        }
+      },
+      "secondary": {
+        "raw_FFE": {
+          "baseline_errors": 218,
+          "candidate_errors": 190,
+          "symbols": 2032,
+          "error_reduction_count": 28,
+          "absolute_SER_change": -0.013779527559055118,
+          "relative_error_reduction": 0.12844036697247707,
+          "both_wrong": 57,
+          "baseline_only_wrong": 161,
+          "candidate_only_wrong": 133,
+          "both_correct": 1681
+        },
+        "ADC_FFE": {
+          "baseline_errors": 235,
+          "candidate_errors": 210,
+          "symbols": 2032,
+          "error_reduction_count": 25,
+          "absolute_SER_change": -0.012303149606299213,
+          "relative_error_reduction": 0.10638297872340426,
+          "both_wrong": 62,
+          "baseline_only_wrong": 173,
+          "candidate_only_wrong": 148,
+          "both_correct": 1649
+        }
+      }
+    }
+  },
+  "paired_noise_minus_noiseless": {
+    "baseline_r5": {
+      "primary": {
+        "noise_minus_noiseless_held_RMS_V": 0.0007604592734668297,
+        "noise_minus_noiseless_ADC_FFE_RMS_target_units": 0.2470976487082553
+      },
+      "secondary": {
+        "noise_minus_noiseless_held_RMS_V": 0.001054038189089285,
+        "noise_minus_noiseless_ADC_FFE_RMS_target_units": 0.6859388305180145
+      }
+    },
+    "secondary_c25_w2": {
+      "primary": {
+        "noise_minus_noiseless_held_RMS_V": 0.0007694720485062639,
+        "noise_minus_noiseless_ADC_FFE_RMS_target_units": 0.2526230495796875
+      },
+      "secondary": {
+        "noise_minus_noiseless_held_RMS_V": 0.0007686586599854867,
+        "noise_minus_noiseless_ADC_FFE_RMS_target_units": 0.6752052898144241
+      }
+    }
+  },
+  "limitations": [
+    "One data sequence and one noise seed; overlapping FFE windows are correlated, not iid BER certification.",
+    "Shared declared noise seed across hardware does not guarantee identical noise realization or independent replicas.",
+    "Each candidate retains its own fixed training detector; comparison is the full candidate chain, not isolated component noise.",
+    "Noise-minus-noiseless differences include noise-induced dynamics and nonlinear changes, not pure device-noise decomposition.",
+    "Measured VDD excludes clock and bias generation, CDAC/reference/control and digital FFE power.",
+    "Numerical7bit quantization and FFE, reset comparators and ideal clocks do not establish complete physical7bit112GS/s ADC performance."
+  ],
+  "next": "Deliver this fixed independent comparison and delete monitor. No further simulations, candidates, fitting or re-use for validation after tuning."
+}

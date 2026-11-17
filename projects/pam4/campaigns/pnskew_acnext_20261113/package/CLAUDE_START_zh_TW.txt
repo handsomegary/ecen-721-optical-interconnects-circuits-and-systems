@@ -1,0 +1,23 @@
+Olympus 交接 · ECEN 721 PAM4 · AC60 後稀疏 AC
+
+1. 解壓到新的資料夾，查看 DESIGN_zh_TW.txt、case_plan.json、portable_review/ 逐行 diff。
+   核對 sha256sum -c SHA256SUMS.txt 或 python3.11 -B ac_next.py --mode verify。
+   依原 wrapper 載入 IC231、Spectre 23.1.0.722.isr15、partition/QOS/account。
+   /usr/bin/python3.11；classic +mt=1；SPECTRE_DEFAULTS=-E；既有 shrink 私有模型根目錄。
+2. 先唯讀 materialize 代表案。在 package 目錄下另建新 review root：
+   /usr/bin/python3.11 -B ac_next.py --mode stage --index 0 --index 2 --index 8 \
+     --index 22 --index 36 --index 46 --root "$PAM4_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+   與 portable_review 逐行對照，允許既有 PDK 根路徑替換及入場欄位。SS/FF wrapper 維持原路徑規則。
+3. 使用者核對後才填 approval_TEMPLATE.json 副本（plan、整包清單 SHA、逐 case IDs）。
+   先建新 run root 在 ~/ecen720_28nm/runs/。設定 PAM4_ACNEXT_PACKAGE、PAM4_ACNEXT_RUN_ROOT、
+   PAM4_ACNEXT_APPROVAL、PAM4_PDK_ROOT。先少量 TT，建議從 0–3（同端接 bypass 及固定路徑）
+   起步，再評估有 TG 的 8–13。TT 有效再比較 SS/FF 14–41 及對照；其餘索引見 case_plan。
+   經原 wrapper 提交 acnext_classic.sbatch，array 只列批准的索引。先保留 raw 看首筆。
+4. /usr/bin/python3.11 -B summarize_acnext.py --run-root "$PAM4_ACNEXT_RUN_ROOT" --output new_summary.json
+   核對 paired_rows 內 2×2 傳遞、端點與同基準、幾種端接、進位鏡像，以及 missing/invalid。
+   保留原 case/deck/diff/log/measurements/completion/resource_observation 及 SHA。
+   已有授權且量測已驗證後，依既有 r2 方式退休新 raw、留收據。看不到 FD 時延後清理。
+5. 先交 sparse 結果、未解析項目、實際 job 時間/RSS。這批到 AC 為止，先審查再決定下一輪。
+
+舊 AC60 證據在 AC60_DIAGNOSTIC.json。完整重算可用 analyze_ac60.py 和原始本地 compact TGZ。
+可用 python3.11 -B ttd_reference.py --ac60-summary ac60_summary.json 重建解析參考。

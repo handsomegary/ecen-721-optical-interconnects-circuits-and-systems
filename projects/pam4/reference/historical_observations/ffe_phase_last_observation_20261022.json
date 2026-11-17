@@ -1,0 +1,105 @@
+{
+  "observed_utc": "2026-10-22T15:37:27.606302Z",
+  "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+  "status": {
+    "actual_spectre_at_failure": [],
+    "actual_spectre_before_case": [],
+    "automatic_retry": false,
+    "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+    "completed_cases": [
+      {
+        "name": "noiseless_phase_00",
+        "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8"
+      },
+      {
+        "name": "noiseless_phase_01",
+        "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3"
+      }
+    ],
+    "current_case": "noiseless_phase_02",
+    "effective_case_timeout_s": 3600,
+    "error": "RuntimeError: Spectre failed in noiseless_phase_02; exit=-6",
+    "free_space_bytes_before_case": 53383393280,
+    "prepared_sha256": {
+      "noise_phase_00": "4160701f1081bddb111a497fb3e8974f171c15f8e18f412f818eb7f1b631bc7a",
+      "noise_phase_01": "110feaf34010cfe19c15f10d58d77c6caeff082ba7fe3366dad24fd540b51131",
+      "noise_phase_02": "3ed88dc39336c76d757f0bc844a254b9aa23488c923de14fa35b2c78d7241a58",
+      "noise_phase_03": "8e0e6adfccbae6dceab361ac58934da04cc6d907e091a79af6d99a1096d10ba6",
+      "noise_phase_04": "b554f53e0ffc43e50e9bd0b87c1544aa7b11dfe1e1f9826c90bdec8c8806e87a",
+      "noise_phase_05": "5754e07a5b8f17f27510def0d587e41503fc01b1fcacedccf81009bf548bb499",
+      "noise_phase_06": "0e5e7b2981f78a9ba8aa8b496a98af903512ca8a6d626a66a3744d71576b62e0",
+      "noise_phase_07": "8ddb745b033971cd736b48578ec6b8fec7b02fe9cc1a0ca010f5f33f7494d60c",
+      "noise_phase_08": "80adf1e5fbada24ea6f9b20885831a764f202e96d838997e83d983981d0ada8a",
+      "noiseless_phase_00": "252952cfb2904aa301c34710ee1eca184c8ab1ba17bb8a8193a92c3da7400def",
+      "noiseless_phase_01": "af23ac827069a53ab04582be0877b66da7f8ff86e30cc83553bd1a387a6446bf",
+      "noiseless_phase_02": "5e26d5d14969b075571f5e3a3c397513407c6186ccadf339ea284fe423761f6b",
+      "noiseless_phase_03": "7448a4a20b44dd64508a7cb0e0b9532212d46d8720a8a8cf17d8481af42bb412",
+      "noiseless_phase_04": "2cbae8571d30ffff8bcd31b329172fcf8e64ead772365e7aba0aa638f461c1ae",
+      "noiseless_phase_05": "dafc21b27e49ff4095565d38b885f8db158b6b933b1e01092782a0c39aecfd59",
+      "noiseless_phase_06": "631de46e0820da6fd25741c3eee140411bfa5a837d094aad7ee5a2c1fdabb516",
+      "noiseless_phase_07": "f26507206c8e6bd09277edb6ebfda419cc10ee579c041cedee30bb8f0a0841eb",
+      "noiseless_phase_08": "f5b1e832e8f5b3de68fdae3793882b2b207c833a5e8dbdec16fa61f57e9cd7a1"
+    },
+    "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+    "run_started_utc": "2026-10-22T15:07:41.865932Z",
+    "runner": {
+      "comm": "python3",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "pgid": 8702,
+      "pid": 8702,
+      "sid": 8702,
+      "start_ticks": 95993,
+      "state": "R"
+    },
+    "scope": "Real-clock phase-swept sampled eye of native AFE and two sampler stages, followed by an ideal numerical 7-bit quantizer and frozen 17-tap FFE; not a continuous analog FFE waveform, physical ADC, DSP implementation or BER certification. Phase is swept for observation, never optimized.",
+    "started_utc": "2026-10-22T15:07:31.186037Z",
+    "status": "failed_terminal",
+    "updated_utc": "2026-10-22T15:33:11.093299Z"
+  },
+  "launch": {
+    "automatic_retry": false,
+    "boot_id": "a10dc57a-d899-4fda-9255-ddfacb329b53",
+    "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+    "runner": {
+      "comm": "python3",
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/usr/bin/bash",
+      "pgid": 8702,
+      "pid": 8702,
+      "sid": 8702,
+      "start_ticks": 95993,
+      "state": "R"
+    },
+    "scope": "One bounded 18-case phase sweep, no old queue restart or parameter fitting",
+    "script_sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+    "started_utc": "2026-10-22T15:07:41.720980Z"
+  },
+  "identity": {
+    "live": null,
+    "boot_matches": true,
+    "start_matches": false,
+    "script_matches": true
+  },
+  "actual_spectre": [],
+  "diagnostic": {
+    "transient_started": false,
+    "spectre18_seen": true,
+    "completion_lines": [],
+    "memory_lines": [
+      "Peak resident memory used = 100 Mbytes."
+    ],
+    "log_bytes": 4295,
+    "run_status": {
+      "audit": [],
+      "error_lines": [],
+      "exit_code": -6,
+      "issue_codes": [
+        "SFE-1131",
+        "SPECTRE-18"
+      ],
+      "seconds": 1.279
+    }
+  },
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb"
+}

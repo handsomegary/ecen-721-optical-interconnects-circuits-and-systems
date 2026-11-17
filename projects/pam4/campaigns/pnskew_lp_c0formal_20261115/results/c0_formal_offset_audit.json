@@ -1,0 +1,554 @@
+{
+  "schema": "pam4_c0_frozen_detector_offset_audit_v1",
+  "stimulus_comparison": {
+    "non_stimulus_deck_identical": true,
+    "pwl": {
+      "PAM4Vp": {
+        "levels_V": [
+          -0.1,
+          -0.03333333333333333,
+          0.03333333333333333,
+          0.1
+        ],
+        "first_training_V": 0.03333333333333333,
+        "first_payload_V": -0.1,
+        "identical_time_grid": true,
+        "training_values_differ_from_payload": true
+      },
+      "PAM4Vm": {
+        "levels_V": [
+          -0.1,
+          -0.03333333333333333,
+          0.03333333333333333,
+          0.1
+        ],
+        "first_training_V": -0.03333333333333333,
+        "first_payload_V": 0.1,
+        "identical_time_grid": true,
+        "training_values_differ_from_payload": true
+      }
+    },
+    "training_initial_differential_V": 0.06666666666666667,
+    "payload_initial_differential_V": -0.2,
+    "training_seed": 2026111501,
+    "payload_seed": 2026111502
+  },
+  "training_evidence": {
+    "case_id": "c0f_training_zero_cp00_phm1",
+    "measurement_sha256": "dceee9915f1c3b98000f3a57d9bd5031c26c15fe8cf9f33966bafc73111c96a0",
+    "raw_sha256": "8ecd626fa103c510bfaafe1c360342e61a700704a3e746cee285541dd5578d8e",
+    "slurm_task_id": "758926",
+    "saved_analog_monitor_window": {
+      "early": {
+        "before_driver": {
+          "mean_differential_V": -0.0004302842406151304,
+          "mean_common_mode_V": 0.7,
+          "saved_signals": [
+            "PNC_PREP",
+            "PNC_PREN"
+          ]
+        },
+        "AFE_output": {
+          "mean_differential_V": -0.00035644222355564584,
+          "mean_common_mode_V": 0.7564937955732998,
+          "saved_signals": [
+            "X_o_p",
+            "X_o_m"
+          ]
+        },
+        "sample_count": 2560,
+        "first_time_s": 1.343750000000001e-09,
+        "last_time_s": 4.199776785713992e-09
+      },
+      "late": {
+        "before_driver": {
+          "mean_differential_V": 0.0018773588404896186,
+          "mean_common_mode_V": 0.7,
+          "saved_signals": [
+            "PNC_PREP",
+            "PNC_PREN"
+          ]
+        },
+        "AFE_output": {
+          "mean_differential_V": 0.00013045134344885027,
+          "mean_common_mode_V": 0.7564966008983973,
+          "saved_signals": [
+            "X_o_p",
+            "X_o_m"
+          ]
+        },
+        "sample_count": 1536,
+        "first_time_s": 4.200892857142564e-09,
+        "last_time_s": 5.914062499999472e-09
+      }
+    }
+  },
+  "payload_evidence": {
+    "case_id": "c0f_payload_zero_cp00_phm1",
+    "measurement_sha256": "87683c59a6e44d00d01944518f6770e6a9f943d4dbc7af374cfb6f7b5b079d56",
+    "raw_sha256": "920d2a424903d9891d9707531e2d10f6a5b9ea7ecd1d2ff770f2a24b49e36464",
+    "slurm_task_id": "759019",
+    "saved_analog_monitor_window": {
+      "early": {
+        "before_driver": {
+          "mean_differential_V": -0.004640558256929011,
+          "mean_common_mode_V": 0.7,
+          "saved_signals": [
+            "PNC_PREP",
+            "PNC_PREN"
+          ]
+        },
+        "AFE_output": {
+          "mean_differential_V": 0.0012030165628115976,
+          "mean_common_mode_V": 0.7564842996230566,
+          "saved_signals": [
+            "X_o_p",
+            "X_o_m"
+          ]
+        },
+        "sample_count": 2560,
+        "first_time_s": 1.343750000000001e-09,
+        "last_time_s": 4.199776785713992e-09
+      },
+      "late": {
+        "before_driver": {
+          "mean_differential_V": -0.0236742869916327,
+          "mean_common_mode_V": 0.7,
+          "saved_signals": [
+            "PNC_PREP",
+            "PNC_PREN"
+          ]
+        },
+        "AFE_output": {
+          "mean_differential_V": -0.0003679418979499096,
+          "mean_common_mode_V": 0.7565007227520495,
+          "saved_signals": [
+            "X_o_p",
+            "X_o_m"
+          ]
+        },
+        "sample_count": 1536,
+        "first_time_s": 4.200892857142564e-09,
+        "last_time_s": 5.914062499999472e-09
+      }
+    }
+  },
+  "selection_files_sha256": {
+    "selected_phase.json": "39f5c214ff5114015794ba1a38c1c10bbff727a4ed6d03a5b0fe762064e1095b",
+    "selected_codes.json": "0357cfdaf7244612efeb3d85326f0808b16870a1e620b41dd177ad43234e7be7"
+  },
+  "late_adc_tx_indices": [
+    448,
+    640
+  ],
+  "evaluation_samples_per_plane": 176,
+  "planes": {
+    "primary": {
+      "training": {
+        "window": {
+          "sample_count": 176,
+          "symbol_errors": 0,
+          "SER": 0.0,
+          "gray_bit_errors": 0,
+          "prediction_RMSE_in_target_symbol_units": 0.1848794443258063,
+          "confusion_rows_true_cols_decided": [
+            [
+              39,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              49,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              49,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              39
+            ]
+          ],
+          "higher_decisions": 0,
+          "lower_decisions": 0,
+          "one_level_higher": 0,
+          "one_level_lower": 0,
+          "mean_signed_residual_symbol_units": 0.09630021013815689,
+          "signed_residual_by_true_level": [
+            0.15104115028966625,
+            0.08609516994312694,
+            0.06828316075603857,
+            0.08958189535280825
+          ],
+          "first_center_read_s": 4.299601970026232e-09,
+          "last_center_read_s": 5.862103677928437e-09,
+          "ffe_center_tx_indices": [
+            456,
+            632
+          ],
+          "error_tx_indices": []
+        },
+        "center_symbol_histogram": [
+          39,
+          49,
+          49,
+          39
+        ],
+        "mean_residual_by_true_level": [
+          0.1510411502896661,
+          0.08609516994312702,
+          0.06828316075603855,
+          0.08958189535280821
+        ],
+        "mean_quantized_ADC_V": 4.069010416666625e-05,
+        "mean_analog_ADC_V": 3.0728244685763094e-05,
+        "frozen_intercept_target_units": -0.05290454243232508,
+        "frozen_normalization_center_V": -0.0007690429687500002,
+        "frozen_ADC_input_scale_V": 0.010516306057282607,
+        "mean_tap_linear_contributions_target_units": [
+          0.0038511189094691672,
+          -0.006811179890800182,
+          0.023111957449663517,
+          -0.03180807223366593,
+          0.06853862647422826,
+          -0.10968664078447338,
+          0.242477739650492,
+          -0.3100139752518412,
+          0.3387493788229927,
+          -0.07443297982686443,
+          0.01581337249473489,
+          -0.008021924608323997,
+          0.003869045377027692,
+          -0.00530943701283867,
+          0.0029232545237298,
+          -0.0037219212201481046,
+          -0.00032361030290013195
+        ],
+        "mean_predicted_target_units": 0.09630021013815689,
+        "mean_true_target_units": 0.0,
+        "mean_quantization_contribution_target_units": 0.0017817695869479068,
+        "clipping_count": 0,
+        "ADC_input_count": 192
+      },
+      "payload": {
+        "window": {
+          "sample_count": 176,
+          "symbol_errors": 1,
+          "SER": 0.005681818181818182,
+          "gray_bit_errors": 1,
+          "prediction_RMSE_in_target_symbol_units": 0.4477169564133301,
+          "confusion_rows_true_cols_decided": [
+            [
+              50,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              51,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              41,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              33
+            ]
+          ],
+          "higher_decisions": 1,
+          "lower_decisions": 0,
+          "one_level_higher": 1,
+          "one_level_lower": 0,
+          "mean_signed_residual_symbol_units": 0.36525415828661634,
+          "signed_residual_by_true_level": [
+            0.5087202520975858,
+            0.4460935887290749,
+            0.33197818712621774,
+            0.05994303951848012
+          ],
+          "first_center_read_s": 4.299601970026232e-09,
+          "last_center_read_s": 5.862103677928437e-09,
+          "ffe_center_tx_indices": [
+            456,
+            632
+          ],
+          "error_tx_indices": [
+            590
+          ]
+        },
+        "center_symbol_histogram": [
+          51,
+          51,
+          41,
+          33
+        ],
+        "mean_residual_by_true_level": [
+          0.5087202520975859,
+          0.4460935887290749,
+          0.33197818712621785,
+          0.05994303951848024
+        ],
+        "mean_quantized_ADC_V": -0.0005981445312500006,
+        "mean_analog_ADC_V": -0.0006054726178852474,
+        "frozen_intercept_target_units": -0.05290454243232508,
+        "frozen_normalization_center_V": -0.0007690429687500002,
+        "frozen_ADC_input_scale_V": 0.010516306057282607,
+        "mean_tap_linear_contributions_target_units": [
+          0.004355547582749764,
+          -0.007070653410449713,
+          0.018716221114512058,
+          -0.019984822083010625,
+          0.03471181512970239,
+          -0.04890789610736255,
+          0.09664715580395492,
+          -0.0966334111856937,
+          0.10103051649106788,
+          -0.031574754499803626,
+          0.00961889278645253,
+          -0.0058532387831770945,
+          0.0028414104827308275,
+          -0.0032223276425860188,
+          0.0012251601761873931,
+          -0.0012553225417067562,
+          -0.00012195623098985491
+        ],
+        "mean_predicted_target_units": 0.001617794650252708,
+        "mean_true_target_units": -0.36363636363636365,
+        "mean_quantization_contribution_target_units": 0.00017270902009740928,
+        "clipping_count": 0,
+        "ADC_input_count": 192
+      },
+      "payload_minus_training": {
+        "delta_frozen_intercept": 0.0,
+        "delta_held_sample_linear_terms": -0.09468241548790417,
+        "negative_delta_target_sequence_mean": 0.36363636363636365,
+        "delta_FS_ADC_quantization_contribution": -0.0016090605668504976,
+        "residual_delta_from_label_mix_at_training_residuals": 0.005118906165892563,
+        "residual_delta_within_true_levels_at_payload_mix": 0.2638350419825669,
+        "equal_class_weight_delta": 0.23793342278242977
+      }
+    },
+    "secondary": {
+      "training": {
+        "window": {
+          "sample_count": 176,
+          "symbol_errors": 0,
+          "SER": 0.0,
+          "gray_bit_errors": 0,
+          "prediction_RMSE_in_target_symbol_units": 0.2562847598616459,
+          "confusion_rows_true_cols_decided": [
+            [
+              39,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              49,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              49,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              39
+            ]
+          ],
+          "higher_decisions": 0,
+          "lower_decisions": 0,
+          "one_level_higher": 0,
+          "one_level_lower": 0,
+          "mean_signed_residual_symbol_units": 0.0940565568044407,
+          "signed_residual_by_true_level": [
+            0.20112178706371875,
+            0.07292374528724854,
+            0.09864077801008997,
+            0.007783145141716741
+          ],
+          "first_center_read_s": 4.331601970026232e-09,
+          "last_center_read_s": 5.894103677928437e-09,
+          "ffe_center_tx_indices": [
+            456,
+            632
+          ],
+          "error_tx_indices": []
+        },
+        "center_symbol_histogram": [
+          39,
+          49,
+          49,
+          39
+        ],
+        "mean_residual_by_true_level": [
+          0.20112178706371858,
+          0.07292374528724853,
+          0.09864077801008998,
+          0.007783145141716695
+        ],
+        "mean_quantized_ADC_V": -1.8310546874999864e-05,
+        "mean_analog_ADC_V": -2.6805556080229432e-05,
+        "frozen_intercept_target_units": -0.05199093750687225,
+        "frozen_normalization_center_V": 0.0004943847656249999,
+        "frozen_ADC_input_scale_V": 0.005995998195421114,
+        "mean_tap_linear_contributions_target_units": [
+          0.0028536859101330257,
+          -0.006461937377288984,
+          0.024103940479534788,
+          -0.039098520578639606,
+          0.0826430061111192,
+          -0.139151364202601,
+          0.2933880598558169,
+          -0.38219378085389616,
+          0.39287317455607096,
+          -0.08481192106423975,
+          0.009877153664803155,
+          0.0042943746049474265,
+          -0.014456542593192716,
+          0.01382173621873148,
+          -0.014733678716556503,
+          0.008060992478997272,
+          -0.004960884182426634
+        ],
+        "mean_predicted_target_units": 0.0940565568044407,
+        "mean_true_target_units": 0.0,
+        "mean_quantization_contribution_target_units": -0.004348362509472309,
+        "clipping_count": 0,
+        "ADC_input_count": 192
+      },
+      "payload": {
+        "window": {
+          "sample_count": 176,
+          "symbol_errors": 5,
+          "SER": 0.028409090909090908,
+          "gray_bit_errors": 5,
+          "prediction_RMSE_in_target_symbol_units": 0.5067582705082393,
+          "confusion_rows_true_cols_decided": [
+            [
+              47,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              50,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              41,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              33
+            ]
+          ],
+          "higher_decisions": 5,
+          "lower_decisions": 0,
+          "one_level_higher": 5,
+          "one_level_lower": 0,
+          "mean_signed_residual_symbol_units": 0.3713121724126852,
+          "signed_residual_by_true_level": [
+            0.5679920223965986,
+            0.43998323806550255,
+            0.32193106683210204,
+            0.02257667639240113
+          ],
+          "first_center_read_s": 4.331601970026232e-09,
+          "last_center_read_s": 5.894103677928437e-09,
+          "ffe_center_tx_indices": [
+            456,
+            632
+          ],
+          "error_tx_indices": [
+            506,
+            531,
+            549,
+            551,
+            555
+          ]
+        },
+        "center_symbol_histogram": [
+          51,
+          51,
+          41,
+          33
+        ],
+        "mean_residual_by_true_level": [
+          0.5679920223965987,
+          0.4399832380655026,
+          0.3219310668321022,
+          0.02257667639240125
+        ],
+        "mean_quantized_ADC_V": 0.00036926269531250004,
+        "mean_analog_ADC_V": 0.0003754682584124972,
+        "frozen_intercept_target_units": -0.05199093750687225,
+        "frozen_normalization_center_V": 0.0004943847656249999,
+        "frozen_ADC_input_scale_V": 0.005995998195421114,
+        "mean_tap_linear_contributions_target_units": [
+          0.003308875073712529,
+          -0.006886665655608447,
+          0.020519711411945973,
+          -0.02628808380202049,
+          0.04578480129501029,
+          -0.06884330650023414,
+          0.13095868415709466,
+          -0.1379049724730552,
+          0.13614416940061852,
+          -0.03855087321101805,
+          0.006177350285345113,
+          0.0032028278826196524,
+          -0.010994457959224232,
+          0.008933019228183368,
+          -0.006979110971000446,
+          0.0030608406224598324,
+          -0.0019760625016351204
+        ],
+        "mean_predicted_target_units": 0.007675808776321603,
+        "mean_true_target_units": -0.36363636363636365,
+        "mean_quantization_contribution_target_units": 0.0028749905941684553,
+        "clipping_count": 0,
+        "ADC_input_count": 192
+      },
+      "payload_minus_training": {
+        "delta_frozen_intercept": 0.0,
+        "delta_held_sample_linear_terms": -0.08638074802811904,
+        "negative_delta_target_sequence_mean": 0.36363636363636365,
+        "delta_FS_ADC_quantization_contribution": 0.0072233531036407644,
+        "residual_delta_from_label_mix_at_training_residuals": 0.009792521820500577,
+        "residual_delta_within_true_levels_at_payload_mix": 0.26746309378774397,
+        "equal_class_weight_delta": 0.24300338704595778
+      }
+    }
+  },
+  "interpretation": "Exposes seed/label mix, frozen intercept, and held/quantized sample contribution. No intercept estimate from scored payload or claim about unsaved analog bias nodes."
+}

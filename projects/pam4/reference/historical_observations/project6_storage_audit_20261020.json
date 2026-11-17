@@ -1,0 +1,227 @@
+{
+  "observed_UTC": "2026-10-20T20:23:05.751355Z",
+  "read_only": true,
+  "project": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm",
+  "group_columns": [
+    "files",
+    "apparent_bytes",
+    "allocated_bytes"
+  ],
+  "groups": {
+    "other": [
+      1190,
+      27164510,
+      30711808
+    ],
+    "text_metadata_and_summaries": [
+      1183,
+      18204472,
+      22106112
+    ],
+    "logs": [
+      1257,
+      8802226,
+      10272768
+    ],
+    "netlist_or_model": [
+      572,
+      54913602,
+      56287232
+    ],
+    "dc_result": [
+      473,
+      1013322,
+      2048000
+    ],
+    "ac_noise_result": [
+      756,
+      5337232330,
+      5338734592
+    ],
+    "spectre_info": [
+      350,
+      85581004,
+      86708224
+    ],
+    "transient_waveform": [
+      191,
+      9051717996,
+      9052033024
+    ]
+  },
+  "largest_files": [
+    [
+      215699456,
+      215699183,
+      "runs/adc_cdac_native_r5_20261013/split/raw/tranResponse.tran.tran"
+    ],
+    [
+      209645568,
+      209642641,
+      "runs/adc_isolation_r5_20261013/cml_w2_m5_s10_noise151/raw/tranResponse.tran.tran"
+    ],
+    [
+      209641472,
+      209641056,
+      "runs/adc_isolation_r5_20261013/cml_w2_m5_s10_noise101/raw/tranResponse.tran.tran"
+    ],
+    [
+      206041088,
+      206041001,
+      "runs/adc_isolation_r5_20261013/cml_w1_m5_s10/raw/tranResponse.tran.tran"
+    ],
+    [
+      206020608,
+      206017318,
+      "runs/adc_isolation_r5_20261013/cml_w2_m5_s10/raw/tranResponse.tran.tran"
+    ],
+    [
+      205856768,
+      205855105,
+      "runs/adc_cdac_native_r5_20261013/binary/raw/tranResponse.tran.tran"
+    ],
+    [
+      205852672,
+      205849452,
+      "runs/adc_acquisition_r5_20261013/cml1_late32_s05/raw/tranResponse.tran.tran"
+    ],
+    [
+      205795328,
+      205791417,
+      "runs/adc_acquisition_r5_20261013/cml2_late32_s05/raw/tranResponse.tran.tran"
+    ],
+    [
+      205344768,
+      205343767,
+      "runs/adc_isolation_r5_20261013/follower_w1_m5_s10/raw/tranResponse.tran.tran"
+    ],
+    [
+      204640256,
+      204638093,
+      "runs/adc_acquisition_r5_20261013/cml2_late32_s10_noise191/raw/tranResponse.tran.tran"
+    ],
+    [
+      204582912,
+      204581312,
+      "runs/adc_acquisition_r5_20261013/cml2_late32_s10_noise181/raw/tranResponse.tran.tran"
+    ],
+    [
+      203743232,
+      203743003,
+      "runs/adc_cdac_acquisition_r6_20261013/split_main_tg1_low_tg1/raw/tranResponse.tran.tran"
+    ]
+  ],
+  "largest_repeated_filenames": [
+    [
+      9052033024,
+      191,
+      "tranResponse.tran.tran"
+    ],
+    [
+      2353025024,
+      355,
+      "noiseResponse.noise"
+    ],
+    [
+      1462079488,
+      14,
+      "noisePrimary.noise"
+    ],
+    [
+      1448701952,
+      12,
+      "noiseSecondary.noise"
+    ],
+    [
+      86708224,
+      350,
+      "dcOpInfo.info"
+    ],
+    [
+      74895360,
+      371,
+      "acResponse.ac"
+    ],
+    [
+      56111104,
+      567,
+      "bench.scs"
+    ],
+    [
+      9216000,
+      6,
+      "bench.scs.tranResponse.srf"
+    ],
+    [
+      4780032,
+      567,
+      "spectre.log"
+    ],
+    [
+      4681728,
+      567,
+      "console.log"
+    ],
+    [
+      4612096,
+      5,
+      "native_effective_values.tsv"
+    ],
+    [
+      3010560,
+      12,
+      "sch.oa"
+    ],
+    [
+      2859008,
+      349,
+      "optimization_record.json"
+    ],
+    [
+      2658304,
+      19,
+      "comparator_r5_summary.json"
+    ],
+    [
+      2310144,
+      564,
+      "logFile"
+    ]
+  ],
+  "preserved_interruption_failure_directories": {
+    "validation_noiseless_interrupted_userstop_20261013": [
+      8,
+      105607168
+    ],
+    "validation_noiseless_interrupted_vmreboot_20261013T1440Z": [
+      7,
+      17821696
+    ],
+    "validation_noise_interrupted_powercycle_20261013_archived_20261017": [
+      8,
+      113815552
+    ],
+    "validation_noise_failed_readin_20261017_archived_20261020": [
+      5,
+      741376
+    ],
+    "validation_noise_failed_readin_20261020_archived_retry2": [
+      5,
+      741376
+    ],
+    "baseline_r5_late1_interrupted_userstop_20261013": [
+      8,
+      26185728
+    ]
+  },
+  "plot_libraries": {
+    "numpy": true,
+    "matplotlib": true,
+    "PIL": true
+  },
+  "r5_raw_sizes": {
+    "noise": 139123267,
+    "noiseless": 139126497
+  },
+  "local_workspace_apparent_bytes": 3796551
+}

@@ -1,0 +1,24 @@
+{
+  "updated_UTC": "2026-10-13T17:52:00.504726Z",
+  "user_request": "Pause VMware and all simulations for laptop travel; resume at next location.",
+  "VM_name": "Centos618_user",
+  "VMX": "D:\\IC618(don't delete)\\IC618-OK\\IC618-OK\\IC618.vmx",
+  "operation": "vmrun pause",
+  "pause_exit_code": 0,
+  "confirmed_mode": "paused in memory",
+  "durable_VM_suspend_completed": false,
+  "reason": "Host D: free space measured 32768 then 40960 bytes; VM configured memory 20480 MiB. No suspend attempted with disk full.",
+  "C_free_bytes": 156855865344,
+  "host_hibernate_available": true,
+  "automation_id": "project-6",
+  "automation_status": "PAUSED",
+  "vmx_process_id_last_observed": 17532,
+  "vmx_process_start_local": "2026-10-13T12:48:06.794418-05:00",
+  "actions_not_taken": [
+    "No VM shutdown/reset/kill",
+    "No files deleted or moved",
+    "No simulation restarted",
+    "No host power action"
+  ],
+  "resume_requirements": "Wait for explicit user resume. Check host disk capacity and VM pause/suspend state, then exact guest boot/process identities and saved Project6 noise summary before any new dispatch. Full D: capacity must be addressed before sustained VM disk writes. Existing Project6 noise result remains unknown."
+}

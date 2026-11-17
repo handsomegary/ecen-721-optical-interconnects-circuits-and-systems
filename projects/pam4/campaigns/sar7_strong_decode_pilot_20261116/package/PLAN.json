@@ -1,0 +1,41 @@
+{
+  "schema": "pam4_sar7_strong_decode_pilot_v1",
+  "cases": [
+    {
+      "case_id": "sar7_15_tt_175gs_strong_decode",
+      "parent_job": "761433",
+      "parent_manifest_sha256": "12e5745c9a28f26a5a1bbb8cc11030e1f41da59176d7fdca9b1b187c9763ae24",
+      "parent_deck_sha256": "ecd325622c426dfe2c1f5dd42cb00ca30c59f238ba77764d7757af15dd04720a",
+      "source_summary_sha256": "c2f46592839597c54d61ee843da089f86fcc9771aadc7cec0d01ed15f4bfbab6",
+      "waits_ps": [
+        42,
+        45,
+        25,
+        19,
+        15,
+        8,
+        6
+      ],
+      "reads_ps": [
+        39,
+        44,
+        40,
+        40,
+        38,
+        41,
+        54
+      ],
+      "readouts_ps": [
+        565,
+        563,
+        554,
+        557
+      ],
+      "clock_off_ps": 568,
+      "oai_series_replicas": 2,
+      "nor3_p_replicas": 3,
+      "decoder_inv_replicas": 2,
+      "reference_tg_replicas": 1
+    }
+  ]
+}

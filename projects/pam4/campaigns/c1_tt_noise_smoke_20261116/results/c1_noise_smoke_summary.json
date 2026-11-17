@@ -1,0 +1,1144 @@
+{
+ "schema": "pam4_c1_tt_noise_smoke_v1",
+ "status": "c1_complete",
+ "conditions": [
+  {
+   "case_id": "c1n_zero_cp00_phm1_s1001",
+   "profile": "zero",
+   "code": 0,
+   "metrics": {
+    "primary": {
+     "sample_count": 2032,
+     "symbol_errors": 113,
+     "SER": 0.05561023622047244,
+     "gray_bit_errors": 113,
+     "bit_count": 4064,
+     "gray_BER": 0.02780511811023622,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 0.538717879429847,
+     "prediction_EVM_RMS_percent_of_target_RMS": 24.32311687669263,
+     "confusion_rows_true_cols_decided": [
+      [
+       445,
+       40,
+       0,
+       0
+      ],
+      [
+       11,
+       501,
+       19,
+       0
+      ],
+      [
+       0,
+       19,
+       479,
+       11
+      ],
+      [
+       0,
+       0,
+       13,
+       494
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -2.682944625925459,
+       "std": 0.5297087965851104,
+       "min": -4.216874546262965,
+       "max": -0.9200822182698521,
+       "p05": -3.6371905765326593,
+       "p95": -1.8652093874323838
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -0.886988270660113,
+       "std": 0.5005913184931249,
+       "min": -2.3777625600956727,
+       "max": 0.5500577127899758,
+       "p05": -1.7136313180220637,
+       "p95": -0.12272677134884089
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 0.9487327290600657,
+       "std": 0.5098760266300169,
+       "min": -0.5648731445430641,
+       "max": 2.5680143185518647,
+       "p05": 0.08031799155956998,
+       "p95": 1.777286007542266
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 2.921918474914223,
+       "std": 0.5030057508108517,
+       "min": 1.4805893526555947,
+       "max": 4.550949610200987,
+       "p05": 2.1513725011288205,
+       "p95": 3.8108764244101287
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -1.4576803418258204,
+      -1.1149308573330399,
+      -1.08742496589627
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      0.15157806941032015,
+      0.20304476290841086,
+      0.37408649358655444
+     ],
+     "clipped_count": 0
+    },
+    "secondary": {
+     "sample_count": 2032,
+     "symbol_errors": 776,
+     "SER": 0.38188976377952755,
+     "gray_bit_errors": 828,
+     "bit_count": 4064,
+     "gray_BER": 0.20374015748031496,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 1.4285594630159595,
+     "prediction_EVM_RMS_percent_of_target_RMS": 64.49947200753206,
+     "confusion_rows_true_cols_decided": [
+      [
+       317,
+       157,
+       11,
+       0
+      ],
+      [
+       112,
+       286,
+       120,
+       13
+      ],
+      [
+       12,
+       111,
+       275,
+       111
+      ],
+      [
+       0,
+       16,
+       113,
+       378
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -2.6671133867268613,
+       "std": 1.4170028310936402,
+       "min": -6.934702240784358,
+       "max": 1.3507782392577856,
+       "p05": -5.100600904867175,
+       "p95": -0.5553818013089165
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -0.9059486820861373,
+       "std": 1.4096603507511185,
+       "min": -5.277246156814908,
+       "max": 3.4407273203303856,
+       "p05": -3.2862557109105097,
+       "p95": 1.343069959320013
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 0.9611729680815511,
+       "std": 1.3783612413795667,
+       "min": -2.7315550798019474,
+       "max": 5.374674424532084,
+       "p05": -1.4591781142532367,
+       "p95": 3.2730795595345654
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 2.887483256390678,
+       "std": 1.463022432467711,
+       "min": -1.138359465559251,
+       "max": 6.556480480940478,
+       "p05": 0.37617354149647425,
+       "p95": 5.391505709498415
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -6.628024396072693,
+      -6.1722824001323335,
+      -6.513033890091335
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      -2.730873909601593,
+      -2.80224807357325,
+      -2.896906018038091
+     ],
+     "clipped_count": 0
+    }
+   },
+   "measurement_sha256": "d38721b739f22dbf3255a43b140e5b4c07cb581d605c2a3ac9da96b1c30788fd",
+   "tran_sha256": "ea516f9f1d86550a58d1af658581f33ce4776f01347413758196d51d82f8e15a",
+   "job_id": "761319",
+   "solver_seconds": 6059.974865654949,
+   "peak_RSS_KiB": 285240,
+   "raw_bytes": 145748408
+  },
+  {
+   "case_id": "c1n_a_cp00_phm1_s1001",
+   "profile": "a",
+   "code": 0,
+   "metrics": {
+    "primary": {
+     "sample_count": 2032,
+     "symbol_errors": 235,
+     "SER": 0.1156496062992126,
+     "gray_bit_errors": 235,
+     "bit_count": 4064,
+     "gray_BER": 0.0578248031496063,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 0.6418661031153776,
+     "prediction_EVM_RMS_percent_of_target_RMS": 28.980260060768277,
+     "confusion_rows_true_cols_decided": [
+      [
+       388,
+       97,
+       0,
+       0
+      ],
+      [
+       9,
+       481,
+       41,
+       0
+      ],
+      [
+       0,
+       30,
+       468,
+       11
+      ],
+      [
+       0,
+       0,
+       47,
+       460
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -2.4966451313354283,
+       "std": 0.5921432789612272,
+       "min": -4.557155399721097,
+       "max": -0.9790385344389819,
+       "p05": -3.462993411378328,
+       "p95": -1.481854908528168
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -0.7893262836697049,
+       "std": 0.5550563177123494,
+       "min": -2.4003952865829397,
+       "max": 0.6710989668662325,
+       "p05": -1.7421649000366044,
+       "p95": 0.0948766489425304
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 0.9023740167037099,
+       "std": 0.5428010567349494,
+       "min": -0.8565515436329182,
+       "max": 2.307340831251521,
+       "p05": -0.018740268571444087,
+       "p95": 1.8030417932175968
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 2.687297408909351,
+       "std": 0.5487490797451536,
+       "min": 1.2960788292598193,
+       "max": 4.3692762379596415,
+       "p05": 1.8225160902258088,
+       "p95": 3.62636313571765
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -1.4213567521439576,
+      -1.5276505104991507,
+      -1.0112620019917016
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      -0.26030999150843637,
+      -0.11361691751397449,
+      0.019474297008212016
+     ],
+     "clipped_count": 0
+    },
+    "secondary": {
+     "sample_count": 2032,
+     "symbol_errors": 862,
+     "SER": 0.4242125984251969,
+     "gray_bit_errors": 929,
+     "bit_count": 4064,
+     "gray_BER": 0.22859251968503938,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 1.4872496901800256,
+     "prediction_EVM_RMS_percent_of_target_RMS": 67.14933626735957,
+     "confusion_rows_true_cols_decided": [
+      [
+       293,
+       175,
+       17,
+       0
+      ],
+      [
+       103,
+       269,
+       141,
+       18
+      ],
+      [
+       12,
+       117,
+       273,
+       107
+      ],
+      [
+       0,
+       20,
+       152,
+       335
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -2.4658219215883745,
+       "std": 1.4598636869483301,
+       "min": -6.545127765584848,
+       "max": 1.6816045675563212,
+       "p05": -4.948452189711067,
+       "p95": -0.21906767400400273
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -0.797413131535067,
+       "std": 1.4613002130907946,
+       "min": -5.357460683290235,
+       "max": 3.4717965796400283,
+       "p05": -3.2335760966982305,
+       "p95": 1.5544696147306216
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 0.9099575525857965,
+       "std": 1.394064630014703,
+       "min": -2.841625288566719,
+       "max": 4.776337694744961,
+       "p05": -1.3815006718807559,
+       "p95": 3.329404146798751
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 2.6392634682429748,
+       "std": 1.4780358365121156,
+       "min": -1.2934488481884177,
+       "max": 6.434602196167924,
+       "p05": 0.15290324736849115,
+       "p95": 5.297444483752253
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -7.039065250846556,
+      -6.313421868206747,
+      -6.069786542933379
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      -3.014508422694228,
+      -2.9359702866113775,
+      -3.17650089943026
+     ],
+     "clipped_count": 0
+    }
+   },
+   "measurement_sha256": "ef5337bcb8c005365c1b5a83967fa428ae1e36bae28aefbb353b9aa39bc9cc3c",
+   "tran_sha256": "cc814fcde8710f99f2f4e6c8b5ef73c408b58762c6458ddd04d7a782461a19e4",
+   "job_id": "761422",
+   "solver_seconds": 5976.591861616354,
+   "peak_RSS_KiB": 283168,
+   "raw_bytes": 145748407
+  },
+  {
+   "case_id": "c1n_a_cm60_phm1_s1001",
+   "profile": "a",
+   "code": -60,
+   "metrics": {
+    "primary": {
+     "sample_count": 2032,
+     "symbol_errors": 110,
+     "SER": 0.054133858267716536,
+     "gray_bit_errors": 110,
+     "bit_count": 4064,
+     "gray_BER": 0.027066929133858268,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 0.6137788311930932,
+     "prediction_EVM_RMS_percent_of_target_RMS": 27.71211949258033,
+     "confusion_rows_true_cols_decided": [
+      [
+       476,
+       9,
+       0,
+       0
+      ],
+      [
+       28,
+       485,
+       18,
+       0
+      ],
+      [
+       0,
+       18,
+       461,
+       30
+      ],
+      [
+       0,
+       0,
+       7,
+       500
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -3.1427031419272353,
+       "std": 0.5354117481363252,
+       "min": -4.85216250505592,
+       "max": -1.6607932137462789,
+       "p05": -4.0137383850275725,
+       "p95": -2.243749425047001
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -1.0464960563218557,
+       "std": 0.5652247010325273,
+       "min": -2.6028050662038593,
+       "max": 0.7743765211401755,
+       "p05": -2.005091056729756,
+       "p95": -0.14975092666554657
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 1.095850012636856,
+       "std": 0.5866959884650144,
+       "min": -0.9812946706705588,
+       "max": 2.9340601165203806,
+       "p05": 0.11063982718488884,
+       "p95": 2.0275417016905477
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 3.3969168815440587,
+       "std": 0.6057721709749064,
+       "min": 1.6812698340123855,
+       "max": 5.30308161482623,
+       "p05": 2.398755693712821,
+       "p95": 4.433665906197142
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -0.9420118524575805,
+      -1.7556711918107344,
+      -1.252790282507995
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      0.23865836831724474,
+      0.2603907538504354,
+      0.37121399202227323
+     ],
+     "clipped_count": 0
+    },
+    "secondary": {
+     "sample_count": 2032,
+     "symbol_errors": 689,
+     "SER": 0.3390748031496063,
+     "gray_bit_errors": 732,
+     "bit_count": 4064,
+     "gray_BER": 0.18011811023622049,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 1.4685396459483602,
+     "prediction_EVM_RMS_percent_of_target_RMS": 66.30457760982898,
+     "confusion_rows_true_cols_decided": [
+      [
+       380,
+       99,
+       6,
+       0
+      ],
+      [
+       139,
+       274,
+       101,
+       17
+      ],
+      [
+       11,
+       98,
+       269,
+       131
+      ],
+      [
+       0,
+       9,
+       78,
+       420
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -3.1305202656150617,
+       "std": 1.439003310191892,
+       "min": -7.17157719232385,
+       "max": 0.7433089170635315,
+       "p05": -5.577071722755308,
+       "p95": -0.8873237508720303
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -1.0491646913902692,
+       "std": 1.442706502296545,
+       "min": -5.815119294584799,
+       "max": 3.25219387020731,
+       "p05": -3.355601822968435,
+       "p95": 1.303848351383278
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 1.1211833052216045,
+       "std": 1.426394703736878,
+       "min": -3.047506875956258,
+       "max": 5.415503004596791,
+       "p05": -1.2683336539853824,
+       "p95": 3.482833395843989
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 3.3565135688485737,
+       "std": 1.5097490099405217,
+       "min": -0.9389112360004787,
+       "max": 7.472930435290785,
+       "p05": 0.8568457302603637,
+       "p95": 5.908672236465712
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -6.558428211648331,
+      -6.299700746163568,
+      -6.3544142405972694
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      -2.4682780720964046,
+      -2.5721820053686604,
+      -2.6259876655836254
+     ],
+     "clipped_count": 0
+    }
+   },
+   "measurement_sha256": "6e0f8ec4f61eee477c9a7e6223cde4d6dbf5cc0d55a62ea8f6172b87cb9899fd",
+   "tran_sha256": "4daf58682b42618a95c165d38efc95ed6ea0f2ef35e21769d844d87bafd9daa9",
+   "job_id": "761423",
+   "solver_seconds": 6092.1057444689795,
+   "peak_RSS_KiB": 282828,
+   "raw_bytes": 145748410
+  },
+  {
+   "case_id": "c1n_b_cp00_phm1_s1001",
+   "profile": "b",
+   "code": 0,
+   "metrics": {
+    "primary": {
+     "sample_count": 2032,
+     "symbol_errors": 380,
+     "SER": 0.18700787401574803,
+     "gray_bit_errors": 380,
+     "bit_count": 4064,
+     "gray_BER": 0.09350393700787402,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 0.7477202763255748,
+     "prediction_EVM_RMS_percent_of_target_RMS": 33.7595768890908,
+     "confusion_rows_true_cols_decided": [
+      [
+       347,
+       138,
+       0,
+       0
+      ],
+      [
+       14,
+       458,
+       59,
+       0
+      ],
+      [
+       0,
+       51,
+       440,
+       18
+      ],
+      [
+       0,
+       0,
+       100,
+       407
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -2.3259861730634097,
+       "std": 0.5778675977579405,
+       "min": -3.917145355991785,
+       "max": -0.7470834864296882,
+       "p05": -3.2712395219063763,
+       "p95": -1.3944549757861344
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -0.7703202533271137,
+       "std": 0.607650015987885,
+       "min": -2.414747449295276,
+       "max": 0.8310768105737727,
+       "p05": -1.8220167406391177,
+       "p95": 0.1960926141561457
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 0.8144530793492222,
+       "std": 0.644188368695065,
+       "min": -0.9850224367716439,
+       "max": 3.252996187556536,
+       "p05": -0.24616390973815527,
+       "p95": 1.8654470216389216
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 2.580455411088371,
+       "std": 0.6461941125822517,
+       "min": 0.6521216929919635,
+       "max": 4.887275359004686,
+       "p05": 1.494872965826395,
+       "p95": 3.6058312708691354
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -1.6676639628655876,
+      -1.8160992473454165,
+      -2.6008744945645725
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      -0.42756176485298325,
+      -0.442256523894301,
+      -0.37057405581252656
+     ],
+     "clipped_count": 0
+    },
+    "secondary": {
+     "sample_count": 2032,
+     "symbol_errors": 916,
+     "SER": 0.4507874015748031,
+     "gray_bit_errors": 999,
+     "bit_count": 4064,
+     "gray_BER": 0.24581692913385828,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 1.5351988451784788,
+     "prediction_EVM_RMS_percent_of_target_RMS": 69.31424102678646,
+     "confusion_rows_true_cols_decided": [
+      [
+       260,
+       204,
+       20,
+       1
+      ],
+      [
+       108,
+       272,
+       130,
+       21
+      ],
+      [
+       15,
+       123,
+       265,
+       106
+      ],
+      [
+       0,
+       27,
+       161,
+       319
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -2.3193266085895763,
+       "std": 1.4750568046018004,
+       "min": -6.979153805489211,
+       "max": 2.0473872636675026,
+       "p05": -4.8359982491239055,
+       "p95": -0.0997690580249838
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -0.7872994345077908,
+       "std": 1.4489272826269515,
+       "min": -4.545675759699502,
+       "max": 3.4211357123762505,
+       "p05": -3.14457202794914,
+       "p95": 1.695869265576802
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 0.8480075056422116,
+       "std": 1.451040308470272,
+       "min": -3.190864819198311,
+       "max": 5.767531593319903,
+       "p05": -1.6938604030278088,
+       "p95": 3.2378103994054417
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 2.5469933398277593,
+       "std": 1.5274032069605896,
+       "min": -1.9421226366861906,
+       "max": 6.789488924387218,
+       "p05": -0.017890506968000965,
+       "p95": 5.195232251848349
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -6.593063023367004,
+      -6.612000531574561,
+      -7.709654230006094
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      -3.0448029699241563,
+      -3.389729668604611,
+      -3.2557009063734426
+     ],
+     "clipped_count": 0
+    }
+   },
+   "measurement_sha256": "1922b13306051f171f99c9e3ec659323f7ffb7f107c217d464a735f9b9d48660",
+   "tran_sha256": "c1d1b11af68375ac9ff6be3be15305b56c94cded1a0ce887c2e3c30e1c5a9f3c",
+   "job_id": "761424",
+   "solver_seconds": 5968.465936209075,
+   "peak_RSS_KiB": 283280,
+   "raw_bytes": 145748404
+  },
+  {
+   "case_id": "c1n_b_cp60_phm1_s1001",
+   "profile": "b",
+   "code": 60,
+   "metrics": {
+    "primary": {
+     "sample_count": 2032,
+     "symbol_errors": 102,
+     "SER": 0.05019685039370079,
+     "gray_bit_errors": 102,
+     "bit_count": 4064,
+     "gray_BER": 0.025098425196850394,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 0.612090319892918,
+     "prediction_EVM_RMS_percent_of_target_RMS": 27.635883192895523,
+     "confusion_rows_true_cols_decided": [
+      [
+       471,
+       14,
+       0,
+       0
+      ],
+      [
+       23,
+       498,
+       10,
+       0
+      ],
+      [
+       0,
+       19,
+       468,
+       22
+      ],
+      [
+       0,
+       0,
+       14,
+       493
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -3.0896653063045294,
+       "std": 0.5424829558604737,
+       "min": -4.482256140820436,
+       "max": -1.593589632566297,
+       "p05": -4.043057963276441,
+       "p95": -2.248087164245466
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -1.0358954237115114,
+       "std": 0.5341536691194103,
+       "min": -2.6366378194589597,
+       "max": 0.7748754614508345,
+       "p05": -1.9112856898434587,
+       "p95": -0.18130898259270262
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 1.0788306150701754,
+       "std": 0.5837858808865568,
+       "min": -0.9670100315214225,
+       "max": 2.8433081995536726,
+       "p05": 0.08434759075442691,
+       "p95": 1.966625403585505
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 3.3689131655739497,
+       "std": 0.653990264098968,
+       "min": 1.2306331037342118,
+       "max": 5.382362103662346,
+       "p05": 2.3138536056373593,
+       "p95": 4.425337146693287
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -1.0430481868926627,
+      -1.7418854929722571,
+      -1.612675095819461
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      0.33680147440200736,
+      0.26565657334712955,
+      0.34722820205185423
+     ],
+     "clipped_count": 0
+    },
+    "secondary": {
+     "sample_count": 2032,
+     "symbol_errors": 692,
+     "SER": 0.3405511811023622,
+     "gray_bit_errors": 730,
+     "bit_count": 4064,
+     "gray_BER": 0.1796259842519685,
+     "zero_error_SER_95pct_upper_if_independent_symbols": null,
+     "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+     "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+     "decision_thresholds_in_target_symbol_units": [
+      -2.0,
+      0.0,
+      2.0
+     ],
+     "target_amplitudes_for_symbols_0_through_3": [
+      -3.0,
+      -1.0,
+      1.0,
+      3.0
+     ],
+     "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+     "prediction_RMSE_in_target_symbol_units": 1.4622820616202366,
+     "prediction_EVM_RMS_percent_of_target_RMS": 66.02204762374463,
+     "confusion_rows_true_cols_decided": [
+      [
+       372,
+       110,
+       3,
+       0
+      ],
+      [
+       124,
+       287,
+       106,
+       14
+      ],
+      [
+       10,
+       104,
+       269,
+       126
+      ],
+      [
+       0,
+       11,
+       84,
+       412
+      ]
+     ],
+     "class_predictions_in_target_symbol_units": [
+      {
+       "symbol": 0,
+       "count": 485,
+       "mean": -3.058202187603588,
+       "std": 1.4078745596461164,
+       "min": -7.409150162174172,
+       "max": 1.5040493990320887,
+       "p05": -5.408303072195309,
+       "p95": -0.9255309493392172
+      },
+      {
+       "symbol": 1,
+       "count": 531,
+       "mean": -1.0448288082970507,
+       "std": 1.4314336887289538,
+       "min": -4.7834141546285505,
+       "max": 3.330023412532985,
+       "p05": -3.4089799360165634,
+       "p95": 1.371709999311705
+      },
+      {
+       "symbol": 2,
+       "count": 509,
+       "mean": 1.0909112785798423,
+       "std": 1.4383237029549618,
+       "min": -3.271824527965773,
+       "max": 5.729826624504182,
+       "p05": -1.2278006013073697,
+       "p95": 3.536272716942893
+      },
+      {
+       "symbol": 3,
+       "count": 507,
+       "mean": 3.32703507384089,
+       "std": 1.5265372825791492,
+       "min": -0.9452402308229493,
+       "max": 7.18871681327657,
+       "p05": 0.8488777208785294,
+       "p95": 6.027985961268504
+      }
+     ],
+     "empirical_eye_gaps_in_target_symbol_units": [
+      -6.287463553660639,
+      -6.601847940498757,
+      -6.675066855327131
+     ],
+     "p05_p95_eye_gaps_in_target_symbol_units": [
+      -2.483448986677346,
+      -2.599510600619075,
+      -2.6873949960643637
+     ],
+     "clipped_count": 0
+    }
+   },
+   "measurement_sha256": "9c5d3f82410152ae44f31862f496bf75e44836a4f13c586a23521881a846f087",
+   "tran_sha256": "82375b1838dad11b447290e0dbccd3b0d8d1d56a44bce66e3a815b1a069d328d",
+   "job_id": "761421",
+   "solver_seconds": 6026.618736228906,
+   "peak_RSS_KiB": 282880,
+   "raw_bytes": 145748408
+  }
+ ],
+ "pairs": {
+  "P_late_diagnostic": {
+   "primary": {
+    "delta_errors": -125,
+    "delta_SER": -0.061515748031496065
+   },
+   "secondary": {
+    "delta_errors": -173,
+    "delta_SER": -0.08513779527559057
+   }
+  },
+  "N_late_frozen_selection": {
+   "primary": {
+    "delta_errors": -278,
+    "delta_SER": -0.13681102362204725
+   },
+   "secondary": {
+    "delta_errors": -224,
+    "delta_SER": -0.11023622047244092
+   }
+  }
+ },
+ "c0_training_selection": {
+  "P_late": 0,
+  "N_late": 60
+ },
+ "noise_seed": 1001,
+ "selection_files_sha256": {
+  "selected_phase.json": "39f5c214ff5114015794ba1a38c1c10bbff727a4ed6d03a5b0fe762064e1095b",
+  "selected_codes.json": "0357cfdaf7244612efeb3d85326f0808b16870a1e620b41dd177ad43234e7be7"
+ },
+ "approval_sha256": "3a0ad0e154235124a354220ba5d7513fb6ef4bfcb8809be676665caa5908d373",
+ "design_source_sha256": "abc945cc5c34a8fea340b71bde3b56be6199fd28892f37fdb075fb17f08959fe"
+}

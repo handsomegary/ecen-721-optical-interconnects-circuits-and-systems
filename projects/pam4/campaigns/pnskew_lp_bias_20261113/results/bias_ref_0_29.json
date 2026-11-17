@@ -1,0 +1,2481 @@
+{
+  "format": "lp_bias_summary_v1",
+  "rows": [
+    {
+      "case_id": "lpbias_000_ss_reference_p",
+      "stage": "bias",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 7.786074434265295,
+      "rail_mW": {
+        "XVs:p": 7.78607438666837,
+        "XVcm:p": 4.759692502925209e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.018072607705426288,
+          -0.027673781588109445
+        ],
+        [
+          0.017164828407378943,
+          0.013236349612672787
+        ],
+        [
+          0.017164828407379016,
+          0.013236349612672777
+        ],
+        [
+          -0.018072607705426506,
+          -0.02767378158810961
+        ]
+      ],
+      "Hdd_56GHz_dB": -25.353144027793956,
+      "Hdc_56GHz_complex": [
+        1.457167719820518e-16,
+        1.7694179454963432e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 0.1690304505118785,
+      "input_Y_56GHz_S": [
+        [
+          0.013585758070485433,
+          0.0003093809948817971
+        ],
+        [
+          -6.34427158671094e-05,
+          3.0168675570193016e-06
+        ],
+        [
+          -6.344271586710952e-05,
+          3.016867557019366e-06
+        ],
+        [
+          0.013585758070485444,
+          0.000309380994881797
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007317466152464509,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "XT2p0",
+      "worst_active_headroom": {
+        "role": "original_stage2_tail",
+        "margin_V": 0.006574621869687297,
+        "region": 2.0,
+        "ids_A": 0.0002986911179958203,
+        "gm_S": 0.001953733141038344
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006574621869687297,
+          "region": 2.0,
+          "ids_A": 0.0002986911179958203,
+          "gm_S": 0.001953733141038344
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006574621869687297,
+          "region": 2.0,
+          "ids_A": 0.0002986911179958203,
+          "gm_S": 0.001953733141038344
+        }
+      },
+      "first_stage_CM_V": [
+        null,
+        null
+      ],
+      "increment_vs_r3_mW": 0.0,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -25.353144027793956,
+        "Hdd_vs_bypass_dB": 0.0,
+        "Hdc_increment_over_abs_Hdd_bypass": 0.0
+      }
+    },
+    {
+      "case_id": "lpbias_002_ss_reference_p",
+      "stage": "bias",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 7.7867983795204125,
+      "rail_mW": {
+        "XVs:p": 7.785166642328297,
+        "XVcm:p": 5.628158144360583e-08,
+        "XVb:p": 0.0005127992949560352,
+        "GFVDD:p": 0.0011182375898075,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 8.050322120361954e-08,
+        "GMSAVE1:p": 8.050322120361954e-08,
+        "GMSAVE2:p": 8.050322120361954e-08,
+        "GMSAVE3:p": 8.050322120361954e-08,
+        "GMSAVE4:p": 8.050322120361954e-08,
+        "GMSAVE5:p": 8.050322120361954e-08,
+        "GMSAVE6:p": 8.050322120361954e-08,
+        "GMSAVE7:p": 8.050322120361952e-08,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.01615910603886971,
+          0.0404029521489825
+        ],
+        [
+          0.003310879599599639,
+          -0.027953760807518085
+        ],
+        [
+          0.003310879599599824,
+          -0.027953760807517773
+        ],
+        [
+          -0.016159106038869813,
+          0.04040295214898195
+        ]
+      ],
+      "Hdd_56GHz_dB": -22.965606819214415,
+      "Hdc_56GHz_complex": [
+        -7.979727989493313e-17,
+        2.3592239273284576e-16
+      ],
+      "Hdd_56_over_7GHz_dB": -0.6489742520623027,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007303219844868112,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "XT2m0",
+      "worst_active_headroom": {
+        "role": "original_stage2_tail",
+        "margin_V": 0.006598100368874982,
+        "region": 2.0,
+        "ids_A": 0.0002987015092212379,
+        "gm_S": 0.00195384579890217
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100368875093,
+          "region": 2.0,
+          "ids_A": 0.0002987015092212379,
+          "gm_S": 0.00195384579890217
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100368874982,
+          "region": 2.0,
+          "ids_A": 0.0002987015092212379,
+          "gm_S": 0.00195384579890217
+        }
+      },
+      "first_stage_CM_V": [
+        0.6891990274060509,
+        0.6891990274060509
+      ],
+      "increment_vs_r3_mW": 0.0007239452551175418,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -22.965606819214415,
+        "Hdd_vs_bypass_dB": 2.3875372085795434,
+        "Hdc_increment_over_abs_Hdd_bypass": 4.31716085223967e-15
+      }
+    },
+    {
+      "case_id": "lpbias_004_ss_fixed_v_p",
+      "stage": "bias",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "fixed_v",
+      "target_mA_per_leg": null,
+      "total_mW": 17.41806532486099,
+      "rail_mW": {
+        "XVs:p": 7.7851666413698775,
+        "XVcm:p": 5.6281589466525814e-08,
+        "XVb:p": 0.000512799294956212,
+        "GFVDD:p": 9.632385125537304,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 8.050322120361954e-08,
+        "GMSAVE1:p": 8.050322120361954e-08,
+        "GMSAVE2:p": 8.050322120361954e-08,
+        "GMSAVE3:p": 8.050322120361954e-08,
+        "GMSAVE4:p": 8.050322120361954e-08,
+        "GMSAVE5:p": 8.050322120361954e-08,
+        "GMSAVE6:p": 8.050322120361954e-08,
+        "GMSAVE7:p": 8.050322120361954e-08,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0,
+        "GMSHPVFG:p": 2.9175740306642903e-08,
+        "GMSHMVFG:p": 2.9175740306642903e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          0.018504892647215856,
+          0.01684240287315176
+        ],
+        [
+          -0.02388312893931989,
+          -0.03190640221805838
+        ],
+        [
+          -0.023883128939279925,
+          -0.03190640221801422
+        ],
+        [
+          0.01850489264724479,
+          0.016842402873173942
+        ]
+      ],
+      "Hdd_56GHz_dB": -23.795318032696574,
+      "Hdc_56GHz_complex": [
+        -6.889974701884682e-14,
+        -6.634276461525701e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -2.1934328287647777,
+      "input_Y_56GHz_S": [
+        [
+          0.005308470109950108,
+          0.0038887746464075787
+        ],
+        [
+          -5.76339971065075e-06,
+          9.10420829392864e-06
+        ],
+        [
+          -5.763399710650718e-06,
+          9.104208293928973e-06
+        ],
+        [
+          0.005308470109951639,
+          0.003888774646407292
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007329494065803091,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "XT2m0",
+      "worst_active_headroom": {
+        "role": "original_stage2_tail",
+        "margin_V": 0.006598100393663819,
+        "region": 2.0,
+        "ids_A": 0.0002987015092322068,
+        "gm_S": 0.001953845799021099
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100393663903,
+          "region": 2.0,
+          "ids_A": 0.0002987015092322069,
+          "gm_S": 0.001953845799021098
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.006598100393663819,
+          "region": 2.0,
+          "ids_A": 0.0002987015092322068,
+          "gm_S": 0.001953845799021099
+        }
+      },
+      "first_stage_CM_V": [
+        0.6891990274400193,
+        0.6891990274400193
+      ],
+      "increment_vs_r3_mW": 9.631990890595695,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -23.795318032696574,
+        "Hdd_vs_bypass_dB": 1.5578259950973812,
+        "Hdc_increment_over_abs_Hdd_bypass": 1.7756840413554756e-12
+      },
+      "main_leg_current_mA": [
+        5.945216095459265,
+        5.945216095459265
+      ],
+      "main_CS_ids_power_mW": 9.63125007464401,
+      "GFVDD_non_main_difference_mW": 0.0011350508932945758,
+      "bias_gate_DC_V": [
+        0.4799993921720769,
+        0.4799993921720769
+      ],
+      "approved_increment_limit_mW": 10,
+      "same_route_ideal_gain_delta_dB": -0.8297112134821625,
+      "within_2dB_loss": true,
+      "extra_tilt_56_over_7GHz_dB": -1.5444585767024732,
+      "excess_group_delay_ps": {
+        "7.0": 3.846997777952948,
+        "14.0": 3.093570187983184,
+        "28.0": 2.9051360975224982,
+        "42.0": 2.7032276443251413,
+        "55.0": 2.6242535908273035
+      }
+    },
+    {
+      "case_id": "lpbias_006_ss_reference_p",
+      "stage": "bias",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 7.952407475352406,
+      "rail_mW": {
+        "XVs:p": 7.950775743028493,
+        "XVcm:p": 5.6978941269504445e-08,
+        "XVb:p": 0.0005127937293992422,
+        "GFVDD:p": 0.0011182375898098498,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 8.050322120316683e-08,
+        "GMSAVE1:p": 8.050322120316683e-08,
+        "GMSAVE2:p": 8.050322120316683e-08,
+        "GMSAVE3:p": 8.050322120316683e-08,
+        "GMSAVE4:p": 8.050322120316683e-08,
+        "GMSAVE5:p": 8.050322120316683e-08,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 8.050322120242044e-08,
+        "GMSBVE1:p": 8.050322120242044e-08,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.016776000732536194,
+          0.05330199888316999
+        ],
+        [
+          -7.061132126677267e-05,
+          -0.036178090471246135
+        ],
+        [
+          -7.061132126730523e-05,
+          -0.03617809047124604
+        ],
+        [
+          -0.016776000732536312,
+          0.053301998883172094
+        ]
+      ],
+      "Hdd_56GHz_dB": -20.81667837666678,
+      "Hdc_56GHz_complex": [
+        6.522560269672795e-16,
+        -2.1996293675385914e-15
+      ],
+      "Hdd_56_over_7GHz_dB": -2.137409470796753,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007292479414006493,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "XT2p0",
+      "worst_active_headroom": {
+        "role": "original_stage2_tail",
+        "margin_V": 0.0023154048751969913,
+        "region": 1.0,
+        "ids_A": 0.0002967676811996685,
+        "gm_S": 0.001932854118958595
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023154048751969913,
+          "region": 1.0,
+          "ids_A": 0.0002967676811996685,
+          "gm_S": 0.001932854118958595
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023154048751969913,
+          "region": 1.0,
+          "ids_A": 0.0002967676811996685,
+          "gm_S": 0.001932854118958595
+        }
+      },
+      "first_stage_CM_V": [
+        0.6833141084783341,
+        0.6833141084783341
+      ],
+      "increment_vs_r3_mW": 0.16633304108711133,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -20.81667837666678,
+        "Hdd_vs_bypass_dB": 4.536465651127179,
+        "Hdc_increment_over_abs_Hdd_bypass": 4.5004413768961426e-14
+      }
+    },
+    {
+      "case_id": "lpbias_008_ss_fixed_v_p",
+      "stage": "bias",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "fixed_v",
+      "target_mA_per_leg": null,
+      "total_mW": 17.58367447254244,
+      "rail_mW": {
+        "XVs:p": 7.950775793919529,
+        "XVcm:p": 5.697894649314038e-08,
+        "XVb:p": 0.0005127937293997478,
+        "GFVDD:p": 9.632385125537304,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 8.050322120316683e-08,
+        "GMSAVE1:p": 8.050322120316683e-08,
+        "GMSAVE2:p": 8.050322120316683e-08,
+        "GMSAVE3:p": 8.050322120316683e-08,
+        "GMSAVE4:p": 8.050322120316683e-08,
+        "GMSAVE5:p": 8.050322120316683e-08,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 8.050322120242042e-08,
+        "GMSBVE1:p": 8.050322120242042e-08,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0,
+        "GMSHPVFG:p": 2.9175740306642903e-08,
+        "GMSHMVFG:p": 2.9175740306642903e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          0.025540576296836634,
+          0.020740453438123693
+        ],
+        [
+          -0.027758361942851667,
+          -0.042364545565872935
+        ],
+        [
+          -0.027758361942801704,
+          -0.0423645455658056
+        ],
+        [
+          0.025540576296880585,
+          0.020740453438154734
+        ]
+      ],
+      "Hdd_56GHz_dB": -21.66023501021806,
+      "Hdc_56GHz_complex": [
+        -9.391445954243238e-14,
+        -9.837616832264473e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -3.7937928403413324,
+      "input_Y_56GHz_S": [
+        [
+          0.0053128383607305195,
+          0.0038883754580636316
+        ],
+        [
+          -5.571117635776288e-06,
+          1.486931641789806e-05
+        ],
+        [
+          -5.571117635775875e-06,
+          1.486931641789822e-05
+        ],
+        [
+          0.0053128383607322005,
+          0.0038883754580633493
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.00073372899078504,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "XT2p0",
+      "worst_active_headroom": {
+        "role": "original_stage2_tail",
+        "margin_V": 0.0023154035591222144,
+        "region": 1.0,
+        "ids_A": 0.0002967676805934311,
+        "gm_S": 0.001932854112371314
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023154035591222144,
+          "region": 1.0,
+          "ids_A": 0.0002967676805934311,
+          "gm_S": 0.001932854112371314
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0023154035591222144,
+          "region": 1.0,
+          "ids_A": 0.0002967676805934312,
+          "gm_S": 0.001932854112371315
+        }
+      },
+      "first_stage_CM_V": [
+        0.6833141066627777,
+        0.6833141066627777
+      ],
+      "increment_vs_r3_mW": 9.797600038277146,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -21.66023501021806,
+        "Hdd_vs_bypass_dB": 3.6929090175759005,
+        "Hdc_increment_over_abs_Hdd_bypass": 2.523170306084473e-12
+      },
+      "main_leg_current_mA": [
+        5.945216095459265,
+        5.945216095459265
+      ],
+      "main_CS_ids_power_mW": 9.63125007464401,
+      "GFVDD_non_main_difference_mW": 0.0011350508932945758,
+      "bias_gate_DC_V": [
+        0.4799993921720769,
+        0.4799993921720769
+      ],
+      "approved_increment_limit_mW": 14,
+      "same_route_ideal_gain_delta_dB": -0.8435566335512756,
+      "within_2dB_loss": true,
+      "extra_tilt_56_over_7GHz_dB": -1.656383369544578,
+      "excess_group_delay_ps": {
+        "7.0": 3.5670295921315542,
+        "14.0": 2.9075237817533686,
+        "28.0": 2.547239761534203,
+        "42.0": 2.4400020506510387,
+        "55.0": 2.4057779251113254
+      }
+    },
+    {
+      "case_id": "lpbias_010_tt_reference_p",
+      "stage": "bias",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 10.076882480300053,
+      "rail_mW": {
+        "XVs:p": 10.076882434067258,
+        "XVcm:p": 4.623279587935871e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.02240143602529436,
+          -0.03325173251089387
+        ],
+        [
+          0.022838231126426262,
+          0.01802561679771345
+        ],
+        [
+          0.0228382311264262,
+          0.01802561679771344
+        ],
+        [
+          -0.022401436025294208,
+          -0.033251732510893806
+        ]
+      ],
+      "Hdd_56GHz_dB": -23.301260514203406,
+      "Hdc_56GHz_complex": [
+        -9.020562075079397e-17,
+        -5.551115123125783e-17
+      ],
+      "Hdd_56_over_7GHz_dB": 1.0853186778364234,
+      "input_Y_56GHz_S": [
+        [
+          0.013599641308915934,
+          0.00030213355765734966
+        ],
+        [
+          -6.835808746446475e-05,
+          5.49568334035112e-06
+        ],
+        [
+          -6.835808746446468e-05,
+          5.495683340351075e-06
+        ],
+        [
+          0.013599641308915934,
+          0.00030213355765735
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006954275154528222,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "XT1p0",
+      "worst_active_headroom": {
+        "role": "original_stage1_tail",
+        "margin_V": 0.051142707063253884,
+        "region": 2.0,
+        "ids_A": 0.0003419217326713026,
+        "gm_S": 0.002485292699960592
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10049205877647882,
+          "region": 2.0,
+          "ids_A": 0.0003578604644220325,
+          "gm_S": 0.002635942109417063
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10049205877647882,
+          "region": 2.0,
+          "ids_A": 0.0003578604644220325,
+          "gm_S": 0.002635942109417063
+        }
+      },
+      "first_stage_CM_V": [
+        null,
+        null
+      ],
+      "increment_vs_r3_mW": 0.0,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -23.301260514203406,
+        "Hdd_vs_bypass_dB": 0.0,
+        "Hdc_increment_over_abs_Hdd_bypass": 0.0
+      }
+    },
+    {
+      "case_id": "lpbias_012_tt_reference_p",
+      "stage": "bias",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 10.077450906778294,
+      "rail_mW": {
+        "XVs:p": 10.07644723191909,
+        "XVcm:p": 5.1140624874261186e-08,
+        "XVb:p": 0.00019582749818865895,
+        "GFVDD:p": 0.0008046952035446118,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 3.876271054896292e-07,
+        "GMSAVE1:p": 3.876271054896292e-07,
+        "GMSAVE2:p": 3.876271054896292e-07,
+        "GMSAVE3:p": 3.876271054896292e-07,
+        "GMSAVE4:p": 3.876271054896292e-07,
+        "GMSAVE5:p": 3.876271054896292e-07,
+        "GMSAVE6:p": 3.876271054896292e-07,
+        "GMSAVE7:p": 3.876271054896292e-07,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.019866129970944155,
+          0.049447617465108756
+        ],
+        [
+          0.005031035008499274,
+          -0.03749519385641965
+        ],
+        [
+          0.005031035008499529,
+          -0.03749519385641925
+        ],
+        [
+          -0.01986612997094433,
+          0.049447617465108056
+        ]
+      ],
+      "Hdd_56GHz_dB": -20.873039725837877,
+      "Hdc_56GHz_complex": [
+        -7.979727989493313e-17,
+        3.0531133177191805e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 0.30548566109022507,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006932419713392521,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAPT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.05116428637608411,
+        "region": 2.0,
+        "ids_A": 0.0003418869313169768,
+        "gm_S": 0.002485239388237817
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251270290272,
+          "region": 2.0,
+          "ids_A": 0.0003578633928722562,
+          "gm_S": 0.00263596734917999
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251270290272,
+          "region": 2.0,
+          "ids_A": 0.0003578633928722562,
+          "gm_S": 0.00263596734917999
+        }
+      },
+      "first_stage_CM_V": [
+        0.7632444292505108,
+        0.7632444292505108
+      ],
+      "increment_vs_r3_mW": 0.0005684264782406245,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -20.873039725837877,
+        "Hdd_vs_bypass_dB": 2.428220788365529,
+        "Hdc_increment_over_abs_Hdd_bypass": 5.278824573438361e-15
+      }
+    },
+    {
+      "case_id": "lpbias_014_tt_fixed_v_p",
+      "stage": "bias",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "fixed_v",
+      "target_mA_per_leg": null,
+      "total_mW": 23.411680555936716,
+      "rail_mW": {
+        "XVs:p": 10.076447231316296,
+        "XVcm:p": 5.114064901783278e-08,
+        "XVb:p": 0.00019582749818881454,
+        "GFVDD:p": 13.335034272882561,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 3.876271054896292e-07,
+        "GMSAVE1:p": 3.876271054896292e-07,
+        "GMSAVE2:p": 3.876271054896292e-07,
+        "GMSAVE3:p": 3.876271054896292e-07,
+        "GMSAVE4:p": 3.876271054896292e-07,
+        "GMSAVE5:p": 3.876271054896292e-07,
+        "GMSAVE6:p": 3.876271054896292e-07,
+        "GMSAVE7:p": 3.876271054896292e-07,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0,
+        "GMSHPVFG:p": 3.6041093761709067e-08,
+        "GMSHMVFG:p": 3.6041093761709067e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          0.02823442201092392,
+          0.02425722086815907
+        ],
+        [
+          -0.033426721908423565,
+          -0.042241800163671336
+        ],
+        [
+          -0.03342672190837481,
+          -0.04224180016361613
+        ],
+        [
+          0.0282344220109646,
+          0.024257220868190165
+        ]
+      ],
+      "Hdd_56GHz_dB": -20.849054672373025,
+      "Hdc_56GHz_complex": [
+        -8.943193408050831e-14,
+        -8.630249292984615e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -2.0218559889467422,
+      "input_Y_56GHz_S": [
+        [
+          0.005562195504807631,
+          0.003611775990303101
+        ],
+        [
+          -5.041269980122471e-06,
+          1.1151219948336398e-05
+        ],
+        [
+          -5.041269980122394e-06,
+          1.1151219948336698e-05
+        ],
+        [
+          0.005562195504809211,
+          0.0036117759903027094
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006991977397750303,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAPT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.05116428629406769,
+        "region": 2.0,
+        "ids_A": 0.0003418869312860945,
+        "gm_S": 0.002485239387920479
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251271738178,
+          "region": 2.0,
+          "ids_A": 0.0003578633928763132,
+          "gm_S": 0.00263596734921495
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.10050251271738178,
+          "region": 2.0,
+          "ids_A": 0.0003578633928763132,
+          "gm_S": 0.00263596734921495
+        }
+      },
+      "first_stage_CM_V": [
+        0.7632444292688778,
+        0.7632444292688777
+      ],
+      "increment_vs_r3_mW": 13.334798075636662,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -20.849054672373025,
+        "Hdd_vs_bypass_dB": 2.4522058418303794,
+        "Hdc_increment_over_abs_Hdd_bypass": 1.8159841797260632e-12
+      },
+      "main_leg_current_mA": [
+        7.4079025711723405,
+        7.4079025711723405
+      ],
+      "main_CS_ids_power_mW": 13.334224628110213,
+      "GFVDD_non_main_difference_mW": 0.0008096447723477951,
+      "bias_gate_DC_V": [
+        0.4799992491438799,
+        0.4799992491438799
+      ],
+      "approved_increment_limit_mW": 10,
+      "same_route_ideal_gain_delta_dB": 0.023985053464847427,
+      "within_2dB_loss": true,
+      "extra_tilt_56_over_7GHz_dB": -2.3273416500369657,
+      "excess_group_delay_ps": {
+        "7.0": 4.175633103038235,
+        "14.0": 3.3351361228356042,
+        "28.0": 3.021397149750929,
+        "42.0": 2.637732559970023,
+        "55.0": 2.4110262391184127
+      }
+    },
+    {
+      "case_id": "lpbias_016_tt_reference_p",
+      "stage": "bias",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 10.253710026843741,
+      "rail_mW": {
+        "XVs:p": 10.2527063562908,
+        "XVcm:p": 5.195470459005357e-08,
+        "XVb:p": 0.00019582237784499003,
+        "GFVDD:p": 0.0008046952035475495,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 3.876271054885778e-07,
+        "GMSAVE1:p": 3.876271054885778e-07,
+        "GMSAVE2:p": 3.876271054885778e-07,
+        "GMSAVE3:p": 3.876271054885778e-07,
+        "GMSAVE4:p": 3.876271054885778e-07,
+        "GMSAVE5:p": 3.876271054885778e-07,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 3.876271054867977e-07,
+        "GMSBVE1:p": 3.876271054867977e-07,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.020336026207769486,
+          0.06485231254688727
+        ],
+        [
+          0.0008853059491427856,
+          -0.049061050616442635
+        ],
+        [
+          0.0008853059491425845,
+          -0.04906105061644171
+        ],
+        [
+          -0.020336026207769867,
+          0.06485231254688842
+        ]
+      ],
+      "Hdd_56GHz_dB": -18.720339736198298,
+      "Hdc_56GHz_complex": [
+        5.828670879282072e-16,
+        -2.0816681711721685e-15
+      ],
+      "Hdd_56_over_7GHz_dB": -1.3982184027308042,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006919125735590526,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAPT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.07557807255500368,
+        "region": 2.0,
+        "ids_A": 0.0003503581642467397,
+        "gm_S": 0.00256862752398143
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.0962671453283642,
+          "region": 2.0,
+          "ids_A": 0.0003566642887514515,
+          "gm_S": 0.002625559271019667
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.09626714532836442,
+          "region": 2.0,
+          "ids_A": 0.0003566642887514516,
+          "gm_S": 0.002625559271019667
+        }
+      },
+      "first_stage_CM_V": [
+        0.7578687013959503,
+        0.7578687013959503
+      ],
+      "increment_vs_r3_mW": 0.17682754654368793,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -18.720339736198298,
+        "Hdd_vs_bypass_dB": 4.580920778005108,
+        "Hdc_increment_over_abs_Hdd_bypass": 3.122240425511472e-14
+      }
+    },
+    {
+      "case_id": "lpbias_018_tt_fixed_v_p",
+      "stage": "bias",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "fixed_v",
+      "target_mA_per_leg": null,
+      "total_mW": 23.58793971259596,
+      "rail_mW": {
+        "XVs:p": 10.252706392281825,
+        "XVcm:p": 5.195470883920492e-08,
+        "XVb:p": 0.00019582237784505023,
+        "GFVDD:p": 13.335034272882561,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 3.876271054885778e-07,
+        "GMSAVE1:p": 3.876271054885778e-07,
+        "GMSAVE2:p": 3.876271054885778e-07,
+        "GMSAVE3:p": 3.876271054885778e-07,
+        "GMSAVE4:p": 3.876271054885778e-07,
+        "GMSAVE5:p": 3.876271054885778e-07,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 3.876271054867977e-07,
+        "GMSBVE1:p": 3.876271054867977e-07,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0,
+        "GMSHPVFG:p": 3.6041093761709067e-08,
+        "GMSHMVFG:p": 3.6041093761709067e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          0.03923709730177575,
+          0.03013012990679055
+        ],
+        [
+          -0.040210488446936546,
+          -0.05529627881184462
+        ],
+        [
+          -0.040210488446842475,
+          -0.05529627881172849
+        ],
+        [
+          0.03923709730186319,
+          0.030130129906851193
+        ]
+      ],
+      "Hdd_56GHz_dB": -18.661549520804225,
+      "Hdc_56GHz_complex": [
+        -1.8151452563230919e-13,
+        -1.767717916489886e-13
+      ],
+      "Hdd_56_over_7GHz_dB": -3.7988866760850537,
+      "input_Y_56GHz_S": [
+        [
+          0.005566498625553907,
+          0.003610378047293755
+        ],
+        [
+          -4.0476649427382785e-06,
+          1.7919551089550596e-05
+        ],
+        [
+          -4.047664942737948e-06,
+          1.7919551089550674e-05
+        ],
+        [
+          0.005566498625556282,
+          0.003610378047293107
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007026399173515982,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAMT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.0755780722248284,
+        "region": 2.0,
+        "ids_A": 0.0003503581641408418,
+        "gm_S": 0.002568627522986031
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.09626714446308088,
+          "region": 2.0,
+          "ids_A": 0.0003566642885038702,
+          "gm_S": 0.002625559268855334
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.09626714446308088,
+          "region": 2.0,
+          "ids_A": 0.0003566642885038702,
+          "gm_S": 0.002625559268855333
+        }
+      },
+      "first_stage_CM_V": [
+        0.7578687002966281,
+        0.7578687002966282
+      ],
+      "increment_vs_r3_mW": 13.511057232295908,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -18.661549520804225,
+        "Hdd_vs_bypass_dB": 4.63971099339918,
+        "Hdc_increment_over_abs_Hdd_bypass": 3.703728195184114e-12
+      },
+      "main_leg_current_mA": [
+        7.4079025711723405,
+        7.4079025711723405
+      ],
+      "main_CS_ids_power_mW": 13.334224628110213,
+      "GFVDD_non_main_difference_mW": 0.0008096447723477951,
+      "bias_gate_DC_V": [
+        0.4799992491438799,
+        0.4799992491438799
+      ],
+      "approved_increment_limit_mW": 14,
+      "same_route_ideal_gain_delta_dB": 0.058790215394071865,
+      "within_2dB_loss": true,
+      "extra_tilt_56_over_7GHz_dB": -2.4006682733542504,
+      "excess_group_delay_ps": {
+        "7.0": 3.950252570129376,
+        "14.0": 3.2032073809632338,
+        "28.0": 2.6965904715723883,
+        "42.0": 2.4169547719843534,
+        "55.0": 2.220964410476694
+      }
+    },
+    {
+      "case_id": "lpbias_020_ff_reference_p",
+      "stage": "bias",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "bypass",
+      "topology": "reference",
+      "Z0_ohm": 25,
+      "kind": "ac",
+      "mode": "bypass",
+      "variant": "bypass",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 13.227445088866322,
+      "rail_mW": {
+        "XVs:p": 13.227445047376415,
+        "XVcm:p": 4.148990625663551e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.02823519984704534,
+          -0.04040907556042937
+        ],
+        [
+          0.02854980209045244,
+          0.023302459917147286
+        ],
+        [
+          0.028549802090453855,
+          0.02330245991714724
+        ],
+        [
+          -0.028235199847046966,
+          -0.04040907556042975
+        ]
+      ],
+      "Hdd_56GHz_dB": -21.376481768672946,
+      "Hdc_56GHz_complex": [
+        2.1163626406917047e-16,
+        4.163336342344337e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 1.7216996079045777,
+      "input_Y_56GHz_S": [
+        [
+          0.013615050023251887,
+          0.00029211143262446843
+        ],
+        [
+          -7.037691625444449e-05,
+          7.673323623372269e-06
+        ],
+        [
+          -7.037691625444438e-05,
+          7.673323623372105e-06
+        ],
+        [
+          0.013615050023251887,
+          0.0002921114326244691
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006865755495851876,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "XT1p0",
+      "worst_active_headroom": {
+        "role": "original_stage1_tail",
+        "margin_V": 0.0873420794641721,
+        "region": 2.0,
+        "ids_A": 0.0004021142491726754,
+        "gm_S": 0.00321265946435135
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19120809936879438,
+          "region": 2.0,
+          "ids_A": 0.0004329515775186341,
+          "gm_S": 0.003461739175263643
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19120809936879438,
+          "region": 2.0,
+          "ids_A": 0.0004329515775186341,
+          "gm_S": 0.003461739175263643
+        }
+      },
+      "first_stage_CM_V": [
+        null,
+        null
+      ],
+      "increment_vs_r3_mW": 0.0,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -21.376481768672946,
+        "Hdd_vs_bypass_dB": 0.0,
+        "Hdc_increment_over_abs_Hdd_bypass": 0.0
+      }
+    },
+    {
+      "case_id": "lpbias_022_ff_reference_p",
+      "stage": "bias",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 13.227915801556474,
+      "rail_mW": {
+        "XVs:p": 13.227292615906036,
+        "XVcm:p": 4.225318241661587e-08,
+        "XVb:p": 5.845908251429227e-05,
+        "GFVDD:p": 0.0005512830605096157,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 1.675156779456339e-06,
+        "GMSAVE1:p": 1.675156779456339e-06,
+        "GMSAVE2:p": 1.675156779456339e-06,
+        "GMSAVE3:p": 1.675156779456339e-06,
+        "GMSAVE4:p": 1.675156779456339e-06,
+        "GMSAVE5:p": 1.675156779456339e-06,
+        "GMSAVE6:p": 1.675156779456339e-06,
+        "GMSAVE7:p": 1.675156779456339e-06,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.02464259749334969,
+          0.061128819680707304
+        ],
+        [
+          0.007463970853623492,
+          -0.04753859975315429
+        ],
+        [
+          0.0074639708536237,
+          -0.047538599753154
+        ],
+        [
+          -0.024642597493350016,
+          0.06112881968070674
+        ]
+      ],
+      "Hdd_56GHz_dB": -18.91453925400899,
+      "Hdc_56GHz_complex": [
+        1.1796119636642288e-16,
+        2.706168622523819e-16
+      ],
+      "Hdd_56_over_7GHz_dB": 0.9758903656364717,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006834592457370002,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAMT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.08734736464209827,
+        "region": 2.0,
+        "ids_A": 0.0004021036985682878,
+        "gm_S": 0.00321263899884556
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19121149374107776,
+          "region": 2.0,
+          "ids_A": 0.000432952398220745,
+          "gm_S": 0.003461744744014759
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1912114937410776,
+          "region": 2.0,
+          "ids_A": 0.0004329523982207455,
+          "gm_S": 0.00346174474401476
+        }
+      },
+      "first_stage_CM_V": [
+        0.829158472153813,
+        0.829158472153813
+      ],
+      "increment_vs_r3_mW": 0.0004707126901521974,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -18.91453925400899,
+        "Hdd_vs_bypass_dB": 2.4619425146639538,
+        "Hdc_increment_over_abs_Hdd_bypass": 2.0297636896858714e-15
+      }
+    },
+    {
+      "case_id": "lpbias_024_ff_fixed_v_p",
+      "stage": "bias",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 0,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "fixed_v",
+      "target_mA_per_leg": null,
+      "total_mW": 31.876077354849368,
+      "rail_mW": {
+        "XVs:p": 13.227292615729421,
+        "XVcm:p": 4.225322653925702e-08,
+        "XVb:p": 5.8459082514347315e-05,
+        "GFVDD:p": 18.64871274770043,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 1.675156779456339e-06,
+        "GMSAVE1:p": 1.675156779456339e-06,
+        "GMSAVE2:p": 1.675156779456339e-06,
+        "GMSAVE3:p": 1.675156779456339e-06,
+        "GMSAVE4:p": 1.675156779456339e-06,
+        "GMSAVE5:p": 1.675156779456339e-06,
+        "GMSAVE6:p": 1.675156779456339e-06,
+        "GMSAVE7:p": 1.675156779456339e-06,
+        "GMSBVE0:p": -0.0,
+        "GMSBVE1:p": -0.0,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0,
+        "GMSHPVFG:p": 4.441477552102007e-08,
+        "GMSHMVFG:p": 4.441477552102007e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          0.039621433315991425,
+          0.0327430574561064
+        ],
+        [
+          -0.046396863816068466,
+          -0.05496626760875767
+        ],
+        [
+          -0.04639686381599858,
+          -0.0549662676086939
+        ],
+        [
+          0.03962143331604534,
+          0.03274305745614227
+        ]
+      ],
+      "Hdd_56GHz_dB": -18.21251098626167,
+      "Hdc_56GHz_complex": [
+        -1.2380374503351277e-13,
+        -9.963557756620389e-14
+      ],
+      "Hdd_56_over_7GHz_dB": -2.219059270747909,
+      "input_Y_56GHz_S": [
+        [
+          0.005755930903494656,
+          0.0032968925432595372
+        ],
+        [
+          -3.489532438418455e-06,
+          1.2439222314424527e-05
+        ],
+        [
+          -3.489532438418528e-06,
+          1.2439222314424662e-05
+        ],
+        [
+          0.005755930903496188,
+          0.0032968925432589023
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006947160061939762,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAPT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.0873473646143827,
+        "region": 2.0,
+        "ids_A": 0.0004021036985578539,
+        "gm_S": 0.003212638998746102
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1912114937450099,
+          "region": 2.0,
+          "ids_A": 0.0004329523982216949,
+          "gm_S": 0.003461744744021207
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.19121149374501,
+          "region": 2.0,
+          "ids_A": 0.0004329523982216949,
+          "gm_S": 0.003461744744021207
+        }
+      },
+      "first_stage_CM_V": [
+        0.8291584721586531,
+        0.8291584721586531
+      ],
+      "increment_vs_r3_mW": 18.648632265983046,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -18.21251098626167,
+        "Hdd_vs_bypass_dB": 3.163970782411274,
+        "Hdc_increment_over_abs_Hdd_bypass": 1.8670551522891593e-12
+      },
+      "main_leg_current_mA": [
+        9.418263163958876,
+        9.418263163958876
+      ],
+      "main_CS_ids_power_mW": 18.648161064638575,
+      "GFVDD_non_main_difference_mW": 0.0005516830618539359,
+      "bias_gate_DC_V": [
+        0.4799990746921766,
+        0.4799990746921766
+      ],
+      "approved_increment_limit_mW": 10,
+      "same_route_ideal_gain_delta_dB": 0.7020282677473201,
+      "within_2dB_loss": true,
+      "extra_tilt_56_over_7GHz_dB": -3.1949496363843792,
+      "excess_group_delay_ps": {
+        "7.0": 4.581516466829368,
+        "14.0": 3.615552592125022,
+        "28.0": 3.1423715958224094,
+        "42.0": 2.541245675712983,
+        "55.0": 2.1671201676261784
+      }
+    },
+    {
+      "case_id": "lpbias_026_ff_reference_p",
+      "stage": "bias",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "idealz50",
+      "topology": "reference",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "reference",
+      "target_mA_per_leg": null,
+      "total_mW": 13.420609578905573,
+      "rail_mW": {
+        "XVs:p": 13.419986396101727,
+        "XVcm:p": 4.400369468360094e-08,
+        "XVb:p": 5.8454485397490356e-05,
+        "GFVDD:p": 0.0005512830605204525,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 1.6751567794535708e-06,
+        "GMSAVE1:p": 1.6751567794535708e-06,
+        "GMSAVE2:p": 1.6751567794535708e-06,
+        "GMSAVE3:p": 1.6751567794535708e-06,
+        "GMSAVE4:p": 1.6751567794535708e-06,
+        "GMSAVE5:p": 1.6751567794535708e-06,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 1.6751567794487634e-06,
+        "GMSBVE1:p": 1.6751567794487634e-06,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0
+      },
+      "Hmatrix_56GHz": [
+        [
+          -0.024947245562505896,
+          0.07995361353313514
+        ],
+        [
+          0.002876988911404299,
+          -0.06317089229793735
+        ],
+        [
+          0.0028769889114037923,
+          -0.06317089229793618
+        ],
+        [
+          -0.024947245562506708,
+          0.07995361353313729
+        ]
+      ],
+      "Hdd_56GHz_dB": -16.724610047347472,
+      "Hdc_56GHz_complex": [
+        1.3183898417423734e-15,
+        -3.316791286067655e-15
+      ],
+      "Hdd_56_over_7GHz_dB": -0.8795561340187625,
+      "input_Y_56GHz_S": [
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0006815632086203815,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAMT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.1108903667776121,
+        "region": 2.0,
+        "ids_A": 0.0004104060413021937,
+        "gm_S": 0.003288307262496378
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1869190102014911,
+          "region": 2.0,
+          "ids_A": 0.0004319076040339077,
+          "gm_S": 0.003454616047782431
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1869190102014911,
+          "region": 2.0,
+          "ids_A": 0.0004319076040339077,
+          "gm_S": 0.003454616047782431
+        }
+      },
+      "first_stage_CM_V": [
+        0.8238745500408163,
+        0.8238745500408163
+      ],
+      "increment_vs_r3_mW": 0.1931644900392513,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -16.724610047347472,
+        "Hdd_vs_bypass_dB": 4.65187172132547,
+        "Hdc_increment_over_abs_Hdd_bypass": 4.562362666854514e-14
+      }
+    },
+    {
+      "case_id": "lpbias_028_ff_fixed_v_p",
+      "stage": "bias",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "launch": "shared14lo120z50",
+      "topology": "shared",
+      "Z0_ohm": 50,
+      "kind": "ac",
+      "mode": "bias",
+      "variant": "fine",
+      "source_R_ohm": 25,
+      "route_thirds": [
+        [
+          33,
+          33
+        ],
+        [
+          33,
+          33
+        ]
+      ],
+      "route_a": [
+        11,
+        11
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "count_b": 2,
+      "direction": 1,
+      "gate_offset_mV": 0,
+      "segment": null,
+      "active": "a",
+      "probe": "full",
+      "off_probe": false,
+      "coil_Q56": null,
+      "coil_SRF_GHz": null,
+      "coil_scale": 1.0,
+      "cpus": 1,
+      "memory_GiB": 4,
+      "wall_limit_min": 30,
+      "estimated_solver_s": [
+        3,
+        30
+      ],
+      "bias_mode": "fixed_v",
+      "target_mA_per_leg": null,
+      "total_mW": 32.06877116541766,
+      "rail_mW": {
+        "XVs:p": 13.419986429144343,
+        "XVcm:p": 4.400369860191261e-08,
+        "XVb:p": 5.84544853975056e-05,
+        "GFVDD:p": 18.64871274770044,
+        "GFVCTL:p": -0.0,
+        "GMSAVE0:p": 1.6751567794535708e-06,
+        "GMSAVE1:p": 1.6751567794535708e-06,
+        "GMSAVE2:p": 1.6751567794535708e-06,
+        "GMSAVE3:p": 1.6751567794535708e-06,
+        "GMSAVE4:p": 1.6751567794535708e-06,
+        "GMSAVE5:p": 1.6751567794535708e-06,
+        "GMSAVE6:p": -0.0,
+        "GMSAVE7:p": -0.0,
+        "GMSBVE0:p": 1.6751567794487634e-06,
+        "GMSBVE1:p": 1.6751567794487634e-06,
+        "GMSBVE2:p": -0.0,
+        "GMSBVE3:p": -0.0,
+        "GMSBVE4:p": -0.0,
+        "GMSBVE5:p": -0.0,
+        "GMSBVE6:p": -0.0,
+        "GMSBVE7:p": -0.0,
+        "GMSHPVFG:p": 4.441477552102007e-08,
+        "GMSHMVFG:p": 4.441477552102007e-08
+      },
+      "Hmatrix_56GHz": [
+        [
+          0.05579548437345176,
+          0.04092861030102417
+        ],
+        [
+          -0.05754628243282636,
+          -0.07119532458693201
+        ],
+        [
+          -0.057546282432697465,
+          -0.07119532458679947
+        ],
+        [
+          0.05579548437356693,
+          0.040928610301096686
+        ]
+      ],
+      "Hdd_56GHz_dB": -15.948563542844472,
+      "Hdc_56GHz_complex": [
+        -2.4406171528212894e-13,
+        -2.050512537543625e-13
+      ],
+      "Hdd_56_over_7GHz_dB": -4.115206340862927,
+      "input_Y_56GHz_S": [
+        [
+          0.005759625827842014,
+          0.0032947927498938006
+        ],
+        [
+          -1.6181574529992743e-06,
+          1.9874570902314816e-05
+        ],
+        [
+          -1.61815745299886e-06,
+          1.9874570902315287e-05
+        ],
+        [
+          0.005759625827844319,
+          0.0032947927498928418
+        ]
+      ],
+      "noise": {
+        "Vrms_1MHz_to_56GHz": 0.0007030953287186021,
+        "plane": "X_h0p-X_h0m"
+      },
+      "worst_active_MOS": "GMSAMT0",
+      "worst_active_headroom": {
+        "role": "AFE_tail_enabled",
+        "margin_V": 0.11089036650057102,
+        "region": 2.0,
+        "ids_A": 0.0004104060412104604,
+        "gm_S": 0.003288307261698088
+      },
+      "r3_stage2_tail": {
+        "XT2p0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.1869190094650203,
+          "region": 2.0,
+          "ids_A": 0.0004319076038534603,
+          "gm_S": 0.003454616046544325
+        },
+        "XT2m0": {
+          "role": "original_stage2_tail",
+          "margin_V": 0.18691900946502163,
+          "region": 2.0,
+          "ids_A": 0.0004319076038534605,
+          "gm_S": 0.003454616046544327
+        }
+      },
+      "first_stage_CM_V": [
+        0.8238745491339582,
+        0.8238745491339557
+      ],
+      "increment_vs_r3_mW": 18.841326076551336,
+      "vs_r3_matched_bypass": {
+        "Hdd_absolute_dB": -15.948563542844472,
+        "Hdd_vs_bypass_dB": 5.427918225828471,
+        "Hdc_increment_over_abs_Hdd_bypass": 3.740091236361659e-12
+      },
+      "main_leg_current_mA": [
+        9.418263163958876,
+        9.418263163958876
+      ],
+      "main_CS_ids_power_mW": 18.648161064638575,
+      "GFVDD_non_main_difference_mW": 0.000551683061864594,
+      "bias_gate_DC_V": [
+        0.4799990746921766,
+        0.4799990746921766
+      ],
+      "approved_increment_limit_mW": 14,
+      "same_route_ideal_gain_delta_dB": 0.7760465045030013,
+      "within_2dB_loss": true,
+      "extra_tilt_56_over_7GHz_dB": -3.2356502068441673,
+      "excess_group_delay_ps": {
+        "7.0": 4.40200949848236,
+        "14.0": 3.535023758398841,
+        "28.0": 2.8545972269282878,
+        "42.0": 2.3534538488516468,
+        "55.0": 2.0028970118290896
+      }
+    }
+  ],
+  "tested_targets": [],
+  "missing_cases": [
+    "lpbias_030_ss_i420_p",
+    "lpbias_031_ss_i420_n",
+    "lpbias_032_ss_i420_p",
+    "lpbias_033_ss_i420_n",
+    "lpbias_034_tt_i420_p",
+    "lpbias_035_tt_i420_n",
+    "lpbias_036_tt_i420_p",
+    "lpbias_037_tt_i420_n",
+    "lpbias_038_ff_i420_p",
+    "lpbias_039_ff_i420_n",
+    "lpbias_040_ff_i420_p",
+    "lpbias_041_ff_i420_n",
+    "lpbias_042_ss_i450_p",
+    "lpbias_043_ss_i450_n",
+    "lpbias_044_ss_i450_p",
+    "lpbias_045_ss_i450_n",
+    "lpbias_046_tt_i450_p",
+    "lpbias_047_tt_i450_n",
+    "lpbias_048_tt_i450_p",
+    "lpbias_049_tt_i450_n",
+    "lpbias_050_ff_i450_p",
+    "lpbias_051_ff_i450_n",
+    "lpbias_052_ff_i450_p",
+    "lpbias_053_ff_i450_n",
+    "lpbias_054_ss_i470_p",
+    "lpbias_055_ss_i470_n",
+    "lpbias_056_ss_i470_p",
+    "lpbias_057_ss_i470_n",
+    "lpbias_058_tt_i470_p",
+    "lpbias_059_tt_i470_n",
+    "lpbias_060_tt_i470_p",
+    "lpbias_061_tt_i470_n",
+    "lpbias_062_ff_i470_p",
+    "lpbias_063_ff_i470_n",
+    "lpbias_064_ff_i470_p",
+    "lpbias_065_ff_i470_n",
+    "lpbias_066_ss_i500_p",
+    "lpbias_067_ss_i500_n",
+    "lpbias_068_ss_i500_p",
+    "lpbias_069_ss_i500_n",
+    "lpbias_070_tt_i500_p",
+    "lpbias_071_tt_i500_n",
+    "lpbias_072_tt_i500_p",
+    "lpbias_073_tt_i500_n",
+    "lpbias_074_ff_i500_p",
+    "lpbias_075_ff_i500_n",
+    "lpbias_076_ff_i500_p",
+    "lpbias_077_ff_i500_n",
+    "lpbias_078_tt_i550_p",
+    "lpbias_079_tt_i550_n",
+    "lpbias_080_tt_i550_p",
+    "lpbias_081_tt_i550_n",
+    "lpbias_082_ff_i550_p",
+    "lpbias_083_ff_i550_n",
+    "lpbias_084_ff_i550_p",
+    "lpbias_085_ff_i550_n",
+    "lpbias_086_tt_i600_p",
+    "lpbias_087_tt_i600_n",
+    "lpbias_088_tt_i600_p",
+    "lpbias_089_tt_i600_n",
+    "lpbias_090_ff_i600_p",
+    "lpbias_091_ff_i600_n",
+    "lpbias_092_ff_i600_p",
+    "lpbias_093_ff_i600_n"
+  ],
+  "invalid_cases": {},
+  "actual_bias_OTA_verified": false,
+  "FFE_SER": null
+}

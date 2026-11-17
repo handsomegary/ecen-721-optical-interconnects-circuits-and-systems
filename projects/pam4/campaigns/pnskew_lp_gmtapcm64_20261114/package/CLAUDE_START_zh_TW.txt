@@ -1,0 +1,43 @@
+Olympus 交接｜GMTAP COMMON64｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_gmtap_common.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+沿用既有常態授權與 SHA 綁定 approval，使用新的實際
+run root 和 gm_gmtap_common_plan.json。先核對案 6、10、
+26、122、166、238、306、310。portable_review 含對照。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B gm_gmtap_common.py --mode stage --index 6 --index 10 --index 26 --index 122 --index 166 --index 238 --index 306 --index 310 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+  0–159     SS 理想 565 mV，中心、過渡、中段代表點與兩端
+  160–303   TT／FF 理想 565 mV，代表碼及兩端
+  304–507   SS／TT／FF 實體 375 Ω／14.125 kΩ、2 pF，代表碼及兩端
+  508–963   同一實體偏壓，三角落補齊 55 個主候選
+  964–1227  同一實體網路的間距補點，只送必要碼
+
+先確認 0–159 的 SS 結果。TT／FF 理想與實體先驗代表碼。
+代表碼有 XT2、RF、距離或覆蓋問題，先停在該組查原因。
+三角落的實體代表碼通過後，再提 508–963。
+每個 P/N 組合拆兩個 job，stages 是 baseline、legacy、
+ideal、oracle、divider、codes、extra 中當批實際包含的項目。
+
+用 gm_gmtap_common_classic.sbatch，私有 shrink、
+Spectre 23.1 classic +mt=1、SPECTRE_DEFAULTS=-E。
+每欄 1 CPU／4 GiB／30 min walltime，solver 估 3–15 秒。
+可沿用 %6。按 CENTER64 實測原始檔推估，0–159 約 1.4–1.8 GB，
+0–507 約 4.5–5.6 GB，0–963 約 8.6–10.6 GB。分批回收後再擴跑。
+
+  /usr/bin/python3.11 -B gm_gmtap_common_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_gmtap_common64_ss_ideal.json
+
+每階段用新的摘要檔名。依現行規則，先核對每個 P/N 的
+measurements.json 和 completion、摘要、網表、模型來源與
+重現資訊，commit 成功後，再照常態授權退役該已完成批次
+的 raw 並留收據。未分析、缺量或仍依賴波形的個案先保留。
+raw 退休前的唯讀盤點可用：
+
+  /usr/bin/python3.11 -B review_historical_raw.py --campaign common64 --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_gmtap_common64_raw_review.json
+
+共同碼表需要三角落同網路的逐碼證據，接著才提短切碼驗證。
+動態驗證設計與 C0／C1／C2 的前置條件見 DESIGN_COMMON64_zh_TW.md。

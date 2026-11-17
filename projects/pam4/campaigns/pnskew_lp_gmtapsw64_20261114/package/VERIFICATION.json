@@ -1,0 +1,16 @@
+{
+  "planned_cases": 87,
+  "dense_AC_columns": 48,
+  "transients": 39,
+  "rendered_netlists": 87,
+  "audit_preview_decks": 21,
+  "python": "3.14.4",
+  "offline_tests_passed": 200,
+  "new_tests_passed": 19,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denies hardlink creation in inherited recovery tests (WinError 5).",
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "stage_plan_sha256": "a2f8774d9887630fd9a1d5138f2758207bd01c3648299673a76eb2017d991dcc"
+}

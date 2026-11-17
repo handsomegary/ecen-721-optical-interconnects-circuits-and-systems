@@ -1,0 +1,762 @@
+{
+  "UI_s": 8.928571428571428e-12,
+  "case_count": 77,
+  "cases": [
+    {
+      "case_id": "quiet_m500",
+      "delta_ui": -0.5,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_m375",
+      "delta_ui": -0.375,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_m250",
+      "delta_ui": -0.25,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_m125",
+      "delta_ui": -0.125,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_z000",
+      "delta_ui": 0.0,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_p125",
+      "delta_ui": 0.125,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_p250",
+      "delta_ui": 0.25,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_p375",
+      "delta_ui": 0.375,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "quiet_p500",
+      "delta_ui": 0.5,
+      "kind": "pam4_noiseless",
+      "noise_seed": null,
+      "phase": "quiet_grid",
+      "runtime_budget": "quiet"
+    },
+    {
+      "case_id": "noise_m500_1001",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1001,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1001",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1001,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1001",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1001,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1002",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1002,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1002",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1002,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1002",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1002,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1003",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1003,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1003",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1003,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1003",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1003,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1004",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1004,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1004",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1004,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1004",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1004,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1005",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1005,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1005",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1005,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1005",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1005,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1006",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1006,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1006",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1006,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1006",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1006,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1007",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1007,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1007",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1007,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1007",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1007,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1008",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1008,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1008",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1008,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1008",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1008,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1009",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1009,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1009",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1009,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1009",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1009,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1010",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1010,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1010",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1010,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1010",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1010,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1011",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1011,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1011",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1011,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1011",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1011,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1012",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1012,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1012",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1012,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1012",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1012,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1013",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1013,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1013",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1013,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1013",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1013,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1014",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1014,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1014",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1014,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1014",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1014,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1015",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1015,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1015",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1015,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1015",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1015,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1016",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1016,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1016",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1016,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1016",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1016,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1017",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1017,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1017",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1017,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1017",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1017,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1018",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1018,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1018",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1018,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1018",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1018,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1019",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1019,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1019",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1019,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1019",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1019,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_m500_1020",
+      "delta_ui": -0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1020,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_z000_1020",
+      "delta_ui": 0.0,
+      "kind": "pam4_noise",
+      "noise_seed": 1020,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "noise_p500_1020",
+      "delta_ui": 0.5,
+      "kind": "pam4_noise",
+      "noise_seed": 1020,
+      "phase": "paired_noise_endpoints",
+      "runtime_budget": "noise"
+    },
+    {
+      "case_id": "tone56_dm_m500",
+      "delta_ui": -0.5,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_dm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.001
+    },
+    {
+      "case_id": "tone56_dm_z000",
+      "delta_ui": 0.0,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_dm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.001
+    },
+    {
+      "case_id": "tone56_dm_p500",
+      "delta_ui": 0.5,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_dm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.001
+    },
+    {
+      "case_id": "tone56_dm_z000_half",
+      "delta_ui": 0.0,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_dm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz_linearity",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.0005
+    },
+    {
+      "case_id": "tone56_cm_m500",
+      "delta_ui": -0.5,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_cm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.001
+    },
+    {
+      "case_id": "tone56_cm_z000",
+      "delta_ui": 0.0,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_cm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.001
+    },
+    {
+      "case_id": "tone56_cm_p500",
+      "delta_ui": 0.5,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_cm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.001
+    },
+    {
+      "case_id": "tone56_cm_z000_half",
+      "delta_ui": 0.0,
+      "frequency_Hz": 56000000000.0,
+      "kind": "tone_cm",
+      "measurement_window_s": [
+        8e-10,
+        1.175e-09
+      ],
+      "noise_seed": null,
+      "phase": "modal_probe_56GHz_linearity",
+      "pwl_samples_per_tone_cycle": 128,
+      "runtime_budget": "tone",
+      "tone_peak_V": 0.0005
+    }
+  ],
+  "data_seed": 2026101302,
+  "decisions": {
+    "held_min_gap_fraction_loss": 0.1,
+    "held_quantiles": [
+      0.05,
+      0.95
+    ],
+    "noise_scope": "Complete 20 matched seed IDs separately for each sign and point. Report range, mean, and all paired differences.",
+    "ser_delta_absolute_min": 0.01,
+    "tone_linearity_complex_relative_max": 0.05
+  },
+  "format": "pam4_pnskew_quantification_v1",
+  "ideal_oracle": {
+    "additional_native_runs": 0,
+    "delta_ui": [
+      -0.5,
+      0.5
+    ],
+    "execution": "Reuse exact same zero-skew deck and matched seed as mathematical upper-bound controls",
+    "inverse": "P=-delta/2 and N=+delta/2; apply net shifts algebraically before render",
+    "mean_delay_s": 0.0,
+    "physical_scope": "Ideal noncausal inverse reference. Delay-only hardware introduces mean latency and must establish timing separately."
+  },
+  "injection": {
+    "N_delay": "-delta/2",
+    "P_delay": "delta/2",
+    "clock_shift_s": 0.0,
+    "implementation": "Shift original TX PWL time axes only; exact time-shift commutation in admitted LTI channel",
+    "mean_delay_s": 0.0,
+    "noise_scope": "Commutation is for the driven deterministic signal; source shifting does not delay resistor noise. Seed IDs pair conditions, not adaptive noise waveforms.",
+    "reference": "X_ip/X_im after synthetic two independent buffered RC channels"
+  },
+  "nominal_symbol_rate_Baud": 112000000000.0,
+  "phase_order": [
+    "quiet_grid",
+    "modal_probe_56GHz",
+    "paired_noise_endpoints"
+  ],
+  "planned_execution": {
+    "CPUs_per_case": 1,
+    "raw_max_bytes": 536870912,
+    "requested_threads": 1,
+    "solver": "classic"
+  },
+  "resource_budgets": {
+    "noise": {
+      "historical_reference_minutes": 70,
+      "planning_range_minutes": [
+        55,
+        110
+      ],
+      "requested_memory_GiB": 6,
+      "requested_wall_minutes": 180
+    },
+    "quiet": {
+      "historical_reference_minutes": 55,
+      "planning_range_minutes": [
+        45,
+        90
+      ],
+      "requested_memory_GiB": 6,
+      "requested_wall_minutes": 180
+    },
+    "tone": {
+      "historical_reference_minutes": null,
+      "planning_range_minutes": [
+        45,
+        110
+      ],
+      "requested_memory_GiB": 6,
+      "requested_wall_minutes": 180
+    }
+  },
+  "resource_scope": "Provisional classic envelopes, not measured per-case RAM or a guarantee. The original transient stop is 29.414285714 ns for quiet, noise and tone. Recheck after the first new case of each class.",
+  "scope": "Development impact characterization of the unmodified frontend and numerical ADC/FFE; course and physical compensation qualification remain unmeasured.",
+  "source": {
+    "frozen_detector_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+    "lineage": "genuine r5_late1/cml2_late1 using r3 focus55 CTLE",
+    "original_vm_deck_sha256": {
+      "noise": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2",
+      "noiseless": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3"
+    },
+    "scorer": "Original r5 frozen primary and secondary detectors, no fitting, 2048 held symbols and 2032 FFE decisions"
+  }
+}

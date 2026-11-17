@@ -1,0 +1,15 @@
+{
+  "deck_count": 13,
+  "first_approval_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "offline_tests": 57,
+  "raw_on_olympus_read": false,
+  "spectre_executed": false,
+  "slurm_submitted": false
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "status": "passed",
+    "simulations_started": 0,
+    "checks": [
+      "four fixed cases, baseline and selected25fF2um, new2432symbol identity",
+      "actual existing prediction and metrics APIs only; predeclared frozen synthetic taps",
+      "fixedlag2048 held inputs map to exact commanded labels and2032 full17tap outputs",
+      "wrong labels, missing counts and duplicate ordinals are rejected",
+      "frozen synthetic detector remains unchanged; deliberate mutation is detected",
+      "no fitting or simulator launch in self-test"
+    ]
+  },
+  {
+    "started_utc": "2026-10-23T04:20:43.936590Z",
+    "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+    "runner": {
+      "pid": 9708,
+      "state": "R",
+      "start_ticks": 2543801,
+      "pgid": 9507,
+      "sid": 9507,
+      "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+      "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+      "comm": "python3"
+    },
+    "completed_cases": [],
+    "current_case": null,
+    "scope": "Independent fresh-data comparison of original10fF/1um and selected25fF/2um secondary sampling branch, with each exact previously frozen detector. Numerical7bit quantizer and17tapFFE, reset comparators and ideal clocks remain; no full ADC certification or physical digital FFE verification.",
+    "automatic_retry": false,
+    "automatic_resume": false,
+    "independent_fresh_data_validation": true,
+    "validation_fitting_performed": false,
+    "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f",
+    "symbols_file_sha256": "ebbb0c237a2a32ce5cdd44331402cfd333e3a4d919bace72202a1560ff69712f",
+    "detector_sha256": {
+      "baseline_r5": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+      "secondary_c25_w2": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+    },
+    "status": "prepared",
+    "updated_utc": "2026-10-23T04:20:44.111701Z",
+    "prepared_sha256": {
+      "noiseless_baseline_r5": "50ee52e659ec420cb5daeeec59e67506a9cdeba6368c00bbadd765bcbb3afaba",
+      "noiseless_secondary_c25_w2": "dafbc522f5df1c5d0631a2748fde1d22287f453aef74a4a985f9167f409908eb",
+      "noise_baseline_r5": "ab9e76a7a51e06ac1d7f1e76e6460eee88554045b94c8d5d8b11533ea9bc4c37",
+      "noise_secondary_c25_w2": "8088f7f5b3aae556f6f2d7a918026921cbd6270fe29425f1ef1473f4c1a4a6de"
+    },
+    "simulations_started": 0
+  },
+  {
+    "state": {
+      "automatic_resume": false,
+      "automatic_retry": false,
+      "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+      "completed_cases": [],
+      "current_case": null,
+      "detector_sha256": {
+        "baseline_r5": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+        "secondary_c25_w2": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+      },
+      "independent_fresh_data_validation": true,
+      "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f",
+      "runner": {
+        "comm": "python3",
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+        "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+        "pgid": 9507,
+        "pid": 9708,
+        "sid": 9507,
+        "start_ticks": 2543801,
+        "state": "R"
+      },
+      "scope": "Independent fresh-data comparison of original10fF/1um and selected25fF/2um secondary sampling branch, with each exact previously frozen detector. Numerical7bit quantizer and17tapFFE, reset comparators and ideal clocks remain; no full ADC certification or physical digital FFE verification.",
+      "simulations_started": 0,
+      "started_utc": "2026-10-23T04:20:43.936590Z",
+      "status": "prepared",
+      "symbols_file_sha256": "ebbb0c237a2a32ce5cdd44331402cfd333e3a4d919bace72202a1560ff69712f",
+      "updated_utc": "2026-10-23T04:20:44.111701Z",
+      "validation_fitting_performed": false
+    },
+    "script_sha256": "01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0",
+    "protocol_sha256": "2f5a79e84e7deb0c083641effc204b2263c3e70e35c746ef7596edbd7a0ef86f"
+  }
+]

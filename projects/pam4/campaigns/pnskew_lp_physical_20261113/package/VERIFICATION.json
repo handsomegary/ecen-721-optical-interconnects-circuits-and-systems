@@ -1,0 +1,30 @@
+{
+  "physical_decks_rendered": 102,
+  "stages": {
+    "core": 66,
+    "trim": 24,
+    "comp": 12
+  },
+  "portable_indices": [
+    0,
+    2,
+    4,
+    18,
+    26,
+    30,
+    38,
+    42,
+    50,
+    54,
+    56,
+    58,
+    62,
+    64,
+    66,
+    90
+  ],
+  "portable_diagnostics": 9,
+  "offline_tests": 54,
+  "spectre_executed": false,
+  "slurm_submitted": false
+}

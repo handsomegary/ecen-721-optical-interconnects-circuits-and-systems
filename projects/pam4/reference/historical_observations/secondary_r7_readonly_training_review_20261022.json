@@ -1,0 +1,161 @@
+{
+  "observed_utc": "2026-10-23T02:09:13.697540Z",
+  "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+  "actual_simulators": [],
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "training_diagnostic_sha256": "ed9822ebf8417901c357632eba5ad5f16c19c2fb3d581c26142c6ff098ab8ae9",
+  "training_only_stats": {
+    "global_aperture_transfer": {
+      "count": 1024,
+      "gain_VV": -0.5562391174669745,
+      "offset_V": -5.242772663920054e-05,
+      "primary_Vppd": 0.09128920826828213,
+      "residual_peak_V": 0.004217481237294177,
+      "residual_rms_V": 0.001265771513096157,
+      "secondary_Vppd": 0.050915171149024885
+    },
+    "physical_summary": {
+      "secondary_closing_edge_change_V": {
+        "centered_rms": 0.00018584140288261197,
+        "count": 1024,
+        "maximum": 0.0006262620892882875,
+        "mean": -4.252273615057856e-07,
+        "minimum": -0.0006168928829946019,
+        "rms": 0.0001858418893675112
+      },
+      "secondary_common_mode_V": {
+        "centered_rms": 0.0004414229118998532,
+        "count": 1024,
+        "maximum": 0.844751959292953,
+        "mean": 0.8431637407066159,
+        "minimum": 0.8418179335911704,
+        "rms": 0.8431638562560426
+      },
+      "secondary_hold_change_120ps_V": {
+        "centered_rms": 9.444482196683691e-05,
+        "count": 1024,
+        "maximum": 0.00031977706106389725,
+        "mean": 5.45502348420321e-06,
+        "minimum": -0.0002940394002156621,
+        "rms": 9.460222871349666e-05
+      },
+      "secondary_hold_change_first8ps_V": {
+        "centered_rms": 9.697173237706968e-05,
+        "count": 1024,
+        "maximum": 0.0003202866786334857,
+        "mean": 2.5900178245749465e-07,
+        "minimum": -0.0003417831513607972,
+        "rms": 9.697207826035977e-05
+      }
+    },
+    "buffer0_and7_summary": {
+      "buffer_at_primary_capture_V": {
+        "centered_rms": 0.00668382280249838,
+        "count": 256,
+        "maximum": 0.018191731673903755,
+        "mean": -0.00038808170968624356,
+        "minimum": -0.013887835420303696,
+        "rms": 0.006695079885153746
+      },
+      "buffer_before_secondary_close_V": {
+        "centered_rms": 0.009137849519133337,
+        "count": 256,
+        "maximum": 0.025278721374774493,
+        "mean": -0.00032117165035856375,
+        "minimum": -0.022781905002289604,
+        "rms": 0.009143491951290788
+      },
+      "buffer_change_final8ps_V": {
+        "centered_rms": 0.0011144512658034776,
+        "count": 256,
+        "maximum": 0.0029429459675407443,
+        "mean": 5.7631194858813375e-05,
+        "minimum": -0.0031752432005595077,
+        "rms": 0.0011159404009497228
+      },
+      "buffer_common_mode_before_close_V": {
+        "centered_rms": 0.0004054830806762132,
+        "count": 256,
+        "maximum": 0.8353534142090606,
+        "mean": 0.834245590237347,
+        "minimum": 0.8329138975819365,
+        "rms": 0.8342456887793837
+      },
+      "buffer_negative_rail_headroom_before_close_V": {
+        "centered_rms": 0.004591259553756726,
+        "count": 256,
+        "maximum": 0.07810574358518985,
+        "mean": 0.06559382393747375,
+        "minimum": 0.05470913892562468,
+        "rms": 0.06575431090833715
+      },
+      "buffer_positive_rail_headroom_before_close_V": {
+        "centered_rms": 0.004582501029419374,
+        "count": 256,
+        "maximum": 0.07749104392791428,
+        "mean": 0.06591499558783231,
+        "minimum": 0.05282702221041535,
+        "rms": 0.06607409446241835
+      },
+      "input_N_negative_VDS_before_close_V": {
+        "centered_rms": 0.005876342935986096,
+        "count": 256,
+        "maximum": 0.4619996526393668,
+        "mean": 0.4489138347739604,
+        "minimum": 0.4322640836652466,
+        "rms": 0.44895229418922
+      },
+      "input_N_negative_VGS_before_close_V": {
+        "centered_rms": 0.007146972271536722,
+        "count": 256,
+        "maximum": 0.4282359954734397,
+        "mean": 0.40766311848764786,
+        "minimum": 0.3897191320181115,
+        "rms": 0.40772576247733494
+      },
+      "input_N_positive_VDS_before_close_V": {
+        "centered_rms": 0.005945093005418118,
+        "count": 256,
+        "maximum": 0.46409956670316077,
+        "mean": 0.44848358273467004,
+        "minimum": 0.43193918496231665,
+        "rms": 0.448522985044656
+      },
+      "input_N_positive_VGS_before_close_V": {
+        "centered_rms": 0.007009622489420869,
+        "count": 256,
+        "maximum": 0.42392148288679266,
+        "mean": 0.4081392227448335,
+        "minimum": 0.38834458015669193,
+        "rms": 0.40819941199149345
+      },
+      "secondary_acquisition_lag_before_close_V": {
+        "centered_rms": 0.0009091077030072628,
+        "count": 256,
+        "maximum": 0.00250711062112996,
+        "mean": 2.247240484338879e-05,
+        "minimum": -0.0022122763313069393,
+        "rms": 0.000909385410399016
+      }
+    }
+  },
+  "fixed_detector_diagnostics": {
+    "primary": {
+      "fixed_lag": 1,
+      "range_Vpp": 0.1,
+      "training_centered_RMS_V": 0.01704399619433393,
+      "FFE_l2_normalized": 5.264511977354626,
+      "FFE_l2_target_units_per_V": 308.87779587188294,
+      "white_input_noise_gain_caveat": "L2 tapnorm is only a white uncorrelated sample-noise reference, not integrated actual correlated device noise."
+    },
+    "secondary": {
+      "fixed_lag": 3,
+      "range_Vpp": 0.075,
+      "training_centered_RMS_V": 0.009562801555056991,
+      "FFE_l2_normalized": 5.028557333349626,
+      "FFE_l2_target_units_per_V": 525.8456221639808,
+      "white_input_noise_gain_caveat": "L2 tapnorm is only a white uncorrelated sample-noise reference, not integrated actual correlated device noise."
+    }
+  },
+  "free_bytes": 92015587328
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "pam4_sar7_fast_pilot_v1",
+  "cases": [
+    {
+      "case_id": "sar7_12_tt_175gs_matched_q",
+      "parent_job": "761279",
+      "parent_case": "sar7_10_tt_matched_q_load",
+      "parent_deck_sha256": "2070f861b4e07e1037c6593ad5518bfd379fef185248ee60fa54c0c8c3832347"
+    }
+  ]
+}

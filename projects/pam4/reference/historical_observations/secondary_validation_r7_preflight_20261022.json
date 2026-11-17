@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-23T04:16:35.026297Z",
+  "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+  "uptime_s": 25189.26,
+  "actual_simulators": [],
+  "capacity_available": true,
+  "free_bytes": 88725401600,
+  "memory": {
+    "MemTotal_KiB": 20375412,
+    "MemAvailable_KiB": 18554304,
+    "SwapTotal_KiB": 4194300,
+    "SwapFree_KiB": 4194300
+  },
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "training_status_sha256": "b313c3ae8fdd84739cf381503161d2ba00c57034f599a3afecc5bcb850bd4a6c",
+  "training_protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+  "detector_sha256": {
+    "baseline_r5": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+    "secondary_c25_w2": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f"
+  },
+  "new_data_seed": 2026102301,
+  "new_noise_seed": 251,
+  "seed_metadata_protocols_scanned": 5,
+  "seed_collision_metadata": [],
+  "new_root_absent": true
+}

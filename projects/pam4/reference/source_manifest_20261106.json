@@ -1,0 +1,443 @@
+{
+  "status": "source_snapshot_only",
+  "source": "local Project6 scripts; verified equivalent VM files where recorded",
+  "limitations": [
+    "Historical scripts may depend on VM files, authorized PDK, frozen detector data and raw results not in this repository.",
+    "Do not run legacy retry or queue scripts automatically.",
+    "Repository path placeholders must be adapted by the user."
+  ],
+  "files": [
+    {
+      "filename": "adc_acquisition_r5.py",
+      "local_source_sha256": "9d9b62429cb21f327dbe985056714b803dd07e73542b72fce0954ffcb4c12845",
+      "repository_sha256": "9d9b62429cb21f327dbe985056714b803dd07e73542b72fce0954ffcb4c12845",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_backend_pam4_r5.py",
+      "local_source_sha256": "25f7168a47ea1a9b62b4548675534ac9c85c04d55d0a24414a9279f5c86e34f4",
+      "repository_sha256": "25f7168a47ea1a9b62b4548675534ac9c85c04d55d0a24414a9279f5c86e34f4",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_backend_screen_r6.py",
+      "local_source_sha256": "f14fb804fafa9f6b4f59b793ba0ddb232ed3eeb25ed380bf922b064a13c74b2b",
+      "repository_sha256": "f14fb804fafa9f6b4f59b793ba0ddb232ed3eeb25ed380bf922b064a13c74b2b",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_backend_screen_r6b.py",
+      "local_source_sha256": "9edd0dc301205d0626944f7d7723ed24787fdd3f520da2c4642d55279e948553",
+      "repository_sha256": "9edd0dc301205d0626944f7d7723ed24787fdd3f520da2c4642d55279e948553",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_cdac_acquisition_r6.py",
+      "local_source_sha256": "5cdb6805bc0e952ddded4b98947a55397619f2868695ff1070253848865fc517",
+      "repository_sha256": "5cdb6805bc0e952ddded4b98947a55397619f2868695ff1070253848865fc517",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_cdac_native_r5.py",
+      "local_source_sha256": "e46302b1a1ba74e1f1b9d1d8a6943d6f2ff46fdd08b5eb0be69f78e14573e60c",
+      "repository_sha256": "e46302b1a1ba74e1f1b9d1d8a6943d6f2ff46fdd08b5eb0be69f78e14573e60c",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_comparator_burst_r5.py",
+      "local_source_sha256": "81f47f0e553169205fa759af4163cbeefe3e7d7168eeec1f8da607c6c30f6360",
+      "repository_sha256": "81f47f0e553169205fa759af4163cbeefe3e7d7168eeec1f8da607c6c30f6360",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_comparator_diagnostic.py",
+      "local_source_sha256": "cd6c654ba77fef77f2ba37923ecdb4ebdfabdd5dc7a79234d1d87de9447b3498",
+      "repository_sha256": "cd6c654ba77fef77f2ba37923ecdb4ebdfabdd5dc7a79234d1d87de9447b3498",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_comparator_probe.py",
+      "local_source_sha256": "d66e31333aa75f2ec7c625c67aa143eff33e620aab8095fb15a302ca5e2b250c",
+      "repository_sha256": "50461d587221d8b7ad8e2d2b3ba27020eab98a1227896b1b727f9582d6650936",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_comparator_r5.py",
+      "local_source_sha256": "bc27c27f162d14fb76daefa7618c5fc97b78fa0e958bac296bcf2796186261ef",
+      "repository_sha256": "bc27c27f162d14fb76daefa7618c5fc97b78fa0e958bac296bcf2796186261ef",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_doubletail_r5.py",
+      "local_source_sha256": "d91a00426dd5decac8ff5c74e286aa6522a5180ff2fce134f84955727a5df140",
+      "repository_sha256": "d91a00426dd5decac8ff5c74e286aa6522a5180ff2fce134f84955727a5df140",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_equalizer_r4.py",
+      "local_source_sha256": "7b828bb10b01f30271ef0ffe4e9bdd98beceef3703c6108f9621adb031e7a70d",
+      "repository_sha256": "7b828bb10b01f30271ef0ffe4e9bdd98beceef3703c6108f9621adb031e7a70d",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_frontend_load_r4.py",
+      "local_source_sha256": "a5a8257b4db92cb820f1b3ade47a593677a78b739530ba651e45d7b445a68d4f",
+      "repository_sha256": "a5a8257b4db92cb820f1b3ade47a593677a78b739530ba651e45d7b445a68d4f",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_frontend_load_r5.py",
+      "local_source_sha256": "82b07d83b016e433861f783a19f45b41847512fbbeb46a7e2451136497f5d932",
+      "repository_sha256": "82b07d83b016e433861f783a19f45b41847512fbbeb46a7e2451136497f5d932",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_isolation_r4.py",
+      "local_source_sha256": "d2baacf1b53e26174bedb9339b96cc9f34c529161fdcd28eef0ceb8605f85382",
+      "repository_sha256": "d2baacf1b53e26174bedb9339b96cc9f34c529161fdcd28eef0ceb8605f85382",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_isolation_r5.py",
+      "local_source_sha256": "d6bb6db3425e573d8fd628d78a815d016575c72791e1b858d909cba784fa0821",
+      "repository_sha256": "d6bb6db3425e573d8fd628d78a815d016575c72791e1b858d909cba784fa0821",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_reset_clamp_r5.py",
+      "local_source_sha256": "b46c6e371ef1ecdda042de3a5a106533815f43a80ab4840b7fd35fc9ba36c0b7",
+      "repository_sha256": "b46c6e371ef1ecdda042de3a5a106533815f43a80ab4840b7fd35fc9ba36c0b7",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_reset_sweep_r4.py",
+      "local_source_sha256": "0db2a358b8d4e6e0cc5585ce690c9974176f76498ac6d11d27cbb9c17def5adb",
+      "repository_sha256": "0db2a358b8d4e6e0cc5585ce690c9974176f76498ac6d11d27cbb9c17def5adb",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "adc_training_diagnostic_r5.py",
+      "local_source_sha256": "34dea2a9b01a0c79f5e654a8ac8b50a64388408805dffd82b811b83930a5b4be",
+      "repository_sha256": "34dea2a9b01a0c79f5e654a8ac8b50a64388408805dffd82b811b83930a5b4be",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "create_symbols.il",
+      "local_source_sha256": "41361ce78bf3878de278c21e8bce560fe5c403fb327a2061caac527ae9135f59",
+      "repository_sha256": "b57142bba68bafc11bbfd0077410502f74900ea1842baa8b20bfca294715f524",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "create_symbols_r3.il",
+      "local_source_sha256": "bf3a92b6b515f473a4b84970980ce4449d2dda571aa52693fef101956e09086c",
+      "repository_sha256": "2f7f8bf4c63847b6958e974bb9b59086c62d7e38efc65f0ceb6c605733224c62",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "diagnose_readin_20261020.py",
+      "local_source_sha256": "4e9251e8ba4c30cb0d2b298136188c6b59ecbd32fb222f18bead5a1d7b816ff6",
+      "repository_sha256": "b50f7dc567159e9ac3f93840dfa0915e0ada12c0a4cb41979ea49616c4c26e0b",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "export_adc_r4.py",
+      "local_source_sha256": "c945853517cec5db83ed2b42a19d15a92091e729bf7ef8f03c96fec539ed6cb8",
+      "repository_sha256": "792c11097b16080932a5ca048200cbe9e9c26b622510d73a8b98844811776139",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "export_adc_r5.py",
+      "local_source_sha256": "c9620a9cf3adc75b8087dac656a7f4cb6353116a5681fd213b46f93f3baae566",
+      "repository_sha256": "9253a6e885f5e6207749d22ac42d71b2e0b96d7bb3fd71e038d9e59adf98c965",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "export_optimization.py",
+      "local_source_sha256": "b66cf15c534d177d1b502ef10157ff15bb957705e4d1aef3e09fee26241b40b5",
+      "repository_sha256": "318d5a0296954aa01db9109c10c465ed500807b4f7d7a336d5cd8c71df18ae8d",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "ffe_phase_resume1_20261022.py",
+      "local_source_sha256": "7cedd4fd32a8c69915dacf144bdcf40217fbfa98847dacd08ba19bdcd6cead71",
+      "repository_sha256": "976ef1299c9885948d6cea0976b27ddfe6c5850953eb7e9387f6e05432f6d067",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "ffe_phase_resume2_20261022.py",
+      "local_source_sha256": "1a01d14b611f5e3cad372bb428d4768acad181fd723a84fe55a90c70bbf97b2b",
+      "repository_sha256": "cb80199c17f6ac3c96f0d65405a186dbc8dc60febf131d39443ee5e3dcd61872",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "ffe_phase_sweep_20261022.py",
+      "local_source_sha256": "660a374e1da30b5fec84aed9e99a8ecba7de65466532767c83ff2e87ec172a8e",
+      "repository_sha256": "56b4a7a4b2db3655085b83f1dddb0ed8cce49db63142cf9236a0206299557c42",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "ffe_phase_viva_20261022.py",
+      "local_source_sha256": "23e310f6740b5e5a45542ea2a78e15b2490f1a28d01a2a45cb460b380626dd09",
+      "repository_sha256": "d98d03e6636d8738feed884d4346fa56537bbcdc1013eb41c70bb8773a1ce259",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "finalize_milestone.py",
+      "local_source_sha256": "7aa7210a3824afce652be61ba7a427c856907b8b670605904ebb86c3860cfbb6",
+      "repository_sha256": "62a8d08e71e9692ff2d741b8895bbeff6aaf3d83f4a4416c719184270e68eef7",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "native_baseline.py",
+      "local_source_sha256": "be4876909514593037fbd7638e90e8b79266f1e4c8b01e4b914fba80877bceec",
+      "repository_sha256": "fce7177183e5692ae59227e605a96ed28bb152d442878d65ed2a7ee373ef6e03",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "native_capacitor_r5.py",
+      "local_source_sha256": "ab10f9893e4a6d5c283a90aed3632bd6e80f9317041383e6f97c62702273e499",
+      "repository_sha256": "ab10f9893e4a6d5c283a90aed3632bd6e80f9317041383e6f97c62702273e499",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "native_geometry_r5.py",
+      "local_source_sha256": "76296ec7e958beed26e6058c2fc1009915c1366b2fb48a3ee4d010adb11b0697",
+      "repository_sha256": "76296ec7e958beed26e6058c2fc1009915c1366b2fb48a3ee4d010adb11b0697",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "noise_band_check.py",
+      "local_source_sha256": "a0e546f0f48f0b87bc73cd12be007a4f6442d080caccbcd8821bd3fee370c37b",
+      "repository_sha256": "a0e546f0f48f0b87bc73cd12be007a4f6442d080caccbcd8821bd3fee370c37b",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "oa_manifest.py",
+      "local_source_sha256": "427e40bb091bc07d398869862803f2f62c433893236da56bb3047934f156bd8f",
+      "repository_sha256": "5a25b3cb6fe1413b0c7a753dc9a154ca997905041f84297e2cbc9ee9b9c9b2f5",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "oa_revision.py",
+      "local_source_sha256": "35127d67d542caa96263f9fc8f9540608cf395738496b34ee0a9ac3f2cd95a2b",
+      "repository_sha256": "35127d67d542caa96263f9fc8f9540608cf395738496b34ee0a9ac3f2cd95a2b",
+      "match_exact": true,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "optimization_op_probe.py",
+      "local_source_sha256": "231360c5c753039e73fc9d2d0b212cc753c88f020f3c2e6cced46ef67f63832f",
+      "repository_sha256": "05b64c3bfad5ac264cfe77a4d2c016f98e70b9d518fd4d3764c92d5e13ddc511",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "optimize_ac.py",
+      "local_source_sha256": "5796bcb2e066f90577763cb6296e8f11843d466a5613bea043e91e32f1132cf4",
+      "repository_sha256": "f0f3132ab40b93c2858add4739d857feb29f1f19b75dd584d5a93fa9303f3a7d",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "optimize_ac_focus.py",
+      "local_source_sha256": "cfd93501e0216d8c89bc1ed82615b6c11bdd0a313e0336c4e6dd3c7aee0a49b7",
+      "repository_sha256": "ed7821aeb57ea372c2874d33673aac739dffcaf4b2e1fdf8d2913875b5a0bac1",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "optimize_pam4.py",
+      "local_source_sha256": "760ad363ebe89d31c4d1f7c0cd64bcb09b543e84a7d63b40d4946fb1a6aa1108",
+      "repository_sha256": "760ad363ebe89d31c4d1f7c0cd64bcb09b543e84a7d63b40d4946fb1a6aa1108",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "pam4_ffe_diagnostic.py",
+      "local_source_sha256": "d52ff387dfa874f41432a079949953fa06b3cdfa95bcaa6fc1df88e9f8aed0ef",
+      "repository_sha256": "d52ff387dfa874f41432a079949953fa06b3cdfa95bcaa6fc1df88e9f8aed0ef",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "pam4_integration.py",
+      "local_source_sha256": "c5c0a3478666e62e2798bf57aa7b47b8b4dfce6c67b806f924c946e9b273c936",
+      "repository_sha256": "893233a021507d0a68279ea7925ca1b8d2b5746826a032bc6dd5789392aae93a",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "pam4_metrics.py",
+      "local_source_sha256": "84e43e71e2add6c142cdee8ac74ec9297b04d88ebf984e88a6168ccf79a76371",
+      "repository_sha256": "84e43e71e2add6c142cdee8ac74ec9297b04d88ebf984e88a6168ccf79a76371",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "run_project6_resume_pipeline.py",
+      "local_source_sha256": "2fe6681d0fa104433758776f061a6a478489391cd965458a8daa92871c4e7468",
+      "repository_sha256": "6fb7192b68b3bd2d430b7b396b330174802c74c24eb921c5678de83b32527f99",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "run_r5_noise_retry2_20261020.py",
+      "local_source_sha256": "a8e2db3fe63ab7777f6ff0300dfa8927248308f45936fe54a249ad9e7506c81e",
+      "repository_sha256": "f746c2dbc1d97757c236eefbfde6fecd31f69a1115bb867c9c8c2ba368a005b0",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "run_r5_noise_retry_20261017.py",
+      "local_source_sha256": "5af5a72130fd22af6786297c44115343beda6c9ba522749eafff17a41e2e9873",
+      "repository_sha256": "f555a007cb533b70a409082a7c36a3b5da143fdff0f31eba8a7a6bcf0b87cd21",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "run_r5_noise_retry_20261020.py",
+      "local_source_sha256": "333c848818715bc34fceb2b0ee526242b3aa60c96ac791f64635f5e2b5372849",
+      "repository_sha256": "4babc5a0062feede84138b87448053e154692e8e9994164886082a8c49e7c8c2",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "run_r5_reboot_resume.py",
+      "local_source_sha256": "0c02120d0a049f22b52f5fa08392cb1498f13718c6a6a410f35c263416b25b16",
+      "repository_sha256": "71d9940b3e340440797942ce25dc641c2e7f0fbb53876019ce2da6898952597b",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "run_r5_validation_queue.py",
+      "local_source_sha256": "af1f05981690fb565f11f0311527f95bea45b92a8fa1b68b62b6a267e6c0005a",
+      "repository_sha256": "685548a3f5b80b3ede41efab480d782b2e4952b16fc0bb0a30ba313025ca9797",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "secondary_cap_training_r7_20261022.py",
+      "local_source_sha256": "a83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac",
+      "repository_sha256": "a32596742f89551ea8cfb3c9e96df3ace2bea561c34cdc2db76fb5e7f83d4dee",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "secondary_cap_validation_r7_20261022.py",
+      "local_source_sha256": "01eb4e152835f3ba4e7779bc63a5a3a081e543d26247c046e7b25294cec02fd0",
+      "repository_sha256": "ae18a47065e6a3ef524b121045ad6001da2afadc702c146c94124e31d7875cf5",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "secondary_hold_mechanism_r8_20261029.py",
+      "local_source_sha256": "5c7fe7aa4abd319b420881621eaa105dd653fbcff6b0570f4dee4ff0451c6545",
+      "repository_sha256": "752c4921f9fb0c1a048ee68fae32cb96473b3b882df710dedda662ee506078b7",
+      "match_exact": false,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "verify_revision.py",
+      "local_source_sha256": "61dd6d51b1621f251823cc2473521e1bca00d7c6982194e2ae3256db0132e9ba",
+      "repository_sha256": "61dd6d51b1621f251823cc2473521e1bca00d7c6982194e2ae3256db0132e9ba",
+      "match_exact": true,
+      "previously_present": true,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    },
+    {
+      "filename": "watch_project6_admission.py",
+      "local_source_sha256": "a25a775c9a04cd527e3587d30695bb4a1e7936f8587bf44213a6887cd7848482",
+      "repository_sha256": "84061c8b38ace8813fae3d7dbe8e35b67cb7d106402acf2f4adee2e76e888f40",
+      "match_exact": false,
+      "previously_present": false,
+      "comment": "Repository versions may replace local absolute paths with placeholders; historical scripts are not authorized to run automatically."
+    }
+  ]
+}

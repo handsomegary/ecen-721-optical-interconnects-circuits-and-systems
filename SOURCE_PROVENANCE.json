@@ -1,0 +1,30 @@
+{
+  "projects": {
+    "pam4": {
+      "archive_sha256": "7c900477f5ec1b105a3af48b7136f1bb1bcce4144ac6d34149c0e77d863a4f7b",
+      "cases": {
+        "baseline": {
+          "original_deck_sha256": "4a68e2eba2ed60fb7dc4d97e9ee5c63b1cd4488cb35530ff20b8fa193eac05c1",
+          "published_template_sha256": "3302b20040cc0eb41317e1122a57cb3196e96181b9130fe7d5912fb45da8b5ea",
+          "path": "netlists/baseline.scs"
+        },
+        "candidate": {
+          "original_deck_sha256": "d8876f3a02fd7407f2df279c1e0c24ff3ac106424e1ac20d781a71a96ebd7fe6",
+          "published_template_sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc",
+          "path": "netlists/candidate.scs"
+        },
+        "baseline_noise": {
+          "original_deck_sha256": "3394a71c4489dc53dea2d74b65dce91e85d5c228e06ffbf3b7ead5c5d2ea2443",
+          "published_template_sha256": "fa043ee834f8d9eb79643f0beee95678bca336f03494febfabaa782ed49ea37e",
+          "path": "netlists/baseline_noise.scs"
+        },
+        "candidate_noise": {
+          "original_deck_sha256": "df05df7419cdc4841355dfd311d51ceaf1053d265d3553ff18a8c25ead4247cf",
+          "published_template_sha256": "b489584c2984f9339ae2f6e9357ca02d4a893cebb61188cb15ffbb91d757e30e",
+          "path": "netlists/candidate_noise.scs"
+        }
+      }
+    }
+  },
+  "notes": "Deck templates differ from verified archived decks only at the PDK root marker. Digests refer to raw bytes."
+}

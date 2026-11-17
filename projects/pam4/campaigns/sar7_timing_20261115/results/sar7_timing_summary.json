@@ -1,0 +1,51 @@
+{
+  "status": "measured",
+  "case_id": "sar7_02_tt_earlycmp42",
+  "baseline": {
+    "job_id": "759069",
+    "comp_window_ps": 25,
+    "trial_launch_to_compare_ps": 38,
+    "unresolved_conversions": 12,
+    "wrong_conversions": 5,
+    "unresolved_bits": {
+      "6": 7,
+      "5": 8,
+      "4": 10,
+      "3": 12,
+      "2": 12,
+      "1": 12,
+      "0": 12
+    },
+    "final_cm_change_mV": [
+      -111.8687372147853,
+      -106.6789582601534
+    ],
+    "tran_sha256": "9ff38501a7c959565bc96a2738064bf7c5c4ed4e55840aa27527858fd6b8b884"
+  },
+  "candidate": {
+    "job_id": "760002",
+    "comp_window_ps": 42,
+    "trial_launch_to_compare_ps": 21,
+    "unresolved_conversions": 0,
+    "wrong_conversions": 10,
+    "unresolved_bits": {
+      "6": 0,
+      "5": 0,
+      "4": 0,
+      "3": 0,
+      "2": 0,
+      "1": 0,
+      "0": 0
+    },
+    "final_cm_change_mV": [
+      -112.37631250803759,
+      -107.29711039910251
+    ],
+    "solver_seconds": 114.8084936151281,
+    "raw_bytes": 43822549,
+    "max_abs_sample_error_lsb": 1.0157466745022248,
+    "max_observed_resolve_delay_s": 3.81071428567775e-11,
+    "tran_sha256": "adf338dd6ac35bca5c302206a3681715f83ff40ce46c6fb810ebe004b02c7676",
+    "logic_smoke_pass": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "PAM4",
+  "library_name": "p6_224g_lib",
+  "library_path": "local_oa/p6_224g_lib",
+  "cases": {
+    "baseline": {
+      "path": "netlists/baseline.scs",
+      "sha256": "3302b20040cc0eb41317e1122a57cb3196e96181b9130fe7d5912fb45da8b5ea"
+    },
+    "candidate": {
+      "path": "netlists/candidate.scs",
+      "sha256": "44c3fe504753a4db479c861797ee8fbe09d3e70ab9fedf273272870c9a6e9bfc"
+    },
+    "baseline_noise": {
+      "path": "netlists/baseline_noise.scs",
+      "sha256": "fa043ee834f8d9eb79643f0beee95678bca336f03494febfabaa782ed49ea37e"
+    },
+    "candidate_noise": {
+      "path": "netlists/candidate_noise.scs",
+      "sha256": "b489584c2984f9339ae2f6e9357ca02d4a893cebb61188cb15ffbb91d757e30e"
+    }
+  }
+}

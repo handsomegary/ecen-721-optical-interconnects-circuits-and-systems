@@ -1,0 +1,144 @@
+{
+  "status": "formal_C0_endpoint_payload_complete",
+  "phase": -1,
+  "zero": {
+    "primary": {
+      "sample_count": 496,
+      "symbol_errors": 24,
+      "SER": 0.04838709677419355,
+      "gray_bit_errors": 24,
+      "prediction_RMSE_in_target_symbol_units": 0.5131540421885926,
+      "clipped_count": 0
+    },
+    "secondary": {
+      "sample_count": 496,
+      "symbol_errors": 28,
+      "SER": 0.056451612903225805,
+      "gray_bit_errors": 28,
+      "prediction_RMSE_in_target_symbol_units": 0.5518477085659658,
+      "clipped_count": 0
+    }
+  },
+  "pairs": {
+    "a": {
+      "selected_code": 0,
+      "code0": {
+        "primary": {
+          "sample_count": 496,
+          "symbol_errors": 102,
+          "SER": 0.2056451612903226,
+          "gray_bit_errors": 102,
+          "prediction_RMSE_in_target_symbol_units": 0.7843933621588514,
+          "clipped_count": 0
+        },
+        "secondary": {
+          "sample_count": 496,
+          "symbol_errors": 102,
+          "SER": 0.2056451612903226,
+          "gray_bit_errors": 102,
+          "prediction_RMSE_in_target_symbol_units": 0.7855627074715734,
+          "clipped_count": 0
+        }
+      },
+      "selected": {
+        "primary": {
+          "sample_count": 496,
+          "symbol_errors": 102,
+          "SER": 0.2056451612903226,
+          "gray_bit_errors": 102,
+          "prediction_RMSE_in_target_symbol_units": 0.7843933621588514,
+          "clipped_count": 0
+        },
+        "secondary": {
+          "sample_count": 496,
+          "symbol_errors": 102,
+          "SER": 0.2056451612903226,
+          "gray_bit_errors": 102,
+          "prediction_RMSE_in_target_symbol_units": 0.7855627074715734,
+          "clipped_count": 0
+        }
+      },
+      "shared_payload_run": true,
+      "delta_SER": {
+        "primary": 0.0,
+        "secondary": 0.0
+      }
+    },
+    "b": {
+      "selected_code": 60,
+      "code0": {
+        "primary": {
+          "sample_count": 496,
+          "symbol_errors": 41,
+          "SER": 0.08266129032258064,
+          "gray_bit_errors": 41,
+          "prediction_RMSE_in_target_symbol_units": 0.6043976482175438,
+          "clipped_count": 0
+        },
+        "secondary": {
+          "sample_count": 496,
+          "symbol_errors": 69,
+          "SER": 0.13911290322580644,
+          "gray_bit_errors": 69,
+          "prediction_RMSE_in_target_symbol_units": 0.6891771373984275,
+          "clipped_count": 0
+        }
+      },
+      "selected": {
+        "primary": {
+          "sample_count": 496,
+          "symbol_errors": 43,
+          "SER": 0.08669354838709678,
+          "gray_bit_errors": 43,
+          "prediction_RMSE_in_target_symbol_units": 0.6039682873232988,
+          "clipped_count": 0
+        },
+        "secondary": {
+          "sample_count": 496,
+          "symbol_errors": 48,
+          "SER": 0.0967741935483871,
+          "gray_bit_errors": 48,
+          "prediction_RMSE_in_target_symbol_units": 0.6255931154972847,
+          "clipped_count": 0
+        }
+      },
+      "shared_payload_run": false,
+      "delta_SER": {
+        "primary": 0.004032258064516139,
+        "secondary": -0.042338709677419345
+      }
+    }
+  },
+  "selection_files_sha256": {
+    "selected_phase.json": "39f5c214ff5114015794ba1a38c1c10bbff727a4ed6d03a5b0fe762064e1095b",
+    "selected_codes.json": "0357cfdaf7244612efeb3d85326f0808b16870a1e620b41dd177ad43234e7be7"
+  },
+  "resources": {
+    "c0f_payload_zero_cp00_phm1": {
+      "measurement_sha256": "87683c59a6e44d00d01944518f6770e6a9f943d4dbc7af374cfb6f7b5b079d56",
+      "solver_seconds": 1107.1925657200627,
+      "peak_RSS_KiB": 270348,
+      "raw_bytes": 32222176
+    },
+    "c0f_payload_a_cp00_phm1": {
+      "measurement_sha256": "3844c0742882804755874c3cf479368a9cdd34c4bf9fc3810be4a7307f2eefa5",
+      "solver_seconds": 1184.8639199868776,
+      "peak_RSS_KiB": 272612,
+      "raw_bytes": 32222187
+    },
+    "c0f_payload_b_cp00_phm1": {
+      "measurement_sha256": "8661f1e02f8ab26f51b1177ade042f3143bd8d1d4928fe52d631e5839ea00555",
+      "solver_seconds": 1152.8322503110394,
+      "peak_RSS_KiB": 268168,
+      "raw_bytes": 32222194
+    },
+    "c0f_payload_b_cp60_phm1": {
+      "measurement_sha256": "bbf6f1ff49b5f54fc780ccc69f9690963ec53f5e0735fc193eeb62c2065d6c9c",
+      "solver_seconds": 1167.5838317200541,
+      "peak_RSS_KiB": 269680,
+      "raw_bytes": 32222239
+    }
+  },
+  "payload_symbol_sha256": "02c350e4a92a35700fc979151d7a0854ded785953fff70188c92c5dd00fea772",
+  "design_source_sha256": "3d9ebc0211077ef611dd17910412fa22388b0615163148357f7b68681b8f267e"
+}

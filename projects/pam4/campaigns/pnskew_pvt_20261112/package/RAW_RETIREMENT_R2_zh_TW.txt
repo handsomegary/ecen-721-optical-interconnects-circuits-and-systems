@@ -1,0 +1,18 @@
+ECEN 721 PAM4 r2 raw 清理修補
+
+2026-11-12 Olympus r1 的回饋顯示，5 個 PVT AC case 的 Spectre 和量測已完成，
+Slurm FAILED 來自量測後的 /proc/<pid>/fd PermissionError。
+r1 會先保存 run_status.json、measurements.json、completion.json，再嘗試清理 raw。
+只要 raw 清單完整且 SHA 一致，就可用 r1 彙整。以量測收據計數，這 5 案不必重跑。
+
+r2 供未來作業使用。Olympus 已提交的 r1 繼續使用原套件及 SHA。
+同 UID 或 UID 無法讀取的程序若使 FD 掃描不完整，r2 會在 raw_retirement.json
+記下 deferred、原因、已移除檔案及保留檔案。已驗證的量測完成狀態不因這步改成 FAILED。
+已知其他 UID 的程序沿用原掃描方式跳過。掃到實際占用或檔案鎖也會延後清理。
+證據或檔案指紋不一致仍會明確報錯。若在部分清理後延後，r2 仍要求每個缺少檔案
+有精確收據，剩下的 raw 必須核對 SHA，才能納入時域彙整。
+
+本輪既有 r1 case 等相關工作結束後，依原約定核對量測 SHA、原始清單及運算節點占用，
+再由 Claude 處理保留的 raw，並留收據。無法確認占用就保留。
+若已有部分 raw 被刪，保留原 journal 與剩餘檔案，先核對每個缺檔對應的 durable journal 記錄，
+不可補造完成收據。r2 僅以離線測試驗證，本地與 Olympus 的現有 raw 均未操作。

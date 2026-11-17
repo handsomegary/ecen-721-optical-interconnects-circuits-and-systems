@@ -1,0 +1,26 @@
+Olympus 交接｜LP NEXT
+
+在套件根目錄讀 DESIGN_zh_TW.txt、case_plan.json 與 VERIFICATION.json。
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B lp_next.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+推薦先審查索引 0–53（SS/TT/FF 零 skew 與單組/雙組）。下列指令只生成 review deck。
+  /usr/bin/python3.11 -B lp_next.py --mode stage --index 0 --index 6 --index 8 --index 14 --index 16 --index 18 --index 36 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+沿用私有 shrink 樹、Spectre 23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E。
+每個 P/N 欄 1 CPU／4 GiB／30 min。solver 預估 3–30 秒。以既有 QOS、帳號及
+原授權期間執行。填 approval_TEMPLATE.json 的副本，使用新 plan SHA、
+manifest SHA、確切 case IDs 和獲准 stages。獲准之後才提交對應索引。
+環境為 PAM4_DRIVE_PACKAGE、PAM4_DRIVE_RUN_ROOT、PAM4_DRIVE_APPROVAL、
+PAM4_PDK_ROOT。建立新的 ~/ecen720_28nm/runs campaign，使用 lp_next_classic.sbatch。
+
+  /usr/bin/python3.11 -B next_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output next_power.json
+
+先回傳 TT/SS/FF 全部功耗與同 Z0 增益。若有通過者再核准短路徑電感敏感度、
+端點及細碼的選定索引。保持同一 campaign 以配對跨批參考。case_plan.json
+包含後續的候選；不預設一次提交。時域需另行設計及核准。
+保留 first-case raw 核對 PSF。只在另行批准且完整量測、SHA 與檔案使用狀態
+可核對時退役本案 raw；寫收據。compact 保留 case.json、bench.scs、
+parent_diff.txt、spectre.log、run_status.json、measurements.json、completion.json、
+資源觀測與收據。raw 留在 Olympus。

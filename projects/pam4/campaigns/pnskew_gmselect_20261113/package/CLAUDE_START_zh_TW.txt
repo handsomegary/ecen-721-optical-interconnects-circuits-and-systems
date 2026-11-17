@@ -1,0 +1,25 @@
+Olympus 交接 · PAM4 r3 雙輸入對選路
+
+請閱讀 DESIGN_zh_TW.txt。case_plan.json 和 portable_review/ 包含 48 個候選 deck、逐行 diff 和 SHA。
+在套件根目錄執行 sha256sum -c SHA256SUMS.txt 或 /usr/bin/python3.11 -B gm_select.py --mode verify。
+原 IC231、Spectre 23.1.0.722.isr15 classic +mt=1、SPECTRE_DEFAULTS=-E、QOS/account
+與 Python 3.11 由原 wrapper 提供。使用現有私有 shrink model root。
+
+在新 review root 製作代表 deck：
+  /usr/bin/python3.11 -B gm_select.py --mode stage --index 0 --index 2 --index 4 \
+    --index 6 --index 8 --index 28 --index 38 --root "$PAM4_GM_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+與 portable_review 對照。原第二級與取樣器的裝置不改。新雙 bank 是固定偏壓狀態。
+核對 SS/FF corner section、模型 SHA 與 shrink 0.9。新增的 VCVS 是 AC launch 的理想假設。
+取得新批准後填 approval_TEMPLATE.json 副本，綁定新 plan SHA、SHA256SUMS.txt SHA、stage 與 case IDs。
+先提 TT 0–5，全部是等長對照。依結果另決定兩方向、mid、OFF-only 和 SS/FF。
+設 PAM4_GM_PACKAGE、PAM4_GM_RUN_ROOT、PAM4_GM_APPROVAL、PAM4_PDK_ROOT，campaign 在
+~/ecen720_28nm/runs 下。經原 wrapper 使用 gm_classic.sbatch，只提交已批准的 array。
+1 CPU/4 GiB/30 min。首例保留 raw 核對 OP/PSF 保存欄位、浮置節點、scale 與模型讀取。
+
+  /usr/bin/python3.11 -B gm_summary.py --run-root "$PAM4_GM_RUN_ROOT" --output new_summary.json
+
+保留 bench/diff/模型路徑與 SHA、量測、log、completion 和資源收據。r2 的 raw 延後清理規則沿用。
+raw 在 Olympus 量測與 SHA 核對後才依已批准範圍退休；不下載。回報缺資料、實際執行時間、
+低頻與 56 GHz 等長損失、OFF leakage、active/dormant DC 工作點和固定 track 雜訊。
+沒有批准的後續案先保留審查。既有 44 個 TG corner 案例與舊 LC 無須接續。

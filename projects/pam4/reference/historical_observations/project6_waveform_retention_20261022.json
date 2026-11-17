@@ -1,0 +1,34 @@
+{
+  "requested_utc": "2026-10-22T17:53:50.178290+00:00",
+  "user_request": "是不是又有沒用的波形占空間了 就是儲存能完整分析的最新波形就好",
+  "status": "authorized_pending_fresh_VM_inventory",
+  "last_attempt": "Read-only inventory timed out after 45 seconds; VM current state unconfirmed. No deletions, simulations, or VM power actions.",
+  "scope": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm",
+  "deletion_performed": false,
+  "bytes_reclaimed": 0,
+  "retention_rule": "Keep the latest complete, fully reanalyzable results for each required experiment/condition and necessary comparison baseline. Retire superseded intermediate/raw incomplete results after metadata, file ownership, open handles and dependencies are verified. Date alone is not evidence of redundancy.",
+  "protected_until_current_continuation_finalized": [
+    "runs/ffe_phase_sweep_20261022 (entire original source manifest pinned, includes reused symlink targets)",
+    "runs/ffe_phase_resume1_20261022 (all phase cases, TSV, summary, provenance, and paused phase08 open raw)"
+  ],
+  "keep_complete_paired_validation": [
+    "runs/adc_backend_pam4_r5_20261013/r5_late1/validation_noiseless",
+    "runs/adc_backend_pam4_r5_20261013/r5_late1/validation_noise"
+  ],
+  "review_candidates_from_historical_inventory": [
+    "validation_noiseless_interrupted_userstop_20261013",
+    "validation_noiseless_interrupted_vmreboot_20261013T1440Z",
+    "validation_noise_interrupted_powercycle_20261013_archived_20261017",
+    "baseline_r5_late1_interrupted_userstop_20261013"
+  ],
+  "cleanup_safeguards": [
+    "No automatic VM wake or simulation resume for cleanup; user travel pause remains effective.",
+    "Resolve exact absolute candidate paths inside owned project; no symlink traversal or other projects.",
+    "Preserve scripts, frozen configurations, model/native files, logs, summaries, hashes, decision TSV, provenance and failure receipts.",
+    "Keep latest complete CDAC/acquisition/comparator/AC/noise evidence by experiment family; current phase sweep does not replace them.",
+    "Check open handles and references before deleting only confirmed obsolete waveform files.",
+    "Write a new cleanup receipt with deleted paths, sizes, hashes and retained replacement; never alter historical evidence to hide removal.",
+    "Keep all raw/XY/TSV inside VM; local inventory contains metadata only."
+  ],
+  "next": "When user returns and VM is reachable, finish read-only inventory, clean verified superseded waveforms under this authorization, record actual recovered space. Preserve travel pause unless user explicitly requests continuation."
+}

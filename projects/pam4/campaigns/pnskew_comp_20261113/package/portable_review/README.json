@@ -1,0 +1,13 @@
+{
+  "status": "PORTABLE_REVIEW_ONLY",
+  "note": "Placeholders must be materialized from the original private Olympus kit before Spectre.",
+  "AC_case_indices": [
+    0,
+    2,
+    18,
+    24,
+    36,
+    48
+  ],
+  "new_native_runs": 0
+}

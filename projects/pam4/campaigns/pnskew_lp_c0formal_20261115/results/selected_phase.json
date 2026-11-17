@@ -1,0 +1,1026 @@
+{
+  "design_source_sha256": "3d9ebc0211077ef611dd17910412fa22388b0615163148357f7b68681b8f267e",
+  "phase": -1,
+  "phase_primary_training_rmse": [
+    [
+      0,
+      0.18785772999723147
+    ],
+    [
+      -1,
+      0.1848794443258063
+    ],
+    [
+      1,
+      0.2043097901953869
+    ]
+  ],
+  "calibration": {
+    "schema": "pam4_c0_formal_calibration_v1",
+    "phase": -1,
+    "source_case_id": "c0f_training_zero_cp00_phm1",
+    "fit_tx_symbol_indices": [
+      128,
+      384
+    ],
+    "fit_read_cutoff_s": 4.2e-09,
+    "historical_frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+    "selections": {
+      "primary": {
+        "lag": 2,
+        "pearson": 0.6921655362386455,
+        "detectors": {
+          "raw_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 256,
+            "training_complete_window_count": 240,
+            "normalization_training_mean_V": -0.0007914280095618746,
+            "normalization_training_centered_RMS_V": 0.010508272034462932,
+            "weights_on_normalized_input": [
+              0.08716853801412584,
+              -0.12304924063075186,
+              0.3461758456289315,
+              -0.4633796755248027,
+              0.9870456424042815,
+              -1.543069083878028,
+              3.27026772477271,
+              -4.1123413015794785,
+              4.266792179606798,
+              -0.8147758407891114,
+              0.12308001809739127,
+              -0.035467622506564385,
+              -0.013846554677882287,
+              -0.009794440350829258,
+              -0.011776338457691719,
+              -0.01369999284396525,
+              -0.01373164092754236
+            ],
+            "bias_in_target_symbol_units": -0.05257753938654336,
+            "equivalent_weights_per_input_V": [
+              8.295230436388389,
+              -11.709750206998786,
+              32.94317509992253,
+              -44.09665775734608,
+              93.9303473651202,
+              -146.8432753565361,
+              311.2088946734096,
+              -391.3432473096093,
+              406.04127544599385,
+              -77.53661478471173,
+              11.712679086888693,
+              -3.375209776664019,
+              -1.3176814068451144,
+              -0.9320695466112229,
+              -1.1206731629206055,
+              -1.3037341247956609,
+              -1.3067458553136109
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.09244843239928052,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.020989127035060874,
+            "normal_equation_relative_residual": 2.840264462138217e-16
+          },
+          "ADC_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 256,
+            "training_complete_window_count": 240,
+            "normalization_training_mean_V": -0.0007690429687500002,
+            "normalization_training_centered_RMS_V": 0.010516306057282607,
+            "weights_on_normalized_input": [
+              0.09192682643324525,
+              -0.12294443995276406,
+              0.3254374368788965,
+              -0.41806896569302493,
+              0.9318552674711045,
+              -1.4999139602818703,
+              3.2593320234827097,
+              -4.143629178098951,
+              4.332176530603253,
+              -0.8985486473242961,
+              0.20669612760544664,
+              -0.10485434103544194,
+              0.04869167255521686,
+              -0.0668189031890589,
+              0.03528928176988039,
+              -0.04174037180017492,
+              -0.0035128041889074045
+            ],
+            "bias_in_target_symbol_units": -0.05290454243232508,
+            "equivalent_weights_per_input_V": [
+              8.74136088589637,
+              -11.690838901329263,
+              30.945983799466262,
+              -39.754355133427254,
+              88.6105123220324,
+              -142.62745417562002,
+              309.9312634806403,
+              -394.01945469525987,
+              411.9485023548924,
+              -85.44337169628547,
+              19.654822375800702,
+              -9.97064372834886,
+              4.630111779743951,
+              -6.35383782338537,
+              3.3556727597750298,
+              -3.969109644851906,
+              -0.3340340391172588
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.0883341439079972,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.043330655408504816,
+            "normal_equation_relative_residual": 3.9789888888703226e-16
+          },
+          "raw_three_threshold": {
+            "sample_count": 256,
+            "polarity": 1,
+            "thresholds_V": [
+              -0.007491000789529126,
+              0.00022065005321218224,
+              0.006322041643016804
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.007491000789529126,
+              0.00022065005321218224,
+              0.006322041643016804
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 61,
+                "mean_V": -0.011044699499409769,
+                "std_V": 0.007293164247121556,
+                "min_V": -0.027625637885224985,
+                "max_V": 0.0031199086085456074,
+                "p05_V": -0.0234487239690917,
+                "p95_V": 0.0013480327779330503
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 75,
+                "mean_V": -0.003937302079648484,
+                "std_V": 0.007494379506961715,
+                "min_V": -0.02085438720183541,
+                "max_V": 0.011808636649174309,
+                "p05_V": -0.015158687850538565,
+                "p95_V": 0.008035833299758072
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 58,
+                "mean_V": 0.004378602186072849,
+                "std_V": 0.0076542487794933264,
+                "min_V": -0.010682507882281311,
+                "max_V": 0.01846014401100171,
+                "p05_V": -0.00719344368354301,
+                "p95_V": 0.01626498727339566
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 62,
+                "mean_V": 0.00826548109996076,
+                "std_V": 0.007643496307739299,
+                "min_V": -0.004941464913819749,
+                "max_V": 0.025546487563511078,
+                "p05_V": -0.0026426703729496015,
+                "p95_V": 0.021947452493551078
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.02397429581038102,
+              -0.02249114453145562,
+              -0.02340160892482146
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.016506720628471618,
+              -0.015229276983301083,
+              -0.01890765764634526
+            ],
+            "symbol_errors": 139,
+            "SER": 0.54296875,
+            "quality_score": -3.1510298840802458,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_three_threshold": {
+            "sample_count": 256,
+            "polarity": 1,
+            "thresholds_V": [
+              -0.007475324453551913,
+              0.0002309626436781606,
+              0.00635428253615128
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.007475324453551913,
+              0.0002309626436781606,
+              0.00635428253615128
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 61,
+                "mean_V": -0.011007940573770492,
+                "std_V": 0.007306044543858711,
+                "min_V": -0.027734375000000002,
+                "max_V": 0.0027343749999999972,
+                "p05_V": -0.023828125000000002,
+                "p95_V": 0.0011718750000000028
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 75,
+                "mean_V": -0.0039427083333333345,
+                "std_V": 0.007484025232490573,
+                "min_V": -0.020703125000000003,
+                "max_V": 0.012109374999999999,
+                "p05_V": -0.015234375000000001,
+                "p95_V": 0.007890624999999998
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 58,
+                "mean_V": 0.004404633620689656,
+                "std_V": 0.00762496946629917,
+                "min_V": -0.010546874999999997,
+                "max_V": 0.018359374999999997,
+                "p05_V": -0.006874999999999997,
+                "p95_V": 0.016015625000000006
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 62,
+                "mean_V": 0.008303931451612904,
+                "std_V": 0.007700154766121032,
+                "min_V": -0.005078125000000003,
+                "max_V": 0.025390625,
+                "p05_V": -0.002695312499999997,
+                "p95_V": 0.02214843749999999
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.0234375,
+              -0.022656249999999996,
+              -0.0234375
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.016406250000000004,
+              -0.014765624999999996,
+              -0.018710937500000004
+            ],
+            "symbol_errors": 140,
+            "SER": 0.546875,
+            "quality_score": -3.1563826373438304,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_fullscale_differential_Vpp": 0.1,
+          "all_training_ADC_clipped_count": 0,
+          "freeze_rule": "phase/lag/ADC range selected with split training; FIRs then refit once using all training; no final validation samples"
+        },
+        "expected_raw_p_minus_n_sign": 1,
+        "correlation_sign_matches_circuit": true,
+        "first_train_read_s": 1.3710284166006735e-09,
+        "last_train_read_s": 3.6478163615060794e-09,
+        "lag_sweep": [
+          {
+            "lag": -6,
+            "pearson": 0.008813025616193428
+          },
+          {
+            "lag": -5,
+            "pearson": 0.09744477529466725
+          },
+          {
+            "lag": -4,
+            "pearson": 0.09313252262617724
+          },
+          {
+            "lag": -3,
+            "pearson": 0.021000869323750324
+          },
+          {
+            "lag": -2,
+            "pearson": -0.03712583212426078
+          },
+          {
+            "lag": -1,
+            "pearson": -0.02378497855394523
+          },
+          {
+            "lag": 0,
+            "pearson": 0.07027455090487511
+          },
+          {
+            "lag": 1,
+            "pearson": 0.14379852694154424
+          },
+          {
+            "lag": 2,
+            "pearson": 0.6921655362386455
+          },
+          {
+            "lag": 3,
+            "pearson": 0.5546768844765386
+          },
+          {
+            "lag": 4,
+            "pearson": 0.06396656428570524
+          },
+          {
+            "lag": 5,
+            "pearson": -0.1902966026312526
+          },
+          {
+            "lag": 6,
+            "pearson": -0.2198484805825039
+          },
+          {
+            "lag": 7,
+            "pearson": -0.11001775406781268
+          },
+          {
+            "lag": 8,
+            "pearson": -0.012671801217870067
+          },
+          {
+            "lag": 9,
+            "pearson": 0.05689503247747065
+          },
+          {
+            "lag": 10,
+            "pearson": 0.04568348022210972
+          },
+          {
+            "lag": 11,
+            "pearson": -0.06634193900499899
+          },
+          {
+            "lag": 12,
+            "pearson": -0.12242242220377851
+          },
+          {
+            "lag": 13,
+            "pearson": -0.1106695468723229
+          },
+          {
+            "lag": 14,
+            "pearson": -0.09335499253688953
+          },
+          {
+            "lag": 15,
+            "pearson": -0.06150819033137384
+          },
+          {
+            "lag": 16,
+            "pearson": 0.02542999899290322
+          },
+          {
+            "lag": 17,
+            "pearson": 0.06151809948255664
+          },
+          {
+            "lag": 18,
+            "pearson": 0.06465893009976652
+          },
+          {
+            "lag": 19,
+            "pearson": 0.05603394873073188
+          },
+          {
+            "lag": 20,
+            "pearson": 0.010945285141597358
+          },
+          {
+            "lag": 21,
+            "pearson": -0.05994979591866811
+          },
+          {
+            "lag": 22,
+            "pearson": -0.09600373491272499
+          },
+          {
+            "lag": 23,
+            "pearson": -0.049720539461651135
+          },
+          {
+            "lag": 24,
+            "pearson": 0.04759226284630996
+          },
+          {
+            "lag": 25,
+            "pearson": 0.08549774656449041
+          },
+          {
+            "lag": 26,
+            "pearson": 0.04732396063610099
+          },
+          {
+            "lag": 27,
+            "pearson": -0.01671762373132861
+          },
+          {
+            "lag": 28,
+            "pearson": -0.059071701944150026
+          },
+          {
+            "lag": 29,
+            "pearson": -0.13122643425434508
+          },
+          {
+            "lag": 30,
+            "pearson": -0.0882090482313938
+          },
+          {
+            "lag": 31,
+            "pearson": 0.034690424405773135
+          },
+          {
+            "lag": 32,
+            "pearson": 0.08412864057645214
+          },
+          {
+            "lag": 33,
+            "pearson": 0.0760529768103914
+          },
+          {
+            "lag": 34,
+            "pearson": 0.0024931601882458286
+          },
+          {
+            "lag": 35,
+            "pearson": 0.0063579881865298464
+          },
+          {
+            "lag": 36,
+            "pearson": -0.04895608074738465
+          },
+          {
+            "lag": 37,
+            "pearson": -0.08047897272865515
+          },
+          {
+            "lag": 38,
+            "pearson": -0.030395820799135546
+          },
+          {
+            "lag": 39,
+            "pearson": 0.033724363399647114
+          }
+        ]
+      },
+      "secondary": {
+        "lag": 2,
+        "pearson": -0.6742336689622894,
+        "detectors": {
+          "raw_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 256,
+            "training_complete_window_count": 240,
+            "normalization_training_mean_V": 0.000497233907222905,
+            "normalization_training_centered_RMS_V": 0.005999954669862815,
+            "weights_on_normalized_input": [
+              -0.07957215345991028,
+              0.15016221208807795,
+              -0.3819816640204986,
+              0.5471478819404769,
+              -1.1084052030215985,
+              1.8263851496054833,
+              -3.7374999569671186,
+              4.838754242785741,
+              -4.806649950122204,
+              1.0957848504900567,
+              -0.25391315339720427,
+              0.08595865441145444,
+              0.01704081642884016,
+              -0.0031819891848174,
+              0.018599260455951516,
+              0.010156955737965665,
+              0.015708894604637594
+            ],
+            "bias_in_target_symbol_units": -0.051705144360036405,
+            "equivalent_weights_per_input_V": [
+              -13.262125772315152,
+              25.027224429265782,
+              -63.66409165375118,
+              91.19200261441094,
+              -184.73559618525277,
+              304.39982468188254,
+              -622.9213656796801,
+              806.4651333268116,
+              -801.114377457806,
+              182.6321882053671,
+              -42.31917862189613,
+              14.326550639326719,
+              2.8401575289284295,
+              -0.5303355375000116,
+              3.09990016247519,
+              1.6928387457630405,
+              2.6181688810986916
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.0946074651624906,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.022110936442844936,
+            "normal_equation_relative_residual": 3.351495763116668e-16
+          },
+          "ADC_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 256,
+            "training_complete_window_count": 240,
+            "normalization_training_mean_V": 0.0004943847656249999,
+            "normalization_training_centered_RMS_V": 0.005995998195421114,
+            "weights_on_normalized_input": [
+              -0.06306253574538333,
+              0.10927882198582048,
+              -0.3227666312309733,
+              0.4806683953759632,
+              -1.0372347840863407,
+              1.7587150158417568,
+              -3.656768402535111,
+              4.730896970166687,
+              -4.670491766706178,
+              0.957677051341633,
+              -0.11899082764340506,
+              -0.051734660186001945,
+              0.1685228611487114,
+              -0.160086634513755,
+              0.16430906951716107,
+              -0.0841632086213604,
+              0.049775714488187774
+            ],
+            "bias_in_target_symbol_units": -0.05199093750687225,
+            "equivalent_weights_per_input_V": [
+              -10.517437412429755,
+              18.225292674249303,
+              -53.830341623093936,
+              80.16486658435437,
+              -172.98784127027128,
+              293.314800725726,
+              -609.8681626234691,
+              789.0090717137756,
+              -778.9348186049875,
+              159.71936950764425,
+              -19.845040602959692,
+              -8.628198091438634,
+              28.10588923749261,
+              -26.698913057713437,
+              27.40312190931559,
+              -14.036563367486037,
+              8.301489237638421
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.091926156122009,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.0657003187417255,
+            "normal_equation_relative_residual": 5.201789576922673e-16
+          },
+          "raw_three_threshold": {
+            "sample_count": 256,
+            "polarity": -1,
+            "thresholds_V": [
+              -0.004242979021658737,
+              9.753760845763581e-05,
+              0.003485977249019514
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.004242979021658737,
+              9.753760845763581e-05,
+              0.003485977249019514
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 61,
+                "mean_V": -0.0062009959534587876,
+                "std_V": 0.004218584987292067,
+                "min_V": -0.01514413556697125,
+                "max_V": 0.0018078374699159738,
+                "p05_V": -0.01309036739152536,
+                "p95_V": 0.001312129738350265
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 75,
+                "mean_V": -0.002284962089858687,
+                "std_V": 0.00431529624926291,
+                "min_V": -0.012149321225189413,
+                "max_V": 0.007715772426495127,
+                "p05_V": -0.008894877827554382,
+                "p95_V": 0.004071579990351234
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 58,
+                "mean_V": 0.0024800373067739587,
+                "std_V": 0.004540982312491557,
+                "min_V": -0.006168771078766011,
+                "max_V": 0.010409289667176358,
+                "p05_V": -0.004813311500715428,
+                "p95_V": 0.009363679778868877
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 62,
+                "mean_V": 0.0044919171912650695,
+                "std_V": 0.004500979645135699,
+                "min_V": -0.0028912654869548415,
+                "max_V": 0.01435629916185066,
+                "p05_V": -0.0017599429869514182,
+                "p95_V": 0.012147418832545633
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.013957158695105387,
+              -0.013884543505261138,
+              -0.0133005551541312
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.010207007565904647,
+              -0.008884891491066662,
+              -0.011123622765820296
+            ],
+            "symbol_errors": 141,
+            "SER": 0.55078125,
+            "quality_score": -3.24340491392682,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_three_threshold": {
+            "sample_count": 256,
+            "polarity": -1,
+            "thresholds_V": [
+              -0.0042223360655737705,
+              0.00010048491379310376,
+              0.003467231385567297
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.0042223360655737705,
+              0.00010048491379310376,
+              0.003467231385567297
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 61,
+                "mean_V": -0.006190765881147541,
+                "std_V": 0.004254286025307298,
+                "min_V": -0.014941406249999997,
+                "max_V": 0.0020507812500000014,
+                "p05_V": -0.01318359375,
+                "p95_V": 0.00146484375
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 75,
+                "mean_V": -0.0022539062499999994,
+                "std_V": 0.0043264183232568365,
+                "min_V": -0.012011718749999997,
+                "max_V": 0.007910156250000001,
+                "p05_V": -0.009082031249999997,
+                "p95_V": 0.004160156249999996
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 58,
+                "mean_V": 0.002454876077586207,
+                "std_V": 0.0045297840582368435,
+                "min_V": -0.006152343749999997,
+                "max_V": 0.01025390625,
+                "p05_V": -0.004980468750000001,
+                "p95_V": 0.009169921874999999
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 62,
+                "mean_V": 0.004479586693548387,
+                "std_V": 0.00450048280918439,
+                "min_V": -0.0026367187500000028,
+                "max_V": 0.01435546875,
+                "p05_V": -0.002021484375000001,
+                "p95_V": 0.011982421875
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.014062499999999999,
+              -0.014062499999999999,
+              -0.012890625000000003
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.010546874999999997,
+              -0.009140624999999998,
+              -0.01119140625
+            ],
+            "symbol_errors": 141,
+            "SER": 0.55078125,
+            "quality_score": -3.2519569080045883,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_fullscale_differential_Vpp": 0.075,
+          "all_training_ADC_clipped_count": 0,
+          "freeze_rule": "phase/lag/ADC range selected with split training; FIRs then refit once using all training; no final validation samples"
+        },
+        "expected_raw_p_minus_n_sign": -1,
+        "correlation_sign_matches_circuit": true,
+        "first_train_read_s": 1.4030284166006734e-09,
+        "last_train_read_s": 3.6798163615060793e-09,
+        "lag_sweep": [
+          {
+            "lag": -6,
+            "pearson": -0.00031024157441151873
+          },
+          {
+            "lag": -5,
+            "pearson": -0.0912119063247881
+          },
+          {
+            "lag": -4,
+            "pearson": -0.0956642373681119
+          },
+          {
+            "lag": -3,
+            "pearson": -0.02957663182731106
+          },
+          {
+            "lag": -2,
+            "pearson": 0.029567732765994052
+          },
+          {
+            "lag": -1,
+            "pearson": 0.016721950535664335
+          },
+          {
+            "lag": 0,
+            "pearson": -0.0641896947900188
+          },
+          {
+            "lag": 1,
+            "pearson": -0.151995415464998
+          },
+          {
+            "lag": 2,
+            "pearson": -0.6742336689622894
+          },
+          {
+            "lag": 3,
+            "pearson": -0.579870390773993
+          },
+          {
+            "lag": 4,
+            "pearson": -0.12522633529641275
+          },
+          {
+            "lag": 5,
+            "pearson": 0.1499808868849353
+          },
+          {
+            "lag": 6,
+            "pearson": 0.2137123699539394
+          },
+          {
+            "lag": 7,
+            "pearson": 0.12721969247042456
+          },
+          {
+            "lag": 8,
+            "pearson": 0.030113587627853336
+          },
+          {
+            "lag": 9,
+            "pearson": -0.04775009759902494
+          },
+          {
+            "lag": 10,
+            "pearson": -0.04987336019303845
+          },
+          {
+            "lag": 11,
+            "pearson": 0.05478401501219198
+          },
+          {
+            "lag": 12,
+            "pearson": 0.11898213705021872
+          },
+          {
+            "lag": 13,
+            "pearson": 0.1175845339087994
+          },
+          {
+            "lag": 14,
+            "pearson": 0.10423945660757887
+          },
+          {
+            "lag": 15,
+            "pearson": 0.07094210594939807
+          },
+          {
+            "lag": 16,
+            "pearson": -0.015652307441085155
+          },
+          {
+            "lag": 17,
+            "pearson": -0.057965034051960636
+          },
+          {
+            "lag": 18,
+            "pearson": -0.06632201254110873
+          },
+          {
+            "lag": 19,
+            "pearson": -0.059449019563648696
+          },
+          {
+            "lag": 20,
+            "pearson": -0.01621620222430887
+          },
+          {
+            "lag": 21,
+            "pearson": 0.05488389526988099
+          },
+          {
+            "lag": 22,
+            "pearson": 0.09558273754835148
+          },
+          {
+            "lag": 23,
+            "pearson": 0.05599994726536946
+          },
+          {
+            "lag": 24,
+            "pearson": -0.0383713883014276
+          },
+          {
+            "lag": 25,
+            "pearson": -0.0820169392578617
+          },
+          {
+            "lag": 26,
+            "pearson": -0.05100514712487225
+          },
+          {
+            "lag": 27,
+            "pearson": 0.00923452007434109
+          },
+          {
+            "lag": 28,
+            "pearson": 0.05635570598425222
+          },
+          {
+            "lag": 29,
+            "pearson": 0.13037886006035013
+          },
+          {
+            "lag": 30,
+            "pearson": 0.0950975463542904
+          },
+          {
+            "lag": 31,
+            "pearson": -0.02119304181838775
+          },
+          {
+            "lag": 32,
+            "pearson": -0.07845658830233457
+          },
+          {
+            "lag": 33,
+            "pearson": -0.07754626570458517
+          },
+          {
+            "lag": 34,
+            "pearson": -0.011885610458175051
+          },
+          {
+            "lag": 35,
+            "pearson": -0.00948007360238399
+          },
+          {
+            "lag": 36,
+            "pearson": 0.04603471839597882
+          },
+          {
+            "lag": 37,
+            "pearson": 0.0808902810487731
+          },
+          {
+            "lag": 38,
+            "pearson": 0.03640112609106925
+          },
+          {
+            "lag": 39,
+            "pearson": -0.025317688824835576
+          }
+        ]
+      }
+    }
+  },
+  "training_measurement_sha256": {
+    "0": "ec5ec95199bf5a48944a372fb85cf69f7e693b203562de5aebf435a273152cff",
+    "-1": "dceee9915f1c3b98000f3a57d9bd5031c26c15fe8cf9f33966bafc73111c96a0",
+    "1": "66390f273d77e5ed6b8c9ffa5aeb4a54071b9cf58aac900908dfbbc3f2fbb79b"
+  }
+}

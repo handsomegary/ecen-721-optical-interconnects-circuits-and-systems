@@ -1,0 +1,2082 @@
+{
+  "metrics": {
+    "primary": {
+      "first_read_s": 1.0515008235012093e-08,
+      "last_read_s": 1.2791796158247267e-08,
+      "lag": 3,
+      "metrics": {
+        "raw_held_FFE_before_ADC": {
+          "sample_count": 240,
+          "symbol_errors": 0,
+          "SER": 0.0,
+          "gray_bit_errors": 0,
+          "bit_count": 480,
+          "gray_BER": 0.0,
+          "zero_error_SER_95pct_upper_if_independent_symbols": 0.012404638050409018,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 0.20411690917571032,
+          "prediction_EVM_RMS_percent_of_target_RMS": 9.09810903263742,
+          "confusion_rows_true_cols_decided": [
+            [
+              61,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              57,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              60
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -2.855000294712881,
+              "std": 0.23214803879753387,
+              "min": -3.3846078010651004,
+              "max": -2.4277895516990142,
+              "p05": -3.2597180936225656,
+              "p95": -2.486398923596735
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -1.0223969389973007,
+              "std": 0.16190058887034095,
+              "min": -1.3716751450134774,
+              "max": -0.6511073943925566,
+              "p05": -1.3140746436716995,
+              "p95": -0.7704496709782341
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.9512208490373191,
+              "std": 0.13924089011085725,
+              "min": 0.5668902077666834,
+              "max": 1.2591382881724844,
+              "p05": 0.6981109978952826,
+              "p95": 1.1443097239372066
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": 2.9807043892161187,
+              "std": 0.20453201654494704,
+              "min": 2.222389347754182,
+              "max": 3.330660536620697,
+              "p05": 2.575147569820425,
+              "p95": 3.292579971320815
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            1.0561144066855368,
+            1.21799760215924,
+            0.9632510595816977
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            1.1723242799250355,
+            1.4685606688735167,
+            1.4308378458832183
+          ]
+        },
+        "ideal7bit_ADC_then_FFE": {
+          "sample_count": 240,
+          "symbol_errors": 0,
+          "SER": 0.0,
+          "gray_bit_errors": 0,
+          "bit_count": 480,
+          "gray_BER": 0.0,
+          "zero_error_SER_95pct_upper_if_independent_symbols": 0.012404638050409018,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 0.2760532877089841,
+          "prediction_EVM_RMS_percent_of_target_RMS": 12.304531361643987,
+          "confusion_rows_true_cols_decided": [
+            [
+              61,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              57,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              60
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -2.8310771980683556,
+              "std": 0.29439216889915465,
+              "min": -3.522270259998301,
+              "max": -2.3569381504118208,
+              "p05": -3.311600607684565,
+              "p95": -2.4135240706846988
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -1.0176373219238186,
+              "std": 0.2378941754269196,
+              "min": -1.5904672241375968,
+              "max": -0.4551480678003789,
+              "p05": -1.3044482898761196,
+              "p95": -0.6375329524857138
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.9465927747857651,
+              "std": 0.21483575185816497,
+              "min": 0.45675720686217564,
+              "max": 1.321388559842878,
+              "p05": 0.5769061059410958,
+              "p95": 1.2734791279331759
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": 2.9475178324438414,
+              "std": 0.2821128672736498,
+              "min": 2.072638111180126,
+              "max": 3.536504661788616,
+              "p05": 2.5310447077110445,
+              "p95": 3.3523749859418164
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            0.766470926274224,
+            0.9119052746625546,
+            0.7512495513372479
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            1.1090757808085792,
+            1.2144390584268097,
+            1.2575655797778686
+          ]
+        },
+        "raw_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 130,
+          "SER": 0.5416666666666666,
+          "gray_bit_errors": 142,
+          "gray_BER": 0.29583333333333334,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              37,
+              22,
+              2,
+              0
+            ],
+            [
+              27,
+              17,
+              15,
+              3
+            ],
+            [
+              3,
+              13,
+              17,
+              24
+            ],
+            [
+              0,
+              4,
+              17,
+              39
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.011168942859989752,
+              "std_V": 0.006906372999617598,
+              "min_V": -0.025376998388681127,
+              "max_V": 0.003960208160315282,
+              "p05_V": -0.02080487512703566,
+              "p95_V": -0.0020286028505058784
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.004833057883451739,
+              "std_V": 0.0069535567799525405,
+              "min_V": -0.016985371941905414,
+              "max_V": 0.011692952434232962,
+              "p05_V": -0.016285709915548563,
+              "p95_V": 0.006437924072896707
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": 0.003701713502036583,
+              "std_V": 0.007254049513757221,
+              "min_V": -0.012935245592324174,
+              "max_V": 0.01758955864408618,
+              "p05_V": -0.0074175226402805935,
+              "p95_V": 0.014271114684314742
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.010023840137755386,
+              "std_V": 0.00707746759540747,
+              "min_V": -0.0038301631151851367,
+              "max_V": 0.0257103217479131,
+              "p05_V": -0.0009336078919935265,
+              "p95_V": 0.021454101829835683
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.020945580102220696,
+            -0.024628198026557135,
+            -0.021419721759271315
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.014257107065042685,
+            -0.0138554467131773,
+            -0.015204722576308269
+          ],
+          "sample_min_V": -0.025376998388681127,
+          "sample_max_V": 0.0257103217479131,
+          "observed_peak_to_peak_V": 0.05108732013659423,
+          "detector_training_class_order_valid": true
+        },
+        "ADC_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 122,
+          "SER": 0.5083333333333333,
+          "gray_bit_errors": 134,
+          "gray_BER": 0.2791666666666667,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              36,
+              23,
+              2,
+              0
+            ],
+            [
+              22,
+              23,
+              14,
+              3
+            ],
+            [
+              2,
+              14,
+              21,
+              20
+            ],
+            [
+              0,
+              5,
+              17,
+              38
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.011148821721311476,
+              "std_V": 0.00694662969467851,
+              "min_V": -0.025390625,
+              "max_V": 0.004296874999999999,
+              "p05_V": -0.020703125000000003,
+              "p95_V": -0.001953125
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.004826108870967742,
+              "std_V": 0.0069393271509713104,
+              "min_V": -0.016796875000000003,
+              "max_V": 0.011328125000000001,
+              "p05_V": -0.016015625,
+              "p95_V": 0.00656249999999999
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": 0.0036526864035087716,
+              "std_V": 0.007225957266348125,
+              "min_V": -0.012890625000000003,
+              "max_V": 0.017578125,
+              "p05_V": -0.007421875000000001,
+              "p95_V": 0.013984374999999992
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.01,
+              "std_V": 0.00708787959190723,
+              "min_V": -0.0035156250000000014,
+              "max_V": 0.025390625,
+              "p05_V": -0.0011718750000000028,
+              "p95_V": 0.021562499999999995
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.02109375,
+            -0.024218750000000004,
+            -0.02109375
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.014062499999999999,
+            -0.013984374999999992,
+            -0.015156249999999994
+          ],
+          "sample_min_V": -0.025390625,
+          "sample_max_V": 0.025390625,
+          "observed_peak_to_peak_V": 0.05078125,
+          "detector_training_class_order_valid": true
+        },
+        "ADC_fullscale_differential_Vpp": 0.1,
+        "ADC_validation_input_clipped_count": 0,
+        "ADC_validation_input_count": 256,
+        "ADC_validation_input_clipped_fraction": 0.0,
+        "FFE_validation_output_count": 240,
+        "feature_rule": "FFE features lie wholly within independent validation slice;8 symbols excluded at each edge",
+        "validation_fitting_performed": false
+      }
+    },
+    "secondary": {
+      "first_read_s": 1.0547008235012093e-08,
+      "last_read_s": 1.2823796158247267e-08,
+      "lag": 3,
+      "metrics": {
+        "raw_held_FFE_before_ADC": {
+          "sample_count": 240,
+          "symbol_errors": 0,
+          "SER": 0.0,
+          "gray_bit_errors": 0,
+          "bit_count": 480,
+          "gray_BER": 0.0,
+          "zero_error_SER_95pct_upper_if_independent_symbols": 0.012404638050409018,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 0.20962455481979148,
+          "prediction_EVM_RMS_percent_of_target_RMS": 9.34360148490577,
+          "confusion_rows_true_cols_decided": [
+            [
+              61,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              57,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              60
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -2.839250558171914,
+              "std": 0.23319207440968925,
+              "min": -3.398433209141285,
+              "max": -2.3826666155939984,
+              "p05": -3.238769391163803,
+              "p95": -2.4822491055625298
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -1.0244390479398842,
+              "std": 0.16506448492612386,
+              "min": -1.396967482160312,
+              "max": -0.6362107384351932,
+              "p05": -1.3007457289352031,
+              "p95": -0.7398485191254922
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.9464118264025297,
+              "std": 0.1455568154016855,
+              "min": 0.5809913312525108,
+              "max": 1.224401873978858,
+              "p05": 0.6731811650655234,
+              "p95": 1.1425869868615235
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": 2.9714636783624035,
+              "std": 0.20438287847980008,
+              "min": 2.245068696975917,
+              "max": 3.317376804191946,
+              "p05": 2.557327262903704,
+              "p95": 3.279296776553609
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            0.9856991334336864,
+            1.217202069687704,
+            1.0206668229970588
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            1.1815033766273266,
+            1.4130296841910157,
+            1.4147402760421806
+          ]
+        },
+        "ideal7bit_ADC_then_FFE": {
+          "sample_count": 240,
+          "symbol_errors": 0,
+          "SER": 0.0,
+          "gray_bit_errors": 0,
+          "bit_count": 480,
+          "gray_BER": 0.0,
+          "zero_error_SER_95pct_upper_if_independent_symbols": 0.012404638050409018,
+          "SER_bound_note": "Conditional zero-error binomial bound assuming independent symbol errors; FFE output errors can be correlated.",
+          "BER_note": "Observed Gray-bit error fraction; no independent-bit confidence bound.",
+          "decision_thresholds_in_target_symbol_units": [
+            -2.0,
+            0.0,
+            2.0
+          ],
+          "target_amplitudes_for_symbols_0_through_3": [
+            -3.0,
+            -1.0,
+            1.0,
+            3.0
+          ],
+          "prediction_units": "dimensionless target PAM4 amplitude units, not volts",
+          "prediction_RMSE_in_target_symbol_units": 0.3118597986292018,
+          "prediction_EVM_RMS_percent_of_target_RMS": 13.900536032428164,
+          "confusion_rows_true_cols_decided": [
+            [
+              61,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              62,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              57,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              60
+            ]
+          ],
+          "class_predictions_in_target_symbol_units": [
+            {
+              "symbol": 0,
+              "count": 61,
+              "mean": -2.800973549924014,
+              "std": 0.3017310580087818,
+              "min": -3.4448097502360207,
+              "max": -2.1270476996812264,
+              "p05": -3.2878279544555777,
+              "p95": -2.346780245011741
+            },
+            {
+              "symbol": 1,
+              "count": 62,
+              "mean": -1.0028897201328133,
+              "std": 0.2622851564953645,
+              "min": -1.537262514831007,
+              "max": -0.4018692677008691,
+              "p05": -1.4552078461750442,
+              "p95": -0.551945093552162
+            },
+            {
+              "symbol": 2,
+              "count": 57,
+              "mean": 0.9535693229021472,
+              "std": 0.2842367437747538,
+              "min": 0.1552277124611565,
+              "max": 1.5403906364004272,
+              "p05": 0.47350570362493116,
+              "p95": 1.4051851267567057
+            },
+            {
+              "symbol": 3,
+              "count": 60,
+              "mean": 2.883738635222708,
+              "std": 0.3046054049324959,
+              "min": 2.2460817749701634,
+              "max": 3.4713513091688144,
+              "p05": 2.364820955628772,
+              "p95": 3.3622933345990615
+            }
+          ],
+          "empirical_eye_gaps_in_target_symbol_units": [
+            0.5897851848502194,
+            0.5570969801620256,
+            0.7056911385697362
+          ],
+          "p05_p95_eye_gaps_in_target_symbol_units": [
+            0.8915723988366968,
+            1.0254507971770932,
+            0.9596358288720663
+          ]
+        },
+        "raw_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 127,
+          "SER": 0.5291666666666667,
+          "gray_bit_errors": 142,
+          "gray_BER": 0.29583333333333334,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              37,
+              22,
+              2,
+              0
+            ],
+            [
+              24,
+              20,
+              15,
+              3
+            ],
+            [
+              5,
+              11,
+              18,
+              23
+            ],
+            [
+              0,
+              5,
+              17,
+              38
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.00624154034496874,
+              "std_V": 0.003973564732273284,
+              "min_V": -0.013942298711128953,
+              "max_V": 0.002128989626254074,
+              "p05_V": -0.012025823675881453,
+              "p95_V": -0.0010674365065084235
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.0027739221270710384,
+              "std_V": 0.004043813928338528,
+              "min_V": -0.009926420401434655,
+              "max_V": 0.006404982891221267,
+              "p05_V": -0.009239490194519362,
+              "p95_V": 0.0034106136237281198
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": 0.001963153976761808,
+              "std_V": 0.004261486379654853,
+              "min_V": -0.007133254828703528,
+              "max_V": 0.00994357871451712,
+              "p05_V": -0.004812356049648314,
+              "p95_V": 0.007949867054812503
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.005571259314659081,
+              "std_V": 0.004238031648445814,
+              "min_V": -0.0025129330852458054,
+              "max_V": 0.01446225568548598,
+              "p05_V": -0.0014719280884586518,
+              "p95_V": 0.0119653538934649
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.012055410027688729,
+            -0.013538237719924795,
+            -0.012456511799762926
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.008172053688010938,
+            -0.008222969673376435,
+            -0.009421795143271156
+          ],
+          "sample_min_V": -0.01446225568548598,
+          "sample_max_V": 0.013942298711128953,
+          "observed_peak_to_peak_V": 0.028404554396614934,
+          "detector_training_class_order_valid": true
+        },
+        "ADC_three_threshold_same_centers": {
+          "sample_count": 240,
+          "bit_count": 480,
+          "symbol_errors": 130,
+          "SER": 0.5416666666666666,
+          "gray_bit_errors": 145,
+          "gray_BER": 0.3020833333333333,
+          "zero_error_SER_95pct_upper_if_independent_symbols": null,
+          "SER_bound_note": "Exact one-sided zero-error binomial bound assuming independent symbol errors; finite correlated samples do not establish a target BER.",
+          "BER_note": "Observed Gray-bit error fraction only; no independent-bit confidence bound is assigned to the paired bits.",
+          "confusion_rows_true_cols_decided": [
+            [
+              38,
+              21,
+              2,
+              0
+            ],
+            [
+              26,
+              18,
+              15,
+              3
+            ],
+            [
+              5,
+              11,
+              16,
+              25
+            ],
+            [
+              0,
+              5,
+              17,
+              38
+            ]
+          ],
+          "levels_in_polarity_corrected_V": [
+            {
+              "symbol": 0,
+              "gray_code": 0,
+              "count": 61,
+              "mean_V": -0.006229188012295082,
+              "std_V": 0.003950549063014624,
+              "min_V": -0.013769531250000001,
+              "max_V": 0.0020507812500000014,
+              "p05_V": -0.012011718749999997,
+              "p95_V": -0.0008789062499999986
+            },
+            {
+              "symbol": 1,
+              "gray_code": 1,
+              "count": 62,
+              "mean_V": -0.0027973790322580643,
+              "std_V": 0.004040583967006884,
+              "min_V": -0.009667968749999999,
+              "max_V": 0.006152343749999997,
+              "p05_V": -0.009082031249999997,
+              "p95_V": 0.0032226562499999972
+            },
+            {
+              "symbol": 2,
+              "gray_code": 3,
+              "count": 57,
+              "mean_V": 0.001958264802631579,
+              "std_V": 0.004259032873121141,
+              "min_V": -0.00732421875,
+              "max_V": 0.009667968749999999,
+              "p05_V": -0.004980468750000001,
+              "p95_V": 0.008144531249999996
+            },
+            {
+              "symbol": 3,
+              "gray_code": 2,
+              "count": 60,
+              "mean_V": 0.005527343749999999,
+              "std_V": 0.004239946029607497,
+              "min_V": -0.0026367187500000028,
+              "max_V": 0.01435546875,
+              "p05_V": -0.00146484375,
+              "p95_V": 0.012041015625
+            }
+          ],
+          "empirical_eye_gaps_V": [
+            -0.01171875,
+            -0.013476562499999997,
+            -0.012304687500000001
+          ],
+          "p05_p95_eye_gaps_V": [
+            -0.008203124999999999,
+            -0.008203124999999999,
+            -0.009609374999999996
+          ],
+          "sample_min_V": -0.01435546875,
+          "sample_max_V": 0.013769531250000001,
+          "observed_peak_to_peak_V": 0.028125,
+          "detector_training_class_order_valid": true
+        },
+        "ADC_fullscale_differential_Vpp": 0.075,
+        "ADC_validation_input_clipped_count": 0,
+        "ADC_validation_input_count": 256,
+        "ADC_validation_input_clipped_fraction": 0.0,
+        "FFE_validation_output_count": 240,
+        "feature_rule": "FFE features lie wholly within independent validation slice;8 symbols excluded at each edge",
+        "validation_fitting_performed": false
+      }
+    }
+  },
+  "clock_audit": {
+    "first_actual_CK0_fall_s": 1.3850089006919627e-10,
+    "first_expected_CK0_fall_s": 1.384464428571429e-10,
+    "actual_master_period_declared_s": 7.14286e-11,
+    "master_fall_count": 195,
+    "master_cycle_max_error_s": 4.450218535091743e-15,
+    "strobe_period_s": 1.1160714285714286e-12,
+    "interpolation_tolerance_s": 1.1160714285714286e-12,
+    "secondary_clock_audit": [
+      {
+        "bank": 0,
+        "branch": 0,
+        "fall_count": 25,
+        "max_expected_fall_error_s": 1.1757735905194819e-13
+      },
+      {
+        "bank": 0,
+        "branch": 7,
+        "fall_count": 24,
+        "max_expected_fall_error_s": 1.1757326875797004e-13
+      },
+      {
+        "bank": 7,
+        "branch": 7,
+        "fall_count": 24,
+        "max_expected_fall_error_s": 1.1757326875466131e-13
+      }
+    ],
+    "retained_primary_and_secondary_records": 1542,
+    "branch_rule": "First actual CK0 fall is mastercycle0. Secondarybranch=mastercycle modulo8, bank=primarylane.",
+    "label_rule": "Primary andsecondary shareprimarycapture symbolindex; secondaryreadtime islater.",
+    "primary_read_after_fall_midpoint_s": 1.5e-12,
+    "secondary_read_after_primary_fall_midpoint_s": 3.3499999999999994e-11,
+    "first_mapping": [
+      {
+        "symbol_time_index": 0,
+        "master_cycle": 0,
+        "bank": 7,
+        "secondary_branch": 0,
+        "primary_close_s": 2.0100089006919626e-10,
+        "secondary_read_s": 2.3450089006919624e-10
+      },
+      {
+        "symbol_time_index": 1,
+        "master_cycle": 1,
+        "bank": 0,
+        "secondary_branch": 1,
+        "primary_close_s": 2.099295135215336e-10,
+        "secondary_read_s": 2.434295135215336e-10
+      },
+      {
+        "symbol_time_index": 2,
+        "master_cycle": 1,
+        "bank": 1,
+        "secondary_branch": 1,
+        "primary_close_s": 2.188585135215336e-10,
+        "secondary_read_s": 2.5235851352153356e-10
+      },
+      {
+        "symbol_time_index": 3,
+        "master_cycle": 1,
+        "bank": 2,
+        "secondary_branch": 1,
+        "primary_close_s": 2.277865135215336e-10,
+        "secondary_read_s": 2.612865135215336e-10
+      },
+      {
+        "symbol_time_index": 4,
+        "master_cycle": 1,
+        "bank": 3,
+        "secondary_branch": 1,
+        "primary_close_s": 2.367155135215336e-10,
+        "secondary_read_s": 2.7021551352153356e-10
+      },
+      {
+        "symbol_time_index": 5,
+        "master_cycle": 1,
+        "bank": 4,
+        "secondary_branch": 1,
+        "primary_close_s": 2.456435135215336e-10,
+        "secondary_read_s": 2.791435135215336e-10
+      },
+      {
+        "symbol_time_index": 6,
+        "master_cycle": 1,
+        "bank": 5,
+        "secondary_branch": 1,
+        "primary_close_s": 2.545725135215336e-10,
+        "secondary_read_s": 2.8807251352153357e-10
+      },
+      {
+        "symbol_time_index": 7,
+        "master_cycle": 1,
+        "bank": 6,
+        "secondary_branch": 1,
+        "primary_close_s": 2.6350051352153355e-10,
+        "secondary_read_s": 2.9700051352153354e-10
+      }
+    ],
+    "last_mapping": [
+      {
+        "symbol_time_index": 1534,
+        "master_cycle": 192,
+        "bank": 5,
+        "secondary_branch": 0,
+        "primary_close_s": 1.3897439495420055e-08,
+        "secondary_read_s": 1.3930939495420055e-08
+      },
+      {
+        "symbol_time_index": 1535,
+        "master_cycle": 192,
+        "bank": 6,
+        "secondary_branch": 0,
+        "primary_close_s": 1.3906367495420055e-08,
+        "secondary_read_s": 1.3939867495420055e-08
+      },
+      {
+        "symbol_time_index": 1536,
+        "master_cycle": 192,
+        "bank": 7,
+        "secondary_branch": 0,
+        "primary_close_s": 1.3915296495420054e-08,
+        "secondary_read_s": 1.3948796495420054e-08
+      },
+      {
+        "symbol_time_index": 1537,
+        "master_cycle": 193,
+        "bank": 0,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3924225117856499e-08,
+        "secondary_read_s": 1.3957725117856498e-08
+      },
+      {
+        "symbol_time_index": 1538,
+        "master_cycle": 193,
+        "bank": 1,
+        "secondary_branch": 1,
+        "primary_close_s": 1.39331541178565e-08,
+        "secondary_read_s": 1.39666541178565e-08
+      },
+      {
+        "symbol_time_index": 1539,
+        "master_cycle": 193,
+        "bank": 2,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3942082117856498e-08,
+        "secondary_read_s": 1.3975582117856498e-08
+      },
+      {
+        "symbol_time_index": 1540,
+        "master_cycle": 193,
+        "bank": 3,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3951011117856499e-08,
+        "secondary_read_s": 1.3984511117856499e-08
+      },
+      {
+        "symbol_time_index": 1541,
+        "master_cycle": 193,
+        "bank": 4,
+        "secondary_branch": 1,
+        "primary_close_s": 1.3959939117856498e-08,
+        "secondary_read_s": 1.3993439117856498e-08
+      }
+    ],
+    "measured_primary_aperture": {
+      "phase_UI": 0.11219284222494252,
+      "CK_half_fall_time_s": 1.3438588646627226e-09,
+      "observed_symbol_time_index": 128,
+      "lane": 7,
+      "reference": "transmitted-symbol boundaries T0 + integer*UI",
+      "method": "first observed CK half-fall after warmup, modulo UI; not the requested clock delay increment"
+    }
+  },
+  "calibration": {
+    "schema": "pam4_c0_zero_skew_prefix_v1",
+    "baseline_case": "c0_00_tt_zero",
+    "baseline_tran_sha256": "43f0e2951929a483f992cdf026c3c20771ae23b8336c038c3308b5b3f3b03a0e",
+    "baseline_run_status_sha256": "dea80ea5bfa8d0bfd24e7636489cf66baae401562773a5b0b623e261367c1189",
+    "historical_frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+    "training_tx_indices": [
+      128,
+      1088
+    ],
+    "payload_tx_start": 1152,
+    "time_cutoff_s": 1.0485714285714285e-08,
+    "training_payload_guard_symbols": 64,
+    "lag_candidates": [
+      -6,
+      39
+    ],
+    "phase": "original measured aperture",
+    "polarity_application": "native P minus N at each plane, detector fits that orientation",
+    "selections": {
+      "primary": {
+        "lag": 3,
+        "pearson": 0.74863311111238,
+        "expected_raw_p_minus_n_sign": 1,
+        "correlation_sign_matches_circuit": true,
+        "historical_lag": 1,
+        "search": [
+          {
+            "lag": -6,
+            "pearson": 0.013120991986310867
+          },
+          {
+            "lag": -5,
+            "pearson": -0.026079721867210626
+          },
+          {
+            "lag": -4,
+            "pearson": -0.031328943702067784
+          },
+          {
+            "lag": -3,
+            "pearson": -0.015543949372518604
+          },
+          {
+            "lag": -2,
+            "pearson": -0.01100649640213601
+          },
+          {
+            "lag": -1,
+            "pearson": 0.011695534167517067
+          },
+          {
+            "lag": 0,
+            "pearson": 0.028502534463463736
+          },
+          {
+            "lag": 1,
+            "pearson": 0.008843008946170265
+          },
+          {
+            "lag": 2,
+            "pearson": 0.1672752947035528
+          },
+          {
+            "lag": 3,
+            "pearson": 0.74863311111238
+          },
+          {
+            "lag": 4,
+            "pearson": 0.5423279781823077
+          },
+          {
+            "lag": 5,
+            "pearson": -0.016130417752960962
+          },
+          {
+            "lag": 6,
+            "pearson": -0.23030245764490376
+          },
+          {
+            "lag": 7,
+            "pearson": -0.17427190703809986
+          },
+          {
+            "lag": 8,
+            "pearson": -0.07588425675949355
+          },
+          {
+            "lag": 9,
+            "pearson": -0.021759176689019305
+          },
+          {
+            "lag": 10,
+            "pearson": -0.011100358509427621
+          },
+          {
+            "lag": 11,
+            "pearson": -0.022724925942550257
+          },
+          {
+            "lag": 12,
+            "pearson": -0.003391266087115425
+          },
+          {
+            "lag": 13,
+            "pearson": 0.022824073435844094
+          },
+          {
+            "lag": 14,
+            "pearson": 0.021139176690948176
+          },
+          {
+            "lag": 15,
+            "pearson": 0.03473684821995177
+          },
+          {
+            "lag": 16,
+            "pearson": -0.007598932645910175
+          },
+          {
+            "lag": 17,
+            "pearson": -0.04222235751748054
+          },
+          {
+            "lag": 18,
+            "pearson": -0.01369293458039621
+          },
+          {
+            "lag": 19,
+            "pearson": 0.011050607335652095
+          },
+          {
+            "lag": 20,
+            "pearson": -0.011884280103652087
+          },
+          {
+            "lag": 21,
+            "pearson": -0.05244078419522207
+          },
+          {
+            "lag": 22,
+            "pearson": -0.062397169149937634
+          },
+          {
+            "lag": 23,
+            "pearson": -0.055372843569520123
+          },
+          {
+            "lag": 24,
+            "pearson": -0.012016403434125042
+          },
+          {
+            "lag": 25,
+            "pearson": 0.03211914739576847
+          },
+          {
+            "lag": 26,
+            "pearson": 0.04250880085388188
+          },
+          {
+            "lag": 27,
+            "pearson": 0.02493229399217042
+          },
+          {
+            "lag": 28,
+            "pearson": -0.026899691078489628
+          },
+          {
+            "lag": 29,
+            "pearson": -0.03508567100832126
+          },
+          {
+            "lag": 30,
+            "pearson": -0.0214729613365234
+          },
+          {
+            "lag": 31,
+            "pearson": -0.044982522419047946
+          },
+          {
+            "lag": 32,
+            "pearson": -0.022701062206529322
+          },
+          {
+            "lag": 33,
+            "pearson": -0.010165578014411989
+          },
+          {
+            "lag": 34,
+            "pearson": -0.024898743045218948
+          },
+          {
+            "lag": 35,
+            "pearson": -0.008717931727444499
+          },
+          {
+            "lag": 36,
+            "pearson": 0.018818875992178886
+          },
+          {
+            "lag": 37,
+            "pearson": 0.011878102448230992
+          },
+          {
+            "lag": 38,
+            "pearson": -0.013151279868268338
+          },
+          {
+            "lag": 39,
+            "pearson": -0.0072881827607244095
+          }
+        ],
+        "last_training_read_s": 9.934651253364085e-09,
+        "detectors": {
+          "raw_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 960,
+            "training_complete_window_count": 944,
+            "normalization_training_mean_V": -0.00020113561203837678,
+            "normalization_training_centered_RMS_V": 0.010336049009442481,
+            "weights_on_normalized_input": [
+              0.07819363503665637,
+              -0.08216014674093713,
+              0.2475563254125203,
+              -0.26424877901552535,
+              0.6473228674929973,
+              -1.049516967185285,
+              2.8222611738877768,
+              -4.001491358404417,
+              4.71911375834009,
+              -1.3176559115331183,
+              0.30769904801214804,
+              -0.07034937211145693,
+              -0.04041699176751746,
+              -0.00044776204071888056,
+              -0.03428410046792237,
+              0.007850790871570682,
+              -0.042811031806993485
+            ],
+            "bias_in_target_symbol_units": 0.060126571464742984,
+            "equivalent_weights_per_input_V": [
+              7.565137797355904,
+              -7.948892915066469,
+              23.95076931101677,
+              -25.565743619648213,
+              62.627689448998986,
+              -101.53947279337594,
+              273.05028945871913,
+              -387.1393561262007,
+              456.56843867796596,
+              -127.48158511336158,
+              29.769503582176327,
+              -6.806215029281438,
+              -3.9102941298550906,
+              -0.043320425465265135,
+              -3.3169444568811723,
+              0.7595543388386223,
+              -4.141914552444898
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.09761777556327203,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.07045963584461379,
+            "normal_equation_relative_residual": 3.0598103156940663e-16
+          },
+          "ADC_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 960,
+            "training_complete_window_count": 944,
+            "normalization_training_mean_V": -0.0001977539062500003,
+            "normalization_training_centered_RMS_V": 0.01033965542781142,
+            "weights_on_normalized_input": [
+              0.07233146902843528,
+              -0.06915991110683785,
+              0.22662931872901038,
+              -0.22974221791694846,
+              0.5977937864040659,
+              -0.9888934539786068,
+              2.7570053212541525,
+              -3.9357617747482734,
+              4.658902468648797,
+              -1.2661837462480126,
+              0.26340529893696857,
+              -0.0359195122361357,
+              -0.06636578483197307,
+              0.017686333685691613,
+              -0.05254962473408017,
+              0.02279384129197664,
+              -0.04929731785832497
+            ],
+            "bias_in_target_symbol_units": 0.060228058000488735,
+            "equivalent_weights_per_input_V": [
+              6.9955396031747235,
+              -6.6888023096797555,
+              21.918459499088037,
+              -22.219523611878977,
+              57.81563907788754,
+              -95.64085194935016,
+              266.6438297197418,
+              -380.6472858043153,
+              450.58585377200916,
+              -122.45898860829097,
+              25.475249226242656,
+              -3.4739564085975285,
+              -6.418568326122704,
+              1.710534147793671,
+              -5.082338101203366,
+              2.204506857227193,
+              -4.7677911708475245
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.09700069460850433,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.09491711760072702,
+            "normal_equation_relative_residual": 4.345677172006597e-16
+          },
+          "raw_three_threshold": {
+            "sample_count": 960,
+            "polarity": 1,
+            "thresholds_V": [
+              -0.007501741237095106,
+              -0.0008631676407847236,
+              0.006667159811370172
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.007501741237095106,
+              -0.0008631676407847236,
+              0.006667159811370172
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 230,
+                "mean_V": -0.010233688693170519,
+                "std_V": 0.0070051427523657155,
+                "min_V": -0.02808807252361889,
+                "max_V": 0.005525436426543573,
+                "p05_V": -0.022107157599476356,
+                "p95_V": 0.0006759793203614742
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 236,
+                "mean_V": -0.004769793781019693,
+                "std_V": 0.006649597819807486,
+                "min_V": -0.0207067230782928,
+                "max_V": 0.011543032917207041,
+                "p05_V": -0.014971968531541924,
+                "p95_V": 0.006543442156650592
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 248,
+                "mean_V": 0.0030434584994502457,
+                "std_V": 0.006473938435250104,
+                "min_V": -0.012748966184937816,
+                "max_V": 0.018756117574560083,
+                "p05_V": -0.007297459177426774,
+                "p95_V": 0.012603754846800957
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 246,
+                "mean_V": 0.010290861123290099,
+                "std_V": 0.007178813450326868,
+                "min_V": -0.0067559675188902935,
+                "max_V": 0.02741421275832434,
+                "p05_V": -0.000797816211399599,
+                "p95_V": 0.02217114974273432
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.026232159504836372,
+              -0.024291999102144857,
+              -0.025512085093450376
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.015647947851903397,
+              -0.013840901334077366,
+              -0.013401571058200556
+            ],
+            "symbol_errors": 477,
+            "SER": 0.496875,
+            "quality_score": -2.7499015138862535,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_three_threshold": {
+            "sample_count": 960,
+            "polarity": 1,
+            "thresholds_V": [
+              -0.007502446803610906,
+              -0.0008460160094313834,
+              0.006674201539142407
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.007502446803610906,
+              -0.0008460160094313834,
+              0.006674201539142407
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 230,
+                "mean_V": -0.010244565217391305,
+                "std_V": 0.006998064969189849,
+                "min_V": -0.027734375000000002,
+                "max_V": 0.005859375,
+                "p05_V": -0.022265625,
+                "p95_V": 0.0008203124999999875
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 236,
+                "mean_V": -0.0047603283898305085,
+                "std_V": 0.0066324314545185325,
+                "min_V": -0.020703125000000003,
+                "max_V": 0.011328125000000001,
+                "p05_V": -0.015234375000000001,
+                "p95_V": 0.006640624999999997
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 248,
+                "mean_V": 0.0030682963709677416,
+                "std_V": 0.006498776597288031,
+                "min_V": -0.012890625000000003,
+                "max_V": 0.019140624999999994,
+                "p05_V": -0.007421875000000001,
+                "p95_V": 0.012890625000000003
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 246,
+                "mean_V": 0.010280106707317074,
+                "std_V": 0.007194034556800641,
+                "min_V": -0.006640624999999997,
+                "max_V": 0.027734375000000006,
+                "p05_V": -0.0009765625000000017,
+                "p95_V": 0.022265624999999997
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.026562500000000003,
+              -0.024218750000000004,
+              -0.02578124999999999
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.016054687499999987,
+              -0.014062499999999999,
+              -0.013867187500000005
+            ],
+            "symbol_errors": 473,
+            "SER": 0.49270833333333336,
+            "quality_score": -2.7530474198188157,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_fullscale_differential_Vpp": 0.1,
+          "all_training_ADC_clipped_count": 0,
+          "freeze_rule": "phase/lag/ADC range selected with split training; FIRs then refit once using all training; no final validation samples"
+        }
+      },
+      "secondary": {
+        "lag": 3,
+        "pearson": -0.7298002716867348,
+        "expected_raw_p_minus_n_sign": -1,
+        "correlation_sign_matches_circuit": true,
+        "historical_lag": 3,
+        "search": [
+          {
+            "lag": -6,
+            "pearson": -0.015607209092707387
+          },
+          {
+            "lag": -5,
+            "pearson": 0.02253119615609702
+          },
+          {
+            "lag": -4,
+            "pearson": 0.030252782877780608
+          },
+          {
+            "lag": -3,
+            "pearson": 0.017776551825277404
+          },
+          {
+            "lag": -2,
+            "pearson": 0.013035678901103425
+          },
+          {
+            "lag": -1,
+            "pearson": -0.012570733026750644
+          },
+          {
+            "lag": 0,
+            "pearson": -0.034335730641113796
+          },
+          {
+            "lag": 1,
+            "pearson": -0.011870142889185841
+          },
+          {
+            "lag": 2,
+            "pearson": -0.1751812585770739
+          },
+          {
+            "lag": 3,
+            "pearson": -0.7298002716867348
+          },
+          {
+            "lag": 4,
+            "pearson": -0.5721886716905797
+          },
+          {
+            "lag": 5,
+            "pearson": -0.04915439865627833
+          },
+          {
+            "lag": 6,
+            "pearson": 0.19296366073650964
+          },
+          {
+            "lag": 7,
+            "pearson": 0.17656384315339926
+          },
+          {
+            "lag": 8,
+            "pearson": 0.09400079501474617
+          },
+          {
+            "lag": 9,
+            "pearson": 0.03565777372436657
+          },
+          {
+            "lag": 10,
+            "pearson": 0.015612101041595721
+          },
+          {
+            "lag": 11,
+            "pearson": 0.01704439536170392
+          },
+          {
+            "lag": 12,
+            "pearson": -0.00028390598382857334
+          },
+          {
+            "lag": 13,
+            "pearson": -0.02017995019100522
+          },
+          {
+            "lag": 14,
+            "pearson": -0.019864023965585505
+          },
+          {
+            "lag": 15,
+            "pearson": -0.03366613193864677
+          },
+          {
+            "lag": 16,
+            "pearson": 0.004929265924903552
+          },
+          {
+            "lag": 17,
+            "pearson": 0.0394572894412146
+          },
+          {
+            "lag": 18,
+            "pearson": 0.016225913292470074
+          },
+          {
+            "lag": 19,
+            "pearson": -0.007135322373705702
+          },
+          {
+            "lag": 20,
+            "pearson": 0.012787082301909815
+          },
+          {
+            "lag": 21,
+            "pearson": 0.0508885133650147
+          },
+          {
+            "lag": 22,
+            "pearson": 0.06339600071697149
+          },
+          {
+            "lag": 23,
+            "pearson": 0.05852139317107108
+          },
+          {
+            "lag": 24,
+            "pearson": 0.01787437996261652
+          },
+          {
+            "lag": 25,
+            "pearson": -0.026496241600372106
+          },
+          {
+            "lag": 26,
+            "pearson": -0.04187921910827854
+          },
+          {
+            "lag": 27,
+            "pearson": -0.027202167469811144
+          },
+          {
+            "lag": 28,
+            "pearson": 0.022706124969004194
+          },
+          {
+            "lag": 29,
+            "pearson": 0.034290436665139465
+          },
+          {
+            "lag": 30,
+            "pearson": 0.02549558118652336
+          },
+          {
+            "lag": 31,
+            "pearson": 0.046764669468282685
+          },
+          {
+            "lag": 32,
+            "pearson": 0.026102602496437432
+          },
+          {
+            "lag": 33,
+            "pearson": 0.013241328942943359
+          },
+          {
+            "lag": 34,
+            "pearson": 0.02539355572143646
+          },
+          {
+            "lag": 35,
+            "pearson": 0.010110818725517117
+          },
+          {
+            "lag": 36,
+            "pearson": -0.016044169968638562
+          },
+          {
+            "lag": 37,
+            "pearson": -0.010667521722290772
+          },
+          {
+            "lag": 38,
+            "pearson": 0.011252037200184004
+          },
+          {
+            "lag": 39,
+            "pearson": 0.008465324262773999
+          }
+        ],
+        "last_training_read_s": 9.966651253364085e-09,
+        "detectors": {
+          "raw_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 960,
+            "training_complete_window_count": 944,
+            "normalization_training_mean_V": 0.00013059865791953696,
+            "normalization_training_centered_RMS_V": 0.005873473626304903,
+            "weights_on_normalized_input": [
+              -0.06768503771257814,
+              0.10641458488201351,
+              -0.2740649591323155,
+              0.3277432869042935,
+              -0.7280475674983464,
+              1.27963723832687,
+              -3.24225859238727,
+              4.750347474272554,
+              -5.348002562460675,
+              1.7037574183830728,
+              -0.5096649203353272,
+              0.15566586377949407,
+              0.02836305127008343,
+              -0.00515264733234317,
+              0.03803494500517807,
+              -0.013018783249600766,
+              0.04455333912745326
+            ],
+            "bias_in_target_symbol_units": 0.059634587871082445,
+            "equivalent_weights_per_input_V": [
+              -11.523851475121017,
+              18.11782799286368,
+              -46.66147778460941,
+              55.80058884345108,
+              -123.95519479949941,
+              217.86719746146377,
+              -552.0172216091191,
+              808.7799105792657,
+              -910.534873010946,
+              290.0766270155084,
+              -86.77402041148954,
+              26.503202990872367,
+              4.829008023983771,
+              -0.8772742775700151,
+              6.475715636967364,
+              -2.2165389815142653,
+              7.585517865938301
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.09862153341241137,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.07222044891238862,
+            "normal_equation_relative_residual": 3.3158441536403747e-16
+          },
+          "ADC_FFE": {
+            "tap_count": 17,
+            "tap_offsets_UI": [
+              -8,
+              -7,
+              -6,
+              -5,
+              -4,
+              -3,
+              -2,
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "decision_latency_UI": 8,
+            "decision_latency_s": 7.142857142857143e-11,
+            "training_input_sample_count": 960,
+            "training_complete_window_count": 944,
+            "normalization_training_mean_V": 0.0001306152343750001,
+            "normalization_training_centered_RMS_V": 0.0058870287321878935,
+            "weights_on_normalized_input": [
+              -0.07841781225896784,
+              0.13146620163125763,
+              -0.29883016326740974,
+              0.326008841285783,
+              -0.6847875439377468,
+              1.1783207645004536,
+              -3.0883722640874316,
+              4.570169194049127,
+              -5.176936670570576,
+              1.5669696869882639,
+              -0.4159030902096415,
+              0.09542979151457878,
+              0.0709859258867447,
+              -0.045749752882131844,
+              0.08050523086494914,
+              -0.04585088960507973,
+              0.059140041024743246
+            ],
+            "bias_in_target_symbol_units": 0.05924356753288341,
+            "equivalent_weights_per_input_V": [
+              -13.320439873209882,
+              22.331503312095894,
+              -50.760778800607376,
+              55.377484316204956,
+              -116.32142037860378,
+              200.15542952217507,
+              -524.6062835062211,
+              776.3116848846497,
+              -879.3802283085828,
+              266.1732697890036,
+              -70.64736883916525,
+              16.210179337635513,
+              12.058022665767256,
+              -7.771280719591309,
+              13.675019186636389,
+              -7.788460306705418,
+              10.04582170652394
+            ],
+            "equivalent_intercept_in_target_symbol_units": 0.09820058599392276,
+            "ridge_lambda": 0.001,
+            "ridge_selection": "fixed a priori, no search or validation tuning",
+            "objective": "mean squared target-amplitude error pluslambda*sum(normalized-input tap weights squared); unregularized bias",
+            "training_MSE_in_target_symbol_units_squared": 0.12154003429854014,
+            "normal_equation_relative_residual": 5.195019179696572e-16
+          },
+          "raw_three_threshold": {
+            "sample_count": 960,
+            "polarity": -1,
+            "thresholds_V": [
+              -0.004172597889275032,
+              -0.000539143464428224,
+              0.0036727121387939645
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.004172597889275032,
+              -0.000539143464428224,
+              0.0036727121387939645
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 230,
+                "mean_V": -0.005645825537260538,
+                "std_V": 0.004109285656326098,
+                "min_V": -0.015344235846899146,
+                "max_V": 0.003646397914412569,
+                "p05_V": -0.01227128443450489,
+                "p95_V": 0.0006897837887474374
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 236,
+                "mean_V": -0.002699370241289527,
+                "std_V": 0.0039089836989404875,
+                "min_V": -0.011424840925054802,
+                "max_V": 0.006276715062596638,
+                "p05_V": -0.008673811313990532,
+                "p95_V": 0.0038453323286945784
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 248,
+                "mean_V": 0.001621083312433079,
+                "std_V": 0.0037799355128247305,
+                "min_V": -0.007480055494826887,
+                "max_V": 0.010649424923918516,
+                "p05_V": -0.004342071902780448,
+                "p95_V": 0.007711277883658072
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 246,
+                "mean_V": 0.00572434096515485,
+                "std_V": 0.004198901705006359,
+                "min_V": -0.004629051828016539,
+                "max_V": 0.01570364015983594,
+                "p05_V": -0.0008580852622013802,
+                "p95_V": 0.012736527237767276
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.015071238839467371,
+              -0.013756770557423526,
+              -0.015278476751935055
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.00936359510273797,
+              -0.008187404231475025,
+              -0.008569363145859453
+            ],
+            "symbol_errors": 507,
+            "SER": 0.528125,
+            "quality_score": -2.936023129652397,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_three_threshold": {
+            "sample_count": 960,
+            "polarity": -1,
+            "thresholds_V": [
+              -0.004180968473655122,
+              -0.0005426088795106618,
+              0.0036805495795633357
+            ],
+            "unreordered_midpoint_thresholds_V": [
+              -0.004180968473655122,
+              -0.0005426088795106618,
+              0.0036805495795633357
+            ],
+            "class_means_strictly_ordered": true,
+            "levels_in_polarity_corrected_V": [
+              {
+                "symbol": 0,
+                "gray_code": 0,
+                "count": 230,
+                "mean_V": -0.005660665760869566,
+                "std_V": 0.004134015118110668,
+                "min_V": -0.015527343749999999,
+                "max_V": 0.0038085937499999986,
+                "p05_V": -0.012333984374999997,
+                "p95_V": 0.0008789062499999986
+              },
+              {
+                "symbol": 1,
+                "gray_code": 1,
+                "count": 236,
+                "mean_V": -0.0027012711864406783,
+                "std_V": 0.003915595207506764,
+                "min_V": -0.011425781250000003,
+                "max_V": 0.006152343749999997,
+                "p05_V": -0.008496093750000003,
+                "p95_V": 0.0038085937499999986
+              },
+              {
+                "symbol": 2,
+                "gray_code": 3,
+                "count": 248,
+                "mean_V": 0.0016160534274193548,
+                "std_V": 0.0037826038488261403,
+                "min_V": -0.00732421875,
+                "max_V": 0.010839843749999998,
+                "p05_V": -0.00439453125,
+                "p95_V": 0.007910156250000001
+              },
+              {
+                "symbol": 3,
+                "gray_code": 2,
+                "count": 246,
+                "mean_V": 0.005745045731707317,
+                "std_V": 0.004195777626533654,
+                "min_V": -0.00439453125,
+                "max_V": 0.015527343749999999,
+                "p05_V": -0.0008789062499999986,
+                "p95_V": 0.012597656249999999
+              }
+            ],
+            "empirical_eye_gaps_V": [
+              -0.015234375000000001,
+              -0.013476562499999997,
+              -0.015234374999999998
+            ],
+            "p05_p95_eye_gaps_V": [
+              -0.009375000000000001,
+              -0.008203124999999999,
+              -0.0087890625
+            ],
+            "symbol_errors": 503,
+            "SER": 0.5239583333333333,
+            "quality_score": -2.917789947447366,
+            "quality_score_definition": "min(p05_next-p95_previous)/class_mean_span - 4*training_SER; minus1 if class means not strictly ordered; larger is better"
+          },
+          "ADC_fullscale_differential_Vpp": 0.075,
+          "all_training_ADC_clipped_count": 0,
+          "freeze_rule": "phase/lag/ADC range selected with split training; FIRs then refit once using all training; no final validation samples"
+        }
+      }
+    }
+  },
+  "scoring": {
+    "payload_tx_indices": [
+      1152,
+      1408
+    ],
+    "ffe_center_tx_indices": [
+      1160,
+      1400
+    ],
+    "fit_scope": "zero-skew pre-payload prefix",
+    "phase_optimized": false
+  },
+  "case": {
+    "case_id": "c0_00_tt_zero",
+    "skew_ps": 0.0,
+    "fixed_code": 0,
+    "stop_s": 1.4e-08,
+    "first_payload_s": 1.0485714285714285e-08,
+    "holdout_inputs": 256,
+    "FFE_scored_symbols": 240,
+    "saved_trace_count": 178,
+    "deck_sha256": "045006822ab3addba5ed6ff8e4273eaaae36f057f05cfb466fd0f4bed022e029"
+  },
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "run_status_sha256": "dea80ea5bfa8d0bfd24e7636489cf66baae401562773a5b0b623e261367c1189",
+  "tran_sha256": "43f0e2951929a483f992cdf026c3c20771ae23b8336c038c3308b5b3f3b03a0e",
+  "rescore_schema": "pam4_c0_aligned_v1",
+  "rescore_evidence": {
+    "original_plan_sha256": "14d5d7ca820c639a85f35a68cf7af46392138f90efc43ccbb7922f38242d1072",
+    "original_manifest_sha256": "35d3c9d50b1ef54cdcef09cc58b7aa361783eefb54692e635a8e233331aa59e0",
+    "original_execution_files_sha256": {
+      "bench.scs": "60b5928554f2b8c7205b849415f14f5a377b282052d5c4d96f1d8468d1642f4a",
+      "case.json": "73d567fbdb4ab0c942a5f474886026b47c16956fd147181dedb789ba2507b43a",
+      "execution_intent.json": "3d57751ffaec237974c51630626567281eb7454455f86dc40eb239c3f1bff3c3",
+      "run_status.json": "dea80ea5bfa8d0bfd24e7636489cf66baae401562773a5b0b623e261367c1189",
+      "spectre.log": "118aea8202cacc8896c5ea34c84ff9239ff22f3601649c89865075fc29e423e1",
+      "runner_stdout.log": "1d9d0135ca6728b2ca00cb8656e8c29c93ea6c188172d796be841d6bc3333247",
+      ".study_owned": "198d86a4e9c79ecd960cfb2b741f46bd3d3567ff5aa173f3a986491dc5da6f11"
+    },
+    "slurm_task_id": "757899",
+    "transient": {
+      "path": "raw/tranResponse.tran.tran",
+      "bytes": 69370717,
+      "sha256": "43f0e2951929a483f992cdf026c3c20771ae23b8336c038c3308b5b3f3b03a0e"
+    },
+    "original_collection_files_sha256": {
+      "measurements.json": "dd8f930251595dbb532e5cc476fcfce33516e09b2c570f2db05c536b657a6206",
+      "recovery.json": "f4ca2129348bac2bd43622be9d1eb08d6ababa71ea15879ec0da28e7a85c7fc3",
+      "completion.json": "3400b5102e071a3f2bdcae8305c4c3e867a54e74195f7f506df5bd6b460df957"
+    }
+  },
+  "calibration_sha256": "507009facff6110cba2d42dc5296319c366b03ed022c252fc12e73e5b5ab237e",
+  "collector_manifest_sha256": "affe4a85597261625e742533d4eb784f03e2afe3d4221b1e037adefef838ad7e",
+  "prior_symbol_errors": {
+    "primary": {
+      "raw_held_FFE_before_ADC": 173,
+      "ideal7bit_ADC_then_FFE": 174
+    },
+    "secondary": {
+      "raw_held_FFE_before_ADC": 175,
+      "ideal7bit_ADC_then_FFE": 175
+    }
+  },
+  "prior_result_matches_feedback": true
+}

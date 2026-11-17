@@ -1,0 +1,40 @@
+Olympus 交接｜GMTAP SWITCH64｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_switch64.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+沿用常態授權與 SHA 綁定，用本包 gm_switch64_plan.json
+和新的實際 run root。原 COMMON64 的 raw 可維持已退役狀態。
+先審 0、2、36、38、48、49、50、51；portable_review 有對照。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B gm_switch64.py --mode stage --index 0 --index 2 --index 36 --index 38 --index 48 --index 49 --index 50 --index 51 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+0–47 是 FF 100／200／400／400 tight AC。每 profile 12 欄，
+含 FF r3 與實體 0、±1、±2 的 P/N。每欄 1 CPU、4 GiB、
+30 min walltime，solver 估 3–25 秒，raw 估 10–40 MB。
+
+48–53 是 SS 動態 smoke 的三組 hold/轉換。建議先送 48、49
+一組，驗 codeSwitch 暫態格式、所有 XT2 OP、八支 clock、
+八路 held 與尾電流，再送 50–53。其餘安排行見 plan，
+用同一組 stage 的 case IDs 綁 approval。動態每案 1 CPU、
+6 GiB、30 min walltime（runner 的 solver 上限 20 min）。
+solver 暫估 2–8 分鐘、raw 約 80–300 MB／案，先用兩份
+smoke 的 solver/RSS/raw 位元組數調整並行和配額。
+每份 solver 檔的既有上限 512 MiB，collector 的單份
+PSF 讀取上限 320 MiB。超過時保留該案，摘要標缺量。
+
+沿用 Spectre 23.1 classic +mt=1、私有 shrink、
+SPECTRE_DEFAULTS=-E，用 gm_switch64_classic.sbatch。
+先確定 smoke 時基與 paired hold 一致，再擴展到三角落
+切碼、偏斜與具 ±0.5 UI 的代表案。
+
+  /usr/bin/python3.11 -B gm_switch64.py --mode summarize --root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_switch64_pilot.json
+
+每次使用新的摘要檔名。報 FF 密頻二方向數值與收斂。
+暫態報各個切換的恢復時間、峰值、末段與 hold 是否相符。
+若未恢復或未收齊完整 lane 窗，保留該案與其對照的 raw。
+依現行規則，量測與摘要核對並 commit 後，再處置已完成
+且沒有下游依賴的 raw，並留收據。
+C0 與後續長案將依先前計畫另送。

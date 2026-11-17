@@ -1,0 +1,589 @@
+{
+  "status": "verified_six_case_training_complete",
+  "created_utc": "2026-10-23T03:49:36.238151Z",
+  "finished_utc": "2026-10-23T03:29:13.259969Z",
+  "root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/secondary_cap_training_r7_20261022",
+  "script_sha256": "a83a0795f0cfb341889649f9578cfd82dbf7ecf380d2cea799938dd84ce1bbac",
+  "protocol_sha256": "52589424ae376221ffb488b3e1a92d5ca1e411768eed96825defa8f4cd3af1f0",
+  "status_sha256": "b313c3ae8fdd84739cf381503161d2ba00c57034f599a3afecc5bcb850bd4a6c",
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "data_seed": 2026102202,
+  "noise_seed": 223,
+  "fit_inputs": 256,
+  "fit_FFE_windows": 240,
+  "internal_guard": 16,
+  "score_inputs": 240,
+  "score_FFE_outputs": 224,
+  "candidate_order": [
+    "baseline_r5",
+    "secondary_c25_w1",
+    "secondary_c25_w2"
+  ],
+  "candidate_configurations": {
+    "baseline_r5": {
+      "secondary_cap_F": 1e-14,
+      "secondary_switch_width_m": 1e-06
+    },
+    "secondary_c25_w1": {
+      "secondary_cap_F": 2.5e-14,
+      "secondary_switch_width_m": 1e-06
+    },
+    "secondary_c25_w2": {
+      "secondary_cap_F": 2.5e-14,
+      "secondary_switch_width_m": 2e-06
+    }
+  },
+  "all_six_exit0": true,
+  "independent_metrics_recomputed": true,
+  "noise_fitting_performed": false,
+  "training_only": true,
+  "independent_holdout": false,
+  "complete_ADC_verified": false,
+  "case_hashes": [
+    {
+      "name": "noiseless_baseline_r5",
+      "summary_sha256": "e2444b330ea4110905151400b602e945bcb0c176c2f0ad4731c0c428d6fa0498",
+      "deck_sha256": "8e980b6ed71f72a33f514afbf5ed38fbe56fa8c9c5ab46b5c2c7024cd9f09087",
+      "raw_transient_sha256": "e08203a2f92d2b8ece690fc57b13add7f68d7d8736a1e69d94b2c65c74a9f532",
+      "exit_code": 0,
+      "independent_metrics_recomputed": true
+    },
+    {
+      "name": "noiseless_secondary_c25_w1",
+      "summary_sha256": "d146105e645c97f177e35335f6c136db4d005c55dfd310ba12eed98e4faa3723",
+      "deck_sha256": "6626414a9ce6c05c4044afad77fb3ef08d82fe46c48e96565507798385d1b039",
+      "raw_transient_sha256": "04e8870dcd79378fa3e527c55d8db7edcf6af20bd5f592a101b4e2ca601cb6f5",
+      "exit_code": 0,
+      "independent_metrics_recomputed": true
+    },
+    {
+      "name": "noiseless_secondary_c25_w2",
+      "summary_sha256": "f74d3a091a5c5bfdcb82340832d6e7cbde0264b1e79049d3392dbb5083d83a58",
+      "deck_sha256": "2ca7491b4e7bc801bec799ec880a10425a22dd051bf6cfe1938d85b9e6cdae4e",
+      "raw_transient_sha256": "b092d8bb024f5be4b520d36278808f52b1ed9b54e0f3a253d4dbb2a408909ba6",
+      "exit_code": 0,
+      "independent_metrics_recomputed": true
+    },
+    {
+      "name": "noise_baseline_r5",
+      "summary_sha256": "ed244de3a98dd845fd9c4248c41d8821819f9d43b2527c06f40e5c9f9f78435b",
+      "deck_sha256": "7e2c3b052e8cf103a1331d092a61a79cb40b754c3dac332a7b4f02883c32798d",
+      "raw_transient_sha256": "ac46c63ef410e7d300652b422bcdfb520f93b2524cec6fd9de479625b40570c1",
+      "exit_code": 0,
+      "independent_metrics_recomputed": true
+    },
+    {
+      "name": "noise_secondary_c25_w1",
+      "summary_sha256": "6a5b2f15ab0caa13651ca565790d8855a334de08892314394cb9e159f568f3b2",
+      "deck_sha256": "aaac8ae1e3755c2cfa9de2ca07ac477bccf3ab26346c456184f4f2435b875557",
+      "raw_transient_sha256": "ff6a00e05e3c82e45f9f6ba8b3471e7790c6227bac4d62b285b75d6cc93242b9",
+      "exit_code": 0,
+      "independent_metrics_recomputed": true
+    },
+    {
+      "name": "noise_secondary_c25_w2",
+      "summary_sha256": "a8b4ba5e6213962b366ada6950a47f0e89de427f26f91fac3b0488ec542135ce",
+      "deck_sha256": "ac890ad920e73cc59ff5ea0951aeb0930d1a87da84976bf0804aa102b2afe5ed",
+      "raw_transient_sha256": "cdcfe339a8a2bcbc1e3f531e6d0fe0eda60cb18a49f4d061a7edcb2cfb15484d",
+      "exit_code": 0,
+      "independent_metrics_recomputed": true
+    }
+  ],
+  "comparisons": {
+    "noiseless_baseline_r5": {
+      "candidate": "baseline_r5",
+      "kind": "noiseless",
+      "branches": {
+        "primary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.0024020061447446277,
+          "ADC_FFE_MSE": 0.00637098933675087,
+          "symbols": 224,
+          "held_Vpp": 0.07250153129044923,
+          "held_centered_RMS_V": 0.01728911642390043,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.1,
+          "normalized_tap_L2": 6.244327804182569,
+          "equivalent_per_V_tap_L2": 319.34143434650497
+        },
+        "secondary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.005908361952676314,
+          "ADC_FFE_MSE": 0.020753326717130798,
+          "symbols": 224,
+          "held_Vpp": 0.040872591327750785,
+          "held_centered_RMS_V": 0.009723468917808372,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.075,
+          "normalized_tap_L2": 7.214047038840809,
+          "equivalent_per_V_tap_L2": 649.741520958617
+        }
+      },
+      "measured_VDD_W": 0.011968213054593408,
+      "buffer_secondary_W": 0.0018883552037461946,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "physical_training_stats": {
+        "secondary_closing_edge_change_V": {
+          "count": 240,
+          "mean": 4.980889864163174e-06,
+          "rms": 0.00011878061671794445,
+          "centered_rms": 0.00011867613763539956,
+          "peak_abs": 0.000254815369920558
+        },
+        "secondary_acquisition_lag_before_close_V": {
+          "count": 60,
+          "mean": -3.9358472293858175e-05,
+          "rms": 0.00036777726970160373,
+          "centered_rms": 0.00036566518943954694,
+          "peak_abs": 0.0007604170869075499
+        },
+        "buffer_change_final8ps_V": {
+          "count": 60,
+          "mean": 6.522698552334597e-05,
+          "rms": 0.0005860264738396825,
+          "centered_rms": 0.0005823851546876081,
+          "peak_abs": 0.001209773608792708
+        }
+      },
+      "detector_sha256": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+      "seconds": 748.253
+    },
+    "noiseless_secondary_c25_w1": {
+      "candidate": "secondary_c25_w1",
+      "kind": "noiseless",
+      "branches": {
+        "primary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.0024147332406409144,
+          "ADC_FFE_MSE": 0.005348351443738987,
+          "symbols": 224,
+          "held_Vpp": 0.07255319956047479,
+          "held_centered_RMS_V": 0.01730045846030518,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.1,
+          "normalized_tap_L2": 6.2239809172126055,
+          "equivalent_per_V_tap_L2": 318.2115948409255
+        },
+        "secondary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.03931227760973043,
+          "ADC_FFE_MSE": 0.058197681519201294,
+          "symbols": 224,
+          "held_Vpp": 0.0322978915709069,
+          "held_centered_RMS_V": 0.007746171687245703,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.075,
+          "normalized_tap_L2": 7.506044956510853,
+          "equivalent_per_V_tap_L2": 837.3259063147254
+        }
+      },
+      "measured_VDD_W": 0.011968399754022974,
+      "buffer_secondary_W": 0.0018885803504023243,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "physical_training_stats": {
+        "secondary_closing_edge_change_V": {
+          "count": 240,
+          "mean": 4.02481158439059e-06,
+          "rms": 0.00011428100833939288,
+          "centered_rms": 0.00011421011233152056,
+          "peak_abs": 0.0002572647411330786
+        },
+        "secondary_acquisition_lag_before_close_V": {
+          "count": 60,
+          "mean": -8.76618716280253e-05,
+          "rms": 0.0012953012876496123,
+          "centered_rms": 0.0012923315449409317,
+          "peak_abs": 0.0025492156993752735
+        },
+        "buffer_change_final8ps_V": {
+          "count": 60,
+          "mean": 5.9979008947547154e-05,
+          "rms": 0.0007286000016578831,
+          "centered_rms": 0.0007261270418470429,
+          "peak_abs": 0.0014617936752110428
+        }
+      },
+      "detector_sha256": "7bb43800503c5b00e5f686f9b5e3eb82571f1b4475c6ac5d05b017d3f0426558",
+      "seconds": 787.06
+    },
+    "noiseless_secondary_c25_w2": {
+      "candidate": "secondary_c25_w2",
+      "kind": "noiseless",
+      "branches": {
+        "primary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.0024027254995689033,
+          "ADC_FFE_MSE": 0.007668042566840203,
+          "symbols": 224,
+          "held_Vpp": 0.07258281755537432,
+          "held_centered_RMS_V": 0.017311204288518824,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.1,
+          "normalized_tap_L2": 6.177017430084197,
+          "equivalent_per_V_tap_L2": 315.63363953896874
+        },
+        "secondary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.03271106825926505,
+          "ADC_FFE_MSE": 0.04497654379979682,
+          "symbols": 224,
+          "held_Vpp": 0.03234598553105128,
+          "held_centered_RMS_V": 0.0077405703911183925,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.075,
+          "normalized_tap_L2": 7.613447160824283,
+          "equivalent_per_V_tap_L2": 850.1187436417314
+        }
+      },
+      "measured_VDD_W": 0.011968781621963917,
+      "buffer_secondary_W": 0.0018889263891679942,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "physical_training_stats": {
+        "secondary_closing_edge_change_V": {
+          "count": 240,
+          "mean": 3.6991676451066566e-06,
+          "rms": 0.00013326169110116016,
+          "centered_rms": 0.0001332103392153718,
+          "peak_abs": 0.0003037671037947609
+        },
+        "secondary_acquisition_lag_before_close_V": {
+          "count": 60,
+          "mean": -4.686206225768356e-05,
+          "rms": 0.0006976753836221035,
+          "centered_rms": 0.0006960997687352053,
+          "peak_abs": 0.00137469657082534
+        },
+        "buffer_change_final8ps_V": {
+          "count": 60,
+          "mean": 6.392874026928119e-05,
+          "rms": 0.0009086800871850985,
+          "centered_rms": 0.0009064284952572382,
+          "peak_abs": 0.0018001258231120643
+        }
+      },
+      "detector_sha256": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f",
+      "seconds": 564.374
+    },
+    "noise_baseline_r5": {
+      "candidate": "baseline_r5",
+      "kind": "noise",
+      "branches": {
+        "primary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.06293654049510904,
+          "ADC_FFE_MSE": 0.06561489597227356,
+          "symbols": 224,
+          "held_Vpp": 0.0729871392526864,
+          "held_centered_RMS_V": 0.017365700399380794,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.1,
+          "normalized_tap_L2": 6.244327804182569,
+          "equivalent_per_V_tap_L2": 319.34143434650497
+        },
+        "secondary": {
+          "raw_FFE_errors": 28,
+          "ADC_FFE_errors": 31,
+          "ADC_FFE_SER": 0.13839285714285715,
+          "raw_FFE_MSE": 0.451554345489683,
+          "ADC_FFE_MSE": 0.48199384838581727,
+          "symbols": 224,
+          "held_Vpp": 0.040171619084594545,
+          "held_centered_RMS_V": 0.009719937752807724,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.075,
+          "normalized_tap_L2": 7.214047038840809,
+          "equivalent_per_V_tap_L2": 649.741520958617
+        }
+      },
+      "measured_VDD_W": 0.01196980405400317,
+      "buffer_secondary_W": 0.0018886451231619192,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "physical_training_stats": {
+        "secondary_closing_edge_change_V": {
+          "count": 240,
+          "mean": 3.6844602828017826e-07,
+          "rms": 0.00019652633753361898,
+          "centered_rms": 0.00019652599215346092,
+          "peak_abs": 0.0005161337534600463
+        },
+        "secondary_acquisition_lag_before_close_V": {
+          "count": 60,
+          "mean": -0.00027106101835635,
+          "rms": 0.0010527512769860693,
+          "centered_rms": 0.0010172566910683942,
+          "peak_abs": 0.0030149211846177693
+        },
+        "buffer_change_final8ps_V": {
+          "count": 60,
+          "mean": 0.00013042908558682324,
+          "rms": 0.001155020645327502,
+          "centered_rms": 0.0011476327569243327,
+          "peak_abs": 0.002517422724782059
+        }
+      },
+      "detector_sha256": "650597e127ef2d86a5645e16ee8dd361915e41497fb1cd15a395e75ac67bc847",
+      "seconds": 857.321
+    },
+    "noise_secondary_c25_w1": {
+      "candidate": "secondary_c25_w1",
+      "kind": "noise",
+      "branches": {
+        "primary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.06292755695597205,
+          "ADC_FFE_MSE": 0.06534812156447377,
+          "symbols": 224,
+          "held_Vpp": 0.07304043991166409,
+          "held_centered_RMS_V": 0.017377230423541463,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.1,
+          "normalized_tap_L2": 6.2239809172126055,
+          "equivalent_per_V_tap_L2": 318.2115948409255
+        },
+        "secondary": {
+          "raw_FFE_errors": 22,
+          "ADC_FFE_errors": 26,
+          "ADC_FFE_SER": 0.11607142857142858,
+          "raw_FFE_MSE": 0.42411602260850667,
+          "ADC_FFE_MSE": 0.4503516948636141,
+          "symbols": 224,
+          "held_Vpp": 0.03144500889395663,
+          "held_centered_RMS_V": 0.0077418733530076125,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.075,
+          "normalized_tap_L2": 7.506044956510853,
+          "equivalent_per_V_tap_L2": 837.3259063147254
+        }
+      },
+      "measured_VDD_W": 0.011969929501819942,
+      "buffer_secondary_W": 0.0018888086628056125,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "physical_training_stats": {
+        "secondary_closing_edge_change_V": {
+          "count": 240,
+          "mean": 1.6967679196848903e-06,
+          "rms": 0.0001392906527341133,
+          "centered_rms": 0.00013928031776859955,
+          "peak_abs": 0.0003369857255962616
+        },
+        "secondary_acquisition_lag_before_close_V": {
+          "count": 60,
+          "mean": -0.00025531583133663884,
+          "rms": 0.0016474345417214625,
+          "centered_rms": 0.0016275301519559893,
+          "peak_abs": 0.0042143243852199586
+        },
+        "buffer_change_final8ps_V": {
+          "count": 60,
+          "mean": 0.00015670451027975004,
+          "rms": 0.001261093850121478,
+          "centered_rms": 0.001251319861295343,
+          "peak_abs": 0.0026689122906286
+        }
+      },
+      "detector_sha256": "7bb43800503c5b00e5f686f9b5e3eb82571f1b4475c6ac5d05b017d3f0426558",
+      "seconds": 828.696
+    },
+    "noise_secondary_c25_w2": {
+      "candidate": "secondary_c25_w2",
+      "kind": "noise",
+      "branches": {
+        "primary": {
+          "raw_FFE_errors": 0,
+          "ADC_FFE_errors": 0,
+          "ADC_FFE_SER": 0.0,
+          "raw_FFE_MSE": 0.0631674946951754,
+          "ADC_FFE_MSE": 0.06483377351907259,
+          "symbols": 224,
+          "held_Vpp": 0.07288134614637543,
+          "held_centered_RMS_V": 0.01736704529300168,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.1,
+          "normalized_tap_L2": 6.177017430084197,
+          "equivalent_per_V_tap_L2": 315.63363953896874
+        },
+        "secondary": {
+          "raw_FFE_errors": 27,
+          "ADC_FFE_errors": 26,
+          "ADC_FFE_SER": 0.11607142857142858,
+          "raw_FFE_MSE": 0.42810488186141776,
+          "ADC_FFE_MSE": 0.4173576123511069,
+          "symbols": 224,
+          "held_Vpp": 0.03215318729524541,
+          "held_centered_RMS_V": 0.007729963921067445,
+          "score_clipped": 0,
+          "first256_clipped": 0,
+          "fullscale_Vpp": 0.075,
+          "normalized_tap_L2": 7.613447160824283,
+          "equivalent_per_V_tap_L2": 850.1187436417314
+        }
+      },
+      "measured_VDD_W": 0.011969995961512693,
+      "buffer_secondary_W": 0.0018888284934341938,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "physical_training_stats": {
+        "secondary_closing_edge_change_V": {
+          "count": 240,
+          "mean": 1.2505185839133126e-05,
+          "rms": 0.00016262554585560741,
+          "centered_rms": 0.00016214403625160875,
+          "peak_abs": 0.0005004984834718895
+        },
+        "secondary_acquisition_lag_before_close_V": {
+          "count": 60,
+          "mean": -2.968982939368462e-05,
+          "rms": 0.0009412743223148123,
+          "centered_rms": 0.0009408059650532532,
+          "peak_abs": 0.0024208409166845968
+        },
+        "buffer_change_final8ps_V": {
+          "count": 60,
+          "mean": 6.2235871769604025e-06,
+          "rms": 0.0010721868031675647,
+          "centered_rms": 0.0010721687403806048,
+          "peak_abs": 0.0021636729189187243
+        }
+      },
+      "detector_sha256": "04298d537e246b4714d0037ab1ff044c705a695e804de041632ee1139de41b4f",
+      "seconds": 744.766
+    }
+  },
+  "paired_training_diagnostics": {
+    "baseline_r5": {
+      "primary": {
+        "noise_minus_noiseless_held_V": {
+          "count": 240,
+          "mean": -1.8867917573489602e-05,
+          "rms": 0.0007686613731594766,
+          "centered_rms": 0.0007684297679514063,
+          "peak_abs": 0.0022790772040223173
+        },
+        "noise_minus_noiseless_ADC_FFE_target_units": {
+          "count": 224,
+          "mean": -0.008235280888591948,
+          "rms": 0.2496671453723665,
+          "centered_rms": 0.24953128787202694,
+          "peak_abs": 0.7140757906880792
+        }
+      },
+      "secondary": {
+        "noise_minus_noiseless_held_V": {
+          "count": 240,
+          "mean": 9.822661844794272e-05,
+          "rms": 0.0010960451360340956,
+          "centered_rms": 0.0010916347702653489,
+          "peak_abs": 0.002885942697654742
+        },
+        "noise_minus_noiseless_ADC_FFE_target_units": {
+          "count": 224,
+          "mean": -0.02667060122047164,
+          "rms": 0.7391632922293291,
+          "centered_rms": 0.738681969192317,
+          "peak_abs": 2.4249176749770402
+        }
+      },
+      "primary_secondary_delta_correlation_at_same_aligned_symbol_label": -0.0904023420947395
+    },
+    "secondary_c25_w1": {
+      "primary": {
+        "noise_minus_noiseless_held_V": {
+          "count": 240,
+          "mean": -1.884606513020415e-05,
+          "rms": 0.0007688288299103268,
+          "centered_rms": 0.0007685978112969035,
+          "peak_abs": 0.002278267948022883
+        },
+        "noise_minus_noiseless_ADC_FFE_target_units": {
+          "count": 224,
+          "mean": -0.008741842306101484,
+          "rms": 0.24474939265937015,
+          "centered_rms": 0.24459322435469427,
+          "peak_abs": 0.7116106729634706
+        }
+      },
+      "secondary": {
+        "noise_minus_noiseless_held_V": {
+          "count": 240,
+          "mean": 9.99489763521567e-05,
+          "rms": 0.0008192765701368052,
+          "centered_rms": 0.0008131569962198466,
+          "peak_abs": 0.0024371913227829722
+        },
+        "noise_minus_noiseless_ADC_FFE_target_units": {
+          "count": 224,
+          "mean": -0.035901153951013176,
+          "rms": 0.6797475172679638,
+          "centered_rms": 0.6787987878428675,
+          "peak_abs": 2.3534612160780557
+        }
+      },
+      "primary_secondary_delta_correlation_at_same_aligned_symbol_label": -0.11825131214308268
+    },
+    "secondary_c25_w2": {
+      "primary": {
+        "noise_minus_noiseless_held_V": {
+          "count": 240,
+          "mean": -1.7405435311126464e-05,
+          "rms": 0.0007810520292340016,
+          "centered_rms": 0.0007808580685324202,
+          "peak_abs": 0.0022563707164531266
+        },
+        "noise_minus_noiseless_ADC_FFE_target_units": {
+          "count": 224,
+          "mean": -0.009163326791250134,
+          "rms": 0.236309545590092,
+          "centered_rms": 0.23613181653286905,
+          "peak_abs": 0.7041230019328135
+        }
+      },
+      "secondary": {
+        "noise_minus_noiseless_held_V": {
+          "count": 240,
+          "mean": 6.945458392395899e-05,
+          "rms": 0.0007585064619314061,
+          "centered_rms": 0.0007553198749957857,
+          "peak_abs": 0.0024127785379188804
+        },
+        "noise_minus_noiseless_ADC_FFE_target_units": {
+          "count": 224,
+          "mean": -0.03575284713652394,
+          "rms": 0.6615241990176682,
+          "centered_rms": 0.6605573402874271,
+          "peak_abs": 2.2453782568734972
+        }
+      },
+      "primary_secondary_delta_correlation_at_same_aligned_symbol_label": -0.04512508187816423
+    }
+  },
+  "paired_difference_scope": "Noise-minus-noiseless trajectory difference includes noise-induced dynamics/nonlinearity. Same seed across changed hardware is neither identical noise realization nor independent replicate. Correlation pairs same aligned symbol labels, not the exact same sampling aperture across stages. No isolated device noise decomposition.",
+  "physical_diagnostic_scope": "Closing-edge change includes signal dynamics/injection/feedthrough; acquisition and final8ps buffer motion are finite training diagnostics, not pure device noise.",
+  "tap_L2_scope": "White uncorrelated input sample-noise reference only; not measured integrated actual correlated noise.",
+  "next": "Compare only this new training baseline and fixed candidates; no automatic candidate expansion or holdout. Physical ADC still unverified."
+}

@@ -1,0 +1,35 @@
+Olympus 交接｜GMTAP Trim32｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_taptrim.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+第一輪建議只核准 0–81，共 82 欄（41 組 P/N）。
+0–11 是 r3 與舊 8 份，12–25 原 Fine16。
+26–53 是 split32 共用 Vb1 580 mV，54–81 是 570 mV。
+兩個 Vb1 家族均量中心、±30:2、±29:3、±28:4 和同權重
+最小負載對照。先核對舊 8／16 重現，列出第一級控制改接
+GMSKVBIAS，XT2 仍接 X_vb = 0.580 V。每 bank 15 支 1.5 µm
+和 2 支 0.75 µm，合計原尾管寬度。portable_review 可逐行核對。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B gm_taptrim.py --mode stage --index 0 --index 16 --index 40 --index 68 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+用 gm_taptrim_plan.json／SHA256SUMS.txt 的 SHA 以及已核准
+的 case IDs、stages baseline、legacy、control、oracle、pilot
+填新 approval。使用 ~/ecen720_28nm/runs 下的新 run root。
+最小 smoke 可先執行 0、16、40、68，驗原生 OP、所有 XT2
+region 及尾電流保存，再送其餘已核准索引。每欄 1 CPU／
+4 GiB／30 分鐘 walltime。solver 暫估 3–15 秒，raw 約
+0.8–1.0 GB。沿用 Spectre 23.1 classic +mt=1、
+SPECTRE_DEFAULTS=-E 及私有 shrink。raw 留在 Olympus。
+
+  /usr/bin/python3.11 -B gm_taptrim_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_taptrim_ss_0_81.json
+
+回報各 Vb1 的 16 顆 XT2 最小裕度及 native region、各 bank
+分流及共同尾電流目標、兩向的帶權步階、相位殘差、Hdd、
+CM→DM、功耗及高頻滾降。若 580 mV 與 570 mV 的比較
+需要補點，另提 82–109（575 mV）、110–137（565 mV）
+或 138–165（560 mV）。每次用新的 JSON 檔名。
+只有同一 Vb1 的中心及兩方向通過，才提中段、PVT、
+實體偏壓和動態檢查。C0、C1、C2 依後續結果另提。

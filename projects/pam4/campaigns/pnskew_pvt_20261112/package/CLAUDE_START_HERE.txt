@@ -1,0 +1,60 @@
+ECEN 721 Project #6　PAM4 P/N skew 與 r3 AFE PVT（r1）
+
+這是先量化影響的交接。原補償架構研究仍在 PAM4_PN_SKEW_HANDOFF_20261111/research。
+此次使用 r3 focus55 CTLE、原 r5 實體八路取樣鏈、理想 7-bit 數值量化及 frozen 17-tap FFE。
+本交付包由封存的產生器重建 genuine r5 quiet / noise-173 及 frozen.json，均與原量測 SHA 相同。
+PVT AC/DC 以原 focus55 optimizer fixture 和封存元件卡重建。名義 deck 還原原模型路徑後與歷史 optimizer deck 的 SHA 一致，
+並有獨立的歷史 r2 參考，TT 21.83 / SS 16.64 / FF 24.78 dB。實際 r3 corner 結果待 Olympus。 同一 focus55 名義 optimizer fixture 的歷史 TT 參考值為 CTLE 輸出 +6.47995 dB、track lane 0 +5.34159 dB（56 GHz 對 1 kHz），AFE DC 約 10.08 mW。新 TT job 請先對照這組值，再解讀 r3 corner 差異。
+
+P/N 定義是正 δ 表示 P 比 N 晚。P/N 各加 +δ/2、−δ/2，使平均 delay 和 clock phase 固定。
+原輸入的兩條獨立匹配緩衝 RC 線性路徑，讓資料的時間平移等效於 X_ip/X_im、AFE 前的 skew。
+transient noise 由 simulator 按同一組 seed ID 配對。不同 deck 的步進可能不同，配對不保證逐點噪音相同。
+112 GBaud 時 1 UI=8.928571 ps，±0.5 UI=±4.464286 ps。
+
+第一批是 9 個無雜訊 signed skew 點，步進 0.125 UI。第二批是 56 GHz 的 DM/CM 模式測試，
+各做 0、±0.5 UI 和零 skew 半振幅線性度對照。這是獨立小訊號 fixture，兩個測試 PWL 改為 tone，
+原實體電路、clock、transient 分析及 save 設定沿用。第三批是 20 組 seed 各做 0、±0.5 UI，共 60 案。
+0.125 UI 是本輪量測網格，網格之間的起劣門檻只可報範圍。兩個端點的理想反向校正相加為零，
+對應相同 seed 的 zero deck，直接用該控制組比較。實體補償的碼表、誤差與 PVT 需後續驗證。
+理想通道相位模型在 56 GHz、|δ|=0.5 UI 的差動振幅衰減約 3.01 dB。從 56 GHz tone 量測合成通道加上 AFE 的基波傳遞，分母為 TX modal peak。AFE 入口與輸出的複數振幅各自保留。
+
+判讀見 skew/skew_plan.json 和 summarize_skew.py。以同一 scoring 窗及 frozen detector 比較，
+每個 primary/secondary 都報符號錯誤數、SER、held 各電平分布與最小相鄰間隔。間隔依原 frozen detector 的極性對齊，secondary 極性為 −1。由我預定的工程判讀是
+FFE SER 比零 skew 增加至少 1 個百分點，或 held 最小間隔比零 skew 下降至少 10%，即標記明顯劣化。
+這兩條用於圈出需補償的範圍。課程項目仍按其原規格。多 seed 報範圍、均值與配對差；缺 seed 時不補值。
+
+AFE PVT 以 TT/SS/FF × −40/25/85 °C × 0.81/0.90/0.99 V，共 27 案。
+量測固定 track fixture 的 1 kHz gain、56 GHz gain 與相對 1 kHz 的提升、全頻峰值頻率與增益、DC 電流/功耗。
+分析分列 56 GHz 及絕對峰值。DC 功耗採該 AFE fixture 的 rail 邊界。
+TT/25 °C/0.90 V 時域可沿用同批 quiet zero。再加 SS/85 °C/0.81 V 與 FF/−40 °C/0.99 V 的無雜訊時域 FFE 對照。
+模型入場先驗 shrink 私有四檔的 SHA 和實際 include sections。SF/FS 沒有已核實的 route，本輪範圍是 TT/SS/FF。
+
+Olympus 交接順序
+
+1. 在套件根目錄執行 `python3 -B verify_delivery.py`。確認配額與新 run root，載入原 23.1.0.722.isr15 環境。
+   所有 job 採 1 CPU、classic、+mt=1、SPECTRE_DEFAULTS=-E。時域暫用 6 GiB／3 h，AC/DC 暫用 4 GiB／30 min。
+   原始 deck transient stop 為 29.414285714 ns。原 VM quiet 約 55 分、noise 約 69 分、原 PSF 約 133 MiB。全部 106 案依各類暫估合計約 69–142 CPU 小時，實際經過時間另計可用併發與排隊。個別新 job 是估算，請以首例的 MaxRSS 和實際 wall 修正資源。
+   先看有無條件完全相同的已存 classic 收據。較早的 APS pilot 有不同 solver，應分列。
+2. 以既有 private root 建入場 JSON。以下各路徑請使用實際值，並把套件與入場 JSON 一起保留。
+
+   python3 -B native/admit.py --noiseless-deck r5_original/quiet.scs --noise-deck r5_original/noise173.scs \
+     --frozen-r5 r5_original/frozen.json --source-dir r5_original/source_dir --model-root "$PAM4_PDK_ROOT" --out "$PAM4_SKEW_ADMISSION"
+
+   portable_skew_decks 是本機逐案產生的 deck / diff，內有 private root placeholder。
+   `python3 -B stage_skew.py --admission "$PAM4_SKEW_ADMISSION" --output <new-review-dir>` 可先生成實際目錄的逐案 diff。
+3. 自選已審核的陣列索引。skew_plan.json 的 quiet 是 0–8，zero 是 4，tone 是 69–76，noise 是 9–68。
+   `PAM4_STUDY_ROOT` 設為套件絕對路徑，`PAM4_RUN_ROOT` 設新 campaign root，位於 ~/ecen720_28nm/runs。
+   `sbatch --array=4 skew_classic.sbatch` 可先做原基準。若先跑 4，後續 quiet array 只選 0-3,5-8。
+   其餘用各自的 reviewed array 列表。並行數按配額及同時在跑的工作定，例 `%4`。
+4. 先在 Olympus 唯讀核對 TT/SS/FF 的 private model SHA 與 section。可對各端點執行
+   python3 -B pvt/model_preflight.py --case-dir pvt/cases/<case-id> --pdk-root "$PAM4_PDK_ROOT"
+   建議先審查 AC 索引 4、15、20，分別是 TT 25°C/0.90 V、SS 85°C/0.81 V、FF −40°C/0.99 V。
+   AFE AC/DC 用 `pvt_classic.sbatch`。`PAM4_PVT_CASES` 指 `pvt/cases`，`PAM4_PVT_CASE_LIST` 指該目錄中的 case_ids.txt。
+   所有 portable source/diff 先核對，再由 runner 呼叫 pvt/model_preflight.py，於新 case 目錄轉換 PDK root。
+   PVT 時域見 PVT_TRANSIENT_README.txt。每個 job 保留 deck/diff、選定的 model 路徑與 SHA、log、完成收據及 compact 結果。
+5. `python3 -B skew/summarize_skew.py --plan skew/skew_plan.json --run-root "$PAM4_RUN_ROOT" --admission "$PAM4_SKEW_ADMISSION" --output <new-summary.json>`
+   在 Olympus 輸出完整摘要。保留原始資料的 compact CSV/JSON，並保留 resource_observation.json。
+   `.sbatch` 只在新 job 的測量讀回及 SHA 核對成功後移除該 case raw。失敗保留該 case 給 Claude 診斷。
+   交回 compact 結果、SHA 與 log。PDK 私有內容留在原環境。
+
+全部新 solver 與 Slurm 派送由 Claude 執行。本包收錄的結果是本地來源核對、合成測試與分析計畫。

@@ -1,0 +1,26 @@
+{
+  "bypass": false,
+  "case_id": "ac_tt_p25_v090_48_p_r0",
+  "cpus": 1,
+  "drive": "p",
+  "estimated_spectre_min": [
+    0.2,
+    5.0
+  ],
+  "kind": "ac",
+  "load_fF": 0,
+  "memory_GiB": 4,
+  "model_preflight": null,
+  "n_code": 15,
+  "p_code": 48,
+  "process": "tt",
+  "requested_wall_min": 30,
+  "source_ohm": 0,
+  "stage": "standalone_pilot_TT",
+  "staged_source_sha256": {
+    "bench.scs": "8d98117dec4a441e1812dbcc52fce66054de683dfd858a5cbd5b334e514c4a24",
+    "parent_diff.txt": "2caad8bb5ae87cd13a87668483aef18d21cf92687670cb7c949a2774dd6c7c76"
+  },
+  "temperature_C": 25,
+  "vdd_V": 0.9
+}

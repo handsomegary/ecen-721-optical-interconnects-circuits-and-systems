@@ -1,0 +1,1110 @@
+{
+  "schema": "pam4_sar7_offset_pilot_prediction_v1",
+  "status": "offline_conditional_prediction_not_measurement",
+  "source_job_id": "760874",
+  "source_features_sha256": "ebf8da4379a8380eeea317870f22ad9ee639ca4da566768eabef5acb96cbbae4",
+  "source_receipts_sha256": {
+    "sar7_cdac_round2_retained_audit.json": "0e9e091578e93bccaddbffc9c795de26e1d1c6594f263b844591f58f1830a4e9",
+    "source_summary.json": "6573a387cf24fccfad5ffbaa98016b59f22d21402b7b59cfbba8ef72527fc150",
+    "source_measurements.json": "416735e041446ec7e596498ae5ca537b5851139a42e030b899437e260ee47cd6"
+  },
+  "source_portable_sha256": "f2231b54d5138538c57102e5cd25dcc1047829ed71f02d79ab3d37d5726a6153",
+  "lsb_V": 0.00078125,
+  "LSB_units": "Sense and held voltage quantities both use original input LSB0.78125mV",
+  "source_actual_codes": [
+    64,
+    0,
+    127,
+    31,
+    97,
+    64,
+    65,
+    86,
+    44,
+    0,
+    127,
+    64
+  ],
+  "expected_codes": [
+    64,
+    0,
+    127,
+    31,
+    96,
+    63,
+    65,
+    85,
+    42,
+    1,
+    126,
+    64
+  ],
+  "original_measured_scores": {
+    "comparator": {
+      "available": 12,
+      "missing": 0,
+      "wrong": 6,
+      "sum_abs_code_error": 7,
+      "max_abs_code_error": 2
+    },
+    "registered": {
+      "available": 12,
+      "missing": 0,
+      "wrong": 6,
+      "sum_abs_code_error": 7,
+      "max_abs_code_error": 2
+    },
+    "valid": true,
+    "logic_smoke_pass": false,
+    "unresolved_bits_total": 0,
+    "max_abs_sample_error_lsb": 1.6389965373552684
+  },
+  "descriptive_thresholds": [
+    {
+      "frame": "pre",
+      "voltage_field": "held_LSB",
+      "lower_exclusive_LSB": -1.1270172142965862,
+      "upper_inclusive_LSB": -0.9236871644783662,
+      "separable": true,
+      "midpoint_LSB": -1.0253521893874762,
+      "decision_matches": 84,
+      "leave_one_conversion_out_matches": 84,
+      "tested": 84,
+      "interpretation": "Descriptive finaldecision threshold; not independently measured static comparator offset"
+    },
+    {
+      "frame": "pre",
+      "voltage_field": "sense_LSB",
+      "lower_exclusive_LSB": -0.6733879103256868,
+      "upper_inclusive_LSB": -0.5537717312040513,
+      "separable": true,
+      "midpoint_LSB": -0.613579820764869,
+      "decision_matches": 84,
+      "leave_one_conversion_out_matches": 84,
+      "tested": 84,
+      "interpretation": "Descriptive finaldecision threshold; not independently measured static comparator offset"
+    },
+    {
+      "frame": "0",
+      "voltage_field": "held_LSB",
+      "lower_exclusive_LSB": -1.1259563810028794,
+      "upper_inclusive_LSB": -0.9225609670171764,
+      "separable": true,
+      "midpoint_LSB": -1.024258674010028,
+      "decision_matches": 84,
+      "leave_one_conversion_out_matches": 84,
+      "tested": 84,
+      "interpretation": "Descriptive finaldecision threshold; not independently measured static comparator offset"
+    },
+    {
+      "frame": "0",
+      "voltage_field": "sense_LSB",
+      "lower_exclusive_LSB": -0.6595137183535371,
+      "upper_inclusive_LSB": -0.5464109924015759,
+      "separable": true,
+      "midpoint_LSB": -0.6029623553775565,
+      "decision_matches": 84,
+      "leave_one_conversion_out_matches": 84,
+      "tested": 84,
+      "interpretation": "Descriptive finaldecision threshold; not independently measured static comparator offset"
+    },
+    {
+      "frame": "2",
+      "voltage_field": "held_LSB",
+      "lower_exclusive_LSB": -1.1223511223964522,
+      "upper_inclusive_LSB": -0.9191616047961304,
+      "separable": true,
+      "midpoint_LSB": -1.0207563635962913,
+      "decision_matches": 84,
+      "leave_one_conversion_out_matches": 84,
+      "tested": 84,
+      "interpretation": "Descriptive finaldecision threshold; not independently measured static comparator offset"
+    },
+    {
+      "frame": "2",
+      "voltage_field": "sense_LSB",
+      "lower_exclusive_LSB": -0.6977092847152733,
+      "upper_inclusive_LSB": -0.5741714172974355,
+      "separable": true,
+      "midpoint_LSB": -0.6359403510063544,
+      "decision_matches": 84,
+      "leave_one_conversion_out_matches": 84,
+      "tested": 84,
+      "interpretation": "Descriptive finaldecision threshold; not independently measured static comparator offset"
+    }
+  ],
+  "sense_affine": [
+    {
+      "frame": "pre",
+      "slope_V_per_V": 0.588244327959025,
+      "output_intercept_LSB": 0.11698896437655981,
+      "output_rmse_LSB": 0.33352997912669274
+    },
+    {
+      "frame": "0",
+      "slope_V_per_V": 0.588449890851742,
+      "output_intercept_LSB": 0.10778051114908704,
+      "output_rmse_LSB": 0.3188783185540199
+    },
+    {
+      "frame": "2",
+      "slope_V_per_V": 0.5868050037629825,
+      "output_intercept_LSB": 0.06823359042085997,
+      "output_rmse_LSB": 0.27079296319902973
+    }
+  ],
+  "cases": [
+    {
+      "index": 0,
+      "case_key": "matched_complementary_nor_load",
+      "electrical_parent_job_id": "760874",
+      "intervention": "Matched complementary NOR output loading only; old electrical settings otherwise fixed",
+      "prediction_status": "Performance not numerically identified from source data",
+      "distinction": "A changed one-sided threshold or latch trajectory at unchanged CDAC would support loading/regeneration asymmetry"
+    },
+    {
+      "index": 1,
+      "case_key": "balanced_cml_resistor_trim",
+      "electrical_parent_job_id": "760874",
+      "intervention": "Only balanced CML load resistors; no extra NOR and no CDAC/reference/sample/timing changes",
+      "resistor_ohm": {
+        "RSENSE_P": 498.5,
+        "RSENSE_N": 501.5
+      },
+      "sense_node_assignment": {
+        "RSENSE_P": "sensen",
+        "RSENSE_N": "sensep"
+      },
+      "delta_sense_diff_formula": "-1.5ohm * observed total precomparison CML supply current",
+      "observed_mean_total_current_A": 0.00026069066274725524,
+      "estimated_delta_sense_diff_mean_V": -0.00039103599412088286,
+      "estimated_delta_sense_diff_range_V": [
+        -0.0003913300771354651,
+        -0.0003903485537385353
+      ],
+      "estimated_delta_sense_diff_mean_LSB": -0.50052607247473,
+      "frame_predictions": [
+        {
+          "frame": "pre",
+          "baseline_consistency": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              97,
+              64,
+              65,
+              86,
+              44,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              2,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 7,
+            "max_abs_code_error": 2,
+            "matches_source_actual_codes": 12,
+            "changed_trial_control_states": 0
+          },
+          "conditional_trim": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              95,
+              64,
+              64,
+              85,
+              43,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 6,
+            "max_abs_code_error": 1,
+            "matches_source_actual_codes": 8,
+            "changed_trial_control_states": 8
+          },
+          "threshold_bracket_sensitivity": [
+            {
+              "threshold_LSB": -0.6733879093256868,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "threshold_LSB": -0.613579820764869,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "threshold_LSB": -0.5537717322040513,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            }
+          ],
+          "new_path_residual_sensitivity": [
+            {
+              "new_path_held_residual_LSB": -1.0068959958116857,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  84,
+                  42,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "new_path_held_residual_LSB": 1.0068959958116857,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            }
+          ],
+          "ideal_binary_weight_sensitivity": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              95,
+              64,
+              64,
+              85,
+              43,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 6,
+            "max_abs_code_error": 1,
+            "matches_source_actual_codes": 8,
+            "changed_trial_control_states": 8
+          }
+        },
+        {
+          "frame": "0",
+          "baseline_consistency": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              97,
+              64,
+              65,
+              86,
+              44,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              2,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 7,
+            "max_abs_code_error": 2,
+            "matches_source_actual_codes": 12,
+            "changed_trial_control_states": 0
+          },
+          "conditional_trim": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              95,
+              64,
+              64,
+              85,
+              43,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 6,
+            "max_abs_code_error": 1,
+            "matches_source_actual_codes": 8,
+            "changed_trial_control_states": 8
+          },
+          "threshold_bracket_sensitivity": [
+            {
+              "threshold_LSB": -0.6595137173535371,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "threshold_LSB": -0.6029623553775565,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "threshold_LSB": -0.5464109934015758,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            }
+          ],
+          "new_path_residual_sensitivity": [
+            {
+              "new_path_held_residual_LSB": -1.0068959958116857,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  84,
+                  42,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  -1,
+                  0,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "new_path_held_residual_LSB": 1.0068959958116857,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            }
+          ],
+          "ideal_binary_weight_sensitivity": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              95,
+              64,
+              64,
+              85,
+              43,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 6,
+            "max_abs_code_error": 1,
+            "matches_source_actual_codes": 8,
+            "changed_trial_control_states": 8
+          }
+        },
+        {
+          "frame": "2",
+          "baseline_consistency": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              97,
+              64,
+              65,
+              86,
+              44,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              0,
+              1,
+              2,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 7,
+            "max_abs_code_error": 2,
+            "matches_source_actual_codes": 12,
+            "changed_trial_control_states": 0
+          },
+          "conditional_trim": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              95,
+              64,
+              64,
+              85,
+              43,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 6,
+            "max_abs_code_error": 1,
+            "matches_source_actual_codes": 8,
+            "changed_trial_control_states": 8
+          },
+          "threshold_bracket_sensitivity": [
+            {
+              "threshold_LSB": -0.6977092837152733,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  86,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  1,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 7,
+                "sum_abs_code_error": 7,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 9,
+                "changed_trial_control_states": 7
+              }
+            },
+            {
+              "threshold_LSB": -0.6359403510063544,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "threshold_LSB": -0.5741714182974355,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            }
+          ],
+          "new_path_residual_sensitivity": [
+            {
+              "new_path_held_residual_LSB": -1.0068959958116857,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  42,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 5,
+                "sum_abs_code_error": 5,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            },
+            {
+              "new_path_held_residual_LSB": 1.0068959958116857,
+              "result": {
+                "codes": [
+                  64,
+                  0,
+                  127,
+                  31,
+                  95,
+                  64,
+                  64,
+                  85,
+                  43,
+                  0,
+                  127,
+                  64
+                ],
+                "errors": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  -1,
+                  1,
+                  -1,
+                  0,
+                  1,
+                  -1,
+                  1,
+                  0
+                ],
+                "wrong_conversions": 6,
+                "sum_abs_code_error": 6,
+                "max_abs_code_error": 1,
+                "matches_source_actual_codes": 8,
+                "changed_trial_control_states": 8
+              }
+            }
+          ],
+          "ideal_binary_weight_sensitivity": {
+            "codes": [
+              64,
+              0,
+              127,
+              31,
+              95,
+              64,
+              64,
+              85,
+              43,
+              0,
+              127,
+              64
+            ],
+            "errors": [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              1,
+              -1,
+              0,
+              1,
+              -1,
+              1,
+              0
+            ],
+            "wrong_conversions": 6,
+            "sum_abs_code_error": 6,
+            "max_abs_code_error": 1,
+            "matches_source_actual_codes": 8,
+            "changed_trial_control_states": 8
+          }
+        }
+      ]
+    }
+  ],
+  "execution_note": "Predictions do not authorize execution; measured gate controls conditional index1. Cases independently start from760874.",
+  "reproduction_tolerance": {
+    "float_relative": 1e-11,
+    "float_absolute": 1e-12
+  },
+  "limits": [
+    "84labels/12sourcecodes are consistency checks, not independent counterfactual validation",
+    "Finaldecision versus pre/trigger/2ps brackets do not identify a unique causal decision time",
+    "New paths reuse measured pertrial residuals and descriptive CDAC weight shifts; settling/kickback can change",
+    "Precomparison totalcurrent estimates resistor-induced differential bias; early-clock current changes are not measured here",
+    "Mean500ohm is preserved, but actual gain/common-mode/loading must be measured in the new run",
+    "The two cases are separate mechanism tests, not a resistor-amplitude sweep",
+    "No all-code correctness,1.75GS/s,noise,PVT or fullADC validation is predicted"
+  ]
+}

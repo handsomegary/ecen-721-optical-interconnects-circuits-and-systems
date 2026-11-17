@@ -1,0 +1,15 @@
+{
+  "planned_ac_columns": 188,
+  "rendered_netlists": 188,
+  "audit_preview_decks": 34,
+  "python": "3.14.4",
+  "offline_tests_passed": 172,
+  "new_tests_passed": 13,
+  "inherited_recovery_tests_blocked": 5,
+  "offline_blocker": "Windows sandbox denies hardlink creation in inherited recovery tests (WinError 5).",
+  "spectre_executed": false,
+  "olympus_submitted": false,
+  "raw_deleted": false,
+  "geometry": "W0.375um L60 schematic diffusion and access squares interpolated from archived native CDF.",
+  "stage_plan_sha256": "6b1daefc3a16da988217a04f9c51885ec4a3b4832d0170b3c7a4498e4c4bcb92"
+}

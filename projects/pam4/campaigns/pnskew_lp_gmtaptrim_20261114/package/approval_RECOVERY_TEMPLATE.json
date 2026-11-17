@@ -1,0 +1,10 @@
+{
+  "approved": false,
+  "platform": "Olympus",
+  "mode": "collect-only",
+  "original_plan_sha256": "b74093eb9fc686d83afc27218aed8d39e966e695dd5613ebe4971a558bab34d9",
+  "original_manifest_sha256": "6acebdb55b371119172337903fc38f77ecf0dcb0ef81e1ba9cbea1145a49f3a8",
+  "snapshot_sha256": "",
+  "recovery_manifest_sha256": "",
+  "case_ids": ["lpdiag_00_ss_fast_cb0", "lpdiag_11_ss_replica_cb2"]
+}

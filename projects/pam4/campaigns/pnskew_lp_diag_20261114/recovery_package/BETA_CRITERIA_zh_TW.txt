@@ -1,0 +1,23 @@
+LP14｜beta multiplier 正回授判讀
+
+使用原生 Spectre loopGain T，Nyquist 臨界點 +1，距離 |1−T|。
+−T 表示法的臨界點才是 −1。replica 的低頻負實數與原生
+PM 84.034°、GM 19.625 dB 相符；beta 自偏壓在兩種工作點的
+線性化不同。先核對探針前後的非零 Iref、啟動支路退出以及
+另一條 replica 迴路仍閉合。SS cb2 要回到約 338.3 µA。
+
+beta 的無交越先採保守篩選。1 Hz–1 GHz 掃頻，每 decade 50 點。
+列出低頻複數值、全部 unity／正實軸交越、max|T|、min|1−T|
+與頻率。低端須有平台，高端須衰減。保留原生警告及複數資料。
+無 unity 交越且 max|T| ≤ 0.31623 時，掃頻內保守增益餘量 ≥10 dB，
+標作 screen_pass；PM 或 GM 若無法定義仍留空，不合成原生值。
+例如低頻 T≈+0.5 就算沒有有限頻交越，這個餘量也只有約 6.0 dB。
+
+screen_pass 仍需確認涵蓋必要頻帶、斷開的子系統穩定，
+並用快／慢上電與重啟排除錯誤工作點。之後在已收斂工作點做
+正負小擾動，例如透過 462 Ω 參考負載施加約 ±5 µA 短脈衝，
+保持其餘閉環，檢查解除刺激後衰減並回到原 Iref/replica。
+擾動另行審查。若 max|T| 較大、波形多交越或掃頻端點不足，
+留待完整 Nyquist、極點或擾動證據。原生判不穩定直接列 fail。
+replica 保持原生 PM≥60°、GM≥10 dB 的門檻與符號交叉檢查。
+https://community.cadence.com/cadence_technology_forums/f/custom-ic-design/58030/gain-margin-and-phase-margin-expressions-from-nyquist-plots/1393917

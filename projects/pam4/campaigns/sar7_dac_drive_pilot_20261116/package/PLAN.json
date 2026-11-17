@@ -1,0 +1,11 @@
+{
+  "schema": "pam4_sar7_dac_drive_pilot_v1",
+  "cases": [
+    {
+      "case_id": "sar7_13_tt_175gs_dac_gate_bypass",
+      "parent_job": "761321",
+      "parent_deck_sha256": "903d79a53dcc36162f08c198f9337bbf8fcfe94308bc6fa2c4cb79ad2c785032",
+      "audit_sha256": "b4220fb8c268a55c4425029dcfc7a1f36e55bbc6cb7bfef7be0ebad26abe5f7b"
+    }
+  ]
+}

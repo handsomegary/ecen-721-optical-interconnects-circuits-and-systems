@@ -1,0 +1,178 @@
+{
+  "observed_UTC": "2026-10-20T17:11:55.279561Z",
+  "status": "paired_validation_complete",
+  "complete_ADC_verified": false,
+  "frozen_sha256": "4cda4c9ec967f2af4bf4f89eacdd1beae372668877c358cf6aa26092597482eb",
+  "state_sha256": "400fcbb245fdb44040fdb5f29c46a04dfb30bb6db2cafa7f966c172d99c02e18",
+  "ended_UTC": "2026-10-20T17:08:54.553158Z",
+  "boot_id": "3490e49c-4bfb-400c-a537-9a5d936e2e6d",
+  "wrapper_sha256": "a8e2db3fe63ab7777f6ff0300dfa8927248308f45936fe54a249ad9e7506c81e",
+  "pairs": {
+    "noiseless": {
+      "status": "validation_complete",
+      "fresh_holdout_seed": 2026101302,
+      "validation_input_symbols": 2048,
+      "FFE_complete_windows": 2032,
+      "noise_seed": null,
+      "frozen_file_unchanged": true,
+      "validation_fitting_performed": false,
+      "deck_sha256": "c9f576a9dbfb1afd6f8fdcb39a52039329231c3696bed01368c335c49b35e6d3",
+      "symbol_sequence_sha256": "67fa287fe82d08414b207177bf915c50e4b61692cc1fde0d4b9dbf4774f54633",
+      "raw_transient_sha256": "752ed58c6e3f5980e5b40f93a0e2d0eced59e2da1a4a2e75b186a9d999b647ce",
+      "summary_sha256": "ff8a466c80549cc476e8c768e56aea64cdab4ed4abb8a6b5d2709769519f716f",
+      "run_status": {
+        "audit": [
+          "spectre completes with 0 errors, 3 warnings, and 5 notices."
+        ],
+        "exit_code": 0,
+        "issue_codes": [
+          "SFE-1131"
+        ],
+        "seconds": 3293.444
+      },
+      "modeled_VDD_mW": 11.968320067635869,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "noise_conditions": {
+        "noise_seed": null,
+        "noisefmax_Hz": null,
+        "noisefmin_Hz": null
+      },
+      "branches": {
+        "primary": {
+          "sample_count": 2048,
+          "held_min_V": -0.046649827611841665,
+          "held_max_V": 0.043857756927344616,
+          "held_Vppd": 0.09050758453918628,
+          "integer_symbol_lag": 1,
+          "fullscale_Vpp": 0.1,
+          "clipped_input_count": 0,
+          "ideal7bit_ADC_then_FFE": {
+            "sample_count": 2032,
+            "symbol_errors": 0,
+            "SER": 0.0,
+            "bit_count": 4064,
+            "gray_bit_errors": 0,
+            "gray_BER": 0.0
+          },
+          "raw_held_FFE_before_ADC": {
+            "sample_count": 2032,
+            "symbol_errors": 0,
+            "SER": 0.0,
+            "bit_count": 4064,
+            "gray_bit_errors": 0,
+            "gray_BER": 0.0
+          }
+        },
+        "secondary": {
+          "sample_count": 2048,
+          "held_min_V": -0.024644600095357738,
+          "held_max_V": 0.025992667638506606,
+          "held_Vppd": 0.050637267733864344,
+          "integer_symbol_lag": 3,
+          "fullscale_Vpp": 0.075,
+          "clipped_input_count": 0,
+          "ideal7bit_ADC_then_FFE": {
+            "sample_count": 2032,
+            "symbol_errors": 2,
+            "SER": 0.000984251968503937,
+            "bit_count": 4064,
+            "gray_bit_errors": 2,
+            "gray_BER": 0.0004921259842519685
+          },
+          "raw_held_FFE_before_ADC": {
+            "sample_count": 2032,
+            "symbol_errors": 0,
+            "SER": 0.0,
+            "bit_count": 4064,
+            "gray_bit_errors": 0,
+            "gray_BER": 0.0
+          }
+        }
+      }
+    },
+    "noise": {
+      "status": "validation_complete",
+      "fresh_holdout_seed": 2026101302,
+      "validation_input_symbols": 2048,
+      "FFE_complete_windows": 2032,
+      "noise_seed": 173,
+      "frozen_file_unchanged": true,
+      "validation_fitting_performed": false,
+      "deck_sha256": "3109f222211963fe5fcadbbb96b6605f8c4c7a8d32aa35bae178678f1d927fa2",
+      "symbol_sequence_sha256": "67fa287fe82d08414b207177bf915c50e4b61692cc1fde0d4b9dbf4774f54633",
+      "raw_transient_sha256": "a3211485c81b255e1e13b2871e8f2712b31cdefd6e1f4f097f7611d2ea1b229e",
+      "summary_sha256": "16a9fdc53903720c057eaa173fca0c1b2c13128937fec5277f2eee3fcbc43ce2",
+      "run_status": {
+        "audit": [
+          "spectre completes with 0 errors, 3 warnings, and 5 notices."
+        ],
+        "exit_code": 0,
+        "issue_codes": [
+          "SFE-1131"
+        ],
+        "seconds": 4139.794
+      },
+      "modeled_VDD_mW": 11.968388924576237,
+      "power_scope": "Includes clocked native secondary banks andresetcomparatorload; excludesclock/biasgenerators,CDAC/reference/logic/DSP.",
+      "noise_conditions": {
+        "noise_seed": 173,
+        "noisefmax_Hz": 150000000000.0,
+        "noisefmin_Hz": 500000000.0
+      },
+      "branches": {
+        "primary": {
+          "sample_count": 2048,
+          "held_min_V": -0.04730645685804391,
+          "held_max_V": 0.043301470480207715,
+          "held_Vppd": 0.09060792733825163,
+          "integer_symbol_lag": 1,
+          "fullscale_Vpp": 0.1,
+          "clipped_input_count": 0,
+          "ideal7bit_ADC_then_FFE": {
+            "sample_count": 2032,
+            "symbol_errors": 0,
+            "SER": 0.0,
+            "bit_count": 4064,
+            "gray_bit_errors": 0,
+            "gray_BER": 0.0
+          },
+          "raw_held_FFE_before_ADC": {
+            "sample_count": 2032,
+            "symbol_errors": 0,
+            "SER": 0.0,
+            "bit_count": 4064,
+            "gray_bit_errors": 0,
+            "gray_BER": 0.0
+          }
+        },
+        "secondary": {
+          "sample_count": 2048,
+          "held_min_V": -0.024333594731798858,
+          "held_max_V": 0.028051279318337285,
+          "held_Vppd": 0.05238487405013614,
+          "integer_symbol_lag": 3,
+          "fullscale_Vpp": 0.075,
+          "clipped_input_count": 0,
+          "ideal7bit_ADC_then_FFE": {
+            "sample_count": 2032,
+            "symbol_errors": 164,
+            "SER": 0.08070866141732283,
+            "bit_count": 4064,
+            "gray_bit_errors": 164,
+            "gray_BER": 0.040354330708661415
+          },
+          "raw_held_FFE_before_ADC": {
+            "sample_count": 2032,
+            "symbol_errors": 156,
+            "SER": 0.07677165354330709,
+            "bit_count": 4064,
+            "gray_bit_errors": 156,
+            "gray_BER": 0.038385826771653545
+          }
+        }
+      }
+    }
+  },
+  "owned_workers": [],
+  "noise_spectre_log_sha256": "2245e25007465c2466c7a38917f7ba5a142e91ead4262ef7ee642518aff51dbf"
+}

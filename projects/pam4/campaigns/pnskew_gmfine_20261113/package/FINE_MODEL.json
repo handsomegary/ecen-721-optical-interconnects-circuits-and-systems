@@ -1,0 +1,3909 @@
+{
+  "format": "pam4_gm_fine_delay_model_v1",
+  "status": "ANALYTIC_DESIGN_DIAGNOSTIC",
+  "reference": {
+    "file": "gmselect_summary.json",
+    "sha256": "920a67351006cbe0906edf6aba50661a62887a81a895731aecc491bc5428dbe4",
+    "measured_ideal_launch_dual_endpoint_effective_delay_ps": {
+      "tt": 5.245676101513926,
+      "ss": 5.242482421880429,
+      "ff": 5.247844049002607
+    },
+    "derived_per_section_delay_ps": {
+      "tt": 0.5245676101513925,
+      "ss": 0.5242482421880429,
+      "ff": 0.5247844049002607
+    }
+  },
+  "original_ladder": {
+    "unit_L_H": 1.3e-11,
+    "unit_C_F": 2.08e-14,
+    "unit_R_ohm": 0.305,
+    "low_frequency_nominal_Z_ohm": 25.0,
+    "quarter_unit_L_H": 3.25e-12,
+    "quarter_unit_C_F": 5.2e-15,
+    "quarter_unit_R_ohm": 0.07625,
+    "quarter_unit_caveat": "Scaled ideal element control only. Physical parasitics and Q need extraction."
+  },
+  "constant_sum_section_count": 22,
+  "complementary_anchors_PN": [
+    [
+      6,
+      16
+    ],
+    [
+      8,
+      14
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      11,
+      11
+    ],
+    [
+      12,
+      10
+    ],
+    [
+      14,
+      8
+    ],
+    [
+      16,
+      6
+    ]
+  ],
+  "half_UI_ps": 4.464285714285714,
+  "frequency_grid_GHz": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "interpolation_comparison": {
+    "adjacent_anchor": {
+      "path_delay_separation_ps": 1.049135220302785,
+      "midweight_normalized_56GHz_gain_dB": -0.14880052278368858,
+      "local_phase_to_weight_slope_vs_linear_at_midweight": 1.011512701813594
+    },
+    "extreme_endpoints": {
+      "path_delay_separation_ps": 5.245676101513926,
+      "midweight_normalized_56GHz_gain_dB": -4.385932806907588,
+      "local_phase_to_weight_slope_vs_linear_at_midweight": 1.4315232401744318
+    }
+  },
+  "8_intervals": {
+    "section_delay_ps": 0.5245676101513925,
+    "weight_intervals_per_anchor_pair": 8,
+    "total_distinct_nominal_codes": 49,
+    "phase_delay_range_56GHz_ps": [
+      -5.245676101513925,
+      5.245676101513925
+    ],
+    "nominal_common_delay_ps": 5.770243711665318,
+    "nominal_step_range_ps": [
+      0.13114190253784808,
+      0.2622838050756968
+    ],
+    "actual_phase_step_56GHz_range_ps": [
+      0.1306529928550455,
+      0.26511099554448236
+    ],
+    "largest_ideal_nearest_code_quantization_ps": 0.1311419025378484,
+    "largest_56GHz_nearest_code_quantization_ps": 0.13255549777224118,
+    "local_DNL_56GHz_range_LSB": [
+      -0.014935795099080273,
+      0.010779127090862595
+    ],
+    "local_DNL_reference": "Actual adjacent phase step over that interval nominal step minus one. Anchors with unequal segment lengths deliberately have different nominal steps.",
+    "worst_interpolation_delay_dispersion_ps": 0.004436132891393552,
+    "worst_interpolation_non_linearity_ps": 0.004505949385233521,
+    "worst_normalized_leg_gain_dB": -0.14880052278368958,
+    "known_target_offline_design_diagnostics": [
+      {
+        "known_correction_target_ps": -4.464285714285714,
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.375,
+        "worst_7_to_56_GHz_abs_error_ps": 0.005417390076501327,
+        "signed_error_56GHz_ps": 0.0026338375300927197
+      },
+      {
+        "known_correction_target_ps": 0.0,
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.0,
+        "worst_7_to_56_GHz_abs_error_ps": 0.0,
+        "signed_error_56GHz_ps": 0.0
+      },
+      {
+        "known_correction_target_ps": 4.464285714285714,
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.625,
+        "worst_7_to_56_GHz_abs_error_ps": 0.005417390076501327,
+        "signed_error_56GHz_ps": -0.0026338375300927197
+      }
+    ],
+    "codebook": [
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": -5.245676101513926,
+        "differential_delay_56GHz_ps": -5.245676101513925,
+        "differential_phase_delay_span_ps": [
+          -5.245676101513927,
+          -5.245676101513925
+        ],
+        "worst_differential_deviation_from_linear_ps": 8.881784197001252e-16,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": -4.983392296438229,
+        "differential_delay_56GHz_ps": -4.987309713608646,
+        "differential_phase_delay_span_ps": [
+          -4.987309713608646,
+          -4.983453379772805
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": -4.721108491362533,
+        "differential_delay_56GHz_ps": -4.725614440747766,
+        "differential_phase_delay_span_ps": [
+          -4.725614440747766,
+          -4.721178307856373
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691295
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": -4.458824686286836,
+        "differential_delay_56GHz_ps": -4.461651876755622,
+        "differential_phase_delay_span_ps": [
+          -4.461651876755622,
+          -4.458868324209213
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687855454,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": -4.19654088121114,
+        "differential_delay_56GHz_ps": -4.196540881211141,
+        "differential_phase_delay_span_ps": [
+          -4.196540881211142,
+          -4.196540881211139
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.7763568394002505e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368858
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": -3.934257076135444,
+        "differential_delay_56GHz_ps": -3.9314298856666587,
+        "differential_phase_delay_span_ps": [
+          -3.934213438213068,
+          -3.9314298856666587
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687851013,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865694
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": -3.6719732710597475,
+        "differential_delay_56GHz_ps": -3.667467321674515,
+        "differential_phase_delay_span_ps": [
+          -3.6719034545659084,
+          -3.667467321674515
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": -3.4096894659840515,
+        "differential_delay_56GHz_ps": -3.4057720488136347,
+        "differential_phase_delay_span_ps": [
+          -3.4096283826494767,
+          -3.4057720488136347
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": -3.147405660908355,
+        "differential_delay_56GHz_ps": -3.1474056609083556,
+        "differential_phase_delay_span_ps": [
+          -3.147405660908356,
+          -3.147405660908354
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": -2.885121855832659,
+        "differential_delay_56GHz_ps": -2.8890392730030765,
+        "differential_phase_delay_span_ps": [
+          -2.8890392730030765,
+          -2.8851829391672363
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170417714,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": -2.622838050756963,
+        "differential_delay_56GHz_ps": -2.6273440001421964,
+        "differential_phase_delay_span_ps": [
+          -2.6273440001421964,
+          -2.6229078672508046
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385233521,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": -2.3605542456812665,
+        "differential_delay_56GHz_ps": -2.3633814361500525,
+        "differential_phase_delay_span_ps": [
+          -2.3633814361500525,
+          -2.360597883603646
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687859895,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": -2.09827044060557,
+        "differential_delay_56GHz_ps": -2.0982704406055714,
+        "differential_phase_delay_span_ps": [
+          -2.0982704406055714,
+          -2.0982704406055688
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368958
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": -1.8359866355298737,
+        "differential_delay_56GHz_ps": -1.833159445061089,
+        "differential_phase_delay_span_ps": [
+          -1.8359429976074988,
+          -1.833159445061089
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.002827190468784657,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": -1.5737028304541776,
+        "differential_delay_56GHz_ps": -1.5691968810689452,
+        "differential_phase_delay_span_ps": [
+          -1.5736330139603372,
+          -1.5691968810689452
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232411,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": -1.3114190253784814,
+        "differential_delay_56GHz_ps": -1.3075016082080653,
+        "differential_phase_delay_span_ps": [
+          -1.3113579420439077,
+          -1.3075016082080653
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00391741717041616,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": -1.049135220302785,
+        "differential_delay_56GHz_ps": -1.049135220302786,
+        "differential_phase_delay_span_ps": [
+          -1.0491352203027864,
+          -1.0491352203027835
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.5543122344752192e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": -0.9179933177649369,
+        "differential_delay_56GHz_ps": -0.9184822274477404,
+        "differential_phase_delay_span_ps": [
+          -0.9184822274477404,
+          -0.9180009529912986
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828035733,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": -0.7868514152270888,
+        "differential_delay_56GHz_ps": -0.7874110637850319,
+        "differential_phase_delay_span_ps": [
+          -0.7874110637850319,
+          -0.7868601414178106
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579431043,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02775094874541178
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": -0.6557095126892407,
+        "differential_delay_56GHz_ps": -0.6560596295508341,
+        "differential_phase_delay_span_ps": [
+          -0.6560596295508341,
+          -0.6557149666400969
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159336364,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": -0.5245676101513925,
+        "differential_delay_56GHz_ps": -0.524567610151393,
+        "differential_phase_delay_span_ps": [
+          -0.5245676101513936,
+          -0.5245676101513914
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.1102230246251565e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03704081105688231
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": -0.3934257076135444,
+        "differential_delay_56GHz_ps": -0.3930755907519519,
+        "differential_phase_delay_span_ps": [
+          -0.39342025366268984,
+          -0.3930755907519519
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159247546,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": -0.26228380507569626,
+        "differential_delay_56GHz_ps": -0.2617241565177541,
+        "differential_phase_delay_span_ps": [
+          -0.2622750788849761,
+          -0.2617241565177541
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579421606,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.027750948745412746
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": -0.13114190253784813,
+        "differential_delay_56GHz_ps": -0.13065299285504617,
+        "differential_phase_delay_span_ps": [
+          -0.13113426731148806,
+          -0.13065299285504617
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828019635,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": 0.0,
+        "differential_delay_56GHz_ps": 0.0,
+        "differential_phase_delay_span_ps": [
+          0.0,
+          0.0
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": 0.13114190253784813,
+        "differential_delay_56GHz_ps": 0.13065299285504617,
+        "differential_phase_delay_span_ps": [
+          0.13065299285504617,
+          0.13113426731148806
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828019635,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": 0.26228380507569626,
+        "differential_delay_56GHz_ps": 0.2617241565177541,
+        "differential_phase_delay_span_ps": [
+          0.2617241565177541,
+          0.2622750788849761
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579421606,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.027750948745412746
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": 0.3934257076135444,
+        "differential_delay_56GHz_ps": 0.3930755907519519,
+        "differential_phase_delay_span_ps": [
+          0.3930755907519519,
+          0.39342025366268984
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159247546,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": 0.5245676101513925,
+        "differential_delay_56GHz_ps": 0.524567610151393,
+        "differential_phase_delay_span_ps": [
+          0.5245676101513914,
+          0.5245676101513936
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.1102230246251565e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03704081105688231
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": 0.6557095126892407,
+        "differential_delay_56GHz_ps": 0.6560596295508341,
+        "differential_phase_delay_span_ps": [
+          0.6557149666400969,
+          0.6560596295508341
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159336364,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": 0.7868514152270888,
+        "differential_delay_56GHz_ps": 0.7874110637850319,
+        "differential_phase_delay_span_ps": [
+          0.7868601414178106,
+          0.7874110637850319
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579431043,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02775094874541178
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": 0.9179933177649369,
+        "differential_delay_56GHz_ps": 0.9184822274477404,
+        "differential_phase_delay_span_ps": [
+          0.9180009529912986,
+          0.9184822274477404
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828035733,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": 1.049135220302785,
+        "differential_delay_56GHz_ps": 1.049135220302786,
+        "differential_phase_delay_span_ps": [
+          1.0491352203027835,
+          1.0491352203027864
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.5543122344752192e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": 1.3114190253784814,
+        "differential_delay_56GHz_ps": 1.3075016082080653,
+        "differential_phase_delay_span_ps": [
+          1.3075016082080653,
+          1.3113579420439077
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00391741717041616,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": 1.5737028304541776,
+        "differential_delay_56GHz_ps": 1.5691968810689452,
+        "differential_phase_delay_span_ps": [
+          1.5691968810689452,
+          1.5736330139603372
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232411,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": 1.8359866355298737,
+        "differential_delay_56GHz_ps": 1.833159445061089,
+        "differential_phase_delay_span_ps": [
+          1.833159445061089,
+          1.8359429976074988
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.002827190468784657,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": 2.09827044060557,
+        "differential_delay_56GHz_ps": 2.0982704406055714,
+        "differential_phase_delay_span_ps": [
+          2.0982704406055688,
+          2.0982704406055714
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368958
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": 2.3605542456812665,
+        "differential_delay_56GHz_ps": 2.3633814361500525,
+        "differential_phase_delay_span_ps": [
+          2.360597883603646,
+          2.3633814361500525
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687859895,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": 2.622838050756963,
+        "differential_delay_56GHz_ps": 2.6273440001421964,
+        "differential_phase_delay_span_ps": [
+          2.6229078672508046,
+          2.6273440001421964
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385233521,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": 2.885121855832659,
+        "differential_delay_56GHz_ps": 2.8890392730030765,
+        "differential_phase_delay_span_ps": [
+          2.8851829391672363,
+          2.8890392730030765
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170417714,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": 3.147405660908355,
+        "differential_delay_56GHz_ps": 3.1474056609083556,
+        "differential_phase_delay_span_ps": [
+          3.147405660908354,
+          3.147405660908356
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": 3.4096894659840515,
+        "differential_delay_56GHz_ps": 3.4057720488136347,
+        "differential_phase_delay_span_ps": [
+          3.4057720488136347,
+          3.4096283826494767
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": 3.6719732710597475,
+        "differential_delay_56GHz_ps": 3.667467321674515,
+        "differential_phase_delay_span_ps": [
+          3.667467321674515,
+          3.6719034545659084
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": 3.934257076135444,
+        "differential_delay_56GHz_ps": 3.9314298856666587,
+        "differential_phase_delay_span_ps": [
+          3.9314298856666587,
+          3.934213438213068
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687851013,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865694
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": 4.19654088121114,
+        "differential_delay_56GHz_ps": 4.196540881211141,
+        "differential_phase_delay_span_ps": [
+          4.196540881211139,
+          4.196540881211142
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.7763568394002505e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368858
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": 4.458824686286836,
+        "differential_delay_56GHz_ps": 4.461651876755622,
+        "differential_phase_delay_span_ps": [
+          4.458868324209213,
+          4.461651876755622
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687855454,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": 4.721108491362533,
+        "differential_delay_56GHz_ps": 4.725614440747766,
+        "differential_phase_delay_span_ps": [
+          4.721178307856373,
+          4.725614440747766
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691295
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": 4.983392296438229,
+        "differential_delay_56GHz_ps": 4.987309713608646,
+        "differential_phase_delay_span_ps": [
+          4.983453379772805,
+          4.987309713608646
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 1,
+        "nominal_differential_delay_ps": 5.245676101513926,
+        "differential_delay_56GHz_ps": 5.245676101513925,
+        "differential_phase_delay_span_ps": [
+          5.245676101513925,
+          5.245676101513927
+        ],
+        "worst_differential_deviation_from_linear_ps": 8.881784197001252e-16,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      }
+    ]
+  },
+  "16_intervals": {
+    "section_delay_ps": 0.5245676101513925,
+    "weight_intervals_per_anchor_pair": 16,
+    "total_distinct_nominal_codes": 97,
+    "phase_delay_range_56GHz_ps": [
+      -5.245676101513925,
+      5.245676101513925
+    ],
+    "nominal_common_delay_ps": 5.770243711665318,
+    "nominal_step_range_ps": [
+      0.06557095126892398,
+      0.1311419025378484
+    ],
+    "actual_phase_step_56GHz_range_ps": [
+      0.06526569973469756,
+      0.1326276259982544
+    ],
+    "largest_ideal_nearest_code_quantization_ps": 0.0655709512689242,
+    "largest_56GHz_nearest_code_quantization_ps": 0.0663138129991272,
+    "local_DNL_56GHz_range_LSB": [
+      -0.01859238670013519,
+      0.011329128460504156
+    ],
+    "local_DNL_reference": "Actual adjacent phase step over that interval nominal step minus one. Anchors with unequal segment lengths deliberately have different nominal steps.",
+    "worst_interpolation_delay_dispersion_ps": 0.004492186194605896,
+    "worst_interpolation_non_linearity_ps": 0.004563090386081381,
+    "worst_normalized_leg_gain_dB": -0.14880052278368958,
+    "known_target_offline_design_diagnostics": [
+      {
+        "known_correction_target_ps": -4.464285714285714,
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.375,
+        "worst_7_to_56_GHz_abs_error_ps": 0.005417390076501327,
+        "signed_error_56GHz_ps": 0.0026338375300927197
+      },
+      {
+        "known_correction_target_ps": 0.0,
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.0,
+        "worst_7_to_56_GHz_abs_error_ps": 0.0,
+        "signed_error_56GHz_ps": 0.0
+      },
+      {
+        "known_correction_target_ps": 4.464285714285714,
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.625,
+        "worst_7_to_56_GHz_abs_error_ps": 0.005417390076501327,
+        "signed_error_56GHz_ps": -0.0026338375300927197
+      }
+    ],
+    "codebook": [
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": -5.245676101513926,
+        "differential_delay_56GHz_ps": -5.245676101513925,
+        "differential_phase_delay_span_ps": [
+          -5.245676101513927,
+          -5.245676101513925
+        ],
+        "worst_differential_deviation_from_linear_ps": 8.881784197001252e-16,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.0625,
+        "nominal_differential_delay_ps": -5.114534198976077,
+        "differential_delay_56GHz_ps": -5.1169724399406515,
+        "differential_phase_delay_span_ps": [
+          -5.1169724399406515,
+          -5.1145723735835515
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0024382409645742342,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.034420473920770106
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": -4.983392296438229,
+        "differential_delay_56GHz_ps": -4.987309713608646,
+        "differential_phase_delay_span_ps": [
+          -4.987309713608646,
+          -4.983453379772805
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.1875,
+        "nominal_differential_delay_ps": -4.8522503939003805,
+        "differential_delay_56GHz_ps": -4.856813484286461,
+        "differential_phase_delay_span_ps": [
+          -4.856813484286461,
+          -4.852321298091856
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386080937,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.09006703699836333
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": -4.721108491362533,
+        "differential_delay_56GHz_ps": -4.725614440747766,
+        "differential_phase_delay_span_ps": [
+          -4.725614440747766,
+          -4.721178307856373
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691295
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.3125,
+        "nominal_differential_delay_ps": -4.589966588824685,
+        "differential_delay_56GHz_ps": -4.593847672614305,
+        "differential_phase_delay_span_ps": [
+          -4.593847672614305,
+          -4.590026589470444
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896203765,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": -4.458824686286836,
+        "differential_delay_56GHz_ps": -4.461651876755622,
+        "differential_phase_delay_span_ps": [
+          -4.461651876755622,
+          -4.458868324209213
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687855454,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.4375,
+        "nominal_differential_delay_ps": -4.327682783748989,
+        "differential_delay_56GHz_ps": -4.329168507209394,
+        "differential_phase_delay_span_ps": [
+          -4.329168507209394,
+          -4.3277056940013185
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604050973,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": -4.19654088121114,
+        "differential_delay_56GHz_ps": -4.196540881211141,
+        "differential_phase_delay_span_ps": [
+          -4.196540881211142,
+          -4.196540881211139
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.7763568394002505e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368858
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.5625,
+        "nominal_differential_delay_ps": -4.065398978673292,
+        "differential_delay_56GHz_ps": -4.063913255212887,
+        "differential_phase_delay_span_ps": [
+          -4.065376068420961,
+          -4.063913255212887
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604050973,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": -3.934257076135444,
+        "differential_delay_56GHz_ps": -3.9314298856666587,
+        "differential_phase_delay_span_ps": [
+          -3.934213438213068,
+          -3.9314298856666587
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687851013,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865694
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.6875,
+        "nominal_differential_delay_ps": -3.803115173597596,
+        "differential_delay_56GHz_ps": -3.7992340898079764,
+        "differential_phase_delay_span_ps": [
+          -3.803055172951838,
+          -3.7992340898079764
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896194883,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": -3.6719732710597475,
+        "differential_delay_56GHz_ps": -3.667467321674515,
+        "differential_phase_delay_span_ps": [
+          -3.6719034545659084,
+          -3.667467321674515
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.8125,
+        "nominal_differential_delay_ps": -3.5408313685218995,
+        "differential_delay_56GHz_ps": -3.536268278135819,
+        "differential_phase_delay_span_ps": [
+          -3.540760464330425,
+          -3.536268278135819
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386080493,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.0900670369983643
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": -3.4096894659840515,
+        "differential_delay_56GHz_ps": -3.4057720488136347,
+        "differential_phase_delay_span_ps": [
+          -3.4096283826494767,
+          -3.4057720488136347
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          6,
+          16
+        ],
+        "route_b_PN": [
+          8,
+          14
+        ],
+        "alpha": 0.9375,
+        "nominal_differential_delay_ps": -3.278547563446203,
+        "differential_delay_56GHz_ps": -3.2761093224816293,
+        "differential_phase_delay_span_ps": [
+          -3.2785093888387316,
+          -3.2761093224816293
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00243824096457379,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03442047392076914
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": -3.147405660908355,
+        "differential_delay_56GHz_ps": -3.1474056609083556,
+        "differential_phase_delay_span_ps": [
+          -3.147405660908356,
+          -3.147405660908354
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.0625,
+        "nominal_differential_delay_ps": -3.016263758370507,
+        "differential_delay_56GHz_ps": -3.0187019993350814,
+        "differential_phase_delay_span_ps": [
+          -3.0187019993350814,
+          -3.016301932977979
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0024382409645742342,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03442047392076914
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": -2.885121855832659,
+        "differential_delay_56GHz_ps": -2.8890392730030765,
+        "differential_phase_delay_span_ps": [
+          -2.8890392730030765,
+          -2.8851829391672363
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170417714,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.1875,
+        "nominal_differential_delay_ps": -2.753979953294811,
+        "differential_delay_56GHz_ps": -2.758543043680892,
+        "differential_phase_delay_span_ps": [
+          -2.758543043680892,
+          -2.7540508574862885
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386081381,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.0900670369983643
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": -2.622838050756963,
+        "differential_delay_56GHz_ps": -2.6273440001421964,
+        "differential_phase_delay_span_ps": [
+          -2.6273440001421964,
+          -2.6229078672508046
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385233521,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.3125,
+        "nominal_differential_delay_ps": -2.4916961482191144,
+        "differential_delay_56GHz_ps": -2.4955772320087357,
+        "differential_phase_delay_span_ps": [
+          -2.4955772320087357,
+          -2.491756148864874
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896212647,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": -2.3605542456812665,
+        "differential_delay_56GHz_ps": -2.3633814361500525,
+        "differential_phase_delay_span_ps": [
+          -2.3633814361500525,
+          -2.360597883603646
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687859895,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.4375,
+        "nominal_differential_delay_ps": -2.229412343143418,
+        "differential_delay_56GHz_ps": -2.2308980666038245,
+        "differential_phase_delay_span_ps": [
+          -2.2308980666038245,
+          -2.2294352533957493
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604064296,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": -2.09827044060557,
+        "differential_delay_56GHz_ps": -2.0982704406055714,
+        "differential_phase_delay_span_ps": [
+          -2.0982704406055714,
+          -2.0982704406055688
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368958
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.5625,
+        "nominal_differential_delay_ps": -1.967128538067722,
+        "differential_delay_56GHz_ps": -1.965642814607317,
+        "differential_phase_delay_span_ps": [
+          -1.9671056278153924,
+          -1.965642814607317
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604048752,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": -1.8359866355298737,
+        "differential_delay_56GHz_ps": -1.833159445061089,
+        "differential_phase_delay_span_ps": [
+          -1.8359429976074988,
+          -1.833159445061089
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.002827190468784657,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.6875,
+        "nominal_differential_delay_ps": -1.7048447329920258,
+        "differential_delay_56GHz_ps": -1.7009636492024072,
+        "differential_phase_delay_span_ps": [
+          -1.7047847323462664,
+          -1.7009636492024072
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896186,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": -1.5737028304541776,
+        "differential_delay_56GHz_ps": -1.5691968810689452,
+        "differential_phase_delay_span_ps": [
+          -1.5736330139603372,
+          -1.5691968810689452
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232411,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.8125,
+        "nominal_differential_delay_ps": -1.4425609279163294,
+        "differential_delay_56GHz_ps": -1.4379978375302496,
+        "differential_phase_delay_span_ps": [
+          -1.4424900237248541,
+          -1.4379978375302496
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386079827,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.0900670369983643
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": -1.3114190253784814,
+        "differential_delay_56GHz_ps": -1.3075016082080653,
+        "differential_phase_delay_span_ps": [
+          -1.3113579420439077,
+          -1.3075016082080653
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00391741717041616,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          8,
+          14
+        ],
+        "route_b_PN": [
+          10,
+          12
+        ],
+        "alpha": 0.9375,
+        "nominal_differential_delay_ps": -1.1802771228406332,
+        "differential_delay_56GHz_ps": -1.17783888187606,
+        "differential_phase_delay_span_ps": [
+          -1.1802389482331634,
+          -1.17783888187606
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.002438240964573346,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.034420473920770106
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": -1.049135220302785,
+        "differential_delay_56GHz_ps": -1.049135220302786,
+        "differential_phase_delay_span_ps": [
+          -1.0491352203027864,
+          -1.0491352203027835
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.5543122344752192e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.0625,
+        "nominal_differential_delay_ps": -0.983564269033861,
+        "differential_delay_56GHz_ps": -0.9838695205680879,
+        "differential_phase_delay_span_ps": [
+          -0.9838695205680879,
+          -0.9835690409729424
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00030525153422689133,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.008653138071489711
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": -0.9179933177649369,
+        "differential_delay_56GHz_ps": -0.9184822274477404,
+        "differential_phase_delay_span_ps": [
+          -0.9184822274477404,
+          -0.9180009529912986
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828035733,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.1875,
+        "nominal_differential_delay_ps": -0.8524223664960129,
+        "differential_delay_56GHz_ps": -0.8529903502582192,
+        "differential_phase_delay_span_ps": [
+          -0.8529903502582192,
+          -0.8524312289339491
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005679837622063477,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02253412064955323
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": -0.7868514152270888,
+        "differential_delay_56GHz_ps": -0.7874110637850319,
+        "differential_phase_delay_span_ps": [
+          -0.7874110637850319,
+          -0.7868601414178106
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579431043,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02775094874541178
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.3125,
+        "nominal_differential_delay_ps": -0.7212804639581647,
+        "differential_delay_56GHz_ps": -0.7217616817202193,
+        "differential_phase_delay_span_ps": [
+          -0.7217616817202193,
+          -0.7212879630938077
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00048121776205456435,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.031812818578853895
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": -0.6557095126892407,
+        "differential_delay_56GHz_ps": -0.6560596295508341,
+        "differential_phase_delay_span_ps": [
+          -0.6560596295508341,
+          -0.6557149666400969
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159336364,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.4375,
+        "nominal_differential_delay_ps": -0.5901385614203166,
+        "differential_delay_56GHz_ps": -0.5903224170032507,
+        "differential_phase_delay_span_ps": [
+          -0.5903224170032507,
+          -0.5901414247552332
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00018385558293410043,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03645961212138649
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": -0.5245676101513925,
+        "differential_delay_56GHz_ps": -0.524567610151393,
+        "differential_phase_delay_span_ps": [
+          -0.5245676101513936,
+          -0.5245676101513914
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.1102230246251565e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03704081105688231
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.5625,
+        "nominal_differential_delay_ps": -0.45899665888246843,
+        "differential_delay_56GHz_ps": -0.45881280329953533,
+        "differential_phase_delay_span_ps": [
+          -0.4589937955475528,
+          -0.45881280329953533
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00018385558293310122,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03645961212138746
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": -0.3934257076135444,
+        "differential_delay_56GHz_ps": -0.3930755907519519,
+        "differential_phase_delay_span_ps": [
+          -0.39342025366268984,
+          -0.3930755907519519
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159247546,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.6875,
+        "nominal_differential_delay_ps": -0.32785475634462036,
+        "differential_delay_56GHz_ps": -0.32737353858256807,
+        "differential_phase_delay_span_ps": [
+          -0.3278472572089764,
+          -0.32737353858256807
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004812177620522884,
+        "common_phase_delay_span_ps": [
+          5.770243711665318,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03181281857885486
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": -0.26228380507569626,
+        "differential_delay_56GHz_ps": -0.2617241565177541,
+        "differential_phase_delay_span_ps": [
+          -0.2622750788849761,
+          -0.2617241565177541
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579421606,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.027750948745412746
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.8125,
+        "nominal_differential_delay_ps": -0.1967128538067722,
+        "differential_delay_56GHz_ps": -0.19614487004456616,
+        "differential_phase_delay_span_ps": [
+          -0.19670399136883757,
+          -0.19614487004456616
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005679837622060424,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02253412064955323
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": -0.13114190253784813,
+        "differential_delay_56GHz_ps": -0.13065299285504617,
+        "differential_phase_delay_span_ps": [
+          -0.13113426731148806,
+          -0.13065299285504617
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828019635,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          10,
+          12
+        ],
+        "route_b_PN": [
+          11,
+          11
+        ],
+        "alpha": 0.9375,
+        "nominal_differential_delay_ps": -0.06557095126892407,
+        "differential_delay_56GHz_ps": -0.06526569973469756,
+        "differential_phase_delay_span_ps": [
+          -0.06556617932984361,
+          -0.06526569973469756
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00030525153422650275,
+        "common_phase_delay_span_ps": [
+          5.770243711665316,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.008653138071488747
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": 0.0,
+        "differential_delay_56GHz_ps": 0.0,
+        "differential_phase_delay_span_ps": [
+          0.0,
+          0.0
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.0625,
+        "nominal_differential_delay_ps": 0.06557095126892407,
+        "differential_delay_56GHz_ps": 0.06526569973469756,
+        "differential_phase_delay_span_ps": [
+          0.06526569973469756,
+          0.06556617932984361
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00030525153422650275,
+        "common_phase_delay_span_ps": [
+          5.770243711665316,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.008653138071488747
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": 0.13114190253784813,
+        "differential_delay_56GHz_ps": 0.13065299285504617,
+        "differential_phase_delay_span_ps": [
+          0.13065299285504617,
+          0.13113426731148806
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828019635,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.1875,
+        "nominal_differential_delay_ps": 0.1967128538067722,
+        "differential_delay_56GHz_ps": 0.19614487004456616,
+        "differential_phase_delay_span_ps": [
+          0.19614487004456616,
+          0.19670399136883757
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005679837622060424,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02253412064955323
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": 0.26228380507569626,
+        "differential_delay_56GHz_ps": 0.2617241565177541,
+        "differential_phase_delay_span_ps": [
+          0.2617241565177541,
+          0.2622750788849761
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579421606,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.027750948745412746
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.3125,
+        "nominal_differential_delay_ps": 0.32785475634462036,
+        "differential_delay_56GHz_ps": 0.32737353858256807,
+        "differential_phase_delay_span_ps": [
+          0.32737353858256807,
+          0.3278472572089764
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004812177620522884,
+        "common_phase_delay_span_ps": [
+          5.770243711665318,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03181281857885486
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": 0.3934257076135444,
+        "differential_delay_56GHz_ps": 0.3930755907519519,
+        "differential_phase_delay_span_ps": [
+          0.3930755907519519,
+          0.39342025366268984
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159247546,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.4375,
+        "nominal_differential_delay_ps": 0.45899665888246843,
+        "differential_delay_56GHz_ps": 0.45881280329953533,
+        "differential_phase_delay_span_ps": [
+          0.45881280329953533,
+          0.4589937955475528
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00018385558293310122,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03645961212138746
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": 0.5245676101513925,
+        "differential_delay_56GHz_ps": 0.524567610151393,
+        "differential_phase_delay_span_ps": [
+          0.5245676101513914,
+          0.5245676101513936
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.1102230246251565e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03704081105688231
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.5625,
+        "nominal_differential_delay_ps": 0.5901385614203166,
+        "differential_delay_56GHz_ps": 0.5903224170032507,
+        "differential_phase_delay_span_ps": [
+          0.5901414247552332,
+          0.5903224170032507
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00018385558293410043,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03645961212138649
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": 0.6557095126892407,
+        "differential_delay_56GHz_ps": 0.6560596295508341,
+        "differential_phase_delay_span_ps": [
+          0.6557149666400969,
+          0.6560596295508341
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00035011686159336364,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03471648184640016
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.6875,
+        "nominal_differential_delay_ps": 0.7212804639581647,
+        "differential_delay_56GHz_ps": 0.7217616817202193,
+        "differential_phase_delay_span_ps": [
+          0.7212879630938077,
+          0.7217616817202193
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00048121776205456435,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.031812818578853895
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": 0.7868514152270888,
+        "differential_delay_56GHz_ps": 0.7874110637850319,
+        "differential_phase_delay_span_ps": [
+          0.7868601414178106,
+          0.7874110637850319
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005596485579431043,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02775094874541178
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.8125,
+        "nominal_differential_delay_ps": 0.8524223664960129,
+        "differential_delay_56GHz_ps": 0.8529903502582192,
+        "differential_phase_delay_span_ps": [
+          0.8524312289339491,
+          0.8529903502582192
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0005679837622063477,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.02253412064955323
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": 0.9179933177649369,
+        "differential_delay_56GHz_ps": 0.9184822274477404,
+        "differential_phase_delay_span_ps": [
+          0.9180009529912986,
+          0.9184822274477404
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0004889096828035733,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.01616649583614027
+      },
+      {
+        "route_a_PN": [
+          11,
+          11
+        ],
+        "route_b_PN": [
+          12,
+          10
+        ],
+        "alpha": 0.9375,
+        "nominal_differential_delay_ps": 0.983564269033861,
+        "differential_delay_56GHz_ps": 0.9838695205680879,
+        "differential_phase_delay_span_ps": [
+          0.9835690409729424,
+          0.9838695205680879
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00030525153422689133,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.008653138071489711
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": 1.049135220302785,
+        "differential_delay_56GHz_ps": 1.049135220302786,
+        "differential_phase_delay_span_ps": [
+          1.0491352203027835,
+          1.0491352203027864
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.5543122344752192e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.0625,
+        "nominal_differential_delay_ps": 1.1802771228406332,
+        "differential_delay_56GHz_ps": 1.17783888187606,
+        "differential_phase_delay_span_ps": [
+          1.17783888187606,
+          1.1802389482331634
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.002438240964573346,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.034420473920770106
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": 1.3114190253784814,
+        "differential_delay_56GHz_ps": 1.3075016082080653,
+        "differential_phase_delay_span_ps": [
+          1.3075016082080653,
+          1.3113579420439077
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00391741717041616,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.1875,
+        "nominal_differential_delay_ps": 1.4425609279163294,
+        "differential_delay_56GHz_ps": 1.4379978375302496,
+        "differential_phase_delay_span_ps": [
+          1.4379978375302496,
+          1.4424900237248541
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386079827,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.0900670369983643
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": 1.5737028304541776,
+        "differential_delay_56GHz_ps": 1.5691968810689452,
+        "differential_phase_delay_span_ps": [
+          1.5691968810689452,
+          1.5736330139603372
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232411,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.3125,
+        "nominal_differential_delay_ps": 1.7048447329920258,
+        "differential_delay_56GHz_ps": 1.7009636492024072,
+        "differential_phase_delay_span_ps": [
+          1.7009636492024072,
+          1.7047847323462664
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896186,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": 1.8359866355298737,
+        "differential_delay_56GHz_ps": 1.833159445061089,
+        "differential_phase_delay_span_ps": [
+          1.833159445061089,
+          1.8359429976074988
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.002827190468784657,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.4375,
+        "nominal_differential_delay_ps": 1.967128538067722,
+        "differential_delay_56GHz_ps": 1.965642814607317,
+        "differential_phase_delay_span_ps": [
+          1.965642814607317,
+          1.9671056278153924
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604048752,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": 2.09827044060557,
+        "differential_delay_56GHz_ps": 2.0982704406055714,
+        "differential_phase_delay_span_ps": [
+          2.0982704406055688,
+          2.0982704406055714
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368958
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.5625,
+        "nominal_differential_delay_ps": 2.229412343143418,
+        "differential_delay_56GHz_ps": 2.2308980666038245,
+        "differential_phase_delay_span_ps": [
+          2.2294352533957493,
+          2.2308980666038245
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604064296,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": 2.3605542456812665,
+        "differential_delay_56GHz_ps": 2.3633814361500525,
+        "differential_phase_delay_span_ps": [
+          2.360597883603646,
+          2.3633814361500525
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687859895,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.6875,
+        "nominal_differential_delay_ps": 2.4916961482191144,
+        "differential_delay_56GHz_ps": 2.4955772320087357,
+        "differential_phase_delay_span_ps": [
+          2.491756148864874,
+          2.4955772320087357
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896212647,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": 2.622838050756963,
+        "differential_delay_56GHz_ps": 2.6273440001421964,
+        "differential_phase_delay_span_ps": [
+          2.6229078672508046,
+          2.6273440001421964
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385233521,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.8125,
+        "nominal_differential_delay_ps": 2.753979953294811,
+        "differential_delay_56GHz_ps": 2.758543043680892,
+        "differential_phase_delay_span_ps": [
+          2.7540508574862885,
+          2.758543043680892
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386081381,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.0900670369983643
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": 2.885121855832659,
+        "differential_delay_56GHz_ps": 2.8890392730030765,
+        "differential_phase_delay_span_ps": [
+          2.8851829391672363,
+          2.8890392730030765
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170417714,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          12,
+          10
+        ],
+        "route_b_PN": [
+          14,
+          8
+        ],
+        "alpha": 0.9375,
+        "nominal_differential_delay_ps": 3.016263758370507,
+        "differential_delay_56GHz_ps": 3.0187019993350814,
+        "differential_phase_delay_span_ps": [
+          3.016301932977979,
+          3.0187019993350814
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0024382409645742342,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03442047392076914
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.0,
+        "nominal_differential_delay_ps": 3.147405660908355,
+        "differential_delay_56GHz_ps": 3.1474056609083556,
+        "differential_phase_delay_span_ps": [
+          3.147405660908354,
+          3.147405660908356
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.3322676295501878e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.0625,
+        "nominal_differential_delay_ps": 3.278547563446203,
+        "differential_delay_56GHz_ps": 3.2761093224816293,
+        "differential_phase_delay_span_ps": [
+          3.2761093224816293,
+          3.2785093888387316
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.00243824096457379,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.03442047392076914
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.125,
+        "nominal_differential_delay_ps": 3.4096894659840515,
+        "differential_delay_56GHz_ps": 3.4057720488136347,
+        "differential_phase_delay_span_ps": [
+          3.4057720488136347,
+          3.4096283826494767
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920704
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.1875,
+        "nominal_differential_delay_ps": 3.5408313685218995,
+        "differential_delay_56GHz_ps": 3.536268278135819,
+        "differential_phase_delay_span_ps": [
+          3.536268278135819,
+          3.540760464330425
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386080493,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.0900670369983643
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.25,
+        "nominal_differential_delay_ps": 3.6719732710597475,
+        "differential_delay_56GHz_ps": 3.667467321674515,
+        "differential_phase_delay_span_ps": [
+          3.667467321674515,
+          3.6719034545659084
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691198
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.3125,
+        "nominal_differential_delay_ps": 3.803115173597596,
+        "differential_delay_56GHz_ps": 3.7992340898079764,
+        "differential_phase_delay_span_ps": [
+          3.7992340898079764,
+          3.803055172951838
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896194883,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.375,
+        "nominal_differential_delay_ps": 3.934257076135444,
+        "differential_delay_56GHz_ps": 3.9314298856666587,
+        "differential_phase_delay_span_ps": [
+          3.9314298856666587,
+          3.934213438213068
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687851013,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865694
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.4375,
+        "nominal_differential_delay_ps": 4.065398978673292,
+        "differential_delay_56GHz_ps": 4.063913255212887,
+        "differential_phase_delay_span_ps": [
+          4.063913255212887,
+          4.065376068420961
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604050973,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.5,
+        "nominal_differential_delay_ps": 4.19654088121114,
+        "differential_delay_56GHz_ps": 4.196540881211141,
+        "differential_phase_delay_span_ps": [
+          4.196540881211139,
+          4.196540881211142
+        ],
+        "worst_differential_deviation_from_linear_ps": 1.7763568394002505e-15,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.14880052278368858
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.5625,
+        "nominal_differential_delay_ps": 4.327682783748989,
+        "differential_delay_56GHz_ps": 4.329168507209394,
+        "differential_phase_delay_span_ps": [
+          4.3277056940013185,
+          4.329168507209394
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0014857234604050973,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.1464358692695744
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.625,
+        "nominal_differential_delay_ps": 4.458824686286836,
+        "differential_delay_56GHz_ps": 4.461651876755622,
+        "differential_phase_delay_span_ps": [
+          4.458868324209213,
+          4.461651876755622
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0028271904687855454,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.13934962398865597
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.6875,
+        "nominal_differential_delay_ps": 4.589966588824685,
+        "differential_delay_56GHz_ps": 4.593847672614305,
+        "differential_phase_delay_span_ps": [
+          4.590026589470444,
+          4.593847672614305
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0038810837896203765,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.12756484901266968
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.75,
+        "nominal_differential_delay_ps": 4.721108491362533,
+        "differential_delay_56GHz_ps": 4.725614440747766,
+        "differential_phase_delay_span_ps": [
+          4.721178307856373,
+          4.725614440747766
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004505949385232633,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -0.11111970398691295
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.8125,
+        "nominal_differential_delay_ps": 4.8522503939003805,
+        "differential_delay_56GHz_ps": 4.856813484286461,
+        "differential_phase_delay_span_ps": [
+          4.852321298091856,
+          4.856813484286461
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.004563090386080937,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.09006703699836333
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.875,
+        "nominal_differential_delay_ps": 4.983392296438229,
+        "differential_delay_56GHz_ps": 4.987309713608646,
+        "differential_phase_delay_span_ps": [
+          4.983453379772805,
+          4.987309713608646
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.003917417170416826,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.06447382468920801
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 0.9375,
+        "nominal_differential_delay_ps": 5.114534198976077,
+        "differential_delay_56GHz_ps": 5.1169724399406515,
+        "differential_phase_delay_span_ps": [
+          5.1145723735835515,
+          5.1169724399406515
+        ],
+        "worst_differential_deviation_from_linear_ps": 0.0024382409645742342,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.770243711665319
+        ],
+        "minimum_normalized_leg_gain_dB": -0.034420473920770106
+      },
+      {
+        "route_a_PN": [
+          14,
+          8
+        ],
+        "route_b_PN": [
+          16,
+          6
+        ],
+        "alpha": 1,
+        "nominal_differential_delay_ps": 5.245676101513926,
+        "differential_delay_56GHz_ps": 5.245676101513925,
+        "differential_phase_delay_span_ps": [
+          5.245676101513925,
+          5.245676101513927
+        ],
+        "worst_differential_deviation_from_linear_ps": 8.881784197001252e-16,
+        "common_phase_delay_span_ps": [
+          5.770243711665317,
+          5.7702437116653185
+        ],
+        "minimum_normalized_leg_gain_dB": -9.643274665532871e-16
+      }
+    ]
+  },
+  "corner_endpoint_scaled_model": {
+    "tt": {
+      "section_delay_ps": 0.5245676101513925,
+      "weight_intervals_per_anchor_pair": 8,
+      "total_distinct_nominal_codes": 49,
+      "phase_delay_range_56GHz_ps": [
+        -5.245676101513925,
+        5.245676101513925
+      ],
+      "nominal_common_delay_ps": 5.770243711665318,
+      "nominal_step_range_ps": [
+        0.13114190253784808,
+        0.2622838050756968
+      ],
+      "actual_phase_step_56GHz_range_ps": [
+        0.1306529928550455,
+        0.26511099554448236
+      ],
+      "largest_ideal_nearest_code_quantization_ps": 0.1311419025378484,
+      "largest_56GHz_nearest_code_quantization_ps": 0.13255549777224118,
+      "local_DNL_56GHz_range_LSB": [
+        -0.014935795099080273,
+        0.010779127090862595
+      ],
+      "local_DNL_reference": "Actual adjacent phase step over that interval nominal step minus one. Anchors with unequal segment lengths deliberately have different nominal steps.",
+      "worst_interpolation_delay_dispersion_ps": 0.004436132891393552,
+      "worst_interpolation_non_linearity_ps": 0.004505949385233521,
+      "worst_normalized_leg_gain_dB": -0.14880052278368958,
+      "known_target_offline_design_diagnostics": [
+        {
+          "known_correction_target_ps": -4.464285714285714,
+          "route_a_PN": [
+            6,
+            16
+          ],
+          "route_b_PN": [
+            8,
+            14
+          ],
+          "alpha": 0.375,
+          "worst_7_to_56_GHz_abs_error_ps": 0.005417390076501327,
+          "signed_error_56GHz_ps": 0.0026338375300927197
+        },
+        {
+          "known_correction_target_ps": 0.0,
+          "route_a_PN": [
+            11,
+            11
+          ],
+          "route_b_PN": [
+            12,
+            10
+          ],
+          "alpha": 0.0,
+          "worst_7_to_56_GHz_abs_error_ps": 0.0,
+          "signed_error_56GHz_ps": 0.0
+        },
+        {
+          "known_correction_target_ps": 4.464285714285714,
+          "route_a_PN": [
+            14,
+            8
+          ],
+          "route_b_PN": [
+            16,
+            6
+          ],
+          "alpha": 0.625,
+          "worst_7_to_56_GHz_abs_error_ps": 0.005417390076501327,
+          "signed_error_56GHz_ps": -0.0026338375300927197
+        }
+      ]
+    },
+    "ss": {
+      "section_delay_ps": 0.5242482421880429,
+      "weight_intervals_per_anchor_pair": 8,
+      "total_distinct_nominal_codes": 49,
+      "phase_delay_range_56GHz_ps": [
+        -5.242482421880428,
+        5.242482421880428
+      ],
+      "nominal_common_delay_ps": 5.766730664068472,
+      "nominal_step_range_ps": [
+        0.13106206054701064,
+        0.26212412109402194
+      ],
+      "actual_phase_step_56GHz_range_ps": [
+        0.1305740436106015,
+        0.26494610802148366
+      ],
+      "largest_ideal_nearest_code_quantization_ps": 0.13106206054701097,
+      "largest_56GHz_nearest_code_quantization_ps": 0.13247305401074183,
+      "local_DNL_56GHz_range_LSB": [
+        -0.014917576612641814,
+        0.010765842211255983
+      ],
+      "local_DNL_reference": "Actual adjacent phase step over that interval nominal step minus one. Anchors with unequal segment lengths deliberately have different nominal steps.",
+      "worst_interpolation_delay_dispersion_ps": 0.004427988585780085,
+      "worst_interpolation_non_linearity_ps": 0.004497677628632957,
+      "worst_normalized_leg_gain_dB": -0.1486183518919195,
+      "known_target_offline_design_diagnostics": [
+        {
+          "known_correction_target_ps": -4.464285714285714,
+          "route_a_PN": [
+            6,
+            16
+          ],
+          "route_b_PN": [
+            8,
+            14
+          ],
+          "alpha": 0.375,
+          "worst_7_to_56_GHz_abs_error_ps": 0.008132097429788487,
+          "signed_error_56GHz_ps": 0.005353668759888741
+        },
+        {
+          "known_correction_target_ps": 0.0,
+          "route_a_PN": [
+            11,
+            11
+          ],
+          "route_b_PN": [
+            12,
+            10
+          ],
+          "alpha": 0.0,
+          "worst_7_to_56_GHz_abs_error_ps": 0.0,
+          "signed_error_56GHz_ps": 0.0
+        },
+        {
+          "known_correction_target_ps": 4.464285714285714,
+          "route_a_PN": [
+            14,
+            8
+          ],
+          "route_b_PN": [
+            16,
+            6
+          ],
+          "alpha": 0.625,
+          "worst_7_to_56_GHz_abs_error_ps": 0.008132097429788487,
+          "signed_error_56GHz_ps": -0.005353668759888741
+        }
+      ]
+    },
+    "ff": {
+      "section_delay_ps": 0.5247844049002607,
+      "weight_intervals_per_anchor_pair": 8,
+      "total_distinct_nominal_codes": 49,
+      "phase_delay_range_56GHz_ps": [
+        -5.247844049002607,
+        5.247844049002607
+      ],
+      "nominal_common_delay_ps": 5.772628453902867,
+      "nominal_step_range_ps": [
+        0.1311961012250651,
+        0.2623922024501306
+      ],
+      "actual_phase_step_56GHz_range_ps": [
+        0.1307065849039826,
+        0.2652229288971446
+      ],
+      "largest_ideal_nearest_code_quantization_ps": 0.1311961012250653,
+      "largest_56GHz_nearest_code_quantization_ps": 0.1326114644485723,
+      "local_DNL_56GHz_range_LSB": [
+        -0.014948168624888791,
+        0.010788150031066479
+      ],
+      "local_DNL_reference": "Actual adjacent phase step over that interval nominal step minus one. Anchors with unequal segment lengths deliberately have different nominal steps.",
+      "worst_interpolation_delay_dispersion_ps": 0.004441667179932107,
+      "worst_interpolation_non_linearity_ps": 0.004511570279102983,
+      "worst_normalized_leg_gain_dB": -0.14892424949622587,
+      "known_target_offline_design_diagnostics": [
+        {
+          "known_correction_target_ps": -4.464285714285714,
+          "route_a_PN": [
+            6,
+            16
+          ],
+          "route_b_PN": [
+            8,
+            14
+          ],
+          "alpha": 0.375,
+          "worst_7_to_56_GHz_abs_error_ps": 0.0035745805773848005,
+          "signed_error_56GHz_ps": 0.000787546186485244
+        },
+        {
+          "known_correction_target_ps": 0.0,
+          "route_a_PN": [
+            11,
+            11
+          ],
+          "route_b_PN": [
+            12,
+            10
+          ],
+          "alpha": 0.0,
+          "worst_7_to_56_GHz_abs_error_ps": 0.0,
+          "signed_error_56GHz_ps": 0.0
+        },
+        {
+          "known_correction_target_ps": 4.464285714285714,
+          "route_a_PN": [
+            14,
+            8
+          ],
+          "route_b_PN": [
+            16,
+            6
+          ],
+          "alpha": 0.625,
+          "worst_7_to_56_GHz_abs_error_ps": 0.0035745805773848005,
+          "signed_error_56GHz_ps": -0.000787546186485244
+        }
+      ]
+    }
+  },
+  "coherent_echo_budget_examples": {
+    "long_dormant_route": [
+      {
+        "allocated_differential_timing_error_ps": 0.05,
+        "assumed_echo_separation_ps": 5.245676101513926,
+        "max_coherent_echo_per_leg_at_56GHz": 0.008796345988859365,
+        "max_coherent_echo_per_leg_at_56GHz_dBc": -41.11395393525346,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay": 0.004743224496913993,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay_dBc": -46.47852639389646
+      },
+      {
+        "allocated_differential_timing_error_ps": 0.1,
+        "assumed_echo_separation_ps": 5.245676101513926,
+        "max_coherent_echo_per_leg_at_56GHz": 0.017592011341099723,
+        "max_coherent_echo_per_leg_at_56GHz_dBc": -35.09369007338252,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay": 0.009441665056838733,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay_dBc": -40.49902820465072
+      },
+      {
+        "allocated_differential_timing_error_ps": 0.25,
+        "assumed_echo_separation_ps": 5.245676101513926,
+        "max_coherent_echo_per_leg_at_56GHz": 0.0439681183178649,
+        "max_coherent_echo_per_leg_at_56GHz_dBc": -27.137242405438244,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay": 0.023274537067086223,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay_dBc": -32.662378968444216
+      }
+    ],
+    "adjacent_dormant_route": [
+      {
+        "allocated_differential_timing_error_ps": 0.05,
+        "assumed_echo_separation_ps": 1.049135220302785,
+        "max_coherent_echo_per_leg_at_56GHz": 0.008796345988859365,
+        "max_coherent_echo_per_leg_at_56GHz_dBc": -41.11395393525346,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay": 0.02327453706708623,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay_dBc": -32.66237896844421
+      },
+      {
+        "allocated_differential_timing_error_ps": 0.1,
+        "assumed_echo_separation_ps": 1.049135220302785,
+        "max_coherent_echo_per_leg_at_56GHz": 0.017592011341099723,
+        "max_coherent_echo_per_leg_at_56GHz_dBc": -35.09369007338252,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay": 0.045490308268191254,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay_dBc": -26.841622402675117
+      },
+      {
+        "allocated_differential_timing_error_ps": 0.25,
+        "assumed_echo_separation_ps": 1.049135220302785,
+        "max_coherent_echo_per_leg_at_56GHz": 0.0439681183178649,
+        "max_coherent_echo_per_leg_at_56GHz_dBc": -27.137242405438244,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay": 0.10646133242452696,
+        "max_coherent_echo_per_leg_for_low_frequency_group_delay_dBc": -19.456162053703295
+      }
+    ],
+    "assumption": "One echo per leg with fixed complex relative coefficient and pure excess delay. The bounds are sufficient worst-case across two legs. Frequency-dependent leakage requires measured complex reconstruction."
+  },
+  "limitations": [
+    "These are proposed engineering comparisons without native fine-code, device, driver, switch or SER results.",
+    "Each local adjacent fixture uses two gm banks. A global coarse tap selector must preserve inactive terminations and drain capacitance before a global codebook is claimed.",
+    "The calculation uses normalized complementary linear gm weights and equal path amplitudes. Physical gm allocation, leakage, cap loading, noise and bias startup need separate verification.",
+    "Known correction targets are offline diagnostics. Pilot code selection cannot read the injected skew."
+  ]
+}

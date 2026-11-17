@@ -1,0 +1,34 @@
+Olympus 交接｜GMTAP Fine16｜2026-11-14
+
+  sha256sum -c SHA256SUMS.txt
+  /usr/bin/python3.11 -B gm_tap16.py --mode verify
+  /usr/bin/python3.11 -B -m unittest discover -v
+
+建議第一輪只核准 0–47，共 48 欄（24 組 P/N）。
+0–11 是原 r3 和 8 份尾單元的重現對照。12–47 是 16 份的
+中心、兩向 16:0／15:1／14:2／13:3 及最小負載對照。
+便攜網表已放 portable_review，使用模型根路徑佔位符。
+先核對 8／34（7:1 對 14:2）、14／18（中心與極限）及
+24／26（15:1 的最少負載和三 bank）。每個實體 bank 保留
+原 8 支 RF 輸入 MOS，完整 16 支 1.5 µm 尾管／每腿。
+
+  mkdir -p "$PAM4_DRIVE_REVIEW_ROOT" "$PAM4_DRIVE_RUN_ROOT"
+  /usr/bin/python3.11 -B gm_tap16.py --mode stage --index 8 --index 14 --index 18 --index 24 --index 26 --index 34 --root "$PAM4_DRIVE_REVIEW_ROOT" --model-root "$PAM4_PDK_ROOT"
+
+用新 gm_tap16_plan.json 與 SHA256SUMS.txt 的 SHA 綁定
+approval。stages 為 baseline、legacy、oracle、pilot。
+使用 ~/ecen720_28nm/runs 下的新 run root，配 gm_tap16_classic.sbatch。
+首案先驗 Spectre 完成、器件 OP 和量測，再展開其餘已核准索引。
+每欄 1 CPU／4 GiB／30 分鐘 walltime。solver 暫估 3–20 秒，
+依首案更新。raw 暫估 0.45–0.60 GB，沿用 Spectre 23.1 classic
++mt=1、SPECTRE_DEFAULTS=-E、原私有 shrink。raw 留在 Olympus。
+
+  /usr/bin/python3.11 -B gm_tap16_summary.py --run-root "$PAM4_DRIVE_RUN_ROOT" --output lp_gm_tap16_ss_pilot.json
+
+先比較 8／16 解析度的等權重 tail ID、各 bank 分流、工作點、
+功耗與 Hdd。再報 15:1、14:2、13:3 兩向的 7–56 GHz 帶權延遲
+與殘差、56 GHz 相位殘差、Hdd、CM→DM、tilt 和已量相鄰步階。
+允許裁掉超出需求的極端碼；如果跨過目標的必要區間仍有大於
+0.50 ps 的步階，先回報該區間，不提整張表。
+48–431 是條件式餘碼／TT／FF，依 pilot 結果另行核准。
+真正的動態切碼、C0、C1、C2 仍待實體碼表與切碼量測。

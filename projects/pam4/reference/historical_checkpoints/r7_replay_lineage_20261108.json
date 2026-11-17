@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "record_id": "PAM4_R7_secondary_C_TG_20261022_23",
+  "recorded_on": "2026-11-08",
+  "historical_experiment_dates": [
+    "2026-10-22",
+    "2026-10-23"
+  ],
+  "status": "historical_evidence_recorded_exact_replay_preparation",
+  "parent_condition": {
+    "candidate": "baseline_r5",
+    "secondary_cap_fF": 10,
+    "TG_width_um": 1
+  },
+  "predeclared_changes": [
+    {
+      "candidate": "secondary_c25_w1",
+      "secondary_cap_fF": 25,
+      "TG_width_um": 1
+    },
+    {
+      "candidate": "secondary_c25_w2",
+      "secondary_cap_fF": 25,
+      "TG_width_um": 2
+    }
+  ],
+  "reason": {
+    "documented": "Bounded three-candidate training comparison, followed by independent new-data validation of baseline versus selected c25_w2 with the original frozen detectors; no validation fitting.",
+    "physical_motive_status": "UNKNOWN_in_reviewed_contemporaneous_delivery_records",
+    "physical_motive_limit": "Do not retrospectively claim that C/TG changes isolated kT/C noise, solved a fundamental limit, or preserved identical physical noise across hardware."
+  },
+  "training": {
+    "data_seed": 2026102202,
+    "noise_seed": 223,
+    "cases": 6,
+    "fit_inputs": 256,
+    "fit_FFE_windows": 240,
+    "score_inputs": 240,
+    "score_FFE_outputs": 224,
+    "training_only": true,
+    "noise_fitting_performed": false,
+    "secondary_noise_minus_noiseless_held_centered_RMS_mV": {
+      "baseline_r5": 1.0916347702653488,
+      "secondary_c25_w1": 0.8131569962198466,
+      "secondary_c25_w2": 0.7553198749957858
+    },
+    "interpretation_limit": "Trajectory difference contains signal dynamics/nonlinearity and is not isolated device-noise decomposition."
+  },
+  "independent_validation": {
+    "data_seed": 2026102301,
+    "noise_seed": 251,
+    "held_inputs_per_branch": 2048,
+    "FFE_outputs_per_branch": 2032,
+    "fitting_performed": false,
+    "old_VM_noise_metrics": {
+      "noise_baseline_r5": {
+        "primary": {
+          "ADC_FFE": {
+            "MSE_target_units_squared": 0.056576330768160134,
+            "SER": 0.0,
+            "errors": 0,
+            "symbols": 2032
+          },
+          "clipped_inputs": 0,
+          "equivalent_per_V_ADC_FFE_tap_L2": 319.34143434650497,
+          "fullscale_Vpp": 0.1,
+          "held_Vpp": 0.0896300572776233,
+          "held_centered_RMS_V": 0.017291864672337766,
+          "input_count": 2048,
+          "normalized_ADC_FFE_tap_L2": 6.244327804182569,
+          "raw_FFE": {
+            "MSE_target_units_squared": 0.0514475455558081,
+            "SER": 0.0,
+            "errors": 0,
+            "symbols": 2032
+          }
+        },
+        "secondary": {
+          "ADC_FFE": {
+            "MSE_target_units_squared": 0.4709822803194678,
+            "SER": 0.1156496062992126,
+            "errors": 235,
+            "symbols": 2032
+          },
+          "clipped_inputs": 0,
+          "equivalent_per_V_ADC_FFE_tap_L2": 649.741520958617,
+          "fullscale_Vpp": 0.075,
+          "held_Vpp": 0.04946614191320864,
+          "held_centered_RMS_V": 0.009769784173748065,
+          "input_count": 2048,
+          "normalized_ADC_FFE_tap_L2": 7.214047038840809,
+          "raw_FFE": {
+            "MSE_target_units_squared": 0.45225099308373634,
+            "SER": 0.10728346456692914,
+            "errors": 218,
+            "symbols": 2032
+          }
+        }
+      },
+      "noise_secondary_c25_w2": {
+        "primary": {
+          "ADC_FFE": {
+            "MSE_target_units_squared": 0.05998367602705209,
+            "SER": 0.0,
+            "errors": 0,
+            "symbols": 2032
+          },
+          "clipped_inputs": 0,
+          "equivalent_per_V_ADC_FFE_tap_L2": 315.63363953896874,
+          "fullscale_Vpp": 0.1,
+          "held_Vpp": 0.0899663315551763,
+          "held_centered_RMS_V": 0.017306869159283828,
+          "input_count": 2048,
+          "normalized_ADC_FFE_tap_L2": 6.177017430084197,
+          "raw_FFE": {
+            "MSE_target_units_squared": 0.05286189652462735,
+            "SER": 0.0,
+            "errors": 0,
+            "symbols": 2032
+          }
+        },
+        "secondary": {
+          "ADC_FFE": {
+            "MSE_target_units_squared": 0.4673044385843206,
+            "SER": 0.10334645669291338,
+            "errors": 210,
+            "symbols": 2032
+          },
+          "clipped_inputs": 0,
+          "equivalent_per_V_ADC_FFE_tap_L2": 850.1187436417314,
+          "fullscale_Vpp": 0.075,
+          "held_Vpp": 0.03979274085957096,
+          "held_centered_RMS_V": 0.007860070277919674,
+          "input_count": 2048,
+          "normalized_ADC_FFE_tap_L2": 7.613447160824283,
+          "raw_FFE": {
+            "MSE_target_units_squared": 0.4324060181309664,
+            "SER": 0.09350393700787402,
+            "errors": 190,
+            "symbols": 2032
+          }
+        }
+      }
+    },
+    "complete_physical_ADC_verified": false,
+    "original_decision": "Deliver this fixed independent comparison and delete monitor. No further simulations, candidates, fitting or re-use for validation after tuning."
+  },
+  "observations_vs_inference": {
+    "observed": "Old VM secondary raw errors218→190 and ideal7bit ADC+FFE235→210; primary both0. Held centered RMS9.769784→7.860070mV; secondary ADC-minus-raw errors17→20.",
+    "not_proven": "A causal device-noise mechanism, full physical ADC qualification, robust BER, or a universal hardware winner."
+  },
+  "later_diagnostic_plan": {
+    "date": "2026-10-29",
+    "configuration": "c25w2_normal versus c25w2_secondary_tg_off",
+    "documented_reason": "TG-off changes electrical load history; investigate buffer/load settling and held-node disturbance.",
+    "status": "planned_not_simulated_waiting_for_disk_capacity",
+    "preflight_status": "not_launched_VM_not_running",
+    "simulations_started": 0,
+    "limit": "Not a usable ADC candidate or pure parasitic/noise separation; do not record a planned experiment as observed."
+  },
+  "replay": {
+    "scope": "Exact historical noise251 baseline/c25w2 pair, data2026102301, no new circuit or fitted detector.",
+    "source_original_deck_sha256": {
+      "baseline_noise": "3394a71c4489dc53dea2d74b65dce91e85d5c228e06ffbf3b7ead5c5d2ea2443",
+      "candidate_noise": "df05df7419cdc4841355dfd311d51ceaf1053d265d3553ff18a8c25ead4247cf"
+    },
+    "known_prior_Olympus_secondary_raw_errors": [
+      212,
+      191
+    ],
+    "known_prior_Olympus_secondary_ADC_errors": [
+      216,
+      210
+    ],
+    "prior_difference_limit": "Original VM218/190 and235/210 differ; equal seed across simulator versions/modes does not promise identical trajectories.",
+    "source_bundle_manifest_sha256": "4854d2f4352338e1b77232fcf8a48348f7a7db04cab6444bd3c6db761da8dbb4",
+    "status": "preparation_no_new_result_or_local_deletion_claim",
+    "eligibility": "Controller must join fresh exact VM input/model closure, actual Olympus result, retained lineage and exact local bulk identity before root-only local deletion.",
+    "local_deletion_performed": false
+  },
+  "evidence": [
+    {
+      "repository_relative_path": "projects/pam4/reference/historical_checkpoints/secondary_r7_delivery_20261022.json",
+      "repository_copy_sha256": "b4a2f1c7b3a9124551b5696c787f41bab1e9e5fc7c479a7378a43e8c3b59dd57",
+      "original_artifact_sha256": "b4a2f1c7b3a9124551b5696c787f41bab1e9e5fc7c479a7378a43e8c3b59dd57"
+    },
+    {
+      "repository_relative_path": "projects/pam4/reference/historical_checkpoints/secondary_validation_r7_delivery_20261022.json",
+      "repository_copy_sha256": "ecf4a057658e233ed626bfc2d2595aca1c8a8ae52dd32472cc4298723984f5c3",
+      "original_artifact_sha256": "ecf4a057658e233ed626bfc2d2595aca1c8a8ae52dd32472cc4298723984f5c3"
+    },
+    {
+      "repository_relative_path": "projects/pam4/reference/historical_checkpoints/secondary_load_isolation_r8_plan_20261029.json",
+      "repository_copy_sha256": "a9e124521119c7728b0960cf9bf89d264fdf21075a2cb3861eab064c7777d7ca",
+      "original_artifact_sha256": "a9e124521119c7728b0960cf9bf89d264fdf21075a2cb3861eab064c7777d7ca"
+    }
+  ],
+  "evidence_note": "Repository copies are sanitized historical evidence; original-artifact and current-copy hashes are deliberately separate."
+}

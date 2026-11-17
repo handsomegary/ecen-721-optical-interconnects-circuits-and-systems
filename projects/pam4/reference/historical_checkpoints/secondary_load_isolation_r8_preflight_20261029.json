@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-10-30T03:40:33.201868+00:00",
+  "status": "not_launched_VM_not_running",
+  "ssh_target": "user@192.0.2.1",
+  "ssh_observation": "Connection timed out after8seconds",
+  "vmware_observation": "vmrun -T ws list: Total running VMs:0; no vmware-vmx process observed",
+  "simulator_crash_claimed": false,
+  "simulations_started": 0,
+  "VM_power_state_changed": false,
+  "old_queues_restarted": false,
+  "space_requirement_bytes": 8589934592,
+  "next": "User starts existing IC618 VM; then verify current host key/MAC/IP/boot and free disk before preparing/launching the fixed two-case r8 circuit diagnostic. Do not duplicate/retry or restart old queues."
+}

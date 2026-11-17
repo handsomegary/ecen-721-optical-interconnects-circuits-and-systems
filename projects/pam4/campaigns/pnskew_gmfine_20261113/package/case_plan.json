@@ -1,0 +1,2768 @@
+{
+  "format": "pam4_gmfine_review_v1",
+  "status": "REVIEW_PENDING",
+  "scope": "Local adjacent-bank interpolation, dormant feedthrough, native bias gates and launch AC",
+  "fixed_fixture": "25 ohm terminations; original r3 load, fixed track clocks",
+  "cases": [
+    {
+      "case_id": "fine_tt_p25_v090_bypass_edge_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bypass",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_bypass_edge_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bypass",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_plain_edge_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "plain",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_plain_edge_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "plain",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_muted_edge_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "muted",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_muted_edge_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "muted",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_plain_edge_p_0_dormant_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "plain",
+      "count_b": 0,
+      "probe": "dormant",
+      "drive": "p",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_plain_edge_p_0_dormant_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "plain",
+      "count_b": 0,
+      "probe": "dormant",
+      "drive": "n",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_bias_edge_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bias",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_bias_edge_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bias",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_0_dormant_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "dormant",
+      "drive": "p",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_0_dormant_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "dormant",
+      "drive": "n",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_1_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 1,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_1_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 1,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_2_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_2_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_3_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 3,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_3_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 3,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_4_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_4_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_5_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 5,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_5_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 5,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_6_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 6,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_6_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 6,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_7_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 7,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_7_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 7,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_8_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 8,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_edge_p_8_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 8,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_2_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_2_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_3_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 3,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_3_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 3,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_4_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_4_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_6_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 6,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_p_6_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 6,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_2_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_2_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_3_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 3,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_3_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 3,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_4_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_4_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_6_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 6,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_6_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 6,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_edge_n_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_center_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_center_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_center_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_center_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_center_p_4_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_center_p_4_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_center_p_4_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_center_p_4_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 4,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_center_p_8_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 8,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_interpolation_center_p_8_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "interpolation",
+      "count_b": 8,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_center_p_8_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 8,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_center_p_8_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        10,
+        12
+      ],
+      "route_b": [
+        11,
+        11
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 8,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_open_edge_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver_open",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_open_edge_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver_open",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_open_edge_p_0_dormant_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver_open",
+      "count_b": 0,
+      "probe": "dormant",
+      "drive": "p",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_open_edge_p_0_dormant_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver_open",
+      "count_b": 0,
+      "probe": "dormant",
+      "drive": "n",
+      "off_probe": true,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_short_p_0_full_p",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_tt_p25_v090_driver_short_p_0_full_n",
+      "process": "tt",
+      "temperature_C": 25,
+      "vdd_V": 0.9,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        1,
+        1
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "tt",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_bypass_edge_p_0_full_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bypass",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_bypass_edge_p_0_full_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bypass",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_muted_edge_p_2_full_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "muted",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_muted_edge_p_2_full_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "muted",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_p_2_full_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_p_2_full_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_p_0_full_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_p_0_full_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_n_2_full_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_n_2_full_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_n_0_full_p",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ss_p85_v081_driver_edge_n_0_full_n",
+      "process": "ss",
+      "temperature_C": 85,
+      "vdd_V": 0.81,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_bypass_edge_p_0_full_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bypass",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_bypass_edge_p_0_full_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "bypass",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "bypass",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_muted_edge_p_2_full_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "muted",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_muted_edge_p_2_full_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "muted",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_p_2_full_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_p_2_full_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_p_0_full_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_p_0_full_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        6,
+        16
+      ],
+      "route_b": [
+        8,
+        14
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_n_2_full_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_n_2_full_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 2,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_n_0_full_p",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "p",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    },
+    {
+      "case_id": "fine_ff_m40_v099_driver_edge_n_0_full_n",
+      "process": "ff",
+      "temperature_C": -40,
+      "vdd_V": 0.99,
+      "kind": "ac",
+      "variant": "fine",
+      "route_a": [
+        16,
+        6
+      ],
+      "route_b": [
+        14,
+        8
+      ],
+      "active": "a",
+      "mode": "driver",
+      "count_b": 0,
+      "probe": "full",
+      "drive": "n",
+      "off_probe": false,
+      "stage": "corner",
+      "cpus": 1,
+      "memory_GiB": 4,
+      "estimated_solver_s": [
+        1,
+        15
+      ],
+      "wall_limit_min": 30
+    }
+  ]
+}

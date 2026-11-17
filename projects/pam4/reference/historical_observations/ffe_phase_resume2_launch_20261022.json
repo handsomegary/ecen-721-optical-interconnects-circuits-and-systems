@@ -1,0 +1,119 @@
+[
+  {
+    "launch": {
+      "started_utc": "2026-10-22T22:47:11.346799Z",
+      "runner": {
+        "pid": 39846,
+        "state": "R",
+        "start_ticks": 542528,
+        "pgid": 39846,
+        "sid": 39846,
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+        "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+        "comm": "python3"
+      },
+      "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+      "script_sha256": "1a01d14b611f5e3cad372bb428d4768acad181fd723a84fe55a90c70bbf97b2b",
+      "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+      "automatic_retry": false,
+      "scope": "User continue after travel and verified VM reboot: reuse eight complete cases, one retry of case08 lacking recorded exit status, and nine untouched noise cases once."
+    }
+  },
+  {
+    "state": {
+      "actual_spectre_before_case": [
+        {
+          "comm": "spectre",
+          "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/cdr4_inductorless_28nm_20261022/runs/feedback_oc192_phasekick_r1",
+          "executable": "/opt/eda/cadence/SPECTRE181/tools.lnx86/spectre/bin/64bit/spectre",
+          "identity_class": "actual",
+          "pgid": 33705,
+          "pid": 33718,
+          "sid": 33705,
+          "start_ticks": 536744,
+          "state": "R"
+        }
+      ],
+      "automatic_retry": false,
+      "boot_id": "a9f090d5-3501-4278-90c0-da751a1880c4",
+      "case_pid": 40022,
+      "case_process": {
+        "comm": "spectre",
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume2_20261022/noiseless_phase_08",
+        "executable": "/usr/bin/ksh93",
+        "pgid": 40022,
+        "pid": 40022,
+        "sid": 40022,
+        "start_ticks": 542665,
+        "state": "R"
+      },
+      "case_session_id": 40022,
+      "completed_cases": [
+        {
+          "name": "noiseless_phase_00",
+          "summary_sha256": "de4f033b2070b79982f0f20ce4765d5a06700033214c5d18664fe1add82acba8"
+        },
+        {
+          "name": "noiseless_phase_01",
+          "summary_sha256": "b373861087913c5969b7ec7a011870ae5734cb58d08aa9c83d6a60c97868aed3"
+        },
+        {
+          "name": "noiseless_phase_02",
+          "summary_sha256": "49ac94a67ec1d1d636b6194e5c572edda7a67563bd8e4a17764ac077e47d8a8d"
+        },
+        {
+          "name": "noiseless_phase_03",
+          "summary_sha256": "4538e1aea36c1a1fad9f8cc53f77b978700dbbe11536d67a984136ec67d3b683"
+        },
+        {
+          "name": "noiseless_phase_04",
+          "summary_sha256": "8a71aa427bedeca92a69adc3619e1d7e17b6fbe45eb05c4c2f60fb9f82d593cc"
+        },
+        {
+          "name": "noiseless_phase_05",
+          "summary_sha256": "33c56a7765cc699001b6307969dd8f50c61b770e9bd9b6745e558342e27a8a9d"
+        },
+        {
+          "name": "noiseless_phase_06",
+          "summary_sha256": "5e6b4dec253709ba4ad7d2c5c841045b8380adb3983b8f197ac56a50c5857fe4"
+        },
+        {
+          "name": "noiseless_phase_07",
+          "summary_sha256": "71940df7033718aa3ba9cc9e402a376911af457ec442cd1118ffad58a65d7555"
+        }
+      ],
+      "current_case": "noiseless_phase_08",
+      "effective_case_timeout_s": 3600,
+      "original_terminal_root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_sweep_20261022",
+      "protocol_sha256": "67f628995d6101c560a0d783901786166fc707d73e56ec5d82d5fb989c502b82",
+      "resume_provenance_sha256": "b16698607ac0392b3ccb8db32c0abfcf2f98a4a1f3fb250b5c1af0c174dd716c",
+      "retired_interrupted_root": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/runs/ffe_phase_resume1_20261022",
+      "reused_completed_cases": [
+        "noiseless_phase_00",
+        "noiseless_phase_01",
+        "noiseless_phase_02",
+        "noiseless_phase_03",
+        "noiseless_phase_04",
+        "noiseless_phase_05",
+        "noiseless_phase_06",
+        "noiseless_phase_07"
+      ],
+      "run_started_utc": "2026-10-22T22:47:12.346882Z",
+      "runner": {
+        "comm": "python3",
+        "cwd": "/path/to/local/cadence-home/Desktop/cadence_projects/project6_28nm/scripts",
+        "executable": "/opt/eda/mentor/calibre2019/aoj_cal_2019.3_15.11/pkgs/icv_python.aoj/asp/bin/python3",
+        "pgid": 39846,
+        "pid": 39846,
+        "sid": 39846,
+        "start_ticks": 542528,
+        "state": "R"
+      },
+      "scope": "Real-clock phase-swept sampled eye of native AFE and two sampler stages, followed by an ideal numerical 7-bit quantizer and frozen 17-tap FFE; not a continuous analog FFE waveform, physical ADC, DSP implementation or BER certification. Phase is swept for observation, never optimized.",
+      "started_utc": "2026-10-22T22:47:01.028983Z",
+      "status": "simulating",
+      "updated_utc": "2026-10-22T22:47:12.417638Z"
+    },
+    "exit_code": null
+  }
+]

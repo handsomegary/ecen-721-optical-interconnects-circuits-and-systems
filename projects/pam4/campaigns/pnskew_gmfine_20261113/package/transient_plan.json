@@ -1,0 +1,370 @@
+{
+  "format": "pam4_gmfine_future_transient_v1",
+  "status": "PENDING_AC_AND_USER_APPROVAL",
+  "short_pilot": {
+    "deltas_UI": [
+      0,
+      -0.5,
+      0.5,
+      -0.25,
+      0.25
+    ],
+    "cpus": 1,
+    "memory_GiB": 6,
+    "wall_cap_hours": 2,
+    "scope": "Validate bias settling, common timing and blind code search."
+  },
+  "quiet_nominal": {
+    "first_UI": [
+      0,
+      -0.25,
+      0.25,
+      -0.5,
+      0.5
+    ],
+    "additional_UI": [
+      -0.375,
+      -0.125,
+      0.125,
+      0.375
+    ]
+  },
+  "quiet_corners": {
+    "corners": [
+      [
+        "SS",
+        85,
+        0.81
+      ],
+      [
+        "FF",
+        -40,
+        0.99
+      ]
+    ],
+    "UI": [
+      0,
+      -0.5,
+      0.5
+    ]
+  },
+  "paired_noise_cases": [
+    {
+      "seed": 1001,
+      "injected_UI": 0,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1001,
+      "injected_UI": -0.5,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1001,
+      "injected_UI": 0.5,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1002,
+      "injected_UI": 0,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1002,
+      "injected_UI": -0.5,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1002,
+      "injected_UI": 0.5,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1003,
+      "injected_UI": 0,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1003,
+      "injected_UI": -0.5,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1003,
+      "injected_UI": 0.5,
+      "wave": "first_nine"
+    },
+    {
+      "seed": 1004,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1004,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1004,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1005,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1005,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1005,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1006,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1006,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1006,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1007,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1007,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1007,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1008,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1008,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1008,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1009,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1009,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1009,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1010,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1010,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1010,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1011,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1011,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1011,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1012,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1012,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1012,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1013,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1013,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1013,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1014,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1014,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1014,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1015,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1015,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1015,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1016,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1016,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1016,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1017,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1017,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1017,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1018,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1018,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1018,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1019,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1019,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1019,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1020,
+      "injected_UI": 0,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1020,
+      "injected_UI": -0.5,
+      "wave": "remaining_51"
+    },
+    {
+      "seed": 1020,
+      "injected_UI": 0.5,
+      "wave": "remaining_51"
+    }
+  ],
+  "full_frame_resource": {
+    "classic_cpus": 1,
+    "memory_GiB": 8,
+    "wall_cap_hours": 6,
+    "estimated_solver_hours": [
+      1,
+      4
+    ],
+    "user_per_job_limit_hours": 12
+  },
+  "reference_cases": [
+    "same new hardware zero skew (one frozen common phase)",
+    "r1 uncorrected matched seed (verify configuration and label mask)",
+    "zero-skew mathematical inverse reference"
+  ],
+  "detector": "Genuine r5 frozen primary and secondary; ideal numerical 7 bit; 2048 held, 2032 scored.",
+  "retirement": "Original raw stays on Olympus; new compact measurement, clip and SHA precede retirement."
+}

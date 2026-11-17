@@ -1,0 +1,63 @@
+ECEN 721 Project #6｜LP14 原生參考與 OTA 隔離 smoke
+
+首批量測分解
+
+SS 的 41.8 µA 核心電流經 PMOS 比值 1.136 和 NMOS 比值 1.098，再乘
+10，得到 521.7 µA。FF 的 48.9 µA 經 PMOS 1.877 和 NMOS 1.065，
+得到 978.1 µA。PMOS FF 的 |ΔVDS| 約 199 mV，短通道鏡誤差最大。
+以此工作點反推的 ln(current ratio)/ΔVDS 約 3.16/V，若該斜率維持，
+單此效應就要把 |ΔVDS| 壓到約 6 mV 才有 2% 比例精度。
+上述數字來自 FIRST12 回饋的報表，原 raw 留在 Olympus。
+
+Iref-only
+
+用原 1:4 beta multiplier 和 1:10 ratio，兩組鏡改為原生模型的 120 nm
+原理圖長度，另留 240 nm 敏感度。相同鏡的兩臂使用同單元 W/nf 與方向。
+新 L 是對既有原理圖卡的明確覆寫，寄生及最終合法版圖尺寸仍待 CDF／PDK 核對。
+每個 SS/TT/FF 有長通道直連和長通道等 VDS 診斷各一案。匹配版用浮接
+VCVS 串在鏡輸出支路，保留該支路電流，分別令 P 輸出 drain 等於 P diode
+drain、N 輸出 drain 等於 N diode drain。回報兩個理想源所需壓差與電流。
+其 GFVDD 功耗只描述此診斷核心。實體等壓迴路的功耗與順從電壓需要另驗。
+
+4.35 mA/腿對應 Iref 310.714 µA，TT 核心目標 31.071 µA。等 VDS、
+弱反轉近似 VRS＋body-effect 項≈n·UT·ln(4)。以 TT n=1.3–1.6 計，
+未扣 body effect 是約 46–57 mV，對應 R≈1.49–1.84 kΩ。先取 1.6 kΩ，
+TT 另量 1.3 和 2.2 kΩ 作 bracket。若無包住 31.07 µA，用新 OP 和
+I(R) 斜率重選。舊不等壓 OP 的 2.4–2.8 kΩ 估值不可直接沿用。
+核心溫度係數與鏡比例應分開量。固定共同 trim 的 Iref 三角落先看 ±5%，
+實作再要求 ±2%；TT、SS、FF 分別改 R 只能算 trim 範圍。
+
+實作判斷
+
+若等 VDS 診斷能收斂而長通道直連仍超標，優先在 10× NMOS 輸出上方
+試共用低速調節 cascode，要求下管 drain 等於 diode drain。依舊 OP 估
+SS 外部順從空間約 0.27 V。PMOS 端舊 SS 只有約 67 mV 可用，先由
+P-series headroom 實測判斷能否用長通道加低壓 regulated mirror。
+P/N 兩個浮接等壓源只提供誤差分解。電壓擺幅不足或 PTAT 仍超標時，
+主線改用外部精密設定加 330 Ω Kelvin 感測和 PMOS 輸入誤差放大器，
+直接調一顆 NMOS sink 的 gate。4.35 mA/腿時 VSET=102.54 mV，
+4.2/4.5 對應 99.00/106.07 mV。5-bit ±15% 單次 trim 約 1%/步，
+需要另量 Iref 溫漂、330 Ω TC、OTA offset、PSRR、負載順從與穩定度。
+等 VDS regulated mirror 參考 https://doi.org/10.1109/ISCAS.2003.1205552
+
+OTA-only
+
+復用已生成的 42/43、50/51，網表逐字相同，以理想 Iref 固定
+310.714 µA，只量 SS／FF 單組。原迴路差 6.5–11.3 mV 若延續至
+目標點，等於約 4.5–7.9% 參考電阻電流誤差。2% 對應約 2.87 mV。
+量真正的兩腿電流、VGB、OTA OP、總 GFVDD、56 GHz 增益與 SS XT2。
+歷史參考取 FIRST12 四捨五入值用來看方向，正式整合需同批參考。
+本包無 native_both 案。靜態可行再談啟動與 STB。
+
+功耗與啟動
+
+舊 FF non-main 2.14 mW 中，超標的 reference 與 replica 支路約
+1.92 mW，扣除後約 0.22 mW。若兩支路都回到 310.714 µA 且其餘
+開銷近似不變，FF non-main 約 0.83 mW、整體增量約 9.45 mW。
+SS 類估 non-main 約 0.63 mW、整體增量約 7.68 mW。TT 兩個標稱
+支路為 0.559 mW、主驅動 7.83 mW，其他開銷未量。0.4 mW 原先是
+兩條已計入 GFVDD 支路之外的預留。最後用同 corner 各 rail 實測的總增量
+核對 +10/+14 mW，等 VDS 理想輔助源的實體開銷另外納入。
+STOFF 的 1.6–2.0 µA 是 500 kΩ 上拉在低電位時的靜態路徑，
+約 1.3–2.0 µW。保留此支路，後續量上電、brownout 和 kick 退出。
+XT2 維持原偏壓。已有的 raw 與收據保留。

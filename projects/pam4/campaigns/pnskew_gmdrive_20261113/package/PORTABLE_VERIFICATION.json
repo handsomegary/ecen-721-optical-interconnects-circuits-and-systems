@@ -1,0 +1,47 @@
+{
+  "cases_rendered": 296,
+  "stage_counts": {
+    "short": 18,
+    "short_loaded": 4,
+    "short_swing": 4,
+    "corner_short": 12,
+    "zero": 12,
+    "edge": 60,
+    "fine": 132,
+    "fine_full_tt": 54
+  },
+  "portable_deck_indices": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    34,
+    38,
+    110,
+    242
+  ],
+  "local_checks": [
+    "all-case token render",
+    "unique measurement keys",
+    "fixed track nodes",
+    "stage-2 polarity pin check",
+    "noise only P full",
+    "original tail and far-end termination in render",
+    "Python source compile",
+    "missing results remain missing",
+    "legacy OP schema replay and missing CS OP rejection",
+    "GMFINE OP audit byte-exact reconstruction"
+  ],
+  "spectre_executed": false,
+  "slurm_submitted": false
+}

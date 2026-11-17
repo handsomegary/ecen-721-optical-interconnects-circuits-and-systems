@@ -1,0 +1,13 @@
+{
+  "status": "PASS_OFFLINE",
+  "tests": 10,
+  "test_log": "test_all_nine_codes_preserve_eight_enabled_tail_slices_each_leg (test_gm_fine.GMFine.test_all_nine_codes_preserve_eight_enabled_tail_slices_each_leg) ... ok\ntest_dormant_probe_has_same_tail_bias (test_gm_fine.GMFine.test_dormant_probe_has_same_tail_bias) ... ok\ntest_native_bias_and_clamp_preserve_rf_topology (test_gm_fine.GMFine.test_native_bias_and_clamp_preserve_rf_topology) ... ok\ntest_plan_pairs_have_unique_ids_and_local_constant_mean (test_gm_fine.GMFine.test_plan_pairs_have_unique_ids_and_local_constant_mean) ... ok\ntest_transient_seed_census (test_gm_fine.GMFine.test_transient_seed_census) ... ok\ntest_all_active_drivers_are_identical_except_dormant_probe_excitation (test_gm_select.GMSelectTests.test_all_active_drivers_are_identical_except_dormant_probe_excitation) ... ok\ntest_scope_and_distinct_mirrored_dormant_cases (test_gm_select.GMSelectTests.test_scope_and_distinct_mirrored_dormant_cases) ... ok\ntest_stage2_geometry_and_sampler_devices_unchanged (test_gm_select.GMSelectTests.test_stage2_geometry_and_sampler_devices_unchanged) ... ok\ntest_stationary_noise_uses_same_track_nodes_in_bypass_and_candidate (test_gm_select.GMSelectTests.test_stationary_noise_uses_same_track_nodes_in_bypass_and_candidate) ... ok\ntest_two_banks_share_only_drain_rail_and_have_separate_bridges (test_gm_select.GMSelectTests.test_two_banks_share_only_drain_rail_and_have_separate_bridges) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.183s\n\nOK\n",
+  "AC_cases": 92,
+  "portable_decks_diffs_and_case_hashes_verified": 92,
+  "original_gmselect_zip_sha256": "51268ada6d19e22f8bee0d721149eb08c9a5915aa4149f6dedf09de0e8d756d7",
+  "model_regenerated_from_measured_gmselect_summary": true,
+  "native_Spectre_parser_and_PSF_validation": "PENDING_ON_OLYMPUS",
+  "native_jobs_started": 0,
+  "transient_cases_are_plan_only": true,
+  "new_user_approval": false
+}
